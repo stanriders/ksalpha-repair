@@ -670,8 +670,13 @@ label H14:
         jump_out L19
     else:
         #"Bad":
-        call iscene ("H14b")
-        jump_out H24
+        #call iscene ("H14b") # [str] (no badend "editor's note" cos it's copying H23)
+        jump_out H23 # [str] (h24)
+    jump_out H23 # [str]
+
+# [str] (Waterfall)
+label H23:
+    call iscene ("H23")
     jump_out H24
 
 label H24:
@@ -698,6 +703,7 @@ label H26:
 label H27:
     call iscene ("H27")
     call iscene ("end_hanakobad1")
+    call credits # [str] (credits)
     jump_out restart
 
 label H28:
@@ -722,6 +728,7 @@ label H31:
         #"Advance":
         call iscene ("H31a")
         call iscene ("end_hanakobad2")
+        call credits # [str] (credits)
         jump_out restart
     else:
         #"nope.avi":
@@ -731,6 +738,7 @@ label H31:
 label H32:
     call iscene ("H32")
     call iscene ("end_hanakobad3")
+    call credits # [str] (credits)
     jump_out restart
 
 label HT1:

@@ -1,0 +1,119 @@
+ # all of my stuff is tagged with [str]
+ # it's easy to find
+ # but here's changelog:
+
+script-a3-hanako: H23
+script-a4-hanako: all
+
+ui_settings: 
+ code: hanako leftsit trembling // broken
+ bg: hosp_paddedroom
+ bg: hosp_postop
+ sprites pos: forced ypos=1.0
+ additional hanako sprites
+ additional hanagown sprites
+ hanabad sprites
+ new hanako event cgs
+ charamove_faster
+
+
+imachine:
+ hanako ends: added credits
+ hanakoroute: removed H14b(editor's note), added H23(waterfall)
+
+z_jumper:
+ jump to hanalilly-act2 (i was interested what is this stuff about)
+
+
+sprites:
+ hanako:
+  hanako_emb_shock_sun
+  hanako_emb_strain_sun
+  hanako_emb_blushtimid_sun_close
+  hanako_emb_determined_sun_close
+  hanako_emb_downdetermined_sun_close
+  hanako_emb_downsad_sun_close
+  hanako_emb_downsmile_sun_close
+  hanako_emb_downtimid_sun_close
+  hanako_emb_emb_sun_close
+  hanako_emb_sad_sun_close
+  hanako_emb_smile_sun_close
+  hanako_emb_timid_sun_close
+
+ hanagown:
+  hanagown_evil_hosp
+  hanagown_normal_hosp
+  hanagown_shock_hosp
+  hanagown_nude_disgust_close
+
+ hanabad: 
+  all sprites
+
+bgs:
+ hosp_paddedroom
+ hosp_postop
+
+events: // todo: unpack final's archive and replace my shitty daylight cg with normal ones
+ hanako_missionary_hateface_d
+ hanako_missionary_neutralface_d
+ hanako_missionary_underwear_neutralface_d
+ hanako_bed_boobs_neutralface_d
+
+vfx:
+ oiwadoor (it's terrible, but whatever)
+
+
+new presplash (may not be in final release, i just wanted to do it)
+
+
+
+
+---
+notes:
+    show yuuko worried_up at tworight # [str]
+    with charaenter # [str]
+
+    show lilly cane_surprised_cas at twoleft # [str]
+    with charachange # [str]
+
+    with charamove # [str]
+
+    with charamove_slow # [str]
+
+    hide lilly # [str]
+    with charaexit # [str]
+
+    scene black # [str]
+    with Dissolve(2.0) # [str]
+
+    window hide # [str]
+    with Pause(2.0) # [str]
+
+    with fade # [str]
+
+    play music music_rain fadein 4.0 # [str]
+
+    stop music fadeout 4.0 # [str]
+
+    play sound sfx_dooropen # [str]
+
+    play ambient sfx_park fadein 4.0 # [str]
+
+    $ renpy.music.set_volume(0.5, .5, channel="ambient") # [str]
+
+show yuuko neurotic_shang # [str]
+with charaenter # [str]
+
+show yuuko smile_shang # [str]
+with charachange # [str]
+
+hide yuuko # [str]
+with charaexit # [str]
+
+show hanako emb_emb_sun at leftsit # [str]
+with charachange # [str]
+
+show lilly basic_smileclosed_cas at rightsit # [str]
+with charachange # [str]
+
+basic_smile_cas

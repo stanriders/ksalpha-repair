@@ -59,9 +59,9 @@ label jumper:
         ui.image(style.gm_root.background)
         ui.image("ui/bg-config.png", xalign=0.5, yalign=0.5)
 
-        ui.vbox(xpos=180, ypos=120, background=None)
+        ui.vbox(xpos=180, ypos=110, background=None)
         ui.text("Select Act", style="page_caption")
-        ui.null(height=10)
+        ui.null(height=8)
 
         # Hanako
         ui.vbox()
@@ -117,6 +117,15 @@ label jumper:
         widget_button("Act 2", "ui/bt-blank.png", clicked=jumper_scene("S8"), xsize=65, textxoffset=0)
         widget_button("Act 3", "ui/bt-blank.png", clicked=jumper_scene("S20"), xsize=65, textxoffset=0)
         widget_button("Act 4", "ui/bt-blank.png", clicked=jumper_scene("S31"), xsize=65, textxoffset=0)
+        ui.close()
+        ui.close()
+        
+        # Hana-Lilly (just trying to understand what is it even) [str]
+        ui.vbox()
+        ui.text("Hana-Lilly: ", style="prefs_label")
+        ui.hbox()
+        jumper_menu_space()
+        widget_button("Act 2", "ui/bt-blank.png", clicked=jumper_scene("HLT3"), xsize=65, textxoffset=0)
         ui.close()
         ui.close()
 

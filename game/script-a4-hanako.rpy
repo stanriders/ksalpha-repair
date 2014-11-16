@@ -1,9 +1,18 @@
 ﻿label en_H24:
 
+    # # # # #
+    # I hope KS-alpha translation groups (if they exist) will use this project.
+    # Every line of code added by me is tagged with "# [str]", just in case.
+    # # # # #
+    
+    # # # # #
     #Act IV Title: Mors Mortis (Lol latin for cause of death)
     #probably a place holder. I suck at titles.
 
     #Starts white
+
+    scene white # [str]
+    with None # [str]
 
     "Blinding light wakes me from my reverie."
 
@@ -16,6 +25,10 @@
     mystery "Easy there, you really shouldn't move…"
 
     #fade from white
+    scene bg hosp_room2 # [str]
+    with Dissolve (1.5) # [str]
+
+    play music music_rain fadein 4.0 # [str]
 
     "The blinding light fades away as the doctor moves his torch away from my eyes."
 
@@ -65,9 +78,15 @@
 
     "Two sets of footsteps approach, punctuated by the distinct “click, click” of Lilly's cane."
 
+    show lilly cane_sad_cas at twoleft # [str]
+    with charaenter # [str]
+
     li "Hisao?"
 
     "The footsteps break into a trot, and I hear the cane clatter to the floor."
+
+    show lilly cane_surprised_cas at twoleft # [str]
+    with charachange # [str]
 
     "Lilly's face appears in my vision, her sightless eyes desperately searching out in vain."
 
@@ -77,7 +96,13 @@
 
     hi "L… Lilly… w… where's Hana… Hanako."
 
+    show lilly cane_sad_cas at twoleft # [str]
+    with charachange # [str]
+
     "A second face appears in my vision…"
+
+    show yuuko worried_up at tworight # [str]
+    with charaenter # [str]
 
     hi "Yuu…ko?"
 
@@ -121,6 +146,9 @@
 
     "Doctor" "She's currently in the Oiwa ward."
 
+    show lilly cane_oops_cas at twoleft # [str]
+    with charachange # [str]
+
     li "Oiwa ward? What's that?"
 
     "Thank you Lilly… I don't think I can talk much more like this…"
@@ -143,11 +171,22 @@
 
     "Doctor" "Girls… I'm going to have to ask you to leave now."
 
+    show lilly cane_displeased_cas at twoleft # [str]
+    with charachange # [str]
+
     li "Hisao… we'll be back."
 
     hi "Lilly… check… check on Hanako."
 
+    show lilly cane_smile_cas at twoleft # [str]
+    with charachange # [str]
+
     li "I will, Hisao. Please, rest. We'll come back tomorrow."
+
+    hide lilly # [str]
+    with charaexit # [str]
+    hide yuuko # [str]
+    with charaexit # [str]
 
     "The doctor ushers out the girls, then returns my bed to a horizontal position."
 
@@ -157,13 +196,26 @@
 
     "Doctor" "We'll speak in the morning."
 
+    scene black # [str]
+    with Dissolve(2.0) # [str]
+
     "I have so many questions, but the drugs slowly flooding my system gently force my eyes closed."
 
     "Velvet sleep lines my eyelids, and I drift away from consciousness."
 
+    stop music fadeout 1.0 # [str]
+
+    window hide # [str]
+    with Pause(2.0) # [str]
+
     #Fade through black
+    #shorttimeskip # [str]
 
     mystery "Hisao? Hisao?"
+
+    scene bg hosp_room2 # [str]
+    with openeye #fade # [str]
+    play music music_rain fadein 4.0 # [str]
 
     "I gently return to the land of the living."
 
@@ -219,7 +271,7 @@
 
     hi "I'm sorry?"
 
-    "The Doctor sighs, and rubs the bridge of his nose."
+    "The doctor sighs, and rubs the bridge of his nose."
 
     "My mother, sitting in one of the visitors' chairs, starts to sob a little."
 
@@ -259,11 +311,11 @@
 
     hi "How's Hanako."
 
-    "The Doctor's concerned face tells me all I need to know."
+    "The doctor's concerned face tells me all I need to know."
 
     "Doctor" "She's safe. I'll come back to visit you shortly."
 
-    "There's something about the term “(S)he's safe” that seems so contradictory."
+    "There's something about the term “She's safe” that seems so contradictory."
 
     hi "Can I see her?"
 
@@ -279,9 +331,17 @@
 
     "There is the sound of fumbling, but eventually the door opens."
 
+    play sound sfx_dooropen # [str]
+    
+    show lilly cane_weaksmile_cas at tworight # [str]
+    with charaenter # [str]
+
     "Out of the corner of my eye I catch Lilly's golden hair appearing in the doorway."
 
     hi "You came back."
+
+    show lilly cane_smile_cas at twoleft # [str]
+    with charamove_slow # [str]
 
     li "Of course; we are friends."
 
@@ -309,6 +369,9 @@
 
     #Lilly concerned.
 
+    show lilly cane_sad_cas at twoleft # [str]
+    with charachange # [str]
+
     li "I… I can't tell."
 
     hi "What?"
@@ -321,6 +384,9 @@
 
     hi "What's that supposed to mean?"
 
+    show lilly cane_reminisce_cas at twoleft # [str]
+    with charachange # [str]
+
     li "I… I'm not sure."
 
     "…"
@@ -331,6 +397,9 @@
 
     #Lilly pout
 
+    show lilly cane_pout_cas at twoleft # [str] (seems unappropriate!!!) 
+    with charachange # [str]
+
     li "That's all I know too, but I believe that we are missing something."
 
     hi "Why's that?"
@@ -338,6 +407,9 @@
     li "Hanako's accident happened when she was a child, yes?"
 
     hi "That's what I've been told…"
+
+    show lilly cane_sleepy_cas at twoleft # [str] (seems unappropriate!!!) 
+    with charachange # [str]
 
     li "Then why is it that she only joined this school in the junior year of high school?"
 
@@ -357,15 +429,29 @@
 
     hi "N… no, I'm fine. But I need to think…"
 
+    show lilly cane_weaksmile_cas at twoleft # [str]
+    with charachange # [str]
+
     li "I understand. I'll see if I can find out more."
 
     hi "Please…"
 
-    "Lilly departs with her standard “Click Click,” and again, I am alone."
+    hide lilly # [str]
+    with charaexit # [str]
 
+    "Lilly departs with her standard “Click Click,” and again, I am alone."
+    
+    window hide # [str]
+    
     return
 
 label en_H25:
+
+    with Pause(0.1) # [str] (that somehow fixes game crash)
+    scene bg hosp_room2 # [str]
+    with shorttimeskip # [str]
+
+    window show # [str]
     
     "It feels like hours before my parents return from their conference with the doctor."
 
@@ -537,16 +623,22 @@ label en_H25:
 
     "…"
 
+    play sound sfx_doorknock2 # [str]
+    
     "A firm knock on the door startles me."
 
     hi "Come in?"
 
+    play sound sfx_dooropen # [str]
+    
     "Doctor 2" "Hisao? I'm Hanako's doctor; do you mind if we have a little talk?"
 
     hi "Hanako? How is she? What's the matter with her?"
 
     hi "When can I see her?"
 
+    play sound sfx_lock # [str]
+    
     "The doctor comes into my room slowly, and locks the door behind him."
 
     "He looks a good deal older than my doctor, but has a much gentler demeanour."
@@ -573,6 +665,8 @@ label en_H25:
 
     hi "Yes. Sorry."
 
+    stop music fadeout 4.0 # [str]
+
     "Doctor 2" "Tell me… what do you know of Hanako's condition?"
 
     hi "Well, she was in a fire when she was younger, and got pretty scarred."
@@ -587,6 +681,8 @@ label en_H25:
     #I don't know how else to tackle this, so I'm open to suggestions.
     #as it stands, I think the best thing would be to overlay the following
     #over 4-5 CGs, if that's not too much of an ask.
+
+    play music music_moonlight fadein 3.0 # [str]
 
     "Doctor 2" "That's all she's ever told you?"
 
@@ -690,25 +786,63 @@ label en_H25:
 
     "Doctor 2" "That makes you dear to me, too."
 
+    play sound sfx_doorclose # [str]
+    
     "Without waiting for my reply, he stands up, and strides out of the door."
 
     "I get the impression that this wasn't too easy for him, either."
 
+    stop music fadeout 2.0 # [str]
+    scene black # [str] (not sure)
+    with shuteye # [str]
+    with Pause(1.0) # [str]
+    window hide # [str]
     return
     
-    label en_H26:
+label en_H26:
+    scene black # [str] (JUST IN CASE!)
+    scene bg hosp_room2 # [str]
+    with openeye # [str]
     
+    window show # [str]
+    
+    show lilly cane_smile_cas at twoleft # [str]
+    with charaenter # [str]
+
     "The first visitor to my room, once again, is Lilly."
 
     "However, instead of bringing along Yuuko, she is joined by a pair of familiar faces."
 
+    play music music_happiness fadein 1.0 # [str]
+
+    show lilly cane_planned_cas at leftoff # [str]
+    with charamove # [str]
+
+    show shizu adjust_happy at twocenteroff2 # [str] (fixme!!)
+    with charaenter # [str]
+    show misha hips_grin at tworight # [str]
+    with charaenter # [str]
+
     mi "Hicchan! We heard you were skipping school, so we had to come and check on you."
 
+    show shizu behind_smile at twocenteroff2 # [str]
+    with charachange # [str]
+
     shi "…"
+
+    show misha cross_laugh at tworight # [str]
+    with charachange # [str]
 
     mi "That's right! It's our job as council members!"
 
     "The simple act of receiving visitors lifts my spirits, and throughout the afternoon a virtual parade of students marches through my room."
+
+    #hide lilly # [str]
+    #with charaexit # [str]
+    hide misha # [str]
+    with charaexit # [str]
+    hide shizu # [str]
+    with charaexit # [str]
 
     "As I expected, the reactions of the students here is totally different from those at my last school."
 
@@ -716,7 +850,13 @@ label en_H25:
 
     "But here, it's almost as if it's totally natural to see a friend immobilised in a hospital bed."
 
-    emi "Only a month, eh? That's nothing. Any you miss your exams… lucky!"
+    show emi excited_happy at twocenteroff3 # [str]
+    with charaenter # [str]
+
+    emi "Only a month, eh? That's nothing. And you miss your exams… lucky!"
+
+    hide emi # [str]
+    with charaexit # [str]
 
     "Thankfully, most of them also realise that I can't talk all that much, but that doesn't seem to phase anyone."
 
@@ -726,13 +866,26 @@ label en_H25:
 
     "Throughout the entire affair, Lilly stoically sits in the chair closest to the door."
 
+    stop music fadeout 2.0 # [str]
+
     "Around six, the last of the visitors departs, leaving Lilly and I alone."
 
     hi "Lilly… I have some news of Hanako. Could you close the door?"
-
+    
+    show lilly cane_oops_cas at leftoff # [str]
+    with charachange # [str]
+    
     "The troubled look Lilly gives me at the mention of Hanako reminds me that this won't be easy for either of us."
 
+    # not literal animations, eh? [str]
+    #show lilly cane_oops_cas at rightedge # [str]
+    #with charamove # [str]
+    show lilly cane_oops_cas at center #twoleftoff # [str]
+    with charamove_slow # [str]
+
     "Still, she gently gets out of her chair, pushes the door closed, and finds her way to the chair next to my bed."
+
+    play music music_drama fadein 2.0 # [str]
 
     li "So… I take it you've learnt something?"
 
@@ -744,6 +897,9 @@ label en_H25:
 
     li "She told me that her parents were killed in a fire, and that she was badly burnt."
 
+    show lilly cane_surprised_cas # [str]
+    with charachange # [str]
+
     li "… Is that wrong?"
 
     hi "No, no it's not wrong, but it turns out that it's only half of the story."
@@ -752,6 +908,9 @@ label en_H25:
 
     hi "Hanako… is mentally unstable."
 
+    show lilly cane_displeased_cas # [str]
+    with charachange # [str]
+
     "Slowly, and trying to remember everything the doctor from the day before told me, I explain Hanako's condition to Lilly."
 
     "Her face tells me that this is the first that she's ever heard of this part of the story."
@@ -759,6 +918,9 @@ label en_H25:
     "I finish by telling her about Hanako's present condition, and her isolation from the world."
 
     "For a time, neither of us can speak."
+
+    show lilly cane_surprised_cas # [str]
+    with charachange # [str]
 
     li "I… never knew. After all this time, she still didn't trust either of us enough…"
 
@@ -774,6 +936,9 @@ label en_H25:
 
     hi "I just want to see her… to let her know that I'm there…"
 
+    show lilly cane_concerned_cas # [str]
+    with charachange # [str]
+
     li "As do I. I can't imagine that her isolation is helping her."
 
     li "Tomorrow, I will speak with her doctors."
@@ -784,11 +949,16 @@ label en_H25:
 
     hi "That… thank you, Lilly."
 
+    show lilly cane_weaksmile_cas # [str]
+    with charachange # [str]
+
     li "My my, I'm not just doing this for you, Hisao."
 
     li "Hanako is quite precious to myself as well, you know."
 
     "A glimmer of a smile flashes across Lilly's face, and in that moment, I know that everything is going to be fine."
+
+    stop music fadeout 2.0 # [str]
 
     "Lilly is quite the capable negotiator, so she should be able to organise something…"
 
@@ -800,13 +970,19 @@ label en_H25:
 
     #Lol one shot.
 
+    show lilly cane_sleepy_cas # [str]
+    with charachange # [str]
+
     li "That's quite alright, I was just making my way out."
+
+    hide lilly # [str]
+    with charaexit # [str]
 
     "As the nurse feeds me my dinner, my thoughts once again turn to Hanako, alone in her room."
 
     "Hanako, suffering, all alone."
 
-    "A pang of guilt floods through m body."
+    "A pang of guilt floods through my body."
 
     "If I had only taken her somewhere else the other day, we would have been fine."
 
@@ -815,6 +991,8 @@ label en_H25:
     "If I had only seen Hanako's inner self instead of absorbing myself in how she acted…"
 
     "Gah this is getting me nowhere."
+
+    play music music_soothing fadein 2.0 # [str]
 
     "Nurse" "You're thinking about your friend, right?"
 
@@ -856,7 +1034,10 @@ label en_H25:
     "At the conclusion of my meal, the nurse collects the scattered dishes onto her trolley, and leaves me."
 
     "Nurse" "Just remember, this is what's best for both of you. You'll be together again in no time."
-
+    
+    stop music fadeout 2.0 # [str]
+    
+    play sound sfx_doorclose # [str]
     "The door closes with a click, and I am alone."
 
     "I feel so helpless here, unable to even get out of my bed."
@@ -884,16 +1065,41 @@ label en_H25:
     "The effort, however, has exhausted me, and I quickly fall into a fit of sleep."
 
     #timeskip
+    window hide # [str]
+
+
+
+    scene black # [str]
+    with shuteye # [str]
+
+    with Pause(1.0) # [str]
 
     mystery "Hisao…"
 
     mystery "Hisao…?"
 
+    scene bg misc_ceiling #hosp_room2 # [str]
+    with openeye # [str]
+
+    show lilly cane_satisfied_cas_close at Position(xanchor=0.5, xpos=0.15, yanchor=1.0, ypos=1.15, rotate=70) # [str]
+    with charaenter # [str]
+
     "A gentle voice recalls me from the void, and I open my eyes to see Lilly's face hovering above my bed."
 
     hi "Lilly… what time… no, what day is it?"
 
+    show lilly cane_ara_cas_close at Position(xanchor=0.5, xpos=0.15, yanchor=1.0, ypos=1.15, rotate=70)  # [str]
+    with charachange # [str]
+
     "Lilly tires her best to laugh, but it sounds horribly forced."
+
+    scene bg hosp_room2 # [str]
+    with locationchange # [str]
+
+    show lilly cane_weaksmile_cas at twoleft # [str]
+    with charachange # [str]
+
+    play music music_pearly fadein 0.2 # [str]
 
     li "It's Saturday morning, Hisao."
 
@@ -914,6 +1120,8 @@ label en_H25:
     hi "You really are something else. You know that, right?"
 
     #lilly blush
+    show lilly cane_cheerfulblush_cas at twoleft # [str]
+    with charachange # [str]
 
     li "My my, Hisao, you're embarrassing me."
 
@@ -922,12 +1130,17 @@ label en_H25:
     hi "Oh, really? What's going on? Did you find something out about Hanako?"
 
     #Lilly srs bsns
+    show lilly cane_reminisce_cas at twoleft # [str]
+    with charachange # [str]
 
     li "It would appear that Hanako is staying in the hospital's locked ward."
 
     hi "Locked ward? She's not in trouble for what she did, is she?"
 
     li "Oh my no. But it is the only place in the hospital where she can be constantly monitored."
+
+    show lilly cane_sad_cas at twoleft # [str]
+    with charachange # [str]
 
     li "Her doctors are really concerned about her."
 
@@ -941,7 +1154,12 @@ label en_H25:
 
     li "It's mostly for psychiatric patients, and visitors can help a lot of them through tough times."
 
+    show lilly cane_weaksmile_cas at twoleft # [str]
+    with charachange # [str]
+
     li "It's practically encouraged."
+
+    stop music fadeout 4.0 # [str]
 
     "Thoughts turn through my head."
 
@@ -950,7 +1168,7 @@ label en_H25:
     "As much as her doctors have warned against it, I can't stand not knowing how she's going."
 
     #"And the mixture of hope and fear on Lilly's face tells me that she feels exactly the same way."
-    
+    window hide # [str]
     return
 
 label en_choiceH26:
@@ -990,6 +1208,8 @@ label en_H27:
     hi "Locking her up like this is just… too sad."
 
     #lilly determined
+    show lilly cane_displeased_cas at twoleft # [str]
+    with charachange # [str]
 
     li "You are right. How can I help?"
 
@@ -1002,6 +1222,9 @@ label en_H27:
     hi "Y…yeah. I'm just a little tender, is all."
 
     li "Here, take my shoulder. Don't be shy now…"
+
+    show lilly cane_smileclosed_cas_close at twoleft # [str]
+    with charachange # [str]
 
     "I graciously accept Lilly's offer, and lean on her shoulder."
 
@@ -1016,8 +1239,13 @@ label en_H27:
     hi "I was just thinking that it's strange that you're the one that's leading me around for once."
 
     #lilly giggle
+    show lilly cane_giggle_cas_close at twoleft # [str]
+    with charachange # [str]
 
     li "I daresay you're right. It is a bit strange."
+
+    scene bg hosp_hallway # [str]
+    with locationchange # [str]
 
     "We make our way into the ward's hallways, blending into the crowd of the infirm and their guests."
 
@@ -1074,7 +1302,12 @@ label en_H27:
     "We say nothing more until we reach the doors of the locked ward."
 
     #Scene change. Yes, I know, new BG RAGE. I *may* be able to get these though.
-
+    
+    # nah, just using hack and unused school bg [str]
+    image bg school_hallwayextra = 'bgs/school_hallwayextra.jpg' # [str]
+    scene bg school_hallwayextra # [str]
+    with locationchange # [str]
+    
     "The glass doors look ominous, surrounded by a number of magnetic locks and sensors."
 
     "To the right of the door is a little window, manned by a nurse in a far-too-flowery uniform."
@@ -1155,7 +1388,23 @@ label en_H27:
 
     #This will require a new sprite set of three sprites. If this is too hard, then I will add
     #another line putting her in the same clothes as H23.
+    
+    # # # [str] (no longer truth!)
+    #window hide
+    #nvl show dissolve
+    #n "I'm sorry, but next scene will not have visuals because there's no suitable bg and sprites for upcoming events." 
+    #n "So i leave it for you to imagine."
+    #n " - [str]"
+    #nvl hide dissolve
+    #nvl clear
+    #window show
+    # # # [str]
 
+    scene bg hosp_paddedroom # [str]
+    show hanagown evil_hosp at Position(xanchor=0.5, yanchor=1.0, xpos=0.55, ypos=1.15) # [str]
+    show hanako_oiwadoor # [str]
+    with locationchange # [str]
+    
     "Hanako sits in the corner of the room, hugging her knees."
 
     "Her long, matted hair hangs over her face and legs, as if someone dumped a pile of old thread upon her curled frame."
@@ -1173,7 +1422,17 @@ label en_H27:
     "Lilly, sensing that no words will help, covers my hand with hers, and gently squeezes."
 
     "Drawing strength from Lilly, I toggle the door's lock, and make my way into the room."
-
+    window hide # [str]
+    
+    scene bg hosp_paddedroom # [str]
+    show hanagown evil_hosp at centersit # [str]
+    with whiteout # [str] ('cause dissolving door looks terrible)
+    
+    play sound sfx_lock # [str] 
+    play sound sfx_dooropen # [str]
+    
+    window show # [str]
+    
     "The sterility of the room extends beyond disinfectant; even the senses are washed clean by the room."
 
     "Bright, fluorescent light reflects off the bare-white walls."
@@ -1183,7 +1442,11 @@ label en_H27:
     "It is totally devoid of any kind of stimulation."
 
     "Behind me, I hear Lilly come in through the door."
-
+    
+    play sound "sfx/doorslam.ogg" # [str] (meh)
+    with Pause(0.8) # [str]
+    play sound sfx_lock # [str] 
+    
     "With a hiss of gas and a click, it swings itself shut, and locks."
 
     li "Oh, no. I'm sorry, Hisao… I didn't notice…"
@@ -1223,7 +1486,9 @@ label en_H27:
     "Moving my head gently towards hers, I start to pick out words in her incessant muttering."
 
     ha "I… k…d… im…"
-
+    
+    stop music fadeout 4.0 # [str]
+    
     ha "I… k…d… em…"
 
     ha "I killed him…"
@@ -1231,11 +1496,21 @@ label en_H27:
     ha "I killed them all…"
 
     #If there were some kind of "shock" effect, now would be the time to use it.
-
+    play sound sfx_heartfast # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
+    hide heartattack alpha  # [str]
+    with Dissolve (1.5) # [str]
+    
     "Hanako's words strike me to the core."
-
+    
+    play music music_drama # [str]
+    
     hi "Hanako? HANAKO!?"
-
+    
+    show hanagown normal_hosp at centersit # [str]
+    with charachange # [str]
+    
     "I brush away the hair covering her face to reveal her eyes."
 
     "Her cold, dead eyes, unable to focus on anything."
@@ -1290,6 +1565,9 @@ label en_H27:
 
     "At the mention of my name, Hanako's body tenses."
 
+    show hanagown worry_hosp at centersit # [str]
+    with charachange # [str]
+    
     "Her head snaps up, locking her eyes with mine."
 
     "For a brief instant, relief floods my body, nullifying the pain and torment."
@@ -1297,11 +1575,18 @@ label en_H27:
     hi "Hana…"
 
     #SFX Screech. Has to be done.
-
+    
+    show hanagown shock_hosp at centersit # [str]
+    with charachange # [str]
+    
     "Hanako's screech pieces my eardrums and burrows directly into my brain."
 
     "Her eyes, now totally awake, regard me in pure, abject terror."
 
+    show hanagown shock_hosp at center # [str]
+    with charafast # [str]
+    with vpunch # [str]
+    
     "She stands blot upright, throwing me to the ground."
 
     "As I try to collect my broken body, she bolts for the door."
@@ -1350,7 +1635,15 @@ label en_H27:
 
     "Like a cornered animal, Hanako lashes out at me."
 
+    play sound sfx_crunchydeath # [str]
+    # # dat rotozoom madness again
+    scene bg hosp_paddedroom at RotoZoom(0,-6,0.1,1.0,1.2,0.1, xalign=0.5, yalign=0.52) # [str]
+    show bloodred at Alpha(0.2,0.2,0.2) # [str] (i'm suprised that it's actually work)
+    with Dissolve(0.1) # [str]
+    with vpunch # [str]
+    
     "There is a sickening crunch as we collide, with Hanako pushing me square in my chest."
+    
 
     "As I collapse to my knees, I cough again."
 
@@ -1376,23 +1669,39 @@ label en_H27:
 
     "I summon my last reserves of strength, and reach out for her as she collapses in a heap."
 
+    show passoutOP1 # [str]
+    with None # [str]
+
     "As my froth-corrupted lungs fill with blood, the coughing stops."
 
     "The room gently, quietly, dims out of existence."
     
+    scene black # [str]
+    with Dissolve (1.5) # [str]
+    with Pause(1.0) # [str]
+    window hide # [str]
     return
 
 
 label en_end_hanakobad1:
     # Hanako bad end 1, after H27
-    scene black with dissolve
+    scene endscreen with dissolve #black with dissolve # [str]
+    with Pause(1.5) # [str]
+    
+    stop music fadeout 1.0 # [str]
+    
+    scene black with dissolve # [str]
     centered "~ hanako bad end 1 ~" with dissolve
     return
 
 label en_H28:
 
-
+    window show # [str]
+    
     hi "I… I think we should wait for the doctor's approval."
+
+    show lilly cane_sleepy_cas at twoleft # [str]
+    with charachange # [str]
 
     "Lilly's face drops in disappointment."
 
@@ -1413,6 +1722,8 @@ label en_H28:
     hi "I've been practicing getting up, just in case."
 
     #Lilly shocked
+    show lilly cane_surprised_cas at twoleft # [str]
+    with charachange # [str]
 
     li "Hisao! That's dangerous! You should rest!"
 
@@ -1423,6 +1734,8 @@ label en_H28:
     hi "The quicker I get better, the quicker I can get out of here, right?"
 
     #lilly smile
+    show lilly cane_smile_cas at twoleft # [str]
+    with charachange # [str]
 
     "Lilly flashes her golden smile at me, and, almost instantly, I feel relieved."
 
@@ -1438,6 +1751,9 @@ label en_H28:
 
     hi "I… I want to see her."
 
+    show lilly basic_smile_cas_close at twoleft # [str]
+    with charachange # [str]
+
     "Lilly reaches out for my hand, and I grasp it gently."
 
     li "So do I. But, we must remember, this is for her sake."
@@ -1449,6 +1765,8 @@ label en_H28:
     li "And, as an added bonus, you two can now say that you're living under the same roof."
 
     #lilly smile.
+    show lilly basic_cheerful_cas_close at twoleft # [str]
+    with charachange # [str]
 
     "I let out a little sigh of relief at Lilly's roundabout humour."
 
@@ -1456,11 +1774,19 @@ label en_H28:
 
     "The sound of the nurse with her food cart can be heard approaching the door."
 
+    show lilly cane_smileclosed_cas at twoleft # [str]
+    with charachange # [str]
+
     li "I guess I must take my leave now."
 
     "Lilly exits the room just as the nurse appears in the doorway."
 
+    hide lilly # [str]
+    with charaexit # [str]
+
     "The nurse bows slightly to Lilly, who disappears beyond the doorframe."
+
+    play music music_twinkle fadein 0.5
 
     "Nurse" "That's the same girl as yesterday, isn't it?"
 
@@ -1489,6 +1815,9 @@ label en_H28:
     "Nurse" "Well then, shall we start your dinner?"
 
     #my apologies if the NVL below is incorrectly called.
+    window hide # [str]
+
+    nvl show dissolve # [str]
 
     n "Days became weeks, which finally became a month."
 
@@ -1505,6 +1834,8 @@ label en_H28:
     n "We're not allowed to see her."
 
     n "Then, one Saturday…"
+
+    nvl hide dissolve # [str]
 
     nvl clear
 
@@ -1546,6 +1877,9 @@ label en_H28:
 
     "I swear that I can hear Lilly's cane from further away each day, its staccato clicking echoing down the halls and into my room."
 
+    show lilly cane_satisfied_cas at twoleft # [str]
+    with charaenter # [str]
+
     li "Hisao…"
 
     hi "Lilly…"
@@ -1553,6 +1887,8 @@ label en_H28:
     $ doublespeak (hi,li, "I have good news")
 
     #Lilly giggle
+    show lilly cane_giggle_cas at twoleft # [str]
+    with charachange # [str]
 
     "We both chuckle slightly at our similar thoughts."
 
@@ -1563,8 +1899,13 @@ label en_H28:
     hi "Well, I saw the doctor this morning, and he said I'm good for surgery."
 
     #lilly smile
+    show lilly cane_smile_cas at twoleft # [str]
+    with charachange # [str]
 
     li "That's wonderful!"
+
+    show lilly cane_smileclosed_cas at twoleft # [str]
+    with charachange # [str]
 
     li "However, I think you'll be more pleased at my news…"
 
@@ -1578,7 +1919,11 @@ label en_H28:
 
     hi "And? How is she? Can I see her?"
 
+    stop music fadeout 3.0 # [str]
+
     #lilly frown
+    show lilly cane_concerned_cas at twoleft # [str]
+    with charachange # [str]
 
     li "She… isn't the best of sorts."
 
@@ -1613,6 +1958,8 @@ label en_H28:
     hi "…tell her that I miss her, and that I can't wait to see her."
 
     #Lilly giggle
+    show lilly cane_giggle_cas at twoleft # [str]
+    with charachange # [str]
 
     li "You two are so alike."
 
@@ -1620,9 +1967,15 @@ label en_H28:
 
     "Lilly stands up, making ready to leave."
 
+    show lilly cane_smile_cas at tworight # [str]
+    with charamove_slow # [str]
+
     "At the door, she turns back to face me."
 
     li "Hanako said exactly the same thing."
+
+    hide lilly # [str]
+    with charaexit # [str]
 
     "As she waltzes out into the corridor, I feel a wave of joy overtaking my body."
 
@@ -1658,6 +2011,11 @@ label en_H28:
 
     "I see a reflection of a person desperately wanting to see someone."
 
+    window hide # [str]
+    scene black # [str]
+    with shuteye # [str]
+    with Pause(1.0) # [str]
+
     return
 
 label en_H29:
@@ -1674,9 +2032,14 @@ label en_H29:
     
     scene white
     with dissolve
+    #show n_vignette # [str] (i'd be very happy if that work)
+    with Pause(2.0)
     
     play sound sfx_powerout
         
+    scene black # [str]
+    with dissolve # [str]
+    
     centered "*Fzzzt*"
     
     "The lights of the town went out with the sound of dying electricity; a blackout caused by excessive snowfall."
@@ -1738,8 +2101,9 @@ label en_H29:
 
     "The woman puts down her pencil, and picks up her daughter, placing her on her lap."
 
-    "Mother" "Shhh now, Hanako."
-
+    "Mother" "Shhh now, Hana-chan." # [str] (just a small change that feels absolutely appropriate to me)
+    #"Mother" "Shhh now, Hanako."
+    
     #If we do ever decide to drop honourifics, this should be changed to whatever Lilly calls
     #Hanako.
 
@@ -1796,7 +2160,12 @@ label en_H29:
     "…smells a strange smell…"
     
     $ renpy.music.set_volume(0.15, 2.0, channel='ambient')
-
+    
+    # orange blaze. looks awful. [str]
+    #scene expression Solid("#c46e2e")  # [str]
+    #show n_vignette alpha # [str]
+    #with dissolve # [str]
+    
     "…and realises that the corridor is much brighter than it ought to be."
     
     $ renpy.music.set_volume(0.2, 2.0, channel='ambient')
@@ -1861,6 +2230,9 @@ label en_H29:
     
     "She stirs, and turns towards him, her tiny hand pushing through the snow towards him."
     
+    scene white # [str]
+    with dissolve # [str]
+    
     stop ambient fadeout 4.0
     stop music fadeout 4.0
 
@@ -1878,8 +2250,15 @@ label en_H29:
 label en_H30:
 
     #Obviously, this starts with a timeskip, and in darkness
+    scene black # [str]
+    with None # [str]
+    #with Pause(3.0) # [str] (needed?)
 
     mystery "Are you awake, Hisao?"
+
+    scene bg hosp_postop # [str]
+    with Dissolve (1.5) # [str]
+    play music music_rain fadein 2.0 # [str]
 
     "My groggy brain floats back into consciousness, and I slowly become aware of my surroundings once again."
 
@@ -1927,6 +2306,9 @@ label en_H30:
 
     "The nurse nods, and summons some orderlies to wheel my bed back to my room."
 
+    scene bg hosp_hallway # [str]
+    with locationchange # [str]
+    
     "As I watch the fluorescent lights whiz by overhead, I as my parents a question."
 
     hi "How long before they'll let me out?"
@@ -1949,6 +2331,9 @@ label en_H30:
 
     "Has living away from home really changed me this much?"
 
+    scene bg hosp_room2 # [str]
+    with locationchange # [str]
+    
     "We arrive in my room, where the nurse already has a tray of food waiting for me."
 
     "There's another thing I can't wait to get away from; hospital food."
@@ -2015,7 +2400,18 @@ label en_H30:
 
     "Still feeling the effects of the anaesthetics, I blink twice, and fall asleep."
 
+    stop music fadeout 2.0 # [str]
+
     #timeskip/eye close thing.
+    window hide # [str]
+    scene black # [str]
+    with shuteye # [str]
+    with Pause(1.0) # [str]
+
+    scene bg hosp_room2 # [str]
+    with openeye # [str]
+
+    play music music_daily fadein 4.0 # [str]
 
     "Doctor" "Come on now, no need to sleep in this late…"
 
@@ -2023,7 +2419,7 @@ label en_H30:
 
     hi "What's the bad news?"
 
-    "the doctor flips through my chart and tuts a few times."
+    "The doctor flips through my chart and tuts a few times."
 
     "Doctor" "Well, it looks like we might be able to get you some fresh air, after all."
 
@@ -2077,6 +2473,8 @@ label en_H30:
 
     "Doctor" "You have a visitor."
 
+    stop music fadeout 2.0 # [str]
+
     "The doctor walks out of the door, and talks to someone just out of view."
 
     "He takes a step back, and motions to let someone into the room."
@@ -2084,6 +2482,11 @@ label en_H30:
     #A music change would be nice here. Something music-boxy.
 
     "It feels like my heart stops."
+
+    show hanabad emb_downtimid_sun # [str] (yay new sprites!)
+    with charaenter # [str]
+    
+    play music music_twinkle fadein 2.0 # [str]
 
     "A fragile figure appears in the doorway, her hands clamped together near her waist, her head cowed."
 
@@ -2098,7 +2501,10 @@ label en_H30:
     hi "Hanako? It's really you, isn't it?"
 
     "I can hold back no longer."
-
+    
+    show hanabad emb_downsad_sun_close # [str]
+    with charachange # [str]
+    
     "I race across the room and gather Hanako's frame into my arms, embracing her in a hug that threatens to re-open my scar."
 
     hi "Hanako, I've missed you so much."
@@ -2110,6 +2516,11 @@ label en_H30:
     hi "Hanako? Is something the matter?"
 
     "Slowly and purposefully, Hanako raises her head to look me in the eye."
+
+    show hanabad emb_sad_sun # [str]
+    with charachange # [str]
+    
+    $ renpy.music.set_volume(0.0, .5, channel="music") # [str]
 
     "Only now do I notice that she's wearing the same clothes that she wore on that fateful day."
 
@@ -2124,6 +2535,9 @@ label en_H30:
     "Her words are forced, her voice deadpan."
 
     "Just what is going on here?"
+
+    show hanabad emb_downtimid_sun # [str]
+    with charachange # [str]
 
     hi "Hanako, what's the matter? Please, what's going on?"
 
@@ -2165,7 +2579,18 @@ label en_H30:
 
     hi "Lilly?"
 
+    show hanabad emb_timid_sun # [str]
+    with charachange # [str]
+
     ha "Oh, Lilly's here?"
+    
+    $ renpy.music.set_volume(1.0, 2.0, channel="music") # [str]
+    
+    show hanabad emb_downtimid_sun at twoleft # [str]
+    with charamove # [str]
+
+    show lilly cane_surprised_cas at tworight # [str]
+    with charamove # [str]
 
     li "My my, I didn't expect you to get here so soon, Hanako."
 
@@ -2176,6 +2601,8 @@ label en_H30:
     hi "And I get discharged today, so we get ot go home together."
 
     #lilly ufufufufu
+    show lilly cane_smile_cas at tworight # [str]
+    with charachange # [str]
 
     li "You make it sound coincidental, Hisao."
 
@@ -2201,7 +2628,14 @@ label en_H30:
 
     hi "Now, I'll just get dressed and we'll be off."
 
+    hide lilly # [str]
+    hide hanabad # [str]
+    with charaexit # [str]
+
     "True to my word, I get dressed and meet the girls in the hallway."
+
+    scene bg hosp_hallway # [str]
+    with locationchange # [str]
 
     "There, I find them talking to my parents and my doctor."
 
@@ -2227,6 +2661,10 @@ label en_H30:
 
     "Like an excited sheep dog, my father herds us all into the waiting hire car in the Hospital's car park."
 
+    scene bg hosp_ext # [str]
+    with locationchange # [str]
+    stop music fadeout 2.0 # [str]
+    
     "I take one last look at the hospital, trying to search out my window."
 
     "I haven't seen it from the outside yet, but it's just like every other hospital."
@@ -2241,13 +2679,24 @@ label en_H30:
 
     hi "You're right. Let's go."
 
+    stop music fadeout 2.0 # [str]
+
     "The car's engine roars into life, and I slowly watch the hospital disappear into the distance, my hand gently wrapped around Hanako's."
+
+    window hide # [str]
+    scene black # [str]
+    with dissolve # [str]
+    
+    with Pause(2.0) # [str]
 
     return
 
 label en_H31:
-
+    with Pause(0.1) # [str]
+    
     #BG: Dormroom
+    scene bg school_dormhisao_ss # should be not _ni? [str]
+    with shorttimeskip # Dissolve (1.5) # [str]
 
     "My parents seem to take forever to leave, fussing over me at every step."
 
@@ -2289,11 +2738,26 @@ label en_H31:
 
     "I pull the crumpled sheets over my body and fall asleep."
 
+    scene black # [str]
+    with shuteye # [str]
+
+    with Pause(1.5) # [str]
     #sleep timeskip
+    
+    play sound sfx_alarmclock # [str]
+
+    scene bg school_dormhisao # [str]
+    with openeye # [str]
+    #with locationchange # [str]
+
+    play music music_dreamy fadein 0.3 # [str]
 
     "For the first time in weeks, I am woken by my alarm."
 
     "I dress in my uniform and make my way to the girl's dorm."
+
+    scene bg school_dormext_full # [str]
+    with locationchange # [str]
 
     "The rest of the students are preparing for the final day of their exams, or have already started their holidays."
 
@@ -2307,6 +2771,9 @@ label en_H31:
 
     "I guess I'll have to ask my mom about how to remove stains like these…"
 
+    show hanabad emb_downdetermined # [str]
+    with charaenter # [str]
+
     "Eventually, Hanako emerges from the dorm, her eyes bloodshot, her hair in a mess."
 
     hi "Good morning, Hanako!"
@@ -2315,18 +2782,30 @@ label en_H31:
 
     ha "Morning."
 
+    hide hanabad # [str]
+    with charaexit # [str]
+
     "Without waiting for me, she starts walking towards the main building."
 
     "I step out to catch up with her, but her pace is too much for me to keep up with her."
 
-    "Only when she stops in front of the door to the teacher's office do I mange to reach her side."
+    scene bg school_hallway3 # [str]
+    with locationchange # [str]
+    stop music fadeout 3.5 #2.0 # [str] (longer!)
 
+    "Only when she stops in front of the door to the teacher's office do I mange to reach her side."
+    
+    show hanabad emb_downdetermined at tworight # [str]
+    with charaenter # [str]
+    
     "My panting gives away the fact that I have done very little exercise in recent history."
 
     hi "That's some pace you've got there."
 
-    ha "I just want to get this done with an go home."
+    ha "I just want to get this done with an go home.{w=0.4}{nw}" # [str] (insta-linechange!)
 
+    play sound sfx_doorknock2 # [str]
+    
     "Without giving me time to reply, she gently knocks on the door."
 
     mu "Come in."
@@ -2334,6 +2813,15 @@ label en_H31:
     "Hanako just stands in front of the door, her hand still raised, as if she were going to knock again."
 
     "I step in close to her, and slide the door open."
+
+    play sound sfx_dooropen # [str]
+    
+    scene bg school_scienceroom # [str]
+    with locationchange # [str]
+    play music music_another fadein 0.3 # [str]
+
+    show muto normal # [str]
+    with charaenter # [str]
 
     mu "Ah, Nakai, Ikezawa, you made it. Please, take a seat."
 
@@ -2344,7 +2832,10 @@ label en_H31:
     mu "We'll let you sit your exams individually in a week's time."
 
     mu "Of course, they won't be the same as the one the others took, so don't try and cheat like that!"
-
+    
+    show muto smile # [str]
+    with charaenter # [str]
+    
     "Mutou lets out an unconvincing laugh, which he quickly covers up after seeing our lack of reaction."
 
     "Seeing that his attempt at a joke has failed, he hands Hanako and I a thick stack of paper."
@@ -2369,12 +2860,25 @@ label en_H31:
 
     mu "Good luck."
 
+    stop music fadeout 1.4 # [str]
+    
+    hide muto # [str]
+    with charaexit # [str]
+    
     "Mutou turns back to his overflowing desk, and Hanako stands up, making her way for the door."
 
     "This time, however, I'm expecting her burst of speed, and at least manage to keep pace with her on the way back to the dorms."
 
-    "Before she opens the door to the girls' dorm, I grab Hanako's hand."
+    scene bg school_dormext_full # [str]
+    with locationchange # [str]
 
+    play music music_hanako fadein 0.1 # [str] (maybe instaplay?)
+
+    "Before she opens the door to the girls' dorm, I grab Hanako's hand."
+    
+    show hanabad def_worry_close # [str]
+    with charaenter # [str]
+   
     ha "Huh?"
 
     hi "Hey, I was wondering…"
@@ -2384,15 +2888,24 @@ label en_H31:
     hi "There's a lot of them."
 
     "Hanako looks at me with her lifeless eyes."
+    
+    show hanabad emb_downtimid_close # [str]
+    with charachange # [str]
 
     ha "Maybe later."
 
     ha "I'm going to bed."
 
     hi "But you just got up?"
-
+    
+    show hanabad emb_timid_close # [str]
+    with charachange # [str]
+    
     "For a second, a glimmer of life flashes across Hanako's face."
-
+    
+    show hanabad emb_downtimid_close # [str]
+    with charachange # [str]
+    
     "It vanishes almost as quickly as it appeared."
 
     ha "I… I'm sorry."
@@ -2411,11 +2924,19 @@ label en_H31:
 
     ha "Please don't…"
 
+    hide hanabad # [str]
+    with charaexit # [str]
+
     "Without saying another word, she enters the girl's dorm, and vanishes."
 
     "Shocked, I walk back to my room, and start flicking through the wad of paper Mutou gave me."
 
+    stop music fadeout 2.0 # [str]
     #timeskip
+    #with Pause(1.0)
+
+    scene bg school_dormhisao # [str]
+    with shorttimeskip # [str]
 
     "After working all morning, I have barely scraped the surface of Mutou's notes."
 
@@ -2428,6 +2949,12 @@ label en_H31:
     "Besides, I have to check in with the nurse at some point today."
 
     #BG change to nurse's office.
+    scene bg school_nurseoffice # [str]
+    with shorttimeskip # [str]
+    play music music_nurse fadein 0.2 # [str]
+
+    show nurse neutral # [str]
+    with charaenter # [str]
 
     nk "Ah, Hisao. I've been expecting you."
 
@@ -2440,6 +2967,8 @@ label en_H31:
     hi "I won't lie. I've been better."
 
     #smile
+    show nurse grin # [str]
+    with charachange # [str]
 
     nk "Well, I kind of expected that."
 
@@ -2448,6 +2977,9 @@ label en_H31:
     nk "Mind if I take a look?"
 
     "I oblige the nurse and unbutton my shirt."
+
+    show nurse concern # [str]
+    with charachange # [str]
 
     "He turns the desk lamp to illuminate my chest, and examines the scar thoroughly."
 
@@ -2478,6 +3010,8 @@ label en_H31:
     hi "What?!"
 
     #Nurse laugh
+    show nurse grin # [str]
+    with charachange # [str]
 
     nk "Sorry, couldn't help myself."
 
@@ -2490,6 +3024,8 @@ label en_H31:
     hi "Well, I do, but it's not about me…"
 
     #Nurse "knowing look" or srs bsns. Whatever we have.
+    show nurse concern # [str]
+    with charachange # [str]
 
     nk "Ah. Let me guess; Hanako?"
 
@@ -2524,16 +3060,27 @@ label en_H31:
     hi "Thanks. You enjoy doing this, don't you?"
 
     #nurse smile
+    show nurse fabulous # [str]
+    with charachange # [str]
 
     nk "Whatever makes you think that?"
+    
+    stop music fadeout 2.0 # [str]
 
     #BG change to room
+    scene bg school_dormhisao # [str]
+    with shorttimeskip # [str]
 
+    show hanabad emb_downdetermined at twoleft # [str]
+    with charaenter # [str]
+    
     "I open the door to my room, and see a figure sitting at my desk, slowly turning the pages of revision problems that I finished this morning."
 
     hi "Hanako, are you feeling better now?"
 
     ha "A little."
+
+    play music music_hanakohscene fadein 0.1 # [str]
 
     "She says that, but she looks just as dishevelled as she did this morning."
 
@@ -2546,7 +3093,14 @@ label en_H31:
     hi "Apologise? For what?"
 
     ha "This morning."
-
+    
+    hide hanabad # [str]
+    with charaexit # [str]
+    # check if it's working as i want! [str]
+    
+    show hanabad emb_downtimid_close # [str]
+    with charaenter # [str]
+    
     "I walk over to Hanako, dropping the nurse's novelty band-aids on my bed as I pass it."
 
     hi "Don't worry about it."
@@ -2556,7 +3110,10 @@ label en_H31:
     hi "I'll wait forever, if I have to."
 
     ha "What will you wait for?"
-
+    
+    show hanabad emb_timid_close # [str]
+    with charachange # [str]
+    
     "Hanako looks at me, bluntly."
 
     hi "I… er… I'll wait for you?"
@@ -2566,13 +3123,20 @@ label en_H31:
     "This isn't how I imagined “being there for her.”"
 
     "Hanako sighs, and drops the notes onto my desk."
-
+    
+    show hanabad def_strain_close # [str]
+    with charachange # [str]
+    
     ha "That's it, isn't it?"
 
     ha "You'll wait for me."
 
     ha "Because that's what you want, isn't it?"
-
+    
+    show hanabad def_angry_close # [str]
+    with charachange # [str]
+    with Pause(0.5) # [str]
+    
     ha "Me."
 
     "I try to read Hanako's face, but her eyes tell me nothing."
@@ -2582,7 +3146,10 @@ label en_H31:
     #I can't believe I'm about to do this, but I sincerely hope I do it right.
 
     hi "T…that's not right."
-
+    
+    show hanabad def_strain_close # [str]
+    with charachange # [str]
+    
     "Hanako stands up purposefully, drawing close to me."
 
     ha "Isn't it?"
@@ -2592,7 +3159,10 @@ label en_H31:
     "My throat swells up, and I can barely force out my words."
 
     hi "Yes. Yes, I love you, Hanako."
-
+    
+    show hanabad emb_downtimid_close # [str]
+    with charachange # [str]
+    
     ha "Why?"
 
     "She doesn't ask the question accusingly, nor angrily."
@@ -2606,7 +3176,7 @@ label en_H31:
     ha "Huh."
 
     "She takes a deep breath, and exhales slowly."
-
+    
     ha "My doctors told me that I should feel more free to express myself."
 
     ha "They put me on these medications to relieve my anxiety."
@@ -2616,13 +3186,23 @@ label en_H31:
     hi "It's okay Hanako… I spoke to the nurse about you just then and he said this is normal…"
 
     #Hanako almost angry or something
-
+    show hanabad def_angry_close # [str]
+    with charachange # [str]
+    
     ha "Normal?"
 
     ha "So I guess this is what normal is like then."
-
+    
+    # that looks like a bit of overkill, but it looks kinda good [str]
+    hide hanabad # [str]
+    with charaexit # [str]
+    show hanabad def_strain # [str]
+    with charaenter # [str]
+    show hanabad def_strain at centersit # [str]
+    with charamove_faster #charafast #charamove # [str]
+    
     "Hanako sits on my bed."
-
+    
     ha "You still haven't answered my question."
 
     hi "Huh?"
@@ -2632,6 +3212,20 @@ label en_H31:
     ha "I guess I should save you the trouble."
 
     "Without warning, and in slow movements, Hanako unbuttons her shirt."
+
+    # that's kind of a hack, i guess
+    stop music fadeout 4.0 # [str]
+    play music music_hanakofinal fadein 4.0 # [str]
+
+    play sound sfx_whiteout # [str]
+    
+    hide hanabad # [str]
+    with None # [str] (instahide)
+    
+    # I REALLY HOPE THIS WILL WORK [str] (and it actually does!)
+    image ev hanako_scars_d = 'event/hanako_scars.jpg'
+    scene ev hanako_scars_d # [str]
+    with whiteout # [str]
 
     "It falls to the bed, soundlessly, revealing her chest and torso."
 
@@ -2666,7 +3260,9 @@ label en_H31:
     ha "You said you loved me, right?"
 
     #ha "Is this not what you've been waiting for?"
-
+    
+    window hide # [str]
+    
     return
 
 label en_choiceH31:
@@ -2693,6 +3289,10 @@ label en_H31a:
 
     "I slide my hands over her skin, feeling the change between her natural skin and the grafted tissue."
 
+    # new stuff, yay! [str]
+    scene ev hanako_bed_boobs_neutral_d # [str]
+    with whiteout # [str]
+    
     "Instinct and lust take over, and I feel myself cupping her breast with one hand whilst removing my pants with the other."
 
     "Hanako's eyes are closed, but otherwise she wears the face of someone waiting for a bus."
@@ -2704,9 +3304,15 @@ label en_H31a:
     "This isn't how it's supposed to happen."
 
     "But it's too late."
-
+    
+    scene ev hanako_missionary_underwear_neutral_d # [str]
+    with whiteout # [str]
+    
     "My lust has taken control of my faculties, and I feel myself tearing aside her panties to clear a path for my member."
-
+    
+    scene ev hanako_missionary_neutral_d # [str]
+    with locationchange # [str]
+    
     "As I enter her, I lean down and kiss her lips."
 
     "She doesn't even flinch, and I realise that I may as well have kissed a corpse."
@@ -2716,7 +3322,10 @@ label en_H31a:
     "No reaction."
 
     "Wait…"
-
+    
+    scene ev hanako_missionary_hate_d # [str]
+    with locationchange # [str]
+    
     "Her eyes snap open, regarding me with a mixture of disgust and contempt."
 
     #A reference of the look I'm looking for:
@@ -2731,32 +3340,72 @@ label en_H31a:
     "The voice in my head screams, and my body convulses in abject terror."
 
     "Somehow, I manage to avoid collapsing onto Hanako's listless frame, and stand up next to my bed."
-
+    
+    scene bg school_dormhisao # [str]
+    with locationchange # [str]
+    
+    show hanagown nude_disgust_close # [str]
+    with charaenter # [str]
+    
     "Her empty eyes are locked onto mine, following me wherever I turn."
 
     "I try to step backwards, only to trip on my half-removed pants."
 
     "I feel my world tumble rapidly, but Hanako's gaze never leaves mine."
 
+    play sound sfx_crunchydeath # [str]
+    scene bg misc_ceiling # [str]
+    with vpunch # [str]
+    
     "My neck connects with the corner of the desk with a sickening crack."
+    
     
     "In an instant, I can no longer feel my body."
     
+    #Use this to do a transition that lasts over multiple lines of text
+    #I've heard that it doesn't work with filters, so you'll have to implement the im.MatrixColor manually
+    #This is taken from Rin's route, scene R34
+    #Originally done by Kelper
+ 
+    # anim.TransitionAnimation( pre, ???, function, post ) [str]
+    image fortheloveofgodcomeonworkWORKALREADY1 = anim.TransitionAnimation("bgs/misc_ceiling.jpg", 0.5, Dissolve(6.0), im.MatrixColor('bgs/misc_ceiling.jpg', im.matrix.tint(0.4, 0.4, 0.4) * (im.matrix.saturation(0.01))))
+    show fortheloveofgodcomeonworkWORKALREADY1
+    
+    # gosh, i ever though that making a simple dissolve from regular to filtered bg can be THIS problematic [str]
+    
     "I watch as it limply tumbles to the ground, more an assortment of limbs than a living organism."
+    
+    # and his world turns all gray... [str]
+    #image bg ceiling_gray = death('bgs/misc_ceiling.jpg') # [str] 
+    #show bg misc_ceiling_death # [str]
+    #$ renpy.transition(Dissolve(6.0), layer='master') # [str]
+    #with Dissolve(6.0) # [str]
+    #show hanakoa4_deathbg # [str]
+    #with Dissolve(6.0) # [str]
+    
+
     
     "Eventually, the macarbe dance of my body comes to an end, my head lying at an impossible angle."
     
     "Hanako lies on the bed, dead still, her face showing no emotion whatsoever."
     
     "My face feels cold; I'm probably only being supported by the small pacemaker in my chest now."
-    
+
     "As my life drains away, Hanako does naught but watch my palloured face."
+    
+    show passoutOP1 # [str]
+    with None # [str]
     
     "The world slowly loses color, the room turning from shades of grey to black."
     
     "Just before the last glimmer of light blinks out, I hear a single word at the edge of my dying hearing."
     
     ha "Disgusting."
+
+    window hide # [str]
+    
+    scene black
+    with None
 
     #Bad end. You are now dead.
     #There's my true feelings, TC.
@@ -2765,13 +3414,19 @@ label en_H31a:
     #Also, please let me know if this isn't depressing enough. It's rather late right now.
     #I'm more than willing to edit the shit out of this scene for maximum effect.
     #PS: Sorry weee. No-one should have to draw this kind of thing.
-
+    
+    
     return
 
 label en_end_hanakobad2:
     # Hanako bad end 2, after H31a
-    scene black with dissolve
+    scene endscreen with dissolve #black with dissolve # [str]
+    with Pause(1.5) # [str]
+    
+    scene black with dissolve # [str]
     centered "~ hanako bad end 2 ~" with dissolve
+    stop music fadeout 2.0 # [str]
+    
     return
 
 label en_H32:
@@ -2804,38 +3459,75 @@ label en_H32:
 
     "Eventually, Hanako sighs, and takes the dress from me."
 
-    "I watch in shock as she dresses silently."
+    scene bg school_dormhisao # [str]
+    with locationchange # [str]
 
+    "I watch in shock as she dresses silently."
+    
+    show hanabad emb_downtimid_cry # [str]
+    with charaenter # [str]
+    
     "She teases her hair into a semblance of its usual glory, and moves to leave my room."
 
     "Her head is bowed lower than I've ever seen it before, and as she passes me, she whispers in a voice full of tears."
-
+    
+    show hanabad emb_downtimid_cry at rightedge # [str]
+    with charamove_faster # [str]
+    
     ha "sorry"
 
     #sic, no punctuation/caps.
 
+    hide hanabad # [str]
+    with charaexit # [str]
+    
     "She leaves at a pace somewhere between walking and running, rapidly disappearing beyond the door jamb."
+
+    stop music fadeout 3.0 # [str] (not sure if appropriate, check!)
+
+    scene bg school_dormhallway # [str]
+    with locationchange # [str]
 
     "It takes me a moment to summon the courage to give chase, but she is nowhere to be seen."
 
+    scene bg school_dormext_full # [str]
+    with locationchange # [str]
+
     "Depressed, I walk to the girl's dorm."
+
+    scene bg school_girlsdormhall # [str]
+    with locationchange # [str]
 
     "Hanako isn't here."
 
     "As I stand in her doorway, dejected, Lilly approaches me."
-
+    
+    play sound sfx_dooropen # [str]
+    
+    show lilly basic_surprised at leftoff # [str]
+    with charaenter # [str]
+    
     li "Hisao? Is something the matter?"
 
     hi "It's Hanako. She's… not Hanako anymore."
-
+    
+    show lilly basic_reminisce at leftoff # [str]
+    with charachange # [str]
+    
     li "I… I think we should have a talk, Hisao."
+
+    scene bg school_dormlilly # [str]
+    with locationchange # [str]
 
     "Lilly leads me into her room, and I close the door behind us."
 
     "My body, still in some state of shock, goes through the motions of preparing tea in Lilly's dainty set."
 
     "Once we are settled with a small cup in front of us, Lilly begins to speak."
-
+    
+    show lilly basic_reminisce at centersitlow # [str]
+    with charaenter # [str]
+    
     li "I… I must apologise for not warning you."
 
     li "Hanako hasn't been the same lately."
@@ -2846,7 +3538,12 @@ label en_H32:
 
     hi "Right…?"
 
+    show lilly basic_sad # [str]
+    with charachange # [str]
+    
     "The look on Lilly's face doesn't fill me with confidence."
+
+    play music music_sadness fadein 0.1 # [str] (hope it's not too late)
 
     li "I've been speaking with her doctors for some time now, and they warned me that this may happen."
 
@@ -2861,7 +3558,10 @@ label en_H32:
     hi "She's still Hanako!"
 
     "Lilly reaches out across the table, her hand colliding with my chest."
-
+    
+    show lilly basic_reminisce_close # [str]
+    with charachange # [str]
+    
     "She slides it up to my shoulder, the contact silencing me."
 
     li "Sometimes, people don't come back."
@@ -2871,7 +3571,10 @@ label en_H32:
     li "Our Hanako…"
 
     "Crystal tears start to flow from the corners of Lilly's sightless eyes."
-
+    
+    show lilly basic_sad_close at centersitlow # [str]
+    with charachange # [str]
+    
     li "… may never come back."
 
     "Hanako's zombie-like eyes flash into my memory, lying on my bed, her pale skin exposed to the world."
@@ -2890,8 +3593,11 @@ label en_H32:
 
     li "We need to be strong for her."
 
+    show lilly basic_surprised # [str]
+    with charachange # [str]
+    
     "In a fit of confused rage, I knock away Lilly's hand."
-
+    
     hi "How we be strong for her if it's not even her!"
 
     hi "Just how long will we be waiting for?"
@@ -2899,7 +3605,10 @@ label en_H32:
     hi "The Hanako I just saw was not Hanako. She was barely even a person."
 
     li "Hisao…"
-
+    
+    show lilly basic_sad # [str]
+    with charachange # [str]
+    
     hi "Enough!"
 
     hi "It's their fault."
@@ -2909,7 +3618,9 @@ label en_H32:
     hi "It's all the doctor's fault!"
 
     #Lilly pleading
-
+    show lilly basic_oops at centersit # [str]
+    with charamove # [str]
+    
     "Lilly raises up on her knees, her hand desperately searching out for me."
 
     li "Hisao, please!"
@@ -2929,15 +3640,32 @@ label en_H32:
     hi "I'm going to put a stop to this."
 
     "Lilly tries to stand up, but in her haste, she trips on the small table, crashing over it."
-
+    
+    # move before text? [str]
+    with vpunch # [str]
+    show lilly basic_oops at Position(yanchor=0.0, ypos=2.00) # [str] (should work?)
+    with charamove # [str]
+    
+    play sound sfx_impact2 # [str]
+    hide lilly # [str]
+    with charaexit # [str] (maybe None?)
+    
     "A shower of broken china rains down upon the room and the girl sprawled across its floor."
 
     "It takes every last drop of my enraged determination to turn away from her."
 
     li "Hisao… please…"
 
+    scene bg school_girlsdormhall # [str]
+    with locationchange # [str]
+    play sound "sfx/doorslam.ogg" # [str] (meh)
+    
     "I exit her room, closing out her pleading whimpers with her door."
 
+    scene bg school_dormhanako at bgright # [str]
+    with locationchange # [str]
+    play sound sfx_dooropen # [str]
+    
     "As I enter Hanako's room, I notice that she still hasn't returned."
 
     "Good."
@@ -2953,6 +3681,8 @@ label en_H32:
     "It leaves my face tear-stained."
 
     "Eventually, I find what I am looking for; a small, white plastic bottle."
+    
+    show pills # [str]
 
     hi "Lithium Carbonate…"
 
@@ -2961,17 +3691,29 @@ label en_H32:
     hi "Just what the hell have they got you on?"
 
     "I stare at the tiny bottle in my hands as my feet carry me to the bathroom in the hall."
+        
+    hide pills # [str]
+
+    scene bg school_dormbathroom # [str]
+    with locationchange # [str]
 
     "Twisting the top open releases a smell all to familiar to me; the chalky odour of medication."
 
     "The tiny white ovals flow from the upturned bottle, making a staccato melody as they splash down into the pool of water in the toilet's bowl."
-
+    
+    stop music fadeout 4.0 # [str]
+    
     "Emotionlessly, I push down the unassuming silver button, sending Hanako's pills away in a swirl of water."
 
     "As my rage dies down, I hear a quivering breath behind me."
 
+    show lilly basic_sleepy at twoleft # [str]
+    with charaenter # [str]
+    
     li "What… did you just do?"
 
+    #with vpunch # [str] (meh, doesnt look like collapsing to the floor)
+    
     "Lilly's broken voice breaks me, and I collapse to the toilet's floor, still holding the pill bottle in my hand."
 
     hi "I…"
@@ -2982,6 +3724,13 @@ label en_H32:
 
     hi "don't… know…"
 
+    play music music_drama fadein 0.1 # [str]
+    
+    hide lilly # [str]
+    with charaexit # [str]
+    show lilly basic_sad_close at centersit # [str]
+    with charaenter # [str]
+    
     "Lilly carefully guides herself to the floor by my side, and wraps her arms around me."
 
     "Broken, I let out sobs of despair."
@@ -2989,13 +3738,24 @@ label en_H32:
     "Lilly gently coos and shushes in my ear, rocking slightly to calm me."
 
     "We sit there on the floor of the bathroom, until a scraping noise distracts us."
-
+    
+    show lilly basic_sad # [str]
+    with charachange # [str]
+    
     "Wiping the dampness from my face, I stand up and help Lilly to her feet."
-
+   
     "Supporting each other, we enter the small hallway to find the source of the disturbance."
-
+    
+    # positioning isnt working [str]
+    scene bg school_dormhanako at bgright # [str]
+    with locationchange # [str]
+    
+    show lilly basic_sad at tworight # [str]  
+    show hanabad emb_downtimid at twoleftsit # [str]
+    with charaenter # [str]
+    
     "Hanako sits on the floor of her room, quietly folding the clothes scattered around her room."
-
+    
     ha "Oh. Hello Lilly, Hisao."
 
     "Hanako shows no emotion towards either the state of her room or the arrival of Lilly and myself."
@@ -3007,7 +3767,10 @@ label en_H32:
     "I try to speak, but once again find my throat choked."
 
     "Instead, I slip the empty bottle into my pocket, fall to my knees, and start to fold a blouse."
-
+    
+    show lilly basic_sleepy at tworightsit # [str]
+    with charachange # [str]
+    
     "Lilly too kneels upon the floor, and I hand her a shirt."
 
     "Sensing the situation, she too starts to fold Hanako's clothes."
@@ -3015,7 +3778,10 @@ label en_H32:
     "Before long, the scattered clothes have been assembled into tidy piles, which Hanako noiselessly sorts into their rightful drawers."
 
     "As she reaches her underwear drawer, she lets out a brief, but bored exclamation."
-
+    
+    show hanabad emb_downdetermined at twoleftsit # basic_distant # [str]
+    with charachange # [str]
+    
     ha "Oh. They're gone."
 
     "It was the drawer that contained her pills."
@@ -3025,7 +3791,10 @@ label en_H32:
     "Pangs of guilt arc through my body like electricity."
 
     hi "Hanako… I…"
-
+    
+    show hanabad emb_downtimid at twoleftsit # [str]
+    with charachange # [str]
+    
     "Hanako pauses only for a moment before moving onto the next drawer, as if nothing had happened."
 
     "Lilly and I stand up whilst Hanako finishes sorting her laundry."
@@ -3034,6 +3803,12 @@ label en_H32:
 
     "Without waiting for a response, Hanako unbuttons her blouse and lies down on her bed."
 
+    scene bg school_girlsdormhall # [str]
+    with locationchange # [str]
+    
+    show lilly basic_concerned # [str]
+    with charaenter # [str]
+    
     "I usher Lilly out of the room in an embarrassed rush."
 
     hi "I think… that I've had enough for one day."
@@ -3042,9 +3817,13 @@ label en_H32:
 
     "Outside, the afternoon sun is still high above the treetops, but I am gripped by a mind-numbing fatigue."
 
+    stop music fadeout 3.0 # [str]
+
     "Lilly simply nods, and returns to her room."
 
     #timeskip to dorm
+    scene bg school_dormhisao_ni # [str]
+    with shorttimeskip # [str]
 
     "As promised, I went to see the nurse before retiring."
 
@@ -3059,23 +3838,62 @@ label en_H32:
     "Guilt and desire mix together in my mind, further compounding my desire to close my eyes and end this wretched day."
 
     #eyesclose
+    window hide # [str]
+    scene black # [str]
+    with shuteye # [str]
+    with Pause(2.0) # [str]
+
+    scene bg school_dormhisao # [str]
+    with openeye # [str]
 
     "Wednesday brings with it the end of exams for the rest of the students."
 
+    scene bg school_dormext_full # [str]
+    with locationchange # [str]
+
     "Those that haven't already left for their holidays are sleeping in, and I don't see a single soul as I return from the nurse's office and head for the girl's dorm."
+
+    scene bg school_dormhallground # [str]
+    with locationchange # [str]
 
     "I push through the main doors, and enter the building."
 
     "Inside, a pair of girls still in their pyjamas are watching the TV."
 
+    scene bg school_girlsdormhall # [str]
+    with locationchange # [str]
+    
     "They barely even register my existence as I make my way up the stairs to Hanako's room."
-
+    
+    show expression Solid("#00000022")  # [str]
+    show hanako_door_base at right  # [str]
+    show hanako_door_door at left  # [str]
+    with locationchange # [str]
+    
+    play sound sfx_doorknock2 # [str]
+    
     "I knock lightly on the door, and, to my delight, I hear a slightly muffled, yet familiar, voice."
 
     ha "C…coming."
 
     "There is the sound of flustered movement from inside, but I eventually hear footsteps approaching the door."
-
+    
+    # oh gawd, that ADVANCED SCRIPTING SHIT! [str]
+    # so i just copied this stuff from a4-true. [str]
+    scene bg school_dormhanako # [str]
+    show hanako cover_worry_close at twocenteroff # [str]
+    show expression Solid("#00000022")  # [str]
+    show hanako_door_base at right  # [str]
+    show hanako_door_door at left # [str]
+    with locationchange # [str]
+    
+    play sound sfx_dooropen # [str]
+    show hanako_door_door at leftdoor # [str]
+    with charamove # [str]
+    
+    show hanako cover_worry_close at twocenteroff # [str]
+    with charachange # [str]
+    
     "Through the opening door, I see a relieving sight."
 
     "Hanako stands before me, her eyes cast down, her hair perfectly groomed."
@@ -3083,13 +3901,19 @@ label en_H32:
     "Her loose uniform hangs from her frame, clean and familiar."
 
     "Her free hand rests against her shy face."
-
+    
+    show hanako cover_smile_close at twocenteroff # [str]
+    with charachange # [str]
+    
     ha "Oh… G… good morning Hisao."
 
     "Her voice lilts, the minute variations in tone washing me in relief."
 
     hi "Good morning Hanako. How're you feeling?"
-
+    
+    show hanako cover_distant_close at twocenteroff # [str]
+    with charachange # [str]
+    
     "She rubs her head slightly."
 
     ha "I… I have a bit of a headache."
@@ -3102,7 +3926,20 @@ label en_H32:
 
     "I hold out my hand for her, and she tenderly accepts it."
 
+    scene bg school_courtyard # [str]
+    with locationchange # [str]
+
     "We walk outside to the nearest vending machine, and I buy us two drinks."
+
+    scene bg school_gardens2 # [str]
+    with locationchange # [str]
+    play ambient sfx_park fadein 4.0 # [str]
+    show hanako basic_normal_close # [str]
+    with charaenter # [str]
+    
+    show hanako basic_normal_close at centersit # [str]
+    with charamove # [str]
+    play sound sfx_can # [str]
 
     "Sitting on a nearby bench, Hanako sheepishly drinks, holding the small can with both hands."
 
@@ -3114,8 +3951,11 @@ label en_H32:
 
     ha "Hisao…?"
 
-    ha "Hmm?"
-
+    hi "Hmm?"
+    
+    show hanako basic_worry_close at centersit # [str]
+    with charachange # [str]
+    
     ha "I… I'm sorry."
 
     ha "I didn't mean…"
@@ -3123,7 +3963,9 @@ label en_H32:
     "I rest my head on her shoulder."
 
     #Surprise/blush
-
+    show hanako basic_bashful_close at centersit # [str]
+    with charachange # [str]
+    
     hi "It's okay."
 
     hi "You don't have to apologise."
@@ -3137,7 +3979,10 @@ label en_H32:
     hi "We'll all be fine, okay?"
 
     "The can pauses against Hanako's lips."
-
+    
+    show hanako basic_smile_close at centersit # [str]
+    with charachange # [str]
+    
     ha "Okay."
 
     "We finish our drinks, and just sit on the bench for a while, my head still resting on Hanako."
@@ -3147,7 +3992,9 @@ label en_H32:
     ha "Hmm?"
 
     hi "Let's go on a date."
-
+    
+    show hanako basic_distant_close at centersit # [str]
+    with charachange # [str]
     "Hanako breathes in a little in shock, though not as much as I expected."
 
     ha "W…where would we go?"
@@ -3158,17 +4005,28 @@ label en_H32:
 
     ha "Let's go to the park in the town."
 
-    hi "Sounds good to me. Have you got all you need?"
-
+    hi "Sounds good to me."# Have you got all you need?"
+    
+    show hanako basic_smile_close at centersit # [str]
+    with charachange # [str]
+    
     "She nods soundlessly."
 
     hi "Right then, let's go!"
-
+    
+    stop ambient fadeout 3.0 # [str]
+    
     "Excited by the slowly returning Hanako, I jump to my feet, and pull her up."
-
-    "We dispose of our cans, and head to the bus stop in front of the school."
+    
+    # so, in the train scene hanako wears casual clothes, while should shool uniform
+    # lets pretend she changed clothes before going "on a date" [str]
+    
+    #"We dispose of our cans, and head to the bus stop in front of the school."
 
     #BG Station
+    scene bg city_busint # [str]
+    with shorttimeskip # [str]
+    play ambient sfx_businterior fadein 0.2 # [str]
 
     "Hanako was unusually silent on the trip in, so I try to goad her into talking."
 
@@ -3178,8 +4036,17 @@ label en_H32:
 
     hi "Oh, really? Well, let's do that then."
 
+    stop ambient fadeout 2.0 # [str]
+    scene bg city_tokyostation # [str]
+    with locationchange # [str]
+    play ambient sfx_crowd_outdoors fadein 0.2 # [str]
+    $ renpy.music.set_volume(0.3, .5, channel="ambient") # [str]
+    
     "We enter the station complex and take the escalator down to the subway platform."
 
+    scene bg city_subway # [str]
+    with locationchange # [str]
+    
     "I check the map, and sure enough, the town's central park has its own station."
 
     hi "Wow, we'll be there in no time, right?"
@@ -3190,7 +4057,17 @@ label en_H32:
 
     "Within minutes, the red-and-silver train pulls up alongside the platform, and we board an empty carriage."
 
-    "We sit next to each other, and I take Hanako's hand, placing it in my lap."
+    stop ambient fadeout 0.5 # [str]
+    with Pause(0.5) # [str]
+
+    scene train_scenery2 # [str]
+    show evfg hisao_trainride # [str]
+    with locationchange # [str]
+    $ renpy.music.set_volume(1.0, .5, channel="ambient") # [str]
+    play ambient sfx_trainint fadein 0.5 # [str]
+
+    # no event cg, so had to remove it [str]
+    #"We sit next to each other, and I take Hanako's hand, placing it in my lap."
 
     hi "Are you still feeling okay?"
 
@@ -3205,8 +4082,16 @@ label en_H32:
     ha "I… hate pills."
 
     "The train pulls away from the station, and I pull Hanako close to me."
-
+    
+    stop ambient fadeout 0.2 # [str]
+    
     #BG change to the park auditorium thing from H19 or whatever it was.
+    scene bg suburb_park # [str]
+    with shorttimeskip # [str]
+    play ambient sfx_park fadein 0.2 # [str]
+    
+    show hanako emb_downsad_cas_close at tworightsit # [str]
+    with charaenter # [str]
 
     "The sun gleams off the concrete roof of the park's stage, bringing with it the fury of the summer heat."
 
@@ -3221,7 +4106,10 @@ label en_H32:
     ha "Am I…"
 
     "Hanako sighs before going on."
-
+    
+    show hanako emb_sad_cas_close at tworightsit # [str]
+    with charachange # [str]
+    
     ha "Am I a bad girl?"
 
     hi "What? No, don't be silly."
@@ -3245,12 +4133,21 @@ label en_H32:
     hi "I promised you that, remember?"
 
     "I search her face for any signs of understanding, but find none."
+    
+    show hanako emb_downsad_cas_close at tworightsit # [str]
+    with charachange # [str]
+    
+    #stop ambient fadeout 0.2 # [str]
 
     ha "Can I… see it?"
 
     hi "See what?"
 
     ha "Your chest…"
+
+    $ renpy.music.set_volume(0.5, .5, channel="ambient") # [str]
+
+    play music music_moonlight fadein 2.0 # [str] # music_hanakofinal?
 
     "Confused, I unbutton my shirt, revealing the unicorn-shaped band-aid."
 
@@ -3288,7 +4185,15 @@ label en_H32:
 
     "If nothing else, I have to be here for her, from now until forever."
 
+    stop music fadeout 2.0 # [str]
     #time skip or something.
+    scene bg suburb_park_ss # [str]
+    with shorttimeskip # [str]
+
+    show hanako emb_downsad_cas_close_ss at tworightsit # [str]
+    #with charachange # [str]
+    
+    $ renpy.music.set_volume(1.0, .5, channel="ambient") # [str]
 
     "As the sun starts to turn in the sky, heading for its sleeping place, Hanako pulls away from me."
 
@@ -3304,8 +4209,14 @@ label en_H32:
 
     "Taking Hanako by the hand, we walk back to the subway platform."
 
-    #BG platform.
+    stop ambient fadeout 0.2 # [str]
 
+    #BG platform. 
+    scene bg city_trainstation_ss # [str] (maybe city_tokyostation?)
+    with locationchange # [str] (shorttimeskip?)
+    play ambient sfx_crowd_outdoors fadein 0.2 # [str]
+    $ renpy.music.set_volume(0.3, .5, channel="ambient") # [str]
+    
     "The afternoon crowds are starting to build, and the platform is a lot more crowded than before."
 
     "Hanako tugs gently on my hand, and leads me towards the end of the platform."
@@ -3314,12 +4225,20 @@ label en_H32:
 
     "PA" "The next train to arrive on platform two is the local train to Sendai Station."
 
+    play sound sfx_trainchime # [str]
     "PA" "The train is approaching, please stand behind the yellow line."
-
+    
+    stop ambient fadeout 3.0 # [str]
+    
     "The steady gust of wind that precedes the train forces me to look away form Hanako for a second to shield my eyes."
+    
+    # i'm sorry, feelings, i must have done this ;C [str]
+    play music music_hanakofire # [str]
 
     "The trembling stops."
-
+    
+    with Pause(1.0) # [str]
+ 
     ha "I'm sorry."
 
     ha "I won't hurt anyone else anymore…"
@@ -3327,15 +4246,32 @@ label en_H32:
     "Hanako releases my hand, and steps backwards."
 
     "I try to reach out to her, but it is too late."
-
+    
+    play sound sfx_heartfast # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
+    hide heartattack alpha  # [str]
+    with Dissolve (1.5) # [str]
+    
     "The speeding train collides with her frail body just as I reach the edge of the platform."
-
+   
+    with Pause(1.0) # [str]
+    
     "I was too late…"
 
+    scene black # [str]
+    with Dissolve (4.0) # [str]
+    with Pause(1.0) # [str]
+    window hide # [str]
+    
     return
     
 label en_end_hanakobad3:
     # Hanako bad end 3, after H32
-    scene black with dissolve
+    scene endscreen with dissolve #black with dissolve # [str]
+    with Pause(1.5) # [str]
+    
+    scene black with dissolve # [str]
     centered "~ hanako bad end 3 ~" with dissolve
+    stop music fadeout 1.0 # [str]
     return

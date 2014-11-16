@@ -169,7 +169,9 @@ init 1:
         ks_bg("hosp_room")
         ks_bg("hosp_room2")
         ks_bg("hosp_room3")
-
+        ks_bg("hosp_paddedroom") # [str]
+        ks_bg("hosp_postop") # [str]
+        
     # MISC
         
         ks_bg("misc_sky_rn")
@@ -542,6 +544,8 @@ init 1:
                     'emb_smile',
                     'emb_timid',
                     'emb_determined',
+                    'emb_strain', # [str]
+                    'emb_shock', # [str]
                     'invis',
                     ]
         make_sprites('hanako',hana_list,['cas','cry','sun'])
@@ -570,10 +574,36 @@ init 1:
                     'nudesmile', 
                     'nudeworry_blush',
                     'irritated', 
+                    'evil', # [str]
+                    'shock', # [str]
+                    'nude_disgust', # [str]
                     ]
         hanag_list_new = ['distant', 'distant_blush', 'distant_cry', 'drunkcry', 'drunkdistant', 'drunkgiggle', 'drunknormal', 'drunkpout', 'drunksad', 'drunksmile', 'drunkworry', 'stockdistant_blush', 'stocknormal_blush', 'stockworry_blush', 'worry', 'normal', 'normal_blush', 'nudenormal_blush', 'nudesmile', 'nudeworry_blush', 'irritated', 'smile', 'worry', 'worry_blush']
-        make_sprites('hanagown',hanag_list,['blush','cry','cry2','alt'])
+        make_sprites('hanagown',hanag_list,['blush','cry','cry2','alt','hosp']) # [str] (,'hosp')
 
+        # # # new "i forgot how to groom" hanako! [str]
+        hanabad_list = ['emb_blushing',
+                    'emb_blushtimid',
+                    'emb_downsad',
+                    'emb_downsmile',
+                    'emb_downtimid',
+                    'emb_downdetermined',
+                    'emb_emb',
+                    'emb_sad',
+                    'emb_sleep',
+                    'emb_smile',
+                    'emb_timid',
+                    'emb_determined',
+                    'emb_empty',
+                    'def_strain',
+                    'def_worry',
+                    'def_angry',
+                    'defarms_strain',
+                    'defarms_worry',
+                    ]
+        make_sprites('hanabad',hanabad_list,['sun','cry'])
+        # # # [str]
+        
     #sfx
     python:
         def tremble(n):
@@ -592,6 +622,19 @@ init 1:
             jitter = 0.0002 * (random.randint(-1,1))
             m = math.sin(n*math.pi*40) * 0.001 + jitter
             return (m+0.22,jitter+0.0,0.22,0.0)
+            
+    # # # moved from a3-h23 [str]
+    # # # after moving this to the newest build trembling isnt working at all. Default trembling code is broken too, btw [str]
+    # # # still, h23 uses this image in case anyone fix it [str]
+    python:
+        def trembleleftsit(n):
+            import math, random
+            jitter = 0.00018 * (random.randint(-1,1))
+            m = math.sin(n*math.pi*50) * 0.00005 + jitter
+            return (m+0.001,jitter,0.0055,-0.15) # fookin' magic numbers [str]
+
+    image hanako emb_downtimid_tremble_sun = At("sprites/hanako/hanako_emb_downtimid_sun.png",Motion(trembleleftsit,1.0, repeat=True)) # [str]
+    # # # [str]
     
     # SHIZUNE
 
@@ -1194,6 +1237,15 @@ init 1:
     image ev hanako_finger_close_scroll = 'event/hanako_finger/hanako_finger_close_scroll.png'
     
     #End Twoface's stuff -md01
+    
+    # # # additional shopped stuff [str]
+    image ev hanako_missionary_hate_d = 'event/Hanako_supercg/hanako_missionary_hateface_d.jpg'
+    image ev hanako_missionary_neutral_d = 'event/Hanako_supercg/hanako_missionary_neutralface_d.jpg'
+    image ev hanako_missionary_underwear_neutral_d = 'event/Hanako_supercg/hanako_missionary_underwear_neutralface_d.jpg'
+    image ev hanako_bed_boobs_neutral_d = 'event/Hanako_supercg/hanako_bed_boobs_neutralface_d.jpg'
+    
+    image hanako_oiwadoor = 'vfx/oiwadoor.png'
+    # # # [str]
     
     image ev hanako_shanghaiwindow = "event/hanako_fw.jpg"
 
@@ -1887,6 +1939,10 @@ init python:
     define.move_transitions("charamove_decel", 1.0, _ease_in_time_warp) 
     
     define.move_transitions('charafast', 0.20000000000000001, _ease_time_warp, _ease_in_time_warp, _ease_out_time_warp)
+    
+    # [str]
+    define.move_transitions('charamove_faster', 0.40000000000000001, _ease_time_warp, _ease_in_time_warp, _ease_out_time_warp)
+    
     def Dissolvemove(time, time_warp=_ease_time_warp):
         top = Dissolve(time)
         before = MoveTransition(time, factory=MoveFactory(time_warp=time_warp), old=True)

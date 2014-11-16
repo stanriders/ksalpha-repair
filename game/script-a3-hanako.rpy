@@ -4,9 +4,9 @@
     #Start of Act 3 – "Party line" or something like that.
     #Feels a little short, and I'm not sure if I like the conclusion. Will look at it at the end of Act 3
 
-    scene bg school_miyagi_ss 
-    show hanako basic_distant_close_ss
-    with locationchange
+    scene bg school_miyagi
+
+    show hanako def_worry at twoleft
 
     "The tint of the room slowly changes from the shine of the afternoon to the orange of dusk."
 
@@ -16,65 +16,47 @@
 
     "The ceramic playing piece makes a small click against the board."
 
-    show hanako basic_normal_close_ss 
+    show hanako basic_smile at twoleft
     with charachange
 
     "Like a wound spring, Hanako makes her move only moments after mine."
 
     "It's embarrassing. In comparison to my 5-minute moves, she seems to know exactly what she wants to do."
-    
-    show hanako basic_smile_close_ss 
-    with charachange
-
-    play music music_tranquil fadein 3.0
 
     ha "Mate."
 
     hi "Again… What does that make this? 3-2?"
     
-    show hanako cover_bashful_close_ss 
-    with charachange
-    
     ha "S-stalemates don't count."
 
     hi "Damn. You're getting better at this every day."
+
+    show hanako emb_smile at twoleft
+    with charachange
 
     "Chess seems to have become a popular pastime for the two of us; hiding away in the tea room, playing a game or two after classes."
 
     "This room is like an isolation chamber inside the already insular school that is Yamaku."
 
     hi "Do you fancy another game?"
-    
-    show hanako basic_worry_close_ss 
-    with charachange
 
     ha "I… I have to finish my homework…"
 
     hi "Oh. Well, I'll see you tomorrow then."
-    
-    show hanako basic_distant_close_ss 
-    with charachange
 
     ha "But… what about this…"
 
     "Hanako points to the pile of teacups surrounding the mostly-empty chess board."
 
     hi "Don't worry about it, I've got it."
-    
-    show hanako basic_normal_close_ss 
-    with charachange
 
     ha "Oh… okay…"
-    
-    show hanako basic_bashful_close_ss 
-    with charachange
 
     ha "S-see you."
 
     hi "Later."
 
     hide hanako
-    with charaexit
 
     "Hanako departs as I start cleaning up the area."
 
@@ -85,22 +67,12 @@
     "As I am putting away a set of cups and saucers, I hear someone at the door behind me."
 
     hi "Oh, did you forget something, Hanako?"
-    
-    show bg school_miyagi_ss at bgright
-    with charamove
-    
-    show lilly invis at left
-    with None
 
-    show lilly basic_weaksmile_ss at twoleft
-    with dissolvecharamove
-    
+    show lilly basic_weaksmile
+
     li "Not quite, Hisao."
 
     hi "Ah, Lilly, sorry. What's up?"
-    
-    show lilly basic_smile_ss at twoleft
-    with charachange
 
     li "I take it from your reaction that Hanako isn't around?"
 
@@ -110,40 +82,25 @@
     
     hi "Oh, really? This sounds slightly suspicious, if I do say so myself…"
 
-    show lilly basic_giggle_ss at twoleft
+    show lilly basic_giggle
     with charachange
 
     li "Now Hisao, it's nothing like that. Hanako's birthday is in a little under a month."
-    
-    show lilly basic_weaksmile_ss at twoleft
-    with charachange
 
     li "It's not really something that she looks forward to, but I like to try to cheer her up, and I was hoping that you'd help me out."
 
     hi "Well, sure. But what do you mean she doesn’t look forward to it?"
-    
-    hide lilly
-    with charaexit
-      
-    show lilly invis
-    with None
-    
-    show lilly basic_reminisce_close_ss at centersit
-    with dissolvecharamove
+
+    show lilly basic_reminisce
+    with charachange
 
     "Lilly feels her way to a seat at the table. Following her lead, I sit down across from her."
 
     li "I don't think it's really anything that's worth mentioning, but I don't think Hanako places all that much importance on her birthday."
-    
-    show lilly basic_weaksmile_close_ss at centersit
-    with charachange
 
     li "But I think that things like birthdays should be celebrated; they're not an ordinary day, so you should at least do something out of the ordinary."
 
     hi "Hmm. I think I get your point. So, what do you have in mind?"
-    
-    show lilly basic_satisfied_close_ss at centersit
-    with charachange
 
     li "Well, Hanako would never admit it, but she has a bit of a soft spot for Karaoke. I thought we could maybe book out a room for the three of us."
 
@@ -157,56 +114,32 @@
     "Hanako, in a small room, just letting loose. I wonder though; will she be able to sing with me hanging around?"
 
     hi "I can't see any problem with that. When are we talking about?"
-    
-    show lilly basic_smile_close_ss at centersit
-    with charachange
 
     li "Wednesday three weeks from now."
 
     hi "That's a fair way's off; why bring it up now?"
-    
-    show lilly basic_planned_close_ss at centersit
-    with charachange
 
     li "I was hoping that you would be able to do me a favour and help me around town on Sunday."
-    
-    show lilly basic_weaksmile_close_ss at centersit
-    with charachange
 
     li "The last few years, we've had to resort to staying in our dorm. It's hard for me to find anything in the city without a guide, and it's hard to surprise someone if they have to lead you somewhere."
 
     hi "Ah, I've got you. So you want me to sneak out with you so we can find somewhere without raising suspicion?"
-    
-    show lilly basic_smile_close_ss at centersit
-    with charachange
 
     li "Exactly. If we go this week, then Hanako won't be able to make the link."
 
     hi "Very crafty. So I guess I'll meet you at the gates then? What time?"
-    
-    show lilly behind_displeased_close_ss at centersit
-    with charachange
 
     li "Let's see, the first bus leaves at nine of a Sunday, but I think that is a little early."
-    
-    show lilly basic_weaksmile_close_ss at centersit
-    with charachange
 
     li "How about ten?"
 
     hi "Sounds good to me, I'll see you there."
-    
-    show lilly basic_smile_close_ss at centersit
-    with charachange
 
     li "Well then, that's settled. Goodnight, Hisao."
 
     hi "Night."
 
     hide lilly
-    with charaexit
-    
-    with Pause(0.4)
 
     "A birthday party for Hanako, eh?"
 
@@ -239,8 +172,6 @@
     "Well, it's not like it's such a bad thing. Hanako seems to have opened herself up a lot more from when I first met her."
 
     "Maybe all she needed was someone to approach her as opposed to avoiding the shy girl at the back of the classroom."
-    
-    stop music fadeout 4.0
 
     "I think I'm going to look forward to this party."
     
@@ -251,65 +182,39 @@ label en_H12:
     #H12 – Unexpected Alliance
 
     scene bg school_hallway2
-    play sound sfx_doorclose
-    with locationchange
 
     "I continue to ponder my predicament with Hanako and Lilly as I close to door to the tea room."
 
     mi "Oh ho ho… and just what were you doing in there, Hisao?"
-    
-    play music music_shizune fadein 0.5
 
-    show misha perky_smile_close at closeleft
-    show shizu behind_blank at tworight
-    with charaenter
+    show misha perky_smile at twoleft
+
+    show shizu basic_happy at tworight
 
     "Damn. I was so lost in my thoughts that I didn't even see the entire Student council creeping up on me."
 
     "Misha can be surprisingly stealthy when she's only talking with her hands."
 
     hi "Just cleaning up. Wouldn't want to leave any school property in a mess, would we?"
-    
-    show shizu basic_normal at tworight
-    with charachange
 
     shi "…"
-    
-    show misha cross_smile_close at closeleft
-    with charachange
 
     mi "How very considerate of you, Hisao. But before we get too far…"
-    
-    show bg school_hallway2 at bgright
-    show shizu invis at rightedge
-    show misha cross_smile_close at twoleft
-    with Dissolvemove(0.3)
-    
-    play sound sfx_dooropen
-    
-    with vpunch
 
     "Without warning, Shizune pushes past me and opens the door to the tea room."
-    
-    show shizu adjust_happy at right
-    with dissolvecharamove
 
     shi "…"
-    
-    show misha sign_smile_close at twoleft
-    with charachange
 
     mi "Whilst I cannot approve of your use of this room, I am impressed that you keep it in a better state than most club rooms."
     
-    show shizu adjust_smug at right
-    show misha perky_smile_close at twoleft
+    show shizu adjust_smug at tworight
     with charachange
 
     mi "As a reward, you will come with us to dinner."
 
     hi "Um, Misha, shouldn't that be \"you can come with us…\"?"
 
-    show misha hips_grin_close at twoleft
+    show misha hips_grin at twoleft
     with charachange
 
     mi "Nope. Shicchan said what I said. If I didn't say things properly what good would I be?"
@@ -317,44 +222,26 @@ label en_H12:
     "I fight back the urge to point out the numerous time that Misha's translations have been less than perfect."
 
     "Besides, forcing me to go to dinner with them seems like something Shizune would say."
-    
-    show shizu behind_smile at right
-    with charachange
 
     shi "…"
-    
-    show misha perky_smile_close at twoleft
-    with charachange
 
     mi "Oh, and before you go getting any strange ideas, we're not trying to recruit you anymore."
-    
-    show misha cross_smile_close at twoleft
-    with charachange
 
     mi "You've already been tainted by Miss Satou's laid-back ways. You're no longer of any use to us."
 
     hi "Huh, so you've got no interest in \"used goods\" then?"
 
-    show shizu adjust_blush at right
+    show shizu adjust_blush at tworight
     with charachange
 
-    show misha perky_confused_close at twoleft
+    show misha perky_confused at twoleft
     with charachange
 
     shi "…!"
 
     mi "That's not what I meant. But now that the festival is over there's really nothing much to do unless there's some kind of crisis."
-    
-    show shizu adjust_happy at right
-    with charachange
-    
-    show misha hips_grin_close at twoleft
-    with charachange
 
     mi "So don't worry about it! We'll manage just fine without you!"
-    
-    show misha hips_smile_close at twoleft
-    with charachange
 
     mi "We see each other all the time in class anyway."
 
@@ -368,78 +255,38 @@ label en_H12:
 
     hi "That's true enough. Anyway, I didn't really have any plans for this evening, so I guess I can come with you."
 
-    show shizu basic_happy at closeright
+    show shizu basic_happy at tworight
     with charachange
 
-    show misha sign_smile_close at left
+    show misha sign_smile at twoleft
     with charachange
 
     shi "…"
 
-    mi "Well that is good news! Come on, we have a reservation. If we don't hurry we'll lose our seats."
+    mi "Well that is good news. Come on, we have a reservation. If we don't hurry we'll lose our seats."
 
-    stop music fadeout 2.0
-    
-    scene bg suburb_shanghaiint at right
-    show misha hips_smile
-    with shorttimeskip
-    
-    play sound sfx_storebell
+    scene bg suburb_shanghaiint
 
-    #show shizu behind_smile at tworight
+    show shizu behind_smile at tworight
 
-    mi "Phew~! We made it!"
-    
-    hide misha
-    with charaexit
-    
-    scene bg suburb_shanghaiint at Fullpan(3.0, dir="left") 
-    with None
+    show misha hips_smile at twoleft
+
+    mi "Phew! We made it!"
 
     "I cast my eyes across the barren café. I'm a little disheartened to think that we pretty much ran the whole way down the hill to the Shanghai."
 
     hi "Made what? There's not a soul here! Is the place even open?"
-    
-    show bg suburb_shanghaiint at left
-    show shizu behind_smile at tworight
+
     show misha sign_confused at twoleft
-    with charaenter
-
-    play music music_dreamy fadein 6.0
-
-    #show misha sign_confused at twoleft
-    #with charachange
+    with charachange
 
     mi "Doesn't rushing to an appointment make it all the more worthwhile?"
-    
-    show misha perky_smile at twoleft
-    with charachange
 
     mi "If there is no pressure, then there is no relief, right?"
 
     hi "I don't follow you, but whatever. Anyway, should we sit down? I'm a little tired after that trip…"
-    
-    show misha hips_grin at twoleft
-    with charachange
 
-    mi "Sure sure sure sure~! We reserved our usual table, so we can sit over there."
-    
-    hide misha
-    hide shizu
-    with charaexit
-
-    show bg suburb_shanghaiint at bgleft 
-    with charamove_slow
-    
-    show misha invis at twoleft
-    show shizu invis at tworight
-    with None
-
-    show misha perky_smile at twoleftsit
-    with dissolvecharamove
-    
-    show shizu behind_blank at tworightsit
-    with dissolvecharamove
+    mi "Sure sure sure sure. We reserved our usual table, so we can sit over there."
 
     "Misha takes the lead, bounding to \"her\" table. Shizune and I follow in a comparatively demure manner."
 
@@ -448,154 +295,83 @@ label en_H12:
     "Misha sits upright in the booth and starts fidgeting with everything in sight."
 
     yu "Oh… sorry, I didn't hear you come in…"
-    
-    show bg suburb_shanghaiint
-    show misha perky_smile at centersit
-    show shizu behind_blank at rightsit
-    with dissolvecharamove
-    
-    show yuukoshang invis at leftdooropen
-    with None
 
-    show yuukoshang panic_up at Position(xanchor=0.5, xpos=0.22)
-    with dissolvecharamovefast
-    
-    show yuukoshang panic_up at Position(xanchor=0.5, xpos=0.19)
-    with dissolvecharamovefast
+    show yuuko worried_shang
 
     "A concerned-looking Yuuko bolts out from the back room of the café and practically skids to a halt at our table."
-    
-    show yuukoshang neutral_up at Position(xanchor=0.5, xpos=0.19)
-    with charachange
 
     yu "Are you ready to order?"
-    
-    show shizu adjust_happy at rightsit
-    with charachange
 
     shi "…"
-    
-    show misha hips_grin at centersit
-    with charachange
 
-    mi "Right, we'll have three curries, thanks. Extra rice for Hisao. He's a boy, you know~."
-    
-    show yuukoshang worried_down at Position(xanchor=0.5, xpos=0.19)
-    with charachange
+    mi "Right, we'll have three curries thanks. Extra rice for Hisao. He's a boy, you know."
 
     "Yuuko fumbles with her order book, the tip of her tongue sticking out from the corner of her mouth."
-    
-    show yuukoshang neutral_down at Position(xanchor=0.5, xpos=0.19)
-    with charachange
 
     yu "O-kay. Three curries. One extra rice. I'll be back in a minute…"
-    
-    show yuukoshang neutral_down at Position(xanchor=0.5, xpos=0.10)
-    with dissolvecharamove
-    
-    show yuukoshang neurotic_up at Position(xanchor=0.5, xpos=0.19)
-    with Dissolvemove(.4)
 
-    "She takes no more than a step and a half before pirouetting around with a look of terror on her face."
+    "She takes no more than a step an a half before pirouetting around with a look of terror on her face."
+
+    show yuuko neurotic_shang
+    with charachange
 
     yu "I'm sorry would you like any drink! Drinks!"
 
     hi "Just a pot of green tea I think. Don't think too much about it."
-    
-    show yuukoshang worried_down at Position(xanchor=0.5, xpos=0.19)
-    with charachange
 
     yu "R-right. I'll be back soon."
-    
-    show bg suburb_shanghaiint at bgleft
-    show yuukoshang invis at offscreenleft
-    show misha perky_smile at twoleftsit
-    show shizu behind_smile at tworightsit
-    with dissolvecharamove
-    
-    hide yuukoshang
-    with None
+
+    hide yuuko
 
     "Yuuko disappears through the staff entrance with the determination of a hurricane."
 
     hi "I didn't know they did curry here…"
 
-    show shizu basic_sparkle at tworightsit
+    show shizu basic_sparkle at tworight
     with charachange
 
     shi "…" 
-    
-    show misha cross_grin at twoleftsit
-    with charachange
 
     mi "I expected as much. That is why I took the liberty of ordering for you."
-    
-    show misha perky_smile at twoleftsit
-    with charachange
-    
-    show shizu adjust_happy at tworightsit
-    with charachange
 
     mi "Many people find it hard to adjust to the Shanghai's unique ordering system, so until you adjust, feel free to use us as your guides."
-    
-    show misha sign_smile at twoleftsit
-    with charachange
 
     mi "That's right, Hisao. A café with no menu is a bit of a strain on the brain."
 
     hi "Yeah, I still don't get that. Are they trying to be trendy or something?"
-    
-    show shizu basic_normal at tworightsit
+
+    show misha cross_frown at twoleft
     with charachange
 
-    show misha perky_sad at twoleftsit
+    show shizu basic_normal at tworight
     with charachange
 
     mi "Hmm… I think it's because Yuuko probably forgot to write them out. And since the owner rarely comes out here he hasn't noticed."
 
     hi "You don't say…"
 
-    show misha hips_laugh at twoleftsit
+    show misha hips_laugh at twoleft
     with charachange
 
     mi "Wahaha~! At least that's my theory!"
-    
-    show shizu behind_blank at tworightsit
-    with charachange
-    
-    with Pause (0.1)
-    
-    show shizu invis at tworight
-    with dissolvecharamove
-    
-    hide shizu
-    with None
-    
-    show bg suburb_shanghaiint
-    show misha hips_smile at centersit
-    with dissolvecharamove
 
     "Shizune, obviously disinterested in our conversation, excuses herself through Misha."
+
+    hide shizu
 
     "The tiny cogs in my mind turn, and a connection is made."
 
     hi "Hey, Misha, you go into town a bit, don't you?"
-    
-    show misha perky_smile at centersit
-    with charachange
 
     mi "Yeah, why?"
 
     hi "I don't suppose you know if there's any good karaoke places around, do you?"
-    
-    show misha hips_grin at centersit
-    with charachange
 
     mi "Oh! You want to try some out? We can go after this if you'd like!"
 
     hi "It's already late, and it's a school night. I have things I need to do, you know."
 
-    show misha perky_sad at centersit
+    show misha cross_frown at twoleft
     with charachange
 
     mi "Aw. I hardly ever go to karaoke because of… well… you're smart. You can figure it out…"
@@ -606,112 +382,58 @@ label en_H12:
 
     hi "…I just wanted to know what's in town, you know? I haven't been there much."
 
-    show misha cross_grin at centersit
+    show misha cross_grin at twoleft
     with charachange
 
     mi "Well, there are a couple of places. There's one in the game centre, there's one of those big complex ones on the main street, and then there's that little one near the station."
 
     hi "Right, thanks. I'll look into them,"
-    
-    show misha hips_laugh at centersit
-    with charachange
 
     mi "When you do, be sure to invite me! Wahaha!"
 
     hi "I'll keep it in mind."
 
-    #show shizu cross_wut at tworight
-    
-    show shizu invis at right
-    with None
-    
-    show bg suburb_shanghaiint at bgleft
-    show misha hips_grin at twoleftsit
-    show shizu behind_smile at tworightsit
-    with dissolvecharamove
-    
-    with Pause (0.1)
-    
-    show shizu basic_normal2 at tworightsit
-    with charachange
-    show misha sign_smile at twoleftsit
-    with charachange
-    show shizu adjust_frown at tworightsit
-    with charachange
-    show misha perky_confused at twoleftsit
-    with charachange
-    show shizu behind_blank at tworightsit
-    with charachange
+    show shizu cross_wut at tworight
 
     "Shizune returns to the table and exchanges a glut of sign with Misha."
 
     "Judging by Shizune's mixture of bored and irritated reactions, I can only assume Misha is telling her about my question."
 
     "Typical. I only thought to ask because Shizune left us alone for a second. I didn't want to insult her."
-    
-    show shizu adjust_happy at tworightsit
-    with charachange
 
     shi "…"
-    
-    show misha cross_grin at twoleftsit
-    with charachange
 
     mi "Shicchan says that if you're so desperate to make a fool of yourself then she won't stop you."
-    
-    show misha hips_smile at twoleftsit
-    with charachange
 
     mi "But if you want to take me out, you'll have to ask her permission first."
 
     hi "Ah, no, damnit… I didn't mean it like that. I was actually asking for someone else…"
 
-    show shizu cross_angry at tworightsit
+    show shizu cross_angry at tworight
     with charachange
 
-    show misha sign_confused at twoleftsit
+    show misha sign_confused at twoleft
     with charachange
 
     mi "Oh really? And who might that be?"
 
     hi "If I say then you'll get annoyed."
-    
-    show shizu basic_frown at tworightsit
-    with charachange
 
     shi "…"
-    
-    show misha cross_frown at twoleftsit
-    with charachange
 
     mi "In that case then I already know. I've half a mind to cancel this dinner, but since we've already ordered it would be unfair on Yuuko."
-    
-    show misha hips_frown at twoleftsit
-    with charachange
 
     mi "Instead, you can pay for our meals."
 
     hi "I don't have that kind of money? Wait, how much is the curry here?"
-    
-    show shizu behind_frustrated at tworightsit
-    with charachange
 
     shi "…"
-    
-    show misha sign_confused at twoleftsit
-    with charachange
 
     mi "In that case you can pay for my portion. I'll pay for yours and Misha's."
 
     hi "How does that make any sense?"
-    
-    show shizu adjust_frown at tworightsit
-    with charachange
 
     shi "…"
-    
-    show misha hips_frown at twoleftsit
-    with charachange
 
     mi "You'll be buying me dinner as repayment for this insult."
 
@@ -719,38 +441,27 @@ label en_H12:
 
     hi "That doesn't make any sense. Look, I'll pay for everyone. It was my mistake anyway…"
 
-    show misha perky_smile at twoleftsit
-    show shizu behind_smile at tworightsit
+    show misha sign_smile at tworight
+    with charachange
+
+    show shizu behind_smile at twoleft
     with charachange
 
     "Halfway through my sentence Misha and Shizune start to grin, and I realise I've been had."
-    
-    show shizu adjust_smug at tworightsit
-    with charachange
 
     shi "…"
-    
-    show misha cross_laugh at twoleftsit
-    with charachange
 
     mi "Why, thank you ever so much, Hisao. You are quite the gentleman."
 
     hi "Yeah yeah, you got me. It's my shout."
-    
-    show misha cross_smile at twoleftsit
-    show shizu adjust_happy at tworightsit
-    with charachange
 
     mi "For the record, Shicchan may not be able to sing, but that doesn't mean she can't have a good time."
-    
-    show misha perky_smile at twoleftsit
-    with charachange
            
     mi "Maybe one day we could all go to the karaoke place in the game centre. That way everyone is happy."
            
     hi "Why do I get the feeling that you'd somehow manage to con me into paying the bill there too?"
 
-    show misha hips_laugh at twoleftsit
+    show misha hips_laugh at tworight
     with charachange
 
     mi "Wahaha~! You make it sound like we're conspiring against you, Hisao! You know we'd never do that!"
@@ -759,38 +470,20 @@ label en_H12:
 
     hi "Somehow, I don't feel that I can trust you. Still, maybe one day we'll do that."
 
-    show misha cross_smile at twoleftsit
-    show shizu behind_smile at tworightsit
+    show misha hips_grin at tworight
     with charachange
 
     mi "I'll hold you to that, Hisao."
 
     yu "I'm sorry to keep you waiting!"
-    
-    show yuukoshang invis at offscreenleft
-    with None
-    
-    show bg suburb_shanghaiint
-    show yuukoshang neutral_up at left
-    show misha cross_smile at centersit
-    show shizu behind_smile at rightsit
-    with dissolvecharamove
+
+    show yuuko neutral_shang
 
     "Yuuko finally appears carrying a tray with our curry."
-    
-    show yuukoshang neutral_down at left
-    with charachange
 
     "After a few tense seconds, the tray finds its way safely to our table."
-    
-    show bg suburb_shanghaiint at bgleft
-    show yuukoshang invis at offscreenleft
-    show misha perky_smile at twoleftsit
-    show shizu behind_blank at tworightsit
-    with dissolvecharamove
 
-    hide yuukoshang
-    with None
+    hide yuuko
     
     "Misha and Shizune start to eat their food, and out of some kind of instinct I pour the tea."
 
@@ -798,90 +491,56 @@ label en_H12:
 
     hi "Is that enough, Shizune?"
 
-    show shizu basic_angry at tworightsit
+    show shizu basic_angry at twoleft
     with charachange
-    
-    shi "…"
 
     "It takes me a moment to realise the problem. Both Misha and Shizune have their hands full with their food. Communication is impossible."
 
     "Still, she could have just nodded…"
-    
-    show shizu basic_normal at tworightsit
-    with charachange
 
     "Our meal passes in silence, and I'm honestly appreciative of the extra rice. I still can't work out why they bothered to order it for me though."
 
-    show misha cross_smile at twoleftsit
-    show shizu behind_smile at tworightsit
-    with charachange
-    
     mi "Mmm! That was good. What do you think, Hicchan?"
 
     hi "You're right, it was better than expected. This place is full of surprises."
-    
-    show shizu adjust_happy at tworightsit
-    with charachange
-    show misha sign_smile at twoleftsit
-    with charachange
 
     mi "Now then, karaoke! If you're not going tonight, then how about Sunday?"
 
     hi "Actually, I have plans this Sunday. Maybe some other time?"
 
-    show misha cross_frown at twoleftsit
-    show shizu adjust_frown at tworightsit
+    show misha cross_frown at tworight
     with charachange
 
     mi "You say that, but do you really mean it?"
 
     hi "Yes, I guess."
-    
-    show misha perky_confused at twoleftsit
-    with charachange
 
     mi "Are you really busy this Sunday?"
 
     hi "Really."
-    
-    show misha sign_confused at twoleftsit
-    with charachange
 
     mi "Doing what?"
 
     hi "I'd prefer not to say."
 
-    show shizu cross_angry at tworightsit
+    show shizu cross_angry at twoleft
     with charachange
 
     shi "…"
-    
-    show misha cross_smile at twoleftsit
-    with charachange
 
     mi "Hmm. Sounds suspicious to me.  Still, it's not our way to pry into people's personal lives."
 
     hi "You're kidding, right?"
 
-    show shizu adjust_smug at tworightsit
+    show shizu adjust_smug at twoleft
+    with charachange
+
+    show misha hips_grin at tworight
     with charachange
 
     shi "…"
-    
-    show misha hips_grin at twoleftsit
-    with charachange
 
     mi "We may be kidding, we may not be. Don't forget to pay the bill now!"
-    
-    show shizu invis at tworight
-    show misha invis at twoleft
-    with dissolvecharamove
-    
-    hide shizu
-    hide misha
-    with None
-    
-    play sound sfx_storebell
 
     "Before I can say another word, the girls are out the door."
 
@@ -890,27 +549,17 @@ label en_H12:
     "At least Shizune and Misha are still Shizune and Misha. I've been hanging out with Hanako and Lilly so much that I've barely talked to them outside of class."
 
     "It's nice to know that they're still as playful as ever, at least in their own, manipulative definition of \"playful\"."
-    
-    stop music fadeout 6.0
 
     "And when they're not pushing their Student Council line they're kinda fun to hang out with."
 
     "Well, fun, but expensive. I hope I've got enough money left over this week for the trip into town."
-    
-    scene black
-    with dissolve
     
     return
     
     #---------------
 label en_H13:
     
-    play music music_daily fadein 2.0
-    $ renpy.music.set_volume(0.40000000000000002, 0.0, channel='ambient')
-    play ambient sfx_park fadein 2.0
-
-    scene bg misc_sky 
-    with locationchange
+    scene bg school_gate
 
     "A light breeze blows the scent of early summer around my head as I wait for Lilly."
 
@@ -922,15 +571,12 @@ label en_H13:
 
     "Lilly's voice lilts on the breeze as if they were one and the same thing."
 
+    show lilly cane_listen_cas
+    with charaenter
+
     "I stop gazing into the sky to examine Lilly."
-    
-    $ renpy.music.set_volume(0.80000000000000004, 1.0, channel='ambient')
 
-    scene bg school_gate 
-    show lilly cane_surprised_cas at center 
-    with locationchange
-
-    "She's wearing a peach off-the-shoulder sweater and tan ankle-length skirt, in addition to tan sandals."
+    "She's wearing a brown, long-sleeved shirt and a beige, knee-length dress."
 
     "Her outfit is a much closer fit than the school uniform, accentuating her figure in all the appropriate places."
 
@@ -938,17 +584,14 @@ label en_H13:
 
     hi "Yeah, I'm over here Lilly. Near the gate."
 
-    hi "Were you able to sneak away from Hanako?"
-    
     show lilly cane_weaksmile_cas
     with charachange
+
+    hi "Were you able to sneak away from Hanako?"
 
     li "Yes. It's not uncommon for me to go out of a weekend, so she didn't seem to notice anything suspicious."
 
     hi "Cool. Well then, the bus arrives in a few minutes, should we head to the bus stop?"
-    
-    show lilly cane_smile_cas 
-    with charachange
 
     li "Indeed. It's a long wait if we miss this one."
 
@@ -956,15 +599,9 @@ label en_H13:
 
     hi "I hope you don't mind, but I asked around for some suggestions. I've never really been into town here so I was curious."
     
-    show lilly cane_ara_cas 
-    with charachange
-    
     li "Of course I don't mind. Proper prior planning prevents poor performance, or so they say."
     
     #Ha! Eat that, Translators!
-    
-    show lilly cane_smile_cas 
-    with charachange
     
     li "I also know of a place, though I have only been there once."
     
@@ -989,33 +626,21 @@ label en_H13:
     hi "I think that it would be research vital to the success of Hanako's party."
 
     li "That doesn't sound too convincing…"
-    
-    show lilly cane_listen_cas
-    with charachange
 
     li  "Oh, here comes the bus…"
-    
-    scene bg school_road 
-    with locationchange
 
     "I look down the road to see the bus trundling up the hill."
-    
-    stop music fadeout 6.0
-    
+
     "Now that I can see it I can clearly hear the straining engine above the background noise."
 
     "It's amazing how much sensory information the brain simply throws away."
-    
-    stop ambient fadeout 2.0
 
     "The bus only takes a few seconds to reach the bus stop, and within a minute we are on our way to town."
 
-    scene bg city_street1 
-    with shorttimeskip
+    scene bg city_street1
 
-    play music music_ease fadein 2.0
-    $ renpy.music.set_volume(0.40000000000000002, 0.0, channel='ambient')
-    play ambient sfx_traffic fadein 2.0
+    show lilly cane_smileclosed_cas
+    with charachange
     
     "The town is much like any other town, save for the raised walkways."
 
@@ -1026,25 +651,19 @@ label en_H13:
     "But as I ponder the engineering marvel that is the raised walkway, a strange sensation envelops me."
 
     hi "L-Lilly!"
-    
-    show lilly invis at twocenteroff2
-    with None
 
-    show lilly cane_giggle_cas_close
-    with dissolvecharamove
+    show lilly cane_giggle_cas
+    with charachange
 
     li "Did I startle you?"
 
     "Lilly has wrapped her arm around mine, extending her cane in front of her with her other hand."
-    
-    show lilly cane_smileclosed_cas_close
-    with charachange
 
     li "I'm sorry, but it is a lot easier this way here. People seem to find it easier to avoid two people instead of just the one."
 
     "It's not the first time this has happened, so I shouldn't be so surprised, but at the time Lilly only held onto my sleve."
 
-    show lilly cane_arablush_cas_close
+    show lilly cane_smile_cas
     with charachange
 
     li "Now Hisao, you wouldn't be getting embarrassed right now, would you?"
@@ -1052,9 +671,6 @@ label en_H13:
     hi "What's there to be embarrassed about? Clearly I'm just helping you out…"
     
     "No sooner have the words left my mouth do I realise that I mean it. Lilly is holding onto my arm for guidance, and that is that."
-    
-    show lilly cane_cheerful_cas_close
-    with charachange
 
     li "Well, if you are helping me out, how about we start searching, instead of loitering here arm-in-arm."
 
@@ -1062,6 +678,9 @@ label en_H13:
 
     scene bg city_street2
     with locationchange
+    
+    show lilly cane_reminisce_cas
+    with charachange
 
     "We wander around the walkways of the town, Lilly merrily tapping away with her cane whilst I keep an eye out for the karaoke bar Misha mentioned."
     
@@ -1072,9 +691,6 @@ label en_H13:
     "Multi-story stores branch off from the walkways, connected to it by smaller bridges."
 
     hi "So, do you come here often? To karaoke, I mean?"
-    
-    show lilly cane_smile_cas_close
-    with charaenter
 
     li "No, I've only been a few times."
 
@@ -1083,67 +699,47 @@ label en_H13:
     "The Karaoke bar is located between two clothing stores, adorned with flashing neon signs and honky little speakers playing radio ads on a loop."
 
     hi "Are you sure this is the right place though? It looks a little garish…"
-    
-    show lilly cane_weaksmile_cas_close
-    with charachange
 
     li "Ah, I do remember someone saying that. However, it does have quite a few private booths."
 
     hi "Fair enough. Hanako might like this place after all."
 
     "Though, in my mind, I cannot imagine Hanako liking a place like this. I hope Lilly is right…"
-    
-    show lilly cane_cheerful_cas_close
-    with charachange
 
     li "Well then, shall we go in?"
 
     hi "What, now?"
-    
-    show lilly cane_satisfied_cas_close
-    with charachange
-    
-    stop music fadeout 6.0
 
     li "I don't see why not, since we found the place so quickly."
 
     hi "Well, I'd actually prefer to get some lunch first…"
 
-    show lilly cane_ara_cas_close
+    show lilly cane_ara_cas
     with charachange
 
     li "I'm sure that they have food inside. Besides, we should make sure that this place is good for Hanako, shouldn't we?"
         
     hi "Fine, I get it. Let me just get a room for us."
-    
-    stop ambient fadeout 1.0
-    play music music_another fadein 4.0
 
     scene bg city_karaokeint
-    with locationskip
+    with locationchange
 
     "Inside, I order a plate of snacks and a room for an hour."
 
     "The interior is a little more subdued than the exterior, and the rooms are little more than a bench and a table surrounding the main screen."
 
-    show lilly basic_smile_cas
-    with charaenter
+    show lilly cane_smile_cas
+    with charachange
 
     li "So, what should we sing?"
 
     hi "Don't tell me… we need to test the integrity of the gear? Are you sure that this is really for Hanako's sake?"
-    
-    show lilly basic_cheerful_cas
-    with charachange
 
     "Lilly flashes me a mischievous smile for the shortest of moments."
 
     li "But of course. Everything needs to be perfect, or else there is no point. And of course this is for Hanako, but that doesn't mean we can't enjoy it, too."
 
     hi "Okay okay, let me punch in a song for you. What do you want?"
-    
-    show lilly basic_listen_cas
-    with charachange
 
     li "Hmm, is Kagerou in there?"
 
@@ -1153,10 +749,6 @@ label en_H13:
     "I scroll through the list of songs on the control panel, and select the song from the menu."
 
     "The great wheels of automation turn over, and soon the melody is flooding from the speakers at high volume."
-    
-    show lilly basic_smileclosed_cas
-    with charachange
-    #to replace once mic prop is drawn
 
     "Lilly reaches out her hand, and I place the mic in it."
 
@@ -1169,88 +761,61 @@ label en_H13:
     "She and I could \"hang out\" for years on end, and that would be all we ever do."
 
     "The song finishes quickly enough, breaking my concentration. Lilly holds out the mic for me."
-    
-    show lilly basic_cheerful_cas
-    with charachange
 
     li "Your turn, Hisao."
 
     hi "Eh, maybe in a bit. I want to finish these off first…"
 
     "The plate of snacks, listed on the menu as \"enough for four!\", is barely filling my stomach."
-    
-    show lilly basic_giggle_cas
-    with charachange
 
     li "Well, I guess that's okay. This is only a test run, after all."
 
     hi "Is that all you wanted to do today? To do a test run?"
 
-    show lilly basic_smile_cas
+    show lilly cane_reminisce_cas
     with charachange
 
     li "Well, mostly. Unless there is anything that you'd like to do, I'm happy with just this."
 
     hi "Really? Well then, fair enough. I would have thought that you'd want to go shopping or something like that…"
-    
-    show lilly basic_ara_cas
-    with charachange
 
     li "My my, Hisao, you wouldn't be trying to turn this into a date, would you?"
 
     hi "No, it's not like that. I just haven't spent much time in town, so I don't know what else there is to do."
-    
-    show lilly basic_smileclosed_cas
-    with charachange
 
     li "I think it's much like any other city. If you know where to look, you can find anything that you want to do."
 
     hi "You make it sound like you've been to a lot of cities…"
-    
-    show lilly basic_smile_cas
-    with charachange
 
     li "Only a few, both here and in South Africa."
 
     hi "South Africa? What were you doing there?"
 
-    show lilly basic_oops_cas
+    show lilly cane_oops_cas
     with charachange
 
     li "Oh, did I not tell you? My family lives in South Africa, but my father was originally from Japan. That is why I am here now."
 
     hi "Right… I guess that makes some kind of sense. Why South Africa though?"
-    
-    show lilly basic_displeased_cas
-    with charachange
 
     li "My parents are involved with mining, and that work keeps them there, but they do come back here occasionally."
 
     hi "So then, why do you stay here?"
 
-    show lilly basic_reminisce_cas
+    show lilly cane_reminisce_cas
     with charachange
 
     li "It is a slightly complicated matter, however this school is part of the reason. There isn't anything like it in South Africa."
-    
-    show lilly basic_weaksmile_cas
-    with charachange
 
     li "Also, it is easier to become a teacher here."
 
     hi "Oh, so you want to teach, and not stay in the mining business?"
-    
-    show lilly basic_planned_cas
-    with charachange
 
     li "Yes, I'd like to teach languages. And my eldest sister, Akira, is to inherit the company, so I don't need to stay in mining."
 
     "Being a teacher would suit Lilly perfectly. She has the attitude and the patience to deal with anyone."
 
     "You only need to see the care that she puts into dealing with Hanako to notice that."
-    
-    show lilly basic_smile_cas
-    with charachange
 
     li "And what about you, Hisao? What are your plans for your future?"
 
@@ -1260,41 +825,29 @@ label en_H13:
 
     "In fact, I don't think I've thought at all about a \"future\" for some time now. It seems almost futile."
 
-    show lilly basic_pout_cas
+    #show lilly cane_scold_cas
     with charachange
 
     li "Now that just won't do, Hisao."
 
     hi "Eh? What won't?"
-    
-    show lilly basic_sleepy_cas
-    with charachange
 
     li "Not planning for the future. This is your last year of school. After this, you will have to fend for yourself one way or the other."
 
     hi "It's not like I don't know that, I just haven't put much thought into it since then…"
-    
-    show lilly basic_concerned_cas
-    with charachange
 
     li "Well, I can understand that. But you can't let something that might happen affect what will happen."
-    
-    show lilly basic_oops_cas
-    with charachange
 
     li "You will finish school and you will need to find a job. But if you get hung up on your problems too much, you'll miss your chances."
 
     hi "Okay, okay, I'll think about it."
 
-    show lilly basic_weaksmile_cas
+    show lilly cane_weaksmile_cas
     with charachange
 
     li "I think that would be a good idea. Anyway, onto the next song. I believe that it is your turn…"
 
     hi "Fine fine, just don't expect too much."
-    
-    hide lilly
-    with charaexit
 
     "Lilly and I use the remainder of our time in the karaoke booth to make sure that it is completely adequate for Hanako's party."
 
@@ -1302,73 +855,44 @@ label en_H13:
 
     "We politely refuse, and I pay for the room and the snacks on the way out."
 
-    stop music fadeout 2.0
+    scene bg city_street2
+    with locationchange
 
-    $ renpy.music.set_volume(0.40000000000000002, 0.0, channel='ambient')
-    play ambient sfx_traffic fadein 2.0
-
-    scene bg city_street2 
-    show lilly cane_smileclosed_cas_close 
-    with shorttimeskip
+    show lilly cane_smile_cas
     
     "Once we are out on the street again, Lilly takes a hold of my arm once again."
-    
-    show lilly cane_smile_cas_close 
-    with charachange
 
     li "Well then, shall we head back now?"
 
     hi "To be honest, I'd like to find some more food first. A plate of snacks is no substitute for a real meal."
-    
-    show lilly cane_weaksmile_cas_close 
-    with charachange
 
     li "That's true. And since you payed for the karaoke, it would be rude of me not to pay."
 
     hi "Really? That sounds good to me. Know of any good places around here?"
-    
-    show lilly cane_cheerful_cas_close 
-    with charachange
 
     li "There is a small take-away shop near the bus stop. We could eat on the bus on the way back."
 
     hi "Perfect. I think I remember my way back to the bus stop; it wasn't that far."
-    
-    hide lilly
-    with charaexit
 
     "Amazingly, I manage to find the bus stop on the first try, and the take-away place not too long afterwards."
     
-    stop ambient fadeout 3.0
-    
-    "We both order, get our food, and board the bus."
+    "We both order, get out food, and board the bus."
 
     scene bg school_dormext
-    with shorttimeskip
     
-    play music music_tranquil fadein 4.0
-    
-    show lilly cane_planned_cas
-    with charaenter
+    show lilly cane_sleepy_cas
 
     li "Thank you for today, Hisao. I'll ring that place and make a booking for Hanako's birthday."
 
     hi "Not a problem; thanks for lunch."
-    
-    show lilly cane_weaksmile_cas
-    with charachange
 
     li "Any time, Hisao. But now I must be getting back. If I'm gone too long Hanako may find out."
 
     hi "Sure thing. I'll be sure to keep it a secret too. Later."
-    
-    show lilly cane_smile_cas
-    with charachange
 
     li "Later."
 
     hide lilly
-    with charaexit
 
     "As Lilly leaves, I reflect a little on her words in the karaoke bar."
 
@@ -1383,8 +907,6 @@ label en_H13:
     "That is a question that I can't answer right now, but maybe that is the real point of this school, to help us work that out for ourselves."
 
     "Damn, I'm going to be thinking this over all night. That's the exact opposite of \"not dwelling\" on something."
-    
-    stop music fadeout 6.0
 
     "Nevertheless, with the trip into town over, I need to start looking into getting this week's homework done. Plus I need to do my laundry, have a bath, make my bed…"
 
@@ -1410,7 +932,8 @@ label en_H14:
 
     n "It is at this point that cpl_crud's original Act 3 'ends'."
        
-    n "In all, a total of 10 scenes are missing from the Prerelease. They are known to have existed internally; in fact, one of these scenes, H23 'Waterfall,' can be found online rather easily."
+    n "In all, a total of 10 scenes are missing from the Prerelease. They are known to have existed internally." # [str] (h23 waterfall restored as well)
+    #n "In all, a total of 10 scenes are missing from the Prerelease. They are known to have existed internally; in fact, one of these scenes, H23 'Waterfall,' can be found online rather easily." # [str] 
     
     n "Outside of that, though, we're only left with what we can infer from proceeding scenes, code strings, and comments."
     
@@ -1521,9 +1044,11 @@ label en_H14b:
     
     n "Events leading up to the Bad Endings:"
     
-    n "NOTE: The bad endings currently have no art or scene direction."
-    
     n "Hisao begins to have adverse reactions to his medications, including phantom visions and fatigue."
+    
+    n "NOTE: Everything below was added by previous editor and contains spoilers of next scene."
+    
+    n "NOTE: Scene H23 'Waterfall' was restored from KS forums [str]"
     
     n "He decides to not take his medication before going with Hanako and Lilly to the Shanghai, hoping to avoid suffering more side effects before he can talk with the nurse about changing medications."
     
@@ -1540,3 +1065,861 @@ label en_H14b:
     nvl clear
     
     return
+
+# # #
+# Yay for teh forums! 
+# # #
+label en_H23:
+
+scene black # [str]
+with None # [str]
+window hide # [str]
+
+# # # nah, this sounds stupid [str]
+#nvl show dissolve
+#n "NOTE: This scene (H23 'Waterfall') was restored from KS forums - StanR" 
+#nvl hide dissolve
+#nvl clear
+# # # 
+
+scene bg school_dormhisao # [str]
+with openeye # [str]
+play music music_dreamy fadein 0.3 # [str]
+window show # [str]
+
+"The hours from my late night reverie to now pass as quickly as the past few days."
+
+"It's almost like I arrived here before throwing my phone across the floor."
+
+"My hectic pace of the last few days has scattered my memories beyond any recognition."
+
+"Or maybe it was my restless sleep last night."
+
+"Who knows?"
+
+"Either way, I think I can feel some degree of clarity this morning."
+
+"Maybe it's the slightly cooler weather."
+
+"I lazily get dressed, and open my drawer full of drugs."
+
+hi "Actually…"
+
+"If the befuddlement of the last week has had something to do with these pills, maybe I should lay off them a little."
+
+"I'll be seeing the nurse first thing tomorrow anyway."
+
+"My medication changed almost daily at the hospital, so one day won't make a difference."
+
+"I want to be there for Hanako, and I'm not sure if I can do that with my mind fluttering like a torn flag in a gale."
+
+"I close the drawer, leaving its contents intact."
+
+scene bg school_gate # [str]
+with shorttimeskip # locationchange # [str]
+
+"Ten minutes before the appointed hour, eleven am, I arrive at the school's main gate."
+
+"Why Lilly wanted me to meet them here I do not know."
+
+"Perhaps she was concerned that Hanako and I had made enough public passes of the gardens, and was trying to kerb the tide of the rumours surrounding us."
+
+"Such trivialities evaporate when I see the girls approach."
+
+show hanako emb_downtimid_sun at twoleft # [str]
+show lilly cane_smile_cas at leftoff # [str]
+with charaenter # [str]
+
+"Hanako, dazzling in her light yellow dress." # LAZY KS-DEVS! there's no Lilly dress sprites [str]
+#"Hanako, dazzling in her light yellow dress, and Lilly in a matching dress in pastel green."
+
+"Such sights are a delight to the senses, and just what I needed on this fine morning."
+
+hi "Morning Hanako, Lilly. You're both looking dazzling today."
+
+#Hanako bashful smile, Lilly motherly smile
+show hanako emb_smile_sun at twoleft # [str]
+with charachange # [str]
+
+ha "T…thanks."
+
+show lilly cane_smileclosed_cas at leftoff # [str]
+with charachange # [str]
+
+li "You are ever the gentleman, Hisao."
+
+li "And now it is time for you to escort your lady."
+
+"Lilly give Hanako ever the slightest nudge forward, and she stumbles towards me."
+
+hide hanako # [str]
+with charaexit # [str]
+
+show hanako emb_blushtimid_sun_close at tworight # [str]
+with charaenter # charamove_slow # [str]
+
+show lilly cane_satisfied_cas at leftoff # [str]
+with charachange # [str]
+
+hi "M'lady, may I have the pleasure of escorting you?"
+
+show hanako emb_smile_sun_close at tworight # [str]
+with charachange # [str]
+
+"Hanako flounders, but smiles gently and takes my proffered arm."
+
+hi "Lilly, do you require an arm, or shall you be right?"
+
+li "As much as I would like to leave you both to your own devices, I would greatly appreciate the help."
+
+hide lilly # [str]
+with charaexit # [str]
+show lilly cane_smileclosed_cas_close at twoleft # [str]
+with charaenter # [str]
+
+"Lilly reaches out into the void with her free hand, and I guide her to my side."
+
+"As we make our way forward, her cane sweeps out delicate arcs barely a foot ahead of us, yet she manages to walk with a dignified grace."
+
+"Hanako, on the other hand, has wrapped her fingers between mine, and hides her bad side against me."
+
+"I feel her warmth, and her fragility, as if they were my own."
+
+scene bg school_road # [str] (_ss? i know it's sunset, but it's much more sunny than default one)
+with locationchange # [str]
+
+# always doing charaenters is annoying [str]
+show hanako emb_downtimid_sun_close_ss at tworight # [str]
+show lilly cane_reminisce_cas_close_ss at twoleft # [str] (smileclosed)
+with charaenter # [str]
+
+"The road to the café is all but deserted."
+
+"And with good reason, too."
+
+"Whilst this morning was abnormally cool, the day is heating up, rapidly."
+
+"You'd be safe to say that this was shaping up to be the hottest day this summer."
+
+"The black of the tarmac is distorted in the distance as the heat haze rises to the sky."
+
+"I can tell the girls are starting to feel it to."
+
+"I feel a slick of sweat forms between our intertwined limbs, at once sticky yet lubricated."
+
+"But it's too late now for us to complain."
+
+"As competent as Lilly is with her cane, she is much faster with a guide."
+
+"I doubt Hanako wants to let go, and truthfully I don't want to let go of her either."
+
+"So we suffer in silence, knowing that the ordeal will be over once we reach the air conditioned confines of the Shanghai."
+
+#I feel like putting in a countdown of some kind. I'm revving over this.
+
+"Cicadas and songbirds fill the air with their song, and I feel slightly more aware of the formations of clouds that are streaking the sky in great roads."
+
+"Scents waft into my nose; the sweet smell of a patch of carnations, the building humidity, and the differing, yet somehow exciting, perfumes that the girls are wearing."
+
+"It's like someone has turned the dial on my sensory perception up to 12."
+
+scene bg suburb_shanghaiext # [str]
+with locationchange # [str]
+
+"I am tempted to start licking the air to see if I can taste colours or something of the sort, but we arrive at our destination."
+
+#Do I know if this is usual behaviour before a heart attack? Do I care? No and No.
+
+stop music fadeout 4.0 # [str]
+
+scene bg suburb_shanghaiint # [str]
+with shorttimeskip # locationchange # [str]
+
+# always doing charaenters is annoying [str]
+show hanako emb_emb_sun at twoleft # [str]
+show lilly basic_smileclosed_cas at tworight # [str]
+with charaenter # [str]
+
+show hanako emb_emb_sun at leftoff # [str]
+show lilly basic_smileclosed_cas at rightedge # [str]
+with charamove # [str]
+
+show yuuko smile_shang # [str]
+with charaenter # [str]
+
+play sound sfx_storebell # [str]
+
+"As always, the Shanghai café is deserted save its waitress."
+
+yu "Welco-Lilly!"
+
+show yuuko neurotic_shang # [str]
+with charachange # [str]
+
+yu "You came back!"
+
+li "But of course, why would you think otherwise?"
+
+yu "But last time… I… I made her cry… didn't I?"
+
+show hanako emb_downsad_sun at leftoff # [str]
+with charachange # [str]
+
+"It would appear that the gravity of the situation was lost on this girl."
+
+li "No, it was by no means your fault. It wasn't anyone's fault."
+
+li "But we are here to make amends, and also to have a little break."
+
+show hanako emb_timid_sun at leftoff # [str]
+with charachange # [str]
+
+ha "I… I'm sorry, Yuuko."
+
+ha "I… wasn't well."
+
+show yuuko smile_shang # [str]
+with charachange # [str]
+
+"Yuuko looks confused, but then, before our very eyes, she cheers up."
+
+"Perhaps her brain put the whole matter into the 'Too Hard' basket and decided to move on."
+
+yu "That's okay, that's okay. Now. Where was I?"
+
+hi "Welcome."
+
+yu "Ah, Thank you."
+
+yu "Welcome!"
+
+yu "Please, let me show you to your seat."
+
+show hanako emb_emb_sun at leftsit # [str]
+with charamove # [str]
+
+show lilly basic_smileclosed_cas at rightsit # [str]
+with charamove # [str]
+
+"The human mind is an amazing piece of evolution, yet there are some examples that are truly unique."
+
+"If I were an anthropologist, I think I could spend a lifetime studying girls like Yuuko…"
+
+"…Something about that sounds wrong, however I will have to look up how one becomes an anthropologist when we get back tonight."
+
+yu "What would you like to drink today?"
+
+yu "Or eat? We do have food here."
+
+yu "But not everyone eats here."
+
+li "Could we please have a jug of iced jasmine tea and a platter of sandwiches?"
+
+yu "Yes! Of course! Iced Jasmine tea and Sandwiches!"
+
+show yuuko smile_shang at centersit2 # [str]
+with charafast # [str]
+show yuuko smile_shang at center # [str]
+with charamove # [str]
+hide yuuko # [str]
+with charaexit # [str]
+
+"Yuuko reads back Lilly's order like a list of commands, bows sharply, then disappears into the back of the store."
+
+play music music_night fadein 0.5 # [str]
+
+show lilly basic_smile_cas at rightsit # [str]
+with charachange # [str]
+
+hi "So. Here we are, eh?"
+
+li "Indeed. It's quite warm today, isn't it?"
+
+show hanako emb_downtimid_sun at leftsit # [str]
+with charachange # [str]
+
+ha "N…no."
+
+show lilly basic_pout_cas at rightsit # [str]
+with charachange # [str]
+
+"Lilly and I retreat a little, as if Hanako had suddenly become toxic."
+
+show hanako emb_downsmile_sun at leftsit # [str]
+with charachange # [str]
+
+ha "It's hot. Really hot."
+
+show lilly basic_giggle_cas at rightsit # [str]
+with charachange # [str]
+
+"A conjoined sigh of relief."
+
+li "My my, Hana-chan, was that a joke?"
+
+li "What a rare occasion."
+
+show hanako emb_smile_sun at leftsit # [str]
+with charachange # [str]
+
+"Hanako smirks a little under her fringe."
+
+show lilly basic_smile_cas at rightsit # [str]
+with charachange # [str]
+
+hi "You're right though. It's maddeningly hot out there."
+
+hi "I don't think I could have gone much further."
+
+hi "And the humidity…"
+
+ha "That's the bad part."
+
+li "Quite right. It's much harder to deal with high humidity than high temperature."
+
+hi "I wonder if that's why people can stand living in the desert."
+
+li "Perhaps."
+
+ha "But no-one really lives in the desert."
+
+ha "People live near rivers. Always."
+
+hi "I suppose you're right there, rivers or some other water source."
+
+"As we contemplate the fates of desert people, Yuuko approaches carrying a large plastic jug."
+
+"The ice cubes inside it rattle out some strange melody, and I wonder, briefly, if that kind of noise has inspired any of Hanako's favourite songs."
+
+"Melodic or not, the iced tea is just the elixir for a day like this."
+
+hi "Lilly, commendations on the choice of drink."
+
+ha "It's good."
+
+li "Yes, you simply cannot beat iced jasmine tea on a day like this."
+
+show yuuko smile_shang # [str]
+with charaenter # [str]
+
+"By the time Yuuko arrives with the platter of cut sandwiches, the large plastic jug is empty."
+
+yu "Would you like another jug?"
+
+li "I think we should be fine for the moment."
+
+yu "Oh, okay."
+
+yu "If you need me, please just call."
+
+hide yuuko # [str]
+with charaexit # [str]
+
+"As Yuuko turns from us, the door of the café opens, and a gust of wind blows in behind a pair of new customers."
+
+show lilly basic_sad_cas at rightsit # [str]
+with charachange # [str]
+
+"Yuuko rushes to serve them, but Lilly looks slightly worried."
+
+li "Hisao-san, would I be right in thinking that outside it is now fairly windy?"
+
+hi "Huh?"
+
+"I take a glance out of the window, and notice the tops of distant trees waving about."
+
+hi "Yeah, it looks like it."
+
+#Lilly frown.
+show lilly basic_oops_cas at rightsit # [str]
+with charachange # [str]
+
+li "Did anyone bring an umbrella?"
+
+hi "Um, no. Hanako?"
+
+show hanako emb_timid_sun at leftsit # [str]
+with charachange # [str]
+
+ha "N… no. What's the matter Lilly?"
+
+show lilly basic_sad_cas at rightsit # [str]
+with charachange # [str]
+
+"Lilly sighs."
+
+li "I hope I'm wrong, but I think we may be in for a bit of a storm this afternoon."
+
+hi "How do you know?"
+
+li "With this heat and humidity, there's always a fair chance."
+
+li "The wind is one of the last phases."
+
+li "I'm afraid we may be trapped here for some time."
+
+"Sure enough, as Lilly finishes lamenting, another group of customers enters the store."
+
+"Customer 1" "Looks like rain out there."
+
+"Customer 2" "And heavy at that…"
+
+show hanako emb_determined_sun at leftsit # [str]
+with charachange # [str]
+
+"Hanako and I gawk at Lilly in amazement."
+
+$doublespeak (hi, ha, "How did you know?", "How did you know?")
+
+show lilly basic_planned_cas at rightsit # [str]
+with charachange # [str]
+
+li "It's simple meteorology. We covered it in science last trimester."
+
+hi "That makes sense, it seems very much like something Mutou would teach."
+
+"I get a chuckle from Hanako and Lilly."
+
+show hanako emb_downsad_sun at leftsit # [str]
+with charachange # [str]
+
+ha "But… we can stay here… right?"
+
+hi "I guess so. It doesn't look like there's many people here."
+
+"At that moment, the first splats of rain start to be heard overhead."
+
+"Even the un-Mutou-trained ear can tell that these are not your ordinary, petite raindrops."
+
+"They sound fat, ferocious, and incessant."
+
+show lilly basic_concerned_cas at rightsit # [str]
+with charachange # [str]
+
+li "Hisao, could you please call Yuuko over?"
+
+"I gesture to the flippant waitress and she comes immediately."
+
+show yuuko neutral_shang # [str]
+with charaenter # [str]
+
+yu "Can I help?"
+
+li "Yuuko, would you happen to have any spare umbrellas here?"
+
+"Yuuko looks deep in thought for a time."
+
+yu "No, however it looks like it just started raining."
+
+yu "So, if you came back tomorrow, people will probably leave some here today."
+
+show lilly basic_surprised_cas at rightsit # [str]
+show hanako emb_determined_sun at leftsit # [str]
+with charachange # [str]
+
+"…"
+
+"Even Lilly appears flabbergasted at this answer, and the fact that it is entirely correct." 
+
+li "I see. I shall keep that in mind."
+
+li "Could I please order a pot of black tea and some cakes then?"
+
+yu "Right away!"
+
+hide yuuko # [str]
+with charaexit # [str]
+
+"Yuuko scurries away to do what she does best; approximating a waitress."
+
+show lilly basic_weaksmile_cas at rightsit # [str]
+show hanako emb_smile_sun at leftsit # [str]
+with charachange # [str]
+
+li "I suppose we should just try and wait it out."
+
+ha "Okay. I don't mind staying here."
+
+hi "Sounds like a plan then."
+
+"The barrage of rain intensifies until all that can be heard is white noise around us."
+
+"Occasionally, a peel of thunder rolls through the café."
+
+"However, the storm has an unexpected affect."
+
+"Shortly after the rain reaches what seems like its peak, the door to the café opens."
+
+"The noise of the rain seems to double instantly, and a howling wind rips around the small room, blowing menus around in a mini cyclone."
+
+"But the most disturbing thing to pass through the door is a troupe of soaking, young teenage boys."
+
+"There's about fifteen of them in all, in soccer uniform, all panting from the mad run here."
+
+"They must have been caught out during practice, and made a bolt for here, knowing that it would be relatively dry."
+
+"However, the little café isn't the world's largest eatery, and the soccer team quickly crowds it."
+
+stop music fadeout 4.0 # [str]
+play ambient sfx_crowd_indoors fadein 6.0 # [str]
+
+"Excited, panting voices drown out the noise of the rain, and Yuuko goes into some kind of overload and tries to serve them all at once."
+
+"But all of that is a secondary issue."
+
+show hanako emb_downdetermined_sun at leftsit # [str]
+with charachange # [str]
+
+"Hanako, who had been relatively relaxed until now, is clutching onto my arm with a vice-grip."
+
+"Her head is bowed lower that I've ever seen it before, and her eyes are fixated, unblinking, in some kind of terror."
+
+hi "Hanako? Hanako?!"
+
+show lilly basic_oops_cas at rightsit # [str]
+with charachange # [str]
+
+"I try to shake her shoulder, then I try to hold her, but to no avail."
+
+"She is as solid as a rock, and half as responsive."
+
+li "Hisao? Is something the matter? What's going on?"
+
+hi "It's Hanako… she's… she's… oh hell, I don't know… Hanako!"
+
+#Thumps centered or magiced however we did it before.
+
+play sound sfx_heartslow # [str]
+show heartattack alpha  # [str]
+with Dissolve (0.1) # [str]
+
+hide heartattack alpha # [str]
+with Dissolve (0.7) # [str]
+
+"The boys fill the store with their energy."
+
+"Their bodies want to be out, running around fields, but now they are trapped in this little space."
+
+"Like wild dogs in a cage, they can't stay in any one place for more than a number of seconds."
+
+"It only takes them a few seconds to find us."
+
+# sprite just disappears! [str]
+#show lilly basic_suprised_cas at rightsit # [str] (not sure if needed)
+#with charachange # [str]
+
+"Boy 1" "Hey there's some girls back here!"
+
+"Boy 2" "Really? Are they cute?"
+
+"Boy 1" "They're a bit older, buy you like them that way, right?"
+
+# # # trying to keep everything inside script is getting a little... confusing [str]
+# # # !!! also, that breaks a4 saves somehow. Should fix!!! [str]
+# python:
+#     def trembleleftsit(n):
+#         import math, random
+#         jitter = 0.00018 * (random.randint(-1,1))
+#         m = math.sin(n*math.pi*50) * 0.00005 + jitter
+#         return (m+0.0001,m+0.0001,0.0055,-0.15) # fookin' magic numbers [str]
+# # #
+#image hanako emb_downtimid_tremble_sun = At("sprites/hanako/hanako_emb_downtimid_sun.png",Motion(tremble,1.0, repeat=True)) # [str]
+#show hanako emb_downtimid_sun at Motion(trembleleftsit, 1.0, repeat=True) # leftsit # [str]
+
+show hanako emb_downtimid_tremble_sun # [str] (trembling code is in ui_settings.rpy now)
+with charachange # [str]
+
+"Hanako's shaking becomes more pronounced, and I can't help but share her fear."
+
+play sound sfx_heartslow # [str]
+show heartattack alpha  # [str]
+with Dissolve (0.1) # [str]
+
+hide heartattack alpha # [str]
+with Dissolve (0.7) # [str]
+
+
+hi "Lilly… we've got to get her out of here… I…"
+
+"Pain grips my chest, like a red hot skewer being driven into my chest."
+
+"Boy 2" "So? What do they look like?"
+
+show lilly basic_oops_cas at rightsit # [str] (pout)
+with charachange # [str]
+
+li "Hisao? Hisao! Please, calm down!"
+
+"Boy 1" "Come look for yourself, lazy bastard."
+
+li "We need to remain calm here, for Hanako."
+
+
+play sound sfx_heartslow # [str]
+show heartattack alpha  # [str]
+with Dissolve (0.1) # [str]
+
+hide heartattack alpha # [str]
+with Dissolve (0.7) # [str]
+
+with Pause(0.7) # [str]
+
+play sound sfx_heartslow # [str]
+show heartattack alpha  # [str]
+with Dissolve (0.1) # [str]
+
+hide heartattack alpha # [str]
+with Dissolve (0.7) # [str]
+
+hi "We… I… need to go."
+
+"I stand and try to drag Hanako to her feet."
+
+"Boy 1" "You're scaring them off! They're getting up!"
+
+hi "Come on Hanako, let's just leave"
+
+"Boy 2" "Fine I'm coming, stall them…"
+
+"My body heaves with the effort of moving Hanako"
+
+
+show hanako emb_downtimid_sun at twoleft # [str]
+with charamove # [str]
+
+play sound sfx_heartslow # [str]
+show heartattack alpha  # [str]
+with Dissolve (0.1) # [str]
+
+hide heartattack alpha # [str]
+with Dissolve (0.2) # [str]
+
+with Pause(0.7) # [str]
+
+play sound sfx_heartfast # [str]
+show heartattack alpha  # [str]
+with Dissolve (0.1) # [str]
+
+hide heartattack alpha # [str]
+with Dissolve (0.2) # [str]
+
+li "Hisao? Are you alright?"
+
+hi "I… I think so."
+
+hi "Come on, up you get."
+
+"Boy 2" "Right, I'm here, what's the WOAH"
+
+"Hanako's body shifts, and her fringe falls away from her face, revealing her scarred face to the young boys."
+
+"Boy 1" "What the fuck is that?!"
+
+"Boy 2" "They're the freaks from the school up the road!"
+
+show lilly basic_reminisce_cas at rightsit # [str]
+with charachange # [str]
+
+li "Oh no…"
+
+
+play sound sfx_heartslow # [str]
+show heartattack alpha  # [str]
+with Dissolve (0.1) # [str]
+
+hide heartattack alpha # [str]
+with Dissolve (0.2) # [str]
+
+with Pause(0.7) # [str]
+
+play sound sfx_heartfast # [str]
+show heartattack alpha  # [str]
+with Dissolve (0.1) # [str]
+
+hide heartattack alpha # [str]
+with Dissolve (0.2) # [str]
+
+show hanako emb_strain_sun at twoleft # [str] (some epic new sprites! yay!)
+with charachange # [str]
+
+"Hanako's body convulses, and she stares directly at the two boys."
+
+"Never have I seen such murderous intent…"
+
+"Boy 1" "Oh no the freak's gunna get us!"
+
+"Boy 2" "Run! Ahahaha!"
+
+"The laugher of these boys burns into my mind, however it has a profound effect on Hanako."
+
+show hanako emb_shock_sun at twoleft # [str] (some epic new sprites! yay!)
+with charachange # [str]
+
+"She grabs her ears, and shrieks."
+
+stop ambient fadeout 0.2 # [str]
+
+"The ear-piercing shriek silences the howling boys."
+
+show lilly basic_oops_cas at rightsit # [str]
+with charachange # [str]
+
+li "Hisao! Take her and run!"
+
+"My body reacts to Lilly's words, and I grab Hanako's wrist, and drag her with all my might into the driving rain."
+
+#stop ambient fadeout 0.2 # [str]
+scene bg suburb_roadcenter_rn #school_road # [str] (will _rn work? needs testing!)
+show rain # [str]
+#with dissolve # [str]
+with locationchange # [str]
+
+#$rainAnim # [str]
+play ambient sfx_rain fadein 0.2 # [str]
+
+"But it's not rain, it's a torrent of water issued forth from the sky, as is someone had redirected a river to fall upon our heads."
+
+play sound sfx_heartfast # [str]
+show heartattack alpha  # [str]
+with Dissolve (0.1) # [str]
+
+hide heartattack alpha # [str]
+with Dissolve (0.8) # [str]
+
+with Pause(0.15) # [str]
+
+play sound sfx_heartslow # [str]
+show heartattack alpha  # [str]
+with Dissolve (0.1) # [str]
+
+hide heartattack alpha # [str]
+with Dissolve (0.8) # [str]
+
+play sound sfx_heartfast # [str]
+show heartattack alpha  # [str]
+with Dissolve (0.1) # [str]
+
+hide heartattack alpha # [str]
+with Dissolve (0.8) # [str]
+
+"Hanako is like a rag doll, and stumbles as I pull her away from the little café."
+
+play sound sfx_thunder # [str]
+
+show white # [str]
+with Pause(0.1) # [str]
+hide white # [str]
+with Dissolve (0.5) # [str]
+
+with Pause(0.15) # [str]
+
+"Lightning flashes and thunder roars, but still I run."
+
+"The pounding of the rain is drowned out only by the pounding in my chest."
+
+"I feel every limb, nay, every muscle in my body tense with the strain, but still I keep dragging Hanako through the rain."
+
+play sound sfx_heartslow # [str]
+show heartattack alpha  # [str]
+with Dissolve (0.1) # [str]
+
+hide heartattack alpha # [str]
+with Dissolve (0.2) # [str]
+
+with Pause(0.7) # [str]
+
+play sound sfx_heartfast # [str]
+show heartattack alpha  # [str]
+with Dissolve (0.1) # [str]
+
+hide heartattack alpha # [str]
+with Dissolve (0.2) # [str]
+
+"Burning pain shoots down my left arm, and I involuntarily release Hanako's hand."
+
+"She stumbles forward, decelerating, but continues past me."
+
+
+play sound sfx_heartfast # [str]
+show heartattack alpha  # [str]
+with Dissolve (0.1) # [str]
+
+hide heartattack alpha # [str]
+with Dissolve (0.8) # [str]
+
+with Pause(0.15) # [str]
+
+play sound sfx_heartslow # [str]
+show heartattack alpha  # [str]
+with Dissolve (0.1) # [str]
+
+hide heartattack alpha # [str]
+with Dissolve (0.8) # [str]
+
+play sound sfx_heartfast # [str]
+show heartattack alpha  # [str]
+with Dissolve (0.1) # [str]
+
+hide heartattack alpha # [str]
+with Dissolve (0.8) # [str]
+
+"I can take no more."
+
+# # dat rotozoom madness. Also, retriggering rain 'cause it's vanishing after scene update
+scene bg suburb_roadcenter_rn at RotoZoom(0,-6,0.1,1.0,1.2,0.1, xalign=0.5, yalign=0.52) # [str]
+show rain # [str]
+with vpunch # [str]
+
+play sound sfx_heartfast # [str]
+
+show heartattack alpha  # [str]
+with Dissolve (0.1) # [str]
+
+hide heartattack alpha # [str]
+with Dissolve (0.2) # [str]
+
+# # [str]
+
+"My knees buckle, and I collapse around myself."
+
+"As I topple, I see Hanako turn to face me, her face a picture of terror."
+
+"I see her watch me hit the ground."
+
+"I see her face change in ways I've never thought possible."
+
+stop ambient fadeout 3.0 # [str]
+
+"I see her stumble over to my limp body, her mouth open in a silent scream."
+
+"No, that's not it… I just can't hear anything. Not even the pounding rain on my face."
+
+play sound sfx_heartfast # [str]
+show heartattack alpha  # [str]
+with Dissolve (0.1) # [str]
+
+hide heartattack alpha # [str]
+with Dissolve (0.8) # [str]
+
+show passoutOP1 # [str]
+with None # [str]
+
+"As my world turns grey, I see Hanako straddling me, her fists clenched together and raised above her tear- and rain-streaked face."
+
+stop music fadeout 1.0 # [str]
+
+"The last light drains out of my world just as I see her brining down her fists."
+
+with Pause(1.0) # [str]
+#ftb
+
+window hide # [str]
+
+play sound sfx_heartstop # [str]
+
+scene black # [str]
+with None # [str]
+
+with Pause(2.7) # [str]
+
+return
