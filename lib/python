@@ -1,0 +1,30 @@
+#!/bin/sh
+
+# This is python code that figures out the new version of the 
+# library path.
+base="`dirname \"$0\"`"
+base="`cd \"$base\"; pwd`"
+
+export PYTHONOPTIMIZE=1
+
+export RENPY_OLD_LD_LIBRARY_PATH="$LD_LIBRARY_PATH"
+
+
+ARCH="linux-x86 linux-iliad"
+
+for i in $ARCH; do
+    i="$base/$i"
+    if [ "x$LD_LIBRARY_PATH" = "x" ]; then
+        export LD_LIBRARY_PATH="$i/lib"
+    else
+        export LD_LIBRARY_PATH="$i/lib:$LD_LIBRARY_PATH"
+    fi
+
+    if "$i/python.real" -S -c "import sys; sys.exit(0)"; then
+        exec $PY4RENPY_GDB "$i/python.real" "$@"
+    fi
+
+    LD_LIBRARY_PATH="$RENPY_OLD_LD_LIBRARY_PATH"
+done
+
+echo "Could not find a python that runs on your platform. Sorry."

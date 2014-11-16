@@ -1,0 +1,2329 @@
+﻿label en_HT14:
+
+    #Classic Kotoko.
+    #also Lol yuri themes.
+
+    #bg Classroom
+
+    #Act 5 (?) title card… I need to think of a title. Not really good at that. Something "final".
+
+    "What a weekend. After leaving Lilly's room, I practically fell straight asleep…"
+
+    "…without setting my alarm."
+
+    "If it wasn't for a particularly shrill bird, I would have been late to class."
+
+    "The run to beat the bells set my chest ablaze, and for all the wrong reasons."
+
+    "Some people joke about giving themselves a heart attack in situations like that."
+
+    "It's not so funny when it's a part of your reality."
+
+    "But that's not the point."
+
+    "My tardiness neglected my morning conversation with Hanako, and now that there's only a few seconds to the lunch bells, I'm itching to say “Good Morning.”"
+
+    "…amongst other things, of course."
+
+    "Muto finishes writing the last of the exam timetable on the board, and puts down the chalk."
+
+    #muto serious
+
+    mu "So ends this trimester's lessons. From now until the end of your exams is study time."
+
+    mu "Myself and the other teachers will be available to help you."
+
+    #Muto contemplative
+
+    mu "But, I suppose if you have made it this far and haven't absorbed the material, there's very little we can do for you."
+
+    "The bells ring, Muto leaves the classroom, but no-one moves."
+
+    "The severity of his words seems to hit home with more than a few students."
+
+    "Ashen faces fill the room, but none more ashen than the one closest to me."
+
+    #misha sad/heh…. heh… heh
+
+    mi "Heh… heh…"
+
+    mi "Hey, Hisao…"
+
+    mi "He's not serious, is he? Heh… heh…"
+
+    "Man, I never thought anyone would knock the wind out of Misha's sails."
+
+    "She still wears her idiotic smile, but her eyes are dead."
+
+    "No, worse than dead."
+
+    "From the nose up, Misha looks like a zombie."
+
+    hi "I don't think it's that bad."
+
+    hi "I mean, you've passed most of your tests to now, right?"
+
+    "No change."
+
+    "Ah well, this is amusing in its own right."
+
+    #Shizune pissed off
+
+    "Behind the zombified Misha, Shizune taps impatiently on the desk."
+
+    "Misha, however, doesn't react, so I am left facing a clearly unimpressed Shizune."
+
+    "I try to gesture “what” to her, but to no avail."
+
+    shi "…"
+
+    "She sighs, pushes her glasses up on her nose, and points behind me."
+
+    hi "Eh?"
+
+    ha "Good morning, Hisao!"
+
+    #Show Hanako Happy
+
+    hi "Hanako! Sorry, I got distracted, and I was late this morning, and… yeah…"
+
+    ha "T—that's okay. I wanted to speak to Misha and Shizune, too."
+
+    hi "Eh?"
+
+    #Misha Eh?
+
+    "Misha snaps out of her reverie."
+
+    mi "Eh? You want to speak to us?"
+
+    #hanako embarrassed
+
+    ha "Um, well, I ended up making too much for lunch today, and you and Shizune seem to talk to Hisao a lot… and, um…"
+
+    #mabye a more embarrassed Hanako?
+
+    ha "I wanted to know if you wanted to join us for lunch and study…"
+
+    extend " maybe… "
+
+    extend "only if you wanted to…"
+
+    #misha excited
+
+    mi "Eh? What's this? You're asking us to come with you?!"
+
+    mi "But you never talk to anyone!"
+
+    ha "Um, well, I thought that you and Shizune might get lonely…"
+
+    ha "There's no-one else on the council…"
+
+    hi "Eh? I thought you said there were a lot of people on the council?"
+
+    mi "There is, but there isn't."
+
+    mi "It's like that."
+
+    hi "Oh, I get it."
+
+    "I don't get it."
+
+    mi "But this is big news! Lunch! Study!"
+
+    mi "Count us in!"
+
+    hi "Um, shouldn't you ask Shizune first?"
+
+    "Shizune sits directly behind Misha, who seems oblivious to her presence."
+
+    "In fact, I think this is the longest that I think I've seen Misha go without signing something."
+
+    mi "What? No, Whahaha. She'll pretend to say no but she'll come along."
+
+    mi "We've seen you work in science."
+
+    mi "We need someone like you that isn't dumb at it."
+
+    "Misha lowers her voice."
+
+    mi "Shizu would never admit it, but she's bad at science."
+
+    mi "But don't tell her I told you that."
+
+    "Behind Misha, a shadow rises."
+
+    "Tapping on the desk didn't work."
+
+    "Gently tapping her shoulder didn't work."
+
+    "In a soundless vocabulary, these are the equivalent of “Excuse me” and “Hey! Misha!”"
+
+    "Misha, however, remains oblivious."
+
+    "The shadow winds up, and delivers possibly the most graphical “I'm Talking to You, Damn it!” that I have ever seen."
+
+    #Misha cry/rubbing head
+
+    mi "Ow… Shizune~"
+
+    mi "You didn't have to do that."
+
+    mi "Yes I did, you weren't paying attention."
+
+    mi "But I was talking to Hisao…"
+
+    mi "About what?"
+
+    mi "Umm…"
+
+    "Misha's mouth stalls, however her hands go through the pre-programmed movements, spelling out her thoughts directly to Shizune."
+
+    mi "I should hit you again for being so insolent. Now tell me, what's going on?"
+
+    mi "Oh, Hisao and Hanako want to study with us! Aren't we lucky?"
+
+    #Shizune blush
+
+    mi "Really? Well, the council has light duties during the exam period, so I think it is a good idea."
+
+    mi "Hey, Shizu, can we use the council office?"
+
+    mi "I don't see why not. Hisao, what do you think?"
+
+    hi "Eh?"
+
+    "I was so wrapped up in Misha's solo dialogue that I only barely registered my name being mentioned."
+
+    ha "It sounds like a good idea."
+
+    hi "Yeah, sure. But lunch first?"
+
+    mi "Yippie~! Lunch! We can do that, right?"
+
+    mi "You should always study on a full stomach, right?"
+
+    "I don't even know who is talking anymore."
+
+    mi "So, where do we go?"
+
+    ha "Um, I asked Lilly to meet us in the usual spot, so, maybe…"
+
+    mi "Oh, where's that?"
+
+    hi "The roof. It's kind of our place, no-one ever goes there."
+
+    mi "You're right! I've never been there!"
+
+    mi "That's because it's supposed to be out of bounds."
+
+    mi "Buu, don't be a killjoy. Hana here has invited us, we can't say no."
+
+    mi "Hanako invited us?"
+
+    ha "Y—yeah."
+
+    mi "Huh. I guess we can't refuse then."
+
+    mi "Great! Lead the way, Hisao."
+
+    hi "Um, sure."
+
+    "Slightly confused, I head up the narrow stairway to the roof."
+
+    #bg roof.
+    #The following scene was originally going to be my finale.
+    #It will require a lot of direction.
+    #hopefully we can get away without my panning and zooming.
+    #You know, like a certain other rooftop scene.
+    #I'll include bits that *need* to be seen.
+
+    "The midday sun is a little blinding, but I can clearly make out three shapes sitting near each other."
+
+    hi "Oh, the others are here…"
+
+    mi "Others?"
+
+    li "Ah, Hanako, Hisao, is that you?"
+
+    ha "Y—yes Lilly. We… brought friends."
+
+    emi "Friends?"
+
+    rin "Brought?"
+
+    mi "Hey, I know you?"
+
+    $doublespeak (rin,emi,"Who?","Who?")
+
+    mi "Yeah, don't you remember? The art room?"
+
+    #Emi embarrassed/ O_O
+
+    rin "I don't think I remember anything like that."
+
+    emi "Don't tell me…"
+
+    mi "I knew it! I was kinda dark so…"
+
+    emi "That was a mistake!"
+
+    hi "What's going on here?"
+
+    #Misha ultra happy/ Emi Ultra O_O
+
+    $doublespeak (mi,emi,"It's a secret.", "It's a secret.")
+
+    rin "That's twice now Emi…"
+
+    emi "It was just one time!"
+
+    mi "What was one time?"
+
+    mi "Oh, never mind, we just met up once."
+
+    emi "I was looking for Rin and…"
+
+    rin "You were looking for me in the art room?"
+
+    hi "I thought you lived in there…"
+
+    ha "You are there a lot of the time."
+
+    li "If I were to search for you, I would look there first."
+
+    rin "Huh. I would have looked where I was first."
+
+    mi "That makes sense."
+
+    emi "Anyway, why are we all here?"
+
+    mi "Hanako invited us here."
+
+    li "Hanako did?"
+
+    ha "I… I thought we should study together…"
+
+    ha "We are in the same class…"
+
+    mi "And we have the council room to ourselves."
+
+    li "My my, I don't suppose this is to force you to actually study, is it, Hanako, Hisao?"
+
+    #Hanako Happy blush
+
+    ha "M…maybe."
+
+    rin "You won't study unless you're in the Council Room?"
+
+    rin "I guess I have the same rule."
+
+    rin "I have never studied, nor have I been to the Council Room."
+
+    mi "Makes sense."
+
+    shi "…"
+
+    mi "Oh, sorry, it doesn't."
+
+    rin "You change your mind a lot."
+
+    hi "She's talking for two and thinking for none."
+
+    mi "It's true."
+
+    mi "Hey!"
+
+    hi "See?"
+
+    rin "Interesting. Who are you?"
+
+    mi "Shizune."
+
+    mi "And I'm Misha."
+
+    rin "Can we be friends?"
+
+    mi "I don't see why not."
+
+    emi "Hey… now… be careful."
+
+    hi "Of what?"
+
+    #emi embarrassed
+
+    emi "Nothing!"
+
+    hi "Er, okay."
+
+    li "So, I take it we all will be studying together?"
+
+    ha "W—well, Hisao is good at science, and you're good at music…"
+
+    emi "Really? I really really suck at science, can you please teach me?"
+
+    hi "Um, I guess, but…"
+
+    mi "Ooh, that's right, Muto likes you, he's always asking you to explain things."
+
+    ha "Please?"
+
+    hi "I don't really have a choice, do I?"
+
+    li "Is the council room big enough for all of us?"
+
+    mi "Should be. We can also have a lot of snacks while we study."
+
+    li "Splendid. Should I bring my tea set?"
+
+    emi "You have a tea set?"
+
+    hi "Yeah, a good one too."
+
+    ha "We use it all the time."
+
+    emi "Hang on, are you two going out?"
+
+    hi "Yes. Sorry, I didn't send out a memo yet."
+
+    rin "Why would you do that?"
+
+    mi "Oh, so that's why you two were together."
+
+    hi "You didn't notice?"
+
+    rin "She's thinking for none."
+
+    rin "Or is that the other one?"
+
+    "Rin looks thoroughly perplexed, but generally interested by the dual mind of Misha and Shizune."
+
+    "It's the first time I've seen her actually animated in the least."
+
+    li "So, Hamakichi and Shiina…"
+
+    emi "Who?"
+
+    hi "Shizune and Misha…"
+
+    rin "So that's their names…"
+
+    li "…as I was saying, Shizune and Misha will provide the room, Hisao shall provide the tuition, and I shall provide the tea."
+
+    ha "I can make some sandwiches…"
+
+    hi "They're pretty good…"
+
+    li "…Hanako can provide the food…"
+
+    emi "I can run to the shops and get some snacks really really fast."
+
+    rin "I'm not studying, I just want to see Shizukichi and Shii…sha… more."
+
+    rin "Shi…chi…shii…sha."
+
+    rin "You sound like a dance."
+
+    mi "Eh?"
+
+    shi "…"
+
+    "I can see Misha's tireless hands falter as Rin launches into her full “babble” mode."
+
+    li "So, it's settled. What time shall we meet, teacher?"
+
+    "I am set upon by six pairs of excited eyes, each seemingly more intrigued than the last."
+
+    hi "Um, let's say three o'clock?"
+
+    emi "Three it is! Watch me, I'll be back! Save me a seat!"
+
+    "Emi scoffs the last of her lunch, grabs Rin's sleeve and makes a beeline for the stairwell door."
+
+    rin "Eh? Why am I going? I want to stay with the dancers…"
+
+    emi "Because I have no mon~ey."
+
+    rin "I shall return, Shichishiisha."
+
+    mi "Eh?"
+
+    "Whilst Misha's brain tries to sort through recent proceedings, Hanako spreads out her food on a small blanket."
+
+    "True to her word, she has made far too much for even too people."
+
+    mi "Ooh, you did make a lot. Is it okay?"
+
+    ha "P—please. Help yourself."
+
+    mi "I think I will!"
+
+    mi "Thank you for the food, Hanako."
+
+    ha "You're welcome."
+
+    mi "Hey, these are good!"
+
+    hi "I told you."
+
+    ha "T—thanks."
+
+    li "No, thank you, Hanako."
+
+    "Whilst the others are distracted with the food, I lean in close to Hanako."
+
+    hi "Are you sure this is a good idea?"
+
+    ha "I… I thought it would be better with more people."
+
+    hi "You mean, so we study, instead of… you know…"
+
+    #Hanako blush
+
+    ha "S—sorta. But I… I've been in the same class as Shizune and Misha for a while now."
+
+    ha "And they always talk to you in class, so I… I want to talk to them too."
+
+    "I feel a smile creep across my face, and a sideways glance at Lilly confirms that she, too, is grinning."
+
+    "Whilst there is a lot of food, before the might of the five of us, it is gone fairly quickly."
+
+    mi "Thank you for that."
+
+    ha "You're welcome."
+
+    mi "Well, we have to prepare the council room for this many visitors. If you'll excuse us…"
+
+    hi "Go ahead, I have to go back to my room to get my notes, anyway."
+
+    mi "We'll see you there at three, then."
+
+    "Shizune bows slightly, and Misha skips ahead of her, into the stairwell."
+
+    li "My my, that was lively."
+
+    hi "Indeed."
+
+    #hanako blush smile
+
+    ha "I… thought it was fun."
+
+    hi "Eh?"
+
+    ha "It was a little busy, but fun."
+
+    hi "I think you're right there."
+
+    li "Are you going to be alright for the study sessions?"
+
+    hi "Sessions?"
+
+    li "Surely we aren't going to all this trouble for one afternoon?"
+
+    "A little piece of me dies inside. Am I going to be stuck teaching six girls for the next two weeks?"
+
+    ha "I… I think I will be fine."
+
+    ha "And it's less of a distraction than… than…"
+
+    #Hanako super embarrassed
+
+    #Lilly slight blush
+
+    li "Oh, I suppose you are right there."
+
+    hi "Yeah, I suppose we have no choice now."
+
+    hi "It's hard enough getting away with one person watching, let alone five…"
+
+    li "I wasn't watching…"
+
+    hi "Listening, then."
+
+    li "Hisao Nakai, are you, perchance, insinuating that I am some kind of voyeur?"
+
+    hi "No, not at all. But you were…"
+
+    "Lilly swings out in my direction, landing a playful punch on my back."
+
+    "Still, I can't resist hamming it up."
+
+    hi "Hey, ow…"
+
+    li "Be quiet, you. I know that didn't hurt. That wasn't the point."
+
+    #Lilly smile, Hanako laugh
+
+    "Lilly's fake seriousness makes Hanako and I laugh, and before long she joins us in laughter."
+
+    li "Come now, that's enough horsing around. How much longer do we have before class?"
+
+    hi "Um, just under an hour."
+
+    li "Well then, don't you think that you should prepare?"
+
+    hi "Yeah, you're right. Hanako, do you need a hand?"
+
+    ha "No, I should be fine. I'll see you there."
+
+    "I lean over and kiss Hanako before setting off to collect my notes."
+
+    "Just how the hell did I get roped into this?"
+
+    return
+
+label en_HT15:
+
+    #bg Student council office.
+    #Also Lol directing again.
+
+    "I enter the student council office, utterly surprised at the changes since the last time I was here."
+
+    "Well, more specifically, the changes that seem to have happened in the past hour."
+
+    mi "Ta-da! What do you think?"
+
+    hi "I'm… amazed. Where did you get…"
+
+    mi "Classrooms."
+
+    hi "And the…"
+
+    mi "Staff room."
+
+    "I shake my head at the absurdity of it all."
+
+    "Shizune's desk has been pushed off to one side, and in its place, six classroom desks have been lined up in two rows."
+
+    "Next to the door stands a small blackboard on wheels, fully equipped with chalk, eraser, and wooden ruler."
+
+    #Misha ultra happy
+
+    mi "Put on the jacket! Do it!"
+
+    hi "Er, okay… but whose is it?"
+
+    shi "…"
+
+    mi "Stop asking irrelevant questions."
+
+    mi "When taking on roles such as this, getting the look right is the most important thing."
+
+    mi "Besides, if you were to teach us in your uniform, we wouldn't be able to take you seriously."
+
+    hi "I thought that this was supposed to be a study session?"
+
+    shi "…"
+
+    mi "It IS a study session. For us."
+
+    mi "That's right, Hisao. You're going to help us pass!"
+
+    hi "Do I really have to wear the jacket?"
+
+    $doublespeak (sh,mi,"…","YES.")
+
+    "Reluctantly, I shrug the jacket onto my shoulders."
+
+    "It smells a little of cigarettes and alcohol."
+
+    "I guess one of our teachers is a fan of the local bars…"
+
+    mi "It's perfect, isn't it, Shizu?"
+
+    mi "Indeed. It's as if it were made for you."
+
+    li "Is this the right place?"
+
+    "Lilly and Hanako appear at the doorway, both carrying armfuls of provisions."
+
+    hi "Yeah, this is it, come on in."
+
+    ha "Y…you look funny, Hisao."
+
+    hi "Tell them, they're the ones that are making me wear it."
+
+    mi "It's perfect, isn't it, Hanako?"
+
+    "The more time I spend with Misha, the more I believe that she would stop functioning if Shizune were to disappear."
+
+    ha "Um… it looks kinda familiar…"
+
+    hi "It's one of the teacher's…"
+
+    #Hanako thinking/whimsical/something
+
+    ha "No, not like that."
+
+    ha "Like, from… before."
+
+    "I try to read Hanako's face, but it's impossible."
+
+    "Almost as if she is trying to remember something, but is unsure if she wants to."
+
+    hi "I can take it off if you want…"
+
+    ha "N—no. It suits you."
+
+    mi "Told you!"
+
+    "Without warning, Hanako lurches forward, nearly dropping the teapot she is carrying."
+
+    emi "Sorry! I didn't see you there!"
+
+    ha "T—that's okay…"
+
+    rin "I told you it was too fast."
+
+    #Emi Tee-hee/loli tap-self-on-head
+
+    emi "I guess I messed up."
+
+    ha "It's alright."
+
+    "Though, in saying that, Hanako makes sure to quickly arrange Lilly's tea set on Shizune's desk."
+
+    "Following suit, Emi unceremoniously empties her two shopping bags onto the desk, sending boxes of snacks skidding across the table."
+
+    emi "Help yourself, Rin had a bit of money saved up so I went all out!"
+
+    rin "I never said that we should share them…"
+
+    mi "Too late!"
+
+    "Misha opens the box nearest to her, grabs a handful of the chocolate-coated treats, and passes the box to Shizune."
+
+    "Rin watches in disbelief."
+
+    rin "So, both of you eat?"
+
+    shi "…"
+
+    mi "Of course, what did you expect?"
+
+    rin "I… don't know."
+
+    hi "Hey, is this a study session, or are we just going to stand around and eat all afternoon."
+
+    mi "Sorry teacher! Everyone! To your seats!"
+
+    "The institutionalised part of the girls' brains kicks in, and they shuffle into their seats."
+
+    hi "Um, thanks Misha."
+
+    mi "Don't mention it, this is the Class Rep's job."
+
+    hi "You're the Class Rep?"
+
+    mi "No-one else here is qualified."
+
+    mi "Plus, Shizune makes me say this kind of stuff all the time anyway."
+
+    hi "Right… well…"
+
+    hi "What should we do first?"
+
+    emi "History!"
+
+    hi "I thought we were going to do science?"
+
+    #Emi ???
+
+    emi "I thought History was a science."
+
+    rin "History is just the past."
+
+    hi "I guess that's right. Any other suggestions?"
+
+    mi "I don't get gravity."
+
+    mi "Is it mg or that M&M's thing?"
+
+    hi "M&M's?"
+
+    #Misha confused
+
+    #I should note, I didn't intend to write a 3-page lecture on gravity.
+    #Stupid degree.
+    #Is it worth keeping? Where should I cut it?
+
+    mi "You know, like gravity was always mg. But now it's MM… something."
+
+    li "I believe that Misha is referring to the equation of gravity, where the force is equal to G by M by m on r squared."
+
+    mi "Yeah, the M&M rule."
+
+    hi "Ah, right. Well, er, the way I remember it is like this."
+
+    "Instinctively, I pick up the chalk and draw two circles on the board."
+
+    "However, due to a lack of experience with chalk, the circles turn out more like blobs."
+
+    hi "Think about two balls in space."
+
+    shi "…"
+
+    mi "Why in space?"
+
+    hi "Well, it's so that we don't have anything else to worry about."
+
+    mi "I see."
+
+    hi "Now, what are the things that are going to matter here?"
+
+    emi "Matter?"
+
+    hi "I mean, what is there that will change the gravity?"
+
+    "I stare down the barrel of six blank faces."
+
+    "Teaching is hard."
+
+    hi "Um… think of it this way. What do we know about these balls?"
+
+    rin "Neither of them is a ball."
+
+    hi "That's got more to do with my drawing skills, I think."
+
+    emi "Is it… gravity?"
+
+    hi "Not exactly, that's what we're trying to find."
+
+    li "The masses of the balls?"
+
+    hi "Bingo."
+
+    "I draw an M under each blob."
+
+    ha "H—how far apart they are?"
+
+    hi "That's right. Anything else?"
+
+    "Once again, blank stares."
+
+    hi "Well, that's actually it, really."
+
+    hi "Now, think about this; if either of the masses gets bigger, would you expect more or less gravity?"
+
+    mi "Le…"
+
+    shi "…"
+
+    mi "More."
+
+    hi "Nice save."
+
+    $doublespeak (shi,mi,"…","I'm used to it.")
+
+    hi "And what about the distance. If they get further apart, will there be more or less gravity?"
+
+    ha "Less?"
+
+    hi "Right again."
+
+    hi "So now we can put them together. Can anyone guess how?"
+
+    rin "GMm on r squared."
+
+    hi "Uh, right. How did you know?"
+
+    rin "She said it before."
+
+    hi "Right. But why is it like this? Why isn't r on the top?"
+
+    li "Since the force gets less as the distance gets bigger… that means you need to divide, and not multiply?"
+
+    hi "Spot on."
+
+    hi "Does that make sense?"
+
+    mi "Then what's G?"
+
+    hi "It's just a constant; something that just keeps everything in line."
+
+    rin "Like white."
+
+    hi "Eh?"
+
+    rin "White doesn't mean much, but it fills in the blanks."
+
+    rin "If there was no white, nothing would make sense."
+
+    mi "Oh, I get that!"
+
+    hi "You do?"
+
+    mi "Yup. You're now smart, Rin!"
+
+    rin "I can only talk for one person though."
+
+    hi "So, is everyone happy now?"
+
+    ha "Um… what is the mg one then?"
+
+    #Misha confused
+
+    mi "Yeah, why does it change?"
+
+    hi "Well, it doesn't."
+
+    "I draw a circle around part of the gravity equation I've written on the board."
+
+    hi "If you're standing on the earth, then these parts are going to be the same, aren't they?"
+
+    hi "G is a constant, the mass of the earth doesn't change, and the earth is pretty much a sphere, so r is the same everywhere, right?"
+
+    emi "Right."
+
+    hi "So, we can work out this part, and it ends up being g."
+
+    hi "And if you multiply that by m, you get the same thing we have here."
+
+    mi "Ohhh."
+
+    mi "I can almost remember that."
+
+    hi "Almost?"
+
+    mi "I didn't write any of it down."
+
+    "It suddenly occurs to me that Misha never gets the chance to take notes, her hands busy signing the classes directly to Shizune."
+
+    "I feel kind of sorry for her, in a way."
+
+    "Then again, I get the feeling that Shizune's notes would be a lot more legibile and concise, and it's a given that she just copies off those."
+
+    "Their symbiotic relationship never ceases to amaze me."
+
+    "After the girls finish taking down their notes, I erase my scratchings from the board, and ask for the next question."
+
+    "Now that the tone has been set, everyone seems to relax a little, and the questions start coming thick and fast."
+
+    "Electrostatics, stoichiometry, redox…"
+
+    "A full science course in an afternoon."
+
+    "But after each one of my fumbled explanations, I can see a little more understanding in each of the faces before me."
+
+    "And sometimes, just simply saying my thoughts out loud makes it easier to think."
+
+    "It's a lot easier than just reading a textbook."
+
+    "We work long into the evening, occasionally passing around boxes of snacks as I write up formula after formula on the small chalkboard."
+
+    "The sky outside turns dark, and the only thing that stops us is the impending curfew."
+
+    hi "I think we should call it quits there, it's getting late."
+
+    mi "And we still have to clean up."
+
+    li "We could all help."
+
+    emi "Yeah, what needs to be done, teacher?"
+
+    "Even though I have no idea where any of this stuff goes, everyone refers to me by the virtue of this assumed position."
+
+    hi "Er, I guess the desks have to go back, and the board."
+
+    rin "And your jacket isn't yours anymore."
+
+    hi "Eh?"
+
+    mi "You're still wearing that jacket."
+
+    hi "Oh? Huh, I totally forgot."
+
+    "Shizune extends an arm towards me."
+
+    shi "…"
+
+    mi "Here, I'll take it back. I'm the only one with a key to the staff room."
+
+    mi "The desks go back to 2-3. I'll see you in class tomorrow."
+
+    hi "Ah, thanks."
+
+    "I slide out of the jacket and hang it over Shizune's arm."
+
+    hi "Well then, let's get this stuff back to 2-3."
+
+    emi "Okay!"
+
+    "Shizune and Misha head out to return the jacket, whilst Hanako, Emi and I start carrying the desks back to their classroom."
+
+    "Lilly offers to help, but it is easy enough for the three of us."
+
+    "Rin watches us for a second before skulking after Shizune and Misha, probably to “Uncover their secret” or something equally unbelievable."
+
+    "Having returned the desks, we clean up the last of the snacks, and gather up Lilly's tea set."
+
+    "The four of us leave the room and head back to the dorms."
+
+    #BG night, outside dorms
+
+    emi "You were really good in there."
+
+    hi "Um, not really, but thanks…"
+
+    li "No, it is true. You were able to explain things in a simple manner…"
+
+    ha "A…and it was easier than Muto."
+
+    emi "I know! He always makes things difficult!"
+
+    emi "“Integrate this!” “Differentigrate that!”"
+
+    emi "It's impossible…"
+
+    hi "Well, it's not that hard, but he doesn't teach things the easy way."
+
+    li "Have you ever thought about doing this professionally?"
+
+    hi "What, teaching?"
+
+    li "Yes. You seem to have a knack for it."
+
+    hi "Really?"
+
+    ha "You were really good."
+
+    hi "Huh, I've never thought of it."
+
+    hi "It was sorta fun though."
+
+    #Hanako embarrassed
+
+    ha "You… looked good too."
+
+    hi "Well then, maybe I'll have to buy myself a new jacket."
+
+    #Hanako embarrassed smile
+
+    ha "We… should go shopping some time."
+
+    #Emi excited
+
+    emi "Oooh ooh oh! A date! A date!"
+
+    emi "It's a date, right?!"
+
+    hi "Yes."
+
+    extend " And you're not coming."
+
+    #Emi :<
+
+    emi "Aw, but I like going shopping."
+
+    hi "Too bad."
+
+    emi "Next time. You're taking me shopping next time, teach."
+
+    hi "Teach?"
+
+    emi "I like it."
+
+    li "It does seem appropriate, especially if we are to study like this on a regular basis."
+
+    hi "Hey, I didn't say anything about this being regular…"
+
+    ha "I think it's too late for that…"
+
+    "At the mention of “late,” I check my watch."
+
+    hi "Crap, it is late, but not that kind of late."
+
+    hi "I better run or I'll miss curfew."
+
+    ha "Oh… I guess you can't stay over every night."
+
+    #Emi confused
+
+    emi "Stay over?"
+
+    hi "It's… er… nothing. We just…"
+
+    li "Hisao, Hanako and I were studying late last night, and we accidentally fell asleep."
+
+    #emi disappointed
+
+    emi "Oh, I thought you meant… something else."
+
+    hi "Hah, what are you talking about? We're high school students… "
+
+    extend "and I really have to go."
+
+    "I give Hanako a quick hug and a kiss, and wave the other girls goodnight."
+
+    ha "Good night, Hisao."
+
+    li "Night."
+
+    emi "Were you really studying?"
+
+    li "Yes, we were."
+
+    li "Now let's hurry along, we wouldn't want to get caught."
+
+    emi "Okay okay. G'night, teach. Thanks for today."
+
+    hi "Don't mention it."
+
+    "The girls disappear into the dormitory, closing the door behind them."
+
+    "Well, nothing more for it than to head back to my room."
+
+    "Truth be told, I am beat."
+
+    "I doubt I'll have any trouble getting to sleep tonight."
+
+    return
+    
+label en_HT16:
+
+    #Welcome to my nightmare; the two-week timeskip
+    #I hate doing this, but slightly less than how much I hate writing about everyone playing
+    #school.
+
+    #also, supersized party scene. 50% larger than most other scenes.
+    #Upside, almost done with the path.
+
+    #BG Classroom with fade
+
+    mu "Aaaaand…"
+
+    extend " time."
+
+    mu "Drop your pens and wait in your seats whilst I collect your papers."
+
+    "Muto ambles along between the desks, students passing their papers to him like offerings to some prophet."
+
+    "After two weeks of relentless testing, it seems that he has the optimum pattern worked out, and manages to collect all the papers with only one pass of the classroom."
+
+    "He drops the large stack of papers on his desk, making a hefty “thump.”"
+
+    mu "That's it. I'll see you all after the summer break."
+
+    "The class erupts in celebration. With the last exam done, there is nothing between us and four weeks of vacation."
+
+    #I'm pretty sure that the summer vacation is only 4 weeks long in Japan.
+
+    "In the fray of limbs and bodies of our class, two figures approach me."
+
+    #Show misha/Shizune happy
+
+    mi "Um, Hisao, we wanted to say thanks."
+
+    hi "Really? I take it the study sessions helped?"
+
+    mi "Yup yup yup! I don't think I've ever done so well on a science test."
+
+    mi "I might even pass first time!"
+
+    hi "Well, it was fun for me too. I think I aced that last one."
+
+    #Shizune blush
+
+    shi "…"
+
+    mi "Oh, and Shizune wants to say thanks too."
+
+    mi "It's hard for her to admit that kind of thing, but you really helped her."
+
+    #show Hanako generic (not embarrassed)
+
+    ha "Hello Misha, Shizune."
+
+    mi "Hana! Good timing! How did you go?"
+
+    ha "A—alright I think. What about you?"
+
+    #Misha semi lols?
+
+    mi "Awesome! Everyone's going to pass this time, for sure!"
+
+    #Hanako relieved
+
+    ha "That's good."
+
+    #Shizune Oh!
+
+    shi "…"
+
+    mi "Oh! That's right!"
+
+    mi "The Student Council is going to be having a meeting tonight, and they would like to invite you…"
+
+    hi "Er, you mean you and Shizune are…"
+
+    "A swift pain in my chest stops me from continuing."
+
+    "It appears to be caused by an acute case of Misha's Elbow Syndrome."
+
+    #Misha Lols
+
+    mi "Whahaha, of course it's not just us!"
+
+    mi "You can only spend council funds on official business!"
+
+    mi "Holding a party and inviting your friends is strictly forbidden!"
+
+    hi "I get it. It's just a meeting then, right?"
+
+    mi "Right!"
+
+    hi "And I take it that there will be refreshments at this meeting, right?"
+
+    mi "Right!"
+
+    hi "And possibly something to entertain us if we have to take some time to ponder a decision, right?"
+
+    mi "Right!"
+
+    hi "So then, what is the order of business for this meeting?"
+
+    #misha ???
+
+    mi "Eh?"
+
+    shi "…"
+
+    mi "Oh, that's right."
+
+    mi "It will be “A debrief on the advantages of peer tutoring as a study aide.”"
+
+    mi "Shizune is really good at thinking up titles like that."
+
+    ha "Who's going to be there?"
+
+    shi "…"
+
+    mi "Everyone that participated in the trial. It is the only way to get definitive results."
+
+    mi "I would expect that we will be discussing the outcomes well into the night, so I have had curfew waived for us."
+
+    mi "You did?"
+
+    mi "I deemed it necessary."
+
+    hi "Is that even allowed?"
+
+    mi "I allowed it, ergo it is allowed."
+
+    hi "That makes perfect sense."
+
+    mi "Logic is one of mankind's greatest achievements."
+
+    ha "Have you told the others?"
+
+    mi "We invited everyone else yesterday. They finished their tests before us."
+
+    #hanako concerned
+
+    ha "Even Lilly?"
+
+    mi "Of course."
+
+    hi "Why? Has something happened with Lilly?"
+
+    ha "No, it's not that, it's just…"
+
+    ha "Well, never mind."
+
+    hi "Are you sure?"
+
+    ha "Yes, it's nothing."
+
+    ha "I doubt she would do anything…"
+
+    #BG Councilroom (direct cut)
+
+    li "Welcome! I took the liberty of preparing for the meeting!"
+
+    "Once again the council room has been completely transformed."
+
+    "Plates of snacks and cans of drinks cover practically every table surface."
+
+    "Music plays from a small stereo at the back of the room, where Emi and Rin appear to be fighting over the next song to play."
+
+    "Towards the centre of the room, surrounded by a wall of cups, sits a large bowl of red liquid."
+
+    "Little chunks of fruit and ice cubes bob up and down on the surface, as if a ship made of tinned fruit ran into an ice floe."
+
+    "Even from the door I can smell its sickly sweet scent."
+
+    #Hanako shocked/worried
+
+    ha "Uh-oh."
+
+    hi "Uh-oh?"
+
+    hi "Is this what you were worried about?"
+
+    "Hanako simply nods, and hugs my arm in fear."
+
+    mi "It looks like everyone is here!"
+
+    li "Ah, Shizune, Misha, welcome! How were your exams?"
+
+    mi "Good good good! And you?"
+
+    li "I believe that I did quite well. Hisao's a good teacher, isn't he?"
+
+    hi "Well, I didn't…"
+
+    li "A toast, to Hisao!"
+
+    "Emi and Rin jump up at these words like servants."
+
+    "Only now do I see the half-empty glasses of punch where they were squabbling."
+
+    "Emi quickly ladles out five more glasses of the red punch, and passes them to us."
+
+    emi "To Hisao!"
+
+    hi "Cheers!"
+
+    "With the exception of Rin, we all lift our glasses in salute."
+
+    "Then, as one, we empty the glasses."
+
+    "Shizune and Misha nearly turn green."
+
+    #shizune angry, misha confused
+
+    mi "What's in this?"
+
+    ha "It's as I feared…"
+
+    "Realisation dawns…"
+
+    hi "Lilly, did you make this punch?"
+
+    li "Oh, do you like it? It's a family recipe."
+
+    ha "This is that punch again, isn't it?"
+
+    li "Yes, that's right, Hanako. I thought that this was a celebration, so I prepared enough for all of us…"
+
+    extend " hic"
+
+    hi "“hic?” Lilly, do you have the hiccups?"
+
+    li "…hic…"
+
+    li "No."
+
+    "I don't think that I'll be getting any straight answers out of her, so I turn to Hanako."
+
+    hi "So, just what's in this stuff?"
+
+    ha "Um, I don't know, but it is pretty strong."
+
+    hi "Oh dear."
+
+    hi "We're in for another birthday party, are we?"
+
+    mi "Birthday party?"
+
+    hi "It's nothing."
+
+    rin "I have a birthday, but not with a party. Does that count?"
+
+    hi "No, I was talking about Lilly's…"
+
+    shi "…"
+
+    mi "Would you perhaps be referring to the incident where that lecherous woman was seen leaving your dorm room?"
+
+    hi "Well…"
+
+    extend " yes."
+
+    "Shizune stops to ponder this for a second."
+
+    mi "If that is the case, then I would like another glass, please."
+
+    emi "Coming right up!"
+
+    mi "Me too!"
+
+    "It doesn't take us long at all to finish the bowl of punch and start moving onto the other drinks that Lilly has provided."
+
+    "The hardest hit seem to be Emi and Rin."
+
+    "It started when Rin stopped being able to hold the cups between her feet."
+
+    "Emi, not wanting her to miss out on the “fun,” started feeding the drinks to her."
+
+    "And, using the excuse that she was now drinking for two, Emi was the first to refill her cups every time."
+
+    "Before long, the two of them were in a hyperactive state; jumping around, singing along with the music, and generally making a mess of the place."
+
+    "Shizune, on the other hand, seemed to lighten up; a girlish blush rising to her cheeks as the alcohol started to take effect."
+
+    "Misha simply grinned like an idiot the whole time."
+
+    "Most of the time she managed to translate for Shizune, but occasionally she seemed to get distracted by watching Rin and Emi horse around."
+
+    "Before long, Shizune stopped bothering with her, and somehow managed to organise a drinking contest with Hanako."
+
+    "Shortly after that, both of them lay, passed out, in the corner."
+
+    "In a way, it was kind of cute to see the two of them practically hugging each other in their sleep."
+
+    "However, I was not the only one to notice this."
+
+    mi "Aw, doesn't that just warm your heart?"
+
+    hi "Eh?"
+
+    mi "Those two."
+
+    mi "Don't you find it nice that the two girls who hardly ever speak to anyone are now bestest friends?"
+
+    hi "I… guess…"
+
+    #Misha lol
+
+    mi "Or were you thinking dirty things?"
+
+    hi "What?! No!"
+
+    mi "Whahaha, it's okay, Hisao."
+
+    mi "We all know about you and Hana…"
+
+    hi "What? How?"
+
+    mi "So you HAVE been doing dirty things!"
+
+    "Part of my wants to argue, but the alcohol in my system lessens my will to fight."
+
+    hi "Yeah, just a bit. But not so much during the exams."
+
+    li "Thankfully. It was hard to sleep when you are… well…"
+
+    "Lilly stumbles towards Misha and I, tearing herself away from Rin and Emi, who seem to be trying to attach one of Emi's legs to Rin's shoulder."
+
+    mi "Oh ho ho! So you like an audience!"
+
+    hi "It's not like that! We just… just…"
+
+    "Misha pats me on the back, nearly knocking the wind out of me."
+
+    mi "Way to go Hisao! What a man! If only every girl should be so lucky!"
+
+    hi "Um, thanks."
+
+    mi "So, what's your plans for the holidays?"
+
+    hi "Well, Hanako doesn't have anywhere to go, so we were going to stay at my parent's house for a bit…"
+
+    li "Isn't it a little soon to be introducing her to your parents?"
+
+    mi "Or a little late, if you know what I mean?"
+
+    hi "No, what do you mean?"
+
+    #Misha, confused
+
+    mi "Um, “No sex before marriage?”"
+
+    hi "What's that got to do with anything?"
+
+    mi "I don't know, you're the one introducing her to your parents."
+
+    li "How did you explain it to them?"
+
+    hi "I asked them after the first week of exams."
+
+    li "Oh, you mean after that Saturday night?"
+
+    hi "Ah… yeah…"
+
+    hi "You knew?"
+
+    li "Hisao, I'm afraid there probably wasn't anyone in the dorm that didn't know…"
+
+    hi "Damn, we tried to be quiet."
+
+    #Lilly Embarrassed
+
+    li "You don't have to be…"
+
+    hi "What?"
+
+    li "Nevermind."
+
+    li "Isn't it interesting that all of this was Hanako's idea?"
+
+    "However curious I may be, I have never known Lilly to force a topic change this quickly, so I let her slip of the tongue slide."
+
+    hi "What do you mean?"
+
+    li "This whole study group thing."
+
+    li "I would have never have thought to invite this many people."
+
+    mi "Maybe she just didn't want to be alone?"
+
+    #I'm not sure about the next bit. Maybe too much "baseball"-ness.
+    #There will definitely be mention of the abuse in the "real" path.
+    #But this might explain it better… maybe
+
+    hi "What makes you think that?"
+
+    mi "Well, she never used to talk to anyone, so we all thought she was shy."
+
+    mi "Maybe she was just afraid?"
+
+    li "Afraid of what?"
+
+    mi "Maybe of us?"
+
+    hi "That doesn't make any sense…"
+
+    li "Maybe it does…"
+
+    hi "What do you mean?"
+
+    li "What if she wanted to have friends, but just never had any?"
+
+    "Misha screws up her face a little, as if thinking."
+
+    "It's strange. I'm having trouble concentrating on one spot, yet Misha, with the same alcohol content, is thinking straighter than ever."
+
+    mi "That's not it. If you've never made friends, then you try to."
+
+    mi "You know, like those nerdy kids that always hang around the cool kids, trying to get attention."
+
+    li "Then what do you think?"
+
+    mi "What if she was abused?"
+
+    hi "What do you mean, abused?"
+
+    mi "Like… you know…"
+
+    mi "THAT kind of abused…"
+
+    hi "What? No…"
+
+    li "If she were abused like that then she would hate men, wouldn't she?"
+
+    "Misha shakes her head."
+
+    mi "Step daddies aren't the only people that touch their daughters."
+
+    $ doublespeak(hi,li,"What?","What?")
+
+    mi "I'm just thinking, what if it was her step mother?"
+
+    "I open my mouth to respond, but I can't find the words to rebut Misha's claims."
+
+    li "She did seem to take some time to warm up to me…"
+
+    hi "What? No, that can't be right. She'd of told me…"
+
+    mi "Really? You've known her two months, there's no time to tell you everything."
+
+    #Actually, I kinda do like this way.
+    #Stay tuned for the end of the path, wherein Hisao forces Hanako to go to her old house.
+
+    "Emotions and alcohol turn my head into a spinning jumble of thoughts."
+
+    "Some of what Misha is saying is making sense, but it's just so unbelievable."
+
+    "Hanako truly is a lot more cautious with people than you'd expect."
+
+    "But she seemed to open up to me almost straight away; even Lilly said that when we first met."
+
+    "No matter how much I think about it, it still seems like I'm missing a piece of the puzzle."
+
+    "The fire, this alleged abuse… I just can't wrap my head around it."
+
+    "A crash behind me distracts my thinking."
+
+    emi "Sorry, I thought I did it up right…"
+
+    mi "Oh, are you alright?"
+
+    "Misha runs to Emi's side, and helps her onto a nearby chair."
+
+    emi "He he, thanks."
+
+    mi "It's okay. Here, let me get that for you…"
+
+    "Misha retrieves Emi's leg from the floor and starts strapping it on."
+
+    hi "Huh, looks like you've done that before…"
+
+    #emi embarrassed.
+    #Also, Apologies to Hive and Atwo.
+
+    emi "Well, it was just once."
+
+    hi "What was just once?"
+
+    mi "Oh, nothing. I just helped Emi here once. No biggie."
+
+    emi "Um, about that… story you were telling me in the art room…"
+
+    extend " Could you maybe… tell me how it ends?"
+
+    mi "Story?"
+    
+    #Emi irritating
+    
+    emi "You know… that story…"
+    
+    emi "From that time…"
+
+    #Misha surprised/realisation
+
+    mi "Oh!"
+
+    mi "Well, I… I suppose."
+
+    emi "I already went and checked out the art room, it's unlocked…"
+
+    mi "What about… oh…"
+
+    "Misha peers over Emi's shoulder, and I follow her gaze."
+
+    "Rin is curled up under a table, fast asleep."
+
+    mi "Well, are you sure?"
+
+    #Emi hesitant
+
+    emi "I… think it's a good thing to learn."
+
+    mi "Okay then, shall we go check it out?"
+
+    hi "Um, where are you two going?"
+
+    mi "That's a secret."
+
+    "Misha winks at me, further confusing me."
+
+    mi "One day, I might teach you too, Hisao."
+
+    "Misha and Emi disappear into the dark of the hallway, and their footsteps fade off into the distance."
+
+    li "And then there were two…"
+
+    hi "Yes, I guess things are coming to an end here."
+
+    hi "I guess I'll start cleaning up."
+
+    "I roll up my sleeves and start collecting the piles of cans and empty bags that litter the room."
+
+    li "About… what we were discussing earlier…"
+
+    hi "Yes?"
+
+    li "Do you really think… that Hanako was treated like that?"
+
+    hi "Honestly, I don't know."
+
+    #Lilly sad
+
+    li "I've known here the whole time she's been here…"
+
+    li "I tried to care for her, the help her make friends…"
+
+    li "Was I doing the wrong thing?"
+
+    li "You two were only able to get together once I stopped meddling…"
+
+    hi "Meddling?"
+
+    "Lilly flails her arms a little in frustration."
+
+    "It's unnerving to see her so distressed."
+
+    li "I…"
+
+    extend " tried to hook the two of you up."
+
+    li "It was stupid of me, I know, but making her happy made me happy."
+
+    li "So after she first started talking to you I tried to force you together."
+
+    li "But it didn't work, and then, and then…"
+
+    #It would be so easy to chuck a pityfuck here
+    #but I won't
+
+    li "And then I got sick, and you got together after that."
+
+    li "Am I not needed?"
+
+    li "Have I been nothing but a burden this whole time?"
+
+    "Tears flow down Lilly's cheeks as she spirals deeper down into self-pity."
+
+    "I guess drinking probably isn't the best prelude to this kind of conversation."
+
+    "I wrap my shoulders around Lilly's, and she cries into my chest."
+
+    hi "It's not like that."
+
+    hi "You're Hanako's best friend, anyone can see that."
+
+    hi "Sometimes I think she might love you more than me."
+
+    hi "What Misha said tonight is just a theory."
+
+    hi "And besides, even if it was true, you're not Hanako's step mother."
+
+    hi "You'd never do anything to hurt her, right?"
+
+    li "Right."
+
+    hi "Then there's nothing to worry about, right?"
+
+    li "Right."
+
+    hi "Well then, let's get this place cleaned up."
+
+    hi "Hanako and I leave tomorrow morning for my parent's house, and I'd feel guilty leaving this mess."
+
+    li "Okay…"
+
+    "Lilly peels herself from me, and starts groping around the nearest table, arranging things as best she can."
+
+    hi "Are you going to be alright?"
+
+    li "Oh, I can work out which ones are empty and which aren't…"
+
+    hi "I mean over the break, without us?"
+
+    #Lilly smile
+
+    li "Of course, I already have plans."
+
+    li "My elder sister is in the country, so we are going to our summer house in Hokkaido."
+
+    #Something just occurred to me. Wouldn't a home in Hokkaido be a *winter* house?
+    #Oosaka, Fukuoka or Okinawa are more summer destinations, right?
+
+    hi "Sounds fun."
+
+    li "Indeed it is. I shall have to invite you some time."
+
+    hi "I'd be delighted. Maybe next break?"
+
+    li "Maybe."
+
+    "Before long, we've cleaned up the majority of the mess."
+
+    "As if woken by some magical spell, the three sleeping girls stir."
+
+    ha "W…what happened?"
+
+    hi "You passed out, again."
+
+    ha "Oh… sorry."
+
+    hi "It's okay."
+
+    ha "Who cleaned up?"
+
+    hi "Lilly and I."
+
+    rin "I supervised."
+
+    hi "You were awake?"
+
+    rin "Yes, but you were doing a good job so I felt compelled to stay out of your way."
+
+    rin "Where's Emi?"
+
+    hi "Oh, Misha wanted to show her something, or something like that."
+
+    rin "Oh well. I really wanted those arms."
+
+    ha "Arms?"
+
+    rin "Emi's magical mechanical legs."
+
+    rin "We almost got them to fit, too."
+
+    #Hanako puzzled.
+
+    ha "I have no idea what she's talking about."
+
+    hi "It's a long story, I'll tell you on the train tomorrow."
+
+    ha "Oh, that's right, the train…"
+
+    shi "…"
+
+    "Crap. This whole time, Shizune has been standing there, watching our conversation."
+
+    "But, without Misha, there's no way to talk to her."
+
+    "And the party has decimated any method of writing things down."
+
+    "After fruitlessly trying to sign something to us (I'm sure she assumed it was easy enough to understand), Shizune simply smiles, bows, and leaves."
+
+    hi "I guess that was a thank you."
+
+    rin "She may have offered a challenge."
+
+    hi "What?"
+
+    rin "You never know."
+
+    rin "I am sleepy goodnight."
+
+    "Rin pivots on her heels, leans forward, then marches out of the council office."
+
+    hi "Well then, I guess we should get some sleep now."
+
+    ha "Hmm."
+
+    ha "You know, I was just asleep then…"
+
+    "Hanako advances on me, and grabs my shirt."
+
+    li "Perhaps I should leave you two alone?"
+
+    hi "D…don't you need a hand back to your room?"
+
+    li "I have my cane, I should be able to find my own way back."
+
+    ha "I've moved my bags for tomorrow into your room already, Hisao."
+
+    hi "You did? When?"
+
+    ha "Before the exams."
+
+    hi "Oh, right…"
+
+    ha "Well then, what are we waiting for?"
+
+    li "Don't let me hold you…"
+
+    hi "Um, okay…"
+
+    hi "Thanks for the punch, Lilly."
+
+    li "Don't mention it."
+
+    "With that, Hanako practically drags me by the shirt all the way back to my room."
+
+    return
+
+label en_HT17:
+
+    #This may end up being the last scene in the True arc.
+    #Can't say for sure, depends on how wordy I get in the train.
+    #Also, if the "chat" at Hanako's old house is going to be conclusive enough.
+    #Anyway, a conclusion is what I am aiming for.
+    #Also, the "Playlist" name for this sence would be "I'm Here".
+
+    #BG Train window.
+
+    "Hanako's head rests against mine as the train gently rocks from side to side."
+
+    "After last night's party, both of us are feeling a little under the weather."
+
+    "My mouth feels dirty and dry, and every gentle roll of the train feels like a sledgehammer to my temples."
+
+    "I reach into my pocket, pull out yet another pain killer, and swallow it with a gulp of iced tea."
+
+    "The train lurches a little as it starts to decelerate, and a pre-recorded voice happily chimes over the speakers."
+
+    #I'm not sure about the direct reference here, but I guess that all of the "Tokyo"s can be
+    #removed easily.
+
+    "PA" "This train will soon reach its final destination, Tokyo Station."
+
+    "PA" "Please make sure you take all of your belongings with you."
+
+    "I nudge Hanako a little to wake her up."
+
+    #Show Hanako tired
+
+    hi "Hey, Hanako, we're almost here."
+
+    ha "Another five minutes…"
+
+    hi "I don't think that's allowed here."
+
+    "Hanako rubs her eyes, and starts to remember where she is."
+
+    ha "We're here already?"
+
+    hi "You've been asleep for about two hours…"
+
+    ha "Oh… sorry."
+
+    hi "How are you feeling?"
+
+    ha "Better. My headache has gone, I'm just a little tired."
+
+    "No matter how much you like someone, just the slightest amount of pain can make you despise them."
+
+    hi "Good for you. Come on, I'll help you with your bags."
+
+    "The train slows to a stop and the doors slide open."
+
+    "Before us lies the complex maze of platforms and escalators of Tokyo Station."
+
+    "Swarms of people move around in pre-determined patterns like ants."
+
+    #Hanako concerned
+
+    hi "Are you going to be okay with this?"
+
+    ha "I… I'll be fine."
+
+    "Hanako clutches the handle of her bag with both hands, her fingers white with the strain."
+
+    hi "Here, let me take that."
+
+    ha "Eh?"
+
+    "I reach out and try to take her bag from her."
+
+    ha "It's okay, I've got it…"
+
+    ha "It's not that heavy…"
+
+    hi "Okay then, can I at least hold your arm then?"
+
+    #Hanako embarrassed
+
+    "After a second's thought, Hanako switches her bag to her left hand, and holds out her right."
+
+    "I wrap my arm around hers, and we head off towards the local platforms."
+
+    ha "So, how much further is it?"
+
+    hi "Well, from here we'll take a local train for about half an hour, then a short bus ride…"
+
+    hi "A little over an hour, maybe?"
+
+    ha "Oh… okay."
+
+    "We enter the more crowded local section of the station, and become swept away by the crowds."
+
+    "Hanako grips my arm tightly, and I push us through the crowds to our platform."
+
+    #BG platform-city
+
+    "The line to my parent's house isn't as busy as the inner-city lines, and Hanako relaxes a little."
+
+    hi "Are you holding up okay?"
+
+    #Hanako not embarrassed but not happy.
+
+    ha "I… I guess."
+
+    ha "No-one is paying attention to us."
+
+    hi "That's just what people are like around here."
+
+    hi "No-one notices anyone. I told you it'd be fine."
+
+    ha "Oh, is this our train?"
+
+    hi "That's the one. Let's try and get a good seat."
+
+    #Bg train window 2
+
+    "The dense inner city thins slightly as our train ambles outwards."
+
+    "Hanako returns to her slumber, leaving me alone to ponder my headache."
+
+    "Thankfully, it has started to subside, though that may be because of my fourth headache pill this morning."
+
+    "We transfer to the bus without incident, and before long, we stand before my parent's home."
+
+    #BG houseX outside
+
+    hi "This is it."
+
+    ha "It looks… nice."
+
+    hi "It's not much, but it does the job."
+
+    hi "It was big enough for us, and pretty close to the city."
+
+    ha "That's not what I meant."
+
+    ha "It's nice to have somewhere to go back to."
+
+    hi "Oh, I'm sorry… I didn't mean to…"
+
+    ha "It's okay."
+
+    hi "Come on, let's go inside."
+
+    "I dig my old front door key out of my pocket and open the door."
+
+    #BG random house interior.
+
+    hi "I'm home…"
+
+    "No answer."
+
+    "The house is still."
+
+    "We make our way inside, and dump our bags in the small living room."
+
+    "On the coffee table rests a short note."
+
+    #Sorry delta, I forgot how to declare notes
+
+    $ written_note("Hi Hisao, thanks for coming to visit.\nSorry, but we won't be home until dinner.\nWe'll See you then.\n\nLove, Mom and Dad.")
+
+    #RAGE
+
+    hi "Huh, looks like we've got the place to ourselves for a while."
+
+    ha "Oh."
+
+    "We look awkwardly at each other for a moment, and consider the possibilities."
+
+    hi "You know, we could…"
+
+    #Hanako Embarrassed
+
+    ha "Not here!"
+
+    ha "I haven't even met your parents!"
+
+    ha "And, well…"
+
+    ha "I still don't feel so great."
+
+    hi "Oh."
+
+    hi "Fair enough."
+
+    "To be honest, I'm not sure if my head would survive a round with Hanako."
+
+    "Behind the dam of painkillers I can still feel the throbbing of my hangover."
+
+    hi "So, should we go out somewhere?"
+
+    hi "Maybe head back towards the city?"
+
+    ha "Oh, okay."
+
+    hi "I have a place in mind, I think you'll like it."
+
+    ha "Sure. Lead the way…"
+
+    #I dunno, maybe this next bit should be NVL?
+
+    "I take Hanako by the hand, and lead her to the bus stop."
+
+    "Both of us seem to be content enough to simply hold each other as we exchange the bus for the train."
+
+    ha "I thought the trains to the city were going the other way."
+
+    hi "Oh, we're not going into the city centre, we're going… somewhere else."
+
+    #Hanako curious
+
+    ha "Really? Where?"
+
+    hi "It's a secret."
+
+    ha "Tell me!"
+
+    hi "Can't. You'll find out when we get there."
+
+    ha "Fine then, I won't talk to you either."
+
+    "True to her word, Hanako doesn't say a thing on the train."
+
+    "She doesn't break her vow until we arrive at a small suburban station, about an hour from the city."
+
+    #BG suburb station
+
+    ha "This is…"
+
+    hi "Yes."
+
+    ha "How did you know?"
+
+    hi "I had Lilly find out for me."
+
+    ha "How did she…?"
+
+    hi "We looked it up in the papers. Did you know they keep copies online?"
+
+    hi "Something like this is pretty rare, you know?"
+
+    #Hanako sad
+
+    ha "I don't want to."
+
+    hi "Why not?"
+
+    ha "I said I don't want to. Let's go home."
+
+    hi "No."
+
+    hi "You've never been back here, have you?"
+
+    hi "I only know how to get you this far, so you'll have to lead the way from here."
+
+    #Hanako Crying
+
+    ha "I don't want to!"
+
+    hi "Well, I'm not going to force you, but I think we should at least go there."
+
+    hi "You can't avoid it forever…"
+
+    ha "Why not?"
+
+    hi "Because you're hiding."
+
+    hi "You try to pretend that nothing ever happened, but it did."
+
+    hi "Are you going to try and hide from what happened here forever?"
+
+    ha "B—but…"
+
+    hi "But what?"
+
+    hi "What happened here is in the past, you can't change it."
+
+    hi "But if you try to ignore it, it will eat at you forever."
+
+    hi "Is that what you want?"
+
+    #At this stage, I'm not sure if this is going as well as I had planned.
+
+    "Hanako doesn't reply, but simply shakes her head."
+
+    "I check my frustration, and try to take on a milder tone."
+
+    hi "Look, I'm here for you. If you want, we can just catch the next train home and forget about this."
+
+    hi "But we've come all the way out here, so why not take that last step?"
+
+    "I hold out my hand to the crying Hanako, who looks at me with lost eyes."
+
+    "For a moment, I start to think that this may not have been my greatest idea."
+
+    "But, even as I consider moving to the inbound platform, Hanako reaches out and takes my hand."
+
+    ha "You promise you'll come with me?"
+
+    hi "Of course."
+
+    ha "No matter what?"
+
+    hi "Not even if you try to run away from me."
+
+    ha "O…"
+
+    extend " okay."
+
+    ha "It's this way… I think…"
+
+    "Hesitantly, Hanako leads us out of the station, and onto the main street."
+
+    "The small suburb seems to be made up entirely of middle-sized homes, each with a small backyard."
+
+    "The residents are probably all professionals that have chosen a little extra transit time for a little extra space."
+
+    "However, even this place isn't free of urban sprawl."
+
+    "As we move away from the station, duplexes start to appear amongst the houses."
+
+    "We turn off the main street, and before long the single houses become the rarity."
+
+    "After a few more turns, we find ourselves surrounded almost entirely by small apartment blocks built on adjacent lots."
+
+    "Suddenly, Hanako stops in front of a run-down block of six apartments."
+
+    "It looks to be a few years older than the blocks surrounding it."
+
+    ha "This… this is it."
+
+    ha "This is where we lived…"
+
+    "It could have been any other apartment block in the world."
+
+    "A block of mail boxes sits at the front of a small yard, surrounded by discarded toys."
+
+    "Hanako pushes her way through the waist-high gate, and kneels down in the yard."
+
+    ha "It was here."
+
+    ha "The front door was right here…"
+
+    "She looks up, as if looking at a phantom house in her imagination."
+
+    ha "I guess that this is where they found me…"
+
+    "She stands up, and takes a few steps inside the house in her mind."
+
+    ha "And this… this is where my father died."
+
+    hi "It's unbelievable…"
+
+    hi "To think that he was so close…"
+
+    ha "They told me my mother was found inside; she never had a chance…"
+
+    ha "But my father grabbed me, and made sure I got out…"
+
+    ha "So close…"
+
+    "Hanako falls to her knees, crying."
+
+    "I walk to her side, and place my hand on her shoulder."
+
+    "Again, I am amazed at the difference that two steps made."
+
+    "Here, Hanako's father died, yet barely a metre behind me, Hanako lived."
+
+    "Yet we both managed to cross that border in about a second."
+
+    "I bend down next to Hanako, and she throws her arms around me."
+
+    "She mouths soundless words into my ears, and I hug her tightly."
+
+    hi "I'm sorry. I shouldn't have forced you to come here."
+
+    ha "No… don't be."
+
+    ha "I'm sorry that I never came before."
+
+    "Hanako pulls away from me, and wipes her puffy eyes."
+
+    hi "Really? Why?"
+
+    ha "I never got the chance to thank my father."
+
+    ha "He could have made it out himself, but he threw me outside instead."
+
+    ha "All this time, after everything else that happened…"
+
+    ha "I used to blame him."
+
+    ha "For putting me in foster care, for my foster mother, for what I went through…"
+
+    ha "I used to think “Why didn't you just let me die?”"
+
+    ha "But… that isn't what he wanted."
+
+    ha "He wanted me to live."
+
+    ha "He knew it was either him or me, and he chose me."
+
+    #Hanako resolute
+
+    "Hanako stands up, and I stand up with her."
+
+    "Without warning, she tilts her head backwards, and calls out."
+
+    ha "Thank you!"
+
+    #Hanako smile
+
+    "I've never heard her speak so loud, but she is smiling from ear to ear."
+
+    "She slowly tilts her head back to face me, still smiling."
+
+    ha "Thank you too, Hisao."
+
+    #Geh, this feels far to quick and "lol end of story nao" for me.
+
+    ha "I think, without you, that I might have been stuck here forever."
+
+    hi "You don't have to thank me, I forced you to come here…"
+
+    ha "That's not what I meant."
+
+    ha "I kept on looking at this as an excuse to never move on."
+
+    ha "But I can't do that forever."
+
+    ha "I'm never going to forget what happened here, but I don't want to let it hold me back anymore."
+
+    ha "But… I can't do that alone."
+
+    #So tempted to quote Retake here…
+
+    ha "Hisao… will you help me?"
+
+    ha "Will you promise me, with no regrets, to stay by my side?"
+
+    hi "Yes… I promi…"
+
+    "Hanako stops me mid-sentence with a long, deep kiss."
+
+    ha "There, we promised with a kiss."
+
+    "Stranger" "Hey, what are you two doing over there?"
+
+    "A stranger stands at the letterbox, eyeing us with suspicion."
+
+    hi "Um, we er…"
+
+    ha "I used to live here, so I wanted to show my boyfriend."
+
+    "Stranger" "What are you talking about?"
+
+    "Stranger" "I moved in when this building first opened, and I don't remember ever seeing you here…"
+
+    ha "Oh, well, I must have been mistaken."
+
+    hi "We'll be on our way then, sorry for the disturbance…"
+
+    "Stranger" "Yeah, well don't let me catch you around here again or I'm calling the cops."
+
+    ha "Don't worry, we've got what we came for."
+
+    "Stranger" "Just get out of here…"
+
+    #BG Train station
+
+    "Hanako and I wait on the empty train station, our heads resting against each other."
+
+    hi "Are you sure you're really okay?"
+
+    ha "Yes, I'm fine now."
+
+    hi "Well then, what now?"
+
+    ha "I think…"
+
+    extend " that I want to meet your parents."
+
+    hi "Really?"
+
+    ha "Really."
+
+    ha "I have some news that they might want to hear."
+
+    hi "Oh, and what would that be?"
+
+    hi "I'm late."
+
+    #Lol baby end.
+    #Game over.
+
+    #Well, maybe. This is a bit of a Lol ending 'cause I want to ask advice from y'all.
+
+    return
+
+label en_end_hanakogood:
+    # Hanako good end, after HT17
+    scene black with dissolve
+    centered "~ hanako good end ~" with dissolve
+    return

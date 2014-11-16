@@ -1,0 +1,509 @@
+﻿# This is the I-Machine, the flow control script for KS.
+# Dedicated to Irina ~<3
+
+# this is the new version. See the old one for documentation.
+
+# Start of the actual script and entry point for a new game. Don't change.
+label imachine:
+    jump_out NOP1
+
+
+# From here on, actual scene labels.
+
+#######################
+#        ACT 1        #
+#######################
+
+# Monday
+label NOP1:
+    call iscene ("NOP1")
+    jump_out op_video
+
+label op_video:
+    $ renpy.pause(1.0)
+    $ renpy.movie_cutscene("video/op_1.mkv")
+    $ renpy.pause(1.0)
+    jump_out NOP2
+
+label NOP2:
+    call iscene ("NOP2")
+    jump_out A1
+    
+label A1:
+    $ tcard(1, "all")
+    call iscene ("A1")
+    call imenu ("choiceA1")
+    #mu "Do you want to introduce yourself to the class?"
+    if _return == m1:
+         # "Why?":
+        call iscene ("A1a")
+    else:
+        #"Yeah, of course.":
+        $ attraction_sc += 1
+        call iscene ("A1b")
+    call iscene ("A1c")
+    jump_out A2
+    
+label A2:
+    call iscene ("A2")
+    if seen_scene ("A1a"):
+        call iscene ("A2a")
+    else:
+        call iscene("A2b")
+    call iscene ("A2c")
+    if seen_scene ("A1b"):
+        call iscene ("A2d")
+    else:
+        call iscene("A2e")
+    call iscene ("A2f")
+    jump_out A3
+    
+label A3:
+    call iscene ("A3")
+    call imenu ("choiceA3")
+    if _return == m1:
+        $ attraction_hanako += 1
+        call iscene ("A3a")
+    elif _return == m2:
+        call iscene ("A3b") 
+    else:
+        $ attraction_sc += 1
+        call iscene ("A3c")
+    call iscene ("A3d")
+    jump_out A4
+    
+label A4:
+    call iscene ("A4")
+    #call imenu ("choiceA4")
+        #ke "It's a lot better that way, keeping only to yourself. You never know who will get you."
+    #if _return == m1:
+        #"Does that mean I should not get to know you either?":
+       # $ attraction_sc +=1
+        #call iscene ("A4a")
+    #else:
+        #"That doesn't make any sense.":
+       # $ attraction_fail += 1
+        #call iscene ("A4b")
+    #call iscene ("A4c")
+    jump_out A5
+
+
+# Tuesday
+label A5:
+    call iscene ("timeskip")
+    call iscene ("A5")
+    jump_out A6
+    
+label A6:
+    call iscene ("A6")
+    call imenu ("choiceA6")
+        #mi "Not playing like this, you won't~!"       
+    if _return == m1:
+        #"She has a point. Attack aggressively!":
+        $ attraction_sc += 1
+        call iscene ("A6a")
+    else:
+        call iscene ("A6b")
+    call iscene ("A6c")
+    jump_out A7
+    
+label A7:
+    call iscene ("A7")
+    jump_out A8
+    
+label A8:
+    call iscene ("A8")
+    call imenu ("choiceA8")
+        #"It takes too many seconds to collect myself and remember what I walked up to her for."
+    if _return == m1:
+        call iscene ("A8a")
+        # "Hi! I'm new here. Hisao Nakai. We're in the same class.":
+        if seen_scene("A1b"):
+            call iscene ("A8aa")
+        call iscene ("A8ab")
+    else:
+        #"I'm sorry, I didn't mean to startle you. ":
+        $ attraction_hanako +=1
+        call iscene ("A8b")
+    call iscene ("A8c")
+    if seen_scene ("A8a"):
+        call iscene ("A8d")
+    else:
+        call iscene ("A8e")
+    call iscene ("A8f")
+    jump_out A9
+    
+label A9:
+    call iscene ("A9")
+    call imenu ("choiceA9")
+    if _return == m1:
+        $ attraction_hanako += 1
+        call iscene ("A9a")
+    else:
+        call iscene ("A9b")
+    call iscene ("A9c")
+    jump_out A10
+
+
+# Wednesday
+label A10:
+    call iscene ("timeskip")
+    call iscene ("A10")
+    if attraction_sc > 1 and attraction_hanako > 1:
+        call imenu ("choiceA10a")
+        if _return == m1:
+            call iscene ("A10a")
+        elif _return == m2:
+            call iscene ("A10b")
+            jump_out A11_2
+        else:
+            call iscene ("A10c")
+    elif attraction_sc > 1:
+        call imenu ("choiceA10b")
+        if _return == m1:
+            call iscene ("A10c")
+        else:
+            call iscene ("A10a")
+    elif attraction_hanako > 1:
+        call imenu ("choiceA10c")
+        if _return == m1:
+            call iscene ("A10a")
+        else:
+            call iscene ("A10b")
+            jump_out A11_2
+    else:
+        call iscene ("A10a")
+    jump_out A11_1
+
+label A11_1:
+    call iscene ("A11")
+    call iscene ("A11a")
+    call iscene ("A11b")
+    if seen_scene ("A10c"):
+        call iscene ("A11x")
+        jump_out A12
+    call iscene ("A11y")
+    jump_out A15
+
+
+label A11_2:
+    call iscene ("A11c")
+    call iscene ("A11a")
+    call iscene ("A11d")
+    jump_out A13
+
+label A12:
+    call iscene ("A12")
+    jump_out A16 
+   
+label A13:      
+    call iscene ("A13")
+    jump_out A15
+
+#there is no A14
+
+label A15:
+    call iscene ("A15")
+    jump_out A16
+    
+label A16:
+    call iscene ("A16")
+    jump_out A17
+    
+label A17:
+    call iscene ("A17")
+    call imenu ("choiceA17")
+        #nk "Can your promise me to be more serious about this from now on?"
+    if _return == m1:
+        #"Yeah, I promise. Definitely.":
+        call iscene ("A17a")
+    else:
+        #"Maybe":
+        call iscene ("A17b")
+    call iscene ("A17c")
+    jump_out A18
+    
+label A18:
+    call iscene ("A18")
+    jump_out A19
+
+#Thursday
+label A19:
+    call iscene ("timeskip")
+    call iscene ("A19")
+    if seen_scene ("A17a"):
+        call iscene ("A19a")
+    else:
+        call iscene ("A19b")
+    call iscene ("A19c")
+    if seen_scene ("A10c"):
+        call iscene ("A19i")
+    call iscene ("A19j")
+    if seen_scene ("A17a"):
+        call iscene ("A19d")
+    else:
+        call iscene ("A19e")
+    call iscene ("A19f")
+    if seen_scene ("A17a"):
+        call iscene ("A19g")
+    else:
+        call iscene ("A19h")
+    jump_out A20
+    
+label A20:
+    call iscene ("A20")
+    jump_out A21
+    
+label A21:
+    call iscene ("A21")
+    call imenu ("choiceA21")
+          #"It seems to me as insulting as it is confusing. She's gone too far this time."
+    if _return == m1:
+        #"Don't drag me into this!":
+        call iscene ("A21a")
+        jump_out A22
+    call iscene ("A21b")
+    if seen_scene ("A13"):
+        call iscene ("A21c")
+    else:
+        call iscene ("A21d")
+    jump_out A23
+
+label A22:
+    call iscene ("A22")
+    if not seen_scene ("A12"):
+        call iscene ("A22a")
+        jump_out A23
+    jump_out A22_2
+
+label A22_2:
+    call iscene ("A22b")
+    jump_out A24
+
+label A23:
+    if not seen_scene ("A22a"):
+        call iscene ("A23")
+    if not seen_scene ("A21c"):
+        call iscene ("A23a")
+    jump_out A24
+
+label A24:
+    if seen_scene ("A21c"):
+        call iscene ("A24")
+        if seen_scene ("A21a"):
+            call iscene ("A24c")
+        else:
+            call iscene ("A24d")
+        call iscene ("A24e")
+    if seen_scene("A17a"):
+        call iscene ("A24a")
+        jump_out A25
+    call iscene ("A24b")
+    jump_out A26
+
+#Friday
+label A25:
+    call iscene ("timeskip")
+    call iscene ("A25")
+    call imenu ("choiceA25")
+    if _return == m1:
+        call iscene ("A25b")
+        jump_out A27_1
+    call iscene ("A25a")
+    jump_out A26
+
+label A26:
+    if not seen_scene ("A25"):
+        call iscene ("timeskip")
+        call iscene ("A26")
+    call iscene ("A26a")
+    if not seen_scene ("A22b"):
+        call iscene ("A26e")
+        jump_out A27_2
+    else:
+        call iscene ("A26b")
+        call imenu ("choiceA26")
+            #"What to do?"
+        if _return == m1:
+         #"Try to dodge subject":
+            call iscene ("A26c")
+            jump_out A28
+        else:
+        #"Punch Shizune":
+            $ attraction_kenji += 1
+            call iscene ("A26d")
+    jump_out A27_2
+
+label A27_1:
+    call iscene ("A27")
+    if seen_scene ("A22b"):
+        call iscene ("A27a")
+        call imenu ("choiceA27")
+        if _return == m1: 
+            call iscene ("A27b")
+            $ attraction_kenji += 1
+            call iscene ("A27f")
+            jump_out A29
+        else:
+            call iscene ("A27c")
+            if seen_scene ("A25b"):
+                call imenu ("choice2A27")
+                if _return == m1:
+                     call iscene ("A27h")
+                     call iscene ("A27e")
+                     jump_out A29                                     
+            call iscene ("A27i")
+            jump_out A28
+    call iscene ("A27e")
+    jump_out A29
+
+label A27_2:
+    call iscene ("A27d")
+    if seen_scene ("A26d"):
+        call iscene ("A27f")
+    else:       
+        call iscene ("A27e")
+    jump_out A29
+
+label A28:
+    call iscene ("A28")
+    if seen_scene ("A26c"):
+        call iscene("A28a")
+    call iscene ("A28b")
+    jump_out A36
+
+label A29:
+    if not seen_scene ("A25b"):
+        call iscene ("A29")
+        if seen_scene ("A27f"):
+            call iscene ("A29x")
+    else:
+        call iscene ("A29a")
+    call iscene ("A29b")
+    if seen_scene ("A25b"):
+        call iscene ("A29c")
+        jump_out A31
+    jump_out A30
+
+label A30:
+    call iscene ("A30")
+    if seen_scene ("A26d") or seen_scene ("A27b"):
+        #I'm actually not sure if this is even possible, but the if statement is here as a safeguard
+        call iscene ("A30a")
+    else:
+        call imenu ("choiceA30")
+        if _return == m2:
+            $ attraction_kenji += 1
+            call iscene ("A30a")
+            jump_out A31
+        call iscene ("A30b")
+        if seen_scene ("A11c"):
+            call iscene ("A30c")
+    call iscene ("A30d")
+    jump_out A31
+
+#Saturday
+label A31:
+    call iscene ("timeskip")
+    call iscene ("A31")
+    if seen_scene ("A25b"):
+        call iscene ("A31b")
+    else:
+        call iscene ("A31c")
+    call iscene ("A31d")
+    if attraction_kenji > 0:
+        call iscene ("A31e")
+        jump_out A38
+    elif seen_scene ("A29c"):
+        jump_out A32
+    elif seen_scene ("A24d"):
+        jump_out A35
+    jump_out A32
+
+label A32:
+    call iscene ("A32")
+    if seen_scene ("A25b"):
+        jump_out A34
+    jump_out A33
+
+label A33:
+    call iscene ("A33")
+    call imenu ("choiceA33")
+    if _return == m2:
+        call iscene ("A33a")
+    else:
+        call iscene ("A33b")
+    jump_out A38
+
+label A34:
+    call iscene ("A34")
+    call iscene ("A34a")
+    jump_out A38
+
+label A35:
+    call iscene ("A35")
+    call imenu("choiceA35")
+    if _return == m1:
+        call iscene ("A35a")
+        jump_out A38
+    jump_out A37
+
+label A36:
+    call iscene ("timeskip")
+    call iscene ("A36")
+    jump_out A38
+
+label A37:
+    call iscene ("A37")
+    jump_out A38
+
+#Sunday
+label A38:
+    call iscene ("timeskip")
+    call iscene ("A38")
+    if seen_scene ("A31e"):
+        jump_out A43
+    elif seen_scene ("A36"):
+        call iscene ("A38a")
+        call iscene ("A38e")
+        jump_out A44
+    elif seen_scene ("A35") or seen_scene ("A37"):
+        call iscene ("A38b")
+        call iscene ("A38e")
+        jump_out A41
+    elif seen_scene ("A33a"):
+        call iscene ("A38c")
+        call iscene ("A38e")
+        jump_out A40
+    elif seen_scene ("A34"):
+        call iscene ("A38d")
+        call iscene ("A38e")
+        jump_out A39
+    jump_out A43
+
+label A39:
+    call iscene ("A39")
+    jump_out emiend
+
+label A40:
+    call iscene ("A40")
+    jump_out rinend
+
+label A41:
+    call iscene ("A41")
+    if seen_scene ("A37"):
+        jump_out A42
+    call iscene ("A41a")
+    jump_out lillyend
+
+label A42:
+    call iscene ("A42")
+    jump_out hanakoend
+
+label A43:
+    call iscene ("A43")
+    jump_out badend
+
+label A44:
+    call iscene ("A44")
+    jump_out shizuneend

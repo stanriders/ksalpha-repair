@@ -1,0 +1,33 @@
+﻿I'm sorry, but an exception occured while executing your Ren'Py
+script.
+
+TypeError: Dissolvemove() got an unexpected keyword argument 'old_widget'
+
+While running game code:
+ - script call at line 1524 of /mnt/gstorage/Documents/Misc/KS Alpha Final Port/game/imachine.rpy
+ - script call at line 145 of E:\Documents\Katawa Shoujo Prerelease/game/_ui_early.rpy
+ - script at line 6734 of /mnt/gstorage/Documents/Misc/KS Alpha Final Port/game/script-a2-shizune.rpy
+
+-- Full Traceback ------------------------------------------------------------
+
+  File "C:\Program Files (x86)\Katawa Shoujo\renpy\bootstrap.py", line 260, in bootstrap
+  File "/mnt/gstorage/Documents/Misc/KS Alpha Final Port/renpy/main.py", line 310, in main
+    run(restart)
+  File "/mnt/gstorage/Documents/Misc/KS Alpha Final Port/renpy/main.py", line 93, in run
+    game.context().run()
+  File "/mnt/gstorage/Documents/Misc/KS Alpha Final Port/renpy/execution.py", line 234, in run
+    node = node.execute()
+  File "/mnt/gstorage/Documents/Misc/KS Alpha Final Port/renpy/ast.py", line 935, in execute
+    renpy.exports.with_statement(trans, paired)
+  File "C:\Program Files (x86)\Katawa Shoujo\renpy\exports.py", line 711, in with_statement
+  File "C:\Program Files (x86)\Katawa Shoujo\renpy\display\core.py", line 1404, in do_with
+  File "C:\Program Files (x86)\Katawa Shoujo\renpy\display\core.py", line 1578, in interact
+  File "C:\Program Files (x86)\Katawa Shoujo\renpy\display\core.py", line 1774, in interact_core
+TypeError: Dissolvemove() got an unexpected keyword argument 'old_widget'
+
+While running game code:
+ - script call at line 1524 of /mnt/gstorage/Documents/Misc/KS Alpha Final Port/game/imachine.rpy
+ - script call at line 145 of E:\Documents\Katawa Shoujo Prerelease/game/_ui_early.rpy
+ - script at line 6734 of /mnt/gstorage/Documents/Misc/KS Alpha Final Port/game/script-a2-shizune.rpy
+
+Ren'Py Version: Ren'Py 6.10.2e

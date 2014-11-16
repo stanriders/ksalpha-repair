@@ -1,0 +1,233 @@
+***NOTE TO ANY FUTURE ALPHA DEVS***
+The below code references are in absolutely no way exhaustive. There is very likely stuff that I have missed, and some of the stuff that is here is incomplete, and some of it may even be totally incorrect (Protip: Anything marked with "Needs more testing" is probably wrong). This was mainly intended to be a quick reference guide for myself. Feel free to use it and update it though. Other future devs may find it useful.
+-md01
+
+--
+
+Scene--
+scene <type> <picture name> at <position> with <modifier>
+Also can be used for solid colors
+EX: scene black
+
+type
+    bg = static background
+    ev = preedrawn CG scene
+
+at - for use with backgrounds that can pan
+    bgleft    
+    bgright
+    center
+
+**Zoom**
+Used for evs that, well..... zoom
+EX: scene ev rin_eating at Zoom((800,600), (159,0,640,480), (0,0,800,600), 10, time_warp=acdc_warp)
+From script-a1-wednesday.rpy, during scene "A Private Lunch" 
+Needs to be experimented with
+
+**RotoZoom**
+I assume this is used for twisting and zooming simultaneously. Probably needs lots of experimentation
+scene bg school_track_on at RotoZoom(0,-6,0.1,1.0,1.2,0.1, xalign=0.5, yalign=0.52)
+
+modifiers
+    charachange - Used for CGs with changing character expressions
+    clockwipe
+    dissolve(<variable>) - Variable is (probably) the number of seconds
+    fade
+    handsin - Used with Misha's guess who scenes
+    handsout
+    locationchange - Fades from one scene to another
+    locationskip - Fade out from one scene than fade to another
+    openeye - Used for waking scenes
+    shorttimeskip - Rotating columns transition
+    shuteye
+    slowfade
+    whiteout
+    
+For panning scenes, "_start" appended to the scene name is the initial part. 
+Appending "_move" later starts panning. 
+"_end" skips to the last part of the scene
+    Unconfirmed as of now. Needs to be tested. Naturally, should only work with scenes bigger than 800x600
+
+--Show--
+show <character name> <pose> at <position> with <modifier>
+hide <character name>
+	
+position
+	left - to the left of default position, useful for three sprites on screen
+	right - same as left, but on the right (duh)
+	twoleft - useful for 2 sprites on screen
+	tworight - as is this
+    offscreenright - sprite is off screen to right, useful for exiting sprites
+    offscreenleft
+
+    behind - Forces one sprite to be overlapped by another
+    
+    Fullpan(<Variable>) - I assume this pans all the way across a large cg in X amount of time
+        Needs some testing before use
+    
+    Slide<multiple variables separated by comma> - seems to cause a sprite to move, need to test it out first
+        ----Possible explanation on the variables
+        There are 5 variables in the Slide() parameter.
+        The first 2 might be the start position on an X/Y plane
+        The second pair may be the end position
+        The final number may be the rate at which they slide
+        Still Needs testing
+        ----Slide modifiers
+        time_warp=_ease_out_time_warp
+
+**Custom Positions**
+After "at" use "Position(<variables>)"
+EXAMPLE:
+    show hanako emb_downtimid at Position(xanchor=0.8, xpos=1.0) - Hanako's first appearance in Act 1
+
+variables - Used to set the custom positions
+    All of the following appear to do different things, although what is a mystery for now
+    xanchor and xpos have been seen working together
+
+xanchor=<variable>
+xpos=<variable>
+xalign=<variable> - seems to be the most basic, and perhaps the most useful
+yalign=<variable>
+
+modifiers - only need to use once when multiple sprites are changing poses
+    charachange - Transition from one sprite pose to another
+    characlose - Transition from normal sprite to close sprite
+    charadistant - Transition from close sprite to normal sprite
+    charaenter - Sprite fadein
+    charaexit - Sprite fadeout
+    charamove - Causes a sprite to move on screen when its location is changed
+    charamove_deccel - Causes a sprite to move with deceleration
+    **MIGHT BE A charamove_accel**
+    charamoveinleft - Causes a sprite to appear from offscreen left
+    charamoveinright - Causes a sprite to appear from offscreen right
+    charamoveoutleft - Causes a sprite to exit stage left
+    charamoveoutright - Causes a sprite to exit stage right
+    **MIGHT BE VERSIONS OF charamoveout/in FOR TOP AND BOTTOM**
+    ease - Faster version of charamove
+    ease_accel - Causes a sprite to accelerate as it moves
+    ease_decel - Causes a sprite to decelerate as it moves
+    easeinbottom - Causes a sprite to enter frame from bottom
+    easeinleft
+    **MIGHT BE VERSIONS OF easein FOR TOP, LEFT, RIGHT**
+    easeoutleft - Faster version of charamoveoutleft
+    easeoutright - Faster version of charamoveoutright
+    fade - Causes a sprite to fade into the background, **NEEDS TESTING**
+    flash - White out with fade in
+    hpunch - Causes the screen to shake left and right
+    shuteyefast - Causes a quick eye effect
+    **MIGHT HAVE A NORMAL VERSION WITH VARIOUS SPEEDS**
+    slice_in - Only seen during Lilly's and Shizune's showdown in Act 1 as far as i'm aware. Ignore for now.
+    vpunch - Causes screen to shake up and down
+    zoomin - Does just that. **NEEDS TESTING**
+    
+Also for animation FX
+    crowd - Typical crowd movement, seen during Yamaku festival
+    fireworks - As seen at the end of Act 1
+    heartattack alpha - Used for heart attacks, only quick flashes
+    heartattack residual - Used when you need the heart attack graphic on screen for a while
+    hospitalmask - Used during Hisao's inital hospital stay in act 1. Probably safe to ignore. Was used with sakura
+    passoutOP1 - Spiral Death swirls
+    sakura - Used during Hisao's inital hospital stay in act 1. Probably safe to ignore. Was used with sakura
+    snow - FUCKING SNOW!
+    steam - Like the water vapor
+    steam2 - More water vapor
+    newsteam - Transitional water vapor
+    newsteam2 - More transitional water vapor
+
+--Filters--
+Use these to show the passage of time on the backgrounds and sprites
+Some backgrounds have their own hard versions already, and will be invoked in place of using the filters
+Append these to either the background file or sprite file name to use
+
+_ss = sunset
+_ni = night
+_tremble - This might be another filter, used to make Hanako shake in the library in Act 1, needs testing.
+_facepullout - Seems to cause the camera to zoom out, used during act 1 when Emi knocks into Hisao
+_largepullout - another animation used, shows all of a CG scene with a bit of panning out, also used when Emi knocks into Hisao in Act 1
+silhouette_ - Appending this to the front of a character's pose will cause a silhouette
+
+--Music/Sound--
+play <type> <name> fadein <fade delay> with <modifier>
+stop <type> fadeout <fade delay>
+
+Modifiers from the visual scenes above can be used here as well
+
+When using ambient sound, the following may be set after the ambient is initiated
+$ renpy.music.set_volume(<variable1>, <variable2>, channel="ambient")
+    need to find out what those variables do, can also be used to adjust volume on the fly
+$ renpy.music.set_volume(0.4,1.0)
+
+type
+    music
+    sound
+    ambient
+
+--Text Modifiers--
+**NVL Mode**
+nv1 show Dissolve<variable> = full screen textbox
+    use this with `n "<Text Goes Here>"`
+nv1 hide Dissolve<variable>
+nv1 clear
+centered "<Text Goes Here>" = Text in the Middle of the screen without a text box
+
+**Notes**
+$ written_note("<Text Goes Here>")
+    uses escape character \n to force a new line, will word wrap with longer sentences
+
+These go in the middle of normal text and cause the following actions
+    {w} - needs an extra click to display the rest of the line
+    {w=<variable>} - this causes a delay in the display of text
+    {fast} - causes text to appear instantly
+    {nw} - causes the next line to appear without needing a click
+    {b}<text goes here>{/b} - Bolds the text inside
+
+--Misc--
+window hide
+window show
+wallodrugs - as seen in the prologue, probably wont need this, but for completions sake
+    $ renpy.show("wallodrugsbg", what=drugsDisp(1600,800), at_list=[Pan((0.0,0.0),(1.0,0.0),25.0, time_warp=_ease_in_time_warp)])
+show emi gymbounce = Emi Jumps up and down, as seen in Act 1 "The Running Girl"
+Pause(<variable>) - variable is seconds
+
+--Predefined characters--
+hi = hisao
+mi = misha
+nk = nurse (normal)
+nk_ = nurse (initial)
+hh = hideakibg
+mu_ = mutou initial (tall man)
+mu = mutou (normal)
+mi_shi = When Hisao originally thinks Misha is Shizune in Act 1
+mi_not_shi = Same as above, but with Shizune crossed out with appended Misha name
+shi = Shizune (Not Signing)
+ke_ = Kenji (before introduction)
+ke = kenji
+li_ = Lilly (Before Introduction)
+li = Lilly
+mystery = ??? as character name
+yu_ = Yuuko (Before Introduction)
+ha_ = Hanako (Before Introduction)
+emi_ = Emi (Before introduction)
+emi = Emi
+rim_ = Rin )Before Introduction)
+
+--imachine.rpy--
+Main flow control of KS. Used for overall scene direction and loading
+
+To invoke the KS logo clockwipe thing, use "call iscene ("timeskip")" where needed
+
+--Choices--
+Probably wont need this unless modding or filling in a completely missing scene.
+This ties into some stuff with imachine, but I'm not concerned with that now.
+Will fill this in later. Theoretically expandable to n number of choices. Syntax goes like
+
+label <choice name>:
+menu:
+    with menueffect
+    <Text for the text box goes here>
+
+    <Choice 1 Text>:
+        return m1
+
+    <Choice 2 Text>:
+        return m2

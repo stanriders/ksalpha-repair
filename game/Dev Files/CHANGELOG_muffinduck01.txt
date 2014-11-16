@@ -1,0 +1,198 @@
+ ***Super Major Changes***
++Copied all of the alpha's "game" folder contents, and dropped it into the final's game folder
+ 
+ ***New Files***
++Added file "city_funeral.jpg" in directory ~/archived/bgs
+
++Added file "shutterfilm.ogg" in directory ~/archived/sfx
+
++Added Shizune's nude sprites from the final
+
++Added Shizune's hospital gown sprites
+    behind_blank_gown
+    behind_frustrated_gown
+    behind_sad_gown
+    behind_smilelow_gown
+    basic_angry_gown
+    basic_normal_gown
+    basic_normal2_gown
+    
++Added shizu_behind_blank_bra.png
+
++Added hosp_room3.png
+
++Added ui_ingamemenu.rpy to game folder
+
++Changed the sprites for Akira, Kenji, Jigoro, Hideaki, and Lilly over to their final versions, and edited those sprites that did not exist in the final to the proper dimensions
+
++Added all of Twoface's art additions
+
++Added files for ATL demo
+    
++New Hanako sundress sprites
+
++Teaset
+
++Revised Act 4 Hanako True title card
+
++Added shizu_adjust_angryblush.png
+
+***ui_settings.rpy***
++Added "ks_bg("city_funeral")" at line 117 under the background declaration section
+
++Added 'adjust_noglasses', at line 513, under Shizune's sprite declaration list
+
++Added sfx_camera = "sfx/shutterfilm.ogg" at line 1547, under the sound effects mapping
+
++Ported the flashback filter from the final game to the alpha
+
++In Shizune's sprite declarations list, added the labels 'nak', 'gown', and 'bra' to the list builder
+
++Added ks_bg("hosp_room3") to the background declaration list
+
++Changed menueffect = dissolve to menueffect = None, so it looks and feels like the final menus
+
++Commented out the alpha's version of the music list
+
++Imported the ks_music() function from the final, and alphabetized all the tracks
+
++Added line ex_m_tracks = [] above ks_music()
+
++Added the static effect used in flashbacks from the final, consists of a python function called noisetile() and an image declaration called staticoverlay
+
++Added line "Position = Transform" near the top of the file. We believe that this turns all mentions of Position() into aliases of Transform()
+
++Added code for all of Twoface's art
+
++Added all of Twoface's art to the gallery
+
++Changed the name for the track Aria to the correct one.
+
++Added adjustblush to Shizune's sprite definitions
+
++Added functions generalbounce(), tf_fourbounce60, emiannoyedbouncecomp, and image emi annoyedbounce to fix a broken animation in Act 1
+
++Replaced the Slide() function with the Slide transform from the final
+
+***imachine.rpy***
++Added the two lines of code below to the beginning of scenes S32, S33, S34, S36, S37, and S38
+
+    call rinscene ("rintimeskip")
+    pass
+    
++Changed all existing iscene calls to rinscene calls for scenes S32, S33, S34, S36, S37, and S38.
+    __IMPORTANT__ Do not change the iscene call in S31. There will be a glitch if that happens.
+    
++Brought scene S37 back from the dead
+
++Changed the code for S33 to this
+label S33:
+    call rinscene ("rintimeskip")
+    pass
+    call rinscene ("S33")
+    call imenu ("choiceS33")
+    if _return == m1:
+        jump_out S34
+    elif _return == m2:
+        jump_out S36
+It was causing a problem the way it was previously where the title for S33 (Watershed) would show up in for S36's title (On the Flipside) in the pause menu.
+
++Changed the code for S33 again:
+label S33:
+    call rinscene ("rintimeskip")
+    pass
+    call rinscene ("S33")
+    call imenu ("choiceS33a")
+    if _return == m1:
+        call rinscene ("S33a")
+    elif _return == m2:
+        call rinscene ("S33b")
+    call rinscene ("S33c")
+    call imenu ("choiceS33b")
+    if _return == m1:
+        jump_out S34
+    elif _return == m2:
+        jump_out S36
+        
+This brings back the choice on whether to tell Yuuko about Shizune's lip reading ability
+
++Changed the code for S36 to this:
+label S36:
+    #S35 does not exist because of lolA22
+    call rinscene ("rintimeskip")
+    pass
+    call rinscene ("S36")
+    if seen_scene ("S25h") or seen_scene ("S15b"):
+        call rinscene ("S36a")
+    else:
+        call rinscene ("S36b")
+    call rinscene ("S36c")
+    jump_out S37
+    
+This adds a deleted scene split back to the game.
+
++Added timeskip to S10
+
+***ui-strings.rpy***
++Added scene S37 back into the library
+
++Added line displayDict['en'].game_menu_current_music = u"Current music track"
+
+***ui_code.rpy***
++Commented out the menu() function
+
++Added function get_music_name()
+
+***ui_ingamemenu.rpy***
++Commented out the presistant.breadcrumbs for loop in custom_menu()
+
++Commented out persistent.breadcrumbs.append((location, val)) in clicked() which is in show_menu()
+
+***ui_labels.rpy***
++Commented out original label gm_bare
+
++Added label gm_bare from the final
+
++Commented out the python block in the splashscreen_4ls() function and replaced it with the splashscreen() function from the original Act 1 demo
+    This fixes a bug that ocasionally caused the screen to stay black after the intro cutscene and splashscreen
+
+***ui_i18n.rpy***
++Commented out ex_m_tracks and all its related lines
+
+Bugs:
+
+(SOLVED)Beginning of S31, flickering text box
+
+(SOLVED)Flickering text box in timeskip before S32
+
+(SOLVED)Flickering text box in timeskip before S33
+
+(SOLVED)Beginning of S34, invoked call iscene ("timeskip") but nothing happens
+
+(SOLVED)Beginning of S34, textbox flickers for no reason.
+
+(SOLVED)S34, flickering textbox right before the start of NVL mode at the end
+
+(SOLVED)S34, end of NVL mode, NVL textbox disappears and normal text box appears with Pause then NVL textbox comes back for last line
+
+(SOLVED)End of S34, starts S38 for some reason, skips bad end screen and credits
+
+(SOLVED)After re-enabling S37, after S36 ends the game skips to S38
+
+(SOLVED)Fixed S33's title showing up in the pause menu during S36
+
+
+
+
+
+***My aditions start here - Kelper*** 
+
+hands_inslow transition - Line 1369 ui_settings
+
+added hideaki invis sprite to hideaki's sprite folder and added 'invis' to hideaki's sprite defs - Line 630 ui_settings
+
+added definition for sfx_cellphone, file was already on sfx folder - Line 1874 ui_settings
+
+
+
+

@@ -1,0 +1,25 @@
++================================================================================+
+|                >>> Changes to the Alpha by @__akiaki (v0.5b) <<<               |
++=================+==============================================================+
+| File            | Changelog                                                    |
++=================+==============================================================+
+| _ui_early.rpy   | => scene_register                                            |
+|                 |    changed for scene rollback for development                |
++-----------------+--------------------------------------------------------------+
+| ui-strings.rpy  | => displayDict["en"].creditstring                            |
+|                 |    added name to the credits                                 |
++-----------------+--------------------------------------------------------------+
+| ui_i18n.rpy     | => config.main_menu, config.game_menu                        |                 |
+|                 |    show jumper menu item if z_jumper.rpy is present          |
++-----------------+--------------------------------------------------------------+
+| ui_labels.rpy   | => splashscreen                                              |
+|                 |    made disclaimer display before the 4LS logo               |
++-----------------+--------------------------------------------------------------+
+| ui_settings.rpy | => style.gm_nav_frame.background                             |
+|                 |    use modified menu background if z_jumper.rpy is present   |
++-----------------+--------------------------------------------------------------+
+| z_dev.rpy       | => rewrote developer functions                               |
+|                 | => added scene jumping when in developer mode                |
++-----------------+--------------------------------------------------------------+
+| z_jumper.rpy    | => added scene jumping menu                                  |
++-----------------+--------------------------------------------------------------+

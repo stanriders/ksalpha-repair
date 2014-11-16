@@ -1,0 +1,290 @@
+Changes: 
+
+
+                                                                            ACT 2
+          
+
+ui_settings
+
+added emi sprites
+
+added rin sprites 
+
+added new cgs (can be found laying around in "event" or "vfx" folder), each of them on RINs list from line 615 until Lilly's start
+
+added new sfx (flash (1424), crowd_cheer (1415), blop (1460) and others i dont remember now, i think :( )   (from line 1394)
+
+added bg "schoolgardens3" (l. 198), "sky_rn" (l. 154), "sky_rays"(l. 155), "artshop" (l. 246), misc_heartattack (l. 158), "hallway3_blurred"(l. 208), "hilltop_border" (l. 209) "hilltop_spring" (l. 210)(file exchanged, brought from the final release of the game)
+
+added nomiya sprites ('dreamy', 'frown','serious','stern') (l.585)
+
+added rain image filters (lines: 946-949 , 962, 967)
+
+added music "Red_Velvet" (.ogg on bgm) (l. 1346)
+
+added dissolvecharamovereallyfast transition (l. 1309)
+
+added openeyeslow transition (l. 1269)
+
+added shortflash transition (l.1003)
+
+added position centersitlow (l. 1114)
+
+added rin superclose sprites definition (l. 57)
+
+obviously, every added resource has a file in the needed folder :)
+
+MISSING FROM THE PATCH: kenji_invis, emi_excited_hesitant_gym, shizu_adjust_frown_close (all sprites), artshop bg
+
+
+
+ui_labels
+
+added rintimeskip (line 779)    (copy of "timeskip" scene with some code changed, to not mess up the other routes)
+
+
+_ui_early
+
+added rinscene (line 138)  (copy of "iscene" with some code changed, to not mess up the other routes)
+
+
+ui_code
+
+added fixedwritten_note (line 1486)  (copy of "written_note" with some code changed, to not mess up the other routes)  (fixed now)
+
+
+imachine
+
+just replace all rins path for mine
+
+
+$ renpy.music.set_volume(0.2, 0.0, channel='ambient')      volume --- time for that volume
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+                                                                               ACT 3
+
+ui settings
+
+
+bg gallery_ext replaced for version in the final
+
+added bg city_busstation (l. 117)
+
+added bg city_busride (l. 127)
+
+added bg gallery_staircase (l. 139)
+
+added bg gallery_atelier_close (l. 136)
+
+added nomiya invis sprite (l.586)
+
+added rin sprite back_cas (l. 363)
+
+fixed emi bounces (emi_gym_30pxlegs and emi_uni_60pxlegs replaced for final versions, and changes from l.299 to 326)
+
+added cgs rin_nap_total (l.670), nap_close_nohand (l.671), nap_close_hand (l.672), nap_total_wind(l.673), nap_close_wind (l.674), close_tears (only on event folder), total_tears(only event folder)
+
+added Updownpan function (l. 1111)
+
+added file rinback to vfx folder
+
+added file black to vfx folder
+
+added prop rin_cigarette and rin_cigarette_close (l. 679-680), respective files on vfx folder
+
+added code and evs needed for rins smoking scene (l. 682-707), files: wisp1-5, wisp_blurred, smoke focused, smoke blurred, rin_gallery_skylight (9 files) on event folder
+
+added dissolvecharamoveslowish transition (l. 1368)
+
+FROM HERE I GAVE EVERYTHING TO SEMISOFT
+
+added bgs city_street2_ni and city_street3_ni, city_street4_ni (l. 112 - 113, 115) (files in bg folder)
+
+replaced "gallery atelier" with final version image
+
+added cgs rin_masturbate_away/surprise/frown/doubt/hug (5 files) (l. 714-718)
+
+added cgs rin_relief_up/up_large/down/down_large (4 files) (l. 719-722)
+
+added sprites basic_biggerabsent (l. 340) / basic_biggerlucid (l. 346) / negative_biggerconfused (l. 360) 
+
+
+
+
+ui_strings
+
+
+
+Added my "name" and such
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+                                                                               ACT 4
+
+
+
+ui settings
+
+
+added sae invis sprite (l. 626), also the file. 
+
+added emicas sprites (l. 309-310) + added emicas_invis to the folder that came with the alpha
+
+added ev rin_gallery (l. 748)
+
+added rin_doodle and rin_doodle_tr, defined only on act 4 script just to show off. 
+
+added ev rin_doodle_all (l. 752)
+
+added bgs school_dormhisao_blurred (l. 194) (two files: normal blurred_ss and blurred_ni on bg folder, no normal version) 
+
+added vfx "phone mobile" and "phone mobile alpha" (l. 755-56)
+
+added walivetext (l. 1009)
+
+added hisaowindow vfx (l. 758)
+
+added rin_exhibition_sold vfx (l. 760) 
+
+added rin_exhibition_c vfx (l. 761)
+
+added ev rin_rain_away_close, rin_rain_away, rin_rain_towards_close, rin_rain_towards, ovl rin_rain_hisaotowards_close, rin_rain_hisaotowards (l. 763-768) 
+
+added rin trueend stuff: 8 files on event/rin_trueend/ (l. 770-786)
+
+added annoying_transform (for rins trueend CG effect) (l. 789-798)
+
+added bg school_nomiya (l. 227)
+
+added rin sprite 'basic_crying' (file only in close and superclose versions) (l. 366)
+
+added rin_wet cgs (7 files on "event/rin_wet/" folder) (l. 815-821)
+
+added definitions for rin h2 cgs (6 files on "event/rin_h2/" folder) (l. 823-853)
+
+added definition for rin_pair cgs (8 files on "event/rin_pair/" folder) (l. 857-866) 
+
+added definition for rin_h cgs (8 files on "event/rin_h/" folder) (l. 869-887)
+
+added vfx worrytree (l. 889-890)
+
+added files for rin sprites basic_deadpan_pan_close, basic_awayabsent_pan_close, basic_deadpanupset_pan_close, basic_deadpancontemplation_pan_close, basic_deapdpanamused_pan_close on "sprite/rin/close"
+
+added bg school_hilltop_border_summer, also school_hilltop_summer file replaced for the one in the final (l. 221)
+
+changed variable "start" on dandeliontfg and dandelionbg from 8.0 to 14.0 (l. 1256-1257)
+
+added dandelionb/f denseblur code (l. 1311-1317)
+
+differenciated dandelions on the front, from those on the back, dense, blur and thin version: new code for dandelions animation (l. 1294-1319)
+
+added file for rin sprite "basic_crying" (definition on l. 367)
+
+added dandelionbg vfx (l. 893)
+
+added dandelion full and dandelion gone vfx (l. 894-895)
+
+added dandelion_transform and dandelionout_transform code (l. 897-923)
+
+added rin goodend CGs (9 files on "event/rin_goodend/" folder) (l. 925-934)
+
+added prop_rin_xxxearbuds (2 files on "event" folder) (l. 1010-1011)
+
+
+
+ui_code
+
+added auxambient sound channel (l. 157)
+
+
+
+
+ui_early
+
+added $ wdt_on, to semisolve some weird graphic bug with the menus (l. 170) 
+
+
+
+ui_labels 
+
+bad credits sort of fixed: xpos changed from 397 (?) to 0.5128 (l. 972)
+
+
+
+
+
+REMINDER, BEFORE FINAL RELEASE:
+
+
+
+REMINDER TO GET MY AFFAIRS IN ORDER (this will for next release, after aki completes her stuff)
+
+ 
+
+
+
+
+Done Stuff from the reminders: 
+
+
+REMINDER TO REPLACE THE LOW KNOCKS WITH "HAMMER" (done!)
+
+REMINDER TO CHECK THE H-SCENE FILTER (done!)
+
+REMINDER TO CHECK THE VOLUME OF SFX "IMPACT" IN THE OLD FILES (done!) 
+
+REMINDER TO CHECK ALL WINDOW SHOW/HIDEs FOR TRANSITIONS (done!)
+
+REMINDER TO CHECK ALL NVLs FOR TRANSITIONS (DONT FORGET RINBABBLE!) (done!)
+
+REMINDER TO TRY TO FIX EMI IN THE SKY OF DIAMONDS TRANSITION IN THE BEGINNING OF ACT 2 (done!)
+Added layer kelpersux, (l. 23 on ui.settings)
+
+REMINDER TO CHECK FULLPAN INSTANCES (they are fixed now, except for the Shanghai scene, but you have to skip through the scene to find the bug, and people shouldn't do that anyway, so seeing it would be their damn fault... done, I guess)
+
+REMINDER TO CHECK EVERY SHORTTIMESKIP TRANSITION AND REPLACE IT FOR THE SILENT VERSION, IF NEEDED (done!)
+
+REMINDER TO SEARCH FOR A TRAY CLATTER SOUND EFFECT (?) NEEDED FOR YUUKO IN ACT 2 LINE 4513 (done!)
+
+REMINDER TO ADD THAT EMI SPRITE AT THE START OF THE ROUTE YOUKNOWHERE (done!)
+
+REMINDER TO CHECK IF THERES ANYTHING TO DO WITH THE CROWD LOOKING WEIRD DURING EMIS TRACK MEET (done!)
+
+REMINDER TO UNIFY TRANSITIONS TO BACKGROUNDS AT THE START OF EVERY ACT (done!)
+
+REMINDER TO ASK AKI ABOUT COSINE BASED TRANSITIONS AND LINE 2385 OF FINAL ACT 4 SCRIPT (done!)
+
+REMINDER TO CHECK IF ANYTHING CAN BE DONE FOR THE LIGHT RAIN STUFF (maybe using Alpha() function?) (done!)
+
+UPDATE (18/11): Could find someone to fix CGs and Sprites: REMINDER TO ADD Gift of Gab TO THE CREDITS. rin_painting_whatever (except for foot) was changed to .png in ui_settings definition.
+
+REMINDER TO TAKE THE RAIN FILTER OUT IN THE ARTSHOP SCENE (done!)
+
+REMINDER TO ADD BWildness TO THE CREDITS UNDER "Also Helped" (done!, also changed @__akiaki to Aki<3 at her request, added Parity as a helper, and took out s37 from the extras, since it doesnt exist and made the game have some.. selfesteem issues. Everything new on ui-strings. Oh and I deleted "B" and Anonymous temporarily from the creds, who the hell are they?)
+
+REMINDER TO CHECK SCENES NOT SEPARATED BY TIMESKIP (done!)
+
+Oh god, Ive found a game destroying bug doing the above.---> REMINDER TO ASK AKI TO FIX IT. 
+Wtf, found another. If you save the game with the imenu on the screen and pick a choice, everything explodes.---> Found cause of this bug: Akis modding of scene_register, line 106 in _ui_early.rpy. Don't know exactly what inside the definition fucks stuff. If you change it back to the original leaks code, it doesnt crash.
+Update 2/12/13: Aki <3 fixed both bugs, the first one was a problem in ui_early (game crashed every time you tried to load a scene on an option menu and then picked an option), second was on z_jumper. Idk if being grateful, since aki caused both bugs but then fixed them. Let's say I am. 
+Back to work. 	
+
+REMINDER TO COMMENT EDITIONS I DID ON THE ORIGINAL SCRIPT (done!, although I could go back to this on an update)
+
+REMINDER TO FIX CREDITS (sort of done!)
+
+REMINDER TO CHECK EVERY FADE TO BLACK AT THE END OF THE SCENES (done!)
+
+REMINDER TO CHECK RAIN SOUND WHEN IT HAPPENS ON INTERIORS (done!)
+
+REMINDER TO CHECK VOLUMES OF AMBIENT SOUND FOR ALL THE ACTS (done!)
+
+REMINDER TO CHECK VOLUME OF "HAMMER" (done!, but could check harder)
+
+FOR THE LOVE OF RIN, DELETE PERSISTENT AND RPYC FILES BEFORE RELEASE (done!)
+

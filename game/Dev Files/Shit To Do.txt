@@ -1,0 +1,95 @@
+--SHIT TO FIX--
+02:14 AM - ♥The Titillating Two-Face♥: some of the text in the "guest artwork: some dude" is visible before the art gets drawn
+
+zooney should probably be re-centered in re-sublimify, but isn't
+
+oh man the 6-girl scenes will probably be a nightmare, I hope you have a blanket fix for these problems
+
+yep, looks like it
+
+do you think I should fix up Hanako's sprites? As it moves from "it's the first time i've seen her actually animated in the least" to "Hamakichi and Shiina" you can clearly see some black pixes to the left (hanako's right) overlap with lilly, and this is a problem I am familiar with
+
+"Hamakichi" was also probably a typo
+
+"She'd of told me" is grammatically wrong
+
+Yuuko flies away the first time she serves you coffee. Something about flying to the moon.
+
+
+--SHIT TO NOT FIX--
+**01:27 AM - ♥The Titillating Two-Face♥: I think the choice in Mind Your Step was reworded and "I'm fine" was replaced with something else in a later build** This scene was re-written in the final, and I'd rather leave it as is
+
+**12:40 AM - ♥The Titillating Two-Face♥: I think the ceiling CG in The Momentayr Present should not just cut in abruptly, I think it's usually different** The ceiling is actually a background, not a CG. It also dissolves in like normal.
+
+**1:14 AM - ♥The Titillating Two-Face♥: lilly is also too high up at the end of welcome party** The text says she stands up.
+
+**1:46 AM - ♥The Titillating Two-Face♥: "life can wait. i think i want to deal with now" hisao should not be marked for saying this line, in accordance with act 1** Hisao mentions in the next line that he is thinking out loud.
+
+**can we please not have the word "faggot" in the credits** That's how Shitty wanted his name to be in the credits. Not going to change it.
+
+--DIRECTION SHIT--
+1:30 AM - ♥The Titillating Two-Face♥: after hisao and lilly leave the room in Girl Uppi, Friendship should probably not still be playing
+1:30 AM - ♥The Titillating Two-Face♥: looks like it cuts out anyway, albeit kinda late
+1:30 AM - ♥The Titillating Two-Face♥: we can talk about that some, since it actually sorta synchs really well for me, but a faster reader might miss the ending of the track
+
+01:43 AM - ♥The Titillating Two-Face♥: I think there's supposed to be a white fade in + out when CGs come up
+
+1:44 AM - ♥The Titillating Two-Face♥: hanako moves diagnonally in Lullaby for Strain, let's look at changing that sometime
+1:45 AM - ♥The Titillating Two-Face♥: she should have a close sprite for the mountain scene too, but that's between me and alphabro
+
+1:48 AM - ♥The Titillating Two-Face♥: letting my heart speak doesn't feel right to play right off the bat in Under Slave
+
+1:50 AM - ♥The Titillating Two-Face♥: maybe we should have a new kissu CG for the first kiss goodnight
+1:50 AM - ♥The Titillating Two-Face♥: in Under Slave
+
+01:53 PM - ♥The Titillating Two-Face♥: does it have to be in its previous position or can it move to the lother sise
+
+01:45 AM - ♥The Titillating Two-Face♥: you used the old text for hanako's hscene 1 along with the old CG
+
+01:50 AM - ♥The Titillating Two-Face♥: maybe use a different track for hscene 2
+
+01:53 AM - ♥The Titillating Two-Face♥: hanako moves diagonally in Eternal Dream to sit down again, maybe look at if that normally happens in other routes
+01:57 AM - ♥The Titillating Two-Face♥: her closed eye in eternal dream is too sharp, I don't knwo the sprite name but I can find it
+
+1:56 PM - ♥The Titillating Two-Face♥: foreplay CG is abnormally sharp
+remove references to her hair down there
+I found some other things in that scene but I was busy, will have to review it
+the act 5 art was done by gebby I think
+
+A pout when Lilly's all crying
+Really?
+
+Parenthesis aren't right for a script, dashes should be used instead
+specifically, em dashes like the rest of the VN
+-I'm sure she assumed it was easy enough to understand-
+
+the first kissu scrolls a bit too fast, we might need to talk about solutions
+
+--SHIT TO DO--
+09:35 PM - ♥The Titillating Two-Face♥: get hanako's act 2 and 3 from alphabro, whenever he responds to me
+09:36 PM - ♥The Titillating Two-Face♥: have the note at the junction we initially planned, the town/library choice
+09:36 PM - ♥The Titillating Two-Face♥: but instead at that choice, have a third option to skip to hanako's true end stuff, since lilly's is not directed
+09:37 PM - ♥The Titillating Two-Face♥: attempting to keep the text and choices in lilly's route to get to hanako's true end intact, in case anyone really wants to read that text and still get hana's true end
+09:37 PM - ♥The Titillating Two-Face♥: and this also means removing the existing note at act 4, which is the one you get from the act selection
+09:38 PM - ♥The Titillating Two-Face♥: this also means revising the act selection menu itself, since we probably want act 4 (bad) and act 4 (true) to be separate
+09:38 PM - ♥The Titillating Two-Face♥: act 2 and 3 would also be marked as (bad) but that's sorta your discretion on how you want to do that
+ 
+01:44 AM - ♥The Titillating Two-Face♥: also remind me to put some hand scars on the clothed kissus, or remove the ones from the nude ones
+1:34 AM - ♥The Titillating Two-Face♥: remind me to look at the saturation onf the susnet kis too
+
+01:54 PM - ♥The Titillating Two-Face♥: like, the fade-in for the kissus work fine
+01:54 PM - ♥The Titillating Two-Face♥: but I also need to look at desaturating the first nude one like I need to with the sunset one
+
+I might need to filter some of the new backgrounds too
+
+oh we need another kissu
+maybe
+
+
+
+
+
+
+
+
+

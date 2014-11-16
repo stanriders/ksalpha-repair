@@ -1,0 +1,73 @@
+changelog
+
+added new sprite class "lillyprop"
+
+  #LILLYPROP
+        lillyprop_list = ['back_cane']
+        make_sprites('lillyprop',lillyprop_list,['paj','cas','nak','pat'])
+
+under supercg's add:
+
+    image tearoom_chess = "event/Lilly_supercg/tearoom_chess.png"
+
+ flash = Fade(.25, 0, .75, color="#fff") under effect abstractions
+
+nak sprites must be copied from final to alpha game folder
+
+
+MUST EDIT AND ADD DRILL SOUND
+
+ADD LILLY TEAROOM EV TO EV FOLDER FOR SCENE L8
+
+THINGS I NEED
+
+i need an happy embarassed face
+
+is there an alarm clock sprite?
+
+must add lilly cello cg
+
+must add auditorium bg
+
+change the wakeup scene in l17 to match that of the final
+
+how do you display crowds in act l18?
+
+must add phone ringing sfx
+
+i need aoi sprites
+
+fix imachine for hanalilly a4 trunk
+
+i need yuuko motorcycle leathers sprites?
+
+change the note color in scene l22?
+
+i need emi and rin sunglasses sprites
+
+scene l22 needs sunglasses direction
+
+in scene l24, letter sprite must appear
+
+i need a lilly sprite with glasses
+
+choice point in hok scene?
+
+ADD SOUND EFFECT TO TIME SKIP
+
+
+notes:
+
+ play ambient sfx_crowd_indoors fadein 2.0
+stop ambient fadeout 0.5
+
+play music music_dreamy fadein 2.0
+play music music_daily fadein 2.0
+play music music_lilly fadein 10.0
+play music music_kenji
+
+
+ $ renpy.music.set_volume(0.20000000001, 1.0, channel='ambient')
+    play ambient sfx_rooftop fadein 2.0
+
+{w=.5}{nw}"

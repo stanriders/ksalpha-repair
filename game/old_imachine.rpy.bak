@@ -1,0 +1,1578 @@
+﻿# This is the I-Machine, the flow control script for KS.
+# Dedicated to Irina ~<3
+
+#####Documentation#####
+#
+# First off, the best way to grasp this is, of course, to look at how it's actually done.
+# But for reference, here's a little abstract as well.
+# The basic idea of this is to separate game flow code from writing and presentation;
+# and even though there is no way to stop us from using flow commands directly in the scripts
+# and showing content to the player directly from here, it would really be against the very idea behind this.
+# So just don't.
+# The exception are small text differences that depend on previous player behaviour.
+# There really is little point in making a block for each of these, and a couple of seen_scenes() in the
+# script themselves don't hurt either. Big differences definitely belong in here though.
+# The actual code of custom argument-taking labels, functions and statements is in _ui_early.rpy
+#
+# label {ID}:
+#  Denotes a logical scene. This is used to group subscenes ("blocks") as per actual writing.
+#  It also, by convention, groups commands for scene replay (but not invariably, see jump_in).
+#  Scene labels in here that don't end with jump_out or jump_in should be considered errors.
+#
+# call iscene ("{ID}")
+#  Enter and register a scene block. The actual in-script names of these blocks are expected to start with "s_";
+#  this prefix is omitted in the call. The blocks must also be terminated with "return",
+#  after which control returns to the I-Machine.
+#
+# call hscene ("{ID}")
+#  Same as call iscene, but will replace the scene with a "scene deleted" block based on user preference.
+#
+# call imenu ("{ID}")
+#  Enter a choice block. Naming rules are the same as for scene blocks.
+#  These are expected to return a token, which takes the form "m1", "m2", ... for first, second, ... option.
+#  After the call, the token is stored in a register called "_return", and can be used for flow control.
+#  The tokens are defined in _ui_early.rpy, but there should be no reason to change them, ever -
+#  unless the 8 tokens defined now don't suffice, in which you should just add additional ones there.
+#
+# replay_has_seen("{ID}")
+#  This returns True if the given block designator has EVER been viewed and replay mode is on. Use it to make
+#  subscenes that depend on flags from other scenes viewable in replay mode anyway.
+#
+# seen_scene("{ID}")
+#  This returns True if the scene or block {ID} has been viewed during the current playthrough, False if not.
+#  We use this instead of flags. This omits the "s_" prefix as well, and works even if no actual label without the
+#  prefix exists (simple scenes and the beginning blocks of more complex scenes usually have the same basic
+#  designation in the script and in here, but that need not necessarily always be the case).
+#
+# made_choice("{ID}", token)
+#  Same as seen_scene(), but lets you query whether a particular decision has been made.
+#
+# jump_out {ID}
+#  The usual way to leave a logical scene and jump to {ID}.
+#  This will drop back to the replay menu when in replay mode.
+#
+# jump_in {ID}
+#  Leave a scene and jump to {ID} but DO NOT drop back to the menu in replay mode.
+#  This is used rarely, but there are certain situations when it's useful,
+#  i.e. when flow code is shared between logical scenes (so-called "appendix scenes")
+#
+# Apart from that, arbitrary code is allowed in the script, but should probably be kept to a minimum.
+# Keep in mind that the flow script operates in the Ren'Py abstraction layer, so Python code has to be marked.
+# Useful things are, of course, setting variables and if/elif/else branches.
+# Another use case are elaborate dynamic intermission functions, notably tcard() from ui_code.rpy.
+#
+#######################
+
+# Start of the actual script and entry point for a new game. Don't change.
+label imachine_old:
+    jump_out OP1
+
+# From here on, actual scene labels.
+
+#######################
+#        ACT 1        #
+#######################
+
+# Monday
+label OP1:
+    call iscene ("OP1")
+    jump_out OP2
+
+label OP2:
+    call iscene ("OP2")
+    jump_out OP3
+
+label OP3:
+    $ tcard(1, "all")
+    call iscene ("OP3")
+    jump_out SG1T1
+
+label SG1T1:
+    call iscene ("SG1T1")
+    jump_out HG1T2
+
+label HG1T2:
+    call iscene ("HG1T2")
+    jump_out LG1T3
+
+label LG1T3:
+    call iscene ("LG1T3")
+    jump_out N1
+
+label N1:
+    call iscene ("N1")
+    jump_out EG1T4
+
+label EG1T4:
+    call iscene ("EG1T4")
+    jump_out B1
+
+label B1:
+    call iscene ("B1")
+    jump_out B2
+
+# Tuesday
+label B2:
+    call iscene ("timeskip")
+    call iscene ("B2")
+    jump_out S0
+
+label S0:
+    call iscene ("S0")
+    #Choice1 : 1)Attempt to gesture an apology (+1 shizune) or 2) try to write the message on paper. both will lead to the next line.
+    # Choice1: S0 S +1 / S +-0
+    call imenu ("choiceS0")
+    if _return == m1:
+        call iscene ("S0a")
+        $ attraction_shizune += 1
+    else:
+        call iscene ("S0b")
+    call iscene ("S0x")
+    jump_out RG1T2
+
+label RG1T2:
+    call iscene ("RG1T2")
+    jump_out EG1T3
+
+label EG1T3:
+    call iscene ("EG1T3")
+    jump_out HG1T5
+
+label HG1T5:
+    call iscene ("HG1T5")
+    jump_out HL1
+
+label HL1:
+    call iscene ("HL1")
+    #Choice4: "yes" (Lilly +1) or "if i have time i might" (Hanako +1)
+    # Choice4: HL1 L +1 / H +1
+    call imenu ("choiceHL1")
+    if _return == m1:
+        $ attraction_lilly += 1
+    else:
+        $ attraction_hanako += 1
+    call iscene ("HL1b")
+    jump_out N2
+
+label N2:
+    call iscene ("N2")
+    jump_out ER4
+
+# Wednesday
+label ER4:
+    call iscene ("timeskip")
+    call iscene ("ER4")
+    #Choice5, latter option is +1 Rin points, i think this is correct now.
+    # Choice5: ER4 R +-0 goto ER4a / R +1 goto ER4b
+    call imenu ("choiceER4")
+    if _return == m1:
+        call iscene ("ER4a")
+    else:
+        $ attraction_rin += 1
+        call iscene ("ER4b")
+    call iscene ("ER4c")
+    jump_out ER1
+
+label ER1:
+    call iscene ("ER1")
+    jump_out S1
+
+label S1:
+    call iscene ("S1")
+    #Choice7
+    # Choice7: S1 H +1, L +1 goto S1a / S +1 goto S1b
+    call imenu ("choiceS1")
+    if _return == m1:
+        $ attraction_lilly += 1
+        $ attraction_hanako += 1
+        call iscene ("S1a")
+        jump_out HL2
+    else:
+        $ attraction_shizune += 1
+        call iscene ("S1b")
+        jump_out B7
+
+label HL2:
+    call iscene ("HL2")
+    #Choice8
+    # Choice8: HL2 H –1, L –1, goto HL2a / L +1, goto HL2b
+    call imenu ("choiceHL2")
+    if _return == m1:
+        $ attraction_hanako -= 1
+        $ attraction_lilly -= 1
+        call iscene ("HL2a")
+    else:
+        $ attraction_lilly += 1
+        call iscene ("HL2b")
+    call iscene ("HL2c")
+    #Choice9: wait for Hanako here (Hanako +1, jump to HL2e, Rin eliminated) or go talk with Rin (Rin +1, Hanako -1, ER5)
+    # Choice9: HL2 H +1, goto HL2e / R +1, H -1 goto ER5
+    call imenu ("choiceHL2a")
+    if _return == m1:
+        $ attraction_hanako += 1
+        call iscene ("HL2e")
+        jump_out B7
+    else:
+        $ attraction_rin += 1
+        $ attraction_hanako -= 1
+        jump_out ER5
+
+label ER5:
+    call iscene ("ER5")
+    jump_out B7
+
+label B7:
+    call iscene ("B7")
+    jump_out EG1T2
+
+#Thursday
+label EG1T2:
+    # splits are fine for replay since flags only shorten the scene
+    call iscene ("timeskip")
+    call iscene ("EG1T2")
+    #Split1 if seen ER5 jump to RG1T3 if not, jump to EG1T2a
+    # Split1: ET2: ifseen ER5 goto RT3, else goto ET2a
+    if seen_scene("ER5"):
+        jump_out RG1T3
+    else:
+        call iscene ("EG1T2a")
+        jump_out ER2
+
+label RG1T3:
+    call iscene ("RG1T3")
+    jump_out ER2
+
+label ER2:
+    call iscene ("ER2")
+    #Choice12
+    # Choice12: ER2 E +1 goto ER2a / goto ER2b
+    call imenu ("choiceER2")
+    if _return == m1:
+        $ attraction_emi += 1
+        call iscene ("ER2a") # ER2c folded in
+        #Choice13
+        # Choice13: ER2 R +1 goto ER2d / goto ER2e
+        call imenu ("choiceER2a")
+        if _return == m1:
+            $ attraction_rin += 1
+            call iscene ("ER2d")
+        call iscene ("ER2e")
+    else:
+        call iscene ("ER2b") # B10 folded in
+    call iscene ("ER2f")
+    jump_out S3
+
+label S3:
+    call iscene ("S3")
+    jump_out ER3
+
+label ER3:
+    call iscene ("ER3")
+    #Choice15, take a detour (jump to ER3a) or go straight to the dorms (jump to ER3b, Emi eliminated)
+    # Choice15 ER3 goto ER3a / goto ER3b,
+    call imenu ("choiceER3")
+    if _return == m2:
+        call iscene ("ER3a")
+    else:
+        call iscene ("ER3b")
+    call iscene ("ER3f")
+    jump_out S2
+
+#Friday
+label S2:
+    call iscene ("timeskip")
+    call iscene ("S2")
+    #Choice17: go to student council office (S2d), go to the school library to study (LG1T4)
+    # Choice17 S2: S +2, goto S2d / goto LG1T4
+    call imenu ("choiceS2")
+    if _return == m1:
+        $ attraction_shizune += 2
+        call iscene ("S2d")
+        jump_in B3 # B3 is an appendix scene
+    else:
+        jump_out LG1T4
+
+label LG1T4:
+    call iscene ("LG1T4")
+    jump_in B3 # B3 is an appendix scene
+
+label B3:
+    # split is fine for replay since the three endings only differ in like one sentence
+    call iscene ("B3")
+    call imenu ("choiceB3")
+    if _return == m1:
+        call iscene ("B3a")
+        if seen_scene("LG1T4") or replay_has_seen("B3aa"):
+            call iscene ("B3aa")
+        call iscene ("B3ax")
+        if seen_scene("S2d"):
+            jump_out S4
+        else: 
+            jump_out HL4
+    elif _return == m2:
+        call iscene ("B3b")
+        jump_out RG1T4
+    else:
+        call iscene ("B3c")
+        jump_out HL4
+
+label RG1T4:
+    call iscene ("RG1T4")
+    jump_in B4 # B4 is an appendix scene
+
+label HL4:
+    call iscene ("HL4")
+    #Choice18
+    # Choice18 HL4 H +1/ H -1
+    call imenu ("choiceHL4")
+    if _return == m1:
+        $ attraction_hanako += 1
+    else:
+        $ attraction_hanako -= 1
+    call iscene ("HL4a")
+    jump_in B4  # B4 is an appendix scene
+
+label S4:
+    call iscene ("S4")
+    #Choice19
+    # Choice19 S4 goto S4a / goto S4b,
+    call imenu ("choiceS4")
+    if _return == m1:
+        call iscene ("S4a")
+    else:
+        call iscene ("S4b")
+    call iscene ("S4c")
+    jump_in B4 # B4 is an appendix scene
+
+label B4:
+    call iscene ("B4")
+    #Choice20, put alarm clock to 7am (jump to ER6) or 8:30 am (if seen S4a jump to S5, if not seen jumpto ER7)
+    # Choice20 B4 goto ER6 / goto S5 /ifnotseen S4a goto ER7
+    call imenu ("choiceB4")
+    if _return == m1:
+        jump_out ER6
+    else:
+        if seen_scene("S4a"):
+            jump_out S5 # Shizune path launcher
+        else:
+            jump_out ER7
+
+#Saturday
+label ER6:
+    call iscene ("timeskip")
+    call iscene ("ER6")
+    #Choice21
+    # Choice21 ER6 goto ER6a / E +1 goto ER6b
+    call imenu ("choiceER6")
+    if _return == m1:
+        call iscene ("ER6a")
+    else:
+        $ attraction_emi += 1
+    call iscene ("ER6b")
+    if seen_scene("ER3a") and seen_scene("ER2a"):
+        jump_out ER8
+    else:
+        jump_out ER7
+
+label S5:
+    call iscene ("timeskip")
+    call iscene ("S5")
+    jump_out S6
+
+label S6:
+    call iscene ("S6")
+    jump_out S7 # Continuing Shizune path, the real path launcher
+
+label ER7:
+    if not seen_scene("ER6"):
+        call iscene ("timeskip")
+        call iscene ("ER7")
+    call iscene ("ER7_8")
+    #Split4 this is the Rin point check , if rin points >, fallthrough, else:jump_in ER7d
+    # Split4 ER7 ifseen ER5, RG1T4 and ER6 fallthrough / goto ER7d
+    # This split needs fixing for replay
+    if (seen_scene("ER5") and seen_scene("RG1T4") and seen_scene("ER2a")) or replay_has_seen("ER7y"):
+        call iscene ("ER7x")
+    call iscene ("ER7y")
+    jump_out B5
+
+
+label ER8:
+    call iscene ("ER7_8")
+    call iscene ("ER8")
+    jump_out B5
+
+label B5:
+    if not seen_scene("ER8"):
+        call iscene ("B5")
+    call iscene ("B5a")
+        #Split6 if seen ER7a jumpto RG1T5, ifseen ER8 jumpto E1, if neither jumpto HL5
+        # Split6 RT5 ifseen ER7a goto R1 / ifseen ER8 goto E1 / goto HL5
+    if seen_scene("ER7x"):
+        jump_out RG1T5 # Rin path launcher
+    call iscene ("B5b")
+    if (seen_scene("LG1T4") and seen_scene("HL2") and seen_scene("HL4")):
+        jump_out HL5 # HanaLilly trunk lawnchair
+    elif seen_scene("ER8"):
+        jump_out E1 # Emi path launcher
+    else:
+        jump_out B6 # fail end launcher
+   
+label RG1T5:
+    call iscene ("RG1T5")
+    jump_out R1
+
+label HL5:
+    call iscene ("HL5")
+    #Choice25
+    # Choice25 HL5 H +1, goto HL2e / goto HL5f <= AGAIN
+    call imenu ("choiceHL5")
+    if _return == m1:
+        $ attraction_hanako += 1
+        call iscene ("HL5e")
+    else:
+        call iscene ("HL5f")
+    call iscene ("HL5g")
+    jump_out H1 # actual Hanako / Lilly trunk launcher
+
+#######################
+#      FESTIVAL       #
+#######################
+
+# release_is_demo is a config variable from ui_settings.rpy
+
+#Kenji
+label B6:
+    call iscene ("B6")
+    #game ends no matter what
+    call iscene ("end_B6bad")
+    $ persistent.badend += 1
+    call credits (True)
+    jump_out restart
+
+#Emi
+label E1:
+    call iscene ("E1")
+    jump_out E2
+
+label E2:
+    call iscene ("E2")
+    #demo ends
+    if release_is_demo:
+        jump_out emiend
+    jump_out E3
+
+#Hanalilly
+label H1:
+    call iscene ("H1")
+    jump_out H2
+
+label H2:
+    call iscene ("H2")
+    #demo ends
+    if release_is_demo:
+        jump_out hanakoend
+    jump_out HLT3
+
+#Rin
+label R1:
+    call iscene ("R1")
+    #demo ends
+    if release_is_demo:
+        jump_out rinend
+    jump_out R2
+
+#Shizune
+label S7:
+    call iscene ("S7")
+    #demo ends
+    if release_is_demo:
+        jump_out shizuneend
+    jump_out S8
+
+#######################
+#   Hanalilly trunk   #
+#######################
+
+label HLT3:
+    $ tcard(2, "hanalilly")
+    call iscene ("HLT3")
+    jump_out HLT4
+
+label HLT4:
+    call iscene ("HLT4")
+    jump_out HLT5
+
+label HLT5:
+    call iscene ("HLT5")
+    call imenu ("choiceHLT5")
+    if _return == m1:
+        $ attraction_lilly += 1
+        call iscene ("HLT5a")
+    else:
+        $ attraction_hanako += 1
+        call iscene ("HLT5b")
+    call iscene ("HLT5x")
+    jump_out HLT6
+
+label HLT6:
+    call iscene ("HLT6")
+    if attraction_hanako > (attraction_lilly + 2):
+        call iscene ("HLT6x")
+        jump_out H8
+    elif attraction_lilly > (attraction_hanako + 2):
+        call iscene ("HLT6x")
+        jump_out L8
+    else:
+        call imenu ("choiceHLT6")
+        if _return == m1:
+            jump_out L8
+        else:
+            jump_out H3
+
+#######################
+#     Hanako path     #
+#######################
+label H3:
+    call iscene ("H3")
+    jump_out H4
+    
+label H4:
+    call iscene ("H4")
+    jump_out H5
+
+label H5:
+    call iscene ("H5")
+    jump_out H6
+    
+label H6:
+    call iscene ("H6")
+    jump_out H7
+    
+label H7:
+    call iscene ("H7")
+    jump_out H8
+    
+label H8:
+    call iscene ("H8")
+    jump_out H9
+
+label H9:
+    call iscene ("H9")
+    jump_out H10
+
+label H10:
+    call iscene ("H10")
+    jump_out H11
+
+label H11:
+    call iscene ("H11")
+    jump_out H12
+
+label H12:
+    call iscene ("H12")
+    jump_out H13
+
+label H13:
+    call iscene ("H13")
+    jump_out H14
+
+label H14:
+    call iscene ("H14")
+    #Choice:
+    #[1] – Say yes
+    #[2] – Avoid the question
+    call imenu ("choiceH14")
+    if _return == m1:
+        #+1 Good End
+        call iscene ("H14a")
+    else:
+        # + 1 Bad End.
+        call iscene ("H14b")
+    call iscene ("H14c")
+    jump_out H15
+
+label H15:
+    $ tcard(3, "hanako")
+    call iscene ("H15")
+    jump_out H16
+
+label H16:
+    call iscene ("H16")
+    jump_out H17
+
+label H17:
+    call iscene ("H17")
+    jump_out H18
+
+label H18:
+    call iscene ("H18")
+    jump_out H19
+
+label H19:
+    call iscene ("H19")
+    jump_out H20
+
+label H20:
+    call iscene ("H20")
+    jump_out H21
+
+label H21:
+    call iscene ("H21")
+    jump_out H22
+
+label H22:
+    call iscene ("H22")
+    jump_out H23
+
+label H23:
+    call iscene ("H23")
+    jump_out H24
+
+label H24:
+    $ tcard(4, "hanako")
+    call iscene ("H24")
+    jump_out H25
+
+label H25:
+    call iscene ("H25")
+    jump_out H26
+    
+label H26:
+    call iscene ("H26")
+    call imenu ("choiceH26")
+    if _return == m1:
+        jump_out H27
+    else:
+        jump_out H28
+
+label H27:
+    #Hanako bad end 1 (shark'd)
+    call iscene ("H27")
+    call iscene ("end_hanakobad1")
+    $ persistent.hanako += 1
+    call credits (True)
+    jump_out restart
+
+label H28:
+    call iscene ("H28")
+    jump_out H29
+
+label H29:
+    call iscene ("H29")
+    jump_out H30
+
+label H30:
+    call iscene ("H30")
+    jump_out H31
+
+label H31:
+    call iscene ("H31")
+    call imenu ("choiceH31")
+    if _return == m1: # (lol shark'd again)
+        call iscene ("H31a")
+        call iscene ("end_hanakobad2")
+        $ persistent.hanako += 1
+        call credits (True)
+        jump_out restart
+    else:
+        jump_out H32
+
+label H32:
+    call iscene ("H32")
+    call iscene ("end_hanakobad3")
+    $ persistent.hanako += 1
+    call credits (True)
+    jump_out restart
+
+#######################
+#      Lilly path     #
+#######################
+
+label L8:
+    call iscene ("L8")
+    jump_out L9
+
+label L9:
+    call iscene ("L9")
+    jump_out L10
+
+label L10:
+    call iscene ("L10")
+    jump_out L11
+
+label L11:
+    call iscene ("L11")
+    call hscene ("L11h")
+    call iscene ("L11xh")
+    #Choices
+    #[1] "I was just daydreaming."
+    #[2] "It's nothing."
+    #[3] "Tell the truth."
+    call imenu ("choiceL11")
+    if _return == m1:
+        call iscene ("L11a")
+        #More choices
+        #[1A] "You."
+        #[1B] "You and Hanako."
+        #[1C] "Tell the whole truth."
+        call imenu ("choiceL11a")
+        if _return == m1:
+            call iscene ("L11aa")
+        elif _return == m2:
+            #+1 Yuri End
+            #+1 Bad End
+            call iscene ("L11ab")
+        else:
+            call iscene ("L11c")
+    elif _return == m2:
+        call iscene ("L11b")
+        #Even more choices
+        #[2A] "Clam up."
+        #[2B] "Spill everything."
+        call imenu ("choiceL11b")
+        if _return == m1:
+            call iscene ("L11ba")
+        else:
+            call iscene ("L11c")
+    else:
+        call iscene ("L11c")
+    call iscene ("L11x")
+    jump_out L12
+
+label L12:
+    call iscene ("L12")
+    jump_out L13
+
+label L13:
+    call iscene ("L13")
+    jump_out L14
+
+label L14:
+    $ tcard(3, "lilly")
+    call iscene ("L14")
+    jump_out L15
+
+label L15:
+    call iscene ("L15")
+    jump_out L16
+
+label L16:
+    call iscene ("L16")
+    jump_out L17
+
+label L17:
+    call iscene ("L17")
+    jump_out L18
+
+label L18:
+    call iscene ("L18")
+    jump_out L19
+
+label L19:
+    call iscene ("L19")
+    call imenu ("choiceL19")
+    if _return == m1:
+        call iscene ("L19a")
+    else:
+        call iscene ("L19b")
+    jump_out L20
+        
+label L20:
+    call iscene ("L20")
+    if seen_scene("L19b") and persistent_seen("H29"): # H29: Loli flashback in the H end deathtrap
+        call iscene ("L20b")
+        jump_out HT1
+    else:
+        call iscene ("L20a")
+        jump_out L21
+
+########################
+# Lilly true end path  #
+########################
+
+label L21:
+    $ tcard(4, "lilly")
+    call iscene ("L21")
+    jump_out L22
+
+label L22:
+    call iscene ("L22")
+    jump_out L23
+
+label L23:
+    call iscene ("L23")
+    jump_out L24
+    
+label L24:
+    call iscene ("L24")
+    jump_out L25
+    
+label L25:
+    call iscene ("L25")
+    jump_out L26
+    
+label L26:
+    call iscene ("L26")
+    call hscene ("L26h")
+    jump_out L27
+
+label L27:
+    call iscene ("L27")
+    jump_out L28
+
+label L28:
+    call iscene ("L28")
+    call hscene ("L28h")
+    call iscene ("L28x")
+    jump_out L29
+
+label L29:
+    call iscene ("L29")
+    jump_out L30
+
+label L30:
+    call iscene ("L30")
+    jump_out L31
+
+label L31:
+    call iscene ("L31")
+    jump_out L32
+
+label L32:
+    call iscene ("L32")
+    call hscene ("L32h")
+    call iscene ("L32x")
+    jump_out L33
+
+label L33:
+    call iscene ("L33")
+    jump_out L34
+
+label L34:
+    call iscene ("L34")
+    call hscene ("L34h")
+    call iscene ("L34x")
+    jump_out L35
+
+label L35:
+    call iscene ("L35")
+    jump_out L36
+
+label L36:
+    call iscene ("L36")
+    jump_out L37
+
+label L37:
+    call iscene ("L37")
+    jump_out L38
+
+label L38:
+    call iscene ("L38")
+    jump_out L39
+
+label L39:
+    call iscene ("L39")
+    jump_out L40
+
+label L40:
+    call iscene ("L40")
+    jump_out L41
+
+label L41:
+    call iscene ("L41")
+    jump_out L42
+    
+label L42:
+    call iscene ("L42")
+    call imenu ("choiceL42")
+    if _return == m1:
+        call iscene ("L42a")
+    else:
+        call imenu ("choiceL42a")
+        if _return == m1:
+            call iscene ("L42b")
+        else:
+            call iscene ("L42c")
+    call iscene ("L42x")
+    jump_out L43
+
+label L43:
+    #$ tcard(5, "lilly")
+    call iscene ("L43")
+    jump_out L44
+
+label L44:
+    call iscene ("L44")
+    jump_out L45
+
+label L45:
+    call iscene ("L45")
+    jump_out L46
+
+label L46:
+    call iscene ("L46")
+    jump_out L47
+
+label L47:
+    call iscene ("L47")
+    call iscene ("end_lillygood")
+    $ persistent.lilly += 1
+    call credits
+    jump_out restart
+
+########################
+# Hanako true end path #
+########################
+
+label HT1:
+    #$ tcard(4, "hanatrue")
+    call iscene ("HT1")
+    jump_out hanakoend
+
+label HT2:
+    call iscene ("HT2")
+    jump_out HT3
+
+label HT3:
+    call iscene ("HT3")
+    jump_out HT4
+
+label HT4:
+    call iscene ("HT4")
+    jump_out HT5
+
+label HT5:
+    call iscene ("HT5")
+    jump_out HT6
+
+label HT6:
+    call iscene ("HT6")
+    jump_out HT7
+
+label HT7:
+    call iscene ("HT7")
+    jump_out HT8
+
+label HT8:
+    call iscene ("HT8")
+    jump_out HT9
+
+label HT9:
+    call iscene ("HT9")
+    jump_out HT10
+
+label HT10:
+    call iscene ("HT10")
+    call hscene ("HT10h")
+    call iscene ("HT10x")
+    jump_out HT11
+
+label HT11:
+    call iscene ("HT11")
+    jump_out HT12
+
+label HT12:
+    call iscene ("HT12")
+    jump_out HT13
+
+label HT13:
+    call iscene ("HT13")
+    call hscene ("HT13h")
+    call iscene ("HT13x")
+    jump_out HT14
+
+label HT14:
+    #$ tcard(5, "hanatrue")
+    call iscene ("HT14")
+    jump_out HT15
+
+label HT15:
+    call iscene ("HT15")
+    jump_out HT16
+
+label HT16:
+    call iscene ("HT16")
+    jump_out HT17
+
+label HT17:
+    call iscene ("HT17")
+    call iscene ("end_hanakogood")
+    $ persistent.hanako += 1
+    call credits
+    jump_out restart
+
+#######################
+#      Emi path       #
+#######################
+
+label E3:
+    $ tcard(2, "emi")
+    call iscene ("E3")
+    jump_out E4
+
+label E4:
+    call iscene ("E4")
+    jump_out E5
+
+label E5:
+    call iscene ("E5")
+    jump_out E6
+
+label E6:
+    call iscene ("E6")
+    jump_out E7
+
+label E7:
+    call iscene ("E7")
+    jump_out E8
+
+label E8:
+    call iscene ("E8")
+    jump_out E9
+
+label E9:
+    call iscene ("E9")
+    jump_out E10
+
+label E10:
+    call iscene ("E10")
+    jump_out E11
+
+label E11:
+    call iscene ("E11")
+    jump_out E12
+
+label E12:
+    call iscene ("E12")
+    jump_out E13
+
+label E13:
+    call iscene ("E13")
+    jump_out E14
+
+label E14:
+    call iscene ("E14")
+    jump_out E15
+
+label E15:
+    call iscene ("E15")
+    jump_out E16
+
+label E16:
+    $ tcard(3, "emi")
+    call iscene ("E16")
+    jump_out E17
+
+label E17:
+    call iscene ("E17")
+    call imenu ("choiceE17")
+    if _return == m1:
+        call iscene ("E17a")
+    else:
+        call iscene ("E17b")
+    call iscene ("E17x")
+    jump_out E18
+
+label E18:
+    call iscene ("E18")
+    if seen_scene("E17a"):
+        call iscene ("E18a")    
+    else:
+        call iscene ("E18b")
+    call iscene ("E18x")
+    jump_out E19
+
+label E19:
+    call iscene ("E19")
+    jump_out E20
+
+label E20:
+    call iscene ("E20")
+    call hscene ("E20h")
+    call iscene ("E20x")
+    jump_out E21
+
+label E21:
+    call iscene ("E21")
+    call hscene ("E21h")
+    call iscene ("E21x")
+    jump_out E23
+
+label E23:
+    call iscene ("E23")
+    jump_out E24
+
+label E24:
+    call iscene ("E24")
+    jump_out E25
+
+label E25:
+    call iscene ("E25")
+    jump_out E26
+
+label E26:
+    call iscene ("E26")
+    call hscene ("E26h")
+    call iscene ("E26x")
+    jump_out E27
+
+label E27:
+    call iscene ("E27")
+    jump_out E28
+
+label E28:
+    call iscene ("E28")
+    jump_out E29
+
+label E29:
+    #$ tcard(4, "emi")
+    #current script end
+    jump_out emiend
+
+#######################
+#      Rin path       #
+#######################
+
+label R2:
+    $ tcard(2, "rin")
+    call iscene ("R2")
+    jump_out R3
+    
+label R3:
+    call iscene ("R3")
+    jump_out R4
+
+label R4:
+    call iscene ("R4")
+    call imenu ("choiceR4")
+    if _return == m1:
+        call iscene ("R4a")
+    else:
+        call iscene ("R4b")
+    jump_out R5
+
+label R5:
+    call iscene ("R5")
+    jump_out R6
+
+label R6:
+    call iscene ("R6")
+    jump_out R7
+
+label R7:
+    call iscene ("R7")
+    jump_out R8
+
+label R8:
+    call iscene ("R8")
+    jump_out R9
+
+label R9:
+    call iscene ("R9")
+    jump_out R10
+
+label R10:
+    call iscene ("R10")
+    jump_out R11
+
+label R11:
+    call iscene ("R11")
+    jump_out R12
+
+label R12:
+    call iscene ("R12")
+    jump_out R13
+
+label R13:
+    call iscene ("R13")
+    jump_out R14
+
+label R14:
+    call iscene ("R14")
+    jump_out R15
+
+label R15:
+    call iscene ("R15")
+    jump_out R16
+
+label R16:
+    call iscene ("R16")
+    jump_out R17
+
+label R17:
+    call iscene ("R17")
+    jump_out R18
+
+label R18:
+    call iscene ("R18")
+    jump_out R19
+
+label R19:
+    $ tcard(3, "rin")
+    call iscene ("R19")
+    jump_out R20
+
+label R20:
+    call iscene ("R20")
+    jump_out R21
+
+label R21:
+    call iscene ("R21")
+    jump_out R22
+
+label R22:
+    call iscene ("R22")
+    jump_out R23
+
+label R23:
+    call iscene ("R23")
+    jump_out R24
+    
+label R24:
+    call iscene ("R24")
+    jump_out R25
+    
+label R25:
+    call iscene ("R25")
+    jump_out R26
+
+label R26:
+    call iscene ("R26")
+    jump_out R27
+
+label R27:
+    call iscene ("R27")
+    jump_out R28
+
+label R28:
+    call iscene ("R28")
+    jump_out R29
+
+label R29:
+    call iscene ("R29")
+    call hscene ("R29h")
+    call iscene ("R29x")
+    jump_out R30
+
+label R30:
+    call iscene ("R30")
+    jump_out R31
+
+label R31:
+    call iscene ("R31")
+    jump_out R32
+
+label R32:
+    call iscene ("R32")
+    jump_out R33
+
+label R33:
+    #$ tcard(4, "rin")
+    call iscene ("R33")
+    call imenu ("choiceR33")
+    if _return == m1:
+        call iscene ("R33a")
+    else:
+        call iscene ("R33b")
+    jump_out R34
+
+label R34:
+    call iscene ("R34")
+    if seen_scene ("R33a"):
+        jump_out R35
+    else:
+        call iscene ("R34a")
+        jump_out R38
+
+# Rin bad end path
+
+label R35:
+    call iscene ("R35")
+    jump_out R36
+
+label R36:
+    call iscene ("R36")
+    jump_out R37
+
+label R37:
+    call iscene ("R37")
+    call iscene ("end_rinbad")
+    $ persistent.rin += 1
+    call credits(False)
+    jump_out restart
+
+# rin good end path
+
+label R38:
+    call iscene ("R38")
+    jump_out R39
+
+label R39:
+    call iscene ("R39")
+    jump_out R40
+
+label R40:
+    call iscene ("R40")
+    jump_out R41
+
+label R41:
+    call iscene ("R41")
+    call hscene ("R41h")
+    jump_out R42
+
+label R42:
+    call iscene ("R42")
+    call iscene ("end_ringood")
+    $ persistent.rin += 1
+    call credits()
+    jump_out restart
+
+
+#######################
+#    Shizune path     #
+#######################
+
+label S8:
+    $ tcard(2, "shizune")
+    call iscene ("S8")
+    jump_out S9
+
+label S9:
+    call iscene ("S9")
+    jump_out S10
+
+label S10:
+    call iscene ("S10")
+    jump_out S11
+
+label S11:
+    call iscene ("S11")
+    call imenu ("choiceS11")
+    if _return == m1:
+        call iscene ("S11a")
+    else:
+        call iscene ("S11b")
+    call iscene ("S11c")
+    jump_out S12
+
+label S12:
+    call iscene ("S12")
+    if seen_scene("S11a"):
+        call iscene ("S12a")
+    call iscene ("S12x")
+    jump_out S13
+
+label S13:
+    call iscene ("S13")
+    jump_out S14
+
+label S14:
+    call iscene ("S14")
+    jump_out S15
+
+label S15:
+    call iscene ("S15")
+    call imenu ("choiceS15")
+    if _return == m1:
+        call iscene ("S15a")
+    else:
+        call iscene ("S15b")
+    call iscene ("S15c")
+    jump_out S16
+
+label S16:
+    call iscene ("S16")
+    jump_out S17
+
+label S17:
+    call iscene ("S17")
+    call imenu ("choiceS17")
+    if _return == m1:
+        call iscene ("S17a")
+    else:
+        call iscene ("S17b")
+    call iscene ("S17c")
+    call imenu ("choiceS17a")
+    if _return == m1:
+        call iscene("S17ca")
+    elif _return == m2:
+        call iscene("S17cb")
+    elif _return == m3:
+        call iscene("S17cc")
+    else:
+        call iscene("S17cd")
+    call iscene ("S17d")
+    jump_out S18
+
+label S18:
+    call iscene ("S18")
+    jump_out S19
+
+label S19:
+    call iscene ("S19")
+    #next choice doesn't matter
+    call imenu ("choiceS19")
+    call iscene ("S19a")
+    #this choice does, but not right now
+    call imenu ("choiceS19a")
+    call iscene ("S19b")
+
+label S20:
+    $ tcard(3, "shizune")
+    call iscene ("S20")
+    call imenu ("choiceS20")
+    if _return == m1:
+        call iscene ("S20a")
+    else:
+        call iscene ("S20b")
+    call iscene ("S20c")
+    jump_out S21
+
+label S21:
+    call iscene ("S21")
+    jump_out S22
+
+label S22:
+    call iscene ("S22")
+    call imenu ("choiceS22")
+    if _return == m1 or _return == m2:
+        call iscene ("S22a")
+    else:
+        call iscene ("S22b")
+    call iscene ("S22c")
+    jump_out S23
+
+label S23:
+    call iscene ("S23")
+    call imenu ("choiceS23")
+    call iscene ("S23a")
+    jump_out S24
+
+label S24:
+    call iscene ("S24")
+    call imenu ("choiceS24")
+    if _return == m1:
+        call iscene ("S24a")
+    else:
+        call iscene ("S24b")
+    call iscene ("S24c")
+    jump_out S25
+
+label S25:
+    call iscene ("S25")
+    if not seen_scene("S15b"):
+        call iscene("S25a")
+    else:
+        call hscene("S25h")
+    jump_out S26
+
+label S26:
+    call iscene ("S26")
+    if seen_scene("S25h"):
+        call iscene("S26a")
+    else:
+        call iscene("S26b")
+    call iscene ("S26c")
+    if seen_scene("S25h"):
+        call iscene("S26d")
+    else:
+        call iscene("S26e")
+    jump_out S27
+    
+label S27:
+    call iscene ("S26")
+    if seen_scene("S25h"):
+        call iscene("S27a")
+    else:
+        call iscene("S27b")
+    call iscene ("S27c")
+    call imenu ("choiceS27")
+    if _return == m1:
+        call iscene ("S27d")
+    else:
+        call iscene ("S27e")
+    call iscene ("S27f")
+    call imenu ("choiceS27a")
+    if _return == m1:
+        call iscene ("S27g")
+    elif _return == m2:
+        call iscene ("S27h")
+    else:
+        call iscene ("S27i")
+    call iscene ("S27c")
+    jump_out S28
+
+label S28:
+    call iscene ("S28")
+    call hscene ("S28h")
+    call iscene ("S28x")
+    jump_out S29
+
+label S29:
+    call iscene ("S29")
+    if seen_scene("S25h"):
+        call iscene("S29a")
+    else:
+        call iscene("S29b")
+    call iscene ("S29x")
+    jump_out S30
+
+label S30:
+    call iscene ("S30")
+    jump_out S31
+
+label S31:
+    #$ tcard(4, "shizune")
+    call iscene ("S31")
+    jump_out S32
+
+label S32:
+    call iscene ("S32")
+    jump_out S33
+
+label S33:
+    call iscene ("S33")
+    call imenu ("choiceS33")
+    if _return == m1:
+        call iscene ("S33a")
+    else:
+        call iscene ("S33b")
+    call iscene ("S33x")
+    #A22 is a troll. Not my fucking fault.
+    $ import random
+    $ fate = random.randint(0,1)
+    if fate == 0:
+        jump_out S34
+    else:
+        jump_out S36
+
+label S34:
+    call iscene("S34")
+    call iscene ("end_shizunebad")
+    $ persistent.shizune += 1
+    call credits(False)
+    jump_out restart
+
+label S36:
+    #S35 does not exist because of lolA22
+    call iscene ("S36")
+    if seen_scene("S25h") or seen_scene("S15b"):
+        call iscene ("S36a")
+    else:
+        call iscene ("S36b")
+    call iscene ("S36x")
+    jump_out S37
+
+label S37:
+    call iscene ("S37")
+    call hscene ("S37h")
+    call iscene ("S37x")
+    jump_out S38
+
+label S38:
+    call iscene("S38")
+    call iscene ("end_shizunegood")
+    $ persistent.shizune += 1
+    call credits(True)
+    jump_out restart

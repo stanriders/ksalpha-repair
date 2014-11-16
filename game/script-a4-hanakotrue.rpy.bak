@@ -1,0 +1,5012 @@
+﻿label en_HT1:
+
+    #Yes! You heard it here first! The beginning of the true Hanako path!
+    #Less death! No depressing H-scenes! Only happysex and rainbows!
+    #Also I need to get back into my groove, so feedback plox.
+    #except for you, TC.
+    #XP
+
+    #of course, this feeds directly on from the library scene.
+
+    "Flustered, Hanako closes her book and clumsily stuffs it into her bag, all the while staring at me with a shocked expression."
+
+    ha "S…sure."
+
+    "Shouldering her bag, she pulls herself up, putting ever the slightest strain on my hand in the process."
+
+    "I smile at her, gently, causing her blush to deepen, yet her eyes stay fixed on mine."
+
+    "By this time, all activity around us has stopped, everyone taking in this absurd scene straight from every romance novel ever."
+
+    "I have to give her hand a slight tug to start her walking."
+
+    hi "Come on, let's go get that air."
+
+    "Still dazed, Hanako follows me out of the library…"
+
+    centered "*BEEP BEEP BEEP*"
+
+    "Lights flash and sirens blare as we pass through the library's sensomatic doors."
+
+    #not entirely sure what everyone else calls them, but you know those loss-prevention door things.
+
+    "Hanako's shocked expression turns into one of terror as she realises that it was her that caused this calamity."
+
+    "The librarian eyes her curiously as she runs to the loans desk and upends her bag."
+
+    ha "ImsorryImsorrIforgotIhaditImsorry!"
+
+    "The librarian smiles in a delicate manner, collects the book from the pile of Hanako's note books, and scans it into the system."
+
+    "Librarian" "You take care now."
+
+    ha "IwillI'msorryI'msosorry…"
+
+    "Hanako packs her bag hurriedly, simply scooping the pile of books and stationary into the maw of her open schoolbag."
+
+    hi "Alright, I think we've caused as much calamity as possible."
+
+    hi "Let's leave these poor people in peace."
+
+    "Dejected, Hanako fixes her gaze firmly on the ground, and follows me out of the library."
+
+    "We wander aimlessly, drifting from the main building towards the gardens behind the Great Hall."
+
+    "Along the way, I gather two cans of iced tea, and hand one to the still-smarting Hanako."
+
+    hi "Here, this'll take your mind off things."
+
+    hi "Nothing like a bit of tea to calm down the mind."
+
+    ha "T…thanks."
+
+    "It doesn't take a genius to tell that she's still distracted."
+
+    "I sit down on a nearby bench, and Hanako silently copies me, carefully balancing her schoolbag against the bench before opening her can."
+
+    hi "Lilly's pretty strong you know. She'll be up and about in no time."
+
+    hi "It was only a minor operation, she'll be out in no time."
+
+    "Hanako runs her finger around the can's rim slowly, gazing into it as if it held all of the answers to life's questions."
+
+    ha "I…I know all that."
+
+    ha "But I… don't know what to do. I don't know what I can do."
+
+    hi "Eh? What do you mean?"
+
+    "The finger stops in its travel, but remains pressed firmly against the can."
+
+    ha "If… if it were one of us in that bed, don't you think Lilly would be doing something?"
+
+    hi "I can't say I'm following you here."
+
+    "Hanako sighs, and takes a sip of her tea."
+
+    ha "I don't think I am either."
+
+    ha "I just… want to do something for her, but I can't."
+
+    ha "I feel… powerless."
+
+    "Her words flow forth on a river of melancholy, but there are undercurrents of something else…"
+
+    "Determination?"
+
+    "That has to be it. Beneath Hanako's obvious lamenting, there is a driving force carrying immense power."
+
+    "In an instant, my vision of Hanako is shattered and rebuilt."
+
+    "She truly cares for Lilly, and wants to help her out…"
+
+    extend " no matter what."
+
+    "The timid Hanako disappears completely from my mind like the thin veil that it is."
+
+    ha "W…what's the matter?"
+
+    "Shaking myself back into reality, I realise that I've been staring at the flesh-and-blood Hanako whilst musing to myself."
+
+    hi "Oh… er… it's nothing."
+
+    hi "I was just thinking that you've changed since we've met…"
+
+    "Damnit, I'm echoing Lilly's words."
+
+    "But, now, I think I can see the truth behind them."
+
+    #hanako blushing but happy
+
+    ha "D…don't be silly."
+
+    "The faint smile turning the corner of Hanako's lips upwards is immensely relieving."
+
+    hi "Say, how about we go together to visit Lilly today?"
+
+    "Hanako gingerly raises the can to her lips, and nods as she takes a drink."
+
+    "Our interlude is interrupted by the distant ringing of the bells, summoning us back to the classroom."
+
+    hi "We'd best be getting back. We'll leave straight after class, right?"
+
+    ha "Okay."
+
+    #inside classroom
+    #a22, should you take offence, feel free to veto this next passage.
+    #i just kinda got a bit excited of the new misha sprites and she popped up in my mind.
+
+    "The first thing I notice as I enter the classroom is a contemplative Shizune carefully cleaning her glasses."
+
+    "And, for some reason, the only thing I can think of is the terrified look of the wheelchair-bound student from the start of lunch."
+
+    "I take advantage of Shizune's temporary distraction to whisper in Misha's ear."
+
+    hi "Hey… did that guy survive? What did she do to him?"
+
+    "Misha brightens at my attention, seeming all too eager to answer."
+
+    mi "I don't know!"
+
+    extend " But!"
+
+    hi "Wait, don't…!"
+
+    "Too late."
+
+    "Misha has already spun around, and is tapping Shizune on the shoulder."
+
+    "I reach out and grab Misha's hands before she can start incriminating me."
+
+    "Her warm, soft hands…"
+
+    "Wait! This is no time for fantasy, I need to stop her asking Shizune that question."
+
+    mi "Eh? Hisao? Confessing? To me?"
+
+    hi "No! That's not it at all."
+
+    shi "…"
+
+    "Misha pouts in an overly fake manner."
+
+    mi "You're mean."
+
+    hi "I just wanted to stop you before you asked Shizune about that."
+
+    hi "I have a feeling she'd take it the wrong way…"
+
+    #Misha lol
+
+    mi "Whahahaha Hicchan! You make her sound like some kind of bad person!"
+
+    mi "Just take a look at her, there's no way she could be a bad person!"
+
+    hi "Just promise me you won't ask her that."
+
+    mi "Oka~y!"
+
+    "I release Misha's hands, which immediately go about the business of communicating with Shizune."
+
+    "Damnit, I can tell Shizune knows that something is up, but I can't follow a single thing either of them are saying."
+
+    "But, from the look on Shizune's face, I can guess."
+
+    "I think I may have awoken a demon…"
+
+    mi "Hiccha~n! Shizune wants to have a word with you!"
+
+    mi "She wants to remind you that the student council is here for the students, not for their own amusement!"
+
+    mi "Any disciplinary measures put into place are solely for the benefit of the student body, and not for the entertainment of the student council."
+
+    hi "What exactly did you say to her?"
+
+    mi "Oh, I can't remember any more."
+
+    shi "…"
+
+    mi "Ah, Shicchan has one more thing to say."
+
+    #Misha stern/serious
+
+    mi "“That boy will bother you no more.”"
+
+    "My blood runs cold at the thought of what these two would do to a fellow student…"
+
+    "Thankfully, I am freed from their stares by the arrival of the teacher and their lesson."
+
+    #timeskip
+
+    "As per usual, the classroom empties in the blink of an eye."
+
+    "It takes mere seconds before Hanako and I are left alone."
+
+    hi "So, shall we head straight out?"
+
+    "Hanako simply nods, and we make our way to the bus stop."
+
+    #inside bus
+
+    "The first bus into town is surprisingly crowded."
+
+    "I guess a lot of students want to put as much distance between themselves and the school as quickly as possible."
+
+    "Hanako and I manage to secure a seat, but by the time the bus pulls away from the kerb, not a single free seat remains."
+
+    "Getting any conversation out of Hanako in this environment is less likely than blood from a stone, so I look through my bag for something to read."
+
+    "As I pass my fingers over my textbooks, I feel the plush texture of 3-3's gift to Lilly."
+
+    "I almost forgot I had it in here."
+
+    "Extracting the bear, I examine it once again."
+
+    ha "I…is that for Lilly?"
+
+    hi "Wha…? Oh, yeah."
+
+    hi "Her classmates got it for her and asked me to deliver it."
+
+    ha "Oh… I see."
+
+    #Hanako sad, followed by a happy-ish Hanako
+
+    ha "Hisao!"
+
+    "Hanako's outburst causes me to jump in my seat, and I almost throw the bear in fright."
+
+    hi "What?"
+
+    extend " I mean, “What's the matter, Hanako?”"
+
+    ha "We should get her something too…"
+
+    ha "And something to make sure that bear isn't alone."
+
+    "<Alone>"
+
+    "There's that word again."
+
+    "I'm sure that Hanako's words are simply a coincidence, but I have a niggling feeling in the back of my head that there's something more to it."
+
+    "I wonder…"
+
+    extend " was Lilly perhaps talking about herself and Hanako?"
+
+    hi "That's a good idea. There's a gift shop at the hospital, maybe we could get something there."
+
+    "Hanako shakes her head, her stare fixed upon the bear in my hands."
+
+    ha "No… those gifts have no… no…"
+
+    ha "…soul…"
+
+    "Again, Hanako's voice has the hard-edged determination that it had earlier in the day."
+
+    "Her eyes are ablaze with some inner passion."
+
+    "But this time, I think I can relate to how she feels."
+
+    hi "You're right."
+
+    hi "Actually, I know just the thing for this occasion, though it will require a slight detour…"
+
+    #background Antique shop
+
+    ha "Othello's… Antiques?"
+
+    hi "Yeah, I found it when I was looking for Lilly's birthday present."
+
+    ha "Oh…"
+
+    "I make a beeline straight for the Steiff bear I noticed on my last visit."
+
+    hi "It's a little expensive, but I think…"
+
+    #Hanako srsbsns
+
+    ha "It's perfect."
+
+    "I had barely lifted the bear off the shelf before Hanako had responded."
+
+    "Slowly, tenderly, she takes the bear from my hands, and holds it to her face."
+
+    "As she stands there, eyes closed, hugging the bear, I feel somehow saddened that I'm buying this for Lilly and not her."
+
+    "Wheels turn in my head, and I start to calculate."
+
+    "If I can constrict myself to drinking only water and eating only what the school provides me, I should be able to pull this off."
+
+    "Under my breath, I thank my parents for the slight swell in allowance for this month."
+
+    "Before Hanako opens my eyes again, I swipe the bear's companion from the shelf, wave to the store owner, and stuff it into my bag."
+
+    "I grab a collection of notes out of my wallet, and, whilst pointing at Hanako, I jam the money under another of the bears upon the shelf."
+
+    "He gives me a puzzled look, and I desperately try to explain to him using sign language."
+
+    "I've watched Shizune and Misha do this a heap of times."
+
+    "Why is he just looking at me like I'm having a fit?"
+
+    "Just as I'm about to walk over and explain everything to him, Hanako releases the bear."
+
+    ha "Excuse me, but we'd like to buy this."
+
+    "Storeowner" "Ah… sure thing, miss."
+
+    "Storeowner" "Is this for you, Lilly?"
+
+    "Hanako gawks at the store owner, and I close my eyes, wishing that this whole situation had never occurred."
+
+    ha "H…how did you know this was for Lilly?"
+
+    "Storeowner" "Well, I remember the young man here from his last visit."
+
+    "Storeowner" "He got me to engrave “Lilly” on a music box."
+
+    "Storeowner" "So I thought that might be you… seeing as… oh!"
+
+    "It seems that the gears in his head have finally made the connection."
+
+    hi "Lilly is a mutual friend of ours that's in hospital."
+
+    hi "But I'm surprised you remembered."
+
+    "Storeowner" "Ah, well, I've got this thing for faces."
+
+    hi "And names, apparently."
+
+    "Storeowner" "Well, it was a unique order."
+
+    ha "So… how much is this?"
+
+    "The store owner looks at me, then at my bag, then at the shelf that conceals my payment for the bear hidden in my school bag."
+
+    "Storeowner" "I tell you what, I'll cut you a bargain, a “Get-well” special. Six thousand, even."
+
+    "I grimace, knowing that I left almost twice that on the shelf behind us."
+
+    #Hanako happy
+
+    "Hanako, however, is delighted."
+
+    ha "T…thank you!"
+
+    "I smile as I fish out my wallet for a second time, and give the owner the remains of my cash."
+
+    "Storeowner" "…and here's your receipt. I hope Lilly gets well soon!"
+
+    hi "Cheers."
+
+    ha "Thank you ever so much."
+
+    "Hanako bows ever so slightly. It's the first time I've ever seen her be so formal."
+
+    "It's strangely charming."
+
+    "Storeowner" "Do you need a bag for that, or…"
+
+    "Hanako shakes her head."
+
+    ha "No, I'll carry it, thank you."
+
+    "True to her word, Hanako carries the bear against her chest, hugging it from behind."
+
+    "The little bell on the door rings as I put my wallet into my pants."
+
+    "I sigh a little as I feel how light it is compared to when I entered the store."
+
+    "I am such an idiot sometimes."
+
+    return
+
+label en_HT2:
+
+    "Hanako and I arrive at the hospital a little later than I would have liked, but the detour was well worth it."
+
+    "Sitting on the bench beside the main entrance is Yuuko, and next to her is a young man drinking a beer."
+
+    hi "Hey Yuuko, who's your friend?"
+
+    #sorry delta, I wrote this at work and I can't access the wiki for the character codes and
+    #I'll probably forget to change them at home…
+
+    yu "Hey Hisao, Hanako. This is… um… she's…"
+
+    "She?"
+
+    "Akira" "Akira Satou. Pleased to meet cha."
+
+    "The young man stands up, and, upon closer examination, it is apparent that she actually is a she."
+
+    hi "Er… Hisao Nakai… how'd you do…"
+
+    "Akira grabs my hand and shakes it with a bizarre energy."
+
+    "Akira" "Hey there Hanako. Long time no see."
+
+    ha "H… hi there Akira."
+
+    "The way Hanako and Yuuko are avoiding looking at Akira worries me slightly."
+
+    "I guess that none of them get along."
+
+    "Akira" "Anyway, my work here is done, so I best be off."
+
+    "Akira" "Good to meet you, Hisao. Thanks for keeping an eye on my sister…"
+
+    "Ah. Satou. Lilly's sister. That should have clicked when I heard the name but I was still confused by the gender switching."
+
+    "But, before I can investigate further, Akira has already hailed a cab, totally ignoring us."
+
+    hi "So, Lilly's sister, eh?"
+
+    yu "She was sent here by Lilly's parents to check on her."
+
+    hi "I thought that was your job?"
+
+    yu "Well, it should be, but… I don't know."
+
+    "Yuuko looks she's just been fired; a look of dejection and loss."
+
+    hi "Maybe she was just concerned for her little sister…"
+
+    "Hanako and Yuuko both give me a strange look."
+
+    ha "L…Lilly is the oldest sister in her family…"
+
+    hi "Huh.. how about that… She just seems like she's older than Lilly."
+
+    yu "There's only a year between them, and Akira has always been chasing Lilly in that regard."
+
+    yu "I guess I'm just used to her looking like that so I didn't really notice."
+
+    hi "I guess that makes sense. So, did you get a day off work or something today?"
+
+    "Yuuko's dejection evaporates in a cloud of confusion."
+
+    yu "No, what makes you say that?"
+
+    hi "Well, I thought that you might have had to start by now."
+
+    "Panic rises."
+
+    yu "I… I.. what time… oh no… I'vegottago!"
+
+    "Yuuko's neurotic side surfaces, and she skitters past Hanako and myself, her hands fumbling around in her pockets."
+
+    yu "Keys… keys… where are my…"
+
+    extend " Oh… Lilly gets out tomorrow… I'llseeyoulater!"
+
+    "I meekly wave at the panicking Yuuko as she stumbles over her scooter."
+
+    hi "Well then… shall we go and see her?"
+
+    ha "Yes… let's go."
+
+    #BG hospital Room
+
+    "Lilly sits up in her bed, gently running her finger over a hard-cover book."
+
+    "It could be my imagination, but she almost looks rattled."
+
+    hi "Afternoon, Lilly. Hanako and I came by to visit."
+
+    "In a practised move, Lilly inserts a bookmark into the book, places it on the bedside table, and runs her fingers around the tabletop; memorising its position."
+
+    #"For some reason, I find the little tricks people use to get around their disabilities fascinating."
+    #Commented 'cause I'm not sure if that's Hisao or me.
+    # That's you.
+
+    li "Good Afternoon, Hisao, Hanako. How does the day find you?"
+
+    "Her voice is still little more than a whisper; however the croaking of the past few days is starting to subside."
+
+    "At the very least, she seems to be in slightly higher spirits than before."
+
+    ha "Hi Lilly. We… We brought presents."
+
+    #Lilly Smile
+
+    li "I'll be discharged shortly. You needn't have gone to the bother."
+
+    hi "Well, your classmates got you something, and we felt bad about not getting you anything."
+
+    "I walk to her bedside and fish out the bear from my bag, being careful not to show its contents to Hanako."
+
+    hi "Here, all the students in your class pitched in for this."
+
+    hi "Even Kenji."
+
+    #lilly small laugh
+
+    li "Well, isn't that a surprise."
+
+    "I place the bear in her searching hand, and she immediately runs her fingers through its long fur."
+
+    li "My my, it's splendid. Could you please pass on my thanks?"
+
+    li "I probably won't be at school until next week."
+
+    hi "Sure thing."
+
+    "Hanako nervously steps forward, and I quickly re-seal my bag."
+
+    ha "T… this is from Hisao and I…"
+
+    "Hanako releases the Steiff bear from her embrace, almost sad to see it go."
+
+    "Lilly deftly places the first bear atop the book she was just reading, and takes the bear from Hanako."
+
+    "Upon touching the second bear, her face changes."
+
+    li "Oh, Hanako… you shouldn't have…"
+
+    "Running her delicate fingers around the bear's face brings on a surprised look from Lilly."
+
+    "She pulls the bear to her face to nuzzle with it."
+
+    li "It… it smells like you Hanako."
+
+    #Hanako blush
+
+    "I'm glad that Lilly can't see sometimes, as I think that I'm probably blushing harder than Hanako right now."
+
+    ha "I… ah… we…"
+
+    hi "Hanako hasn't let go of it since she saw it. From the instant she saw it we had to get it for you."
+
+    #lilly Fufufu
+
+    li "Thank you. You shouldn't have."
+
+    li "And I'm sorry for making you worry."
+
+    "Her face shows just how genuine her apology is."
+
+    #Hanako Relieved/neutral
+
+    "Thankfully, Hanako seems to leave it at that."
+
+    "I don't think I'd be able to explain my vivid daydream to her without causing some kind of incident."
+
+    ha "That's okay, Lilly. We just wanted to do something for you."
+
+    hi "Yeah, I felt kinda bad delivering someone else's gift when I haven't even given you yet."
+
+    hi "And it's only natural that we'd be worried, you're our friend."
+
+    li "Well, thank you again. You seem to have incredible taste when it comes to gifts, Hisao."
+
+    hi "Ah, well, Hanako picked it out…"
+
+    ha "But you found the shop…"
+
+    li "My my, the two of you, working together as a team."
+
+    li "I feel a little left out."
+
+    hi "Well, how about I take you there next time, Lilly?"
+
+    li "Hmm, that'd be nice."
+
+    "As we continue our banter, I notice that Lilly never once lets go of her newest bear."
+
+    "Thinking back to the last time I was in her room, she only has a handful of stuffed animals and dolls. No doubt presents from hanako and her relatives."
+
+    "While I have a suspicion she'd rather a book as a present, the fact that this is from Hanako and I seems to make that fact trivial in her mind."
+
+    "Before long, a nurse wheeling a dinner cart knocks gently on the door and notifies us that hospital visiting hours are ending."
+
+    hi "Catch you later, Lilly."
+
+    ha "Good bye, Lilly."
+
+    li "Good bye, you two. I'll be back at the dorm by tomorrow, if things to go plan, so I'll see you at school next time."
+
+    li "Thank you for the gift, too. I'll treasure it."
+
+    "The nurse bows gently to Hanako and I as we pass, and then pushes the cart into Lilly's room."
+
+    #BG bus w/ fade through black
+
+    "The silent bus trip lets me reflect on Lilly's situation."
+
+    "Her sickness and the operation following it have brought the three of us closer together, but it feels as if nothing has changed at all."
+
+    "In fact, since we all met, only Hanako has changed."
+
+    "She's become more confident. Even Lilly agrees to that."
+
+    "She's talking to me, and no longer acting like a lost sheep when Lilly's not around."
+
+    "Lilly is still just Lilly, and, apart from sleeping less, I'm still me."
+
+    "She really does seem to care for everyone, no matter how small their problem."
+
+    "And at that, Hanako worries about her as if Lilly were her own mother."
+
+    "Despite that, though, both of them have asked me to look after the other over the course of the past month."
+
+    "And I've promised them both that I would. I wonder, can I really do that?"
+
+    "The bus jerks to a halt, ending my reverie."
+
+    "Hanako and I walk back to the dorms in the fading light, and I try to find an opportunity to give Hanako her present."
+
+    "But the stifling silence between us presents no such chance, and we part ways with a courteous “Good Night.”"
+
+    "Damn it. Why is it so much easier to give someone a gift when they're laying in a hospital bed?"
+
+    #BG room
+
+    "I throw myself upon my bed, and look up at the ceiling."
+
+    "I'm mentally exhausted, but I have a nagging feeling that I'm not going to sleep well tonight."
+
+    "Just like any other night, actually."
+
+    "I blink, and once again a flutter of blue streaks across my vision."
+
+    "I sit upright and try to track its motion, but it is too fast, disappearing into the air from whence it came."
+
+    "But something else now fills my vision; my bulging school bag."
+
+    "I guess there's no point in holding onto that bear forever."
+
+    "And if I hold onto it for too long before giving it to her, she's going to think I'm weird."
+
+    "Besides, I only bought it for her because we bought one for Lilly."
+
+    "It's not like it's got any special meaning or anything."
+
+    "I open my bag, retrieve Hanako's bear, and head outside."
+
+    return
+
+label en_HT3:
+
+    #BG Outside night
+
+    "The cicada's cries have started to die down as evening becomes night."
+
+    "And, as if in defiance of the sweltering days, the night air is surprisingly chilly."
+
+    "I guess that's why no-one's out at the moment."
+
+    "Well, that and studying."
+
+    "Part of my brain chastises me for not using my countless sleeping nights to catch up on that aspect of student life."
+
+    "Ah well, I guess I'll just have to cram in some last-minute work before the exams."
+
+    "It's worked for me before, I'm sure I'll be right."
+
+    #BG dorm hall
+
+    "The dorm halls are similarly vacant. Even the common room is deserted."
+
+    "Normally at least one of the girls would be catching up on their TV at this hour, but not tonight."
+
+    "Honestly, I'm a little relieved."
+
+    "In my rush to sneak Hanako's bear out of the store, I didn't even think about getting a bag for it."
+
+    "Walking around the girls' dorm with a teddy bear would be kinda difficult to explain."
+
+    "Hanako and Lilly's hall seems even quieter than the rest of the dorm."
+
+    "I can almost hear the roar of my blood as it circulates around my ear."
+
+    "You notice so much more in the absence of some things."
+
+    "I wonder if Lilly would agree with me on that?"
+
+    #BG Dorm door
+
+    "I gently rap on Hanako's door, the knocking deafening in the silent hall."
+
+    "No answer."
+
+    "I doubt that Hanako would be asleep at this hour, she seems like more of a night owl than anyone else I've met."
+
+    "I knock once more, this time a little harder, just to be sure."
+
+    "No response."
+
+    "Guess she must be asleep after all."
+
+    "Ah well, I can always give it to her tomorrow. Something to commemorate Lilly's return, perhaps."
+
+    "I twist on my heels, and head off down the hallway."
+
+    #BG dorm hall
+
+    hi "Looks like I've got to run the gauntlet with you again, little guy."
+
+    hi "Try not to be seen."
+
+    centered "*Click*"
+
+    "The sound of a door unbolting stops me in my tracks."
+
+    "Instinctively, I hide the bear behind my back."
+
+    "But it sounded too close to be Hanako's door…"
+
+    ha "H…Hisao?"
+
+    ha "Is that you?"
+
+    hi "Hanako? Sorry, did I wake you up?"
+
+    #BG Dorm Door
+
+    "I turn to see Lilly's door slightly ajar, a slither of light bisecting the gloom of the hallway."
+
+    ha "N…not as such."
+
+    hi "Do you mind if I come in? I have something for you…"
+
+    "The door to Lilly's room slowly swings inwards, revealing Hanako."
+
+    #Show Hanako sad
+
+    "She looks totally crestfallen, her eyes puffy and red, her head cowed."
+
+    hi "Hanako? What's the matter? Isn't this Lilly's room?"
+
+    "Hanako nods silently, and steps back from the door."
+
+    "Behind her, I see Lilly's bedspread practically knotted on the bed."
+
+    "A tattered plush rabbit sits amongst the wrecked linen; one that I've never seen before."
+
+    #Fact check; I'm pretty sure Hisao hasn't seen Hanako's room before now. If he has, then use this line instead:
+
+    #"Hanako's tattered plush rabbit sits atop the heap of linen."
+
+    "It's obvious that Hanako was lying there only moments ago."
+
+    ha "I… "
+
+    extend "I'm sorry."
+
+    hi "Sorry? For what?"
+
+    ha "I shouldn't be in here."
+
+    ha "But I just couldn't…"
+
+    #hanako cry
+
+    "A glossy coat of tears paints itself across Hanako's eyes."
+
+    "She's deliberately avoiding looking at me; a side effect of her guilt."
+
+    "When a girl starts crying before a guy, he becomes full of compassion, no matter who he is."
+
+    hi "Hey now, there's nothing wrong with it, right?"
+
+    hi "I'm sure Lilly wouldn't mind."
+
+    "I realise that I'm still hiding the bear from Hanako, an instinctual reaction, albeit a stupid one."
+
+    hi "Look, here, I brought you a present."
+
+    "I proffer the bear to Hanako, who initially shies away from my outstretched arms."
+
+    #Hanako surprised
+
+    "But, as her tear-stained eyes recognize the form before her, shock spreads across her face."
+
+    "She stares at it in disbelief, and I feel as if the world has ground to a halt."
+
+    "Eventually, she reaches out with shaking hands, and lifts the bear from my palms."
+
+    "Her grip on the bear is like that of a new mother holding her child for the first time; tender yet protective."
+
+    hi "So, what do you… oof!"
+
+    "I barely start to speak before Hanako lurches forward into my chest, wedging the bear between us."
+
+    ha "How…? When…?"
+
+    hi "Well, er, when I saw you in the shop I thought you looked good together."
+
+    hi "So I secretly bought it for you while you were distracted."
+
+    ha "It's… t—thank you."
+
+    "Hanako stares at the bear, her guilt-ridden face now flooded with a strange wonder."
+
+    #Hanako neutral
+
+    hi "Well… I'd best be off…"
+
+    "Hanako's arm shoots out before I can even notice, grabbing my sleeve."
+
+    ha "D—don't go. Not yet…"
+
+    "Amazingly, she never takes her gaze off the bear."
+
+    hi "Sure, I guess I can stay for a bit."
+
+    hi "Let me put the kettle on."
+
+    "Hanako nods, and slowly releases my sleeve."
+
+    "She stumbles backwards, and sits awkwardly on Lilly's bed."
+
+    "As I fill the kettle and switch it on, she fumbles through Lilly's bed sheets until her hand rests on the tattered rabbit."
+
+    "Without looking, she scoops up the rabbit and brings it into her field of vision, gently resting it against the bear on her lap."
+
+    "What a strange sight we must make; Hanako staring intently at two toys whilst I watch her from across the room."
+
+    "The kettle whistles, and I fill the waiting pot with the steaming water."
+
+    "As if guided by some invisible hand, I place the teapot on Lilly's small table, and then sit down next to Hanako."
+
+    "I've been in Lilly's room a number of times, but this is the first time I've ever touched her bed."
+
+    "The springs respond a little as I sit, and I can faintly smell Lilly on the sheets."
+
+    "But, right now, our blind friend is miles from my mind."
+
+    "There's something to Hanako's reaction that makes me incapable of thought."
+
+    "I didn't exactly expect her to be ecstatic, but I didn't expect her to just stop, either."
+
+    "Still, she certainly looks a little cheerier than she did when she first opened the door."
+
+    "… I think."
+
+    hi "So, I guess your friend there isn't alone anymore, right?"
+
+    #Hanako Shocked
+
+    ha "Eeh?"
+
+    "Hanako starts a little at my question, as if she had forgotten that I was in the room entirely."
+
+    "Were I quicker on my feet, I'd think of something to say."
+
+    hi "Your friend, the rabbit. He's not alone anymore now, right?"
+
+    hi "He looks pretty old now, too."
+
+    #Hanako neutral
+
+    ha "I… I guess you're right."
+
+    ha "It's just that… no-one has bought me something like this…"
+
+    extend " since then."
+
+    "Something in the back of my brain tells me that I shouldn't be pushing the issue."
+
+    hi "Then?"
+
+    "It just seems that the back of my brain is about a second behind my vocal cords."
+
+    "Hanako closes her eyes for a second, clutches both of the animals before her for a moment, then looks at me."
+
+    #Hanako srs bsns
+
+    ha "I grew up with foster parents."
+
+    ha "They were kind to me, but I could never bring myself to ask anything of them."
+
+    ha "I was already imposing on them enough just by living with them."
+
+    ha "But, before that… before that…"
+
+    #Hanako sad
+
+    ha "Before that, my parents bought me Petra."
+
+    "At the mention of her parents, she clutches the rabbit slightly tighter."
+
+    ha "He and I were the only things to survive the fire."
+
+    hi "Things?"
+
+    ha "Everything burnt. My house, my toys, my parents… everything."
+
+    ha "I don't remember much, but I know when the firemen woke me up in the snow, all that was left was Petra."
+
+    ha "Since then, all we've had was each other."
+
+    #Hanako neutral
+
+    hi "Have… you ever told anyone else this?"
+
+    "Hanako shakes her head."
+
+    ha "Not even Lilly."
+
+    hi "Really?"
+
+    ha "Really."
+
+    #Really? Really!
+
+    #Also, so long 12.0 wpl
+
+    "I lean back onto Lilly's bed."
+
+    "So, Hanako hasn't told Lilly everything."
+
+    "The mere thought of that spins my head around."
+
+    "I remember Lilly mentioning that Hanako once told her everything. To think that she was keeping things from her…"
+
+    "I wonder what else Lilly doesn't know?"
+
+    #And thusly, the Onee-sama intelligence network was brought into disrepute."
+
+    hi "So… why are you in here?"
+
+    #Hanako Embarrassed
+
+    ha "Ummm… I… I t—thought I heard something in here… a—and I came to check it…"
+
+    hi "You're a terrible liar."
+
+    hi "I liked it better when you were being honest."
+
+    #Hanako Looing down embarrassed.
+
+    "There is a brief pause as Hanako avoids my gaze."
+
+    ha "My…"
+
+    extend " my light broke."
+
+    hi "Your light?"
+
+    "Still avoiding my gaze, she rubs Petra's elongated ears."
+
+    ha "I…"
+
+    ha "Promise you won't laugh."
+
+    "This is getting interesting…"
+
+    hi "I promise."
+
+    ha "I'm… afraid of the dark."
+
+    hi "Huh? But during the festival you were messing around in the hall all the time."
+
+    hi "That was pretty dark, wasn't it?"
+
+    ha "That's… different."
+
+    ha "I can't sleep without my light."
+
+    ha "But now it's broken."
+
+    ha "Normally I just sneak in with Lilly when this happens, but…"
+
+    #Hanako sad
+
+    "I need a distraction… now…"
+
+    hi "Ah, the tea's getting cold, would you like a cup?"
+
+    "I am the king of suave."
+
+    #Hanako neutral
+
+    ha "Ah… please."
+
+    "I deftly pour the two cups, and pass Hanako hers."
+
+    "She shuffles a little to allow both of her “friends” to sit on her lap without her holding them."
+
+    hi "So, your light is broken, and there's no Lilly here."
+
+    hi "Whatever will you do?"
+
+    ha "Well… ah… Lilly keeps a spare for me in here."
+
+    "How very… Lilly."
+
+    hi "I see. So you're going to hijack her room?"
+
+    #Hanako happy embarrassed
+
+    ha "N… it's not like that."
+
+    hi "Sure it isn't."
+
+    #Hanako pout
+
+    ha "You said you wouldn't laugh…"
+
+    hi "I'm not laughing, I'm making a joke."
+
+    hi "There's a difference you know."
+
+    #Hanako embarrassed/happy
+
+    ha "You're mean."
+
+    hi "Well, in that case, I guess I won't have to buy you any more gifts…"
+
+    #Hanako happy/smile
+
+    ha "Meanie."
+
+    "This is the first time I think I've ever seen Hanako smile in the absence of Lilly."
+
+    "It's sobering, yet relaxing."
+
+    "I smile, and place my cup on Lilly's bedside table."
+
+    "Clock" "The time is… Eleven… fourteen… PM."
+
+    hi "Wha? How did it get this late?"
+
+    #Hanako shocked/worried
+
+    ha "I… I'm sorry. I talked too much…"
+
+    hi "No, it's not that."
+
+    hi "I already tempted fate coming here."
+
+    hi "If I leave now I know I'll be spotted."
+
+    ha "Oh…"
+
+    ha "Well…"
+
+    ha "You could… stay here…"
+
+    "Whatthehelldidshejustsay?"
+
+    "Wait wait, calm down."
+
+    "I don't think she meant…"
+
+    hi "Sure."
+
+    "Damn it, again?"
+
+    "I need to practice the whole “Think before you speak” thing a whole bunch more."
+
+    hi "I'll sleep on the floor."
+
+    ha "No… I couldn't…"
+
+    hi "It's alright, I've slept on worse."
+
+    hi "Besides, girls belong in beds, guys belong on the floor. It's the natural order."
+
+    #Hanako blush/embarrassed
+
+    ha "O…okay then."
+
+    "I gather up the things from Lilly's table and arrange them on her desk."
+
+    "Upending the table leaves me with a fair bit of space."
+
+    "And it's not like it's sleeping on bare concrete."
+
+    ha "Ah… wait a second…"
+
+    "Hanako places her two plush toys on Lilly's bed and runs out the door."
+
+    "Seconds later, she returns, her arms full of linen and a doona."
+
+    #Do you guys call them doonas or quilts? Or is it comforter?
+
+    ha "You… you can sleep on these."
+
+    ha "They… they're mine."
+
+    "Huh. So she just went and stripped her bed."
+
+    "I thought she might have had a spare set or something."
+
+    "…"
+
+    "Wait a minute… That means when she said she sneaks into Lilly's room…"
+
+    "…She means she sneaks into her bed…"
+
+    #BG flashback?
+
+    li "Oh… I know something that will help you sleep, Hanako…"
+
+    #BG return
+
+    "Be still my raging hormones…"
+
+    hi "T…thanks a bunch."
+
+    "I take the wad of fabric from Hanako, and start arranging them on the floor."
+
+    "It's not that hot tonight, so I guess I'll sleep on the doona."
+
+    "Once I'm done arranging my makeshift bed, I turn off the lights."
+
+    "A faint glow emanates from the corner of the room; Lilly must keep Hanako's backup night light constantly plugged in."
+
+    "Its light is barely enough to see by, but it does keep the darkness at bay, and shouldn't really affect my sleep."
+
+    "Hanako quickly adjusts Lilly's messy bed and climbs in, being sure to keep Petra and the Steiff bear within reach."
+
+    "I settle myself down, and close my eyes."
+
+    "Hanako's scent instantly fills my head, and I have to fight off a wave of dizziness."
+
+    "As I suspected, I don't exactly drift off to sleep."
+
+    "My body feels tired, but my mind just won't let up."
+
+    "The combination of the drugs in my system and the girl in the same room are keeping me wide…"
+
+    ha "I used to have another friend."
+
+    hi "Hmm?"
+
+    ha "He was a good friend."
+
+    ha "I think… I think he loved me."
+
+    ha "But… when I asked him, he ran away."
+
+    ha "If I never asked him, he would still be here."
+
+    ha "Hisao…"
+
+    ha "Please don't run away."
+
+    hi "Why would I run away?"
+
+    ha "Just… don't."
+
+    hi "Okay."
+
+    ha "Hisao?"
+
+    hi "Mm?"
+
+    ha "Thank you."
+
+    extend "For everything."
+
+    #Far out, there must be like an average of 2 wpl in this scene.
+    # Farking dailouge.
+    #Now, the question that has been gnawing at me for ages…
+    #Will Hanako sneak into Hisao's bed tonight?
+    #PS that won't mean H though.
+    #Also there will be an omake thing unlocked after this, kinda like "Future"
+    #it will be the whole Hanako's friend getting pwned by a truck.
+    #that is, of course, if I keep the current ending.
+
+    return
+
+label en_HT4:
+
+    #bg black
+
+    "Clock" "The time is… seven… oh one… am."
+
+    "Clock" "The time is… seven… oh one… am."
+
+    #bg dormlilly with eyes open
+
+    "Urgh. I don't think I'll be counting last night on my top ten list of “good night's sleeps.”"
+
+    "Even as I roll over to try and sit up, I can hear my back protesting. I feel like an old man."
+
+    "Clock" "The time is… seven… oh two… am"
+
+    hi "Yes, I get that… how do I shut this thing off?"
+
+    #show Hanako neutral smile at right
+
+    ha "Oh… you're awake…"
+
+    "I look up from my prone position on the floor, directly up at a smiling Hanako."
+
+    "The morning light streams through the window, striking her face at a strange angle."
+
+    "Combined with a male's typical morning…'situation'… this could become embarrassing."
+
+    hi "Er, yeah… The, uh… clock… alarm…"
+
+    "I struggle to bury myself deeper in the sheets whilst I calm myself."
+
+    ha "Yes, Lilly does set it quite early, doesn't she?"
+
+    "Hanako crawls along the bed, still in the school uniform she was wearing last night."
+
+    "She presses a couple of buttons on the clock, silencing the alarm."
+
+    ha "At least this way we'll have a chance to clean up before classes."
+
+    hi "Yeah, yeah let's clean this place up. Lilly comes back today, remember."
+
+    #hanako neutral bigsmile
+
+    ha "How could I forget?"
+
+    "Having sufficiently calmed myself, I throw back Hanako's sheets and sit up; causing my back to crack in the progress."
+
+    hi "Ouch…"
+
+    #Hanako embarrassed concerned
+
+    ha "Are you alright?"
+
+    hi "It's okay, my back's just a little stiff from sleeping on the floor…"
+
+    #Hanako neutral looking down
+
+    ha "S…sorry. I shouldn't have made you stay here…"
+
+    "I stand up, and pat Hanako on the head."
+
+    hi "Don't be silly. I had to stay here, remember?"
+
+    hi "A sore back is a lot easier to deal with than explaining why I was leaving the girl's dorm after curfew…"
+
+    ha "I… guess you're right."
+
+    hi "Come on. Let's make this place ready for Lilly's triumphant return, eh?"
+
+    #hanako embarrassed smile
+
+    ha "Okay…"
+
+    "It doesn't take us much time at all to clean up the small dorm room to its usual glory."
+
+    "Finally, Hanako bundles up the linen that she loaned me, and heads for the door."
+
+    #Hanako embarrassed look down smile
+
+    ha "Well… I'll see you later."
+
+    ha "T…thanks for sticking around."
+
+    hi "Not a problem at all."
+
+    "Without saying a further word, she skips out of Lilly's room and back into her own, shutting her door behind her."
+
+    #hide hanako
+
+    "I take a quick look to assess the state of Lilly's room."
+
+    "Deciding that all is well, I head back to my room for a quick shower before breakfast."
+
+    #bg classroom with ? some kinda timeskip?
+
+    "Even with the head start Lilly's alarm gave me, I still find myself rushing to class in order to beat the bells."
+
+    "I guess I dawdled through my morning routine knowing that I had more time than usual."
+
+    "Not surprisingly, Hanako is already in her seat at the back of the class, lazily gazing out the window."
+
+    "I'd like to go an say hello, but an obstacle blocks my path."
+
+    mi "Hi—sa—o~!"
+
+    #show misha at twoleft and shizune at tworight
+
+    "Make that two obstacles."
+
+    hi "Yes ladies, how can I help you this morning?"
+
+    "A flurry of hand signals pass between the pair before Misha poses Shizune's question."
+
+    mi "We were wondering if you could help us find a boy."
+
+    hi "Oh, really? I didn't think either of you would be the type for blind dates…"
+
+    "There is a brief lag as Misha relays my response to Shizune, but I receive the desired effect."
+
+    # shizune pouting/angry
+
+    mi "Whahaha Hisao! It's not like that! I should hit you for being so insolent though!"
+
+    mi "But we need your help, so I'll save that for later, when you're not looking!"
+
+    "Part of me wants to laugh that off, but deep in my heart, I now fear turning my back to either of the girls before me…"
+
+    hi "Okay then, I'll help. Who's this boy you're looking for?"
+
+    mi "Well, this morning, no boys entered the girls' dorm, but one left."
+
+    mi "Don't you think that's strange, Hisao?"
+
+    hi "Not really… why would that be strange?"
+
+    mi "Hahaha Hisao! Do the maths!"
+
+    mi "If no boys went into the dorm in the morning, but one left…"
+
+    mi "That means that…?"
+
+    hi "I've got no idea. You'll have to enlighten me…"
+
+    #misha more lol
+
+    "Misha slaps me hard on the back, causing me to lurch forward into my desk."
+
+    mi "It means that you stayed the night in the girl's dorms, doesn't it?"
+
+    "I should have known they had already figured out this much…"
+
+    hi "Perhaps. But how does that concern either of you?"
+
+    #signing between the girls
+
+    mi "We are the student council, remember?"
+
+    mi "Part of our duties involves knowing about the goings on of the student body."
+
+    "As if by some cue form Misha, Shizune pushes her glasses up on her nose to accentuate the point."
+
+    "I wonder if they've rehearsed this move before?"
+
+    hi "I would think that would count at snooping, wouldn't you?"
+
+    "Once again Misha assaults my already strained back."
+
+    mi "It's not snooping if it's your job, right, right?"
+
+    "Thankfully, Muto chooses this moment to appear, putting an end to Misha's assault."
+
+    #hide shizune and misha
+    #show muto from right
+
+    mu "Ah… now everyone… exams."
+
+    mu "Get ready for them."
+
+    mu "Now, onto today's lesson…"
+
+    "And that is the extent of today's warnings about the upcoming exams."
+
+    "Still, he's rambled on about them enough over the past few weeks, so I guess he's just about as over them as we are."
+
+    "Then again, it's not like he has much to stress about at this time…"
+
+    "And his rambling lectures seem to not have wavered at all in what is generally considered a time of crisis for students."
+
+    #hide muto with dissolve
+
+    "But, as he drones on, I can't help but think back to last night."
+
+    "Hanako seemed pretty weird last night."
+
+    "Even though she was letting me in on her past, she somehow seemed happy."
+
+    "As if it were somehow relieving to let go of the secrets she's been holding onto for so long."
+
+    "Yet, there was that one last confession… her friend that “ran away.”"
+
+    "I know I shouldn't press the issue, but I guess I'm too curious for my own good."
+
+    "Maybe I'll ask Lilly if she knows anything."
+
+    #sfx bells
+
+    "Like a pack of wild animals, students rush off to devour their food in their respective areas."
+
+    "Through the confusion, I spy Hanako, who simply points upwards and lifts a small bag so that I can see it."
+
+    "It doesn't take much thought to decipher what she means."
+
+    "I push through the crowds and head for the stairs to the roof."
+
+    #bg roof1 with transition
+
+    "I get up the stairs before Hanako, but I am not the first onto the roof."
+
+    #show emi and rin
+    #going for the record of sprites in a scene!
+
+    emi "…then like BLAM! it's all gone."
+
+    rin "I never knew you could do that with peanut butter…"
+
+    emi "Oh, hey Hisao! You should hear this story! I was…"
+
+    hi "Er, something tells me I'm better off not knowing."
+
+    #emi ???
+
+    emi "Oh, really? I guess that's okay too."
+
+    rin "If you're not here for the story, then why are you here?"
+
+    hi "I was just going to have some lunch with…"
+
+    ha "H…Hisao? Are you here yet?"
+
+    hi "…Hanako."
+
+    #show Hanako, if she'll fit… surprised
+
+    emi "Oh, hiya there Hanako!"
+
+    ha "E…Emi… Rin… Hello…"
+
+    "Hanako seems a bit surprised to see the crowd on the roof, but it takes her only a second to regain her composure."
+
+    #hanako neutral.
+
+    ha "Hisao… If you'd like, I have some sandwiches."
+
+    ha "Normally I make them for Lilly, but I forgot she wasn't here, and…"
+
+    hi "Sounds good. I can't turn down a free lunch, can I?"
+
+    #Emi delighted
+
+    emi "Ohohoh! A shared, hand-made lunch!"
+
+    emi "Isn't this exciting, Rin?"
+
+    "Rin gazes lazily through the fence and out over the town."
+
+    rin "If you say it is then it must be."
+
+    #haanko embarrassed looking down
+
+    ha "It… it's nothing like that…"
+
+    ha "I just made too much for me and…"
+
+    ha "…would you like some too, Emi?"
+
+    #Emi big smile
+
+    "Emi smiles hugely, leaning forward to place her chin in her hands."
+
+    emi "Oh, no, not at all. I just want to watch this blossoming romance from the front row…"
+
+    $ doublespeak(hi, ha, "It's not like that!", "It's not like that…")
+
+    #emi laughs
+
+    emi "You to are just classic…"
+
+    rin "So when will Lilly be fixed?"
+
+    hi "She gets out today, and should be back here some time around evening."
+
+    rin "That's good. It's no good being stuck in a place at a time."
+
+    hi "I… guess you're right there."
+
+    "Rin seems to refuse making eye contact with anyone she's talking to."
+
+    "Her gaze has shifted from the town to the school's grounds, endlessly searching for… who knows what."
+
+    emi "Would you stop stalling?"
+
+    emi "I want to see you eat her sandwiches!"
+
+    emi "Make sure to tell her that they're delicious, even if they aren't!"
+
+    emi "ESPECIALLY if they aren't!"
+
+    "Emi seems to have whipped herself into a frenzy over this, and I'm starting to fear for all of our safety."
+
+    "The “safety” fence up here doesn't look like it would stop an Emi at full steam."
+
+    ha "P…please. They're probably not that good…"
+
+    emi "That's it! Perfect!"
+
+    hi "Fine then. Hanako, I'd love one of your sandwiches."
+
+    #hanako embarrassed yet smiling, Emi expectant
+
+    "Hanako unwraps the small bag, and produces a sandwich from it."
+
+    ha "H…here you go…"
+
+    "Emi looks on like a seagull watching a tourist eating chips."
+
+    "Her eyes are locked on the sandwich as I take it from Hanako and slowly move it to my mouth."
+
+    "I can almost feel her breathe in as I take a bite, and the tension in the air as I swallow."
+
+    hi "Not bad. Not bad at all…"
+
+    #emi angry? Or something like that
+
+    emi "DO IT PROPERLY!"
+
+    "Emi's outburst makes everyone jump, including the disinterested Rin."
+
+    hi "Woah… okay…"
+
+    hi "They're… delicious…"
+
+    #Emi :3
+
+    emi "See? Doesn't that feel so much better?"
+
+    emi "It's a proper love-love rooftop lunch now."
+
+    hi "I think you need you head read…"
+
+    rin "I've been telling her that for years."
+
+    "Coming from Rin, that kind of comment has got to hurt."
+
+    "But Emi doesn't even seem to notice, too wrapped up in her own fantasy world."
+
+    hi "Can we eat our lunch in peace now?"
+
+    #emi not :3
+
+    emi "What? Oh, yes, go ahead."
+
+    "Emi, having seen what she wanted to, seems to be largely ignoring us now."
+
+    #hide emi and rin
+
+    "Hanako sits against the outside wall of the stairwell, and I take up a position near her…"
+
+    #Hanako neutral looking down
+
+    "…though not near enough to attract Emi's attentions again."
+
+    hi "Thanks for these. I totally forgot about lunch this morning."
+
+    #hanako embarrassed, looking down smiling
+
+    ha "You're welcome. I just made too much though…"
+
+    hi "I guessed as much. It was a pretty crazy morning."
+
+    ha "Yeah."
+
+    hi "Say, should we throw a little “Welcome home” party for Lilly tonight?"
+
+    hi "I'll go to the shops and get a cake and stuff, if you want to set up her room?"
+
+    #hanako neutral smile
+
+    ha "That sounds nice."
+
+    hi "Then it's settled."
+
+    hi "I'll meet you at Lilly's room at about six, 'kay?"
+
+    ha "Okay, I'll be there then."
+
+    #emi, at right, smile
+
+    emi "Be where when?"
+
+    "Damnit, I forgot that she was up here."
+
+    hi "Oh, it's nothing. We were just planning our evening."
+
+    emi "Oooh a date already?! But she only just started making you lunches!"
+
+    emi "You sure move fast, Hisao!"
+
+    hi "No, you klutz. It's for Lilly."
+
+    #emi poke tounge
+
+    emi "I know that. But you're both too easy to tease."
+
+    emi "Say hi to Lilly for me."
+
+    "With that, Emi walks past Hanako and I, towing Rin by her empty sleeve."
+
+    "I look across to Hanako, half expecting her to be buried inside herself again."
+
+    #Hanako neutral, slight smile
+
+    "However, she seems perfectly fine with the situation."
+
+    hi "You alright, Hanako?"
+
+    ha "Hmm? Oh… yes."
+
+    ha "I was just thinking that she's… a nice person."
+
+    hi "Who?"
+
+    ha "Emi. She's… nice."
+
+    hi "But she was just teasing us…"
+
+    "Hanako shakes her head."
+
+    ha "That's just her way of playing."
+
+    ha "And she's a good friend to Rin, too."
+
+    ha "That means she's nice, right?"
+
+    hi "I guess you're right."
+
+    hi "Anyway, we should be headed back down now, right?"
+
+    hi "The bells are going to go off any second now, and they're really loud here…"
+
+    ha "Oh…okay."
+
+    hi "I'll duck off straight after class to go get a cake for Lilly, so I'll see you at her room at six, okay?"
+
+    ha "S…sure."
+
+    ha "I'll see you then."
+
+    #sfx bells
+    #bg fade out
+
+    "The bells of the carillon clatter into life just as we close the door behind us, their deafening peal recalling the students back to the boredom of the afternoon classes."
+
+    return
+
+label en_HT5:
+
+    #aslo, this scene tok forever. If it fails, please let me know.
+    #Yes, Hanako at the end is a little OOC. I'm not sure if it's overly so, nor do I intend to use "crazy" as an excuse.
+    #Please let me know if it's too far over the top, or if it needs explaination or something.
+
+    #bg dormlilly with timeskip
+    #show lilly and Hanko in pyjamas
+
+    li "My my, you really shouldn't have…"
+
+    "Lilly, still a little hoarse from her operation, seems a little overwhelmed by our little reception."
+
+    hi "Nonsense. It's only proper to have a welcoming home party for those that have risked their lives."
+
+    #lilly giggle
+
+    li "Oh, I hardly risked my life. It's a fairly common procedure…"
+
+    #lilly restore
+
+    ha "I… we're just glad that you're back."
+
+    hi "Anyway, enough with the formalities, I've got this cake here that isn't being eaten…"
+
+    li "Oh, splendid! I've had nothing but hospital food for the past week, some cake would go down a treat!"
+
+    "The cake is gone almost as quickly as I can cut it."
+
+    "I guess girls really can't help themselves when it comes to sweets…"
+
+    "…"
+
+    "Then again, I ate my fair share too. I can't complain too much."
+
+    ha "That… was really good."
+
+    li "Indeed it was. Where did you say you bought it, Hisao?"
+
+    hi "Eh? Just down at Auramart. They have this display up the back…"
+
+    #both girls, looking displeased.
+
+    li "Come now, Hisao. You could at least lie to us about this kind of thing."
+
+    ha "Who buys cakes from convenience stores?"
+
+    hi "Eh? What's wrong with that?"
+
+    li "It would seem that you don't quite understand the finer points of life, Hisao."
+
+    hi "I have no idea what you're talking about."
+
+    ha "Cakes should come from a bakery."
+
+    li "Not a convenience store."
+
+    ha "It's the rules."
+
+    hi "O…kay. I'll try to remember that next time."
+
+    hi "But it wasn't bad, was it?"
+
+    li "Well, now that you mention it, it was a little dry…"
+
+    ha "And I think it could have been sweeter…"
+
+    hi "Alright, alright, I get it! I won't do it again, I'm sorry!"
+
+    #both girls, happy
+
+    li "Well, I'm glad that you have learnt your lesson."
+
+    li "One mustn't underestimate the importance of such matters."
+
+    hi "I understand."
+
+    li "Well then, would one of you care to fill me in on the events of the past week?"
+
+    li "I feel like everyone has left me behind and gone ahead without me."
+
+    hi "Nothing's really happened."
+
+    ha "Everyone's been worried about you though."
+
+    hi "Oh, and exams. They're pretty much next week."
+
+    li "Well, I suppose that not much happens over the course of a week."
+
+    "The conversation comes to an unexpected dead end."
+
+    "Lilly continues to drink just as daintily as she always has; a picture of the upper class."
+
+    "Hanako, however, holds her cup in two hands, tilting it gently to her lips."
+
+    "She reminds me of a hamster nibbling on a corn kernel."
+
+    "Out of habit, I start cleaning up the leftovers of the cake."
+
+    hi "So, Lilly, did you and your sister talk about much?"
+
+    li "Oh, so you met Akira?"
+
+    hi "Yeah, the other day. I guess you don't catch up with her that often."
+
+    #lilly sad
+
+    li "That is true. It is a shame, living so far from home."
+
+    li "But I suppose that we are all in a similar situation."
+
+    #Hanako …. quizzical? Whatever is closer.
+
+    ha "…in one way or another…"
+
+    #lilly neutral
+
+    li "However, it was good to say hello and catch up on family affairs."
+
+    hi "So, are you going to visit them over the break?"
+
+    li "I shouldn't think so. It is a fairly long way to go."
+
+    hi "Really? How far?"
+
+    li "South Africa."
+
+    "I stop in shock, nearly dropping the crumb-covered plate in my hands."
+
+    hi "South Africa? You mean, like, the one in Africa?"
+
+    li "That is around where South Africa is located, yes."
+
+    ha "Didn't you know?"
+
+    li "Sorry for not telling you earlier, Hisao."
+
+    hi "That's… fine I guess."
+
+    hi "In that case though, what are you going to do over the break?"
+
+    #lilly/Hanako pondering
+
+    li "I think that I shall take some time off to my family's summer house in Hokkaido."
+
+    li "It's rather well equipped, yet remote enough to be quite tranquil."
+
+    hi "Sounds nice. What about you, Hanako?"
+
+    #hanako thinking
+
+    ha "I'm not too sure. Maybe I'll go with Lilly."
+
+    li "That sounds like a wonderful idea. You're also welcome to come along, Hisao."
+
+    li "The more the merrier."
+
+    "To be invited to a remote summer home by two girls…"
+
+    "What kind of madman would refuse an offer like that?"
+
+    hi "Sure. I'll speak to my parents and let them know."
+
+    ha "It would be good if you could try."
+
+    hi "I definitely will."
+
+    "A brief flash of reality reminds me of more pressing issues."
+
+    hi "But… shouldn't we be thinking about exams before we make too many plans?"
+
+    li "Due to my operation, I have received a bit of relief from the exams."
+
+    li "However I don't think that I shall need to make use of that…"
+
+    "Lilly's right. One look around her room is all it takes to notice that she's quite well read."
+
+    hi "Huh. Lucky you. How about you Hanako? How do you think you'll do?"
+
+    "There is a strange noise from Hanako as she coughs into her teacup."
+
+    "I guess my question caused her to inhale a little of the hot liquid…"
+
+    #hanako embarrasseed
+
+    ha "I… I haven't really thought about it."
+
+    ha "But I think I may need to study some…"
+
+    li "Egerhk!"
+
+    #lilly shocked
+
+    "Hanako is cut off by Lilly's strange utterance."
+
+    "By the time I look at her, she has put down her teacup and is grasping at her throat."
+
+    hi "Lilly? What's the matter?!"
+
+    "Lilly takes a moment to compose herself, slowly removing her hand from her throat."
+
+    #lilly calm again
+
+    li "Oh, I'm sorry Hisao. It would appear that my throat is still a little raw."
+
+    li "I swallowed a little too much tea, and that seems to have aggravated it."
+
+    hi "Do you want me to call the nurse or something?"
+
+    li "No, I'm fine now. I just think I should take it easy."
+
+    ha "Are you sure?"
+
+    li "I'm positive."
+
+    #only fools are positive.
+
+    #are you sure?
+
+    #I'm positive.
+
+    hi "Still, you should get some rest. How about we call it a night?"
+
+    ha "It's probably a good idea, Lilly."
+
+    #lilly Happy
+
+    li "You're right. Staying up late isn't exactly going to help me."
+
+    "Hanako stands up, and we start clearing the small table."
+
+    "Lilly rights herself, and starts running her fingers along her bookshelf, gently feeling the bumpy spines."
+
+    "She stops on one, and removes it from the shelf."
+
+    "Hanako stacks the crockery in its rightful position then heads for the door."
+
+    ha "'Night Lilly."
+
+    hi "Good night, Lilly. Get yourself some rest."
+
+    #lilly big smile
+
+    li "I will. Thank you both again."
+
+    "Hanako walks out into the hall, and I follow, closing the door behind me."
+
+    #bg dormhall
+    #hanako looking down.
+
+    "Lilly's door closes with a click, and I am left facing Hanako, who is avoiding my gaze."
+
+    ha "Um… Hisao…?"
+
+    hi "What's up?"
+
+    "Hanako nervously toys with her hair, twirling a few strands around her fingers."
+
+    ha "Um… I just wanna say t…thank you."
+
+    ha "For not telling Lilly about last night."
+
+    hi "That's okay. If anything, I'm just as guilty as you."
+
+    "Hanako shakes her head, still fiddling with her hair."
+
+    ha "No… no it was my fault."
+
+    ha "So I… I wanna thank you properly."
+
+    #Hanako Defiant
+
+    "Hanako lets her hair go, and locks her gaze on mine."
+
+    ha "C… close your eyes."
+
+    hi "Huh?"
+
+    ha "J…. just do it. Please."
+
+    "Reluctantly, I close my eyes."
+
+    #BG blackout with eyes closed.
+
+    "I hear Hanako take a deep breath, and take a step towards me."
+
+    #it would be nice if there were and effect here, but I can live without it.
+
+    "I feel something warm against my face as Hanako pecks me on the cheek."
+
+    hi "Huh?"
+
+    #BG Dormhall with eyes open.
+    #Hanako Embarrassed.
+
+    ha "I… Li… I thought I should be more… more…"
+
+    ha "So I… thank you."
+
+    "I'm glad that Hanako is filling in the silence, because I doubt I would be able to make any more sense."
+
+    "Just where the hell did this come from?"
+
+    ha "I thought… I should stop relying on you two."
+
+    hi "Relying on us?"
+
+    hi "Isn't that what friends do?"
+
+    ha "Yes but…"
+
+    "For some reason, I feel compelled to pat Hanako on the head."
+
+    hi "Don't sweat it."
+
+    hi "Lilly's a bit under the weather now, but I'm sure everything will be back to normal soon enough."
+
+    ha "Okay…"
+
+    hi "You should probably get some rest too."
+
+    ha "Okay…"
+
+    "Hanako turns and heads for her room."
+
+    hi "Oh, and Hanako?"
+
+    "Hanako freezes, her hand on her door's handle."
+
+    hi "…thanks for that."
+
+    #Hanako embarrassed smile
+
+    "Unexpectedly, Hanako tilts her head, and smiles at me."
+
+    ha "You're welcome!"
+
+    "Before I can react, she rushes into her room and closes the door behind her."
+
+    #hide Hanako with move right
+
+    "I am alone in the hallway, my cheek still tingling from Hanako's kiss."
+
+    "Anyone who can understand her would have to be some kind of genius."
+
+    "Walking like a zombie, mulling over the enigma that is Hanako, I return to my room."
+
+    #bg dormdoor
+
+    "I stop at Kenji's door, considering asking him what he think about the situation…"
+
+    #it would be good to get the following in some kind of flash-back or something…
+
+    ke "It's a conspiracy!"
+
+    "Yeah. Perhaps he isn't the best person to speak to about this kind of thing."
+
+    "I get the feeling he'll somehow sour my mood."
+
+    "This is a rare opportunity to escape a tea party at a reasonable hour, and our talk of exams has got me jittering."
+
+    "Time to hit the books, I think…"
+
+    return
+
+label en_HT6:
+
+    #Yet another song name for the title.
+    #Transition from the last scene with eyes closed/eyes open
+    #perhaps we could have a shot of books on a desk for this commonly recurring theme?
+    #also, damn, 11 days between scenes. Freaking work
+
+    #bg dormroom with eyes open.
+
+    "Huh. Awake before my alarm."
+
+    "How rare."
+
+    "Still, five minutes is nothing to get excited about, and there's no point in going back to sleep."
+
+    "A splash of water to the face and a quick change into my uniform and I'm ready to go…"
+
+    "… a good half-hour before I usually am."
+
+    "I think I shall use this rare opportunity to get a relaxed breakfast."
+
+    #bg cafeteria with dissolve
+
+    "As expected, even the smallest time difference has a large effect on the population of the cafeteria."
+
+    "The place is almost abandoned, meaning that I can secure myself a fairly large breakfast."
+
+    "Well, almost abandoned."
+
+    hi "Hey there, Lilly."
+
+    #show Lilly generic
+
+    li "Is that Hisao?"
+
+    hi "Yeah, it's me."
+
+    li "Good morning. Odd to see you so early."
+
+    hi "Yeah I somehow managed to get up a bit earlier than usual. How's your throat?"
+
+    #show Lilly smiling
+
+    li "It feels much better after a night of rest."
+
+    hi "That's good to hear. I'd hate to see you out of action for much longer."
+
+    hi "It'd get depressing…"
+
+    #show lilly laugh
+
+    li "Now Hisao, you're making it sound like I had some terrible disease. Hanako doesn't seem immune from the habit, either."
+
+    "The mention of Hanako reminds me of our strange encounter in the dorm last night."
+
+    hi "Say, Lilly… Have you spoken to Hanako recently?"
+
+    li "Indeed I have. Could you be a little more specific?"
+
+    hi "Um, well, have you noticed anything odd about her? Like any changes?"
+
+    #show lilly concerned
+
+    li "Nothing comes to mind. Tell me, did something happen?"
+
+    hi "Well, yes… no…"
+
+    li "Maybe?"
+
+    hi "Eh?"
+
+    li "Sorry, I was just completing the pattern for you."
+
+    hi "Oh, right."
+
+    "Damn it, now I've lost my train of thought. I guess I just better spit it out then."
+
+    hi "Anyway, last night Hanako, she, er…"
+
+    hi "She kissed me."
+
+    #show Lilly happy
+
+    #"Kareha" "ままま!" <- This is the kind of face I was thinking of.
+
+    li "My my, what a development!"
+
+    li "Please, tell me all about it!"
+
+    "Lilly seems far too happy about this. It's almost like she's watching a drama."
+
+    "How very un-Lilly like."
+
+    "Even so, I can't stop the blood rushing to my face. Thankfully no-one else is here yet to see this."
+
+    hi "It was nothing, really."
+
+    hi "Just a peck on the cheek."
+
+    hi "But it was just so sudden… which is why I thought you might have said something to her… or something…"
+
+    "Even if she can't see my face, my pathetic speech has probably given away my embarrassment anyway."
+
+    li "Well, that certainly is unexpected."
+
+    li "It seems that, perhaps, my stay in hospital lent Hanako a measure of initiative."
+
+    "I guess… that's possible…"
+
+    "Damn, I do not understand women at all."
+
+    #Could not resist.
+
+    hi "Well, moving on. Have you seen Hanako this morning?"
+
+    li "No, I haven't. I left before she woke up, I believe."
+
+    hi "Huh. I guess I'll see her around then."
+
+    li "I don't think she'll have any excuse to not be in class."
+
+    hi "True. Anyway, this is getting cold. If you'll excuse me, I think I'll eat."
+
+    li "Please, be my guest."
+
+    "Too late. My conversation with Lilly was just long enough for all the heat to escape from what looked to be a fantastic breakfast."
+
+    "And, on top of that, the cafeteria has been slowly filling up, and by now all the good breakfast is probably gone."
+
+    "Something about this feels like a bad omen."
+
+    "I unenthusiastically shovel the cold food into my mouth whilst Lilly simply sits across the table, content to let me eat undisturbed."
+
+    "In an effort to offset the discomfort of the cold food, I shovel it down in large gulps."
+
+    "It doesn't help."
+
+    extend "Quite the opposite, actually."
+
+    li "You must have been famished, eating like that."
+
+    hi "Nah, I just wanted it over and done with."
+
+    hi "Are you headed to class now? Do you want a hand?"
+
+    li "My my, that's quite gentlemanly of you, Hisao. What kind of woman would I be to refuse?"
+
+    hi "Er, I don't know?"
+
+    li "The answer is “an uncourteous one.”"
+
+    hi "Right."
+
+    "Ruminating on my lack of answer to such an obvious question, I collect Lilly's plates and return them to the scullery window."
+
+    #Yeah, I get it, none of you will know what a scullery is, either. Gimme a replacement, please.
+
+    "By the time I return to the table, she's collected her bag and cane and stands ready for the brief walk to the Main Building."
+
+    #bg school hallway
+
+    li "Well then, here is where we part, Hisao."
+
+    li "Don't concern yourself too much with Hanako. Thanks to you, she's become much stronger."
+
+    "Thanking Lilly's inability to see my mild blushing, I quickly move to end the conversation."
+
+    hi "Sure thing. I'll see you after class."
+
+    "Lilly disappears into her classroom, and I walk the short distance to my own class."
+
+    #bg classroom
+
+    "Inside, only the studious students have arrived, making use of the peace of the room to bury their noses in their textbooks."
+
+    "Not even Shizune or Misha have arrived yet. What a rare occurrence."
+
+    "But there is one person here that surprises me."
+
+    #show Hanako distracted/neutral
+
+    hi "Hey there, Hanako. How are you this morning?"
+
+    #show Hanako embarrassed
+
+    ha "Ah… Hisao… G—good morning."
+
+    "Hanako practically jumps at the sound of my voice, slightly more embarrassed than usual."
+
+    hi "Is everything alright?"
+
+    #Show Hanako panicked
+
+    ha "Whe? Yeah… yeah I'm all good. How's… you… things with?"
+
+    hi "I'm… fine. Are you sure you're good?"
+
+    "Hanako is panicking like a rabbit caught in a cage; desperately looking around for something to distract me."
+
+    "I lean down close to her, whispering into her ear conspiratorially."
+
+    hi "Hey, look, if this is about last night, don't worry about it."
+
+    hi "I… kinda enjoyed it."
+
+    #hanako Mega panic.
+
+    "Hanako's frenzied head movements stop, her face going a full shade redder."
+
+    "Only now do I notice that on the other side of Hanako, leaning in as close as I am, is another face."
+
+    #show Misha neutral/serious
+
+    mi "I guess she enjoyed it too, hey?"
+
+    "I jump back suddenly, nearly tripping over the desk behind me."
+
+    hi "M—M—Misha! When did you get here?"
+
+    "Misha stands up, leaving Hanako frozen in a state of shock."
+
+    mi "I was here to hear the good part, and that's all that matters, right?"
+
+    #misha lol
+
+    mi "Oh, Hisao and Hanako~"
+
+    mi "Doing naughty things at night~"
+
+    mi "I can't wait to tell Shizune~"
+
+    hi "No wait! You can't do…"
+
+    "Too late."
+
+    "Behind me I can hear the sound of a bag being placed rather forcibly onto a desk, followed by anger footsteps."
+
+    #show Shizune, angry.
+
+    shi "…"
+
+    #shizune and Misha signing
+
+    mi "Shizune wants you to know that… um… “fraternisation”… isn't allowed in the public areas of the school."
+
+    mi "She also thinks that it's a bad idea for high school students to be wasting time on personal matters when exams are so close."
+
+    mi "Also, she thinks that if you want to pass notes, you should use a more direct delivery system…"
+
+    hi "Wait, what the hell are you talking about?"
+
+    hi "You've got it all wrong, nothing's going on between us…"
+
+    hi "Wait, notes?"
+
+    "Misha quickly signs something to Shizune, who then produces a small note."
+
+    "On the front, in writing so faint it's almost illegible, is written “To Hisao.”"
+
+    mi "You left this lying on your desk where anyone can see it."
+
+    mi "I don't care what you do in your own time, but keep it out of the classroom."
+
+    mi "Understood?"
+
+    "At times, I wonder if Shizune sees Misha as a friend, or if she simply possesses her just to use her mouth."
+
+    "I snatch the note out of Shuzune's hand, noting that Hanako winces a little as I grab it."
+
+    hi "Fine, understood."
+
+    hi "Man, you two really know how to misinterpret the situation."
+
+    hi "There's nothing “naughty” going on at all."
+
+    #misha :p
+
+    mi "Su~re there isn't."
+
+    mi "Anyway, it looks like you have something to deal with, so we'll leave you alone for the moment."
+
+    mi "Right, Shizune?"
+
+    shi "…"
+
+    "I breathe a little relief as Misha drags Shizune back towards their desks, leaving me with a visibly shaken Hanako."
+
+    "She looks a little too stressed to talk, so I guess I'll read the note first…"
+
+    #Hanako Embarrased/defiant
+
+    ha "DONTREADTHAT!"
+
+    "The background murmur of the class drops into silence as everyone tries to discreetly eavesdrop on this sudden outburst."
+
+    hi "Er… okay."
+
+    hi "Should I give it back?"
+
+    ha "No!"
+
+    hi "Er… right. So I shouldn't read it then?"
+
+    #Hanako looking down, embarrassed
+
+    ha "N…no. Just… don't read it now."
+
+    "The school bells peel throughout the classroom, and I am forced to return to my seat…"
+
+    "…but not before I pat Hanako on the head."
+
+    #hide Hanako
+
+    "It's not long before the class is underway, and whilst Shizune and Misha are distracted by taking notes, I unfold the tiny letter."
+
+    $ written_note("Dear Hisao,\n I have something I want to tell you.\nPlease meet me behind the dorms after school.")
+    #lawl, be there or i'll {s}kill you{/s} go home? d.
+
+    "Huh, unsigned."
+
+    "Then again, it's not like it's hard to work out where it came from."
+
+    "Making sure the teacher is facing the board, I turn around to face Hanako."
+
+    #show Hanako Embarrassed
+
+    "It doesn't take long to get her attention. It's almost as if she's been watching my back all morning…"
+
+    "I hold up the note, point to it, and give her a quick thumbs-up."
+
+    #Show Hanako embarrassed looking down, smiling
+
+    "She looks away, pretending not to notice me."
+
+    "But, a moment later, she quickly looks back at me for an instant, returning my thumbs-up, before once again pretending not to look at me."
+
+    "Teacher" "Nakai! Eyes front!"
+
+    hi "Sorry…"
+
+    "Teacher" "Sorry won't cut it. I want you to read from the textbook, starting at page 54…"
+
+    "Huh, I guess this is what my cold breakfast was trying to warn me about…"
+
+    return
+    
+label en_HT7:
+
+    "My moment at the star of the class passes quickly, much to my relief."
+
+    "Teacher" "That's enough. Now, let me continue…"
+
+    "Word after word issues forth from the teacher's mouth, but I find it hard to follow along."
+
+    "Half-way through the class, I look at my notes, only to find that they are covered with a mess of doodles."
+
+    "Even here, where my mind is taking some kind of form, there is no order, just a random mess of squiggles."
+
+    "Thankfully, the lunch bells relieve me of this affliction."
+
+    "I turn, ready to talk to Hanako, only to see her disappear through the classroom's rear door."
+
+    "Looks like she's not ready to talk to me yet."
+
+    "On the other hand, this does give me a bit of time to clear my mind."
+
+    "I need to talk to someone, and I can think of only one person up to the task."
+
+    #bg school roof
+    #show Lilly neutral
+
+    hi "Lilly, have you got a moment?"
+
+    li "But of course. What's the matter, Hisao?"
+
+    "Thankfully, Lilly is the only person on the roof today. I don't know what I would do if Rin and Emi were here today."
+
+    hi "Um, it's about Hanako."
+
+    #show lilly concerned.
+
+    li "Oh, has something gone wrong?"
+
+    hi "Er, not exactly."
+
+    hi "She, er, she gave me what looks like… a letter."
+
+    li "A letter? What type of letter?"
+
+    "I fidget nervously."
+
+    "It's fairly obvious what Hanako intends to talk to me about, but even so, the anticipation inside me is palpable."
+
+    hi "It, well, she's asking me to meet her after school."
+
+    li "In a letter? Why didn't she just ask you to your face?"
+
+    hi "That's… what I was hoping to ask you."
+
+    hi "You know how this morning I was asking you about Hanako?"
+
+    li "Of course."
+
+    hi "Well, I think that maybe… I dunno."
+
+    li "That perhaps she likes you?"
+
+    "Emotions run through me like a lightning bolt."
+
+    "It's not like this is really news to me, but, still…"
+
+    "Hearing someone say it out loud excites me a little."
+
+    hi "Yeah, something like that."
+
+    "Not knowing what to do, I sit down next to Lilly."
+
+    li "Well, is that a problem, really?"
+
+    hi "I… don't know."
+
+    hi "I haven't really thought about it."
+
+    "Itching to be doing something, my hand reached into my pocket and retrieves Hanako's note."
+
+    "After simply holding it for a second, I feel another, different set of emotions."
+
+    hi "You know…"
+
+    extend "This isn't the first time I've received a letter like this…"
+
+    # lilly curious, or something like that.
+
+    li "Oh, really? You must be handsome then, Hisao…"
+
+    hi "That's not exactly what I meant."
+
+    "Panic grips tentatively at the edges of my mind, and before I know it…"
+
+    hi "It was at my last school…"
+
+    "…I'm telling Lilly about the last time I got such a letter."
+
+    hi "I got a letter like this, with just a place and a time, and it turns out it was a girl that I liked."
+
+    hi "But that was when I had my heart attack."
+
+    hi "The doctors heard about that and blamed it on the stress…"
+
+    li "I see."
+
+    li "It would be troublesome if such a thing happened again."
+
+    li "However, this time you at least know who the letter is from, correct?"
+
+    hi "Well, unless I'm grossly mistaken, then yes."
+
+    li "So that should at least relieve you of some of the surprise, correct?"
+
+    hi "I suppose."
+
+    li "The other part, however, may require some extra work."
+
+    hi "Other part?"
+
+    li "Well, do you actually like Hanako?"
+
+    "Lilly poses this question just as easily as she would ask me the time."
+
+    "I just wish I could answer as easily."
+
+    hi "Um… well… I like her, but I like you too, I guess…"
+
+    #lilly sad/frustrated/thinking/something like that.
+
+    "Lilly sighs slightly."
+
+    li "Let's try this a different way."
+
+    li "What do you plan to do when you leave school?"
+
+    hi "Eh? Go to university, I guess?"
+
+    hi "But what does that have to do with anything?"
+
+    "Lilly ignores my question and continues with her interrogation."
+
+    li "What do you intend on studying?"
+
+    hi "Science, I guess."
+
+    hi "But…"
+
+    li "And why is that?"
+
+    "Lilly just ploughs along; I guess I'll just have to run with it for now."
+
+    hi "Not really sure. It's just something that I enjoy, I guess."
+
+    li "Well, there you have it."
+
+    hi "Eh? What?"
+
+    #lilly whimsical, or something.
+
+    li "You are planning the rest of your life based on a whim."
+
+    li "So what is the sense in putting so much thought into something as trivial as a high-school romance?"
+
+    "I try to find a way to refute Lilly, but end up totally lost for words."
+
+    "What she's saying makes perfect sense, even if it seems overly clinical."
+
+    li "I take it that this seems a little, well, direct for you, yes?"
+
+    hi "I… guess."
+
+    li "Well, just answer me one question;"
+
+    extend "Would you have any objections to Hanako?"
+
+    hi "No… I really like her."
+
+    hi "Why would I have any objections?"
+
+    li "Then I think you have just answered your own doubts."
+
+    #lilly coquettish or something like that
+
+    li "Unless, of course, you have someone else in mind?"
+
+    hi "Eh? No, not really."
+
+    li "Then I recommend that you accept Hanako's offer."
+
+    li "I think that it would help both of you."
+
+    li "It should help you get over the anguish of your heart attack, and it also shows that Hanako is almost out of her shell."
+
+    hi "But… I'm still not sure…"
+
+    #lilly small smile
+
+    "Lilly turns to me, and, after a bit of fumbling, rests her hand on my shoulder."
+
+    li "Do you need to be sure?"
+
+    li "I would think that it would be slightly exhilarating; throwing yourself headlong into a relationship at this age."
+
+    #lawl nympho Lilly appears
+
+    li "And, if things don't work out, then you can always just go back to being friends."
+
+    li "I'll always support both of you."
+
+    hi "Thanks, Lilly."
+
+    #Lilly Smiles
+
+    li "You're welcome, Hisao."
+
+    li "However, if I am correct, we are almost out of time."
+
+    li "We should leave here before the bells start. It's awfully loud from here…"
+
+    hi "Agreed. Here, I'll help you up…"
+
+    "I quickly jump to my feet and gently grasp Lilly's hand, helping her to her feet."
+
+    "It seems that Lilly's sense of time is correct; as soon as I close the door to the stairwell, the bells clamour into life."
+
+    #BG hallway
+
+    "For the second time today, Lilly and I part ways in the hallway."
+
+    "Lilly gives me a short wave before leaving, and, without thinking, I wave back."
+
+    "Chiding myself for doing something so stupid, I simply call out after her."
+
+    hi "See you, Lilly. And thanks again."
+
+    #bg classroom
+
+    "The classroom is in a typical state of disarray as I walk in; all of the students are trying to jam in as much as they can into the brief interval before class."
+
+    "It's like they were slacking off during the break and are trying to make up for lost time before the teacher appears."
+
+    "I guess it doesn't matter if it's conversations or assignments; students are bound to leave everything until the last possible moment."
+
+    #Eh, placeholder for some extra "deep" should I want to put it in later.
+    #something about how this reflects on Hisao x Hanako and what Lilly said.
+
+    "One character in this never-ending drama, however, is missing."
+
+    "The rearmost window seat is currently lacking one Hanako."
+
+    "I guess she's avoiding me out of embarrassment… or something."
+
+    "I keep my eyes on the doors, awaiting her return."
+
+    "Just as the teacher slides open the front door to the class, Hanako bolts to her chair from the rear door."
+
+    "She was probably waiting in the hallway until the last possible moment."
+
+    "Not wanting to suffer the same fate as I did this morning, I keep my eyes glued firmly to the front of the class, taking notes where appropriate."
+
+    "Lilly's pep-talk has made me surprisingly focused, not only on my impending meeting with Hanako, but also with the class."
+
+    "As a result, I am genuinely surprised when the bells sound for the end of the class."
+
+    "With speed rivalling a gazelle, Hanako is out of the back door before I can even turn around."
+
+    "Nervous energy, I suppose."
+
+    "Well, here goes nothing, I guess."
+
+    #BG Hanako's wall from Act 1. I know we're not using that scene anymore, but I like that shot.
+
+    "The area behind the dorms is shady and peaceful."
+
+    "Behind me I can hear the muffled sounds of students going about their daily lives."
+
+    "Cheers from various sporting clubs, the sounds of cooking and washing from the dorms…"
+
+    "But everything seems somewhat… distant."
+
+    "It's like some kind of barrier is preventing the outside world seeping into this forgotten plot of land between the dorm buildings and the school's wall."
+
+    "Of course, there is another person here, and it only takes a moment's walk before I reach the hunched figure leaning against the stone wall."
+
+    #Show Hanako embarrassed
+
+    hi "So, I guess it really was your note?"
+
+    ha "Um, er… yes. I guess you know that, right?"
+
+    hi "I had a hunch…"
+
+    "A bird's song drifts over the school's wall, giving Hanako a chance to pause before answering."
+
+    ha "Um, H—Hisao…?"
+
+    hi "Yes?"
+
+    #Hanako Embarrased, looking down. Or perhaps a super embarrassed.
+
+    ha "W…what do you think about me?"
+
+    "I guess it's not that easy to be direct, but even for Hanako, this seems a little round about."
+
+    hi "Well, I like you. You're a good friend."
+
+    ha "Is… is that all?"
+
+    "I have a feeling that this is not going all that well."
+
+    hi "What do you think about me, Hanako?"
+
+    #Hanako embarrassed, surprised
+
+    ha "M—me?"
+
+    ha "Do think about you…"
+
+    ha "Um, er…"
+
+    hi "Take your time… we've got all day."
+
+    "Hanako takes a deep breath."
+
+    ha "I like you too, Hisao."
+
+    hi "That's good to know."
+
+    hi "So, what did you want to talk to me about?"
+
+    "Hanako looks around, presumably to make sure no-one is watching."
+
+    ha "You… you know how I told you that I had a friend before?"
+
+    "I strain my memory for a second, but then remember Hanako's words when we slept in Lilly's room."
+
+    hi "Oh, your friend from before?"
+
+    "Hanako simply nods in response."
+
+    #It is quite possible that this bit will change a little, depending on if I keep the whole
+    #"dead boyfriend" thing. I dunno.
+
+    ha "He… he said I was a good friend too…"
+
+    extend "when I asked him like this."
+
+    ha "But then… I ran away."
+
+    ha "I ran away and he chased me."
+
+    #Hanako crying
+
+    ha "And… and then…"
+
+    "Hanako, unable to continue, starts to stagger away from the wall."
+
+    "Instinctively I rush forward and catch her, holding her close to my chest."
+
+    ha "Promise me… promise me you won't die too…"
+
+    hi "I… promise you."
+
+    "Hanako takes great heaving sobs into my chest, before looking up at me with her reddened face."
+
+    ha "Hisao…"
+
+    ha "I love you."
+
+    "Lilly's advise rushes through my brain at a million miles an hour, as does all the time I've spent with Hanako up to this moment."
+
+    "But, before I can make a rational decision, I find my head bending down, and my grip on Hanako's slight frame tightening."
+
+    "The salt from her tears mixes with the latent taste of lip-balm as we kiss."
+
+    "I feel a pressure on my back, and realise that Hanako has wrapped her arms around me, pulling me into this ever-deepening embrace."
+
+    "After what feels like an eternity, we separate our lips, looking directly into each other's eyes."
+
+    hi "How's that for an answer?"
+
+    #Hanako happy embarrassed
+
+    ha "I… I think it's a pretty good one."
+
+    hi "Say, what are you doing tomorrow after morning classes?"
+
+    ha "N—not much."
+
+    hi "Wanna go somewhere together?"
+
+    #Hanako smile
+
+    ha "Yes… and I think I know a place that would be good."
+
+    hi "Really? Where?"
+
+    ha "It's… a secret place of mine."
+
+    ha "I can take you there."
+
+    hi "Sounds good. Should I bring anything with me?"
+
+    "Hanako looks up for a moment, as if accessing some seldom-used part of her brain."
+
+    ha "Maybe, some food?"
+
+    hi "Consider it done."
+
+    hi "But… what should we do now?"
+
+    #Hanako defiant smile
+
+    ha "Um, I have an idea…"
+
+    "Once again, Hanako's grip on me tightens, pulling me towards her beckoning lips."
+
+    "Considering that a little over three hours ago I was having doubts about this very situation, I put up very little resistance to yet another kiss…"
+
+    return
+
+label en_HT8:
+
+    "Breathless, Hanako and I tear ourselves apart."
+
+    hi "Um… wow."
+
+    #Hanako Look down smile
+
+    ha "Yeah… wow."
+
+    hi "So, uh, I guess I'll see you tomorrow then."
+
+    ha "Yeah… at.. class…"
+
+    hi "Yeah, class, right."
+
+    "For a moment, neither of us really knows what to say, and just stand there, avoiding each other gaze lest we become overcome again."
+
+    ha "I'd… better get going."
+
+    hi "Yeah, me too. If we're going out tomorrow then I guess I should study some more tonight."
+
+    #hanako shocked
+
+    ha "Oh, right, study!"
+
+    ha "I should do that… too."
+
+    #hanako slight smile
+
+    ha "G'night, Hisao."
+
+    hi "Night Hanako."
+
+    "Awkwardly, we part ways, disappearing to opposite sides of the dorm that just served to hide us from the world."
+
+    #bg dormhall
+
+    "As I pass Kenji's door, I am suddenly overwhelmed with the urge to talk to someone about my newfound relationship."
+
+    "Even if that means risking a lecture on the fascist nature of the fairer sex."
+
+    "For a moment, I consider knocking lightly."
+
+    #bg dorm door
+
+    "But then I remember that this is Kenji we're talking about, and pound the hell out of his door."
+
+    "No response."
+
+    "Probably watching something unsavoury with his headphones again."
+
+    "I beat on the door again, and keep doing so until my hand starts to hurt."
+
+    "Ah well, I guess I can keep this to myself for the moment."
+
+    "Time to get to study then, I guess…"
+
+    #BG dormroom
+
+    "Not surprisingly, I find my focus drifting a little."
+
+    "I open my textbook, click a lead into my clutch pencil, and rest it against my lips whilst I read…"
+
+    "My lips…"
+
+    "Damn. I managed a whole fifteen seconds without reminding myself of what just happened."
+
+    "But I need to focus. I'm going to waste all of tomorrow afternoon with Hanako, meaning that I'll only have the evening to study."
+
+    "Exams are important… Aren't they?"
+
+    "Once again my mind drifts back to my conversation with Lilly at lunch."
+
+    "Just what is it that I plan to do with my life?"
+
+    "What if all this time I've spent studying just turns out to be a waste of time?"
+
+    "If I'm not chasing any particular goal, then what is the point in wearing myself out?"
+
+    "…"
+
+    "Well, that just passed a good ten minutes, back to the books."
+
+    "I don't want to be fretting over a lack of study when I'm with Hanako tomorrow."
+
+    "I just wish that I could prevent the opposite occurring…"
+
+    "This isn't working. I need to calm myself down."
+
+    "Maybe I should just lie down for a second…"
+
+    #bg bedroom with eyesopen
+
+    "Well, that didn't work as planned."
+
+    "Looks like the study will have to wait until tonight."
+
+    "I silence my alarm and take a quick shower."
+
+    "I'll have just enough time to grab a quick breakfast before class if I can keep this shower under three minutes…"
+
+    "Go!"
+
+    #bg bathroom
+
+    "Looks like I'll be skipping breakfast, then."
+
+    "Shouldn't be a problem though. There's only the morning classes today, and with exams looming it might even be some kind of revision class."
+
+    "At least I might be able to make up for the time I lost last night."
+
+    #bg classroom
+
+    "Every time I enter the classroom of a Saturday morning, I am reminded of a cage at a zoo."
+
+    "In reality, a zoo cage is a good place for an animal to be."
+
+    "It gets food, is cared for, protected from predators, and is put into breeding programs."
+
+    "All in all, major wins all-round."
+
+    "Yet the wild animal side in them means that they will resist to the bitter end, jumping around, making a lot of noise, and attacking the zookeepers."
+
+    "This classroom is the same."
+
+    "In reality, being here is solely for our benefit, but not a single student wants to be here, especially on what the rest of the world considers a weekend."
+
+    "The typical disarray of the morning class is amplified, the chatter reduced to white noise as various conversations fight for air time."
+
+    "But, at the back corner of the class, looking lazily out of the window, sits a singular student."
+
+    "I'd call out to her, but I don't feel like wasting my breath."
+
+    "It takes only a little time to force my way through the herd to Hanako's seat."
+
+    #Hanako basic happy
+
+    hi "Morning."
+
+    ha "Morning."
+
+    hi "Sleep well?"
+
+    ha "Not at all. You?"
+
+    hi "Like a log, somehow."
+
+    hi "I guess my meds are messing with my head again."
+
+    #Hanako laughs a little
+
+    ha "You should watch out for that, sometimes medication does strange things to you."
+
+    hi "I'll keep that in mind."
+
+    mi "Keep what in mind?"
+
+    #Misha/Shiszune curious
+
+    hi "Oh, nothing, just talking about meds."
+
+    mi "Medication, eh?"
+
+    mi "I guess that's an important enough topic."
+
+    hi "Well, thank you for your approval."
+
+    mi "Not at all."
+
+    mi "So, what's with you two being here and ignoring everyone else, eh?"
+
+    #Misha pout
+
+    mi "That's not very friendly."
+
+    hi "I just thought I'd say hi to Hanako."
+
+    mi "I see, I see…"
+
+    ha "I was going to go over the plans for our date this afternoon…"
+
+    mi "I see, I…"
+
+    #misha Surprised
+
+    mi "Waitwhat?!"
+
+    shi "…"
+
+    mi "Oh, right, sorry…"
+
+    "Misha, who's reflexive signing had stopped mid-sentence, hurries to bring Shizune up to speed."
+
+    #shizune smile
+
+    #eh, just trying tis out for shits and giggles
+
+    $ doublespeak(sh,mi,"…","Um, I guess congratulations are in order then.")
+
+    $ doublespeak(sh,mi,"…","I'm glad that you both are getting along so well.")
+
+    hi "You're… not mad or anything?"
+
+    $ doublespeak(sh,mi,"…", "Why would I be?")
+
+    hi "I… suppose you're right."
+
+    mi "Yeah, good job, Hisao."
+
+    mi "I mean, you've bailed out on helping us so much recently, but that's not a problem."
+
+    "Misha leans towards me and whispers in my ear, as if trying to hide something from Shizune."
+
+    mi "Between you and me I think that Shizune makes up a lot of the “work” she gave you anyway."
+
+    #Shizune neutral and misha laughing
+
+    mi "But now Hanako can become friends with everyone, right? Right?!"
+
+    ha "I… guess."
+
+    mi "See! I think that this is the best thing for everyone."
+
+    mi "You look after her, okay now Hisao?"
+
+    hi "Right, right, I got you."
+
+    hi "Now, are you going to pay attention to the man at the front of the class anytime soon?"
+
+    #misha/Shizune ? faces
+
+    mi "Eh? What are you talking about, Hisao?"
+
+    mu "I believe, Miss Shiina, that he is referring to me."
+
+    #Misha/Shizune sad
+
+    "It would seem that whilst Misha and Shizune were so wrapt in Hanako and my drama, Muto had already settled the rest of the class."
+
+    "Embarrassed, Misha turns slowly to the front of the class, gives Muto a sheepish wave, and returns to her seat."
+
+    "Shizune follows suit, replacing the wave with a curt bow."
+
+    mu "Well then, now that we have been brought up to speed on the class's gossip, I shall now attempt to bring you all up to speed on realativity…"
+
+    #LOL physics joke. I doubt even people who care will get this one.
+
+    "I gently pat Hanako's hand before following Misha and Shizune back to my seat."
+
+    #hide Hanako
+
+    "I can't believe they're taking this so well."
+
+    "Though the fact that Hanako was the one that told them may have had something to do with that."
+
+    "It doesn't take Muto too long to get lost in the joy of lecturing, and I use his distraction to whisper to Misha…"
+
+    hi "Psst! Misha!"
+
+    #Misha Smile
+
+    mi "What's up?"
+
+    hi "So, you and Shizune aren't angry?"
+
+    mi "At what?"
+
+    hi "Hanako and I dating?"
+
+    #misha small lol
+
+    mi "Whahaha of course not!"
+
+    mi "Shizune said it herself; why would we?"
+
+    hi "I… dunno."
+
+    #Misha Srsbsns
+
+    mi "Look, we might not be her friends, but then again, no-one is."
+
+    mi "Still, we all want what's best for her, right?"
+
+    mi "If you can get her to talk to others, then that's a good thing."
+
+    hi "I guess that makes sense…"
+
+    #misha big lulz
+
+    mi "Of course it does, I said it!"
+
+    mi "Whahaha…"
+
+    mu "Shiina…!"
+
+    #Misha "uh-oh"
+
+    mi "…ha. Sorry."
+
+    "Misha leans back into her “good student” position, and Muto resumes his ramblings."
+
+    "Surprisingly, it doesn't take long at all for the class to come to an end."
+
+    mu "…and that's that. I should remind you all that this is practically your last class before the exams next week."
+
+    mu "Monday and Tuesday will be revision days, so if you have any questions, please use them to ask me then."
+
+    mu "The exam timetable will be posted on the noticeboard by tonight, please study it carefully."
+
+    mu "And…"
+
+    #sfx bells
+
+    mu "…have a good weekend."
+
+    "The class is practically empty by the time Muto finishes his sentence."
+
+    "Before he leaves, though, he gives me a cryptic salute."
+
+    "I guess too much science really does make you crazy."
+
+    #Hanako, basic
+
+    hi "So then, where should we meet up?"
+
+    ha "Um… if it's okay with you, then can you meet me at the Green Door in about an hour?"
+
+    "I strain my memory to work out where Hanako is talking about."
+
+    hi "Green Door… oh, you mean the door to the woods out the back of the school?"
+
+    #hanako slight smile
+
+    ha "That's right. Is that okay?"
+
+    hi "It's perfect; I think I'll go get changed now."
+
+    ha "Me too."
+
+    hi "See you there then."
+
+    #hanako big smile
+
+    ha "Okay!"
+
+    #Chapter end. Close on a timeskip or something.
+
+    return
+
+label en_HT9:
+
+    #Splitting this scene to help the H-tagging
+
+    #HT9 – Lullaby for Strain
+
+    #Well, here it is, the fated H-scene scene. It'll take a bit of getting to, but it's there.
+    #And I may also have a second one planned.
+    #So ner.
+
+    #BG Greendoor with timeskip
+
+    "For once, I am thankful that girls seem to take an eternity to get ready."
+
+    "My early night last night meant that I hadn't prepared any food for today, breaking the one promise that I made to Hanako about today."
+
+    "Luckily, I still had some left over food from my last shopping trip, so I was able to hurriedly throw together a semblance of a picnic basket in a short amount of time."
+
+    "Even so, I find myself waiting for a good fifteen minutes by the small, green door before Hanako finally arrives."
+
+    #Show Hanako casual basic
+
+    ha "H..hello. Have you been waiting long?"
+
+    hi "Not at all, I only just got here myself."
+
+    hi "I brought along a bit of food, but I didn't know where we were going so I kinda guessed…"
+
+    "Nice save; now it doesn't matter that all you've packed is left overs."
+
+    ha "I think anything will do, really."
+
+    ha "But will you be okay to carry that?"
+
+    hi "I can't see why not. We're not going rock climbing or anything, are we?"
+
+    #hanako look down
+
+    "Hanako looks away, as if she doesn't want to answer."
+
+    hi "…Are we?"
+
+    ha "Well, not exactly. But… it is a bit of a walk…"
+
+    "I take stock of Hanako in her yellow dress."
+
+    "She certainly doesn't look like she's about to go climb a mountain."
+
+    "Maybe she's just being overly cautious with me?"
+
+    hi "Well then, if that's the case, we'd best be off, right?"
+
+    hi "The day is simply wasting away…"
+
+    #Hanako casual surprised
+
+    ha "Oh! So it is! We should go…"
+
+    "Hanako pushes through the door in the wall, and the cool air of the woods beyond it hits my nostrils."
+
+    #bg woods1
+
+    "We have barely taken a step into the greenery, yet I still feel relaxed."
+
+    hi "So… where are we headed?"
+
+    ha "There's a place I want to show you."
+
+    ha "It's a bit of a walk, but it's worth it."
+
+    hi "Alright then, you're the boss…"
+
+    "Hanako simply smiles at me, then strides off at an amazing pace."
+
+    "I almost have to jog to keep up, constantly watching the ground for errant roots waiting to trip me up."
+
+    "But every now and again, on a clear stretch of path, I manage to lift my eyes long enough to take a look at Hanako."
+
+    "Unlike myself, she seems to be able to walk along with her head up, but that's not what catches my eye."
+
+    "Her figure easily glides over the roots that have been hindering my progress, and each movement sends ripples through her dress and hair."
+
+    "This is the first time I've ever looked at her seriously, but my trained eye can tell that underneath her loose clothing lies a pretty nice figure."
+
+    "If only…"
+
+    ha "Are you alright?"
+
+    hi "Yeah, I wasn't looking where I was going, and I guess I tripped over something…"
+
+    "Hanako squats down next to me, offering her hand to help me up."
+
+    "I should really keep my eyes on the ground as opposed to perving."
+
+    "It could be bad for my health…"
+
+    ha "I didn't realise; am I going too fast?"
+
+    ha "I just thought we might run out of time…"
+
+    hi "No, it's okay, I'll be more careful. Thanks…"
+
+    "Hanako pulls me to my feet, and I collect the basket from where it has fallen."
+
+    hi "Right then, let's go, shall we?"
+
+    ha "Right."
+
+    "Hanako twists on her heels, the resultant fluttering of cloth and hair mesmerising me for a moment."
+
+    "Shaking my head to regain control, I set off after her."
+
+    #BG woods 2
+
+    "We continue to push through the woods for ages."
+
+    "The dirt path that we were following peters out, fading from an obvious thoroughfare to practically nothing."
+
+    "Yet Hanako never breaks stride."
+
+    "She deftly pushes branches out of her way, whilst I seem to be struggling with every step."
+
+    "I guess this is what happens when you grow up in the city."
+
+    "In a short clearing, I manage to avoid the trees for long enough to check my watch."
+
+    "We've been hiking for nearly an hour."
+
+    hi "So…"
+
+    extend "just how much further is it?"
+
+    ha "Not far, just this last thatch and we should be able to see it…"
+
+    "Hanako disappears into a dense patch of vegetation, and I quickly follow through the rapidly closing gap."
+
+    "If I lose track of her now I've got no idea how to get back to the school."
+
+    "But, despite my best efforts, the figure in the yellow dress is gone; swallowed by the trees."
+
+    hi "Hanako? Hanako?!"
+
+    ha "I'm here Hisao… just a little further…"
+
+    "I follow the sound of her voice, the dense greenery surrounding me."
+
+    hi "Where? I can't see you…"
+
+    "I hear Hanako gasp a little…"
+
+    hi "Hanako? Is something wrong?"
+
+    "I charge through the branches, not caring what happens to me…"
+
+    #bg white
+
+    "Bright light shines in my eyes, blinding me after the darkness of the woods."
+
+    ha "We're here."
+
+    #bg valley with fade
+
+    "Slowly, my vision returns to me, revealing a vast valley stretching for as far as the eye can see."
+
+    "Green treetops fill my vision, uninterrupted by human development."
+
+    hi "Where… are we?"
+
+    ha "The other side of the mountain."
+
+    hi "This is a great spot, however did you find it?"
+
+    ha "Well, I used to skip class a lot, and I found it then…"
+
+    "I take my gaze off Hanako to take in the view of the valley once again."
+
+    "It's miles from anywhere, on the back side of the hill that the school rests on, totally opposite the town."
+
+    ha "You can almost imagine that there's no-one else on the planet, can't you?"
+
+    hi "Yeah… wow…"
+
+    "We both look out over the valley, side by side, in silence."
+
+    "I feel my hand reaching out from my side, and the slight warmth as it wraps itself around Hanako's."
+
+    "I'm not sure if I wanted to chare a bond with her, or if I was simply reaffirming that I was not alone here, but it felt like the right thing to do."
+
+    "I go to take a step out into the clearing, but Hanako gives my hand a slight tug."
+
+    ha "I… wouldn't get too close to the edge."
+
+    ha "It's a long fall."
+
+    "Moving my eyes downwards, I see what she means."
+
+    "Whilst we are standing on a bit of a clearing, it is only a few meters from a cliff edge that dives directly to the valley floor."
+
+    "The rolling green of the valley gives a false perspective of how far away the edge actually is."
+
+    hi "Right. Got ya."
+
+    hi "In that case, should we have some lunch?"
+
+    "Truth be told, I'm starving. Skipping breakfast was a dumb idea."
+
+    ha "Sure."
+
+    "Hanako spreads out her dress and sits on the grass, and I start unpacking the basket."
+
+    hi "It's not much, but I hope this will do."
+
+    ha "I… I don't mind."
+
+    ha "So long as it's here…"
+
+    "I watch Hanako as she eats her food, and not once does she take her eyes off the expanse before us."
+
+    "And I don't really blame her. It's hard to believe that this is Japan."
+
+    "It does not take us long to consume my meagre offerings. I guess these things are best left to girls, after all."
+
+    "I close up the basket and sit back down next to Hanako."
+
+    "To my surprise, she leans her head against my shoulder."
+
+    "Gingerly, I put my arm around her shoulder, and together we just stare out over the valley."
+
+    hi "Say, Hanako…?"
+
+    ha "Yes?"
+
+    hi "What do you think you'll do after you graduate?"
+
+    "Hanako doesn't move, but I can almost feel her thinking on my shoulder."
+
+    ha "I haven't really thought about it."
+
+    ha "Maybe something in medicine."
+
+    hi "Medicine? Have you got the grades for that?"
+
+    ha "Don't know. Why, do you need good grades?"
+
+    hi "I think so."
+
+    ha "Well, I don't think I have bad grades."
+
+    ha "Maybe I should look into it."
+
+    "And with that, the topic seems to close."
+
+    "I guess Hanako and Lilly have a lot in common, once you get past the obvious differences."
+
+    "I suppose they're both right, as well."
+
+    "Since the beginning of the year, my entire life has changed."
+
+    "There's still a fair amount of time between now and graduation."
+
+    "And years before finishing university."
+
+    hi "Life can wait. I think I want to deal with now, first."
+
+    ha "Hmm. That's pretty deep, Hisao."
+
+    "Damn, I didn't even realise I was thinking out loud."
+
+    hi "Thanks. I was just thinking about what Lilly told me yesterday."
+
+    ha "Oh? Lilly talked to you too?"
+
+    hi "Yeah, she was just talking about how putting too much thought into things doesn't always help."
+
+    #hanako ?
+
+    ha "Strange… she said something similar to me the other day."
+
+    hi "Well then, what a coincidence, eh?"
+
+    ha "True… oh…"
+    #Hanako Happy
+    extend " it's about to start!"
+
+    hi "Eh? What?"
+
+    "Hanako don't say anything, but simply points out into the valley."
+
+    hi "What, I don't see anything…"
+
+    ha "Shhh…"
+
+    "For a moment, it seems like nothing has changed."
+
+    "But, slowly, I notice a change in the pitch of the cicada's cries."
+
+    "Flocks of birds start to swarm towards the valley, circling around patches of trees."
+
+    "Then, without warning, a shadow starts to creep across the valley."
+
+    hi "Sunset…"
+
+    ha "Right. You can watch the change from day to night from here."
+
+    "The shadow edges across the valley floor; a clear line between the light and the dark."
+
+    "On one side, we can see the woods going to sleep, on the other, everything is still wide awake."
+
+    hi "Cool…"
+
+    ha "Isn't it?"
+
+    hi "Still, shouldn't we be getting back?"
+
+    hi "I really don't want to be hiking in the dark…"
+
+    #Hanako pouts
+
+    ha "Okay, fine."
+
+    ha "I just wanted to show you that."
+
+    ha "I've never shown anyone that."
+
+    hi "Thanks, Hanako. I don't think anyone's ever done something like that to me before."
+
+    #hanako smiles
+
+    ha "You're welcome."
+
+    hi "Shall we?"
+
+    ha "Let's."
+
+    "I gather up the picnic basket in one hand, and grasp Hanako's in the other."
+
+    "She doesn't seem to mind, although her quick pace through the woods means that she spends most of the trip back pulling me along."
+
+    return
+
+label en_HT10:
+
+    #bg green door.
+
+    "By the time we return to the Green Door, it is pitch black."
+
+    "Our progress back through the woods was a lot slower than the trip out, mostly due to the dying light."
+
+    hi "Say, it's pretty late, I think the Hall will be closed."
+
+    ha "I… I've got some food in my room."
+
+    #Hanako embarrassed
+
+    ha "D—d—do you want some?"
+
+    hi "I think that would be good. I used up all my food on that crappy picnic we had for lunch."
+
+    #Hanako Releived
+
+    ha "O…okay. Come on, I'm pretty hungry."
+
+    #bg dormhanako
+
+    "Hanako's room is still as sparse as ever."
+
+    "On her bed lie her rabbit and the Steiff bear I bought for her."
+
+    "She busies herself by preparing a few sandwiches for us on her desk."
+
+    ha "I'm sorry, I don't have much, and if we use the kitchen people might see us…"
+
+    hi "It's alright, I've managed on less before…"
+
+    ha "Even so, it's rude of me to invite you here if I have nothing for you…"
+
+    hi "Don't be silly, we're going out, right?"
+
+    hi "It's natural for us to hang out, isn't it?"
+
+    #Hanako embarrassed
+
+    ha "I… I guess."
+
+    "It doesn't take long for us to finish the sandwiches, and after a little cleaning up, Hanako's room is back to its usual, featureless state."
+
+    "A quick check of the watch reveals that it is nearing nine."
+
+    "I guess I need to study some time this weekend."
+
+    "But first, I think I have to try something."
+
+    hi "Say, I think I should go now, but first…"
+
+    #hanako mega embarrassed
+
+    ha "Y… yes?"
+
+    hi "I thought maybe we could try… you know… what we did yesterday."
+
+    ha "Eh?"
+
+    "Now it's my turn to be embarrassed."
+
+    "I've never really gone out with a girl before, so I don't know how to handle this kind of thing."
+
+    hi "I was thinking, if you wanted to, maybe I could kiss you goodnight…"
+
+    "Man, this is such a low point in my life."
+
+    ha "S…sure."
+
+    "Hanako closes her eyes and puckers her lips, clasping her hands tight to her chest."
+
+    "Nervously, I lean forward, and kiss her gently."
+
+    "It lasts a little longer than expected, and before I know it, Hanako's arms are wrapped around me."
+
+    "Breathless again, we separate."
+
+    "Hanako, however, looks intensely nervous."
+
+    hi "Is something the matter? Was that too much?"
+
+    ha "N… no that's not it."
+
+    ha "Um, Hisao?"
+
+    hi "Yeah?"
+
+    ha "I… want to show you something, so don't go just yet, okay?"
+
+    hi "O…kay."
+
+    ha "Just, um, just sit there for a second."
+
+    "Hanako pushes me onto her bed with more than a little force, and I almost fall over backwards."
+
+    "Before I can complain, she has walked over to the door, locked it, and turned off the light."
+
+    hi "Um, Hanako? What's the matter?"
+
+    ha "Shhh…"
+
+    "I can hear Hanako's voice waver as she returns to the center of the room, facing awy from me."
+
+    "With the curtains drawn and the light off, the room it lit only by the small night light in the corner."
+
+    "It casts strange shadows around the room, and I can barely see what Hanako is… HOLY SHIT!"
+
+    return
+
+label en_HT10h:
+
+    "Hanako's dress falls off her shoulders and piles up on the floor, the fabric making a pleasant sound as it comes to a stop."
+
+    hi "H…Hanako?"
+
+    ha "S…shhh."
+
+    ha "I… wanted you to see this."
+
+    "My eyes begin to adjust to the gloom, and Hanako's figure starts to solidify against the shadows of the room."
+
+    "As I watch, she gently lifts her hair from her back, throwing it over her shoulder."
+
+    ha "This… this is me. All of me…"
+
+    "I blink, and suddenly things begin to become clear."
+
+    "The skin on Hanako's back lacks the smooth texture of most people."
+
+    "Grafted skin, taught like a drum, stretches from her neck, right across her back, and down her right leg."
+
+    ha "I… in the fire… I curled up."
+
+    ha "I curled up in a ball, so my back is the worst."
+
+    ha "So… w—what do you think?"
+
+    "Words fail me, so I simply stand up and place my hands on Hanako's back."
+
+    "Even though it looks like leather, it is still smooth to the touch."
+
+    "I find myself gently caressing the grafted skin whilst Hanako shakes before me."
+
+    "Pressing my head against her neck, her scent suddenly fills my nostrils, sending shudders down my spine."
+
+    "Almost unconsciously, I unclasp her bra and let it fall to the floor, where it lands atop the yellow dress."
+
+    hi "Hanako…"
+
+    extend " You look fantastic."
+
+    "I'd be lying if I said anything else."
+
+    "As I suspected, Hanako in the flesh is almost perfectly proportioned."
+
+    "My hands reach the border of the grafted skin, and I finger the divide up her neck, and she turns instinctively to face me."
+
+    "Her eyes are red, but she doesn't cry."
+
+    "I continue to trace the line of her grafts down her front."
+
+    "She gasps a little as I touch her breast, so I take a slight detour."
+
+    "Guided by instinct, I massage her nipple, which hardens almost instantly under my touch."
+
+    "Hanako's gasp turns into a gentle moan, which I seal away with a kiss."
+
+    "As we part, I feel my shirt being undone; Hanako's hands deftly casting it onto the rapidly growing pile of clothes."
+
+    "We kiss again, and my free hand is struggling with my pants."
+
+    "Within moments, Hanako and I are face-to-face, naked save our underwear."
+
+    "My fingers leave her nipple and trace the graft line downwards, and goose bumps begin to appear all over her skin."
+
+    "I fear that I am in a similar state; my hands can't stop shaking, and my mind is awash with a million thoughts."
+
+    "All that guides me now is raw emotion and instinct; nothing else matters but the flesh before me."
+
+    "As my hand reaches her panties, she takes a step backwards, but pulls me with her."
+
+    "She sits on the desk, and tugs at my underwear with nervous hands."
+
+    "Once again we kiss, an uncoordinated, groping kiss, and I help her shuck my briefs."
+
+    "There we are; her sitting on her desk, and me naked, leaning over her."
+
+    "Both of our bodies have prepared ourselves for this; a fact obvious to an outside observer."
+
+    ha "You… you look ready…"
+
+    hi "Are we really going to do this?"
+
+    "My heart pounds in my chest, nothing like what I have felt before, even during my heart attack."
+
+    "Hanako's breathing comes in short, sharp gasps."
+
+    "She wraps one hand around my neck, and gently strokes my sex with the other."
+
+    "My hormones rage, and it takes mammoth self control to contain myself at this instant."
+
+    "Words choke up in my mouth, and I have to swallow hard before I can even speak."
+
+    hi "Ready?"
+
+    "Hanako simply nods, and bites her bottom lip."
+
+    "I lean into her, twisting her soaked panties aside with one hand."
+
+    "She uses the hand wrapped around my manhood to guide me, but even still, I slip a little before reaching my mark."
+
+    ha "Go… do it…"
+
+    "I drive my hips forward slowly, and I feel Hanako's fingernail's dig into my back."
+
+    "There is some resistance as I push forward, but the heat and friction instinctively drive me onwards."
+
+    "She inhales sharply as our hips meet."
+
+    hi "Are you okay?"
+
+    ha "Y…yes… just be slow…"
+
+    "Nervous tension fills me as I begin to grind myself into Hanako."
+
+    "She wraps both arms around my back, pulling me into her."
+
+    "Her warmth surrounds me, both inside and out."
+
+    "She rocks her hips forward to match my thrusting, and we start to pick up the pace."
+
+    ha "F…faster… please… faster…"
+
+    "Sweat beads on both of our bodies, and I feel my grip on Hanako's back start to slip."
+
+    "She notices this too, and wraps her legs around me; her ankles digging into the small of my back, pushing me further into her."
+
+    "Sharp pain shoots across my back as the fingernails dig in for extra grip, but this serves only to heighten the experience."
+
+    "I press myself against Hanako's, her breasts sliding against my sweat-covered chest."
+
+    "I go to kiss her but her head is cocked back in ecstasy, so I kiss her scarred nape, once again tasting salt."
+
+    ha "Keep… keep going…"
+
+    hi "I can't… I'm almost…"
+
+    "I feel a familiar surging in my groin, and I try to remove myself from Hanako before it's too late."
+
+    hi "Hanako… I have to…"
+
+    ha "I don't care, keep going!"
+
+    "Hanako's hips drive themselves into mine, and she clenches me to her body with her ankles."
+
+    hi "I really…"
+
+    ha "Do it!"
+
+    "I grit my teeth to the end, but the mixture of pleasure and pain is too much."
+
+    "I am blinded by the rush as I thrust with my all into Hanako, and she matches my movements."
+
+    "Her arms tighten, and I feel my skin break under her nails."
+
+    "Her legs tighten, and drive us closer together."
+
+    "Her back arches, her hair falling away in a waterfall of purple."
+
+    "I can take no more, and surge deep inside Hanako, my body wracking with each pulse as we orgasm."
+
+    "Panting, sweaty, and completely locked in each other's grasp, Hanako and I stay still whilst the fog of sex slowly lifts."
+
+    "Slowly, Hanako brings her eyes back to mine."
+
+    "This is one of the few times I have seen both of her eyes, and they both seem to say the same thing."
+
+    ha "I love you, Hisao."
+
+    hi "I love you too, but…"
+
+    "Before I can finish, Hanako kisses me, a slow, measured kiss, not like the frenzied ones of before."
+
+    "I manage to pull away from her long enough to get a word in."
+
+    hi "Hanako… I… in you…"
+
+    return
+
+label en_HT10x:
+
+    "We slowly untangle ourselves form each other, and stand up."
+
+    "The desk is covered in sweat and skin oil; proof of our deed."
+
+    "Hanako reaches down into her soiled, twisted panties."
+
+    ha "I know. I wouldn't have done it if I didn't know."
+
+    hi "Know what?"
+
+    ha "The consequences."
+
+    ha "But, I think we will be fine."
+
+    "I'm not sure on what she is basing her assumption, but I am too tired to care."
+
+    hi "Say, can I…"
+
+    "My vision goes grey, and I start to feel dizzy."
+
+    hi "Whoa…"
+
+    "I sit down on Hanako's bed, and put out an arm to steady myself."
+
+    ha "Hisao? What's wrong?"
+
+    hi "I… dunno. Just a little woozy."
+
+    hi "Too much exercise, eh?"
+
+    "I manage a little smile, which Hanako returns, before I pass out onto her bed."
+
+    return
+    
+label en_HT11:
+
+    #HT11, wherein I please my back-washing desires.
+    #I could not recommend getting yourself washed in this manner enough.
+    #The title is from the Poltergeist CD (Ghost Hound OP)
+    #Anyway, it'll probably be done with 2-3 CGs
+    #Or we can cut it.
+
+    #Bg dormhana with eyes open and timeskip. Or skip to black then open later
+
+    "I awake to a warm touch on my stomach."
+
+    hi "W… what happened?"
+
+    #show Hanako pyjamas neutral
+
+    "Hanako quickly retrieves her hand, not expecting me to be awake."
+
+    ha "Oh… I was just checking…"
+
+    ha "The nurse told me to keep an eye on you…"
+
+    hi "The nurse?"
+
+    "Swirling memories of the night before bubble and surface in my mind."
+
+    "I can't think of anything that I'd really feel comfortable telling the nurse."
+
+    ha "Well, after you, um, passed out, I called Lilly."
+
+    "Lilly too? I get the feeling that I'm going to have some explaining to do…"
+
+    hi "Lilly… right… so what then?"
+
+    ha "Lilly came to check on you, and she called the nurse."
+
+    ha "He wanted to know what we did during the day, and he got her to take your pulse."
+
+    ha "He said that you were probably just a little dehydrated, but he asked us to keep an eye on you."
+
+    "The fog of sleep starts to lift, and I start to notice a few things."
+
+    "Firstly, the dim light of pre-dawn is visible around the outline of the curtains."
+
+    "A quick scan of the room reveals that our clothes are exactly as we left them; scattered across the floor…"
+
+    "Hang on…"
+
+    "I pull back the sheets, revealing my naked form to the world."
+
+    hi "H..Hanako… you said Lilly came in here?"
+
+    #Hanako puzzled
+
+    ha "Yes."
+
+    hi "Whilst I was… naked?"
+
+    #hanako embarrassed
+
+    ha "I… I didn't think she'd notice…"
+
+    hi "Huh, I guess you've got a point there. But you could have at least put my pants on…"
+
+    ha "Sorry. I just panicked a little."
+
+    "I place a hand on Hanako's shoulder."
+
+    hi "That's alright. Thanks for looking out for me."
+
+    #Hanako smile
+
+    ha "It's okay. Oh, the nurse wanted to see first thing; he said he'd be in his office at seven."
+
+    "Hanako's bedside clock reveals that this is just a little over ninety minutes in the future."
+
+    hi "Good idea; I think I would have gone and seen him anyway."
+
+    "Hanako yawns, a deep, long yawn."
+
+    hi "Huh, tired are we?"
+
+    "She nods, sleepily."
+
+    ha "I stayed up all night watching you, just like the nurse asked…"
+
+    "I know that Hanako meant no harm by that, but I can't help but feel a little unnerved knowing that someone was watching me sleep…"
+
+    hi "Thanks, Hanako. You're pretty amazing, you know?"
+
+    #Hanako embarrassed
+
+    ha "It…it's nothing."
+
+    "I get out of bed, and start putting on my clothes."
+
+    hi "I'm going to head back to my room, and get ready to see the nurse."
+
+    hi "You should really get some sleep."
+
+    ha "Okay. Can I see you after?"
+
+    hi "Sure thing. I'll come by and grab you when I'm done, 'kay?"
+
+    ha "'kay."
+
+    "Hanako crawls onto the bed, and pulls the sheets over her."
+
+    hi "G'night."
+
+    "I lean over and we kiss."
+
+    ha "Night."
+
+    "I grab the picnic basket and head out into the corridor, closing the door behind me as quietly as I can."
+
+    #BG bathroom
+
+    "Being so early, I decide to clean myself up before meeting with the nurse."
+
+    "After discarding my clothes into the laundry basket, I enter the small bathroom and start running the hot water."
+
+    "Not wanting to disturb Kenji, I opt for the washbasin-and-hose option rather than the upright shower."
+
+    "It's been a while since I've washed myself like this, anyway."
+
+    "I fish out the little bath stool from the cupboard, and get myself ready."
+
+    "There's something relaxing about washing like this, and it gives you a sense of purpose."
+
+    "As I am scrubbing away at my legs, I hear the catch on the door click open."
+
+    hi "Ah, Kenji, I'm in here. I'll be done in a bit…"
+
+    ha "I… I'm not Kenji…"
+
+    "Hanako stands in the doorway, naked and holding a towel."
+
+    hi "Hanako? What are you doing here?"
+
+    #Hanako embarrassed/CG
+
+    ha "I… couldn't sleep."
+
+    ha "So I was going to go to the nurse with you, but you were in here."
+
+    ha "C…can we do it together?"
+
+    hi "Um… s—sure. I suppose."
+
+    "Hanako smiles, hangs up her towel, and kneels down behind me."
+
+    #CG switch, Hanako kneeling behind Hisao. Perhaps a chain for different expressions?
+    #Also lol where the hell is weee?
+
+    ha "I guess I'll go first then…"
+
+    "Hanako leans forwards, pressing herself into my back."
+
+    "She reaches past me and grabs my washcloth, wetting it in the washbasin, and starts to scrub my back."
+
+    ha "H—how is it?"
+
+    "Remember, remain calm. That is important in situations like this…"
+
+    hi "Gr…ood."
+
+    ha "Grood?"
+
+    hi "I mean great…"
+
+    "Embarrassment aside, it does feel pretty good."
+
+    "Like when someone offers to scratch your back for you, only when you're naked."
+
+    "Actually, that may not be the best comparison."
+
+    "Hanako leans forward again to rinse the cloth, but this time stays pressed against my back."
+
+    "She wraps her arms around me and starts to wash my chest, then my stomach… and then…"
+
+    #Chain CG (maybe) Of Hanako now pressed into Hisao
+
+    hi "H…Hanako!"
+
+    ha "Huh? Shouldn't I wash there?"
+
+    hi "T—that's not it. It's just I…"
+
+    "Hanako continues to rub the washcloth into my groin, which is already responding to her touch."
+
+    hi "Ijustdontwannapassoutagain."
+
+    "Hanako stops, and retracts the washcloth."
+
+    ha "Y—you're right. You should see the nurse before we… do this kind of thing."
+
+    "I grab the wash basin and empty its contents over the two of us."
+
+    # Chain CG, Hanako wet
+
+    ha "H—hey!"
+
+    hi "Heh, we can still play around though. Here, it's your turn now…"
+
+    "I spin on the bath stool, snatch the washcloth form Hanako, and start to massage it into her shoulders."
+
+    hi "Here, you sit up here…"
+
+    "We switch places, with Hanako sitting on the stool whilst I wash her back."
+
+    # Chain CG (if you want) Hanako on the bath stool
+
+    "I continue to wash her back, but every so often I feel my hands reaching around her sides to feel her chest."
+
+    ha "I.. I thought you said we couldn't…"
+
+    hi "I said I couldn't…"
+
+    "Copying Hanako's earlier moves, I slide my hand between Hanako's thighs."
+
+    ha "H—Hisao…"
+
+    "She squeezes her legs together, causing my suds-covered hand to slip around her legs."
+
+    "Hanako squeals a mixture of surprise and pleasure, and instantly I am reminded of where we are."
+
+    "If Kenji were to find out about this, I would never hear the end of it."
+
+    hi "I guess you're right. And I should go see the nurse as soon as possible."
+
+    ha "O…okay."
+
+    "I lean over Hanako, turn on the shower head on the flexible hose, and start to rinse us down."
+
+    "Our playtime at an end, we quickly dry ourselves and dress."
+
+    #BG dormhisao
+    #show Hanako casual embarrassed
+
+    "Hanako wears the same dress as she did yesterday."
+
+    ha "I was in a hurry, and it was already out, so…"
+
+    hi "Don't stress; I like that dress."
+
+    hi "It suits you…"
+
+    #Hanako casual smile
+
+    ha "T…thanks."
+
+    "I wrap my arm around Hanako, and together we walk to the nurse's office."
+
+    #BG nurse office w/fade
+
+    "The nurse removes the stethoscope from my chest, and I re-button my shirt."
+
+    nk "So, explain to me what happened yesterday."
+
+    hi "Well, we went out for a bit of a walk in the woods, and then when I came back, I just felt really tired, and that's all I remember."
+
+    "The nurse eyes me suspiciously."
+
+    nk "So, on this… walk, was there any strenuous activity?"
+
+    hi "Um, not really."
+
+    nk "Did you eat much yesterday?"
+
+    hi "I had a little bit of lunch and dinner, but I skipped breakfast."
+
+    nk "What about water?"
+
+    hi "I can't remember drinking much, to be honest."
+
+    "The nurse taps his pen against his clipboard a couple of times, never once taking his eyes away from mine."
+
+    "After a brief pause, he hands me a small container."
+
+    nk "Behind that door you'll find a toilet. I'd like you to fill this up."
+
+    hi "Sure thing…"
+
+    nk "Mid-stream, please."
+
+    "There's something unnatural about urine samples."
+
+    "Giving someone a warm cup of something you normally flush away is just… wrong."
+
+    "But the nurse takes it as if I were offering him a normal glass of water, and inserts a couple of paper strips."
+
+    "He swirls them around the yellow liquid, taps off the excess, and examines them."
+
+    nk "Hmm, it's just as I thought."
+
+    nk "Your blood sugar is pretty low, and it looks like you were pretty dehydrated."
+
+    nk "You've got to look after your body, especially if you are planning to take up “walking in the woods” as a hobby."
+
+    #nurse smile
+
+    nk "Do you get my drift?"
+
+    "I guess it's impossible to hide anything from him."
+
+    hi "Sure thing."
+
+    nk "You should go and get a good breakfast, and also drink a few litres of water today."
+
+    nk "Not all at once, mind. Try a few bottles spread out across the day."
+
+    hi "Got you."
+
+    nk "Oh, and one last thing."
+
+    hi "Hmm?"
+
+    nk "I know you already know this, but don't do anything now that you may regret later."
+
+    nk "You know, on your “walks.”"
+
+    hi "Um, right. I'll be careful."
+
+    nk "Please do. See you later."
+
+    #BG corridor.
+    #show Hanako casual concerned/neutral
+
+    "Outside the nurse's office, Hanako waits patiently."
+
+    ha "So? What's the matter?"
+
+    hi "Oh, nothing, it's nothing to do with my heart, thankfully."
+
+    #Hanako Smiles
+
+    ha "That's good news!"
+
+    ha "So, what should we do now?"
+
+    hi "Well, I was just ordered to have a good breakfast, would you care to join me?"
+
+    ha "That sounds like fun, but I don't think the Hall is open just yet…"
+
+    hi "I was actually thinking we could head for the Shanghai, what do you think?"
+
+    ha "O…okay. Let's go."
+
+    return
+
+label en_HT12:
+
+    #This is the first of the scenes written since the changes to the Hanako paths.
+    #I'll finish the HT path as per the new plan, then rewrite.
+    #I just hate leaving things unfinished.
+    #also, not entirely sure on Hanakos reaction at the end.
+
+    #bg shanghai with dissolve
+
+    "As expected, the Shanghai is deserted."
+
+    "Yuuko sits at the back of the café, her eyes red and droopy."
+
+    hi "Must have had a rough on last night then, eh?"
+
+    yu "Huh? Oh, no, I was just up late last night."
+
+    yu "I was hanging out with… um… with a friend."
+
+    "Yuuko's mid-sentence pause says more than her words, but in the interest of keeping her stable enough to serve us, I don't push the issue."
+
+    hi "Right. I hope you had fun."
+
+    yu "Oh, we did, I can assure… you…"
+
+    "Yuuko suddenly blushes, as if realising what she has just said."
+
+    "Must change the topic, quick…"
+
+    hi "So, is breakfast being served yet?"
+
+    yu "Sure thing, we have both traditional and western breakfasts available."
+
+    hi "Well, I'll take a full western breakfast."
+
+    ha "I'll take the same, please."
+
+    yu "Two breakfasts coming up."
+
+    "Yuuko disappears into the back of the cafe, and Hanako and I take our seats."
+
+    hi "So, how are you feeling now? Still tired?"
+
+    ha "A little."
+
+    #Hanako smile
+
+    ha "B—but better now that you're okay."
+
+    hi "Yeah, same here. I was a bit worried that the nurse was going to ban me from… well, you know…"
+
+    #Hanako Embarrassed looking down
+
+    ha "Y—yeah."
+
+    "Hanako looks away; apparently it's still a little early to bring up this subject in public."
+
+    "Then again, I can feel a blush spread across my face at the simple thought of last night."
+
+    "Our uncomfortable silence is short lived, as moments later Yuuko returns, carrying two heaped plates of food."
+
+    "I grit my teeth and prepare to dodge as the plates waver in Yuuko's grip as if she were daring gravity to run its course."
+
+    hi "Do you want a hand there?"
+
+    yu "N—no, I'm fine, I just…"
+
+    centered "*Crash*"
+
+    "She slams the plates onto the table, and for a second I fear that they will smash, along with the table."
+
+    "Surprisingly, everything holds, albeit a little mixed up."
+
+    yu "There we are, just as ordered."
+
+    hi "Thanks."
+
+    yu "Say, Lilly's not with you guys today?"
+
+    hi "We decided to give her a day off. She always seems to be fretting over us, so it seemed only fair to give her a day to herself."
+
+    ha "People… need time alone, I think."
+
+    yu "Hmm, that sounds right enough."
+
+    yu "But this isn't an excuse for the two of you to be alone, is it?"
+
+    #Hanako embarrassed
+
+    $doublespeak (ha,hi,"Well, maybe…","Yeah, pretty much…")
+
+    #Yuuko Happy
+
+    yu "Oh ho, does that mean you two are, you know?"
+
+    hi "I guess that's one way of putting it."
+
+    yu "Ha! I knew it!"
+
+    yu "Don't worry though, I can keep a secret!"
+
+    "My memory drifts back to the last time Yuuko promised that she would keep a secret for us."
+
+    "My memory reminds me that this is a very bad idea."
+
+    hi "There's really no need, it's not that much of a secret."
+
+    #Yuuko saddened
+
+    yu "Oh, alright. Still, I'm not one for gossip."
+
+    "Something about that seems at odds with reality, but I think I'll let it slide."
+
+    hi "So what else is happening wit you, Yuuko?"
+
+    #Yuuko happy
+
+    yu "Well, I found my boyfriend again!"
+
+    hi "Found? Again?"
+
+    yu "Yes! I found him again."
+
+    yu "I thought he had moved or something, but it turns out he had just become a recluse."
+
+    hi "Is that much better?"
+
+    yu "He's not dead!"
+
+    hi "An added bonus, I must admit."
+
+    ha "Where did you find him?"
+
+    yu "I was going to visit Lilly after school the other day, and I ran into him there."
+
+    hi "What was he doing at the school?"
+
+    yu "Oh, he's a student!"
+
+    ha "I don't remember you visiting Lilly…"
+
+    yu "I got a bit distracted, Kenji's got a lot of interesting things in…"
+
+    hi "Kenji?"
+
+    hi "As in militant anti-feminist hermit-dwelling blind-as-a-bat Kenji?"
+
+    yu "Oh, so you know him then!"
+
+    "I pinch the bridge of my nose, hoping that the pain will help me cope with the reality of the situation."
+
+    hi "So you're telling me that your boyfriend is my roommate, the guy with glasses so thick that they must weigh a tonne?"
+
+    ha "And he's a little weird…"
+
+    hi "And you've even been to my room, which involves walking past his room, and didn't even notice?"
+
+    yu "Well, I wasn't looking for him then."
+
+    hi "This makes no sense."
+
+    #Yuuko confused
+
+    yu "Why not?"
+
+    hi "Because it doesn't, that's why."
+
+    hi "I mean the guy rarely leaves his room, even to go to classes… wait…"
+
+    hi "The other day, when I was pounding on his door…"
+
+    yu "Oh, so that was you? He said it was an annoying jerk that would go away if I kept quiet…"
+
+    hi "Absurd."
+
+    "My brain has shut down."
+
+    "I know that both Yuuko and Kenji have mentioned that they had lost their respective partners, but this seems to make no sense at all."
+
+    "Then again, that alone makes it make perfect sense."
+
+    "My fragile mind can't take any more abuse, so I start shovelling the hot breakfast into my mouth as quickly as I can."
+
+    ha "So, how did you two meet?"
+
+    yu "Well, he used to come here every so often, always by himself, so I started talking to him."
+
+    yu "Then, you know, we were out drinking one night, and one thing led to another…"
+
+    yu "He was just so passionate about whatever he was raving about that I couldn't leave him alone…"
+
+    yu "It's nice to have someone dedicated, you know."
+
+    hi "Dedicated enough to just disappear for however long without telling you he was just up the road the whole time?"
+
+    yu "What can I say? Sometimes people just need some space…"
+
+    "Something tells me that, against all odds, Yuuko and Kenji are just… made for each other."
+
+    "However, they were not made for me."
+
+    "The sheer enormity of this revelation makes my head hurt, and with our breakfasts finished, there's no reason for us to hang around."
+
+    hi "Well, I'd love to stay and chat, but we have a date."
+
+    #Hanako confused
+
+    ha "We do?"
+
+    yu "Aw, isn't that sweet. Don't worry, I won't keep you."
+
+    hi "Thanks. Here, keep the change."
+
+    "I grab Hanako's hand, and we are out the door before Yuuko even gets the chance to clumsily bid us farewell."
+
+    #bg street
+
+    hi "So, where to now?"
+
+    ha "I don't know, I'm a little tired, actually."
+
+    "Hanako has a point; the heavy breakfast in my stomach and the excitement of the last day has left me feeling a little sleepy, too."
+
+    "I can only imagine what it would be like after having stayed up all night."
+
+    hi "How about we sit down for a bit? There's a small park just near here."
+
+    ha "Sounds good."
+
+    #bg picnic park
+
+    "The little park is only a few minute's walk from the Shanghai."
+
+    "Still being fairly early in the morning, the only other people in the park are the occasional joggers."
+
+    "I half expect Emi to bound past on her black-ribbon prosthetics at any time; she seems like the type to trade a morning's sleep for a run, any day."
+
+    "We find a small bench under a tree, and take a seat."
+
+    "The cool of the shade is refreshing; there's no doubt that summer is just around the corner."
+
+    "Hanako rests her head against my shoulder, and I put my arm around her."
+
+    ha "I'm glad you're not dead."
+
+    hi "Not half as glad as I am, I can assure you."
+
+    "Hanako laughs a little, a nervous titter on the edge of hearing."
+
+    ha "T—that's not what I meant."
+
+    ha "Last night, I kept thinking it was my fault."
+
+    ha "Like, that you passed out because of what I did…"
+
+    hi "I think you mean what we did; it was kind of a team effort…"
+
+    #Hanako embarrassed.
+
+    ha "I—it was good though."
+
+    hi "I… didn't hurt you, did I?"
+
+    ha "A little, but only at the start."
+
+    hi "Sorry."
+
+    ha "It's okay. I don't think it'll be like that all the time."
+
+    hi "I guess you're right."
+
+    hi "Er, Hanako?"
+
+    "I get no response from Hanako, who has fallen fast asleep on my shoulder."
+
+    "She deserves the rest, so I'm content to act as a pillow for the moment."
+
+    "Besides, there are worse ways to spend a Sunday than to have a girl sleeping against you."
+
+    #timeskip?
+
+    "Morning slowly gives way to the midday sun before Hanako stirs, gently moaning and wiping her eyes."
+
+    hi "Morning, sleepy."
+
+    ha "Huh? Where am I…?"
+
+    hi "The park. You fell asleep after breakfast."
+
+    #hanako embarrassed
+
+    ha "Oh… sorry…"
+
+    hi "Don't be; you looked after me last night, you deserve a rest."
+
+    ha "But it's still rude."
+
+    hi "Don't sweat it. What's say we head home via Aura mart and pick up some snacks?"
+
+    ha "S—sure."
+
+    #bg Auramart
+
+    "The small convenience store is unusually busy for a weekend, but even still you couldn't call it crowded."
+
+    "Hanako and I walk down the narrow aisles together, randomly grabbing snacks as we pass them."
+
+    "As we pass by the toiletry section, something catches the corner of my eye, causing my heart to race a little."
+
+    hi "Um, Hanako?"
+
+    ha "Mmm?"
+
+    hi "Say, I forgot to pick up, er, some chocolate milk. Could you go get it for me?"
+
+    #hanako puzzled
+
+    ha "S-sure."
+
+    "Hanako turns around, wearing a quizzical look."
+
+    "With her gone, I turn my attention back to the toiletries, specifically one section of the shelf."
+
+    "I was hoping for a quick and discreet decision, but instead I am bombarded with dozens of choices."
+
+    "Thin, thick, flavoured, glow-in-the-dark, ribbed, textured, vibrating, assorted…"
+
+    "Tiny, brightly colored packages fill the shelf space between the toothpaste and the deodorant."
+
+    "I am lost in a world totally unknown to me, when suddenly…"
+
+    #Hanako appears
+
+    ha "Here you are Hisao, I got… what are you looking at?"
+
+    hi "Eh!? Um, er… nothing…"
+
+    ha "Condoms?"
+
+    "Suddenly, every pair of eyes in the store is trained on us."
+
+    "I can feel the sweat beading on my brow."
+
+    hi "Well, I thought, that if…"
+
+    ha "I suppose it's a good idea."
+
+    "Hanako reaches out and grabs a packet marked “assorted,” adding it to our shopping basket."
+
+    "Surprisingly, she seems to be less embarrassed about this than I am."
+
+    hi "Aren't you worried? All these people are looking at us!"
+
+    ha "Eh? Who is?"
+
+    "Hanako looks up from the groceries, finally noticing the stares of the other people in the shop."
+
+    #hanako deep embarrassed
+
+    ha "I… well… I… we'vegottago."
+
+    "Hanako turns bright red, grabs me by the sleeve, and rushes for the counter."
+
+    "The attendant quickly scans the items and puts them into the bag, snickering a little when he finally pulls the small box from the basket."
+
+    "Neither Hanako nor I can bear to make eye contact with him, and as soon as I have my change, we make a rush for the exit."
+
+    #bg street
+
+    #hanako embarrassed looking down
+
+    "Outside the store, I could almost swear that I can hear laughing from inside."
+
+    ha "Why didn't you tell me they were looking?"
+
+    hi "Well, they weren't until you said… that."
+
+    ha "Condoms?"
+
+    hi "Yeah."
+
+    ha "Well, they're perfectly normal, right?"
+
+    hi "I… guess. But that doesn't mean you should yell it out…"
+
+    #hanako deep embarrassed
+
+    ha "S—sorry."
+
+    "I pat Hanako on the head."
+
+    hi "Don't worry, it's over now. And we've got them now…"
+
+    ha "R—right. Better to be safe."
+
+    hi "Right."
+
+    "…"
+
+    hi "Should we head…"
+
+    ha "Yeah let's head back."
+
+    "Hanako and I set off back towards the school at a nervously fast pace."
+
+    "Not once do either of us look back towards the little convenience shop."
+
+    return
+
+label en_HT13:
+
+    #bg hanadorm
+
+    "As if we were both on autopilot, we head directly for Hanako's room."
+
+    #Hanako bashful ?
+
+    "Hanako locks the door behind her, not once taking her eyes from mine."
+
+    ha "I… I guess you'll want to clean up after such a stressful day?"
+
+    hi "Eh? But I hardly… oh."
+
+    hi "Right. Clean up."
+
+    "I drop the bag of groceries and unbutton my shirt whilst Hanako fumbles with the zipper on her dress."
+
+    "She clicks off the light as her dress falls to the floor for the second time in as many days."
+
+    "I step over the rapidly growing pile of clothes to take Hanako in my arms, her skin warm and tender against mine."
+
+    ha "Shouldn't we wait until we get into the bathro…"
+
+    "I stop Hanako's words with a long, deep kiss."
+
+    "She resists for a moment, but soon she is kissing me back with equal ferocity."
+
+    "As we part, she gently bites my lower lip, stretching it a little before releasing it."
+
+    "I use the brief reprise to free myself from my strained pants."
+
+    "A moment later and either my pants or my raging member would suffer irreparable damage."
+
+    "Hanako fumbles around in the dim afternoon light, desperately trying to find the small box that caused such embarrassment such a short time ago."
+
+    "Packets of snacks fly across the room as she retrieves the colored box."
+
+    ha "So, uh… how do we…?"
+
+    hi "I don't think there's much to it, you just… put it on."
+
+    hi "I think."
+
+    "Hanako tears open the box in a nervous panic, sending little foiled packets across the room."
+
+    ha "Oops…"
+
+    hi "R…relax."
+
+    "My quivering voice probably doesn't have the calming effect that I had hoped."
+
+    return
+
+label en_HT13h:
+
+    "I am temped to help Hanako search, but watching her kneeling, naked body squirming on the floor is far more appealing."
+
+    #Perhaps a cg?
+
+    "The light is better now than it was yesterday, and I can clearly see the differences in the grafted and original skin."
+
+    "Just as she said last night, the majority of the scarring is on her back, with only the upper outside of her right thigh showing any damage."
+
+    "Her entire left leg is like china; incredibly pale and smooth."
+
+    "Wearing concealing clothing for most of her life must have protected her skin from the ravages of the sun."
+
+    #Damn, even I do not know what the fuck I am talking about anymore.
+
+    "I can watch no longer, so I kneel down, flipping Hanako onto her back as I do."
+
+    "She gasps a little, but I set upon her like an animal in heat."
+
+    "I kiss her neck whilst one hand seeks out the thighs that were enchanting me seconds ago."
+
+    "She reflexively clenches her legs together around my hand, but relaxes a little as I slide my probing fingers ever deeper into the tuft of her pubic hair."
+
+    "My fingers feel a warm wetness, and I push forward."
+
+    "Again, she gasps slightly as my fingers massage her insides."
+
+    ha "H—H—Hiiiisao…"
+
+    "I kiss down her neck to her chest, feeling the texture change as I move from the grafted skin to the natural skin of her breast."
+
+    "I rub her privates a little harder and softly bite her nipple, resulting in a delighted squeal from the girl pinned beneath me."
+
+    "Suddenly, my world flips over, and I find myself looking at the ceiling."
+
+    "Somehow, Hanako has managed to flip me over, and is now straddling my stomach."
+
+    #too much?
+
+    "Her pubic hair tickles my skin and she bends over me, sucking on my neck, and then biting my earlobe."
+
+    "Payback for the nipple, I guess."
+
+    "After a breathless second, she rears back up, flicking her hair away from her face with the same motion."
+
+    "Both of her dark eyes are fixed on mine, and for a moment all we can do is stare at each other."
+
+    ha "I… I guess it's time…"
+
+    "Shuffling on her knees, Hanako slides herself over my erection, picks up a foil packet from the floor, and tears it open."
+
+    hi "I don't think…"
+
+    "Too late."
+
+    "The rubber circle slips straight out of the packet and lands amongst the scattered clothes and snacks."
+
+    "Hanako panics and tries to pick up the condom, but that only causes it to slip out of he grasp once again."
+
+    "I scoff a little at the hilarity of the image."
+
+    "A second ago, Hanako was lost in the flurry of sex, but now she's back to her usual, embarrassed self."
+
+    ha "D—don't laugh. It's slippery…"
+
+    hi "I think that's the point, here…"
+
+    "I retrieve a fresh packet from the floor, and take out the rubber, placing it on the head of my cock."
+
+    ha "C… can I?"
+
+    hi "Eh? I guess…"
+
+    "Hanako reaches down, her fingers wrapping around my dick and unrolling the latex over its shaft."
+
+    "I gulp a little as it unrolls, as it applies a little pressure along my entire length."
+
+    "The experience is over in a second, and Hanako wastes no time in positioning herself over me, my shaft still in her hand as she rears herself over me."
+
+    #damn it why am I always ripping off the Lilly path?
+
+    ha "I… I'm doing it…"
+
+    "She lowers herself, guiding me into her with her hand."
+
+    hi "H—how is it?"
+
+    ha "It feels different… but good…"
+
+    "She falls onto my chest, wrapping her arms around my neck and burying my face in her breasts."
+
+    "In response, I rock my hips forward and upwards."
+
+    "Inside the latex, I feel slightly different, but Hanako's warmth still envelops me."
+
+    "With each thrust, Hanako rolls her own hips onto mine, driving us ever closer together."
+
+    "I reach around her body and grab her butt, pulling her in further still."
+
+    "Her arms tighten, driving my face deeper into her chest."
+
+    "Breathing becomes gasping, which becomes sub-vocal screaming."
+
+    ha "H… Hi… Hisssssssaa ooooooh…."
+
+    ha "Hiiiii Hi Hi Hi Hiiiiissssssa…"
+
+    "Sweat beads on my brow only to be wiped away by breasts, and I find myself digging my fingers into the soft skin of Hanako's behind."
+
+    "With the extra grip, I thrust upwards with all the force I can muster, and Hanako loses all ability to make words."
+
+    ha "Hiiiahahahaaaaaa"
+
+    "*Knock Knock Knock*"
+
+    li "Hanako? Hanako?! Are you alright?"
+
+    li "I thought I heard something… I'm coming in…"
+
+    "Hanako and I freeze, and we hear Lilly frantically turn the locked door handle."
+
+    "The door rattles for a second, and then stops."
+
+    "Lilly's voice is gone, and we breathe a sigh of relief."
+
+    hi "Um, should we keep going?"
+
+    "Hanako, breathless beyond speech, simply rocks herself forward onto me."
+
+    "We're both so close, and the close call with Lilly has both of our hearts racing."
+
+    "Nervous energy fills us and we both speed up our thrusting."
+
+    "I can hear Hanako trying her hardest not to make a sound, but the wet thwacking of our deed is hard to mask."
+
+    ha "Hisao… I… I'm…"
+
+    hi "Me too… just a little…"
+
+    "My muscles tense, my hands grab just ever so tighter, and we both move just a little faster…"
+
+    ha "Hisao… I'm…. I'M…"
+
+    hi "Just… j—just…"
+
+    "Hanako's arms grip me like a bear, and she squeezes me between her legs."
+
+    ha "…Coming!"
+
+    "Fingernails dig into Hanako's butt, and my back arches into her body as I lose control."
+
+    "I feel the hot mass of semen fill up around me in the condom, a slightly unnerving feeling to say the least."
+
+    "I pull out of Hanako quickly and remove the used rubber, which is now covered in all manner of bodily fluids."
+
+    hi "Ew…"
+
+    return
+
+label en_HT13x:
+
+    "Hanako rolls off me, and lies down beside me."
+
+    ha "That was… wow."
+
+    hi "Yeah but… I think I need to wash up."
+
+    "I carry the used condom between two fingers, and open the door to the bathroom."
+
+    "I step through the door without looking, and almost trip over Lilly."
+
+    hi "LILLY?!"
+
+    li "H—Hisao? W—what are you doing here?"
+
+    "Lilly tries to stand up rapidly, and almost falls over in the process."
+
+    #Lilly Surprised
+
+    "Instinctively I reach out to help her, but pull back at the last second."
+
+    "It's hard enough to explain this as is; let alone if I were to cover her in Hanako and my juices."
+
+    "She quickly rights herself, but she can't hide the embarrassment that is written across her face."
+
+    hi "Are you alright?"
+
+    li "I… heard some strange noises, and I thought that Hanako might be in trouble."
+
+    li "She had a difficult night last night and so I felt obliged to check on her."
+
+    li "And I hadn't seen her all so so perhaps something was amiss."
+
+    li "The front door was locked so I tried to make an entry through the bathroom butnowIrealisethereisnoproblemgoodnight."
+
+    "Lilly, too embarrassed to stay in our company, bows quickly and then retreats back to her room through the bathroom."
+
+    "In order to prevent further mishaps, I flush the condom and start the shower."
+
+    "I rinse myself of the sweat, and then change places with Hanako, who does the same."
+
+    "We dry ourselves in silence."
+
+    "Hanako changes into her pyjamas, and I redress."
+
+    #Hanako pjs embarrassed looking down.
+
+    "For what feels like an hour, we just look at each other sheepishly."
+
+    "A number of times, one of us goes to speak, but no words come out."
+
+    "Both of us are too embarrassed to move, so we just sit uncomfortably."
+
+    "Eventually, there is a small knock on the door, followed by a whisper."
+
+    li "Um, Hisao, Hanako? I have made some tea, would you like to join me?"
+
+    "As if commanded by Lilly's words, Hanako and I sheepishly get up and open the door."
+
+    #bg dormhall
+
+    hi "Lilly… I'm sorry…"
+
+    ha "It won't happen again."
+
+    #Lilly Smile
+
+    li "I should be the one to apologise, I was the one invading your privacy…"
+
+    hi "But we…"
+
+    li "You were doing what lovers do."
+
+    li "Though, after a close call like last night, is this really wise?"
+
+    ha "But the nurse said…"
+
+    #Lilly surprised
+
+    li "You asked the nurse if it was okay?"
+
+    hi "Well, not really, but I think he knew…"
+
+    #Lilly blush
+
+    li "So last night too?"
+
+    ha "I'm sorry I didn't tell you…"
+
+    li "I suspected that fainting was too much of a reaction to a long walk…"
+
+    #lilly smile
+
+    "Lilly shakes her head, as if trying to get herself back on track."
+
+    li "Come now, the tea is getting cold."
+
+    #bg dormlilly
+
+    "The three of us sit around Lilly's small table, sipping our tea in an uncomfortable silence."
+
+    "Hanako and I are still wearing embarrassed faces, but Lilly seems almost pleased at the situation."
+
+    li "I guess I was wrong about you two, though."
+
+    hi "Eh? What do you mean?"
+
+    #Lol convenient plot-tie up phase GET. And you thought this was just porn.
+
+    "Lilly's smile widens a little, like someone remembering their childhood."
+
+    li "When you and Hanako first met, I thought that it was a good chance to help her make something more than a friend."
+
+    li "But after the festival and that picnic, I thought that she wasn't interested in you in that kind of way."
+
+    li "So I just let things be. Forcing these issues never really works."
+
+    hi "I don't get what you mean…"
+
+    ha "You… wanted to set us up?"
+
+    li "Well, nothing so blatant. I merely wanted to push you two together."
+
+    li "It seems that I didn't have to do anything."
+
+    hi "But, I think you did, in a way."
+
+    hi "If you didn't get sick, I don't think Hanako and I would have ended up together."
+
+    ha "I don't think so either."
+
+    hi "And you're still our friend… so long as you're okay with that."
+
+    #Lilly insulted? Or happy
+
+    li "My my, of course I am. I'm overjoyed to see Hanako happy."
+
+    li "She's had a rough time. When she first arrived, I thought she would never open up to anyone."
+
+    li "It took her about two months before she would even talk to me."
+
+    hi "Really? But you're like best friends…"
+
+    ha "Lilly was always nice to me. I was just a little afraid at the beginning."
+
+    hi "I guess it is hard to move into a new school, especially one like this."
+
+    hi "I still can't believe that I met everyone here so quickly."
+
+    li "New places are always a good basis for new friendships."
+
+    li "And it's normal to make a lot of friends in a place like this, where everyone is the same because they are different."
+
+    #too much?
+
+    "I open my mouth to reply, but my words are blocked by a long-reaching yawn."
+
+    hi "Oh… sorry."
+
+    #Lilly and Hanko smile
+
+    li "It's quite alright."
+
+    li "I can imagine that you would be exhausted."
+
+    #Hanako embarrassed
+
+    hi "Yeah, and I didn't get a bit of study done…"
+
+    #Hanako shokku!
+
+    ha "The exams! I forgot!"
+
+    #dicking-induced amnesia. Happens all the time.
+
+    "I pat Hanako on the head."
+
+    hi "Tell you what, tomorrow night, we'll study together. Sound good?"
+
+    #Hanako embarrassed happy
+
+    ha "O—okay."
+
+    li "My my, this sounds interesting."
+
+    hi "It's not like that, we need to study."
+
+    hi "We're in the same classes, so it makes sense, right?"
+
+    ha "Right?"
+
+    li "…"
+
+    hi "Honestly! It's not like that…"
+
+    #Lilly smile/ fufufu
+
+    li "Very well, I will take your word for it."
+
+    li "Now, however, I think you should return to your room before you cause us any more distress."
+
+    li "Good night, Hisao."
+
+    "I stand up, and Hanako springs to her feet."
+
+    ha "G…goodnight Hisao…"
+
+    "She leans forward, almost tripping over Lilly's table in the process."
+
+    "She kisses me gently on the cheek, a grin spreading from ear to ear."
+
+    ha "I… I'll see you in class tomorrow."
+
+    hi "'night, Hanako."
+
+    ha "Hisao?"
+
+    hi "Mmm?"
+
+    ha "I love you."
+
+    hi "Love you too, night."
+
+    #Fade to black.
+
+    return
