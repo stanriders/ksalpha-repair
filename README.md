@@ -1,9 +1,11 @@
 ksalpha-repair
 ==============
 
-Kind of documentation is in /game/Dev Files/
+**Documentation**: https://github.com/stanriders/ksalpha-repair/wiki/KS-ALPHA-CHEATSHEET-by-muffinduck01
 
-What needs to be done: Find out what needs to be done.
+Other documentation is in /game/Dev Files/
+
+**What needs to be done**: Find out what needs to be done.
 
 Done:
  * Hanako routes (both good and bad)
