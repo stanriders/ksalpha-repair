@@ -60,7 +60,7 @@ label jumper:
         ui.image("ui/bg-config.png", xalign=0.5, yalign=0.5)
 
         ui.vbox(xpos=180, ypos=110, background=None)
-        ui.text("Select Act", style="page_caption")
+        ui.text(displayStrings.game_menu_jumper, style="page_caption") #"Select Act"
         ui.null(height=8)
 
         # Hanako

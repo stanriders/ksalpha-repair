@@ -18,7 +18,14 @@
             if last_visited_label:
                 gm_exit_to = wrap_label(last_visited_label)
         return True
-    
+        
+    # # # [ russian hepburn/polivanov name translation switching [str]
+    def switch_runamings(target):
+        persistent.runamings = target
+        switch_language("ru") # HURR DURR I HACK (not working anyway tho) [str]
+        return True
+    # # # ] [str]
+        
     def make_s_scenes(lang):
         if lang == master_language:
             return displayDict[master_language].s_scenes
@@ -57,7 +64,12 @@
     interfacefont = mainfont
     srsfont = "gentium.ttf"
     jpfont = "mikachan.ttf"
+    rufont = "playtime_cyr2.ttf"
     
+    # it's being used in multiple scripts, much easier to put it here than redefine everywhere [str]
+    def ruw(string):
+        return (((('{font=') + (rufont)) + ('}')) + (string)) + ('{/font}')
+        
     # container class for various UI strings. Yes, I am aware of config.translations.
     # Note that changing these may or may not be a good idea; sometimes the layout isn't flexible enough.
     
@@ -127,7 +139,7 @@ init -2 python:
 
         # @__akiaki: added jumper to game/pause menu (only appears if z_jumper.rpy is present)
         if renpy.has_label('jumper'):
-          config.main_menu.insert(3, ("Select Act", ui.jumps("jumper", "intra_transition"), 'True'))
+          config.main_menu.insert(3, (displayStrings.game_menu_jumper, ui.jumps("jumper", "intra_transition"), 'True')) #"Select Act"
 
         # contents, game menu, etc.
         config.game_menu = [
@@ -145,7 +157,7 @@ init -2 python:
 
         # @__akiaki: added jumper to game/pause menu (only appears if z_jumper.rpy is present)
         if renpy.has_label('jumper'):
-          config.game_menu.insert(5, ('jumper', "Select Act", ui.jumps("jumper", "intra_transition"), 'True'))
+          config.game_menu.insert(5, ('jumper', displayStrings.game_menu_jumper, ui.jumps("jumper", "intra_transition"), 'True')) #"Select Act"
 
         config.joystick_keys = [
             (displayStrings.joy_left, 'joy_left'),

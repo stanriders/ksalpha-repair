@@ -1,186 +1,187 @@
-﻿init -3 python:
-    # this is the master language so it lives at init level -3, not -2 like the others
-    ### ENGLISH
+﻿init -2 python:
+    ### RUSSIAN (gonna be a thing)
     
-    init_language("en")
+    init_language("ru")
     
-    displayDict["en"].styleoverrides = {"font": mainfont, 
-                                        "language": "western",
-                                        "line_spacing": 0}
+    if not persistent.runamings:
+        persistent.runamings = "poli" # Поливанов включается по умолчанию. [str]
+        
+    displayDict["ru"].styleoverrides = {"font": rufont, 
+                                    "language": "western",
+                                    "line_spacing": 0}
+                                    
     
-    displayDict["en"].timeformat = "%b %d, %H:%M"
+    displayDict["ru"].timeformat = '%d.%m.%y %H:%M'
     
-    displayDict["en"].sayfont = mainfont
+    displayDict["ru"].activeLanguage = ruw(u"Русский")
+    displayDict["ru"].allLanguages = {}
+    displayDict["ru"].allLanguages["en"] = ruw(u"Английский")
+    displayDict["ru"].allLanguages["de"] = ruw(u"Немецкий")
+    displayDict["ru"].allLanguages["it"] = ruw(u"Итальянский")
+    displayDict["ru"].allLanguages["jp"] = ruw(u"Японский")
+    displayDict["ru"].allLanguages["ru"] = displayDict["ru"].activeLanguage
     
-    displayDict["en"].quote_outer_open = u"“"
-    displayDict["en"].quote_outer_close = u"”"
-    displayDict["en"].quote_inner_open = u"‘"
-    displayDict["en"].quote_inner_close = u"’"
-    
-    displayDict["en"].activeLanguage = "English"
-    displayDict["en"].allLanguages = {}
-    displayDict["en"].allLanguages["en"] = displayDict["en"].activeLanguage
-    displayDict["en"].allLanguages["de"] = "German"
-    displayDict["en"].allLanguages["it"] = "Italian"
-    displayDict["en"].allLanguages["jp"] = "Japanese"
-    displayDict["en"].allLanguages["ru"] = "Russian"
-    
-    displayDict["en"].act_term = u"Act"
+    displayDict['ru'].act_term = ruw(u"Акт")
     displayDict["en"].window_name = u"Katawa Shoujo"
     
-    displayDict["en"].main_menu_start = u"Start"
-    displayDict["en"].main_menu_load = u"Load"
-    displayDict["en"].main_menu_extra = u"Extras"
-    displayDict["en"].main_menu_config = u"Options"
-    displayDict["en"].main_menu_quit = u"Quit"
+    displayDict['ru'].main_menu_start = ruw(u"Начать игру")
+    displayDict['ru'].main_menu_load = ruw(u"Загрузить")
+    displayDict['ru'].main_menu_extra = ruw(u"Дополнительно")
+    displayDict['ru'].main_menu_config = ruw(u"Настройки")
+    displayDict['ru'].main_menu_quit = ruw(u"Выход")
 
-    displayDict["en"].game_menu_return = u"Return"
-    displayDict["en"].game_menu_show = u"Show image"
-    displayDict["en"].game_menu_history = u"Text history"
-    displayDict["en"].game_menu_skip = u"Skip mode"
-    displayDict["en"].game_menu_auto = u"Auto mode"
-    displayDict["en"].game_menu_config = u"Options"
-    displayDict["en"].game_menu_save = u"Save"
-    displayDict["en"].game_menu_load = u"Load"
-    displayDict["en"].game_menu_main = u"Main menu"
-    displayDict["en"].game_menu_quit = u"Quit"
-    displayDict["en"].game_menu_current_scene = u"Current Scene"
-    displayDict['en'].game_menu_current_music = u"Current music track"
-    displayDict["en"].game_menu_replay_indicator = u"Replay"
-    displayDict["en"].game_menu_jumper = u"Select Act"
-
-    displayDict["en"].return_button_text = u"Return"
-
-    displayDict["en"].hdisabled_label = u"Disable adult content"
-    displayDict["en"].config_page_caption = u"Options"
-    displayDict["en"].config_fullscreen_label = u'Fullscreen mode'
-    displayDict["en"].config_transitions_label = u'Disable transitions'
-    displayDict["en"].config_skip_unseen_label = u'Skip unread text'
-    displayDict["en"].config_skip_after_choice_label = u'Keep skipping after choices'
-    displayDict["en"].config_textspeed_label = u'Text speed'
-    displayDict["en"].config_afmspeed_label = u'Auto mode delay'
-    displayDict["en"].config_musicvol_label = u"Music volume"
-    displayDict["en"].config_musicvol_jukebox_label = u"Vol."
-    displayDict["en"].config_sfxvol_label = u"SFX volume"
-    displayDict["en"].config_sfxtest_label = u"Test"
-    displayDict["en"].config_gamepad_label = u"Gamepad keymap…"
-
-    displayDict["en"].config_language_sel = u"Language selection…"
-    displayDict["en"].config_language_caption = u"Options > Language selection"
-    displayDict["en"].config_language_restart_note = "Note: Changing the language while a session is in progress will return the game to the latest script node."
-
-    displayDict["en"].gamepad_caption = u"Options > Gamepad keymap"
-    displayDict["en"].gamepad_key_na = u"Not assigned"
-    displayDict["en"].gamepad_request_key = u"Press the button you want to assign “%s” to.\nClick the mouse or the select button to clear the mapping."
-
-    displayDict["en"].yesno_yes = u"Yes"
-    displayDict["en"].yesno_no = u"No"
-    displayDict["en"].yesno_okay = u"Continue"
-    displayDict["en"].yesno_savesuccess = u"Progress successfully saved\nas number %s."
-    displayDict["en"].yesno_quit = u"Are you sure you want to\nquit Katawa Shoujo?"
-    displayDict["en"].yesno_return_to_main = u"Are you sure you want to\nreturn to the main menu?"
-    displayDict["en"].save_page_caption = u"Save"
-    displayDict["en"].new_save_button = u"Create new save state"
-    displayDict["en"].load_page_caption = u"Load"
-    displayDict["en"].yesno_load_in_game = u"Are you sure you want to\ndiscard your progress?"
-    displayDict["en"].yesno_save_overwrite = u"Are you sure you want to\noverwrite your save?"
-    displayDict["en"].yesno_delete_savegame = u"Are you sure you want to\ndelete save number %s?"
-    displayDict["en"].play_time_label = u"Play time"
-    displayDict["en"].show_manual_saves = u"Manual"
-    displayDict["en"].show_auto_saves = u"Auto"
-
-    displayDict["en"].text_history_caption = u"Text history"
-
-    displayDict["en"].extra_menu_caption = "Extras"
-    displayDict["en"].extra_music_button_label = "Jukebox"
-    displayDict["en"].extra_gallery_button_label = "Gallery"
-    displayDict["en"].extra_scene_button_label = "Library"
-    displayDict["en"].extra_omake_button_label = "Omake"
-    displayDict["en"].extra_opening_button_label = "Cinema"
-    displayDict["en"].commentary_label = "Enable commentary"
-
-    displayDict["en"].music_page_caption = "Extras > Jukebox"
-    displayDict["en"].music_stop_button_text = "Stop"
-    displayDict["en"].music_now_playing = "Now playing"
-
-    displayDict["en"].gallery_page_caption = "Extras > Gallery"
-    displayDict["en"].gallery_onelocked = "One further image not unlocked."
-    displayDict["en"].gallery_manylocked = "%d further images not unlocked."
-    displayDict["en"].gallery_singlelocked = "Image %d of %d is not unlocked."
-    displayDict["en"].gallery_num_page_prefix = "Page "
-    displayDict["en"].gallery_num_page_error = "No images to display"
-
-    displayDict["en"].scene_page_caption = "Extras > Library"
-    displayDict["en"].scene_completion_label = "Completion: %s%%"
-    displayDict["en"].scene_playthrough_label = "Use replay flow (recommended)"
+    displayDict['ru'].game_menu_return = ruw(u"Назад")
+    displayDict['ru'].game_menu_show = ruw(u"Показать фон")
+    displayDict['ru'].game_menu_history = ruw(u"История")
+    displayDict['ru'].game_menu_skip = ruw(u"Пропуск")
+    displayDict['ru'].game_menu_auto = ruw(u"Авточтение")
+    displayDict['ru'].game_menu_config = ruw(u"Настройки")
+    displayDict['ru'].game_menu_save = ruw(u"Сохранить")
+    displayDict['ru'].game_menu_load = ruw(u"Загрузить")
+    displayDict['ru'].game_menu_main = ruw(u"Главное меню")
+    displayDict['ru'].game_menu_quit = ruw(u"Выйти")
     
-    displayDict["en"].joy_left = "Left"
-    displayDict["en"].joy_right = "Right"
-    displayDict["en"].joy_up = "Up"
-    displayDict["en"].joy_down = "Down"
-    displayDict["en"].joy_dismiss = "Select/Advance"
-    displayDict["en"].joy_rollback = "Text history"
-    displayDict["en"].joy_holdskip = "Hold to skip"
-    displayDict["en"].joy_toggleskip = "Skip mode"
-    displayDict["en"].joy_hide = "Show image"
-    displayDict["en"].joy_menu = "Show menu"
+    displayDict["ru"].game_menu_jumper = ruw(u"Выбрать Акт")
+        
+    displayDict['ru'].game_menu_current_scene = ruw(u"Текущая сцена")
+    displayDict['ru'].game_menu_current_music = ruw(u"Текущая композиция")
+    displayDict['ru'].game_menu_replay_indicator = ruw(u"Переиграть")
+
+    displayDict['ru'].return_button_text = ruw(u"Назад")
+
+    displayDict['ru'].hdisabled_label = ruw(u"Отключить сцены для взрослых")
+    displayDict['ru'].config_page_caption = ruw(u"Настройки")
+    displayDict['ru'].config_fullscreen_label = ruw(u"Полноэкранный режим")
+    displayDict['ru'].config_transitions_label = ruw(u"Отключить переходы")
+    displayDict['ru'].config_skip_unseen_label = ruw(u"Пропускать непрочитанный текст")
+    displayDict['ru'].config_skip_after_choice_label = ruw(u"Продолжать пропуск после выбора")
+    displayDict['ru'].config_textspeed_label = ruw(u"Скорость текста")
+    displayDict['ru'].config_afmspeed_label = ruw(u"Задержка авточтения")
+    displayDict['ru'].config_musicvol_label = ruw(u"Музыка")
+    displayDict['ru'].config_musicvol_jukebox_label = ruw(u"Гр.")
+    displayDict['ru'].config_sfxvol_label = ruw(u"Звуки")
+    displayDict['ru'].config_sfxtest_label = ruw(u"Проверка")
+    displayDict['ru'].config_gamepad_label = ruw(u"Настройка геймпада…")
+
+    displayDict['ru'].config_language_sel = ruw(u"Выбор языка…")
+    displayDict['ru'].config_language_caption = ruw(u"Настройки » Выбор языка")
+    displayDict['ru'].config_language_restart_note = ruw(u"Примечание: смена языка во время игры приведёт к возврату на начало последней сцены.")
+    
+    displayDict['ru'].config_language_naming = ruw(u"Варианты перевода имен") # Эта строка есть только в русском переводе [str]
+
+    displayDict['ru'].gamepad_caption = ruw(u"Настройки » Настройка геймпада")
+    displayDict['ru'].gamepad_key_na = ruw(u"Не назначено")
+    displayDict['ru'].gamepad_request_key = ruw(u"Нажмите кнопку для привязки к “%s”.\nЩёлкните кнопкой мыши или нажмите select чтобы очистить привязку.")
+
+    displayDict['ru'].yesno_yes = ruw(u"Да")
+    displayDict['ru'].yesno_no = ruw(u"Нет")
+    displayDict['ru'].yesno_okay = ruw(u"Продолжить")
+    displayDict['ru'].yesno_savesuccess = ruw(u"Игра успешно сохранена под номером %s.")
+    displayDict['ru'].yesno_quit = ruw(u"Вы уверены, что хотите выйти из\nKatawa Shoujo?")
+    displayDict['ru'].yesno_return_to_main = ruw(u"Вы уверены что хотите \nвернуться в главное меню?")
+    displayDict['ru'].save_page_caption = ruw(u"Сохранить")
+    displayDict['ru'].new_save_button = ruw(u"Создать новое сохранение")
+    displayDict['ru'].load_page_caption = ruw(u"Загрузить")
+    displayDict['ru'].yesno_load_in_game = ruw(u"Вы уверены, что хотите\nпотерять весь пройденный путь?")
+    displayDict['ru'].yesno_save_overwrite = ruw(u"Вы уверены, что хотите переписать\nсохранённую игру?")
+    displayDict['ru'].yesno_delete_savegame = ruw(u"Вы уверены, что хотите\nудалить это сохранение?")
+    displayDict['ru'].play_time_label = ruw(u"Время игры")
+    displayDict['ru'].show_manual_saves = ruw(u"Ручные")
+    displayDict['ru'].show_auto_saves = ruw(u"Авто")
+
+    displayDict['ru'].text_history_caption = ruw(u"История")
+
+    displayDict['ru'].extra_menu_caption = ruw(u"Дополнительно")
+    displayDict['ru'].extra_music_button_label = ruw(u"Музыка")
+    displayDict['ru'].extra_gallery_button_label = ruw(u"Галерея")
+    displayDict['ru'].extra_scene_button_label = ruw(u"Библиотека")
+    displayDict['ru'].extra_omake_button_label = ruw(u"Бонус")
+    displayDict['ru'].extra_opening_button_label = ruw(u"Видео")
+    displayDict['ru'].commentary_label = ruw(u"Включить комментарии")
+
+    displayDict['ru'].music_page_caption = ruw(u"Дополнительно » Музыка")
+    displayDict['ru'].music_stop_button_text = ruw(u"Стоп")
+    displayDict['ru'].music_now_playing = ruw(u"Проигрывается")
+
+    displayDict['ru'].gallery_page_caption = ruw(u"Дополнительно » Галерея")
+    displayDict['ru'].gallery_onelocked = ruw(u"Следующее изображение не открыто.")
+    displayDict['ru'].gallery_manylocked = ruw(u"%d следующих изображений не открыто.")
+    displayDict['ru'].gallery_singlelocked = ruw(u"%d изображений из %d не открыто.")
+    displayDict['ru'].gallery_num_page_prefix = ruw(u"Страница ")
+    displayDict['ru'].gallery_num_page_error = ruw(u"Нет изображений")
+
+    displayDict['ru'].scene_page_caption = ruw(u"Дополнительно » Библиотека")
+    displayDict['ru'].scene_completion_label = ruw(u"Завершено: %s%%")
+    displayDict['ru'].scene_playthrough_label = ruw(u"Использовать режим потока (рекомендуется)")
+    
+    displayDict['ru'].joy_left = ruw(u"Влево")
+    displayDict['ru'].joy_right = ruw(u"Вправо")
+    displayDict['ru'].joy_up = ruw(u"Вверх")
+    displayDict['ru'].joy_down = ruw(u"Вниз")
+    displayDict['ru'].joy_dismiss = ruw(u"Выбор\\u0434альше")
+    displayDict['ru'].joy_rollback = ruw(u"История")
+    displayDict['ru'].joy_holdskip = ruw(u"Удерживать для пропуска")
+    displayDict['ru'].joy_toggleskip = ruw(u"Режим пропуска")
+    displayDict['ru'].joy_hide = ruw(u"Показать изображение")
+    displayDict['ru'].joy_menu = ruw(u"Показать меню")
 
     ##Names
 
-    displayDict["en"].name_hi = "Hisao"
-    displayDict["en"].name_all = "All"
-    displayDict["en"].name_ha = "Hanako"
-    displayDict["en"].name_emi = "Emi"
-    displayDict["en"].name_rin = "Rin"
-    displayDict["en"].name_li = "Lilly"
-    displayDict["en"].name_shi = "Shizune"
-    displayDict["en"].name_mi = "Misha"
+    displayDict['ru'].name_hi = ruw(u"Хисао")
+    displayDict["en"].name_all = ruw(u"Все")
+    displayDict['ru'].name_ha = ruw(u"Ханако")
+    displayDict['ru'].name_emi = ruw(u"Эми")
+    displayDict['ru'].name_rin = ruw(u"Рин")
+    displayDict['ru'].name_li = ruw(u"Лилли")
+    displayDict["ru"].name_shi = name_shizune # hepb/poli switching
+    displayDict['ru'].name_mi = ruw(u"Миша")
     
-    displayDict["en"].name_ke = "Kenji"
-    displayDict["en"].name_mu = "Mutou"
-    displayDict["en"].name_nk = "Nurse"
-    displayDict["en"].name_no = "Nomiya"
-    displayDict["en"].name_yu = "Yuuko"
-    displayDict["en"].name_sa = "Sae"
-    displayDict["en"].name_aki = "Akira"
-    displayDict["en"].name_hh = "Hideaki"
-    displayDict["en"].name_hx = "Jigoro"
-    displayDict["en"].name_emm = "Meiko"
+    displayDict["ru"].name_ke = name_kenji # hepb/poli switching
+    displayDict['ru'].name_mu = ruw(u"Муто")
+    displayDict['ru'].name_nk = ruw(u"Фельдшер")
+    displayDict['ru'].name_no = ruw(u"Номия")
+    displayDict['ru'].name_yu = ruw(u"Юко")
+    displayDict["en"].name_sa = name_sae # hepb/poli switching
+    displayDict['ru'].name_aki = ruw(u"Акира")
+    displayDict['ru'].name_hh = ruw(u"Хидеаки")
+    displayDict["en"].name_hx = name_jigoro # hepb/poli switching
+    displayDict['ru'].name_emm = ruw(u"Мейко")
     
-    displayDict['en'].name_mk = "Miki"
+    displayDict['ru'].name_mk = ruw(u"Мики")
     
-    displayDict["en"].name_mystery = "???"
+    displayDict["ru"].name_mystery = "???"
 
-    displayDict["en"].name_ha_ = "Purple-haired girl"
-    displayDict["en"].name_emi_ = "Twintails girl"
-    displayDict["en"].name_rin_ = "Strange girl"
-    displayDict["en"].name_li_ = "Wavy-haired girl"
-    displayDict["en"].name_mi_ = "Laughing girl"
-    displayDict["en"].name_ke_ = "Bespectacled hallmate"
-    displayDict["en"].name_mu_ = "Tall man"
-    displayDict["en"].name_yu_ = "Librarian"
-    displayDict["en"].name_no_ = "Silver-haired man"
-    displayDict["en"].name_sa_ = "Gallerist"
-    displayDict["en"].name_aki_ = "Well-dressed person"
-    displayDict["en"].name_nk_ = "Smiling man"
-    displayDict["en"].name_hx_ = "Shizune's father"
-    displayDict["en"].name_hh_ = "Slim girl"
-    displayDict["en"].name_emm_ = "Emi's mother"
+    displayDict['ru'].name_ha_ = u"Девушка с чёлкой"
+    displayDict['ru'].name_emi_ = u"Девочка с хвостиками"
+    displayDict['ru'].name_rin_ = u"Странная девушка"
+    displayDict['ru'].name_li_ = u"Светловолосая девушка"
+    displayDict['ru'].name_mi_ = u"Смеющаяся девушка"
+    displayDict['ru'].name_ke_ = u"Сосед в очках"
+    displayDict['ru'].name_mu_ = u"Высокий мужчина"
+    displayDict['ru'].name_yu_ = u"Библиотекарь"
+    displayDict['ru'].name_no_ = u"Седой мужчина"
+    displayDict['ru'].name_sa_ = u"Владелица галереи"
+    displayDict['ru'].name_aki_ = u"Хорошо одетый человек"
+    displayDict['ru'].name_nk_ = u"Улыбчивый человек"
+    displayDict["en"].name_hx_ = (u"Отец ") + (name_shizune) # hepb/poli switching
+    displayDict['ru'].name_hh_ = u"Худая девушка"
+    displayDict['ru'].name_emm_ = u"Мать Эми"
     
     # Scenes available in the extras -> scene select menu. Name, label, description, path (path may also be a tuple).
     # Now also doubles as a lookup list for the actual scene names. Display in the extras can be suppressed
     # by setting the third value in the tuple to False. Suppression doesn't work in DQN mode.
     # Note that Ren'Py doesn't like non-ASCII characters in scene titles if the titles are not unicode strings
-    displayDict["en"].s_scenes = (("Out Cold", "NOP1", "On a cold, snowy day, Hisao's dreams were about to be realized, only to be cut short by a sudden heart attack.", "Act 1"), # NEW ACT 1
-                                    ("Bundle of Hisao", "NOP2", "Hisao is told about Yamaku Academy, where he will likely spend the rest of his high school days.", "Act 1"),
-                                    ("Gateway Effect", "A1", "Hisao steps into Yamaku Academy for the first time, and meets his homeroom teacher, Mutou.", "Act 1"),
-                                    ("Enter Stage Left", "A2", "Introductions to the class, and meeting with the class representative and her interpreter.", "Act 1"),
-                                    ("In the Nursery", "A3", "Misha and Shizune show Hisao the cafeteria, after which he goes to see the nurse.", "Act 1"),
-                                    ("Nobody's Room", "A4", "Hisao moves into his new room, meeting his hallmate Kenji in the process.", "Act 1"),
-                                    ("Smalltalk", "A5", "Shizune and Misha tell Hisao about the upcoming festival and invite him to lunch.", "Act 1"),
-                                    ("Risk vs. Reward", "A6", "Shizune and Hisao battle for the world in a game of Risk.", "Act 1"),
-                                    ("Pseudo Tea Cosy", "A7", "Looking for the library, Hisao gets lost and finds Lilly in a disused classroom.", "Act 1"),
-                                    ("Shared Library", "A8", "Finally finding his way to the library, Hisao meets and scares off Hanako.", "Act 1"),
+    displayDict['ru'].s_scenes = (
+                                    (ruw(u"На морозе"), 'NOP1', ruw(u"Холодным снежным днём мечты Хисао готовы осуществиться, но всё обрывается внезапным сердечным приступом."), 'Act 1'), # NEW ACT 1
+                                    (ruw(u"Бремя Хисао"), 'NOP2', ruw(u"Хисао рассказывают о школе-интернате «Ямаку», где он, вероятно, проведёт остаток своих школьных дней."), 'Act 1'),
+                                    (ruw(u"Воздействие ворот"), 'A1', ruw(u"Хисао впервые приходит в школу-интернат «Ямаку» и знакомится со своим классным руководителем Муто."), 'Act 1'),
+                                    (ruw(u"Вход на сцену слева"), 'A2', ruw(u"Представление классу и встреча со старостой и её переводчицей."), 'Act 1'),
+                                    (ruw(u"На приёме"), 'A3', (ruw((u"Миша и ")) + (name_shizune)) + (ruw(u" показывают Хисао столовую, после чего он идёт на прием к фельдшеру.")), 'Act 1'),
+                                    (ruw(u"Ничья комната"), 'A4', (ruw((u"Хисао идёт в свою комнату, по пути встречая соседа по имени ")) + (name_kenji)) + ('.'), 'Act 1'),
+                                    (ruw(u"Небольшой разговор"), 'A5', (name_shizune) + ruw((u" и Миша рассказывают Хисао о предстоящем фестивале и приглашают его на ланч.")), 'Act 1'),
+                                    (ruw(u"Риск и награда"), 'A6', (name_shizune) + ruw((u" и Хисао борются за мировое господство.")), 'Act 1'),
+                                    (ruw(u"Чаепитие вслепую"), 'A7', ruw(u"В поисках библиотеки Хисао теряется и в неиспользуемом кабинете обнаруживает Лилли."), 'Act 1'),
+                                    (ruw(u"Общая библиотека"), 'A8', ruw(u"Наконец найдя путь в библиотеку, Хисао встречает и вспугивает Ханако"), 'Act 1'),
                                     ("Bizarre and Surreal", "A9", "Kenji reveals the dark secrets of Yamaku.", "Act 1"),
                                     ("Lunch Evolution Theory", "A10", "Shizune and Misha badger Hisao into joining the Student Council before discussing lunch.", "Act 1"),
                                     ("Short Sharp Shock", "A11_1", "On his way to lunch alongside Misha and Shizune, Hisao collides with Emi in the hallway.", "Act 1"),
@@ -416,47 +417,47 @@
 # TITLE CARDS
     # Definition. This maps an id tuple to a tuple of displayed text, filename modifier, and the position of said text.
     # the display function is tcard() in ui_code.rpy
-    displayDict["en"].act_names = {(1, "all"): ("Life Expectancy", "act1", 190, 117), #lulz
-                                 (2, "bad"): ("Deep Six", "act2badend", 100, 250), #climatic
-                                 (2, "emi"): ("Acceleration", "act2emi", 120, 200), #NWS
-                                 (3, "emi"): ("2x400 Relay", "act3emi", 70, 350), #konflikti
-                                 (4, "emi"): ("Dicks", "act4emi", 200, 250), #konflikti
-                                 (2, "hanalilly"): ("Entanglement", "act2hanalilly", 380, 50), #animejet # gotta test [str]
-                                 (3, "hanako"): ("Party Line", "act3hanako", 100, 400), #somedude
-                                 (4, "hanako"): ("Mors Mortis", "act4hanako", 150, 250), #anonymouslurker
-                                 (4, "hanatrue"): ("Heterotic Strings", "act4hanatrue", 150, 250), #who the hell made this?
-                                 (5, "hanatrue"): ("Elucidation", "act5hanatrue", 350, 400), #same herepurpl
-                                 (2, "lilly"): ("Past", "act2lilly", 80, 170), #skim #Needs changing, maybe with Raide's child Lilly sketch
-                                 (3, "lilly"): ("Present", "act3lilly", 350, 400), #syureria
-                                 (4, "lilly"): ("Future", "act4lilly", 80, 170), #skim
-                                 (2, "rin"): ("Dream", "act2rin", 300, 220), #aura
-                                 (3, "rin"): ("Distance", "act3rin", 150, 230), #kekekeke
-                                 (4, "rin"): ("Difference", "act4rin", 200, 250), 
-                                 (2, "shizune"): ("Cat and Mouse", "act2shizune", 90, 90), #celiest
-                                 (3, "shizune"): ("Ellipsis", "act3shizune", 100, 400), #lild227
-                                 (4, "shizune"): ("Silent Voice", "act4shizune", 200, 250)
+    displayDict["ru"].act_names = {(1, "all"): (u"Продолжительность жизни", "act1", 190, 117), #lulz
+                                 (2, "bad"): (u"Deep Six", "act2badend", 100, 250), #climatic
+                                 (2, "emi"): (u"Acceleration", "act2emi", 120, 200), #NWS
+                                 (3, "emi"): (u"2x400 Relay", "act3emi", 70, 350), #konflikti
+                                 (4, "emi"): (u"Dicks", "act4emi", 200, 250), #konflikti
+                                 (2, "hanalilly"): (u"Entanglement", "act2hanalilly", 380, 50), #animejet
+                                 (3, "hanako"): (u"Party Line", "act3hanako", 100, 400), #somedude
+                                 (4, "hanako"): (u"Mors Mortis", "act4hanako", 150, 250), #anonymouslurker
+                                 (4, "hanatrue"): (u"Heterotic Strings", "act4hanatrue", 150, 250), #who the hell made this?
+                                 (5, "hanatrue"): (u"Elucidation", "act5hanatrue", 350, 400), #same herepurpl
+                                 (2, "lilly"): (u"Past", "act2lilly", 80, 170), #skim #Needs changing, maybe with Raide's child Lilly sketch
+                                 (3, "lilly"): (u"Present", "act3lilly", 350, 400), #syureria
+                                 (4, "lilly"): (u"Future", "act4lilly", 80, 170), #skim
+                                 (2, "rin"): (u"Dream", "act2rin", 300, 220), #aura
+                                 (3, "rin"): (u"Distance", "act3rin", 150, 230), #kekekeke
+                                 (4, "rin"): (u"Difference", "act4rin", 200, 250), 
+                                 (2, "shizune"): (u"Cat and Mouse", "act2shizune", 90, 90), #celiest
+                                 (3, "shizune"): (u"Ellipsis", "act3shizune", 100, 400), #lild227
+                                 (4, "shizune"): (u"Silent Voice", "act4shizune", 200, 250)
                                 }
     # credits
     
-    displayDict["en"].creditstring = """{b}Head Writer{/b}
+    displayDict["ru"].creditstring = """{b}Сценарист{/b}
 Aura
                                      
-{b}Writers{/b}
+{b}Авторы{/b}
 Anonymous22
 cpl_crud
 Suriko
 TheHivemind
 
-{b}Editors{/b}
+{b}Редакторы{/b}
 Kagami
 Losstarot
 Silentcook
 
-{b}Music{/b}
+{b}Композиторы{/b}
 Blue123
 Nicol Armarfi
 
-{b}Artists{/b}
+{b}Художники{/b}
 Ambi07
 gebyy-terar
 Kamifish
@@ -464,22 +465,22 @@ moekki
 Raide
 raemz
 
-{b}Additional Artists{/b}
+{b}Дополнительные художники{/b}
 climatic
 Doomfest
 yujovi
 
-{b}Engineering{/b}
+{b}Техническое обеспечение{/b}
 delta
 
-{b}Producers{/b}
+{b}Продюсеры{/b}
 cpl_crud
 Suriko
 
                                      
                                      
 
-{b}Thanks{/b}
+{b}Благодарность{/b}
 Celiest
 chendo
 climatic
@@ -502,7 +503,7 @@ Syureria
 
 
 
-{b}Special Thanks{/b}
+{b}Отдельная благодарность{/b}
 PyTom
 KSG Threads on /vg/
 RAITA
@@ -510,7 +511,7 @@ RAITA
 
 
 
-{b}Prealpha Repair{/b}
+{b}Команда восстановления Преальфы{/b}
 shitty ms paint faggot
 Alphabro
 Kelper
@@ -520,64 +521,58 @@ muffinduck01
 Gift of Gab
 Stan Riders
 
-                                     
-{b}Also Helped{/b}
+
+{b}Также помогли{/b}
 Parity
 BWildness
 Twoface
 Sapiens
 cometodaddycome"""
 
-#Who the fuck are these people? - Kelper
-# probably 4chan's /b/ board and anonymouses from it [str]
-#\"B\"
-#Anonymous
 
-
-
-    displayDict["en"].drugs_wordlist  =  ["Disopyramide",
-                        "Warfarin",
-                        "Diltiazem",
-                        "Felodipine",
-                        "Propanolol",
-                        "Penbutolol",
-                        "Carteolol",
-                        "Procainamide",
-                        "Heparin",
-                        "Phenytoin",
-                        "Verapamil",
-                        "Quinidine",
-                        "Flecainide",
-                        "5mg/day",
-                        "400mg/day",
-                        "15ml/day",
-                        "100mg/day",
-                        "10ml/48hrs",
-                        "10ml/day",
-                        "200mg/12hrs",
-                        "50mg/12hrs",
-                        "500mg/48hrs",
-                        "125mg/12hrs",
-                        "25ml/day",
-                        "nightmares",
-                        "decreased concentration",
-                        "bradycardia",
-                        "clinical depression",
-                        "insomnia",
-                        "erectile dysfunction",
-                        "abnormal vision",
-                        "heart failure",
-                        "nausea",
-                        "dizziness",
-                        "hallucinations",
-                        "bronchospasm",
-                        "dyspnea",
-                        "fatigue",
-                        "hypotension",
-                        "heart block",
-                        "cold extremities",
-                        "diarrhea",
-                        "cardiac arrest",
-                        "ventricular fibrillation",
-                        "ataxia",
-                        "asthma"]
+    displayDict['ru'].drugs_wordlist = [ruw(u"Дизопирамид"),
+                        ruw(u"Варфарин"),
+                        ruw(u"Дилтиазем"),
+                        ruw(u"Фелодипин"),
+                        ruw(u"Пропранолол"),
+                        ruw(u"Пенбутолол"),
+                        ruw(u"Картеолол"),
+                        ruw(u"Прокаинамид"),
+                        ruw(u"Гепарин"),
+                        ruw(u"Фенитоин"),
+                        ruw(u"Верапамил"),
+                        ruw(u"Хинидин"),
+                        ruw(u"Флекаинид"),
+                        ruw(u"5 мг/день"),
+                        ruw(u"400 мг/день"),
+                        ruw(u"15 мл/день"),
+                        ruw(u"100 мг/день"),
+                        ruw(u"10 мл/48 час"),
+                        ruw(u"10 мл/день"),
+                        ruw(u"200 мг/12 час"),
+                        ruw(u"50 мг/12 час"),
+                        ruw(u"500 мг/48 час"),
+                        ruw(u"125 мг/12 час"),
+                        ruw(u"25 мл/день"),
+                        ruw(u"ночные кошмары"),
+                        ruw(u"пониженное внимание"),
+                        ruw(u"брадикардия"),
+                        ruw(u"клиническая депрессия"),
+                        ruw(u"бессонница"),
+                        ruw(u"эректильная дисфункция"),
+                        ruw(u"нарушение зрения"),
+                        ruw(u"сердечное расстройство"),
+                        ruw(u"тошнота"),
+                        ruw(u"головокружение"),
+                        ruw(u"галлюцинации"),
+                        ruw(u"бронхоспазмы"),
+                        ruw(u"одышка"),
+                        ruw(u"утомляемость"),
+                        ruw(u"гипотония"),
+                        ruw(u"блокада сердца"),
+                        ruw(u"озноб"),
+                        ruw(u"диарея"),
+                        ruw(u"остановка сердца"),
+                        ruw(u"фибрилляция желудочков"),
+                        ruw(u"атаксия"),
+                        ruw(u"астма")]

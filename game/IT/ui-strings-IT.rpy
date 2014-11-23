@@ -11,6 +11,7 @@
     displayDict["it"].allLanguages["de"] = "Tedesco"
     displayDict["it"].allLanguages["it"] = displayDict["it"].activeLanguage
     displayDict["it"].allLanguages["jp"] = "Giapponese"
+    displayDict["it"].allLanguages["ru"] = "Russo"
     
     displayDict["it"].act_term = u"Atto"
     displayDict["it"].window_name = u"Katawa Shoujo"

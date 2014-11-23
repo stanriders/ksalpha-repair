@@ -305,6 +305,11 @@ label language_screen:
                 button_function = renpy.curry(switch_language)(target=language)
             widget_button(text=button_label, displayable=button_image, clicked=button_function, state=button_state, xsize=300, widgetyoffset=3)
         
+        # # # [ russian hepburn/polivanov name translation switching [str]
+        if persistent.current_language == "ru":
+            widget_button(displayStrings.config_language_naming, "ui/bt-language.png", ui.jumps("language_runamings_screen"), xsize=300, widgetyoffset=3)
+        # # # ] [str]
+        
         ui.close()
         ui.close()
         ui.close()
@@ -317,6 +322,64 @@ label language_screen:
         ui.interact()
 
     jump language_screen
+
+# # #
+# # # [ This is Russian-only name translation selection menu.   
+label language_runamings_screen:
+    python:
+        coming_from_prefs_sub = True
+        
+        renpy.transition(config.intra_transition)
+        if renpy.context().main_menu:
+            ui.image(style.mm_root.background)
+        ui.image(style.gm_root.background)
+        ui.image("ui/bg-popup.png", xalign=0.5, yalign=0.5)
+        layout.navigation(None)
+        ui.vbox(xpos = 255, ypos = 220)
+        ui.text(displayStrings.config_language_naming, style="page_caption")
+        ui.null(height=4)
+        ui.hbox()
+        ui.null(width=4)
+        ui.vbox()
+        
+        # persistent.runamings is defined in ui-strings-RU [str]
+        button_label = ruw(u"Поливанов")
+        if persistent.runamings == "poli":
+            button_state = "active"
+            button_image = "ui/bt-language.png"
+            button_function = None
+        else:
+            button_state = "button"
+            button_image = "ui/bt-blank.png"
+            button_function = renpy.curry(switch_runamings)(target="poli")
+        widget_button(text=button_label, displayable=button_image, clicked=button_function, state=button_state, xsize=200, widgetyoffset=3)
+        
+        button2_label = ruw(u"Хэпбёрн")
+        if persistent.runamings == "hepb":
+            button2_state = "active"
+            button2_image = "ui/bt-language.png"
+            button2_function = None
+        else:
+            button2_state = "button"
+            button2_image = "ui/bt-blank.png"
+            button2_function = renpy.curry(switch_runamings)(target="hepb")
+        widget_button(text=button2_label, displayable=button2_image, clicked=button2_function, state=button2_state, xsize=200, widgetyoffset=3)
+        
+        ui.close()
+        ui.close()
+        ui.close()
+        
+        # using custom bg = need to create new return button
+        # also, i'm so happy that KS is forced to run at 800x600 [str]
+        widget_button(displayStrings.game_menu_return, "ui/bt-blank.png", clicked=ui.jumps("language_screen"), xsize=65, textxoffset=0, xpos=480, ypos=345)
+        #return_button(ui.jumps("language_screen"))
+
+        ui.interact()
+
+    jump language_runamings_screen
+
+# # # ] [str]
+# # # 
 
 label joystick_screen:
     python:

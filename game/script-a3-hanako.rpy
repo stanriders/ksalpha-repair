@@ -1071,855 +1071,855 @@ label en_H14b:
 # # #
 label en_H23:
 
-scene black # [str]
-with None # [str]
-window hide # [str]
+    scene black # [str]
+    with None # [str]
+    window hide # [str]
 
-# # # nah, this sounds stupid [str]
-#nvl show dissolve
-#n "NOTE: This scene (H23 'Waterfall') was restored from KS forums - StanR" 
-#nvl hide dissolve
-#nvl clear
-# # # 
+    # # # nah, this sounds stupid [str]
+    #nvl show dissolve
+    #n "NOTE: This scene (H23 'Waterfall') was restored from KS forums - StanR" 
+    #nvl hide dissolve
+    #nvl clear
+    # # # 
 
-scene bg school_dormhisao # [str]
-with openeye # [str]
-play music music_dreamy fadein 0.3 # [str]
-window show # [str]
+    scene bg school_dormhisao # [str]
+    with openeye # [str]
+    play music music_dreamy fadein 0.3 # [str]
+    window show # [str]
 
-"The hours from my late night reverie to now pass as quickly as the past few days."
+    "The hours from my late night reverie to now pass as quickly as the past few days."
 
-"It's almost like I arrived here before throwing my phone across the floor."
+    "It's almost like I arrived here before throwing my phone across the floor."
 
-"My hectic pace of the last few days has scattered my memories beyond any recognition."
+    "My hectic pace of the last few days has scattered my memories beyond any recognition."
 
-"Or maybe it was my restless sleep last night."
+    "Or maybe it was my restless sleep last night."
 
-"Who knows?"
+    "Who knows?"
 
-"Either way, I think I can feel some degree of clarity this morning."
+    "Either way, I think I can feel some degree of clarity this morning."
 
-"Maybe it's the slightly cooler weather."
+    "Maybe it's the slightly cooler weather."
 
-"I lazily get dressed, and open my drawer full of drugs."
+    "I lazily get dressed, and open my drawer full of drugs."
 
-hi "Actually…"
+    hi "Actually…"
 
-"If the befuddlement of the last week has had something to do with these pills, maybe I should lay off them a little."
+    "If the befuddlement of the last week has had something to do with these pills, maybe I should lay off them a little."
 
-"I'll be seeing the nurse first thing tomorrow anyway."
+    "I'll be seeing the nurse first thing tomorrow anyway."
 
-"My medication changed almost daily at the hospital, so one day won't make a difference."
+    "My medication changed almost daily at the hospital, so one day won't make a difference."
 
-"I want to be there for Hanako, and I'm not sure if I can do that with my mind fluttering like a torn flag in a gale."
+    "I want to be there for Hanako, and I'm not sure if I can do that with my mind fluttering like a torn flag in a gale."
 
-"I close the drawer, leaving its contents intact."
+    "I close the drawer, leaving its contents intact."
 
-scene bg school_gate # [str]
-with shorttimeskip # locationchange # [str]
+    scene bg school_gate # [str]
+    with shorttimeskip # locationchange # [str]
 
-"Ten minutes before the appointed hour, eleven am, I arrive at the school's main gate."
+    "Ten minutes before the appointed hour, eleven am, I arrive at the school's main gate."
 
-"Why Lilly wanted me to meet them here I do not know."
+    "Why Lilly wanted me to meet them here I do not know."
 
-"Perhaps she was concerned that Hanako and I had made enough public passes of the gardens, and was trying to kerb the tide of the rumours surrounding us."
+    "Perhaps she was concerned that Hanako and I had made enough public passes of the gardens, and was trying to kerb the tide of the rumours surrounding us."
 
-"Such trivialities evaporate when I see the girls approach."
+    "Such trivialities evaporate when I see the girls approach."
 
-show hanako emb_downtimid_sun at twoleft # [str]
-show lilly cane_smile_cas at leftoff # [str]
-with charaenter # [str]
+    show hanako emb_downtimid_sun at twoleft # [str]
+    show lilly cane_smile_cas at leftoff # [str]
+    with charaenter # [str]
 
-"Hanako, dazzling in her light yellow dress." # LAZY KS-DEVS! there's no Lilly dress sprites [str]
-#"Hanako, dazzling in her light yellow dress, and Lilly in a matching dress in pastel green."
+    "Hanako, dazzling in her light yellow dress." # LAZY KS-DEVS! there's no Lilly dress sprites [str]
+    #"Hanako, dazzling in her light yellow dress, and Lilly in a matching dress in pastel green."
 
-"Such sights are a delight to the senses, and just what I needed on this fine morning."
+    "Such sights are a delight to the senses, and just what I needed on this fine morning."
 
-hi "Morning Hanako, Lilly. You're both looking dazzling today."
+    hi "Morning Hanako, Lilly. You're both looking dazzling today."
 
-#Hanako bashful smile, Lilly motherly smile
-show hanako emb_smile_sun at twoleft # [str]
-with charachange # [str]
+    #Hanako bashful smile, Lilly motherly smile
+    show hanako emb_smile_sun at twoleft # [str]
+    with charachange # [str]
 
-ha "T…thanks."
+    ha "T…thanks."
 
-show lilly cane_smileclosed_cas at leftoff # [str]
-with charachange # [str]
+    show lilly cane_smileclosed_cas at leftoff # [str]
+    with charachange # [str]
 
-li "You are ever the gentleman, Hisao."
+    li "You are ever the gentleman, Hisao."
 
-li "And now it is time for you to escort your lady."
+    li "And now it is time for you to escort your lady."
 
-"Lilly give Hanako ever the slightest nudge forward, and she stumbles towards me."
+    "Lilly give Hanako ever the slightest nudge forward, and she stumbles towards me."
 
-hide hanako # [str]
-with charaexit # [str]
+    hide hanako # [str]
+    with charaexit # [str]
 
-show hanako emb_blushtimid_sun_close at tworight # [str]
-with charaenter # charamove_slow # [str]
+    show hanako emb_blushtimid_sun_close at tworight # [str]
+    with charaenter # charamove_slow # [str]
 
-show lilly cane_satisfied_cas at leftoff # [str]
-with charachange # [str]
+    show lilly cane_satisfied_cas at leftoff # [str]
+    with charachange # [str]
 
-hi "M'lady, may I have the pleasure of escorting you?"
+    hi "M'lady, may I have the pleasure of escorting you?"
 
-show hanako emb_smile_sun_close at tworight # [str]
-with charachange # [str]
+    show hanako emb_smile_sun_close at tworight # [str]
+    with charachange # [str]
 
-"Hanako flounders, but smiles gently and takes my proffered arm."
+    "Hanako flounders, but smiles gently and takes my proffered arm."
 
-hi "Lilly, do you require an arm, or shall you be right?"
+    hi "Lilly, do you require an arm, or shall you be right?"
 
-li "As much as I would like to leave you both to your own devices, I would greatly appreciate the help."
+    li "As much as I would like to leave you both to your own devices, I would greatly appreciate the help."
 
-hide lilly # [str]
-with charaexit # [str]
-show lilly cane_smileclosed_cas_close at twoleft # [str]
-with charaenter # [str]
+    hide lilly # [str]
+    with charaexit # [str]
+    show lilly cane_smileclosed_cas_close at twoleft # [str]
+    with charaenter # [str]
 
-"Lilly reaches out into the void with her free hand, and I guide her to my side."
+    "Lilly reaches out into the void with her free hand, and I guide her to my side."
 
-"As we make our way forward, her cane sweeps out delicate arcs barely a foot ahead of us, yet she manages to walk with a dignified grace."
+    "As we make our way forward, her cane sweeps out delicate arcs barely a foot ahead of us, yet she manages to walk with a dignified grace."
 
-"Hanako, on the other hand, has wrapped her fingers between mine, and hides her bad side against me."
+    "Hanako, on the other hand, has wrapped her fingers between mine, and hides her bad side against me."
 
-"I feel her warmth, and her fragility, as if they were my own."
+    "I feel her warmth, and her fragility, as if they were my own."
 
-scene bg school_road # [str] (_ss? i know it's sunset, but it's much more sunny than default one)
-with locationchange # [str]
+    scene bg school_road # [str] (_ss? i know it's sunset, but it's much more sunny than default one)
+    with locationchange # [str]
 
-# always doing charaenters is annoying [str]
-show hanako emb_downtimid_sun_close_ss at tworight # [str]
-show lilly cane_reminisce_cas_close_ss at twoleft # [str] (smileclosed)
-with charaenter # [str]
+    # always doing charaenters is annoying [str]
+    show hanako emb_downtimid_sun_close_ss at tworight # [str]
+    show lilly cane_reminisce_cas_close_ss at twoleft # [str] (smileclosed)
+    with charaenter # [str]
 
-"The road to the café is all but deserted."
+    "The road to the café is all but deserted."
 
-"And with good reason, too."
+    "And with good reason, too."
 
-"Whilst this morning was abnormally cool, the day is heating up, rapidly."
+    "Whilst this morning was abnormally cool, the day is heating up, rapidly."
 
-"You'd be safe to say that this was shaping up to be the hottest day this summer."
+    "You'd be safe to say that this was shaping up to be the hottest day this summer."
 
-"The black of the tarmac is distorted in the distance as the heat haze rises to the sky."
+    "The black of the tarmac is distorted in the distance as the heat haze rises to the sky."
 
-"I can tell the girls are starting to feel it to."
+    "I can tell the girls are starting to feel it to."
 
-"I feel a slick of sweat forms between our intertwined limbs, at once sticky yet lubricated."
+    "I feel a slick of sweat forms between our intertwined limbs, at once sticky yet lubricated."
 
-"But it's too late now for us to complain."
+    "But it's too late now for us to complain."
 
-"As competent as Lilly is with her cane, she is much faster with a guide."
+    "As competent as Lilly is with her cane, she is much faster with a guide."
 
-"I doubt Hanako wants to let go, and truthfully I don't want to let go of her either."
+    "I doubt Hanako wants to let go, and truthfully I don't want to let go of her either."
 
-"So we suffer in silence, knowing that the ordeal will be over once we reach the air conditioned confines of the Shanghai."
+    "So we suffer in silence, knowing that the ordeal will be over once we reach the air conditioned confines of the Shanghai."
 
-#I feel like putting in a countdown of some kind. I'm revving over this.
+    #I feel like putting in a countdown of some kind. I'm revving over this.
 
-"Cicadas and songbirds fill the air with their song, and I feel slightly more aware of the formations of clouds that are streaking the sky in great roads."
+    "Cicadas and songbirds fill the air with their song, and I feel slightly more aware of the formations of clouds that are streaking the sky in great roads."
 
-"Scents waft into my nose; the sweet smell of a patch of carnations, the building humidity, and the differing, yet somehow exciting, perfumes that the girls are wearing."
+    "Scents waft into my nose; the sweet smell of a patch of carnations, the building humidity, and the differing, yet somehow exciting, perfumes that the girls are wearing."
 
-"It's like someone has turned the dial on my sensory perception up to 12."
+    "It's like someone has turned the dial on my sensory perception up to 12."
 
-scene bg suburb_shanghaiext # [str]
-with locationchange # [str]
+    scene bg suburb_shanghaiext # [str]
+    with locationchange # [str]
 
-"I am tempted to start licking the air to see if I can taste colours or something of the sort, but we arrive at our destination."
+    "I am tempted to start licking the air to see if I can taste colours or something of the sort, but we arrive at our destination."
 
-#Do I know if this is usual behaviour before a heart attack? Do I care? No and No.
+    #Do I know if this is usual behaviour before a heart attack? Do I care? No and No.
 
-stop music fadeout 4.0 # [str]
+    stop music fadeout 4.0 # [str]
 
-scene bg suburb_shanghaiint # [str]
-with shorttimeskip # locationchange # [str]
+    scene bg suburb_shanghaiint # [str]
+    with shorttimeskip # locationchange # [str]
 
-# always doing charaenters is annoying [str]
-show hanako emb_emb_sun at twoleft # [str]
-show lilly basic_smileclosed_cas at tworight # [str]
-with charaenter # [str]
+    # always doing charaenters is annoying [str]
+    show hanako emb_emb_sun at twoleft # [str]
+    show lilly basic_smileclosed_cas at tworight # [str]
+    with charaenter # [str]
 
-show hanako emb_emb_sun at leftoff # [str]
-show lilly basic_smileclosed_cas at rightedge # [str]
-with charamove # [str]
+    show hanako emb_emb_sun at leftoff # [str]
+    show lilly basic_smileclosed_cas at rightedge # [str]
+    with charamove # [str]
 
-show yuuko smile_shang # [str]
-with charaenter # [str]
+    show yuuko smile_shang # [str]
+    with charaenter # [str]
 
-play sound sfx_storebell # [str]
+    play sound sfx_storebell # [str]
 
-"As always, the Shanghai café is deserted save its waitress."
+    "As always, the Shanghai café is deserted save its waitress."
 
-yu "Welco-Lilly!"
+    yu "Welco-Lilly!"
 
-show yuuko neurotic_shang # [str]
-with charachange # [str]
+    show yuuko neurotic_shang # [str]
+    with charachange # [str]
 
-yu "You came back!"
+    yu "You came back!"
 
-li "But of course, why would you think otherwise?"
+    li "But of course, why would you think otherwise?"
 
-yu "But last time… I… I made her cry… didn't I?"
+    yu "But last time… I… I made her cry… didn't I?"
 
-show hanako emb_downsad_sun at leftoff # [str]
-with charachange # [str]
+    show hanako emb_downsad_sun at leftoff # [str]
+    with charachange # [str]
 
-"It would appear that the gravity of the situation was lost on this girl."
+    "It would appear that the gravity of the situation was lost on this girl."
 
-li "No, it was by no means your fault. It wasn't anyone's fault."
+    li "No, it was by no means your fault. It wasn't anyone's fault."
 
-li "But we are here to make amends, and also to have a little break."
+    li "But we are here to make amends, and also to have a little break."
 
-show hanako emb_timid_sun at leftoff # [str]
-with charachange # [str]
+    show hanako emb_timid_sun at leftoff # [str]
+    with charachange # [str]
 
-ha "I… I'm sorry, Yuuko."
+    ha "I… I'm sorry, Yuuko."
 
-ha "I… wasn't well."
+    ha "I… wasn't well."
 
-show yuuko smile_shang # [str]
-with charachange # [str]
+    show yuuko smile_shang # [str]
+    with charachange # [str]
 
-"Yuuko looks confused, but then, before our very eyes, she cheers up."
+    "Yuuko looks confused, but then, before our very eyes, she cheers up."
 
-"Perhaps her brain put the whole matter into the 'Too Hard' basket and decided to move on."
+    "Perhaps her brain put the whole matter into the 'Too Hard' basket and decided to move on."
 
-yu "That's okay, that's okay. Now. Where was I?"
+    yu "That's okay, that's okay. Now. Where was I?"
 
-hi "Welcome."
+    hi "Welcome."
 
-yu "Ah, Thank you."
+    yu "Ah, Thank you."
 
-yu "Welcome!"
+    yu "Welcome!"
 
-yu "Please, let me show you to your seat."
+    yu "Please, let me show you to your seat."
 
-show hanako emb_emb_sun at leftsit # [str]
-with charamove # [str]
+    show hanako emb_emb_sun at leftsit # [str]
+    with charamove # [str]
 
-show lilly basic_smileclosed_cas at rightsit # [str]
-with charamove # [str]
+    show lilly basic_smileclosed_cas at rightsit # [str]
+    with charamove # [str]
 
-"The human mind is an amazing piece of evolution, yet there are some examples that are truly unique."
+    "The human mind is an amazing piece of evolution, yet there are some examples that are truly unique."
 
-"If I were an anthropologist, I think I could spend a lifetime studying girls like Yuuko…"
+    "If I were an anthropologist, I think I could spend a lifetime studying girls like Yuuko…"
 
-"…Something about that sounds wrong, however I will have to look up how one becomes an anthropologist when we get back tonight."
+    "…Something about that sounds wrong, however I will have to look up how one becomes an anthropologist when we get back tonight."
 
-yu "What would you like to drink today?"
+    yu "What would you like to drink today?"
 
-yu "Or eat? We do have food here."
+    yu "Or eat? We do have food here."
 
-yu "But not everyone eats here."
+    yu "But not everyone eats here."
 
-li "Could we please have a jug of iced jasmine tea and a platter of sandwiches?"
+    li "Could we please have a jug of iced jasmine tea and a platter of sandwiches?"
 
-yu "Yes! Of course! Iced Jasmine tea and Sandwiches!"
+    yu "Yes! Of course! Iced Jasmine tea and Sandwiches!"
 
-show yuuko smile_shang at centersit2 # [str]
-with charafast # [str]
-show yuuko smile_shang at center # [str]
-with charamove # [str]
-hide yuuko # [str]
-with charaexit # [str]
+    show yuuko smile_shang at centersit2 # [str]
+    with charafast # [str]
+    show yuuko smile_shang at center # [str]
+    with charamove # [str]
+    hide yuuko # [str]
+    with charaexit # [str]
 
-"Yuuko reads back Lilly's order like a list of commands, bows sharply, then disappears into the back of the store."
+    "Yuuko reads back Lilly's order like a list of commands, bows sharply, then disappears into the back of the store."
 
-play music music_night fadein 0.5 # [str]
+    play music music_night fadein 0.5 # [str]
 
-show lilly basic_smile_cas at rightsit # [str]
-with charachange # [str]
+    show lilly basic_smile_cas at rightsit # [str]
+    with charachange # [str]
 
-hi "So. Here we are, eh?"
+    hi "So. Here we are, eh?"
 
-li "Indeed. It's quite warm today, isn't it?"
+    li "Indeed. It's quite warm today, isn't it?"
 
-show hanako emb_downtimid_sun at leftsit # [str]
-with charachange # [str]
+    show hanako emb_downtimid_sun at leftsit # [str]
+    with charachange # [str]
 
-ha "N…no."
+    ha "N…no."
 
-show lilly basic_pout_cas at rightsit # [str]
-with charachange # [str]
+    show lilly basic_pout_cas at rightsit # [str]
+    with charachange # [str]
 
-"Lilly and I retreat a little, as if Hanako had suddenly become toxic."
+    "Lilly and I retreat a little, as if Hanako had suddenly become toxic."
 
-show hanako emb_downsmile_sun at leftsit # [str]
-with charachange # [str]
+    show hanako emb_downsmile_sun at leftsit # [str]
+    with charachange # [str]
 
-ha "It's hot. Really hot."
+    ha "It's hot. Really hot."
 
-show lilly basic_giggle_cas at rightsit # [str]
-with charachange # [str]
+    show lilly basic_giggle_cas at rightsit # [str]
+    with charachange # [str]
 
-"A conjoined sigh of relief."
+    "A conjoined sigh of relief."
 
-li "My my, Hana-chan, was that a joke?"
+    li "My my, Hana-chan, was that a joke?"
 
-li "What a rare occasion."
+    li "What a rare occasion."
 
-show hanako emb_smile_sun at leftsit # [str]
-with charachange # [str]
+    show hanako emb_smile_sun at leftsit # [str]
+    with charachange # [str]
 
-"Hanako smirks a little under her fringe."
+    "Hanako smirks a little under her fringe."
 
-show lilly basic_smile_cas at rightsit # [str]
-with charachange # [str]
+    show lilly basic_smile_cas at rightsit # [str]
+    with charachange # [str]
 
-hi "You're right though. It's maddeningly hot out there."
+    hi "You're right though. It's maddeningly hot out there."
 
-hi "I don't think I could have gone much further."
+    hi "I don't think I could have gone much further."
 
-hi "And the humidity…"
+    hi "And the humidity…"
 
-ha "That's the bad part."
+    ha "That's the bad part."
 
-li "Quite right. It's much harder to deal with high humidity than high temperature."
+    li "Quite right. It's much harder to deal with high humidity than high temperature."
 
-hi "I wonder if that's why people can stand living in the desert."
+    hi "I wonder if that's why people can stand living in the desert."
 
-li "Perhaps."
+    li "Perhaps."
 
-ha "But no-one really lives in the desert."
+    ha "But no-one really lives in the desert."
 
-ha "People live near rivers. Always."
+    ha "People live near rivers. Always."
 
-hi "I suppose you're right there, rivers or some other water source."
+    hi "I suppose you're right there, rivers or some other water source."
 
-"As we contemplate the fates of desert people, Yuuko approaches carrying a large plastic jug."
+    "As we contemplate the fates of desert people, Yuuko approaches carrying a large plastic jug."
 
-"The ice cubes inside it rattle out some strange melody, and I wonder, briefly, if that kind of noise has inspired any of Hanako's favourite songs."
+    "The ice cubes inside it rattle out some strange melody, and I wonder, briefly, if that kind of noise has inspired any of Hanako's favourite songs."
 
-"Melodic or not, the iced tea is just the elixir for a day like this."
+    "Melodic or not, the iced tea is just the elixir for a day like this."
 
-hi "Lilly, commendations on the choice of drink."
+    hi "Lilly, commendations on the choice of drink."
 
-ha "It's good."
+    ha "It's good."
 
-li "Yes, you simply cannot beat iced jasmine tea on a day like this."
+    li "Yes, you simply cannot beat iced jasmine tea on a day like this."
 
-show yuuko smile_shang # [str]
-with charaenter # [str]
+    show yuuko smile_shang # [str]
+    with charaenter # [str]
 
-"By the time Yuuko arrives with the platter of cut sandwiches, the large plastic jug is empty."
+    "By the time Yuuko arrives with the platter of cut sandwiches, the large plastic jug is empty."
 
-yu "Would you like another jug?"
+    yu "Would you like another jug?"
 
-li "I think we should be fine for the moment."
+    li "I think we should be fine for the moment."
 
-yu "Oh, okay."
+    yu "Oh, okay."
 
-yu "If you need me, please just call."
+    yu "If you need me, please just call."
 
-hide yuuko # [str]
-with charaexit # [str]
+    hide yuuko # [str]
+    with charaexit # [str]
 
-"As Yuuko turns from us, the door of the café opens, and a gust of wind blows in behind a pair of new customers."
+    "As Yuuko turns from us, the door of the café opens, and a gust of wind blows in behind a pair of new customers."
 
-show lilly basic_sad_cas at rightsit # [str]
-with charachange # [str]
+    show lilly basic_sad_cas at rightsit # [str]
+    with charachange # [str]
 
-"Yuuko rushes to serve them, but Lilly looks slightly worried."
+    "Yuuko rushes to serve them, but Lilly looks slightly worried."
 
-li "Hisao-san, would I be right in thinking that outside it is now fairly windy?"
+    li "Hisao-san, would I be right in thinking that outside it is now fairly windy?"
 
-hi "Huh?"
+    hi "Huh?"
 
-"I take a glance out of the window, and notice the tops of distant trees waving about."
+    "I take a glance out of the window, and notice the tops of distant trees waving about."
 
-hi "Yeah, it looks like it."
+    hi "Yeah, it looks like it."
 
-#Lilly frown.
-show lilly basic_oops_cas at rightsit # [str]
-with charachange # [str]
+    #Lilly frown.
+    show lilly basic_oops_cas at rightsit # [str]
+    with charachange # [str]
 
-li "Did anyone bring an umbrella?"
+    li "Did anyone bring an umbrella?"
 
-hi "Um, no. Hanako?"
+    hi "Um, no. Hanako?"
 
-show hanako emb_timid_sun at leftsit # [str]
-with charachange # [str]
+    show hanako emb_timid_sun at leftsit # [str]
+    with charachange # [str]
 
-ha "N… no. What's the matter Lilly?"
+    ha "N… no. What's the matter Lilly?"
 
-show lilly basic_sad_cas at rightsit # [str]
-with charachange # [str]
+    show lilly basic_sad_cas at rightsit # [str]
+    with charachange # [str]
 
-"Lilly sighs."
+    "Lilly sighs."
 
-li "I hope I'm wrong, but I think we may be in for a bit of a storm this afternoon."
+    li "I hope I'm wrong, but I think we may be in for a bit of a storm this afternoon."
 
-hi "How do you know?"
+    hi "How do you know?"
 
-li "With this heat and humidity, there's always a fair chance."
+    li "With this heat and humidity, there's always a fair chance."
 
-li "The wind is one of the last phases."
+    li "The wind is one of the last phases."
 
-li "I'm afraid we may be trapped here for some time."
+    li "I'm afraid we may be trapped here for some time."
 
-"Sure enough, as Lilly finishes lamenting, another group of customers enters the store."
+    "Sure enough, as Lilly finishes lamenting, another group of customers enters the store."
 
-"Customer 1" "Looks like rain out there."
+    "Customer 1" "Looks like rain out there."
 
-"Customer 2" "And heavy at that…"
+    "Customer 2" "And heavy at that…"
 
-show hanako emb_determined_sun at leftsit # [str]
-with charachange # [str]
+    show hanako emb_determined_sun at leftsit # [str]
+    with charachange # [str]
 
-"Hanako and I gawk at Lilly in amazement."
+    "Hanako and I gawk at Lilly in amazement."
 
-$doublespeak (hi, ha, "How did you know?", "How did you know?")
+    $doublespeak (hi, ha, "How did you know?", "How did you know?")
 
-show lilly basic_planned_cas at rightsit # [str]
-with charachange # [str]
+    show lilly basic_planned_cas at rightsit # [str]
+    with charachange # [str]
 
-li "It's simple meteorology. We covered it in science last trimester."
+    li "It's simple meteorology. We covered it in science last trimester."
 
-hi "That makes sense, it seems very much like something Mutou would teach."
+    hi "That makes sense, it seems very much like something Mutou would teach."
 
-"I get a chuckle from Hanako and Lilly."
+    "I get a chuckle from Hanako and Lilly."
 
-show hanako emb_downsad_sun at leftsit # [str]
-with charachange # [str]
+    show hanako emb_downsad_sun at leftsit # [str]
+    with charachange # [str]
 
-ha "But… we can stay here… right?"
+    ha "But… we can stay here… right?"
 
-hi "I guess so. It doesn't look like there's many people here."
+    hi "I guess so. It doesn't look like there's many people here."
 
-"At that moment, the first splats of rain start to be heard overhead."
+    "At that moment, the first splats of rain start to be heard overhead."
 
-"Even the un-Mutou-trained ear can tell that these are not your ordinary, petite raindrops."
+    "Even the un-Mutou-trained ear can tell that these are not your ordinary, petite raindrops."
 
-"They sound fat, ferocious, and incessant."
+    "They sound fat, ferocious, and incessant."
 
-show lilly basic_concerned_cas at rightsit # [str]
-with charachange # [str]
+    show lilly basic_concerned_cas at rightsit # [str]
+    with charachange # [str]
 
-li "Hisao, could you please call Yuuko over?"
+    li "Hisao, could you please call Yuuko over?"
 
-"I gesture to the flippant waitress and she comes immediately."
+    "I gesture to the flippant waitress and she comes immediately."
 
-show yuuko neutral_shang # [str]
-with charaenter # [str]
+    show yuuko neutral_shang # [str]
+    with charaenter # [str]
 
-yu "Can I help?"
+    yu "Can I help?"
 
-li "Yuuko, would you happen to have any spare umbrellas here?"
+    li "Yuuko, would you happen to have any spare umbrellas here?"
 
-"Yuuko looks deep in thought for a time."
+    "Yuuko looks deep in thought for a time."
 
-yu "No, however it looks like it just started raining."
+    yu "No, however it looks like it just started raining."
 
-yu "So, if you came back tomorrow, people will probably leave some here today."
+    yu "So, if you came back tomorrow, people will probably leave some here today."
 
-show lilly basic_surprised_cas at rightsit # [str]
-show hanako emb_determined_sun at leftsit # [str]
-with charachange # [str]
+    show lilly basic_surprised_cas at rightsit # [str]
+    show hanako emb_determined_sun at leftsit # [str]
+    with charachange # [str]
 
-"…"
+    "…"
 
-"Even Lilly appears flabbergasted at this answer, and the fact that it is entirely correct." 
+    "Even Lilly appears flabbergasted at this answer, and the fact that it is entirely correct." 
 
-li "I see. I shall keep that in mind."
+    li "I see. I shall keep that in mind."
 
-li "Could I please order a pot of black tea and some cakes then?"
+    li "Could I please order a pot of black tea and some cakes then?"
 
-yu "Right away!"
+    yu "Right away!"
 
-hide yuuko # [str]
-with charaexit # [str]
+    hide yuuko # [str]
+    with charaexit # [str]
 
-"Yuuko scurries away to do what she does best; approximating a waitress."
+    "Yuuko scurries away to do what she does best; approximating a waitress."
 
-show lilly basic_weaksmile_cas at rightsit # [str]
-show hanako emb_smile_sun at leftsit # [str]
-with charachange # [str]
+    show lilly basic_weaksmile_cas at rightsit # [str]
+    show hanako emb_smile_sun at leftsit # [str]
+    with charachange # [str]
 
-li "I suppose we should just try and wait it out."
+    li "I suppose we should just try and wait it out."
 
-ha "Okay. I don't mind staying here."
+    ha "Okay. I don't mind staying here."
 
-hi "Sounds like a plan then."
+    hi "Sounds like a plan then."
 
-"The barrage of rain intensifies until all that can be heard is white noise around us."
+    "The barrage of rain intensifies until all that can be heard is white noise around us."
 
-"Occasionally, a peel of thunder rolls through the café."
+    "Occasionally, a peel of thunder rolls through the café."
 
-"However, the storm has an unexpected affect."
+    "However, the storm has an unexpected affect."
 
-"Shortly after the rain reaches what seems like its peak, the door to the café opens."
+    "Shortly after the rain reaches what seems like its peak, the door to the café opens."
 
-"The noise of the rain seems to double instantly, and a howling wind rips around the small room, blowing menus around in a mini cyclone."
+    "The noise of the rain seems to double instantly, and a howling wind rips around the small room, blowing menus around in a mini cyclone."
 
-"But the most disturbing thing to pass through the door is a troupe of soaking, young teenage boys."
+    "But the most disturbing thing to pass through the door is a troupe of soaking, young teenage boys."
 
-"There's about fifteen of them in all, in soccer uniform, all panting from the mad run here."
+    "There's about fifteen of them in all, in soccer uniform, all panting from the mad run here."
 
-"They must have been caught out during practice, and made a bolt for here, knowing that it would be relatively dry."
+    "They must have been caught out during practice, and made a bolt for here, knowing that it would be relatively dry."
 
-"However, the little café isn't the world's largest eatery, and the soccer team quickly crowds it."
+    "However, the little café isn't the world's largest eatery, and the soccer team quickly crowds it."
 
-stop music fadeout 4.0 # [str]
-play ambient sfx_crowd_indoors fadein 6.0 # [str]
+    stop music fadeout 4.0 # [str]
+    play ambient sfx_crowd_indoors fadein 6.0 # [str]
 
-"Excited, panting voices drown out the noise of the rain, and Yuuko goes into some kind of overload and tries to serve them all at once."
+    "Excited, panting voices drown out the noise of the rain, and Yuuko goes into some kind of overload and tries to serve them all at once."
 
-"But all of that is a secondary issue."
+    "But all of that is a secondary issue."
 
-show hanako emb_downdetermined_sun at leftsit # [str]
-with charachange # [str]
+    show hanako emb_downdetermined_sun at leftsit # [str]
+    with charachange # [str]
 
-"Hanako, who had been relatively relaxed until now, is clutching onto my arm with a vice-grip."
+    "Hanako, who had been relatively relaxed until now, is clutching onto my arm with a vice-grip."
 
-"Her head is bowed lower that I've ever seen it before, and her eyes are fixated, unblinking, in some kind of terror."
+    "Her head is bowed lower that I've ever seen it before, and her eyes are fixated, unblinking, in some kind of terror."
 
-hi "Hanako? Hanako?!"
+    hi "Hanako? Hanako?!"
 
-show lilly basic_oops_cas at rightsit # [str]
-with charachange # [str]
+    show lilly basic_oops_cas at rightsit # [str]
+    with charachange # [str]
 
-"I try to shake her shoulder, then I try to hold her, but to no avail."
+    "I try to shake her shoulder, then I try to hold her, but to no avail."
 
-"She is as solid as a rock, and half as responsive."
+    "She is as solid as a rock, and half as responsive."
 
-li "Hisao? Is something the matter? What's going on?"
+    li "Hisao? Is something the matter? What's going on?"
 
-hi "It's Hanako… she's… she's… oh hell, I don't know… Hanako!"
+    hi "It's Hanako… she's… she's… oh hell, I don't know… Hanako!"
 
-#Thumps centered or magiced however we did it before.
+    #Thumps centered or magiced however we did it before.
 
-play sound sfx_heartslow # [str]
-show heartattack alpha  # [str]
-with Dissolve (0.1) # [str]
+    play sound sfx_heartslow # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
 
-hide heartattack alpha # [str]
-with Dissolve (0.7) # [str]
+    hide heartattack alpha # [str]
+    with Dissolve (0.7) # [str]
 
-"The boys fill the store with their energy."
+    "The boys fill the store with their energy."
 
-"Their bodies want to be out, running around fields, but now they are trapped in this little space."
+    "Their bodies want to be out, running around fields, but now they are trapped in this little space."
 
-"Like wild dogs in a cage, they can't stay in any one place for more than a number of seconds."
+    "Like wild dogs in a cage, they can't stay in any one place for more than a number of seconds."
 
-"It only takes them a few seconds to find us."
+    "It only takes them a few seconds to find us."
 
-# sprite just disappears! [str]
-#show lilly basic_suprised_cas at rightsit # [str] (not sure if needed)
-#with charachange # [str]
+    # sprite just disappears! [str]
+    #show lilly basic_suprised_cas at rightsit # [str] (not sure if needed)
+    #with charachange # [str]
 
-"Boy 1" "Hey there's some girls back here!"
+    "Boy 1" "Hey there's some girls back here!"
 
-"Boy 2" "Really? Are they cute?"
+    "Boy 2" "Really? Are they cute?"
 
-"Boy 1" "They're a bit older, buy you like them that way, right?"
+    "Boy 1" "They're a bit older, buy you like them that way, right?"
 
-# # # trying to keep everything inside script is getting a little... confusing [str]
-# # # !!! also, that breaks a4 saves somehow. Should fix!!! [str]
-# python:
-#     def trembleleftsit(n):
-#         import math, random
-#         jitter = 0.00018 * (random.randint(-1,1))
-#         m = math.sin(n*math.pi*50) * 0.00005 + jitter
-#         return (m+0.0001,m+0.0001,0.0055,-0.15) # fookin' magic numbers [str]
-# # #
-#image hanako emb_downtimid_tremble_sun = At("sprites/hanako/hanako_emb_downtimid_sun.png",Motion(tremble,1.0, repeat=True)) # [str]
-#show hanako emb_downtimid_sun at Motion(trembleleftsit, 1.0, repeat=True) # leftsit # [str]
+    # # # trying to keep everything inside script is getting a little... confusing [str]
+    # # # !!! also, that breaks a4 saves somehow. Should fix!!! [str]
+    # python:
+    #     def trembleleftsit(n):
+    #         import math, random
+    #         jitter = 0.00018 * (random.randint(-1,1))
+    #         m = math.sin(n*math.pi*50) * 0.00005 + jitter
+    #         return (m+0.0001,m+0.0001,0.0055,-0.15) # fookin' magic numbers [str]
+    # # #
+    #image hanako emb_downtimid_tremble_sun = At("sprites/hanako/hanako_emb_downtimid_sun.png",Motion(tremble,1.0, repeat=True)) # [str]
+    #show hanako emb_downtimid_sun at Motion(trembleleftsit, 1.0, repeat=True) # leftsit # [str]
 
-show hanako emb_downtimid_tremble_sun # [str] (trembling code is in ui_settings.rpy now)
-with charachange # [str]
+    show hanako emb_downtimid_tremble_sun # [str] (trembling code is in ui_settings.rpy now)
+    with charachange # [str]
 
-"Hanako's shaking becomes more pronounced, and I can't help but share her fear."
+    "Hanako's shaking becomes more pronounced, and I can't help but share her fear."
 
-play sound sfx_heartslow # [str]
-show heartattack alpha  # [str]
-with Dissolve (0.1) # [str]
+    play sound sfx_heartslow # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
 
-hide heartattack alpha # [str]
-with Dissolve (0.7) # [str]
+    hide heartattack alpha # [str]
+    with Dissolve (0.7) # [str]
 
 
-hi "Lilly… we've got to get her out of here… I…"
+    hi "Lilly… we've got to get her out of here… I…"
 
-"Pain grips my chest, like a red hot skewer being driven into my chest."
+    "Pain grips my chest, like a red hot skewer being driven into my chest."
 
-"Boy 2" "So? What do they look like?"
+    "Boy 2" "So? What do they look like?"
 
-show lilly basic_oops_cas at rightsit # [str] (pout)
-with charachange # [str]
+    show lilly basic_oops_cas at rightsit # [str] (pout)
+    with charachange # [str]
 
-li "Hisao? Hisao! Please, calm down!"
+    li "Hisao? Hisao! Please, calm down!"
 
-"Boy 1" "Come look for yourself, lazy bastard."
+    "Boy 1" "Come look for yourself, lazy bastard."
 
-li "We need to remain calm here, for Hanako."
+    li "We need to remain calm here, for Hanako."
 
 
-play sound sfx_heartslow # [str]
-show heartattack alpha  # [str]
-with Dissolve (0.1) # [str]
+    play sound sfx_heartslow # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
 
-hide heartattack alpha # [str]
-with Dissolve (0.7) # [str]
+    hide heartattack alpha # [str]
+    with Dissolve (0.7) # [str]
 
-with Pause(0.7) # [str]
+    with Pause(0.7) # [str]
 
-play sound sfx_heartslow # [str]
-show heartattack alpha  # [str]
-with Dissolve (0.1) # [str]
+    play sound sfx_heartslow # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
 
-hide heartattack alpha # [str]
-with Dissolve (0.7) # [str]
+    hide heartattack alpha # [str]
+    with Dissolve (0.7) # [str]
 
-hi "We… I… need to go."
+    hi "We… I… need to go."
 
-"I stand and try to drag Hanako to her feet."
+    "I stand and try to drag Hanako to her feet."
 
-"Boy 1" "You're scaring them off! They're getting up!"
+    "Boy 1" "You're scaring them off! They're getting up!"
 
-hi "Come on Hanako, let's just leave"
+    hi "Come on Hanako, let's just leave"
 
-"Boy 2" "Fine I'm coming, stall them…"
+    "Boy 2" "Fine I'm coming, stall them…"
 
-"My body heaves with the effort of moving Hanako"
+    "My body heaves with the effort of moving Hanako"
 
 
-show hanako emb_downtimid_sun at twoleft # [str]
-with charamove # [str]
+    show hanako emb_downtimid_sun at twoleft # [str]
+    with charamove # [str]
 
-play sound sfx_heartslow # [str]
-show heartattack alpha  # [str]
-with Dissolve (0.1) # [str]
+    play sound sfx_heartslow # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
 
-hide heartattack alpha # [str]
-with Dissolve (0.2) # [str]
+    hide heartattack alpha # [str]
+    with Dissolve (0.2) # [str]
 
-with Pause(0.7) # [str]
+    with Pause(0.7) # [str]
 
-play sound sfx_heartfast # [str]
-show heartattack alpha  # [str]
-with Dissolve (0.1) # [str]
+    play sound sfx_heartfast # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
 
-hide heartattack alpha # [str]
-with Dissolve (0.2) # [str]
+    hide heartattack alpha # [str]
+    with Dissolve (0.2) # [str]
 
-li "Hisao? Are you alright?"
+    li "Hisao? Are you alright?"
 
-hi "I… I think so."
+    hi "I… I think so."
 
-hi "Come on, up you get."
+    hi "Come on, up you get."
 
-"Boy 2" "Right, I'm here, what's the WOAH"
+    "Boy 2" "Right, I'm here, what's the WOAH"
 
-"Hanako's body shifts, and her fringe falls away from her face, revealing her scarred face to the young boys."
+    "Hanako's body shifts, and her fringe falls away from her face, revealing her scarred face to the young boys."
 
-"Boy 1" "What the fuck is that?!"
+    "Boy 1" "What the fuck is that?!"
 
-"Boy 2" "They're the freaks from the school up the road!"
+    "Boy 2" "They're the freaks from the school up the road!"
 
-show lilly basic_reminisce_cas at rightsit # [str]
-with charachange # [str]
+    show lilly basic_reminisce_cas at rightsit # [str]
+    with charachange # [str]
 
-li "Oh no…"
+    li "Oh no…"
 
 
-play sound sfx_heartslow # [str]
-show heartattack alpha  # [str]
-with Dissolve (0.1) # [str]
+    play sound sfx_heartslow # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
 
-hide heartattack alpha # [str]
-with Dissolve (0.2) # [str]
+    hide heartattack alpha # [str]
+    with Dissolve (0.2) # [str]
 
-with Pause(0.7) # [str]
+    with Pause(0.7) # [str]
 
-play sound sfx_heartfast # [str]
-show heartattack alpha  # [str]
-with Dissolve (0.1) # [str]
+    play sound sfx_heartfast # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
 
-hide heartattack alpha # [str]
-with Dissolve (0.2) # [str]
+    hide heartattack alpha # [str]
+    with Dissolve (0.2) # [str]
 
-show hanako emb_strain_sun at twoleft # [str] (some epic new sprites! yay!)
-with charachange # [str]
+    show hanako emb_strain_sun at twoleft # [str] (some epic new sprites! yay!)
+    with charachange # [str]
 
-"Hanako's body convulses, and she stares directly at the two boys."
+    "Hanako's body convulses, and she stares directly at the two boys."
 
-"Never have I seen such murderous intent…"
+    "Never have I seen such murderous intent…"
 
-"Boy 1" "Oh no the freak's gunna get us!"
+    "Boy 1" "Oh no the freak's gunna get us!"
 
-"Boy 2" "Run! Ahahaha!"
+    "Boy 2" "Run! Ahahaha!"
 
-"The laugher of these boys burns into my mind, however it has a profound effect on Hanako."
+    "The laugher of these boys burns into my mind, however it has a profound effect on Hanako."
 
-show hanako emb_shock_sun at twoleft # [str] (some epic new sprites! yay!)
-with charachange # [str]
+    show hanako emb_shock_sun at twoleft # [str] (some epic new sprites! yay!)
+    with charachange # [str]
 
-"She grabs her ears, and shrieks."
+    "She grabs her ears, and shrieks."
 
-stop ambient fadeout 0.2 # [str]
+    stop ambient fadeout 0.2 # [str]
 
-"The ear-piercing shriek silences the howling boys."
+    "The ear-piercing shriek silences the howling boys."
 
-show lilly basic_oops_cas at rightsit # [str]
-with charachange # [str]
+    show lilly basic_oops_cas at rightsit # [str]
+    with charachange # [str]
 
-li "Hisao! Take her and run!"
+    li "Hisao! Take her and run!"
 
-"My body reacts to Lilly's words, and I grab Hanako's wrist, and drag her with all my might into the driving rain."
+    "My body reacts to Lilly's words, and I grab Hanako's wrist, and drag her with all my might into the driving rain."
 
-#stop ambient fadeout 0.2 # [str]
-scene bg suburb_roadcenter_rn #school_road # [str] (will _rn work? needs testing!)
-show rain # [str]
-#with dissolve # [str]
-with locationchange # [str]
+    #stop ambient fadeout 0.2 # [str]
+    scene bg suburb_roadcenter_rn #school_road # [str] (will _rn work? needs testing!)
+    show rain # [str]
+    #with dissolve # [str]
+    with locationchange # [str]
 
-#$rainAnim # [str]
-play ambient sfx_rain fadein 0.2 # [str]
+    #$rainAnim # [str]
+    play ambient sfx_rain fadein 0.2 # [str]
 
-"But it's not rain, it's a torrent of water issued forth from the sky, as is someone had redirected a river to fall upon our heads."
+    "But it's not rain, it's a torrent of water issued forth from the sky, as is someone had redirected a river to fall upon our heads."
 
-play sound sfx_heartfast # [str]
-show heartattack alpha  # [str]
-with Dissolve (0.1) # [str]
+    play sound sfx_heartfast # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
 
-hide heartattack alpha # [str]
-with Dissolve (0.8) # [str]
+    hide heartattack alpha # [str]
+    with Dissolve (0.8) # [str]
 
-with Pause(0.15) # [str]
+    with Pause(0.15) # [str]
 
-play sound sfx_heartslow # [str]
-show heartattack alpha  # [str]
-with Dissolve (0.1) # [str]
+    play sound sfx_heartslow # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
 
-hide heartattack alpha # [str]
-with Dissolve (0.8) # [str]
+    hide heartattack alpha # [str]
+    with Dissolve (0.8) # [str]
 
-play sound sfx_heartfast # [str]
-show heartattack alpha  # [str]
-with Dissolve (0.1) # [str]
+    play sound sfx_heartfast # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
 
-hide heartattack alpha # [str]
-with Dissolve (0.8) # [str]
+    hide heartattack alpha # [str]
+    with Dissolve (0.8) # [str]
 
-"Hanako is like a rag doll, and stumbles as I pull her away from the little café."
+    "Hanako is like a rag doll, and stumbles as I pull her away from the little café."
 
-play sound sfx_thunder # [str]
+    play sound sfx_thunder # [str]
 
-show white # [str]
-with Pause(0.1) # [str]
-hide white # [str]
-with Dissolve (0.5) # [str]
+    show white # [str]
+    with Pause(0.1) # [str]
+    hide white # [str]
+    with Dissolve (0.5) # [str]
 
-with Pause(0.15) # [str]
+    with Pause(0.15) # [str]
 
-"Lightning flashes and thunder roars, but still I run."
+    "Lightning flashes and thunder roars, but still I run."
 
-"The pounding of the rain is drowned out only by the pounding in my chest."
+    "The pounding of the rain is drowned out only by the pounding in my chest."
 
-"I feel every limb, nay, every muscle in my body tense with the strain, but still I keep dragging Hanako through the rain."
+    "I feel every limb, nay, every muscle in my body tense with the strain, but still I keep dragging Hanako through the rain."
 
-play sound sfx_heartslow # [str]
-show heartattack alpha  # [str]
-with Dissolve (0.1) # [str]
+    play sound sfx_heartslow # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
 
-hide heartattack alpha # [str]
-with Dissolve (0.2) # [str]
+    hide heartattack alpha # [str]
+    with Dissolve (0.2) # [str]
 
-with Pause(0.7) # [str]
+    with Pause(0.7) # [str]
 
-play sound sfx_heartfast # [str]
-show heartattack alpha  # [str]
-with Dissolve (0.1) # [str]
+    play sound sfx_heartfast # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
 
-hide heartattack alpha # [str]
-with Dissolve (0.2) # [str]
+    hide heartattack alpha # [str]
+    with Dissolve (0.2) # [str]
 
-"Burning pain shoots down my left arm, and I involuntarily release Hanako's hand."
+    "Burning pain shoots down my left arm, and I involuntarily release Hanako's hand."
 
-"She stumbles forward, decelerating, but continues past me."
+    "She stumbles forward, decelerating, but continues past me."
 
 
-play sound sfx_heartfast # [str]
-show heartattack alpha  # [str]
-with Dissolve (0.1) # [str]
+    play sound sfx_heartfast # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
 
-hide heartattack alpha # [str]
-with Dissolve (0.8) # [str]
+    hide heartattack alpha # [str]
+    with Dissolve (0.8) # [str]
 
-with Pause(0.15) # [str]
+    with Pause(0.15) # [str]
 
-play sound sfx_heartslow # [str]
-show heartattack alpha  # [str]
-with Dissolve (0.1) # [str]
+    play sound sfx_heartslow # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
 
-hide heartattack alpha # [str]
-with Dissolve (0.8) # [str]
+    hide heartattack alpha # [str]
+    with Dissolve (0.8) # [str]
 
-play sound sfx_heartfast # [str]
-show heartattack alpha  # [str]
-with Dissolve (0.1) # [str]
+    play sound sfx_heartfast # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
 
-hide heartattack alpha # [str]
-with Dissolve (0.8) # [str]
+    hide heartattack alpha # [str]
+    with Dissolve (0.8) # [str]
 
-"I can take no more."
+    "I can take no more."
 
-# # dat rotozoom madness. Also, retriggering rain 'cause it's vanishing after scene update
-scene bg suburb_roadcenter_rn at RotoZoom(0,-6,0.1,1.0,1.2,0.1, xalign=0.5, yalign=0.52) # [str]
-show rain # [str]
-with vpunch # [str]
+    # # dat rotozoom madness. Also, retriggering rain 'cause it's vanishing after scene update
+    scene bg suburb_roadcenter_rn at RotoZoom(0,-6,0.1,1.0,1.2,0.1, xalign=0.5, yalign=0.52) # [str]
+    show rain # [str]
+    with vpunch # [str]
 
-play sound sfx_heartfast # [str]
+    play sound sfx_heartfast # [str]
 
-show heartattack alpha  # [str]
-with Dissolve (0.1) # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
 
-hide heartattack alpha # [str]
-with Dissolve (0.2) # [str]
+    hide heartattack alpha # [str]
+    with Dissolve (0.2) # [str]
 
-# # [str]
+    # # [str]
 
-"My knees buckle, and I collapse around myself."
+    "My knees buckle, and I collapse around myself."
 
-"As I topple, I see Hanako turn to face me, her face a picture of terror."
+    "As I topple, I see Hanako turn to face me, her face a picture of terror."
 
-"I see her watch me hit the ground."
+    "I see her watch me hit the ground."
 
-"I see her face change in ways I've never thought possible."
+    "I see her face change in ways I've never thought possible."
 
-stop ambient fadeout 3.0 # [str]
+    stop ambient fadeout 3.0 # [str]
 
-"I see her stumble over to my limp body, her mouth open in a silent scream."
+    "I see her stumble over to my limp body, her mouth open in a silent scream."
 
-"No, that's not it… I just can't hear anything. Not even the pounding rain on my face."
+    "No, that's not it… I just can't hear anything. Not even the pounding rain on my face."
 
-play sound sfx_heartfast # [str]
-show heartattack alpha  # [str]
-with Dissolve (0.1) # [str]
+    play sound sfx_heartfast # [str]
+    show heartattack alpha  # [str]
+    with Dissolve (0.1) # [str]
 
-hide heartattack alpha # [str]
-with Dissolve (0.8) # [str]
+    hide heartattack alpha # [str]
+    with Dissolve (0.8) # [str]
 
-show passoutOP1 # [str]
-with None # [str]
+    show passoutOP1 # [str]
+    with None # [str]
 
-"As my world turns grey, I see Hanako straddling me, her fists clenched together and raised above her tear- and rain-streaked face."
+    "As my world turns grey, I see Hanako straddling me, her fists clenched together and raised above her tear- and rain-streaked face."
 
-stop music fadeout 1.0 # [str]
+    stop music fadeout 1.0 # [str]
 
-"The last light drains out of my world just as I see her brining down her fists."
+    "The last light drains out of my world just as I see her brining down her fists."
 
-with Pause(1.0) # [str]
-#ftb
+    with Pause(1.0) # [str]
+    #ftb
 
-window hide # [str]
+    window hide # [str]
 
-play sound sfx_heartstop # [str]
+    play sound sfx_heartstop # [str]
 
-scene black # [str]
-with None # [str]
+    scene black # [str]
+    with None # [str]
 
-with Pause(2.7) # [str]
+    with Pause(2.7) # [str]
 
-return
+    return
