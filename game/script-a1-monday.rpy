@@ -509,10 +509,14 @@ window hide
 
 stop music fadeout 1.0
 
-
+scene white # [str]
+with slowfade # [str]
 
 #**************************************
 label en_A1:
+
+scene white # [str]
+with None # [str]
 
 window hide None
 

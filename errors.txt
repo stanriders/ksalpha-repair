@@ -1,9 +1,0 @@
-﻿I'm sorry, but errors were detected in your script. Please correct the
-errors listed below, and try again.
-
-
-On line 6153 of /mnt/gstorage/Documents/Misc/KS Alpha Final Port/game/script-a2-shizune.rpy: expected statement.
-Pause(0.5)
-          ^
-
-Ren'Py Version: Ren'Py 6.10.2e

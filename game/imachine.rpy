@@ -29,7 +29,9 @@ label NOP2: #Bundle Of Hisao
     jump_out A1
     
 label A1: #Gateway Effect
-    $ tcard(1, "all")
+    $ renpy.movie_cutscene(vid_tca1) # [str]
+    $ renpy.pause(1.0) # [str]
+    #$ tcard(1, "all")
     call iscene ("A1")
     call imenu ("choiceA1")
     #mu "Do you want to introduce yourself to the class?"

@@ -2,6 +2,8 @@
  # it's easy to find
  # but here's changelog:
 
+ # all further changes will be here https://github.com/stanriders/ksalpha-repair/commits/master
+
 script-a3-hanako: H23
 script-a4-hanako: all
 

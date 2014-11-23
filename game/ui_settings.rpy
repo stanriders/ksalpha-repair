@@ -1164,22 +1164,23 @@ init 1:
     image ev hanako_scars_med = 'event/hanako_scars_med_ni.jpg'
     image ev hanako_scars_large_move = At("event/hanako_scars_large_ni.jpg",Move((0.0, 1.0, 0.0, 1.0), (1.0, 0.0, 1.0, 0.0), 30.0, time_warp=acdc_warp, subpixel=True))
     
-    image evh hanako_bed_boobs_blush = 'event/Hanako_supercg/hanako_bed_boobs_blush.jpg'
-    image evh hanako_bed_boobs_glance = 'event/Hanako_supercg/hanako_bed_boobs_glance.jpg'
-    image evh hanako_bed_boobs_bsmile = 'event/Hanako_supercg/hanako_bed_boobs_smileb.jpg'
-    image evh hanako_bed_boobs_gsmile = 'event/Hanako_supercg/hanako_bed_boobs_smileg.jpg'
-    image evh hanako_bed_crotch_blush = 'event/Hanako_supercg/hanako_bed_crotch_blush.jpg'
-    image evh hanako_bed_crotch_glance = 'event/Hanako_supercg/hanako_bed_crotch_glance.jpg'
-    image evh hanako_bed_crotch_bsmile = 'event/Hanako_supercg/hanako_bed_crotch_smileb.jpg'
-    image evh hanako_bed_crotch_gsmile = 'event/Hanako_supercg/hanako_bed_crotch_smileb.jpg'
+    # unused [str]
+    #image evh hanako_bed_boobs_blush = 'event/Hanako_supercg/hanako_bed_boobs_blush.jpg'
+    #image evh hanako_bed_boobs_glance = 'event/Hanako_supercg/hanako_bed_boobs_glance.jpg'
+    #image evh hanako_bed_boobs_bsmile = 'event/Hanako_supercg/hanako_bed_boobs_smileb.jpg'
+    #image evh hanako_bed_boobs_gsmile = 'event/Hanako_supercg/hanako_bed_boobs_smileg.jpg'
+    #image evh hanako_bed_crotch_blush = 'event/Hanako_supercg/hanako_bed_crotch_blush.jpg'
+    #image evh hanako_bed_crotch_glance = 'event/Hanako_supercg/hanako_bed_crotch_glance.jpg'
+    #image evh hanako_bed_crotch_bsmile = 'event/Hanako_supercg/hanako_bed_crotch_smileb.jpg'
+    #image evh hanako_bed_crotch_gsmile = 'event/Hanako_supercg/hanako_bed_crotch_smileb.jpg'
     
-    image evh hanako_missionary_underwear = 'event/Hanako_supercg/hanako_missionary_underwear.jpg'
-    image evh hanako_missionary_open = 'event/Hanako_supercg/hanako_missionary_open.jpg'
-    image evh hanako_missionary_closed = 'event/Hanako_supercg/hanako_missionary_closed.jpg'
-    image evh hanako_missionary_glance = 'event/Hanako_supercg/hanako_missionary_glance.jpg'
-    image evh hanako_missionary_clench = 'event/Hanako_supercg/hanako_missionary_clench.jpg'
-    image evh hanako_missionary_clenchs = 'event/Hanako_supercg/hanako_missionary_clenchs.jpg'
-    image evh hanako_missionary_ending = 'event/Hanako_supercg/hanako_missionary_ending.jpg'
+    #image evh hanako_missionary_underwear = 'event/Hanako_supercg/hanako_missionary_underwear.jpg'
+    #image evh hanako_missionary_open = 'event/Hanako_supercg/hanako_missionary_open.jpg'
+    #image evh hanako_missionary_closed = 'event/Hanako_supercg/hanako_missionary_closed.jpg'
+    #image evh hanako_missionary_glance = 'event/Hanako_supercg/hanako_missionary_glance.jpg'
+    #image evh hanako_missionary_clench = 'event/Hanako_supercg/hanako_missionary_clench.jpg'
+    #image evh hanako_missionary_clenchs = 'event/Hanako_supercg/hanako_missionary_clenchs.jpg'
+    #image evh hanako_missionary_ending = 'event/Hanako_supercg/hanako_missionary_ending.jpg'
 
     image ev hanako_after_worry = 'event/Hanako_supercg/hanako_after_worry.jpg'
     image ev hanako_after_smile = 'event/Hanako_supercg/hanako_after_smile.jpg'
@@ -1262,6 +1263,8 @@ init 1:
     image train_scenery = At("event/hisao_train/train_scenery.jpg",Move((0.0, 0.0), (2.0, 0.0), 2.0, xalign=0.66666666666666667, repeat=True))
     image train_scenery_slow = At("event/hisao_train/train_scenery.jpg",Move((0.0, 0.0), (2.0, 0.0), 3.0, xalign=0.5, repeat=True))
     image train_scenery_fg = At("event/hisao_train/train_scenery_fg.png",Move((0.0, 0.0), (14.3, 0.0), 4.3, xanchor=0.0, repeat=True))
+    
+    image train_scenery_subway = At("event/hisao_train/train_scenery_subway.jpg",Move((0.0, 0.0), (2.0, 0.0), 0.7, xalign=0.66666666666666667, repeat=True)) # hanako a4 stuff [str]
     
     #original image source- http://img.photobucket.com/albums/v646/cityq/Urban/LANYC10x1.jpg
     image train_scenery2 = At("event/hisao_train/train_scenery2.jpg",Move((0.0, 0.0), (2.0, 0.0), 2.0, xalign=0.66666666666666667, repeat=True))
@@ -2176,6 +2179,7 @@ init python:
     
     
     #video mapping
+    vid_tca1 = "video/tc_act1.mkv"
     vid_op = "video/op_1.mkv"
     vid_disc = "video/disc.mpg"
     vid_dream = "video/nightmare.mpg"

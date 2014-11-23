@@ -4060,7 +4060,7 @@ label en_H32:
     stop ambient fadeout 0.5 # [str]
     with Pause(0.5) # [str]
 
-    scene train_scenery2 # [str]
+    scene train_scenery_subway #train_scenery2 # [str]
     show evfg hisao_trainride # [str]
     with locationchange # [str]
     $ renpy.music.set_volume(1.0, .5, channel="ambient") # [str]
