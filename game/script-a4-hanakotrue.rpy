@@ -7732,8 +7732,8 @@ label en_HT13h:
     scene white
     with dissolve
     
-    show ev hanako_finger_close:
-        xalign 0.5 yalign 0.5 zoom 0.4
+    show ev hanako_finger_close #:
+        #xalign 0.5 yalign 0.5 zoom 0.4 # my my, instead of resizing cg you used ingame zooming?.. [str]
     with dissolve
 
     "I can watch no longer, so I kneel down, flipping Hanako onto her back as I do."

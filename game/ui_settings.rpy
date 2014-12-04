@@ -1237,6 +1237,9 @@ init 1:
     image ev hanako_finger_close = 'event/hanako_finger/hanako_finger_close.png'
     image ev hanako_finger_close_scroll = 'event/hanako_finger/hanako_finger_close_scroll.png'
     
+    #a5-true ending CG
+    image ev hanako_resolute = 'event/hanako_resolute.png'
+    
     #End Twoface's stuff -md01
     
     # # # additional shopped stuff [str]
@@ -1264,7 +1267,9 @@ init 1:
     image train_scenery_slow = At("event/hisao_train/train_scenery.jpg",Move((0.0, 0.0), (2.0, 0.0), 3.0, xalign=0.5, repeat=True))
     image train_scenery_fg = At("event/hisao_train/train_scenery_fg.png",Move((0.0, 0.0), (14.3, 0.0), 4.3, xanchor=0.0, repeat=True))
     
-    image train_scenery_subway = At("event/hisao_train/train_scenery_subway.jpg",Move((0.0, 0.0), (2.0, 0.0), 0.7, xalign=0.66666666666666667, repeat=True)) # hanako a4 stuff [str]
+    # hanako a4 stuff [str]
+    image evfg hisao_trainride_subway = "event/hisao_train/hisao_trainride_subway.png"
+    image train_scenery_subway = At("event/hisao_train/train_scenery_subway.jpg",Move((0.0, 0.0), (2.0, 0.0), 0.7, xalign=0.66666666666666667, repeat=True)) 
     
     #original image source- http://img.photobucket.com/albums/v646/cityq/Urban/LANYC10x1.jpg
     image train_scenery2 = At("event/hisao_train/train_scenery2.jpg",Move((0.0, 0.0), (2.0, 0.0), 2.0, xalign=0.66666666666666667, repeat=True))

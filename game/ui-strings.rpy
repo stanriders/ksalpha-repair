@@ -511,7 +511,7 @@ RAITA
 
 
 {b}Prealpha Repair{/b}
-shitty ms paint faggot
+smspf 
 Alphabro
 Kelper
 Buttface
@@ -533,6 +533,7 @@ cometodaddycome"""
 #\"B\"
 #Anonymous
 
+#smspf = shitty ms paint faggot 
 
 
     displayDict["en"].drugs_wordlist  =  ["Disopyramide",

@@ -4061,7 +4061,7 @@ label en_H32:
     with Pause(0.5) # [str]
 
     scene train_scenery_subway #train_scenery2 # [str]
-    show evfg hisao_trainride # [str]
+    show evfg hisao_trainride_subway #hisao_trainride # [str]
     with locationchange # [str]
     $ renpy.music.set_volume(1.0, .5, channel="ambient") # [str]
     play ambient sfx_trainint fadein 0.5 # [str]

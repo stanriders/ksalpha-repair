@@ -512,7 +512,7 @@ RAITA
 
 
 {b}Команда восстановления Преальфы{/b}
-shitty ms paint faggot
+smspf
 Alphabro
 Kelper
 Buttface
@@ -527,8 +527,9 @@ Parity
 BWildness
 Twoface
 Sapiens
-cometodaddycome"""
+cometodaddycome""" # <3 [str]
 
+#smspf = shitty ms paint faggot 
 
     displayDict['ru'].drugs_wordlist = [ruw(u"Дизопирамид"),
                         ruw(u"Варфарин"),

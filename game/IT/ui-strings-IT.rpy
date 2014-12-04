@@ -263,8 +263,29 @@ thalidomidegirl
 
 {b}Ringraziamenti Speciali{/b}
 PyTom
-RAITA"""
+RAITA
+KSG Threads on /vg/
 
+
+{b}Prealpha Repair{/b}
+smspf
+Alphabro
+Kelper
+Buttface
+Aki <3
+muffinduck01
+Gift of Gab
+Stan Riders
+
+                                     
+{b}Also Helped{/b}
+Parity
+BWildness
+Twoface
+Sapiens
+cometodaddycome"""
+
+#smspf = shitty ms paint faggot 
 
     displayDict["it"].drugs_wordlist  =  ["Disopiramide",
                         "Warfarin",

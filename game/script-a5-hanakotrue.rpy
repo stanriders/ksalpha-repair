@@ -4197,8 +4197,8 @@ label en_HT17:
     
     play sound sfx_whiteout
     
-    scene white
-    with dissolve
+    scene ev hanako_resolute #white
+    with charachange #dissolve
 
     "Hanako stands up, and I stand up with her."
 

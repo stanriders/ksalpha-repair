@@ -1892,8 +1892,11 @@ menu:
      
     "I'll go to the library.":
         return m2
-        
-    "Fuck all that bullshit and get right to the good shit.":
+     
+    # ffs, this is so NOT self-explanatory!
+    # also, i guess i need to remove that. There's editor's note with choosing hana's good/bad end anyway. TODO: think about it [str]
+    #"Fuck all that bullshit and get right to the good shit.":
+    "Skip to Hanako's good end after the end of Act 1":
         return m3
         
 label en_A35a:

@@ -913,7 +913,7 @@ label L12:
     jump_out L13
 
 label L13:
-    $ tcard(3, "lilly")
+    $ tcard(3, "lilly") # what. [str]
     call iscene ("L13")
     jump_out L14
 
@@ -1076,6 +1076,7 @@ label L42:
     jump_out L43
     
 label L43:
+    $ tcard(5, "lilly") # no artwork for now [str]
     call iscene ("L43")
     jump_out L44
 
