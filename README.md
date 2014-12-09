@@ -1,16 +1,43 @@
 Katawa Shoujo Prealpha Repair
 ==============
 
+**WARNING**: This is unfinished, unpolished and unstable work.
+
+**Latest stable build**: http://steamcommunity.com/gid/103582791434107099#announcements/detail/263775372989441506
+
 **Documentation**: https://github.com/stanriders/ksalpha-repair/wiki/KS-ALPHA-CHEATSHEET-by-muffinduck01
 
-**What needs to be done**: 
- * First: **/game/Dev Files/Shit To Do.txt**
- * After that do a full playthough and make an actual todo-list.
- * Stop messing with README.
+--
+___What needs to be done___: 
 
-**Done**:
- * Hanako routes (both good and bad)
- * Not sure about anything else.
+**Lilly-route**:
+ * direction
+ * (at least try to) fix logical contradictions and scene repeating
+ * yukata sprites for Lilly
+ * ponytail sprites and (maybe) lillyroom cg for Hanako
+ * tanabata bgs
+ * cgs maybe, dunno
+
+**Hanako-route**:
+ * add transitions and fadings in act3
+ * add more animations in H23 and later
+ * CGs, moar cgs!
+ * timeskips, maybe?
+
+**True-Hanako-route**:
+ * MOAR CGS!
+ * Also, timeskips.
+
+**Overall**:
+ * Finish Lilly's and Hanako's routes and make a public release
+ * Read Shizune-route
+ * Read Emi-route
+ * Read Rin-route
+ * Do whatever gonna needs to be done.
+ * Android port. Maybe.
+ * Russian translation. Implement as soon as it's gonna be done.
+ * Do something with a2-hanalilly-trunk?
+ * Put todo-list somewhere out of readme? Nah, it's fine
 
 --
 
