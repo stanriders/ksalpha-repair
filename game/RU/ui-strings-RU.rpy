@@ -2,9 +2,6 @@
     ### RUSSIAN (gonna be a thing)
     
     init_language("ru")
-    
-    if not persistent.runamings:
-        persistent.runamings = "poli" # Поливанов включается по умолчанию. [str]
         
     displayDict["ru"].styleoverrides = {"font": rufont, 
                                     "language": "western",

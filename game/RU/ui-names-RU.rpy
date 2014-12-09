@@ -1,6 +1,9 @@
-﻿init -2 python:
+﻿init -3 python:
     ### hepb/poli switching
     ### некоторые строки используют ruw(...) из-за неправильного отображения в меню [str]
+    
+    if not persistent.runamings:
+        persistent.runamings = "poli" # Поливанов включается по умолчанию. [str]
     
     if persistent.runamings == "poli":
         name_hicchan = u"Хиттян"
