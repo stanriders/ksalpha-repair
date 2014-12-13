@@ -126,10 +126,13 @@
 
     "No effort is needed for her to pop open the lid, with her expertly pushing it up with her thumbs."
     
-    #play music sarabandmusicbox fadein 10.0
+    play music music_musicbox #fadein 10.0
     
     show musicbox open at center
+    with charaenter
     with Pause (1.0)
+    
+    hide window
     
     #Pause, extreme close-up CG of just her face and the music box, with her watching the music box as it plays the tune. Possibly a graphical effect to simulate the cylinder and pins inside moving as well.
 
@@ -149,6 +152,8 @@
     "Hanako and I look on silently, as focused on Lilly as she is on the small music box."
 
     "As the tune finishes, she gently closes the lid and lowers her hands to her lap."
+    
+    stop music fadeout 2.0 # [str]
     
     hide musicbox
     
@@ -201,7 +206,7 @@
 
     "Nothing quite seems appropriate to say afterwards, for any of us."
     
-    show lillybasic_surprised at tworightsit
+    show lilly basic_surprised at tworightsit
     with charachange
     
     with vpunch
@@ -728,7 +733,7 @@ label en_L14:
     # Centered and all on the screen at once with this formatting, or as part of a CG that's just got the note in Hisao's hand.
     
     hide lilly
-
+    hide window
     $ fixedwritten_note(u"Hey Hisao,\n\nI'm really, really sorry about last night. I really made a mess of things, didn't I?\n\nI've taken all the bottles and cleaned up the spills, so don't worry about any incriminating evidence. I'll make sure not to draw attention to myself on the way out too.\n\nRegards,\nShirakawa Yuuko\n\nPS. If you need a favour, call me. The phone number's on the other side of the note. {image=vfx/smiley.png}")
 
     # End note
@@ -1925,14 +1930,14 @@ label en_L16:
     with locationchange
     with Pause(1.0)
     
-    scene bg_school_dormhisao at left
+    scene bg school_dormhisao at left
     with locationchange
 
     "I walk back the desk and grab the thick book from my bag."
 
     "Already slightly creased from use, it flops lifelessly in my hand."
     
-    show kenji_neutral at left
+    show kenji neutral at left
     with charaenter
 
     hi "Here."
@@ -2033,7 +2038,7 @@ label en_L16:
 
     rin "Oh, we just…"
 
-    show rin basic_deadpan_surprised at left
+    show rin basic_deadpansurprised at left
     with charachange
 
     rin "…"
@@ -2122,14 +2127,14 @@ label en_L16:
 
     hi "Uh huh."
     
-    show rin basic_deadpan_contemplation at left
+    show rin basic_deadpancontemplation at left
     with charachange
     
     rin "It wasn't nice."
 
     hi "I see."
     
-    show rin basic_deadpan_amused at left
+    show rin basic_deadpanamused at left
     with charachange
 
     rin "So don't choke on your pills."
@@ -2192,7 +2197,7 @@ label en_L16:
     
     emi "Told you."
 
-    show rin basic_deadpan_amused at left
+    show rin basic_deadpanamused at left
     with charachange
     
     rin "Hisao, I had no idea."
@@ -2202,7 +2207,7 @@ label en_L16:
 
     hi "No idea? About what?"
 
-    show rin basic_deadpan_contemplation at left
+    show rin basic_deadpancontemplation at left
     with charachange
     
     rin "That you're an athlete."
@@ -2223,7 +2228,7 @@ label en_L16:
 
     hi "I'm not an athlete. I was just startled."
     
-    show rin basic_deadpan_amused at left
+    show rin basic_deadpanamused at left
     with charachange
 
     rin "Did you choke on your pills?"
@@ -2232,7 +2237,7 @@ label en_L16:
 
     hi "No, I did not. Thanks for the warning."
     
-    show rin basic_deadpan_delight at left
+    show rin basic_deadpandelight at left
     with charachange
 
     rin "Good. Choking on my pill really hurt."
@@ -2245,7 +2250,7 @@ label en_L16:
 
     hi "Yeah, sure. Lead the way."
 
-    scene bg school_dormhall ground
+    scene bg school_dormhall_ground
     with charachange
     
     stop music
@@ -2259,7 +2264,7 @@ label en_L16:
 
     hi "Damn, it's raining?"
 
-    show emi basic_closed grin at left
+    show emi basic_closed_grin at left
     with charaenter
     
     emi "Why did you think we needed your help? If it was fine we could do it ourselves."
@@ -2273,14 +2278,14 @@ label en_L16:
 
     hi "We're going to get drenched, aren't we?"
 
-    show rin basic_deadpan_normal at right
+    show rin basic_deadpannormal at right
     with charaenter
     
     rin "Is that a bad thing?"
 
     hi "Well, yeah. We could get colds."
 
-    show rin basic_deadpan contemplation at right
+    show rin basic_deadpancontemplation at right
     with charachange
     
     rin "Huh."
@@ -2318,7 +2323,7 @@ label en_L16:
 
     $ renpy.music.set_volume(1.5, 1.5, channel='ambient')
     
-    scene bg school_gardens
+    scene bg school_gardens_rn
     with locationchange
 
     show rain
@@ -2392,7 +2397,7 @@ label en_L16:
 
     emi "Well, yeah."
 
-    show rin basic_deadpan suprised at right
+    show rin basic_deadpansuprised at right
     with charaenter
     
     rin "She has a point."
@@ -2447,7 +2452,7 @@ label en_L16:
 
     emi "Go!"
 
-    scene bg school_gardens
+    scene bg school_gardens_rn
     with locationchange
 
     show rain
@@ -2464,7 +2469,9 @@ label en_L16:
     hi "Damnit, damnit, damnit."
 
     "What a stupid plan this was."
-
+    
+    stop ambient fadeout 4.0
+    
     scene bg school_auditorium
     with locationchange
 
@@ -3013,10 +3020,10 @@ label en_L17:
     
     nk "Good afternoon, Miss Satou."
 
-    show lilly basic_reminisce at rightsit
+    show lilly basic_reminisce_paj at rightsit
     with charamove
     
-    show lilly basic_reminisce at right
+    show lilly basic_reminisce_paj at right
     with charamove
     
     "She gives the best smile she can muster, bowing to him with surprising accuracy."
@@ -3028,20 +3035,17 @@ label en_L17:
     
     show lilly basic_concerned_paj at right
     with charachange
-    
-    hide lilly
-    
-    hide nurse
 
     "She gives the same sullen nod as she gave me before."
- 
+     
     scene bg school_dormlilly
+    with locationchange
     
     nk "Well, just pop over to your bed and have a sit while I get set up here."
 
     show lilly basic_concerned_paj at right
     
-    show nurse nurse_fabulous at center
+    show nurse fabulous at center
     
     "As per his instructions, she slowly walks over to her bed, checking the edge with her hand before taking a seat on the side."
 
@@ -3069,8 +3073,9 @@ label en_L17:
     show nurse neutral at center
     with charachange
     
-    show lilly basic_displeased at left
-    with charamove
+    show lilly basic_displeased_paj at right
+    with charachange
+    #with charamove
 
     nk "It looks like Miss Satou here has a bad case of the ol' tonsillitis."
 
@@ -3141,6 +3146,9 @@ label en_L17:
     with charamove
 
     "Lilly gives a thankful bow to him as he leaves and shuts the door behind him."
+    
+    hide nurse
+    with charaexit
     
     play sound sfx_doorclose
     
@@ -4221,8 +4229,8 @@ label en_L19a:
 
     "All that remains, is… what do I need to do?"
 
-    #scene black
-    #with dissolve
+    scene black
+    with dissolve
 
     return
 

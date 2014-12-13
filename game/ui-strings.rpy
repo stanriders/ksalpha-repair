@@ -428,7 +428,8 @@
                                  (5, "hanatrue"): ("Elucidation", "act5hanatrue", 350, 400), #same herepurpl
                                  (2, "lilly"): ("Past", "act2lilly", 80, 170), #skim #Needs changing, maybe with Raide's child Lilly sketch
                                  (3, "lilly"): ("Present", "act3lilly", 350, 400), #syureria
-                                 (4, "lilly"): ("Future", "act4lilly", 80, 170), #skim
+                                 (4, "lilly"): ("Past and Present", "act4lilly", 80, 170), #skim
+                                 (5, "lilly"): ("Future", "act4lilly", 80, 170), # volvo giv art pls
                                  (2, "rin"): ("Dream", "act2rin", 300, 220), #aura
                                  (3, "rin"): ("Distance", "act3rin", 150, 230), #kekekeke
                                  (4, "rin"): ("Difference", "act4rin", 200, 250), 

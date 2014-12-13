@@ -476,8 +476,16 @@ init 1:
                     'basic_smileclosed',
                     'basic_surprised',
                     'basic_weaksmile',
+                    'behind_emb',
                     'behind_cheerful',
                     'behind_displeased',
+                    'behind_giggle',
+                    'behind_pout',
+                    'behind_reminisce',
+                    'behind_sleepy',
+                    'behind_smile',
+                    'behind_smileclosed',
+                    'behind_weaksmile',
                     'cane_ara',
                     'cane_arablush',
                     'cane_cheerful',
@@ -509,10 +517,6 @@ init 1:
                     'invis',
                     ]
         make_sprites('lilly',lilly_list,['paj','cas','nak','pat'])
-
-        #next was added by SemisoftCheese for some reason:
-        lillyprop_list = ['back_cane']
-        make_sprites('lillyprop',lillyprop_list,['paj','cas','nak','pat'])
         
     # HANAKO
         hana_list = ['basic_bashful',
@@ -741,19 +745,19 @@ init 1:
     
     # Minor characters
         make_sprites('yuuko',['smile','neutral','happy','closedhappy','worried', 'neurotic', 'panic',], ['shang','up','down'])
-        make_sprites('yuukoshang',['smile','neutral','happy','closedhappy','worried', 'neurotic', 'panic','invis'], ['up','down'])
+        make_sprites('yuukoshang',['smile','neutral','happy','closedhappy','worried', 'neurotic', 'panic','invis', 'noglasses'], ['up','down'])
         make_sprites('akira',['basic_smile','basic_lost','basic_kill','basic_annoyed','basic_resigned','basic_boo', 'basic_laugh'])
         make_sprites('hideaki',['angry','angry_up','bored','bored_up','closed_up','confused','darkside','disapproves','evil','happy','happy_up','kiss','normal','normal_up','ohshit','sad','surprise','surprise_up','thinking','serious','serious_up','triangle','invis'])
         make_sprites('jigoro',['angry','laugh','neutral','smug'])
         make_sprites('kenji',['neutral','happy','tsun','rage','surprised','invis'], ['naked'])
         make_sprites('nurse',['neutral','concern','fabulous','grin'])
-        make_sprites('muto',['normal','smile','irritated'])
+        make_sprites('muto',['normal','smile','irritated','invis'])
         make_sprites('meiko',['giggle','grin','serious','wistful'], ['close'])
         make_sprites('nomiya',['smile','talk','talktongue','veryhappy','dreamy', 'frown','serious','stern', 'invis'])
         make_sprites('sae',['neutral','smile','scowl','doubt','scold','invis'], ['smoke'])
         make_sprites('shopkeep', ['happy', 'neutral', 'surprised', 'thinking'])
         #make_sprites('miki', ['angry', 'concerned', 'confused', 'grin', 'grinclosed', 'neutral', 'oops', 'serious', 'smile', 'surprised', 'whistle', 'wink'], ['gym'])
-        make_sprites('aoi', ['neutral', 'oops', 'smile', 'surprised',])
+        make_sprites('aoi', ['neutral', 'oops', 'smile', 'surprised'])
 
 
     ########## END SPRITES ##########
@@ -1141,22 +1145,41 @@ init 1:
     
     image teaset = 'vfx/teaset.png'
     image teaset alpha = im.Alpha("vfx/teaset.png", 0.0)
+    
+    image musicbox closed = "vfx/musicbox_closed.png"
+    image musicbox open = "vfx/musicbox_open.png"
+    
+    # okay, so making Lilly's back_cane as an actor sprite was a bad idea. Doing it final's way now [str]
+    image prop lilly_back_cane = "vfx/prop_lilly_back_cane.png"
+    image prop lilly_back_cane_close = "vfx/prop_lilly_back_cane_close.png"
+    
+    image ovl lilly_wheat_foreground = 'event/lilly_wheat_foreground.png'
+    image ev lilly_wheat_small = 'event/lilly_wheat_small.jpg'
+    image ev lilly_wheat_large = 'event/lilly_wheat_large.jpg'
+    
+    image evfg lilly_trainride = 'event/lilly_trainride.png'
+    image ev lilly_trainride_ni = 'event/lilly_trainride_ni.jpg'
 
+    image ev lilly_hospital = 'event/lilly_hospital.jpg'
+    image ev lilly_hospitalclosed = 'event/lilly_hospitalclosed.jpg'
+    
     # HANAKO
     image ev hana_library_read = sunset("event/hana_library_read.jpg")
     image ev hana_library = sunset("event/hana_library.jpg")
     image ev hana_library_gasp = sunset("event/hana_library_gasp.jpg")
+    image ev hana_library_smile = sunset("event/hana_library_smile.jpg")
 
     image ev hana_library_read_std = "event/hana_library_read.jpg"
     image ev hana_library_std = "event/hana_library.jpg"
     image ev hana_library_gasp_std = "event/hana_library_gasp.jpg"
+    image ev hana_library_smile_std = "event/hana_library_smile.jpg"
     
     #Start of inserted resources
     image hanako_door_base = 'vfx/hanako_door_base.jpg'
     image hanako_door_door = 'vfx/hanako_door_door.jpg'
     
     image ev hanako_kiss = 'event/hanako_kiss.jpg'
-    image ev hanako_kiss2 = 'event/hanako_kissnorm.jpg'
+    #image ev hanako_kiss2 = 'event/hanako_kissnorm.jpg'
     image ev hanako_kiss_easein = At("event/hanako_kiss.jpg", Zoom((800,600),(40, 30, 720, 540),(0, 0, 800, 600),12.0, time_warp=_ease_time_warp, xalign=0.5, yalign=0.5))
     
     image ev hanako_scars = 'event/hanako_scars_ni.jpg'
@@ -1344,7 +1367,8 @@ init 1:
                      ("ev hanako_kiss_outside", "ev hanako_kiss_day", "ev hanako_kiss_night"),
                      ("ev hanako_miss1", "ev hanako_miss2", "ev hanako_miss3", "ev hanako_miss4", "ev hanako_miss5", "ev hanako_miss6", "ev hanako_miss7", "ev hanako_miss8", "ev hanako_miss9", "ev hanako_miss10", "ev hanako_miss11"),
                      ("ev hanako_finger_1", "ev hanako_finger_2", "ev hanako_finger_3"),
-                     ("ev hanako_cowgirl_1", "ev hanako_cowgirl_2", "ev hanako_cowgirl_3", "ev hanako_cowgirl_4", "ev hanako_cowgirl_5", "ev hanako_cowgirl_6", "ev hanako_cowgirl_7", "ev hanako_cowgirl_8", "ev hanako_cowgirl_9", "ev hanako_cowgirl_10", "ev hanako_cowgirl_11", "ev hanako_cowgirl_12", "ev hanako_cowgirl_13", "ev hanako_cowgirl_14", "ev hanako_cowgirl_15", "ev hanako_cowgirl_16", "ev hanako_cowgirl_17", "ev hanako_cowgirl_18")
+                     ("ev hanako_cowgirl_1", "ev hanako_cowgirl_2", "ev hanako_cowgirl_3", "ev hanako_cowgirl_4", "ev hanako_cowgirl_5", "ev hanako_cowgirl_6", "ev hanako_cowgirl_7", "ev hanako_cowgirl_8", "ev hanako_cowgirl_9", "ev hanako_cowgirl_10", "ev hanako_cowgirl_11", "ev hanako_cowgirl_12", "ev hanako_cowgirl_13", "ev hanako_cowgirl_14", "ev hanako_cowgirl_15", "ev hanako_cowgirl_16", "ev hanako_cowgirl_17", "ev hanako_cowgirl_18"),
+                     "ev hanako_resolute"
                      )
     
                      
@@ -1396,7 +1420,7 @@ init 1:
     image tearoom_hisaoe hthink = "event/Lilly_supercg/tearoom_hisaoe_hthink.png"
     image tearoom_hisaoe hunsure = "event/Lilly_supercg/tearoom_hisaoe_hunsure.png"
     image tearoom_hisaoe loops = "event/Lilly_supercg/tearoom_hisaoe_loops.png"
-    #image tearoom_hisaoe lrelief = "event/Lilly_supercg/tearoom_hisaoe_lrelief.png" # this image does not exist.
+    image tearoom_hisaoe lrelief = "event/Lilly_supercg/tearoom_hisaoe_relief.png"
     image tearoom_hisaoe lsmile = "event/Lilly_supercg/tearoom_hisaoe_lsmile.png"
     image tearoom_hisaoe lthink = "event/Lilly_supercg/tearoom_hisaoe_lthink.png"
     image tearoom_hisaoe lunsure = "event/Lilly_supercg/tearoom_hisaoe_lunsure.png"
@@ -2037,7 +2061,7 @@ init python:
     ks_music('Red_Velvet', 'jazz')
     ks_music('Romance_in_Andante_II', 'romance')
     ks_music('Romance_in_Andante', 'credits')
-    ks_music('Sarabande_from_BWV1010,_Musicbox', 'musicbox')
+    ks_music('Sarabande_musicbox', 'musicbox')
     ks_music('School_Days', 'normal')
     ks_music('Shadow_of_the_Truth', 'sadness')
     ks_music('Sketchy', 'sketch')

@@ -601,6 +601,7 @@ label H3:
     jump_out H4
     
 label H4:
+    call iscene ("timeskip")
     call iscene ("H4")
     jump_out H5
 
@@ -625,6 +626,7 @@ label H5_2:
         jump_out H6
         
 label H6:
+    call iscene ("timeskip")
     call iscene ("H6")
     jump_out H7
     
@@ -660,7 +662,9 @@ label H12:
 
 label H13:
     call iscene ("H13")
-    jump_out H14
+    call iscene ("H14") # calling a note to describe why the hell we skipped so much [str]
+    jump_out H23
+    #jump_out H14 # we're not using this choice in route, but gonna keep it for act selection menu [str]
     
 label H14:
     call iscene ("H14")
@@ -672,9 +676,8 @@ label H14:
         jump_out L19
     else:
         #"Bad":
-        #call iscene ("H14b") # [str] (no badend "editor's note" cos it's copying H23)
-        jump_out H23 # [str] (h24)
-    jump_out H23 # [str]
+        jump_out H23
+    jump_out H23
 
 # [str] (Waterfall)
 label H23:
@@ -833,6 +836,7 @@ label L1:
     jump_out L2
 
 label L2:
+    call iscene ("timeskip")
     call iscene ("L2")
     jump_out L3
 
@@ -861,15 +865,17 @@ label L8:
     jump_out L9
 
 label L9:
-    $ tcard(3, "lilly")
+    #$ tcard(3, "lilly") # not here, argh! [str]
     call iscene ("L9")
     jump_out L10
 
 label L10:
+    call iscene ("timeskip")
     call iscene ("L10")
     jump_out L11
 
 label L11:
+    call iscene ("timeskip")
     call iscene ("L11")
     call hscene ("L11h")
     call iscene ("L11xh")
@@ -913,7 +919,7 @@ label L12:
     jump_out L13
 
 label L13:
-    $ tcard(3, "lilly") # what. [str]
+    $ tcard(3, "lilly")
     call iscene ("L13")
     jump_out L14
 
@@ -926,6 +932,7 @@ label L15:
     jump_out L16
 
 label L16:
+    call iscene ("timeskip")
     call iscene ("L16")
     jump_out L17
 
@@ -938,6 +945,7 @@ label L18:
     jump_out L19
 
 label L19:
+    call iscene ("timeskip")
     call iscene ("L19") #Welcome to the Alpha, where everything's screwed up and the choices don't matter
     if seen_scene ("H14"):
         call iscene ("L19b")
@@ -996,6 +1004,7 @@ label L25:
     
 label L26:
     call iscene ("L26")
+    call hscene ("L26h")
     jump_out L27
 
 label L27:
@@ -1004,6 +1013,8 @@ label L27:
 
 label L28:
     call iscene ("L28")
+    call hscene ("L28h")
+    call iscene ("L28x")
     jump_out L29
 
 label L29:
@@ -1015,10 +1026,12 @@ label L30:
     jump_out L31
 
 label L31:
+    call iscene ("timeskip")
     call iscene ("L31")
     jump_out L32
 
 label L32:
+    call iscene ("timeskip")
     call iscene ("L32")
     jump_out L33
 
@@ -1028,8 +1041,9 @@ label L33:
     jump_out L34
     
 label L34:
+    call iscene ("timeskip")
     call iscene ("L34")
-    call iscene("L34h")
+    call hscene("L34h")
     call iscene("L34x")
     jump_out L35
     
@@ -1038,10 +1052,12 @@ label L35:
     jump_out L36
     
 label L36:
+    call iscene ("timeskip")
     call iscene ("L36")
     jump_out L37
     
 label L37:
+    call iscene ("timeskip")
     call iscene ("L37")
     jump_out L38
     
@@ -1058,6 +1074,7 @@ label L40:
     jump_out L41
     
 label L41:
+    call iscene ("timeskip")
     call iscene ("L41")
     jump_out L42
 
@@ -1241,6 +1258,7 @@ label E29:
     #current script end
     $ persistent.emi += 1
     call credits
+    jump_out restart
 
 #######################
 #      Rin path       #

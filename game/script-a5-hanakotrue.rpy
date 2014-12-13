@@ -793,7 +793,7 @@
     show hanako emb_timid at right
     with dissolvecharamove
 
-    li "So, Hamakichi and Shiina…"
+    li "So, Hakamichi and Shiina…" # "hamakichi", huh... [str]
     
     show emi sad_shy at left
     with charachange

@@ -421,7 +421,7 @@
 
     "Concentration plays across her face as she stares at the tray in her hands, as if simply looking at its contents will hold them in place."
     
-    show yuukoshang tremble
+    show yuukoshang neurotic_down # tremble # what is that supposed to be? replaced with "neurotic_down" for now [str]
     with charachange
 
     "Sadly, this doesn't prove all that effective; the cups and saucers slowly dance around, occasionally clattering as they collide with one another."
@@ -1460,7 +1460,7 @@ label en_H4:
     play music music_daily fadein 6.0
 
     scene bg school_dormhisao 
-    with locationchange
+    with openeye #locationchange
 
     "The days are really starting to heat up."
 
@@ -3000,7 +3000,7 @@ label en_H5_2:
 label en_H6:
     
     scene bg school_dormhisao 
-    with locationchange
+    with openeye
 
     "Chirping birds."
 

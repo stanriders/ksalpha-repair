@@ -1870,9 +1870,18 @@ n "You're coming up on an important junction."
 
 n "As you might already know, this next choice determines whether you get Hanako's or Lilly's routes."
 
-n "Blah blah blah I'll let Twoface write this shit."
+n "But what you probably didn't know that Good Hanako route is actually deviates from Lilly's Act 3 and not related to Hana's act2 and act3."
 
-n "We now return you to your regularly scheduled cripple fucking simulator."
+n "So in case you want to get to the True ending you should choose Lilly now and switch to Hanako later."
+
+n "Or just use skip option to get right to the Hanako True act 4."
+
+n "But if you want to get to the most depressive(IMO) stuff - you should choose Hanako right now."
+
+n " -StanR and md01"
+
+#n "Blah blah blah I'll let Twoface write this shit."
+#n "We now return you to your regularly scheduled cripple fucking simulator."
 
 nvl hide dissolve
 

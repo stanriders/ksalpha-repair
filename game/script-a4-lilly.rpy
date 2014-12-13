@@ -916,7 +916,7 @@ label en_L21:
 
     "I guess that mannerism's inherited."
     
-    show yuuko 
+    show yuuko neutral
 
     yu "Good news, Hisao!"
 
@@ -944,13 +944,12 @@ label en_L21:
     # New character GET
 
     show akira basic_smile
-    with charamove
+    with charaenter
 
     "He suddenly stops directly in front of us, seemingly ignoring Yuuko entirely as he looks at me."
     
-    show aki basic_kill at center
-    
-    with charaenter
+    show akira basic_kill at center
+    with charachange
 
     "He stares intensely into my eyes, his hand to his chin as if he were examining piece of fine art."
 
@@ -1049,7 +1048,7 @@ label en_L21:
 
     hi "Yeah, pretty well. Is there treatment you'll have to keep doing after getting out?"
 
-    show lilly basic smile_pat at center
+    show lilly basic_smile_pat at center
     with charachange
     
     li "The doctor's said that as long as I don't stress my voice too much, I should be fine."
@@ -1095,7 +1094,7 @@ label en_L21:
     show lilly basic_emb_pat at center
     with charachange
     
-    li "It's okay, Hisao. the doctors said it should heal in due time."
+    li "It's okay, Hisao. The doctors said it should heal in due time."
 
     show lilly basic_weaksmile_pat at center
     with charachange
@@ -1592,7 +1591,7 @@ label en_L22:
 
     "Suddenly I wish I had never met this girl."
 
-    extend "Or consider myself extremely lucky to be graced with her presence. I'm not sure which."
+    extend " Or consider myself extremely lucky to be graced with her presence. I'm not sure which."
 
     li "Calm down, Akira!"
 
@@ -1830,7 +1829,7 @@ label en_L22:
 
 label en_L23:
     scene black with fade
-    scene bg city_station
+    scene bg city_trainstation
     with shorttimeskip
 
     play music music_daily fadein 7.0
@@ -1904,7 +1903,7 @@ label en_L23:
 
     "She pauses a moment and looks upwards in thought."
     
-    show lilly baisc_smileclosed_cas at center
+    show lilly basic_smileclosed_cas at center
     with charachange
 
     li "A change of shirt, change of skirt, raincoat, underwear, sleepwear, two books… I think that's most of it."
@@ -1954,7 +1953,7 @@ label en_L23:
 
     hi "The six-thirty train was ours, right?"
 
-    show lilly basic_smiledclosed_cas at twoleft
+    show lilly basic_smileclosed_cas at twoleft
     show hanako basic_distant_cas at tworight
     with charaenter
     
@@ -2236,10 +2235,10 @@ label en_L23:
 
     "Hanako gives a deep yawn, only just remembering to cover her mouth at the last minute."
 
-    show hanako emb_down_sad at tworight
+    show hanako emb_downsad_cas at tworight
     with charachange
     
-    show lilly basic_smileclosed_at twoleft
+    show lilly basic_smileclosed_cas at twoleft
     with charachange
     
     li "My my, are you tired, Hanako?"
@@ -2555,7 +2554,7 @@ label en_L24:
     hi "I'm stuffed."
     
     show lilly basic_smileclosed_cas at twoleft
-    show hanako bsic_smile_cas at tworight
+    show hanako basic_smile_cas at tworight
     with charaenter
 
     "Lilly pats her mouth twice with a knapkin."
@@ -2590,7 +2589,7 @@ label en_L24:
 
     hi "Ah, I see. How long's the walk in?"
     
-    show lilly basic_smile_Cas at twoleft
+    show lilly basic_smile_cas at twoleft
     with charachange
 
     li "Hmm, it'd be around a mile to my mind."
@@ -2620,7 +2619,7 @@ label en_L24:
     hi "Hey Lilly, how do you know this town, anyway?"
     
     show lilly back_smileclosed_cas at center
-    show lillyprop back_cane
+    show prop lilly_back_cane
     with charaenter
 
     li "I went to it the year before I entered Yamaku, while I was staying at the summer house."
@@ -2630,7 +2629,7 @@ label en_L24:
     hi "Like it up here?"
     
     show lilly cane_weaksmile_cas
-    hide lillyprop
+    hide prop
     with charachange
 
     li "Mm, it's nice and quiet."
@@ -2730,7 +2729,7 @@ label en_L24:
 
     "I quickly pull my upper arm over it, trying to quell the shot of pain spreading throughout my entire body."
     
-    show lilly cane reminisce_cas at twoleft
+    show lilly cane_reminisce_cas at twoleft
     show hanako defarms_strain_cas
     with charachange
 
@@ -3000,7 +2999,7 @@ label en_L25:
 
     li "But… I can't do that any more. As much as I wish I could, I can't."
     
-    show lily back_sad_cas at right
+    show lilly back_sad_cas at right
     with charachange
 
     li "I lost Akira then. I can't… lose you as well."
@@ -3009,7 +3008,7 @@ label en_L25:
 
     hi "Why?"
     
-    show lilly basic_concerend_cas at center
+    show lilly basic_concerned_cas at center
     with charachange
 
     "She turns around."
@@ -3079,11 +3078,11 @@ label en_L25:
     
     window hide
     
-    show ev lilly_what_large at center
-    with charachange
+    show ev lilly_wheat_large at center
+    #with charachange
     
     show ovl lilly_wheat_foreground
-    #with GenericWhiteout
+    with whiteout
     
     window show
 
@@ -3203,7 +3202,7 @@ label en_L26:
 
     li "I didn't see that, and also ended up falling for you."
     
-    show lilly basic_reminisce_cas_Close
+    show lilly basic_reminisce_cas_close
 
     "She trails off, sadness filling her face and a newfound silence hanging in the air."
 
@@ -3229,7 +3228,7 @@ label en_L26:
     
     stop music fadeout 4.0
     
-    show lilly basic_weaksmiel_cas_close at center
+    show lilly basic_weaksmile_cas_close at center
     with charachange
 
     li "I wouldn't mind if you… took me."
@@ -3556,7 +3555,7 @@ label en_L26h:
     "She nods weakly, rubbing my hair with her right hand."
 
     "A soft kiss on my forehead is the only answer."
-
+    stop music fadeout 3.0 # [str]
     scene black
     with dissolve
 
@@ -3607,13 +3606,13 @@ label en_L27:
 
     nvl clear
 
-    "I slap them one-by-one into my mouth, not bothering to get a drink to wash them down."
+    n "I slap them one-by-one into my mouth, not bothering to get a drink to wash them down."
 
-    "After over a month of having to take them, I eventually ended up just downing them as quickly as possible."
+    n "After over a month of having to take them, I eventually ended up just downing them as quickly as possible."
 
-    "It's not hard to get used to dry-swallowing pills after a while."
+    n "It's not hard to get used to dry-swallowing pills after a while."
 
-    "Just like getting used to living in a school full of disabled students, I suppose."
+    n "Just like getting used to living in a school full of disabled students, I suppose."
     
     $ renpy.music.set_volume(0.20000000000000001, 1.0, channel='ambient')
 
@@ -3624,7 +3623,7 @@ label en_L27:
 
     ha "Good morning, Hisao."
     
-    show hanagown_smile_rn at center
+    show hanagown smile_rn at center
     with charaenter
 
     hi "Ah, Go—Gack!"
@@ -4353,7 +4352,7 @@ label en_L29:
     mi "Hicchan~!"
     
     show misha hips_grin at twoleft
-    with charachange
+    with charamove
     
     show shizu basic_normal2 at tworight
     with charamove
@@ -6862,7 +6861,8 @@ label en_L34:
     li "To the restaurant we go."
 
     # Timeskip
-
+    with timeskip
+    
     "As we step up the the front counter, I glance over to Lilly."
 
     "Surprisingly, her face holds the same edge of pensiveness that mine does."
@@ -7872,6 +7872,9 @@ label en_L35:
 
     "I'm really, really sorry."
 
+    scene black
+    with dissolve
+    
     return
 
 label en_L36:
@@ -7893,7 +7896,7 @@ label en_L36:
 
     "Well, I guess I shouldn't complain."
 
-    extend "This could be considered my penance for skipping school yesterday."
+    extend " This could be considered my penance for skipping school yesterday."
     
     show lilly back_smileclosed at right
     with charaenter
@@ -8237,13 +8240,10 @@ label en_L36:
 
     "Picking ourselves out of our seats to go to our respective exams, we share a lighthearted laugh."
 
+    scene black
+    with dissolve
+    
     return
-
-
-
-
-
-
 
 label en_L37:
 
@@ -8264,7 +8264,7 @@ label en_L37:
 
     "The two really do look lovely, to say the least."
     
-    show hanagown_normal at left
+    show hanagown normal at left
     with charachange
 
     ha "I've never seen you in your pajamas before, Hisao."
@@ -8274,7 +8274,7 @@ label en_L37:
     
     hi "When in Rome, do as the Romans, they say."
 
-    show hanagown_smile at left
+    show hanagown smile at left
     with charachange
     
     ha "They look nice."
@@ -8295,14 +8295,14 @@ label en_L37:
 
     "I can't help but stare as she navigates the room entirely unaided, as naturally as if she could see."
     
-    show hanagown_worry at left
+    show hanagown worry at left
     with charachange
 
     "As I turn back, I see Hanako staring at me as if I were a bug under close examination."
 
     hi "Y… Yes?"
 
-    show hanagown_smile at left
+    show hanagown smile at left
     with charachange
     
     "Her side smile takes me entirely off guard."
@@ -8313,21 +8313,21 @@ label en_L37:
 
     "She gives a small giggle before continuing."
 
-    show hanagown_smile_blush at left
+    show hanagown smile_blush at left
     with charachange
     
     ha "It's just that… Lilly seems happier now. And I'm happier, too."
 
     "I feel my cheeks becoming flushed as she looks at me."
 
-    show hanagown_distant at left
+    show hanagown distant at left
     with charachange
     
     ha "I wasn't sure if I wanted you and Lilly to be together, to be honest."
 
     hi "Really?"
     
-    show hanagown_normal at left
+    show hanagown normal at left
     with charachange
 
     ha "Mm. Lilly had cared for me for so long, I'd grown dependant on her."
@@ -8337,7 +8337,7 @@ label en_L37:
     
     ha "But she had to lead her own life, and I had to lead my own."
 
-    show hanagown_smile_alt at left
+    show hanagown smile_alt at left
     with charachange
     
     ha "That's why I have to thank you, Hisao."
@@ -8385,7 +8385,7 @@ label en_L37:
 
     ha "Curfew would be coming up soon."
 
-    show lilly basic_weaksmile at right
+    show lilly basic_weaksmile_paj at right
     with charachange
     
     li "Very well. Good night, Hanako."
@@ -8619,7 +8619,7 @@ label en_L38:
 
     "The end of an era is upon us."
 
-    extend "That is, the era of exams."
+    extend " That is, the era of exams."
 
     "The mood of the class has been changed from stressed depression to longing for the summer holidays. At just over a week away, they're well within eyeshot."
 
@@ -8641,13 +8641,13 @@ label en_L38:
 
     "As I open my mouth though, my throat squeezes shut."
 
-    hi "Ah, i—it—" #reminder for the potential {nw} break
+    hi "Ah, i—it—{nw}" #reminder for the potential {nw} break
 
     "Pain."
 
-    extend "Pain."
+    extend " Pain."
 
-    extend "Pain. Pain. Pain. Pain. Pain."
+    extend " Pain. Pain. Pain. Pain. Pain."
 
     "My legs give way underneath me, leaving me only enough time to quickly brace myself on my desk."
 
@@ -8876,7 +8876,7 @@ label en_L38:
 
     hi "Mutou just ended the lesson earlier than usual. The end of the exams seem to have made him a bit less stressed."
 
-    "as for the real reason that I'm here before she is… "
+    "As for the real reason that I'm here before she is… "
 
     extend "I think that question can go unanswered."
 
@@ -8953,7 +8953,7 @@ label en_L38:
 
     li "Hisao, you think of others too much."
 
-    hi "wait, what's that supposed to mean?"
+    hi "Wait, what's that supposed to mean?"
 
     li "It means what I said."
 

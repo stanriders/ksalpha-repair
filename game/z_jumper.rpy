@@ -71,10 +71,20 @@ label jumper:
         widget_button("Act 2", "ui/bt-blank.png", clicked=jumper_scene("H2"), xsize=65, textxoffset=0)
         widget_button("Act 3", "ui/bt-blank.png", clicked=jumper_scene("H11"), xsize=65, textxoffset=0)
         widget_button("Act 4 (Decision)", "ui/bt-blank.png", clicked=jumper_scene("H14"), xsize=155, textxoffset=0)
-        widget_button("Act 5", "ui/bt-blank.png", clicked=jumper_scene("HT14"), xsize=65, textxoffset=0)
         ui.close()
         ui.close()
 
+        # Hanako-True 
+        ui.vbox()
+        ui.text("Hanako True: ", style="prefs_label")
+        ui.hbox()
+        jumper_menu_space()
+        widget_button("", "ui/bt-blank.png", None, xsize=130, textxoffset=0) # hacky hack [str]
+        widget_button("Act 4", "ui/bt-blank.png", clicked=jumper_scene("HT1"), xsize=65, textxoffset=0)
+        widget_button("Act 5", "ui/bt-blank.png", clicked=jumper_scene("HT14"), xsize=65, textxoffset=0)
+        ui.close()
+        ui.close()
+        
         # Lilly
         ui.vbox()
         ui.text("Lilly: ", style="prefs_label")
@@ -83,8 +93,8 @@ label jumper:
         widget_button("Act 2", "ui/bt-blank.png", clicked=jumper_scene("L1"), xsize=65, textxoffset=0)
         widget_button("Act 3", "ui/bt-blank.png", clicked=jumper_scene("L13"), xsize=65, textxoffset=0)
         widget_button("Act 4", "ui/bt-blank.png", clicked=jumper_scene("L21"), xsize=65, textxoffset=0)
-        # apparently this doesn't need to be there
-        # widget_button("Act 5", "ui/bt-blank.png", clicked=jumper_scene("L43"), xsize=65, textxoffset=0)
+        # apparently this doesn't need to be there # i disagree [str]
+        widget_button("Act 5", "ui/bt-blank.png", clicked=jumper_scene("L43"), xsize=65, textxoffset=0)
         ui.close()
         ui.close()
 
@@ -121,13 +131,13 @@ label jumper:
         ui.close()
         
         # Hana-Lilly (just trying to understand what is it even) [str]
-        ui.vbox()
-        ui.text("Hana-Lilly: ", style="prefs_label")
-        ui.hbox()
-        jumper_menu_space()
-        widget_button("Act 2", "ui/bt-blank.png", clicked=jumper_scene("HLT3"), xsize=65, textxoffset=0)
-        ui.close()
-        ui.close()
+        #ui.vbox()
+        #ui.text("Hana-Lilly: ", style="prefs_label")
+        #ui.hbox()
+        #jumper_menu_space()
+        #widget_button("Act 2", "ui/bt-blank.png", clicked=jumper_scene("HLT3"), xsize=65, textxoffset=0)
+        #ui.close()
+        #ui.close()
 
         ui.close()
 

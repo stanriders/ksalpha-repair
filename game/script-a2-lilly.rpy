@@ -168,7 +168,7 @@ play ambient sfx_crowd_indoors fadein 2.0
 "I rub my eyes as the lunchbell rings out, glad for the temporary reprive from work."
 
 show lilly basic_smileclosed at leftdoor
-with None
+with charaenter
 
 show bg school_scienceroom at bgright
 show lilly cane_smileclosed at tworight
@@ -179,6 +179,7 @@ with charamove
 "Considering her acceptance of my request to join them yesterday, I decide to spend my lunchtime with them rather than eat alone."
 
 show hanako emb_smile at left
+with charaenter
 with Pause(0.5)
 
 hide hanako
@@ -191,7 +192,8 @@ stop ambient fadeout 1.0
 
 scene bg school_hallway3
 show lilly back_listen at twoleft
-show lillyprop back_cane at twoleft
+#show lillyprop back_cane at twoleft
+show prop lilly_back_cane at twoleft # better solution [str]
 show hanako emb_downsmile at tworight
 with locationchange
 
@@ -211,7 +213,7 @@ ha "I mean… um… hello, Hisao…"
 hi "Hi. Sorry if I startled you."
 
 show lilly cane_smile at twoleft
-hide lillyprop
+hide prop
 with charachange
 
 "Lilly turns to greet me, her orientation in doing so helped by Hanako."
@@ -348,7 +350,7 @@ with charachange
 
 ha "Me? Ah… okay… I guess…"
 
-show tearoom_hanae_shy
+show tearoom_hanae shy
 with charachange
 
 show tearoom_lillye thinking
@@ -370,7 +372,7 @@ with charachange
 
 "With the topic all but run dry, the two concentrate on their chess game once again."
 
-show tearoom_hisaoe relief
+show tearoom_hisaoe lrelief
 with charachange
 with shorttimeskip
 
@@ -394,7 +396,7 @@ with charachange
 "Without hesitation, Hanako moves a pawn to take Lilly's rook on the opposite side of the board, and promoted it to queen. Lilly's face falters as she realises that she just feel to Hanako's trap."
 
 show tearoom_lillye thinking
-show teamroom_hisaoe lunsure
+show tearoom_hisaoe lunsure
 with charachange
 
 ha "Check."
@@ -415,7 +417,7 @@ ha "Th-thank you. I didn't think it would work."
 
 li "I think this is checkmate…"
 
-show tearoom_hisaoe relief 
+show tearoom_hisaoe lrelief 
 with charachange
 
 hi "Hmm?"
@@ -436,7 +438,7 @@ with charachange
 
 hi "So how long have you two been playing?"
 
-show tearoom_hisaoehsmile
+show tearoom_hisaoe hsmile
 show tearoom_hanae sad
 with charachange
 
@@ -448,7 +450,7 @@ with charachange
 
 "Lilly nods at Hanako's brief answer."
 
-show tearoom_lillye smile
+show tearoom_lillye smileclosed
 with charachange
 
 li "Hanako taught me how to play soon after I met her. I can beat her every now and again… but I don't seem to have the right mindset for it."
@@ -486,7 +488,7 @@ hi "Same. I guess we'd better get back to class."
 
 show tearoom_hanae shy
 show tearoom_lillye weaksmile
-show tearoom_hisao thinkclosed
+show tearoom_hisaoe thinkclosed
 with charachange
 
 "Hanako's already in the middle of packing up, so I take Lilly's bag and give it to her as I pick up my own, earning an appreciative nod."
@@ -659,7 +661,7 @@ ke "Good man. Good man."
 show kenji happy
 with charachange
 
-with Pause(3.0)
+with Pause(3.0) # okay, why? [str]
 
 show kenji tsun
 with charachange
@@ -1215,7 +1217,8 @@ label en_L8:
     scene bg school_dormlilly
     with locationchange
 
-    show hanako basic_bashful_paj
+    #show hanako basic_bashful_paj # there's no such sprites [str]
+    show hanagown smile # FIXME: check if appropriate; change if not [str]
     with charaenter
     ha "H—Hisao, um, g—g—good evening!"
 
@@ -1231,12 +1234,12 @@ label en_L8:
 
     "It's obvious she's trying her hardest to be a good host."
 
-    hide hanako
+    hide hanagown
     with charaexit
 
     "With a polite nod, I walk over to the low table in the center of the room and sit obediently."
 
-    show hanako basic_bashful_paj at tworight
+    show hanagown smile at tworight # FIXME: check if appropriate; change if not [str]
     show lilly basic_smileclosed_paj at twoleft
     with charaenter
 
@@ -1272,7 +1275,7 @@ label en_L8:
 
     "And with that, she stands and moves to the counter."
 
-    show hanako basic_bashful_paj at center
+    show hanagown smile_blush at center # FIXME: check if appropriate; change if not [str]
     show bg school_dormlilly at bgleft
     with charamove
 
@@ -1286,14 +1289,14 @@ label en_L8:
 
     hi "So uh, how's school going?"
 
-    show hanako emb_downtimid_paj
+    show hanagown emb_downtimid_paj
     with charachange
 
     "Hanako furrows her brow in intense thought."
 
     "I guess it's like her to take such a simple question so seriously."
 
-    show hanako basic_bashful_paj
+    show hanagown basic_bashful_paj
     with charachange
 
     ha "Okay… I suppose."
@@ -1306,7 +1309,7 @@ label en_L8:
 
     hi "Yeah?"
 
-    hide hanako
+    hide hanagown
     with charaexit
 
     show lilly basic_smile_paj
@@ -1329,7 +1332,7 @@ label en_L8:
     hide lilly
     with charaexit
 
-    show hanako emb_smile_paj
+    show hanagown smile
     with charaenter
 
     "…Who's smiling."
@@ -1338,12 +1341,12 @@ label en_L8:
 
     "After a few more moments of strained silence, Lilly walks over and sets the teacups onto the table as she sits."
 
-    show hanako emb_smile_paj at tworight
+    show hanagown emb_smile_paj at tworight
     show bg school_dormlilly at center
     with charamove
     show lilly basic_smileclosed_paj at twoleft
     with charaenter
-    show hanako basic_smile_paj at tworight
+    show hanagown basic_smile_paj at tworight
     with charachange
 
     "As we all take a sip, I take a moment to survey the room."
@@ -1376,7 +1379,7 @@ label en_L8:
     hi "Ah, mm. It's nice."
 
     show lilly basic_smileclosed_paj at twoleft
-    show hanako basic_smile_paj at tworight
+    show hanagown basic_smile_paj at tworight
     with charachange
 
     "To tell the truth, I've been to busy looking around to really take note of the flavor."
@@ -1457,7 +1460,7 @@ label en_L8:
 
     hi "Yeah, it's five to ten. I guess I'd better get going. A guy staying in a room with two women until late could give people the wrong idea."
 
-    show hanako emb_blushing_paj at tworight
+    show hanagown emb_blushing_paj at tworight
     show lilly basic_giggle_paj at twoleft
     with charachange
 
@@ -1470,21 +1473,21 @@ label en_L8:
     "As I pick myself up with a slight grunt, I gently close the door behind me."
 
     hide lilly
-    hide hanako
+    hide hanagown
     with charaexit
     scene bg school_dormhallway
     with locationchange
 
     "Only to have it open with back up again as Hanako steps through, and nearly bumps into me while she's at it."
 
-    show hanako cover_distant_paj
+    show hanagown cover_distant_paj
     with charaenter
 
     ha "S—Sorry!"
 
     hi "Ah, no, I should've checked if you were coming before shutting it. Sorry."
 
-    show hanako basic_bashful_paj
+    show hanagown basic_bashful_paj
     with charachange
 
     "We stand there in silence for a couple of seconds."
@@ -1495,7 +1498,7 @@ label en_L8:
 
     hi "'Night."
 
-    hide hanako
+    hide hanagown
     with charaexit
 
     "As I turn and walk back, I hear Hanako's door shut behind me."
@@ -1608,7 +1611,7 @@ label en_L9:
 
     "I crouch down into a prepared stance, a devilish grin spreading over my face"
     
-    show emi_basic_concentrated at centersit
+    show emi basic_concentrate at centersit
     with charamove
 
     "We meet each other's eyes, sizing each other up as we sway slightly, ready to pounce at any…"
@@ -1649,7 +1652,7 @@ label en_L9:
 
     "Emi turns herself over and thrusts an upturned thumb at Hanako."
 
-    show emi_basic_closedgrin at left
+    show emi basic_closedgrin at left
     with charaenter
     
     emi "I'm o-kay! If a fall like that did me in I'd never be able to run."
@@ -2448,7 +2451,7 @@ label en_L10:
 
     hi "It'd be nice if the weather held out."
 
-    scene bg suburb_roadcenter
+    scene bg suburb_roadcenter_rn
     with shorttimeskip
 
     show rain
@@ -3303,7 +3306,7 @@ label en_L11:
     "She stops and turns around, turning her head slightly to try and work out exactly where the voice came from."
 
     show lilly basic_listen at center
-    show lillyprop back_cane at center
+    #show prop lilly_back_cane at center # uugh, why is it even here? [str]
     with charaenter
 
     "I quickly catch up to her, coming in beside her and matching her slow pace as we resume walking."
@@ -3326,7 +3329,7 @@ label en_L11:
 
     "A distinct tinge of orange discolours the cloudless expanse, washing the footpath in its light."
 
-    show bg school_road_ss
+    show bg school_road_ss at center
     show lilly cane_smileclosed_ss at left
     with charachange
     
@@ -3687,7 +3690,7 @@ label en_L11:
 
     hi "…You know, you should probably tell people these kinds of things in advance."
     
-    show lilly cane_cheerful_blush
+    show lilly cane_cheerfulblush
 
     li "My birthday isn't such a big event, is it? We'll only be having a small meeting after school in my dormitory."
 
@@ -3732,7 +3735,7 @@ label en_L11:
     "All alone."
 
     scene pink
-    with dissolve
+    with locationchange #dissolve
 
     return
 
@@ -3877,10 +3880,10 @@ label en_L11h:
 
 label en_L11xh:
 
-    scene bg school_road
+    scene bg school_road_ni
     with dissolve
 
-    show lilly basic_concerned
+    show lilly basic_concerned_ni
     with charaenter
 
     li "Hisao! Hisao!"
@@ -4198,7 +4201,7 @@ label en_L11x:
 
     #End choice sections
 
-    scene bg school_dormhallway
+    scene bg school_girlsdormhall
     with locationskip
 
     "Eventually we get to the student dorms, my arms both aching from the weight of two sets of groceries."
@@ -4434,7 +4437,7 @@ label en_L12:
 
     "It only takes a tiny movement to send the springs popping open the lid."
 
-    #play music sarabandmusicbox fadein 10.0
+    play music music_musicbox fadein 3.0
 
     "…"
 
@@ -4453,21 +4456,21 @@ label en_L12:
 
     hi "I'm surprised there's a music box for it."
 
-    show showkeep_surprised at left
+    show shopkeep surprised at left
     with charachange
     
     "Shopkeeper" "You know it?"
 
     hi "Kind of. A dance, wasn't it?"
 
-    show showkeep happy at left
+    show shopkeep happy at left
     with charachange
     
     "Shopkeeper" "Well now, it is rare to see someone who knows their stuff these days."
 
     hi "Ah, no, I just… know someone that does."
 
-    show showkeep_neutral at left
+    show shopkeep neutral at left
     with charachange
     
     "Shopkeeper" "I see."
@@ -4487,7 +4490,7 @@ label en_L12:
 
     hi "Ah, sir…"
     
-    show shopkeep_neutral at left
+    show shopkeep neutral at left
     with charaenter
 
     "Shopkeeper" "Yes?"
@@ -4498,13 +4501,13 @@ label en_L12:
 
     "I carefully hand over the box with both hands, treating it as if it were as delicate as a raw egg."
 
-    "taking it in his slightly wrinkled hands, the old man makes his way to the counter and takes a small handheld drill from behind his shoulder."
+    "Taking it in his slightly wrinkled hands, the old man makes his way to the counter and takes a small handheld drill from behind his shoulder."
 
     "Wiggling slightly to get himself in position, readying the drill in his hand, he looks up past his glasses at me"
     
     show bg city_othello at center
     
-    show shopkeep_neutral at center
+    show shopkeep neutral at center
     with charamove
 
     "Shopkeeper" "So, what would you like engraved?"
@@ -4513,7 +4516,7 @@ label en_L12:
 
     "He gives a wry smile."
     
-    show shopkeep_happy at center
+    show shopkeep happy at center
     with charachange
     
     "Shopkeeper" "Ah, so it's for a little lass, eh? Sure, I'll see what I can do."
@@ -4523,7 +4526,7 @@ label en_L12:
     
     "With a flick of his thumb, the noise of the drill reverberates through the once-silent room."
 
-    show shopkeep_thinking at center
+    show shopkeep thinking at center
     with charachange
     
     "I stand watching him, transfixed by the assuredness of his work."
@@ -4557,7 +4560,7 @@ label en_L12:
 
     hi "Amazing. That's perfect."
     
-    show shopkeep_happy at center
+    show shopkeep happy at center
     with charachange
 
     "He looks up to me and smiles."
@@ -4568,7 +4571,7 @@ label en_L12:
 
     hi "Ah, I guess it's kind of wierd to be asking this now, but… how much will this cost?"
     
-    show shopkeep_thinking at center
+    show shopkeep thinking at center
     with charachange
 
     "Shopkeeper" "Hmm… Well, if it's for a little lass, I can't see how I could ask for more than five thousand, five hundred yen."
@@ -4883,7 +4886,9 @@ label en_L12:
     "I give a yawn and start off towards the dorms once again."
 
     "As I walk down the orange-tinted street though, there's a familiar small spring in my step."
-
+    
+    stop ambient fadeout 3.0 # [str]
+    
     scene black
     with dissolve
 

@@ -5,9 +5,9 @@
     #Feels a little short, and I'm not sure if I like the conclusion. Will look at it at the end of Act 3
 
     scene bg school_miyagi
-
     show hanako def_worry at twoleft
-
+    with locationchange
+    
     "The tint of the room slowly changes from the shine of the afternoon to the orange of dusk."
 
     "A clock lazily ticks by the second, counting in the background, on the verge of hearing."
@@ -57,6 +57,7 @@
     hi "Later."
 
     hide hanako
+    with charaexit
 
     "Hanako departs as I start cleaning up the area."
 
@@ -69,6 +70,7 @@
     hi "Oh, did you forget something, Hanako?"
 
     show lilly basic_weaksmile
+    with charaenter
 
     li "Not quite, Hisao."
 
@@ -140,6 +142,7 @@
     hi "Night."
 
     hide lilly
+    with charaexit
 
     "A birthday party for Hanako, eh?"
 
@@ -182,14 +185,15 @@ label en_H12:
     #H12 – Unexpected Alliance
 
     scene bg school_hallway2
-
+    with locationchange
+    
     "I continue to ponder my predicament with Hanako and Lilly as I close to door to the tea room."
 
     mi "Oh ho ho… and just what were you doing in there, Hisao?"
 
     show misha perky_smile at twoleft
-
     show shizu basic_happy at tworight
+    with charaenter
 
     "Damn. I was so lost in my thoughts that I didn't even see the entire Student council creeping up on me."
 
@@ -266,10 +270,9 @@ label en_H12:
     mi "Well that is good news. Come on, we have a reservation. If we don't hurry we'll lose our seats."
 
     scene bg suburb_shanghaiint
-
     show shizu behind_smile at tworight
-
     show misha hips_smile at twoleft
+    with shorttimeskip
 
     mi "Phew! We made it!"
 
@@ -297,7 +300,8 @@ label en_H12:
     yu "Oh… sorry, I didn't hear you come in…"
 
     show yuuko worried_shang
-
+    with charaenter
+    
     "A concerned-looking Yuuko bolts out from the back room of the café and practically skids to a halt at our table."
 
     yu "Are you ready to order?"
@@ -322,7 +326,8 @@ label en_H12:
     yu "R-right. I'll be back soon."
 
     hide yuuko
-
+    with charaexit
+    
     "Yuuko disappears through the staff entrance with the determination of a hurricane."
 
     hi "I didn't know they did curry here…"
@@ -358,6 +363,7 @@ label en_H12:
     "Shizune, obviously disinterested in our conversation, excuses herself through Misha."
 
     hide shizu
+    with charaexit
 
     "The tiny cogs in my mind turn, and a connection is made."
 
@@ -394,7 +400,8 @@ label en_H12:
     hi "I'll keep it in mind."
 
     show shizu cross_wut at tworight
-
+    with charaenter
+    
     "Shizune returns to the table and exchanges a glut of sign with Misha."
 
     "Judging by Shizune's mixture of bored and irritated reactions, I can only assume Misha is telling her about my question."
@@ -441,10 +448,10 @@ label en_H12:
 
     hi "That doesn't make any sense. Look, I'll pay for everyone. It was my mistake anyway…"
 
-    show misha sign_smile at tworight
+    show misha sign_smile at twoleft
     with charachange
 
-    show shizu behind_smile at twoleft
+    show shizu behind_smile at tworight
     with charachange
 
     "Halfway through my sentence Misha and Shizune start to grin, and I realise I've been had."
@@ -461,7 +468,7 @@ label en_H12:
            
     hi "Why do I get the feeling that you'd somehow manage to con me into paying the bill there too?"
 
-    show misha hips_laugh at tworight
+    show misha hips_laugh at twoleft
     with charachange
 
     mi "Wahaha~! You make it sound like we're conspiring against you, Hisao! You know we'd never do that!"
@@ -470,7 +477,7 @@ label en_H12:
 
     hi "Somehow, I don't feel that I can trust you. Still, maybe one day we'll do that."
 
-    show misha hips_grin at tworight
+    show misha hips_grin at twoleft
     with charachange
 
     mi "I'll hold you to that, Hisao."
@@ -478,12 +485,14 @@ label en_H12:
     yu "I'm sorry to keep you waiting!"
 
     show yuuko neutral_shang
-
+    with charaenter
+    
     "Yuuko finally appears carrying a tray with our curry."
 
     "After a few tense seconds, the tray finds its way safely to our table."
 
     hide yuuko
+    with charaexit
     
     "Misha and Shizune start to eat their food, and out of some kind of instinct I pour the tea."
 
@@ -491,7 +500,7 @@ label en_H12:
 
     hi "Is that enough, Shizune?"
 
-    show shizu basic_angry at twoleft
+    show shizu basic_angry at tworight
     with charachange
 
     "It takes me a moment to realise the problem. Both Misha and Shizune have their hands full with their food. Communication is impossible."
@@ -508,7 +517,7 @@ label en_H12:
 
     hi "Actually, I have plans this Sunday. Maybe some other time?"
 
-    show misha cross_frown at tworight
+    show misha cross_frown at twoleft
     with charachange
 
     mi "You say that, but do you really mean it?"
@@ -523,7 +532,7 @@ label en_H12:
 
     hi "I'd prefer not to say."
 
-    show shizu cross_angry at twoleft
+    show shizu cross_angry at tworight
     with charachange
 
     shi "…"
@@ -532,10 +541,10 @@ label en_H12:
 
     hi "You're kidding, right?"
 
-    show shizu adjust_smug at twoleft
+    show shizu adjust_smug at tworight
     with charachange
 
-    show misha hips_grin at tworight
+    show misha hips_grin at twoleft
     with charachange
 
     shi "…"
@@ -560,7 +569,8 @@ label en_H12:
 label en_H13:
     
     scene bg school_gate
-
+    with shorttimeskip
+    
     "A light breeze blows the scent of early summer around my head as I wait for Lilly."
 
     "Small white clouds litter the sky, breaking up the monotony of the blue."
@@ -638,7 +648,8 @@ label en_H13:
     "The bus only takes a few seconds to reach the bus stop, and within a minute we are on our way to town."
 
     scene bg city_street1
-
+    with shorttimeskip
+    
     show lilly cane_smileclosed_cas
     with charachange
     
@@ -826,7 +837,7 @@ label en_H13:
     "In fact, I don't think I've thought at all about a \"future\" for some time now. It seems almost futile."
 
     #show lilly cane_scold_cas
-    with charachange
+    #with charachange
 
     li "Now that just won't do, Hisao."
 
@@ -859,6 +870,7 @@ label en_H13:
     with locationchange
 
     show lilly cane_smile_cas
+    with charaenter
     
     "Once we are out on the street again, Lilly takes a hold of my arm once again."
 
@@ -879,9 +891,9 @@ label en_H13:
     "We both order, get out food, and board the bus."
 
     scene bg school_dormext
-    
     show lilly cane_sleepy_cas
-
+    with shorttimeskip
+    
     li "Thank you for today, Hisao. I'll ring that place and make a booking for Hanako's birthday."
 
     hi "Not a problem; thanks for lunch."
@@ -893,7 +905,8 @@ label en_H13:
     li "Later."
 
     hide lilly
-
+    with charaexit
+    
     "As Lilly leaves, I reflect a little on her words in the karaoke bar."
 
     "Am I dwelling on my condition too much?"

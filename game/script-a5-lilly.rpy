@@ -2,6 +2,9 @@
 
     # Open to act title card "Future"
 
+    scene black # [str]
+    with dissolve # [str]
+    
     n "…"
 
     n "……"
@@ -17,13 +20,19 @@
     n "I groggily open my eyes, remaining immobile on the bed."
 
     nvl clear
-
+    
+    scene white # [str]
+    with openeye # [str]
+    
     n "White."
 
     n "A horrid, plain white."
 
     n "Even before my eyes regain focus, I can work out three things."
 
+    scene bg hosp_room at bgright # [str]
+    with Dissolve (3.0) # [str]
+    
     n "One, that I am in a hospital."
 
     n "Two, that the beeping coming from beside me is an ECG."
@@ -37,7 +46,7 @@
     n "That's… great."
 
     nvl clear
-
+    
     n "As the small dimples and lines in the ceiling tiles finally take form, I lever myself up slightly."
 
     n "The mild pain in my chest is easily overcome as I look around the room."
@@ -120,6 +129,10 @@
 
     hi "Come here."
 
+    # lilly_hostpital CG [str]
+    scene ev lilly_hospital at bgright
+    with whiteout
+    
     "With that, she gingerly falls onto my chest, her head resting below my chin."
 
     li "Hisao, when we were at the…"
@@ -134,6 +147,9 @@
 
     "I'm not quite sure how long we stay like this, but eventually Lilly's soft voice rings out."
 
+    scene ev lilly_hospitalclosed at bgright
+    with locationchange
+    
     li "I thought… you were gone."
 
     "Gone. Not dead, gone."
@@ -142,16 +158,26 @@
 
     hi "I couldn't have died, silly."
 
+    scene ev lilly_hospital at bgright
+    with locationchange
+    
     li "Hisao?"
 
     hi "You spent all my money, remember? I couldn't pay the ferryman."
-
+    
+    scene ev lilly_hospitalclosed at bgright
+    with locationchange
+    
     "For a moment she raises her head and looks lost, before smiling and snuggling her head back onto me."
 
     li "Thank you, Hisao."
 
     "Her mood somewhat lifted, she picks herself up and regains herself."
 
+    scene bg hosp_room at bgleft
+    show lilly basic_weaksmile_cas
+    with locationchange
+    
     "That's the Lilly I'd been wanting to see. She's back to her old, strong self again."
 
     "Reaching back for a chair, she takes a seat beside me."
