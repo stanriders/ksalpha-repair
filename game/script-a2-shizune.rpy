@@ -1481,7 +1481,7 @@ label en_S9:
 
     hi "At the school."
     
-    show shizu behind_normal
+    show shizu behind_blank
     with charachange
 
     shi "…"
@@ -5359,7 +5359,7 @@ label en_S15:
     show misha perky_smile
     with charachange
 
-    "I know! Let's go to the roof, Hicchan! Hurry, hurry~!"
+    mi "I know! Let's go to the roof, Hicchan! Hurry, hurry~!"
     
     stop music fadeout 2.0
 
@@ -7048,9 +7048,9 @@ label en_S17:
 
     play music music_tranquil fadein 1.0
 
-    hi "Oh, hey, Shizu—" #reminder for the potential {nw} break
+    hi "Oh, hey, Shizu—{nw}" #reminder for the potential {nw} break
 
-    scene bg school_council
+    scene bg school_hallway3
     with hpunch
 
     show shizu cross_wut

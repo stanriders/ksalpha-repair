@@ -726,6 +726,7 @@ label H30:
     jump_out H31
 
 label H31:
+    call iscene ("timeskip")
     call iscene ("H31")
     call imenu ("choiceH31")
     #mu "Drugged sex; good or bad?"

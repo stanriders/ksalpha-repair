@@ -30,7 +30,7 @@
 
     n "Even before my eyes regain focus, I can work out three things."
 
-    scene bg hosp_room at bgright # [str]
+    show bg hosp_room at bgright # [str]
     with Dissolve (3.0) # [str]
     
     n "One, that I am in a hospital."
@@ -284,12 +284,18 @@
 
     "That is the one thought that flickers through my mind before I fall asleep."
 
+    scene black # [str]
+    with shuteye # [str]
+    
     return
 
 label en_L44:
     
     # Sticking with the heart attack schtick for now. Can change it later if it ends up too incongruent with the rest of the path
 
+    show bg hosp_room at bgright # [str]
+    with openeye # [str]
+    
     n "As I wake up from another nap, I glance down at the newspaper sitting on the table over the bed."
 
     n "It's Thursday. Apparently."

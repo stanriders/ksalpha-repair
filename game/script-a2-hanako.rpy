@@ -2,7 +2,7 @@
     
     scene bg school_miyagi 
     show hanako emb_downsmile_close 
-    with None
+    with dissolve#None
 
     play sound sfx_doorknock2
 

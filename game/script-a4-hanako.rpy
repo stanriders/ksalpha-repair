@@ -2688,11 +2688,11 @@ label en_H30:
     with dissolve # [str]
     
     with Pause(2.0) # [str]
-
-    return
-
-label en_H31:
-    with Pause(0.1) # [str]
+#
+#    return
+#
+#label en_H31:
+#    with Pause(0.1) # [str]
     
     #BG: Dormroom
     scene bg school_dormhisao_ss # should be not _ni? [str]
@@ -2742,6 +2742,11 @@ label en_H31:
     with shuteye # [str]
 
     with Pause(1.5) # [str]
+
+    return
+
+label en_H31:
+    with Pause(0.1) # [str]
     #sleep timeskip
     
     play sound sfx_alarmclock # [str]
@@ -3643,10 +3648,10 @@ label en_H32:
     
     # move before text? [str]
     with vpunch # [str]
-    show lilly basic_oops at Position(yanchor=0.0, ypos=2.00) # [str] (should work?)
+    play sound sfx_impact2 # [str]
+    show lilly basic_oops at Position(yanchor=0.0, ypos=1.75) # [str] (should work?)
     with charamove # [str]
     
-    play sound sfx_impact2 # [str]
     hide lilly # [str]
     with charaexit # [str] (maybe None?)
     
@@ -3683,7 +3688,8 @@ label en_H32:
     "Eventually, I find what I am looking for; a small, white plastic bottle."
     
     show pills # [str]
-
+    with dissolve
+    
     hi "Lithium Carbonate…"
 
     #In case you're wondering, it's the stuff Stabby-tan was on when he tried to kill me.
@@ -3822,7 +3828,7 @@ label en_H32:
     "Lilly simply nods, and returns to her room."
 
     #timeskip to dorm
-    scene bg school_dormhisao_ni # [str]
+    scene bg school_dormhisao_ss # [str]
     with shorttimeskip # [str]
 
     "As promised, I went to see the nurse before retiring."
@@ -4188,10 +4194,8 @@ label en_H32:
     stop music fadeout 2.0 # [str]
     #time skip or something.
     scene bg suburb_park_ss # [str]
-    with shorttimeskip # [str]
-
     show hanako emb_downsad_cas_close_ss at tworightsit # [str]
-    #with charachange # [str]
+    with shorttimeskip # [str]
     
     $ renpy.music.set_volume(1.0, .5, channel="ambient") # [str]
 

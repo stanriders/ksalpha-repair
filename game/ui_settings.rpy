@@ -336,7 +336,7 @@ init 1:
                     'sad_pout',
                     'invis',
                     ]
-        make_sprites('emi',emi_list, ['gym'])
+        make_sprites('emi',emi_list, ['gym','glass'])
 
         emicas_list = ['angry', 
                        'invis', 
@@ -453,7 +453,7 @@ init 1:
                     'invis',
                     'back',
                     ]
-        make_sprites('rin',rin_list, ['cas','pan'])
+        make_sprites('rin',rin_list, ['cas','pan','glass'])
 
     # LILLY
         lilly_list = ['basic_ara',
@@ -516,7 +516,7 @@ init 1:
                     'back_sad',
                     'invis',
                     ]
-        make_sprites('lilly',lilly_list,['paj','cas','nak','pat'])
+        make_sprites('lilly',lilly_list,['paj','cas','nak','pat','yuk','che']) # pajama, casual, naked, hospital cloth, yukata, dress. Thats a lot of sprites. [str]
         
     # HANAKO
         hana_list = ['basic_bashful',
@@ -555,11 +555,12 @@ init 1:
         make_sprites('hanako',hana_list,['cas','cry','sun'])
         
         hanag_list = ['distant',
+                    'distant_blush',
                     'distant_cry'
                     'norm',
                     'smile',
                     'worry',
-                    'distant', 
+                    'worry_blush',
                     'drunkcry',
                     'drunkdistant', 
                     'drunkgiggle', 
@@ -569,9 +570,13 @@ init 1:
                     'drunksmile', 
                     'drunkworry', 
                     'stockdistant', 
+                    'stockdistant_blush',
                     'stocknormal', 
+                    'stocknormal_blush',
                     'stockworry', 
+                    'stockworry_blush',
                     'normal',
+                    'normal_blush',
                     'nude_moan',
                     'nude_moan2',
                     'nudenormal_blush', 
@@ -582,8 +587,7 @@ init 1:
                     'shock', # [str]
                     'nude_disgust', # [str]
                     ]
-        hanag_list_new = ['distant', 'distant_blush', 'distant_cry', 'drunkcry', 'drunkdistant', 'drunkgiggle', 'drunknormal', 'drunkpout', 'drunksad', 'drunksmile', 'drunkworry', 'stockdistant_blush', 'stocknormal_blush', 'stockworry_blush', 'worry', 'normal', 'normal_blush', 'nudenormal_blush', 'nudesmile', 'nudeworry_blush', 'irritated', 'smile', 'worry', 'worry_blush']
-        make_sprites('hanagown',hanag_list,['blush','cry','cry2','alt','hosp']) # [str] (,'hosp')
+        make_sprites('hanagown',hanag_list,['blush','cry','cry2','alt','hosp','tail'])
 
         # # # new "i forgot how to groom" hanako! [str]
         hanabad_list = ['emb_blushing',
@@ -746,7 +750,7 @@ init 1:
     # Minor characters
         make_sprites('yuuko',['smile','neutral','happy','closedhappy','worried', 'neurotic', 'panic',], ['shang','up','down'])
         make_sprites('yuukoshang',['smile','neutral','happy','closedhappy','worried', 'neurotic', 'panic','invis', 'noglasses'], ['up','down'])
-        make_sprites('akira',['basic_smile','basic_lost','basic_kill','basic_annoyed','basic_resigned','basic_boo', 'basic_laugh'])
+        make_sprites('akira',['basic_smile','basic_lost','basic_kill','basic_annoyed','basic_resigned','basic_boo', 'basic_laugh', 'basic_evil'])
         make_sprites('hideaki',['angry','angry_up','bored','bored_up','closed_up','confused','darkside','disapproves','evil','happy','happy_up','kiss','normal','normal_up','ohshit','sad','surprise','surprise_up','thinking','serious','serious_up','triangle','invis'])
         make_sprites('jigoro',['angry','laugh','neutral','smug'])
         make_sprites('kenji',['neutral','happy','tsun','rage','surprised','invis'], ['naked'])

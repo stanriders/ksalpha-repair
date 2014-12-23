@@ -13,16 +13,14 @@ ___What needs to be done___:
 **Lilly-route**:
  * direction
  * (at least try to) fix logical contradictions and scene repeating
- * yukata sprites for Lilly
- * ponytail sprites and (maybe) lillyroom cg for Hanako
+ * (maybe) lillyroom-ponytail cg for Hanako
  * tanabata bgs
  * cgs maybe, dunno
 
 **Hanako-route**:
+ * music, sfx
  * add transitions and fadings in act3
- * add more animations in H23 and later
  * CGs, moar cgs!
- * timeskips, maybe?
 
 **True-Hanako-route**:
  * MOAR CGS!

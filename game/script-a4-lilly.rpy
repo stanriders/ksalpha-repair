@@ -917,6 +917,7 @@ label en_L21:
     "I guess that mannerism's inherited."
     
     show yuuko neutral
+    with charaenter
 
     yu "Good news, Hisao!"
 
@@ -930,9 +931,12 @@ label en_L21:
 
     "As I turn to look back down the hallway, I raise an eyebrow."
     
-    show aki basic_boo at left
+    show akira basic_boo at left
     with charaenter
-
+    
+    show yuuko neurotic
+    with charachange
+    
     "A darkly-clad figure steps out from the door ahead, striding out and walking down the hallway towards us."
 
     "Pausing a moment to try and work out why he's been in Lilly's room, I take measure of him."
@@ -943,8 +947,8 @@ label en_L21:
     # For now, I'll use the character code "aki", easily changed if need be
     # New character GET
 
-    show akira basic_smile
-    with charaenter
+    show akira basic_smile at center
+    with charamove
 
     "He suddenly stops directly in front of us, seemingly ignoring Yuuko entirely as he looks at me."
     
@@ -977,6 +981,9 @@ label en_L21:
 
     hi "What in the hell?"
 
+    show yuuko worried
+    with charachange
+    
     yu "Hisao, go see Lilly. I'll deal with this."
 
     hi "Huh?"
@@ -984,7 +991,10 @@ label en_L21:
     yu "Go on, she'll be waiting for you."
 
     hi "Fine, but tell me what the hell's going on when I get back, okay?"
-
+    
+    hide yuuko
+    with charaexit
+    
     "I stride up to the door briskly, trying to walk off the annoyance."
 
     "He really seemed to have a confident air about him."
@@ -992,7 +1002,7 @@ label en_L21:
     "Actually, confident is the wrong word. “Obnoxiously smug” would be a better description."
 
     scene bg hosp_room
-    with openeye
+    with locationskip
     $ renpy.music.set_volume(0.10000000001, 1.0, channel='music')
     
     play music music_credits fadein 2.0
@@ -1118,7 +1128,9 @@ label en_L21:
     li "Bye."
     
     play sound sfx_doorclose
-
+    scene bg hosp_hallway
+    with locationchange
+    
     "I walk through the door and close it behind me, the sight of Lilly's gentle waving disappearing behind it."
 
     "The day after tomorrow, Lilly will be back in school."
@@ -1152,6 +1164,9 @@ label en_L21:
 
     "As I exit the doors of the hospital, I look down to the bench."
 
+    show yuuko worried at leftsit
+    with charaenter
+    
     "As expected, Yuuko's there."
     
     #yuuko sprite must be sitting here
@@ -1164,7 +1179,10 @@ label en_L21:
     "Elbows on his knees and a can of beer in his hand, he shifts only his eyes to see me."
 
     hi "Hey Yuuko."
-
+    
+    show yuuko panic_down at leftsit
+    with charachange
+    
     yu "Sorry about leaving you like that."
 
     hi "Nah, it's fine. Um…"
@@ -1196,15 +1214,18 @@ label en_L21:
     with charachange
     
     aki "Yeah, you could say that. Folks sent me down to check on 'er."
-
-    "I note the almost inperceptible look of annoyance that flickers across Yuuko's face."
+    
+    show yuuko worried_down at leftsit
+    with charachange
+    
+    "I note the almost imperceptible look of annoyance that flickers across Yuuko's face."
 
     "I guess she and Lilly's family don't get along."
 
     "He turns back to take the can left on the seat behind him, giving a curt nod to Yuuko."
 
     show akira basic_boo at right
-    with charaenter
+    with charachange
     
     aki "I'd better be off."
 
@@ -1215,7 +1236,8 @@ label en_L21:
     
     aki "Take good care o' Lilly, eh? Seeya."
 
-    hide akira
+    hide akira at rightedge
+    with disslovedcharamove
     
     "And with that, he walks off, his free hand raised."
 
@@ -1230,6 +1252,8 @@ label en_L21:
     scene black
     with dissolve
 
+    window hide
+    
     return
 
 label en_L22:
@@ -1293,7 +1317,7 @@ label en_L22:
 
     "As I frantically try to silently grab Misha's attention, Mutou confidently strides though the gaps between the desks from the front of the class, his intent gaze focused directly on her."
 
-    show mutou irritated at center
+    show muto irritated at center
     with charaenter
     
     "She suddenly stops writing as his tall figure casts an impossibly long shadow over the page."
@@ -1312,6 +1336,7 @@ label en_L22:
     mu "Half an hour until you can hop off to the student council. I think you can hold off until then."
 
     hide muto
+    with charaexit
     
     "Misha's face cracks as the entire class erupts into laughter."
 
@@ -1526,11 +1551,15 @@ label en_L22:
     
     hide lilly
     hide akira
+    with charaexit
 
     "I turn around to see who's following us."
 
     # Show Emi and Rin sprites, with completely black sunglasses
-
+    show emi basic_annoyed_glass at tworight
+    show rin basic_awayabsent_glass at twoleft
+    with charaenter
+    
     $ doublespeak(rin,emi,u"…")
 
     hi "What the hell?"
@@ -1548,11 +1577,16 @@ label en_L22:
     rin "The fourth."
 
     # Sprite change, Emi flat
-
+    show emi basic_confused_glass at tworight
+    with charachange
+    
     emi "…"
 
     # Sprite change, Emi annoyed
 
+    show emi sad_angry_glass at tworight
+    with charachange
+    
     emi "Hey, that's not the name I said you had!"
 
     rin "Your name was boring. I made a better one."
@@ -1561,26 +1595,59 @@ label en_L22:
 
     "I reach forward and pluck the oversized sunglasses from Emi and Rin's faces."
 
+    # regular sprites from now on [str]
+    show emi sad_angry at tworight
+    show rin basic_awayabsent at twoleft
+    with charachange
+    
     hi "It takes more than a pair of cheap sunglasses to fool me."
-
+    
+    show rin basic_awayabsent at left
+    with charamove
+    
+    show akira basic_evil at center
+    with charaenter
+    
     "Suddenly, Akira walks past me and observes Emi altogether too closely from the side."
 
+    show emi sad_shy at right
+    with charamove
+    
     emi "Er… What are you…"
 
     aki "She's not too bad. Not too bad at all."
-
+    
     aki "Hey Hisao, why didn't you go for her instead? Too young for your tastes?"
 
+    # respawning emi for upcoming scene [str]
+    hide emi
+    show emi sad_shy at right
+    
     hi "Good lord."
 
     emi "I'm eighteen!"
 
     aki "Huh, you look closer to twelve. Damn."
-
+    
+    show emi basic_shock at right
+    with charachange
+    
     emi "Why you…!"
 
     emi "HIYAA-aaagh!"
-
+    
+    show emi basic_shock at twocenteroff3
+    show akira basic_evil at twocenteroff
+    with charamove
+    
+    show akira basic_evil at center
+    with charamove
+    
+    with Pause(0.5)
+    
+    show emi excited_circle at twocenteroff3
+    with charachange
+    
     "As Emi moves to deliver a lightening-fast karate-chop to her side, Akira expertly slides past her outstretched arm and grabs it, pulling it around and pinning it to Emi's back."
 
     emi "Hey, let go of me! Gyah!"
@@ -1600,7 +1667,13 @@ label en_L22:
     hi "Just release her."
 
     aki "Fine, fine."
-
+    
+    show akira basic_evil at center
+    with charamove
+    
+    show emi excited_circle at right
+    with charamove
+    
     "She reluctantly loosens her grip on Emi's arm, taking a step back to avoid any counterattacks."
 
     "All Emi can do as she rubs her arm is scowl menacingly."
@@ -9514,6 +9587,9 @@ label en_L40:
     scene bg school_dormlilly
     with locationchange
 
+    show hanagown distant_tail_close
+    with charaenter
+    
     "As she waves me in, I follow her lead and take a seat opposite Hanako."
 
     ha "Hi, Hisao."
@@ -9526,16 +9602,29 @@ label en_L40:
 
     hi "That looks nice."
 
+    show hanagown normal_tail_close
+    with charachange
+    
     ha "Hmm?"
 
     hi "Your hair. It's nice to be able to see your face."
 
     ha "Ah…"
 
+    show hanagown normal_blush_tail_close
+    with charachange
+    
     "Her face reddens, though holds back from shying away."
 
     ha "Th…Thank you."
 
+    show bg school_dormlilly at bgright 
+    show hanagown smile_tail_close at tworight 
+    with charamove
+    
+    show lilly basic_cheerful_paj_close at twoleft
+    with charaenter
+    
     "Lilly sits down to my left, smiling indulgently as she places a filled teacup in front of me and a plate of biscuits on the low table."
 
     "From the smell coming from the cup, it seems to be…"
@@ -9570,8 +9659,11 @@ label en_L40:
 
     hi "At times I'd prefer a harsh taskmaster over… whatever Mutou is."
 
+    show hanagown distant_tail_close
+    with charachange
+    
     ha "He has a point…"
-
+    
     "Hanako's pained expression matches mine perfectly."
 
     hi "You sure read a lot, half the room's taken up by books."
@@ -10044,6 +10136,9 @@ label en_L41:
     return
 
 label en_L42:
+
+    scene bg school_girlsdormhall
+    with locationskip
     
     "I can't remember the last time I wore a yukata."
 
@@ -10055,18 +10150,34 @@ label en_L42:
 
     "Oh well. There are worse things that could happen."
 
-    extend "I suspect Lilly will be less than concerned by it, at any rate."
+    extend " I suspect Lilly will be less than concerned by it, at any rate."
 
     "Right. Lilly. That's why I'm here."
 
     "As my brain finally kicks into gear, I rap my knuckles on Lilly's door."
-
+    
+    scene bg school_dormlilly
+    show lilly basic_smile_yuk_close at twocenteroff
+    #show expression Solid("#00000022")
+    show hanako_door_base at right  # yep, hanakodoor. 
+    show hanako_door_door at left
+    with locationchange
+    
     li "Coming!"
 
     "As soon as I hear her voice, the quiet sound of wooden clogs dances on the edge of my hearing."
 
     "Within seconds she opens the door…"
 
+    play sound sfx_dooropen
+    
+    # here we move everything. Kinda problematic to get right coordinates for every thing in this scene.
+    show bg school_dormlilly at roomopen
+    show lilly basic_smile_yuk_close at Position(xanchor=0.5, xpos=0.48, yanchor=0.5, ypos=0.5)
+    show hanako_door_base at rightwallopen
+    show hanako_door_door at leftdooropen
+    with charamove
+    
     "…leaving me completely stunned."
 
     "As she stands there, gently smiling in the most lavish garb, I'm completely spellbound."
@@ -10095,16 +10206,27 @@ label en_L42:
 
     hi "Only because your looks have all but stolen my words, my love."
 
+    show lilly basic_cheerful_yuk_close
+    with charachange
+    
     "…Where in the world did that come from?"
 
     "Regardless, she seems to quite like the cliche-ridden compliment."
 
+    scene bg school_girlsdormhall
+    scene bg school_girlsdormhall
+    show lilly basic_cheerful_yuk_close
+    with locationskip
+    
     li "Shall we be off, then?"
-
+    
     hi "Indeed we… "
 
-    extend "…Oh."
-
+    extend "oh."
+    
+    show lilly basic_surprised_yuk_close
+    with charachange
+    
     li "Is something wrong?"
 
     hi "I seem to have overlooked something. Something that was painfully obvious."
@@ -10125,6 +10247,10 @@ label en_L42:
 
     li "Go right ahead. It should be on the counter."
 
+    scene bg school_gate_ss
+    show lilly basic_weaksmile_yuk_close_ss
+    with shorttimeskip
+
     "After sliding past and calling the taxi service, it's not long before we're on the street outside the gate and waiting."
 
     "If my guess is right, it'd be about six in the evening."
@@ -10137,15 +10263,25 @@ label en_L42:
 
     hi "Up late last night?"
 
+    show lilly basic_sleepy_yuk_close
+    with charachange
+    
     li "I lost track of the time as I was reading. I think by the time I got to bed it was past midnight."
 
     "I narrow my eyes at her."
 
     hi "Is that all you were doing?"
-
+    
+    show lilly basic_surprised_yuk_close
+    with charachange
+    
     li "…"
 
+    with Pause(1.0)
+    
     # sprite change
+    show lilly basic_pout_yuk_close
+    with charachange
 
     li "…"
 
@@ -10154,7 +10290,10 @@ label en_L42:
     "That is, until I bring my mouth next to her ear and give a lowly whisper."
 
     hi "Tanabata won't be the end of our night."
-
+    
+    show lilly basic_cheerful_yuk_close
+    with charachange
+    
     "A small grin spreads on her face as I pull back, a small nod being the only reply."
 
     "Right on cue, the sound of the taxi pulling up on the side of the street can be heard."
@@ -10166,7 +10305,10 @@ label en_L42:
     "With a quick skip around the back, I slide into the other side of the cab before shutting the door."
 
     # Timeskip
-
+    
+    scene bg suburb_tanabata_ni # TODO: replace with something new. [str]
+    with shorttimeskip
+    
     "With a nod and a polite tip for the exquisite drift around the last corner, of which Lilly strangely didn't seem to appreciate, the taxi disappears off down the road."
 
     "Though slightly flustered, Lilly regains herself in no time."
@@ -10666,6 +10808,8 @@ label en_L42x:
 
     # Timeskip
 
+    with shorttimeskip
+    
     "This kid is heavier than I thought."
 
     "With Reo perched on my shoulders and Lilly holding my hand, our haphazard mother-hunting trio makes its way through the buzzing croud."
@@ -10796,7 +10940,10 @@ label en_L42x:
 
     # Timeskip
     # Half me being lazy, noted for possible small expansion
-
+    
+    scene bg misc_sky_ni
+    with shorttimeskip
+    
     "It doesn't take long before I find a nice, secluded area."
 
     "With the forest behind us, the distant hum of the crowds has all but died out."
@@ -10810,7 +10957,10 @@ label en_L42x:
     li "You found a nice place, Hisao."
 
     hi "Thanks. If we hadn't found Reo, I wouldn't have thought to come here."
-
+    
+    play ambient sfx_fireworks
+    show fireworks
+    
     "As if right on cue, a single yellow line shoots up into the sky, bursting into a vivid yellow flower in the night sky."
 
     "While she may not see them, she can definitely hear them flying up and bursting in the air."
@@ -10845,7 +10995,29 @@ label en_L42x:
 
     # Insert heart attack graphics where applicable
 
-    centered "*THUD*"
+    #centered "*THUD*"
+    play sound sfx_heartfast
+    show heartattack alpha 
+    with Dissolve (0.1)
+
+    hide heartattack alpha 
+    with Dissolve (0.8) 
+
+    with Pause(0.15) 
+
+    play sound sfx_heartslow 
+    show heartattack alpha 
+    with Dissolve (0.1)
+
+    hide heartattack alpha
+    with Dissolve (0.8)
+
+    play sound sfx_heartfast
+    show heartattack alpha
+    with Dissolve (0.1)
+
+    hide heartattack alpha
+    with Dissolve (0.8)
 
     "Just as last time, the pain is sudden and ferocious."
 
@@ -10855,10 +11027,34 @@ label en_L42x:
 
     "Dammit, why now? Just when everything started going right."
 
-    centered "*THUD* *THUD*"
+   # centered "*THUD* *THUD*"
+    play sound sfx_heartfast
+    show heartattack alpha  
+    with Dissolve (0.1) 
 
+    hide heartattack alpha
+    with Dissolve (0.8)
+
+    with Pause(0.15) 
+
+    play sound sfx_heartslow 
+    show heartattack alpha 
+    with Dissolve (0.1)
+
+    hide heartattack alpha
+    with Dissolve (0.8)
+
+    play sound sfx_heartfast
+    show heartattack alpha
+    with Dissolve (0.1)
+
+    hide heartattack alpha
+    with Dissolve (0.8)
+   
     "The second wave of pain all but destroys any remaining resistance I can muster."
 
+    with vpunch
+    
     "With my mind wracked in pain, I fall back onto the ground with a soft thud."
 
     "The sky."
@@ -10881,8 +11077,25 @@ label en_L42x:
 
     hi "Lilly…"
 
-    centered "*THUD* *THUD*"
+	stop ambient fadeout 4.0
 
+    #centered "*THUD* *THUD*"
+    play sound sfx_heartslow
+    show heartattack alpha 
+    with Dissolve (0.1) 
+
+    hide heartattack alpha 
+    with Dissolve (0.2) 
+
+    with Pause(0.7) 
+
+    play sound sfx_heartfast 
+    show heartattack alpha  
+    with Dissolve (0.1)
+
+    hide heartattack alpha 
+    with Dissolve (0.2)
+    
     "Pit-pat. Pit-pat."
 
     "The tears from Lilly's eyes tap freely onto my cheek."
@@ -10891,12 +11104,31 @@ label en_L42x:
 
     li "Hisao! Anyone, help! Please!"
 
-    centered "*THUD* *THU—*"
+    #centered "*THUD* *THU—*"
+    play sound sfx_heartfast 
+    show heartattack alpha 
+    with Dissolve (0.1) 
+
+    hide heartattack alpha 
+    with Dissolve (0.8) 
+
+    show passoutOP1 
+    with None 
 
     "I'm sorry, Lilly. I couldn't say it."
 
     "I couldn't say goodbye."
 
+    with Pause(1.0)
+    window hide 
+
+    play sound sfx_heartstop 
+
+    scene black 
+    with None 
+
+    with Pause(2.7) 
+    
     # End of Lilly act 4
     
     return
