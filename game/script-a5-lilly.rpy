@@ -2,8 +2,13 @@
 
     # Open to act title card "Future"
 
-    scene black # [str]
-    with dissolve # [str]
+    scene black 
+    with dissolve 
+    
+    window hide
+    nvl show dissolve
+
+    nvl clear
     
     n "…"
 
@@ -21,8 +26,8 @@
 
     nvl clear
     
-    scene white # [str]
-    with openeye # [str]
+    scene white 
+    with openeye 
     
     n "White."
 
@@ -30,8 +35,8 @@
 
     n "Even before my eyes regain focus, I can work out three things."
 
-    show bg hosp_room at bgright # [str]
-    with Dissolve (3.0) # [str]
+    show bg hosp_room at bgright 
+    with Dissolve (3.0) 
     
     n "One, that I am in a hospital."
 
@@ -88,7 +93,10 @@
     n "…Promptly causing the catheter in the right to dig into the skin."
 
     nvl clear
-
+    nvl hide dissolve
+    
+    window show
+    
     hi "Ah, dammit!"
 
     "For a moment, everything seems to go silent."
@@ -98,7 +106,10 @@
     "Tilting my head up, I see the figure that emerges from the door."
 
     "…Whereas before my mind seemed to be filling with too much information, now it's completely blank."
-
+    
+    show lilly basic_concerned_cas
+    with charaenter
+    
     "That person that stands there is the one who I'd so nearly said goodbye to."
 
     "The person that I'd accepted as having been a brilliant but momentary beacon in my abruptly-ended life."
@@ -118,7 +129,10 @@
     "She slowly walks towards the bed, her hands slightly ahead of her."
 
     "Gone is her usual gracefulness, replaced by a paper-thin facade that would break if breathed upon."
-
+    
+    show lilly basic_reminisce_cas_close
+    with charaenter
+    
     "Eventually she reaches the side of the bed, hands gently resting on the side."
 
     "It's taking every fiber of her being to retain her composure, right now."
@@ -130,11 +144,14 @@
     hi "Come here."
 
     # lilly_hostpital CG [str]
-    scene ev lilly_hospital at bgright
+    scene ev lilly_hospitalclosed at bgright
     with whiteout
     
     "With that, she gingerly falls onto my chest, her head resting below my chin."
-
+    
+    scene ev lilly_hospital at bgright
+    with locationchange
+    
     li "Hisao, when we were at the…"
 
     "Her voice nearly cracks as she tries to spill out all the information she can."
@@ -175,11 +192,14 @@
     "Her mood somewhat lifted, she picks herself up and regains herself."
 
     scene bg hosp_room at bgleft
-    show lilly basic_weaksmile_cas
+    show lilly basic_weaksmile_cas_close
     with locationchange
     
     "That's the Lilly I'd been wanting to see. She's back to her old, strong self again."
-
+    
+    show lilly basic_weaksmile_cas_close at centersit
+    with charamove
+    
     "Reaching back for a chair, she takes a seat beside me."
 
     li "I suppose… you're a bit lost?"
@@ -205,11 +225,17 @@
     li "It was when they were on their way out that I met them."
 
     hi "I… see."
-
+    
+    show lilly basic_giggle_cas_close at centersit
+    with charachange
+    
     "She gives a small giggle at my uncomfortableness."
 
     li "There's no need to be embarassed. They were quite nice."
-
+    
+    show lilly basic_smile_cas_close at centersit
+    with charachange
+    
     "For a second, her calm smile seems slightly disturbing."
 
     "As I look up the the roof to look away from it, I ask the only question left on my mind."
@@ -269,7 +295,10 @@
     hi "Thanks. I'm glad that you were around when I woke up."
 
     "Savouring each other's silent contact for moments on end, we eventually part."
-
+    
+    hide lilly
+    with charaexit
+    
     "With a kind farewell and assurance that she's tell the nurse about my situation, Lilly leaves the room."
 
     "My gaze returns to that white ceiling."
@@ -284,8 +313,11 @@
 
     "That is the one thought that flickers through my mind before I fall asleep."
 
-    scene black # [str]
-    with shuteye # [str]
+    scene black
+    with shuteye
+    window hide
+    
+    with Pause(3.0)
     
     return
 
@@ -293,8 +325,12 @@ label en_L44:
     
     # Sticking with the heart attack schtick for now. Can change it later if it ends up too incongruent with the rest of the path
 
-    show bg hosp_room at bgright # [str]
-    with openeye # [str]
+    show bg hosp_room at bgright
+    with openeye
+    
+    nvl show dissolve
+
+    nvl clear
     
     n "As I wake up from another nap, I glance down at the newspaper sitting on the table over the bed."
 
@@ -365,7 +401,13 @@ label en_L44:
     n "Just as easily as I lost my previous life…"
 
     nvl clear
-
+    nvl hide dissolve
+    
+    window show
+    
+    show lilly cane_smileclosed_cas
+    with charaenter
+    
     "Before I can continue the thought, the pale white door gingerly opens to reveal the ever-pale Lilly, cane in hand. Her face is an all too welcome sight."
 
     hi "Hey Lilly."
@@ -373,7 +415,10 @@ label en_L44:
     li "Oh, you're awake?"
 
     hi "Yeah. I've been in a daze for most of the day, you caught me at a good time though."
-
+    
+    show lilly cane_smile_cas_close
+    with charachange
+    
     "She slowly walks over to the chair beside the bed, resting her cane against the wall as she feels it out."
 
     li "How are you feeling?"
@@ -393,9 +438,15 @@ label en_L44:
     li "Everyone knows."
 
     hi "Oh boy."
-
+    
+    show lilly cane_giggle_cas_close
+    with charachange
+    
     "Lilly fails to hide her small giggle at my expense."
-
+    
+    show lilly cane_smile_cas_close
+    with charachange
+    
     li "Do you have anything you'd like me to get for you from your dormitory?"
 
     "I lean back and think before eventually giving a reply."
@@ -415,13 +466,20 @@ label en_L44:
     li "I'll go get them now then, if you'd like."
 
     hi "Sure. I don't think I'll be going anywere, at least."
-
+    
+    hide lilly
+    with charaexit
+    
     "She lets out a small snort of laughter at my carelessness, before opening the door and taking her leave."
 
     "I suppose there isn't much more to do other than sleep."
-
+    
     # Close eyes, timeskip
-
+    scene black
+    with shuteye
+    
+    with Pause(1.5)
+    
     "Poke. Poke, poke."
 
     rin "Is he awake?"
@@ -441,25 +499,46 @@ label en_L44:
     emi "Geh!"
 
     # Open eyes to scene
-
+    show bg hosp_room at bgright 
+    show emi basic_hes_close at tworight
+    show rin relaxed_nonchalant at twoleft
+    with openeye
+    
     emi "Uh, well, uh…"
 
     emi "It was Rin! Rin was poking you!"
 
     hi "I find that hard to believe."
 
+    show emi sad_shy_close at tworight
+    with charachange
+    
     "I look flat-faced at Emi for seconds on end before she grimaces at her grave mistake."
 
+    show emi basic_confused_close at tworight
+    with charachange
+    
     emi "Oh. Ooooooh."
-
+    
+    show rin basic_deadpannormal at twoleft
+    with charachange
+    
+    show rin relaxed_nonchalant at twoleft
+    with charachange
     "As I blink my eyes to get a better view, I nod to Rin, of whom promptly nods back."
 
     "While the two seem to be as bumbling as usual, there's a definite edge to their antics."
-
+    
+    show emi sad_angry_close at tworight
+    with charachange
+    
     "I give a lackadaisical sigh and rest my hand on Emi's head, scruffing her hair a bit to her protest."
 
     hi "Good to see you. Both of you."
 
+    show emi basic_annoyed_close at tworight
+    with charachange
+    
     emi "I can't believe you, Hisao."
 
     hi "What'd I do?"
@@ -473,13 +552,19 @@ label en_L44:
     "In the face of Emi's pouting, I give up any worth in protesting."
 
     hi "So what've you two been doing? Aren't you meant to be on holidays?"
-
+    
+    show emi basic_closedgrin_close at tworight
+    with charachange
+    
     emi "We were just staying at my mom's house. It's not far to come here."
 
     "It's only now that I notice two large bags sitting next to Rin."
 
     hi "Been shopping?"
-
+    
+    show rin basic_deadpannormal at twoleft
+    with charachange
+    
     rin "Art shop was on the way here."
 
     hi "Ah. That makes sense."
@@ -493,21 +578,37 @@ label en_L44:
     "Good grief."
 
     "Before Emi can reject the proposition, the door handle creaks."
-
+    
+    show rin relaxed_nonchalant at twocenteroff2
+    with charamove
+    
+    show lilly basic_oops_cas at left
+    with charaenter
+    
+    
     "Through it comes a (very cute…) nurse, followed by Lilly."
 
     "Both arms holding the sizable tower of books, her chin rests on the topmost book to hold it in place."
-
+    
+    show emi excited_proud_close at tworight
+    with charachange
+    
     emi "I saw that, Hisao…"
 
     hi "H—Hey, Lilly!"
-
+    
+    show emi basic_closedgrin_close at tworight
+    with charachange
+    
     "I quickly cut Emi off, lest she tell Lilly of my wandering eyes."
 
     li "You said it was a small pile…"
 
     hi "It's only as tall as Emi, and Emi's short. Therefore, it's small."
 
+    show emi basic_confused_close at tworight
+    with charachange
+    
     emi "Hey!"
 
     "The nurse, still holding the door, gives a smiling nod of farewell before leaving. I guess she must've been leading Lilly through the halls."
@@ -574,6 +675,10 @@ label en_L44:
 
     rin "Bye."
 
+    hide emi
+    hide rin
+    with charaexit
+    
     "Lilly and I can barely raise out hands to wave them goodbye before they're out the door."
 
     hi "Those two…"
@@ -610,10 +715,21 @@ label en_L44:
 
     hi "Seeya."
 
+    hide lilly
+    with charaexit
+    
     return
 
 label en_L45:
 
+    show bg hosp_room at bgright
+    with shorttimeskip
+    
+    window hide
+    nvl show dissolve
+
+    nvl clear
+    
     n "Today was interesting."
 
     n "That's the first lie I've been trying to tell myself."
@@ -673,9 +789,14 @@ label en_L45:
     n "As long as Lilly smiles, I don't care."
 
     nvl clear
-
+    nvl hide dissolve
+    
+    window show
     # Timeskip
-
+    show bg hosp_room at bgright
+    show lilly cane_smile
+    with shorttimeskip
+    
     "After Lilly arrived, we both began to read in short measure."
 
     "There are many things about the hospital which annoy me, but the quiet certainly isn't one of them."
@@ -894,6 +1015,11 @@ label en_L45:
 
 label en_L46:
 
+    window hide
+    nvl show dissolve
+
+    nvl clear
+    
     n "As I wake up, I try to recall which day it is."
 
     n "…To no avail."
@@ -925,7 +1051,10 @@ label en_L46:
     n "But… why?"
 
     nvl clear
-
+    nvl hide dissolve
+    
+    window show
+    
     centered "*Thud* *thud* *thud"
 
     hi "Come in!"

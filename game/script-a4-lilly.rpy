@@ -11077,7 +11077,7 @@ label en_L42x:
 
     hi "Lilly…"
 
-	stop ambient fadeout 4.0
+    stop ambient fadeout 4.0
 
     #centered "*THUD* *THUD*"
     play sound sfx_heartslow
