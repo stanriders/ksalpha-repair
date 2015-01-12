@@ -750,7 +750,7 @@ init 1:
     # Minor characters
         make_sprites('yuuko',['smile','neutral','happy','closedhappy','worried', 'neurotic', 'panic',], ['shang','up','down'])
         make_sprites('yuukoshang',['smile','neutral','happy','closedhappy','worried', 'neurotic', 'panic','invis', 'noglasses'], ['up','down'])
-        make_sprites('akira',['basic_smile','basic_lost','basic_kill','basic_annoyed','basic_resigned','basic_boo', 'basic_laugh', 'basic_evil'])
+        make_sprites('akira',['basic_smile','basic_lost','basic_kill','basic_annoyed','basic_resigned','basic_boo', 'basic_laugh', 'basic_evil', 'basic_ending'])
         make_sprites('hideaki',['angry','angry_up','bored','bored_up','closed_up','confused','darkside','disapproves','evil','happy','happy_up','kiss','normal','normal_up','ohshit','sad','surprise','surprise_up','thinking','serious','serious_up','triangle','invis'])
         make_sprites('jigoro',['angry','laugh','neutral','smug'])
         make_sprites('kenji',['neutral','happy','tsun','rage','surprised','invis'], ['naked'])
@@ -776,6 +776,14 @@ init 1:
     image ev hisao_class_move = At("event/hisao_class.jpg",Move((0.0, 0.0, 0.0, 0.0), (1.0, 0.0, 1.0, 0.0), 40.0, time_warp=acdc_warp, subpixel=True))
     image ev hisao_class_end = im.Crop("event/hisao_class.jpg", 800, 0, 800, 600)
      
+    image pills = "vfx/pills.png"
+    image pills alpha = im.Alpha("vfx/pills.png", 0.0)
+
+    image phone mobile = ("vfx/mobile-sprite.png")   
+    image phone mobile_alpha = im.Alpha("vfx/mobile-sprite.png", 0.0)     
+
+    image hisaowindow = "vfx/hisaowindow.png"
+    
     # EMI
     image ev emi_knockeddown = "event/emi_knockeddown.jpg"
     image ev emi_knockeddown_facepullout = At("event/emi_knockeddown_large.jpg", Zoom((800,600),(885, 131, 804, 603),(840, 115, 880, 660),10.0, time_warp=_ease_time_warp, xalign=0.5, yalign=0.5))
@@ -783,7 +791,15 @@ init 1:
     image ev emi_knockeddown_face = im.Crop("event/emi_knockeddown_large.jpg", 882, 130, 800, 600)
     image ev emi_knockeddown_legs = At("event/emi_knockeddown_large.jpg", Move((1600,700,2400,1800),(1400,700,2400,1800), 10.0, time_warp=acdc_warp, subpixel=True))
     image ev emi_bed_frown = "event/emi_bed_frown.jpg"
-
+    
+    image ev emitrack_blocks = "event/emitrack_blocks.jpg"
+    image ev emitrack_blocks_close = "event/emitrack_blocks_close.jpg"
+    image ev emitrack_blocks_close_grin = "event/emitrack_blocks_close_grin.jpg"
+    image startpistol = "event/startpistol.png"
+    image ev emitrack_running = "event/emitrack_running.jpg"
+    image ev emitrack_finish = "event/emitrack_finish.jpg"
+    image ev emitrack_finishtop = "event/emitrack_finishtop.jpg"
+    
     # RIN
     image ev rin_eating = "event/rin_eating.jpg"
     image ev rin_roof_boredom = "event/rin_roof_boredom.jpg"
@@ -802,29 +818,22 @@ init 1:
     image emi_shadow = "event/emi_shadow.png"
     image ev hisaobyrin = "event/hisaobyrin.png"
     image ev rinbyhisao = "event/rinbyhisao.png"
-    image ev bird0 = "event/bird_0.jpg"
-    image ev bird2 = "event/bird_2.jpg"
-    image ev bird3 = "event/bird_3.jpg"
-    image ev bird4 = "event/bird_4.jpg"
-    image ev bird5 = "event/bird_5.jpg"
-    image ev bird6 = "event/bird_6.jpg"
-    image ev bird7 = "event/bird_7.jpg"
-    image ev bird8 = "event/bird_8.jpg"
-    image ev bird9 = "event/bird_9.jpg"
-    image ev emitrack_blocks = "event/emitrack_blocks.jpg"
-    image ev emitrack_blocks_close = "event/emitrack_blocks_close.jpg"
-    image ev emitrack_blocks_close_grin = "event/emitrack_blocks_close_grin.jpg"
-    image startpistol = "event/startpistol.png"
-    image ev emitrack_running = "event/emitrack_running.jpg"
-    image ev emitrack_finish = "event/emitrack_finish.jpg"
-    image ev emitrack_finishtop = "event/emitrack_finishtop.jpg"
+    image ev bird0 = "event/hisao_bird/bird_0.jpg"
+    image ev bird2 = "event/hisao_bird/bird_2.jpg"
+    image ev bird3 = "event/hisao_bird/bird_3.jpg"
+    image ev bird4 = "event/hisao_bird/bird_4.jpg"
+    image ev bird5 = "event/hisao_bird/bird_5.jpg"
+    image ev bird6 = "event/hisao_bird/bird_6.jpg"
+    image ev bird7 = "event/hisao_bird/bird_7.jpg"
+    image ev bird8 = "event/hisao_bird/bird_8.jpg"
+    image ev bird9 = "event/hisao_bird/bird_9.jpg"
+ 
     image ev rin_painting_concerned = "event/rin_painting_concerned.png"
     image ev rin_painting_reply = "event/rin_painting_reply.png"
     image ev rin_painting_foot = "event/rin_painting_foot.jpg"
     image ev rin_painting_base = "event/rin_painting_base.png"
     image ev rin_painting_faceconcerned = "event/rin_painting_faceconcerned.png"
-    image pills = "vfx/pills.png"
-    image pills alpha = im.Alpha("vfx/pills.png", 0.0)
+
     image ev rin_kiss = 'event/rin_kiss.jpg'
     image ev rin_high_frown = 'event/rin_high_frown.jpg'
     image ev rin_high_grin = 'event/rin_high_grin.jpg'
@@ -885,10 +894,6 @@ init 1:
 
     image ev rin_doodle_all = ("vfx/rin_doodle.png")
 
-    image phone mobile = ("vfx/mobile-sprite.png")   
-    image phone mobile_alpha = im.Alpha("vfx/mobile-sprite.png", 0.0)     
-
-    image hisaowindow = "vfx/hisaowindow.png"
 
     image rin_exhibition_sold = 'vfx/rin_exhibition_sold.jpg'
     image rin_exhibition_c = 'vfx/rin_exhibition_c.jpg'
@@ -1167,6 +1172,15 @@ init 1:
     image ev lilly_hospital = 'event/lilly_hospital.jpg'
     image ev lilly_hospitalclosed = 'event/lilly_hospitalclosed.jpg'
     
+    image ev lilly_goodend = 'event/lilly_goodend.jpg'
+    image ev lilly_goodend_bg = 'event/lilly_goodend_bg.jpg'
+    
+    image ev lilly_restaurant_chew = 'event/lilly_restaurant_chew.jpg'
+    image ev lilly_restaurant_eat = 'event/lilly_restaurant_eat.jpg'
+    image ev lilly_restaurant_listen = 'event/lilly_restaurant_listen.jpg'
+    image ev lilly_restaurant_sheepish = 'event/lilly_restaurant_sheepish.jpg'
+    image ev lilly_restaurant_wine = 'event/lilly_restaurant_wine.jpg'
+    
     # HANAKO
     image ev hana_library_read = sunset("event/hana_library_read.jpg")
     image ev hana_library = sunset("event/hana_library.jpg")
@@ -1225,44 +1239,44 @@ init 1:
     image ev hanako_kiss_scroll = 'event/hanako_kiss/hanako_kiss_scroll.png'
     
     #Cowgirl stuff
-    image ev hanako_cowgirl_1 = 'event/hanako_cowgirl/cowgirl1.png'
-    image ev hanako_cowgirl_2 = 'event/hanako_cowgirl/cowgirl2.png'
-    image ev hanako_cowgirl_3 = 'event/hanako_cowgirl/cowgirl3.png'
-    image ev hanako_cowgirl_4 = 'event/hanako_cowgirl/cowgirl4.png'
-    image ev hanako_cowgirl_5 = 'event/hanako_cowgirl/cowgirl5.png'
-    image ev hanako_cowgirl_6 = 'event/hanako_cowgirl/cowgirl6.png'
-    image ev hanako_cowgirl_7 = 'event/hanako_cowgirl/cowgirl7.png'
-    image ev hanako_cowgirl_8 = 'event/hanako_cowgirl/cowgirl8.png'
-    image ev hanako_cowgirl_9 = 'event/hanako_cowgirl/cowgirl9.png'
-    image ev hanako_cowgirl_10 = 'event/hanako_cowgirl/cowgirl10.png'
-    image ev hanako_cowgirl_11 = 'event/hanako_cowgirl/cowgirl11.png'
-    image ev hanako_cowgirl_12 = 'event/hanako_cowgirl/cowgirl12.png'
-    image ev hanako_cowgirl_13 = 'event/hanako_cowgirl/cowgirl13.png'
-    image ev hanako_cowgirl_14 = 'event/hanako_cowgirl/cowgirl14.png'
-    image ev hanako_cowgirl_15 = 'event/hanako_cowgirl/cowgirl15.png'
-    image ev hanako_cowgirl_16 = 'event/hanako_cowgirl/cowgirl16.png'
-    image ev hanako_cowgirl_17 = 'event/hanako_cowgirl/cowgirl17.png'
-    image ev hanako_cowgirl_18 = 'event/hanako_cowgirl/cowgirl18.png'
+    image evh hanako_cowgirl_1 = 'event/hanako_cowgirl/cowgirl1.png'
+    image evh hanako_cowgirl_2 = 'event/hanako_cowgirl/cowgirl2.png'
+    image evh hanako_cowgirl_3 = 'event/hanako_cowgirl/cowgirl3.png'
+    image evh hanako_cowgirl_4 = 'event/hanako_cowgirl/cowgirl4.png'
+    image evh hanako_cowgirl_5 = 'event/hanako_cowgirl/cowgirl5.png'
+    image evh hanako_cowgirl_6 = 'event/hanako_cowgirl/cowgirl6.png'
+    image evh hanako_cowgirl_7 = 'event/hanako_cowgirl/cowgirl7.png'
+    image evh hanako_cowgirl_8 = 'event/hanako_cowgirl/cowgirl8.png'
+    image evh hanako_cowgirl_9 = 'event/hanako_cowgirl/cowgirl9.png'
+    image evh hanako_cowgirl_10 = 'event/hanako_cowgirl/cowgirl10.png'
+    image evh hanako_cowgirl_11 = 'event/hanako_cowgirl/cowgirl11.png'
+    image evh hanako_cowgirl_12 = 'event/hanako_cowgirl/cowgirl12.png'
+    image evh hanako_cowgirl_13 = 'event/hanako_cowgirl/cowgirl13.png'
+    image evh hanako_cowgirl_14 = 'event/hanako_cowgirl/cowgirl14.png'
+    image evh hanako_cowgirl_15 = 'event/hanako_cowgirl/cowgirl15.png'
+    image evh hanako_cowgirl_16 = 'event/hanako_cowgirl/cowgirl16.png'
+    image evh hanako_cowgirl_17 = 'event/hanako_cowgirl/cowgirl17.png'
+    image evh hanako_cowgirl_18 = 'event/hanako_cowgirl/cowgirl18.png'
     
     #Missionary
-    image ev hanako_miss1 = 'event/hanako_missionary/miss1.jpg'
-    image ev hanako_miss2 = 'event/hanako_missionary/miss2.jpg'
-    image ev hanako_miss3 = 'event/hanako_missionary/miss3.jpg'
-    image ev hanako_miss4 = 'event/hanako_missionary/miss4.jpg'
-    image ev hanako_miss5 = 'event/hanako_missionary/miss5.jpg'
-    image ev hanako_miss6 = 'event/hanako_missionary/miss6.jpg'
-    image ev hanako_miss7 = 'event/hanako_missionary/miss7.jpg'
-    image ev hanako_miss8 = 'event/hanako_missionary/miss8.jpg'
-    image ev hanako_miss9 = 'event/hanako_missionary/miss9.jpg'
-    image ev hanako_miss10 = 'event/hanako_missionary/miss10.jpg'
-    image ev hanako_miss11 = 'event/hanako_missionary/miss11.jpg'
+    image evh hanako_miss1 = 'event/hanako_missionary/miss1.jpg'
+    image evh hanako_miss2 = 'event/hanako_missionary/miss2.jpg'
+    image evh hanako_miss3 = 'event/hanako_missionary/miss3.jpg'
+    image evh hanako_miss4 = 'event/hanako_missionary/miss4.jpg'
+    image evh hanako_miss5 = 'event/hanako_missionary/miss5.jpg'
+    image evh hanako_miss6 = 'event/hanako_missionary/miss6.jpg'
+    image evh hanako_miss7 = 'event/hanako_missionary/miss7.jpg'
+    image evh hanako_miss8 = 'event/hanako_missionary/miss8.jpg'
+    image evh hanako_miss9 = 'event/hanako_missionary/miss9.jpg'
+    image evh hanako_miss10 = 'event/hanako_missionary/miss10.jpg'
+    image evh hanako_miss11 = 'event/hanako_missionary/miss11.jpg'
     
     #Fingering
-    image ev hanako_finger_1 = 'event/hanako_finger/hanako_finger_1.png'
-    image ev hanako_finger_2 = 'event/hanako_finger/hanako_finger_2.png'
-    image ev hanako_finger_3 = 'event/hanako_finger/hanako_finger_3.png'
-    image ev hanako_finger_close = 'event/hanako_finger/hanako_finger_close.png'
-    image ev hanako_finger_close_scroll = 'event/hanako_finger/hanako_finger_close_scroll.png'
+    image evh hanako_finger_1 = 'event/hanako_finger/hanako_finger_1.png'
+    image evh hanako_finger_2 = 'event/hanako_finger/hanako_finger_2.png'
+    image evh hanako_finger_3 = 'event/hanako_finger/hanako_finger_3.png'
+    image evh hanako_finger_close = 'event/hanako_finger/hanako_finger_close.png'
+    image evh hanako_finger_close_scroll = 'event/hanako_finger/hanako_finger_close_scroll.png'
     
     #a5-true ending CG
     image ev hanako_resolute = 'event/hanako_resolute.png'
@@ -1270,10 +1284,10 @@ init 1:
     #End Twoface's stuff -md01
     
     # # # additional shopped stuff [str]
-    image ev hanako_missionary_hate_d = 'event/Hanako_supercg/hanako_missionary_hateface_d.jpg'
-    image ev hanako_missionary_neutral_d = 'event/Hanako_supercg/hanako_missionary_neutralface_d.jpg'
-    image ev hanako_missionary_underwear_neutral_d = 'event/Hanako_supercg/hanako_missionary_underwear_neutralface_d.jpg'
-    image ev hanako_bed_boobs_neutral_d = 'event/Hanako_supercg/hanako_bed_boobs_neutralface_d.jpg'
+    image evh hanako_missionary_hate_d = 'event/Hanako_supercg/hanako_missionary_hateface_d.jpg'
+    image evh hanako_missionary_neutral_d = 'event/Hanako_supercg/hanako_missionary_neutralface_d.jpg'
+    image evh hanako_missionary_underwear_neutral_d = 'event/Hanako_supercg/hanako_missionary_underwear_neutralface_d.jpg'
+    image evh hanako_bed_boobs_neutral_d = 'event/Hanako_supercg/hanako_bed_boobs_neutralface_d.jpg'
     
     image hanako_oiwadoor = 'vfx/oiwadoor.png'
     # # # [str]
@@ -1363,15 +1377,15 @@ init 1:
                      "ev showdown",
                      "ev hanako_kiss",
                      "ev hanako_scars",
-                     ("evh hanako_bed_boobs_blush","evh hanako_bed_boobs_gsmile","evh hanako_bed_crotch_glance","evh hanako_bed_crotch_bsmile"),
-                     ("evh hanako_missionary_underwear","evh hanako_missionary_open","evh hanako_missionary_closed","evh hanako_missionary_glance","evh hanako_missionary_clenchs","evh hanako_missionary_ending"),
+                     #("evh hanako_bed_boobs_blush","evh hanako_bed_boobs_gsmile","evh hanako_bed_crotch_glance","evh hanako_bed_crotch_bsmile"),
+                     #("evh hanako_missionary_underwear","evh hanako_missionary_open","evh hanako_missionary_closed","evh hanako_missionary_glance","evh hanako_missionary_clenchs","evh hanako_missionary_ending"),
                      ("ev hanako_after_smile","ev hanako_after_worry"),
                      "ev hisao_trainride",
                      ("ev hanako_park_alone","ev hanako_park_away","ev hanako_park_closed","hanako_park_look"),
                      ("ev hanako_kiss_outside", "ev hanako_kiss_day", "ev hanako_kiss_night"),
-                     ("ev hanako_miss1", "ev hanako_miss2", "ev hanako_miss3", "ev hanako_miss4", "ev hanako_miss5", "ev hanako_miss6", "ev hanako_miss7", "ev hanako_miss8", "ev hanako_miss9", "ev hanako_miss10", "ev hanako_miss11"),
-                     ("ev hanako_finger_1", "ev hanako_finger_2", "ev hanako_finger_3"),
-                     ("ev hanako_cowgirl_1", "ev hanako_cowgirl_2", "ev hanako_cowgirl_3", "ev hanako_cowgirl_4", "ev hanako_cowgirl_5", "ev hanako_cowgirl_6", "ev hanako_cowgirl_7", "ev hanako_cowgirl_8", "ev hanako_cowgirl_9", "ev hanako_cowgirl_10", "ev hanako_cowgirl_11", "ev hanako_cowgirl_12", "ev hanako_cowgirl_13", "ev hanako_cowgirl_14", "ev hanako_cowgirl_15", "ev hanako_cowgirl_16", "ev hanako_cowgirl_17", "ev hanako_cowgirl_18"),
+                     ("evh hanako_miss1", "evh hanako_miss2", "evh hanako_miss3", "evh hanako_miss4", "evh hanako_miss5", "evh hanako_miss6", "evh hanako_miss7", "evh hanako_miss8", "evh hanako_miss9", "evh hanako_miss10", "evh hanako_miss11"),
+                     ("evh hanako_finger_1", "evh hanako_finger_2", "evh hanako_finger_3"),
+                     ("evh hanako_cowgirl_1", "evh hanako_cowgirl_2", "evh hanako_cowgirl_3", "evh hanako_cowgirl_4", "evh hanako_cowgirl_5", "evh hanako_cowgirl_6", "evh hanako_cowgirl_7", "evh hanako_cowgirl_8", "evh hanako_cowgirl_9", "evh hanako_cowgirl_10", "evh hanako_cowgirl_11", "evh hanako_cowgirl_12", "evh hanako_cowgirl_13", "evh hanako_cowgirl_14", "evh hanako_cowgirl_15", "evh hanako_cowgirl_16", "evh hanako_cowgirl_17", "evh hanako_cowgirl_18"),
                      "ev hanako_resolute"
                      )
     

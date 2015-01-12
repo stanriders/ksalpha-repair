@@ -988,6 +988,7 @@ label L21:
     jump_out L22
 
 label L22:
+    call iscene ("timeskip")
     call iscene ("L22")
     jump_out L23
 

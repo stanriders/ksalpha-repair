@@ -6167,7 +6167,7 @@ label en_HT10h:
     scene white
     with dissolve
 
-    show ev hanako_miss1
+    show evh hanako_miss1
     with dissolve
 
     "There we are; her sitting on her desk, and me naked, leaning over her."
@@ -6193,7 +6193,7 @@ label en_HT10h:
 #    scene evh hanako_missionary_glance 
 #    with charachange
 
-    show ev hanako_miss2
+    show evh hanako_miss2
     with dissolve
 
     "Hanako simply nods, and bites her bottom lip."
@@ -6214,7 +6214,7 @@ label en_HT10h:
 
     "There is some resistance as I push forward, but the heat and friction instinctively drive me onwards."
     
-    show ev hanako_miss3
+    show evh hanako_miss3
     with dissolve
 
     "She inhales sharply as our hips meet."
@@ -6231,7 +6231,7 @@ label en_HT10h:
 #    scene evh hanako_missionary_clench 
 #    with charachange
 
-    show ev hanako_miss4
+    show evh hanako_miss4
     with dissolve
 
     "She wraps both arms around my back, pulling me into her."
@@ -6243,7 +6243,7 @@ label en_HT10h:
 #    scene evh hanako_missionary_open
 #    with charachange
 
-    show ev hanako_miss5
+    show evh hanako_miss5
     with dissolve
 
     ha "F…faster… please… faster…"
@@ -6253,19 +6253,19 @@ label en_HT10h:
 #    scene evh hanako_missionary_closed 
 #    with charachange
 
-    show ev hanako_miss6
+    show evh hanako_miss6
     with dissolve
 
     "She notices this too, and wraps her legs around me; her ankles digging into the small of my back, pushing me further into her."
     
-    show ev hanako_miss7
+    show evh hanako_miss7
     with dissolve
 
     "Sharp pain shoots across my back as the fingernails dig in for extra grip, but this serves only to heighten the experience."
 
     "I press myself against Hanako's, her breasts sliding against my sweat-covered chest."
     
-    show ev hanako_miss8
+    show evh hanako_miss8
     with dissolve
 
     "I go to kiss her but her head is cocked back in ecstasy, so I kiss her scarred nape, once again tasting salt."
@@ -6286,7 +6286,7 @@ label en_HT10h:
 
     ha "I don't care, keep going!"
     
-    show ev hanako_miss9
+    show evh hanako_miss9
     with dissolve
 
     "Hanako's hips drive themselves into mine, and she clenches me to her body with her ankles."
@@ -6328,14 +6328,14 @@ label en_HT10h:
 
     "Panting, sweaty, and completely locked in each other's grasp, Hanako and I stay still whilst the fog of sex slowly lifts."
     
-    show ev hanako_miss10
+    show evh hanako_miss10
     with dissolve
 
     "Slowly, Hanako brings her eyes back to mine."
 
     "This is one of the few times I have seen both of her eyes, and they both seem to say the same thing."
     
-    show ev hanako_miss11
+    show evh hanako_miss11
     with dissolve
 
     ha "I love you, Hisao."
@@ -7742,32 +7742,32 @@ label en_HT13h:
 
     "I kiss her neck whilst one hand seeks out the thighs that were enchanting me seconds ago."
     
-    show ev hanako_finger_1:
+    show evh hanako_finger_1:
         xalign 0.5 yalign 0.5 zoom 1.0
     with dissolve
     
     "She reflexively clenches her legs together around my hand, but relaxes a little as I slide my probing fingers ever deeper into the tuft of her pubic hair."
     
-    show ev hanako_finger_2
+    show evh hanako_finger_2
     with dissolve
 
     "My fingers feel a warm wetness, and I push forward."
 
     "Again, she gasps slightly as my fingers massage her insides."
     
-    show ev hanako_finger_3
+    show evh hanako_finger_3
     with dissolve
 
     ha "H—H—Hiiiisao…"
     
-    show ev hanako_finger_close_scroll:
+    show evh hanako_finger_close_scroll:
         xalign 0.5 yalign 0.0
         linear 8.0 yalign 1.0
     with dissolve
 
     "I kiss down her neck to her chest, feeling the texture change as I move from the grafted skin to the natural skin of her breast."
     
-    show ev hanako_finger_3
+    show evh hanako_finger_3
     with dissolve
 
     "I rub her privates a little harder and softly bite her nipple, resulting in a delighted squeal from the girl pinned beneath me."
@@ -7791,19 +7791,19 @@ label en_HT13h:
     scene white
     with dissolve
     
-    show ev hanako_cowgirl_1
+    show evh hanako_cowgirl_1
     with dissolve
 
     "After a breathless second, she rears back up, flicking her hair away from her face with the same motion."
 
     "Both of her dark eyes are fixed on mine, and for a moment all we can do is stare at each other."
     
-    show ev hanako_cowgirl_2
+    show evh hanako_cowgirl_2
     with dissolve
 
     ha "I… I guess it's time…"
     
-    show ev hanako_cowgirl_3
+    show evh hanako_cowgirl_3
     with dissolve
 
     "Shuffling on her knees, Hanako slides herself over my erection, picks up a foil packet from the floor, and tears it open."
@@ -7814,7 +7814,7 @@ label en_HT13h:
 
     "The rubber circle slips straight out of the packet and lands amongst the scattered clothes and snacks."
     
-    show ev hanako_cowgirl_4
+    show evh hanako_cowgirl_4
     with dissolve
 
     "Hanako panics and tries to pick up the condom, but that only causes it to slip out of he grasp once again."
@@ -7823,22 +7823,22 @@ label en_HT13h:
 
     "A second ago, Hanako was lost in the flurry of sex, but now she's back to her usual, embarrassed self."
     
-    show ev hanako_cowgirl_5
+    show evh hanako_cowgirl_5
     with dissolve
 
     ha "D—don't laugh. It's slippery…"
     
-    show ev hanako_cowgirl_6
+    show evh hanako_cowgirl_6
     with dissolve
 
     hi "I think that's the point, here…"
     
-    show ev hanako_cowgirl_7
+    show evh hanako_cowgirl_7
     with dissolve
 
     "I retrieve a fresh packet from the floor, and take out the rubber, placing it on the head of my cock."
     
-    show ev hanako_cowgirl_8
+    show evh hanako_cowgirl_8
     with dissolve
 
     ha "C… can I?"
@@ -7849,7 +7849,7 @@ label en_HT13h:
 
     "I gulp a little as it unrolls, as it applies a little pressure along my entire length."
     
-    show ev hanako_cowgirl_7
+    show evh hanako_cowgirl_7
     with dissolve
 
     "The experience is over in a second, and Hanako wastes no time in positioning herself over me, my shaft still in her hand as she rears herself over me."
@@ -7862,7 +7862,7 @@ label en_HT13h:
 
     hi "H—how is it?"
     
-    show ev hanako_cowgirl_9
+    show evh hanako_cowgirl_9
     with dissolve
 
     ha "It feels different… but good…"
@@ -7877,21 +7877,21 @@ label en_HT13h:
 
     "I reach around her body and grab her butt, pulling her in further still."
     
-    show ev hanako_cowgirl_10
+    show evh hanako_cowgirl_10
     with dissolve
 
     "Her arms tighten, driving my face deeper into her chest."
 
     "Breathing becomes gasping, which becomes sub-vocal screaming."
     
-    show ev hanako_cowgirl_11
+    show evh hanako_cowgirl_11
     with dissolve
 
     ha "H… Hi… Hisssssssaa ooooooh…."
 
     ha "Hiiiii Hi Hi Hi Hiiiiissssssa…"
     
-    show ev hanako_cowgirl_12
+    show evh hanako_cowgirl_12
     with dissolve
 
     "Sweat beads on my brow only to be wiped away by breasts, and I find myself digging my fingers into the soft skin of Hanako's behind."
@@ -7900,7 +7900,7 @@ label en_HT13h:
 
     ha "Hiiiahahahaaaaaa"
     
-    show ev hanako_cowgirl_13
+    show evh hanako_cowgirl_13
     with dissolve
     
     $ renpy.music.set_volume(0.0, 1.0, channel='music')
@@ -7913,7 +7913,7 @@ label en_HT13h:
 
     li "I thought I heard something… I'm coming in…"
     
-    show ev hanako_cowgirl_14
+    show evh hanako_cowgirl_14
     with dissolve
 
     "Hanako and I freeze, and we hear Lilly frantically turn the locked door handle."
@@ -7928,7 +7928,7 @@ label en_HT13h:
 
     hi "Um, should we keep going?"
     
-    show ev hanako_cowgirl_15
+    show evh hanako_cowgirl_15
     with dissolve
 
     "Hanako, breathless beyond speech, simply rocks herself forward onto me."
@@ -7939,7 +7939,7 @@ label en_HT13h:
 
     "I can hear Hanako trying her hardest not to make a sound, but the wet thwacking of our deed is hard to mask."
     
-    show ev hanako_cowgirl_16
+    show evh hanako_cowgirl_16
     with dissolve
 
     ha "Hisao… I… I'm…"
@@ -7952,14 +7952,14 @@ label en_HT13h:
 
     hi "Just… j—just…"
     
-    show ev hanako_cowgirl_17
+    show evh hanako_cowgirl_17
     with dissolve
 
     "Hanako's arms grip me like a bear, and she squeezes me between her legs."
 
     ha "…Coming!"
     
-    show ev hanako_cowgirl_18
+    show evh hanako_cowgirl_18
     with dissolve
 
     "Fingernails dig into Hanako's butt, and my back arches into her body as I lose control."

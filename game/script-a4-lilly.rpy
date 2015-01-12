@@ -1236,8 +1236,8 @@ label en_L21:
     
     aki "Take good care o' Lilly, eh? Seeya."
 
-    hide akira at rightedge
-    with disslovedcharamove
+    hide akira #at rightedge
+    with charaexit
     
     "And with that, he walks off, his free hand raised."
 
@@ -1257,9 +1257,9 @@ label en_L21:
     return
 
 label en_L22:
-    scene black with fade
+    #scene black with fade
     scene bg school_scienceroom
-    with shorttimeskip
+    with dissolve
 
     $ renpy.music.set_volume(1.0000000001, 1.0, channel='music')
     
@@ -4296,7 +4296,7 @@ label en_L28x:
 
     # Event CG
 
-    scene black
+    scene lilly_trainride_ni
 
     "Train 43. The last passenger train running today."
 
@@ -6790,8 +6790,6 @@ label en_L34:
     play sound sfx_dooropen
     
     show misha hips_grin at twoleft
-    with charaenter
-    
     show shizu basic_normal at tworight
     with charaenter
 
@@ -6900,10 +6898,10 @@ label en_L34:
     "If anyone in the hall didn't know about where I was off to, they do now."
 
     "Shrugging, I swiftly launch the letter onto my desk before eading out the door to collect Lilly."
-    with shorttimeskip
+
 
     scene bg school_girlsdormhall
-    with locationchange
+    with shorttimeskip
         
     play sound sfx_doorknock
     
@@ -6913,14 +6911,19 @@ label en_L34:
 
     "One second. Two seconds. Three seconds… Huh, no reply."
 
-    play sound sfx_doorknock
+    #play sound sfx_doorknock
     
     "As I lift my hands to rap my knuckles on the wooden door once again, it opens."
 
     "Before me is a sight that I've seen only once before."
 
-    "Lilly, stunningly dressed in a dark blue full-length dress, and with her wavy, blonde hair freed from it's usual ponytail."
-
+    show lilly basic_smileclosed_che_close at twoleft
+    with charaenter
+    
+    #screw you, ksdevs. I'm not going to ask people to draw new lillydress sprites if we already have them but looking slightly different [str]
+    #"Lilly, stunningly dressed in a dark blue full-length dress, and with her wavy, blonde hair freed from it's usual ponytail."
+    "Lilly, stunningly dressed in a red full-length dress."
+    
     li "Is that Hisao?"
 
     hi "At your service, madame."
@@ -6928,13 +6931,17 @@ label en_L34:
     "I hold out my hand, which in an almost unseen movement is felt out and taken in her own."
 
     hi "Transport arranged?"
-
+    
+    show lilly basic_smile_che_close at twoleft
+    with charaenter
+    
     "She gives an affirmative nod."
 
     li "To the restaurant we go."
 
     # Timeskip
-    with timeskip
+    show ev lilly_restaurant_listen
+    with shorttimeskip
     
     "As we step up the the front counter, I glance over to Lilly."
 
@@ -6961,7 +6968,10 @@ label en_L34:
     "As my eyes flicker around, I can tell from Lilly's face that she's listening just as hard as I'm looking."
 
     hi "I guess this is a new experience for both of us, then?"
-
+    
+    show ev lilly_restaurant_sheepish
+    with charachange
+    
     "She turns somewhat sheepish."
 
     li "I've never come to anywhere such as this before, no."

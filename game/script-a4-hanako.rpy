@@ -3295,7 +3295,7 @@ label en_H31a:
     "I slide my hands over her skin, feeling the change between her natural skin and the grafted tissue."
 
     # new stuff, yay! [str]
-    scene ev hanako_bed_boobs_neutral_d # [str]
+    scene evh hanako_bed_boobs_neutral_d # [str]
     with whiteout # [str]
     
     "Instinct and lust take over, and I feel myself cupping her breast with one hand whilst removing my pants with the other."
@@ -3310,12 +3310,12 @@ label en_H31a:
 
     "But it's too late."
     
-    scene ev hanako_missionary_underwear_neutral_d # [str]
+    scene evh hanako_missionary_underwear_neutral_d # [str]
     with whiteout # [str]
     
     "My lust has taken control of my faculties, and I feel myself tearing aside her panties to clear a path for my member."
     
-    scene ev hanako_missionary_neutral_d # [str]
+    scene evh hanako_missionary_neutral_d # [str]
     with locationchange # [str]
     
     "As I enter her, I lean down and kiss her lips."
@@ -3328,7 +3328,7 @@ label en_H31a:
 
     "Wait…"
     
-    scene ev hanako_missionary_hate_d # [str]
+    scene evh hanako_missionary_hate_d # [str]
     with locationchange # [str]
     
     "Her eyes snap open, regarding me with a mixture of disgust and contempt."

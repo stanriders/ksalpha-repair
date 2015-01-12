@@ -789,9 +789,9 @@ label en_L45:
     n "As long as Lilly smiles, I don't care."
 
     nvl clear
-    nvl hide dissolve
+    #nvl hide dissolve
     
-    window show
+    #window show
     # Timeskip
     show bg hosp_room at bgright
     show lilly cane_smile
@@ -815,6 +815,9 @@ label en_L45:
 
     hi "Hmm? Oh, ah, okay."
 
+    hide lilly
+    with charaexit
+    
     "Her hand gently glides along the smooth wall, her other quickly turning the handle as she find the door."
 
     "And so, I'm alone once again."
@@ -825,6 +828,10 @@ label en_L45:
 
     hi "Come in!"
 
+    show misha perky_sad
+    show shizu invis
+    with charaenter
+    
     "As the door opens, I can tell who it is simply by her distinctive hair."
 
     hi "Hey Misha, Hey Shizune."
@@ -833,6 +840,9 @@ label en_L45:
 
     "The fact that one is never without the other somewhere in close vicinity is wryly amusing."
 
+    show misha perky_sad at tworight
+    show shizu basic_happy at twoleft
+    with dissolvecharamove
     "And, sure enough, Shizune follows Misha through the door."
 
     hi "Good to see you two—WOAH!"
@@ -931,6 +941,8 @@ label en_L45:
 
     "Eventually it creaks open, a scarred face appearing through the crack."
 
+    show hanako cover_bashful_cas
+    
     ha "Is this… Hisao's room?"
 
     hi "Oh, hey Hanako."
@@ -941,6 +953,10 @@ label en_L45:
 
     hi "'Bye."
 
+    hide misha
+    hide shizu
+    with charaexit
+    
     "She and Shizune wave goodbye to Hanako and Lilly, closing the door on their way out."
 
     ha "It's nice to see you again. Both of you."
@@ -991,6 +1007,9 @@ label en_L45:
 
     "The rest of the time Hanako's here is largely spent discussing her trip, and our Tanabata outing."
 
+    hide hanako
+    with charaexit
+    
     "As she leaves, Lilly gives a gentle bow as I smile and wave."
 
     li "It's nice to see her again."
@@ -1016,6 +1035,10 @@ label en_L45:
 label en_L46:
 
     window hide
+    
+    show bg hosp_room at bgright
+    with openeye
+    
     nvl show dissolve
 
     nvl clear
@@ -1059,6 +1082,8 @@ label en_L46:
 
     hi "Come in!"
 
+    show lilly
+    
     "The plain white door slowly opens, the unmistakable pale arm of Lilly becoming visible."
 
     hi "Hi, Lilly."
@@ -1087,6 +1112,8 @@ label en_L46:
 
     "She just smiles and silently hands it to me."
 
+    show musicbox closed
+    
     "Upon closer inspection, it's not the same music box I'd given her. The design is very slightly different, and the colour a little darker."
 
     "As I turn it upwards to look underneath, I pause."
@@ -1150,6 +1177,8 @@ label en_L46:
     "As the golf ball in my throat strangles my words as they try to form, Lilly's arms reach out to me."
 
     # CG
+    scene white
+    with whiteout # doesnt make sense with white tho [str]
 
     li "It's okay, Hisao."
 
@@ -1169,10 +1198,15 @@ label en_L46:
 
     "As I grip her tightly, the small pitpat of tears on her back, I savour the feel of her presence. The presence of the love that I'd so nearly lost."
 
+    scene black # where are they? me confus :c
+    with whiteout
+    
     mystery "Oi, oi, oi!"
 
     "Lilly gently releases me as I do her, quickly move to wiping my eyes as I look up."
 
+    show akira
+    
     aki "For a second there I'd thought I'd walked into a funeral reception!"
 
     li "A… Akira!"
@@ -1189,12 +1223,24 @@ label en_L46:
 
     "Even if it does end up short, my happiness with Lilly will be life a blinding spark of joy."
 
+    scene black
+    with Dissolve(3.0)
+    
+    with Pause(1.5)
+    
     return
 
 label en_L47:
 
     # Entire scene handled through CG
-
+    scene white
+    with Dissolve(1.5)
+    
+    scene ev lilly_goodend_bg at bgleft
+    show akira basic_ending_close at twoleft
+    show lilly basic_smile_cas_close at tworight
+    with Dissolve(1.5)
+    
     "As Akira, Lilly and I sit on the grassy embankment, the breeze gently blows through the cloudless sky."
 
     "A deep blue sky, as endless as life itself."
@@ -1262,7 +1308,10 @@ label en_L47:
     aki "The place won't run itself, I'm afraid. Still, if it weren't for that I'd never have met Hideaki."
 
     hi "That reminds me, where is he?"
-
+    
+    show akira basic_smile_close at twoleft
+    with charachange
+    
     aki "Where is he… you say?"
 
     "Her wild smile is slightly discomforting."
@@ -1287,10 +1336,17 @@ label en_L47:
 
     "For a second, the dark-clad figure looks down the Lilly, smiling deeply."
 
+    hide akira
+    with charaexit
+    
     "And with that, she walks away, one hand held in the air as she goes."
 
     aki "Seeya later, you two!"
 
+    scene ev lilly_goodend_bg at bgright
+    show lilly invis at rightedge
+    with dissolvecharamoveslow
+    
     "A tune with no beat, melody or direction."
 
     "After a few moments sitting silently, hand in hand, we pick ourselves up."
@@ -1304,7 +1360,9 @@ label en_L47:
     li "Indeed we shall."
 
     # Ending CG
-
+    scene ev lilly_goodend at bgright
+    with dissolve
+    
     "As we set off towards the dormitories, that wonderful smile engraves itself onto my memory."
 
     "That wonderful smile, that we both share."
@@ -1313,6 +1371,11 @@ label en_L47:
 
     "Forwards… towards our future."
 
+    window hide
+    
+    scene black
+    with Dissolve(3.0)
+    
     # End of Lilly path
 
     return

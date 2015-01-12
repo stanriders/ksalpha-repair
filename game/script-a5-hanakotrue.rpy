@@ -256,7 +256,7 @@
     play sound sfx_impact
     
     show misha perky_sad at left
-    show shizu cross_rage
+    show shizu cross_rage at center
     show hanako defarms_shock at right
     with vpunch
 
@@ -432,10 +432,10 @@
     show misha perky_confused at offscreenleft
     with None
     
-    show bg school_roof
+    show bg school_roof at center
     show lilly basic_surprised at offscreenright
     show misha perky_confused at left
-    show emi sad_shy
+    show emi sad_shy at center
     show rin relaxed_surprised at right
     with dissolvecharamove
 
@@ -547,7 +547,7 @@
     
     show shizu invis at offscreenleft
     show rin invis at tworight
-    show emi invis
+    show emi invis at center
     show bg school_roof at bgleft
     show misha hips_grin at left
     show lilly basic_surprised at twocenteroff3
@@ -587,7 +587,7 @@
     show hanako invis at offscreenright
     show shizu behind_blank at left
     show rin relaxed_doubt at right
-    show misha perky_smile
+    show misha perky_smile at center
     with dissolvecharamove
 
     rin "You won't study unless you're in the Council Room?"
@@ -663,11 +663,11 @@
     show emi invis at tworight
     with None
     
-    show bg school_roof    
+    show bg school_roof at center
     show shizu invis at offscreenleft
     show rin basic_absent at right
     show misha perky_smile at left
-    show emi sad_shy
+    show emi sad_shy at center
     with dissolvecharamove
 
     emi "Hey… now… be careful."
@@ -751,9 +751,9 @@
 
     hi "Yes. Sorry, I didn't send out a memo yet."
     
-    show bg school_roof
+    show bg school_roof at center
     show rin basic_absent at closeright
-    show emi basic_grin
+    show emi basic_grin at center
     show misha perky_smile at left
     show lilly invis at right
     show hanako invis at offscreenright
@@ -845,7 +845,7 @@
 
     rin "You sound like a dance."
     
-    show bg school_roof
+    show bg school_roof at center
     show misha sign_confused at twocenteroff2
     show shizu basic_normal at leftoff
     show rin basic_deadpandelight at tworight
@@ -906,7 +906,7 @@
     hide emi
     with charaexit
     
-    show bg school_roof
+    show bg school_roof at center
     show misha perky_confused at twocenteroff2
     show shizu behind_blank at left
     show lilly basic_smile at tworight
@@ -959,7 +959,7 @@
     show bg school_roof at bgleft
     show misha perky_smile at twoleft
     show shizu behind_smile at leftoff
-    show lilly behind_cheerful
+    show lilly behind_cheerful at center
     show hanako basic_normal_close at tworight
     with dissolvecharamove
 
@@ -987,7 +987,7 @@
 
     "Whilst there is a lot of food, before the might of the five of us, it is gone fairly quickly."
     
-    show bg school_roof
+    show bg school_roof at center
     show misha perky_smile at twocenteroff2
     show shizu behind_smile at left
     show lilly basic_smile at tworight
@@ -1246,7 +1246,7 @@ label en_HT15:
     show lilly cane_smile at tworight
     #insert flipped version of Lilly sprite here
     show hanako emb_emb at right
-    show bg school_council
+    show bg school_council at center
     with dissolvecharamove
     
     play music music_lilly fadein 0.5
@@ -1313,7 +1313,7 @@ label en_HT15:
     show shizu basic_normal2 at offscreenleft
     show lilly cane_surprised at left
     show hanako defarms_shock at twoleft
-    show emi sad_shy
+    show emi sad_shy at center
     show rin negative_spaciness at right
     show bg school_council at bgleft
     with dissolveeaseaccel
@@ -1372,12 +1372,12 @@ label en_HT15:
     
     show lilly cane_smile at offscreenleft
     show hanako def_worry at offscreenleft
-    show misha sign_smile
+    show misha sign_smile at center
     show shizu basic_normal2 at left
     show emi sad_grin at offscreenright
     #show emi sad_grin at tworight
     show rin basic_deadpanupset at right
-    show bg school_council
+    show bg school_council at center
     with dissolvecharamove
 
     "Misha opens the box nearest to her, grabs a handful of the chocolate-coated treats, and passes the box to Shizune."
@@ -1422,7 +1422,7 @@ label en_HT15:
     show bg school_council at bgleft
     with dissolvecharamove
     
-    show bg school_council
+    show bg school_council at center
     with charamove
 
     "The institutionalised part of the girls' brains kicks in, and they shuffle into their seats."
@@ -1488,10 +1488,10 @@ label en_HT15:
 
     hi "I guess that's right. Any other suggestions?"
     
-    show misha perky_smile
+    show misha perky_smile at center
     show emi basic_confused at offscreenright
     show rin basic_deadpan at offscreenright
-    show bg school_council
+    show bg school_council at center
     with charamove
     
     show misha sign_sad
@@ -1545,7 +1545,7 @@ label en_HT15:
     show lilly basic_smile at offscreenleft
     show misha cross_smile at twoleft
     show shizu basic_normal2 at tworight
-    show bg school_council
+    show bg school_council at center
     with charamove
 
     shi "…"
@@ -1566,7 +1566,7 @@ label en_HT15:
     hi "Now, what are the things that are going to matter here?"
     
     show misha cross_smile at left
-    show shizu behind_blank
+    show shizu behind_blank at center
     show emi basic_confused at right
     show bg school_council at bgleft
     with charamove
@@ -1610,7 +1610,7 @@ label en_HT15:
     show rin basic_deadpanamused at offscreenright
     show shizu behind_blank at offscreenright
     show hanako emb_timid at left
-    show lilly basic_surprised
+    show lilly basic_surprised at center
     show misha perky_confused at right
     show bg school_council at bgright
     with charamove
@@ -1644,7 +1644,7 @@ label en_HT15:
     show lilly basic_concerned at offscreenleft
     show misha perky_confused at twoleft
     show shizu behind_blank at tworight
-    show bg school_council
+    show bg school_council at center
     with charamove
     
     show misha sign_confused at twoleft
@@ -1708,7 +1708,7 @@ label en_HT15:
     with charachange
     
     show lilly basic_surprised at left
-    show misha cross_smile
+    show misha cross_smile at center
     show rin basic_absent at right
     show bg school_council
     with charamove
@@ -1799,7 +1799,7 @@ label en_HT15:
     show hanako emb_timid at offscreenleft
     show misha perky_confused at twoleft
     show emi basic_grin at tworight
-    show bg school_council
+    show bg school_council at center
     with charamove
     
     emi "Right."
@@ -1962,7 +1962,7 @@ label en_HT15:
     play ambient sfx_cicadas fadein 0.3
     
     show lilly basic_smile_ni at left
-    show emi basic_grin_ni
+    show emi basic_grin_ni at center
     show hanako basic_smile_ni at right
     with charaenter
 
@@ -2265,7 +2265,7 @@ label en_HT16:
     
     show bg school_scienceroom at bgleft
     show misha perky_smile at left    
-    show shizu adjust_happy
+    show shizu adjust_happy at center
     show hanako cover_smile at right
     with dissolvecharamove
 
@@ -2488,7 +2488,7 @@ label en_HT16:
 
     li "Welcome! I took the liberty of preparing for the meeting!"
     
-    show bg school_council at bgright
+    show bg school_council at center
     show lilly basic_smile at tworight
     with dissolvecharamove
 
@@ -2524,7 +2524,7 @@ label en_HT16:
     show misha invis at rightedge
     with None
     
-    show bg school_council at bgleft
+    show bg school_council at bgright
     show hanako emb_timid at left
     show lilly basic_smile at twocenteroff
     show misha hips_grin at twocenteroff3
@@ -2634,8 +2634,8 @@ label en_HT16:
     show rin invis at offscreenleft
     with None
     
-    show bg school_council
-    show hanako emb_timid
+    show bg school_council at bgright
+    show hanako emb_timid at twocenteroff3
     show lilly basic_oops at right
     show misha invis at rightedge
     show shizu invis at offscreenright
@@ -2792,7 +2792,7 @@ label en_HT16:
     
     li "Thankfully. It was hard to sleep when you are… well…"
     
-    show bg school_council_ni
+    show bg school_council_ni at center
     show lilly basic_weaksmile at twoleft
     show misha perky_smile at tworight
     with dissolvecharamove
@@ -3050,8 +3050,8 @@ label en_HT16:
     with None
     
     show bg school_council_ni at bgright
-    show lilly invis
-    show misha perky_confused
+    show lilly invis at center
+    show misha perky_confused at center
     show emi sad_shy at leftsit
     with dissolvecharamovefast
     
@@ -3065,7 +3065,7 @@ label en_HT16:
 
     emi "He he, thanks."
     
-    show misha hips_smile
+    show misha hips_smile at center
     with charachange
 
     mi "It's okay. Here, let me get that for you…"
@@ -3181,7 +3181,7 @@ label en_HT16:
     with None
     
     show bg school_council_ni
-    show lilly basic_weaksmile
+    show lilly basic_weaksmile at center
     with dissolvecharamove
 
     li "And then there were two…"
@@ -3428,7 +3428,7 @@ label en_HT16:
     show bg school_council_ni at bgleft
     show rin basic_absent at left
     show lilly basic_pout at twoleft
-    show hanako cover_distant
+    show hanako cover_distant at center
     show shizu behind_blank at right
     with dissolvecharamove
 
@@ -3456,9 +3456,9 @@ label en_HT16:
     hide shizu
     with None
     
-    show bg school_council_ni
+    show bg school_council_ni at center
     show rin basic_absent at closeleft2
-    show lilly basic_smile
+    show lilly basic_smile at center
     show hanako cover_distant at closeright
     with dissolvecharamove
     
