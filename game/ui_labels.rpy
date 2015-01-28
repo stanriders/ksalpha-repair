@@ -1056,13 +1056,17 @@ label credits (simple=False):
     
     $ renpy.pause(52.0, hard=True)
     
-    if not simple:
-        scene endscreen
-        with None
-    else:
+    scene endscreen
+    with None
+    
+    # nope, it's only breaking simple credits [str]
+    #if not simple:
+    #    scene endscreen
+    #    with None
+    #else:
     #don't ask me why, I have NO idea
-        scene endscreen at Position(xpos=0.5128) #397
-        with None
+    #    scene endscreen at Position(xpos=0.5128) #397
+    #    with None
     
     
     $ renpy.pause(2.0, hard=True)

@@ -105,7 +105,7 @@
     show shizu invis at right
     with None
     
-    show bg school_scienceroom
+    show bg school_scienceroom at center
     show shizu cross_angry at tworight
     show misha perky_sad at twoleft
     with dissolvecharamove

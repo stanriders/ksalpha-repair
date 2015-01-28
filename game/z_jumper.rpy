@@ -65,68 +65,68 @@ label jumper:
 
         # Hanako
         ui.vbox()
-        ui.text("Hanako: ", style="prefs_label")
+        ui.text(displayStrings.name_ha + ": ", style="prefs_label") #"Hanako: "
         ui.hbox()
         jumper_menu_space()
-        widget_button("Act 2", "ui/bt-blank.png", clicked=jumper_scene("H2"), xsize=65, textxoffset=0)
-        widget_button("Act 3", "ui/bt-blank.png", clicked=jumper_scene("H11"), xsize=65, textxoffset=0)
-        widget_button("Act 4 (Decision)", "ui/bt-blank.png", clicked=jumper_scene("H14"), xsize=155, textxoffset=0)
+        widget_button(displayStrings.act_term + " 2", "ui/bt-blank.png", clicked=jumper_scene("H2"), xsize=65, textxoffset=0)
+        widget_button(displayStrings.act_term + " 3", "ui/bt-blank.png", clicked=jumper_scene("H11"), xsize=65, textxoffset=0)
+        widget_button(displayStrings.act_term + " 4 (Decision)", "ui/bt-blank.png", clicked=jumper_scene("H14"), xsize=155, textxoffset=0)
         ui.close()
         ui.close()
 
         # Hanako-True 
         ui.vbox()
-        ui.text("Hanako True: ", style="prefs_label")
+        ui.text(displayStrings.name_ha + " True: ", style="prefs_label") #"Hanako True: "
         ui.hbox()
         jumper_menu_space()
         widget_button("", "ui/bt-blank.png", None, xsize=130, textxoffset=0) # hacky hack [str]
-        widget_button("Act 4", "ui/bt-blank.png", clicked=jumper_scene("HT1"), xsize=65, textxoffset=0)
-        widget_button("Act 5", "ui/bt-blank.png", clicked=jumper_scene("HT14"), xsize=65, textxoffset=0)
+        widget_button(displayStrings.act_term + " 4", "ui/bt-blank.png", clicked=jumper_scene("HT1"), xsize=65, textxoffset=0)
+        widget_button(displayStrings.act_term + " 5", "ui/bt-blank.png", clicked=jumper_scene("HT14"), xsize=65, textxoffset=0)
         ui.close()
         ui.close()
         
         # Lilly
         ui.vbox()
-        ui.text("Lilly: ", style="prefs_label")
+        ui.text(displayStrings.name_li + ": ", style="prefs_label") #"Lilly: "
         ui.hbox()
         jumper_menu_space()
-        widget_button("Act 2", "ui/bt-blank.png", clicked=jumper_scene("L1"), xsize=65, textxoffset=0)
-        widget_button("Act 3", "ui/bt-blank.png", clicked=jumper_scene("L13"), xsize=65, textxoffset=0)
-        widget_button("Act 4", "ui/bt-blank.png", clicked=jumper_scene("L21"), xsize=65, textxoffset=0)
+        widget_button(displayStrings.act_term + " 2", "ui/bt-blank.png", clicked=jumper_scene("L1"), xsize=65, textxoffset=0)
+        widget_button(displayStrings.act_term + " 3", "ui/bt-blank.png", clicked=jumper_scene("L13"), xsize=65, textxoffset=0)
+        widget_button(displayStrings.act_term + " 4", "ui/bt-blank.png", clicked=jumper_scene("L21"), xsize=65, textxoffset=0)
         # apparently this doesn't need to be there # i disagree [str]
-        widget_button("Act 5", "ui/bt-blank.png", clicked=jumper_scene("L43"), xsize=65, textxoffset=0)
+        widget_button(displayStrings.act_term + " 5", "ui/bt-blank.png", clicked=jumper_scene("L43"), xsize=65, textxoffset=0)
         ui.close()
         ui.close()
 
         # Emi
         ui.vbox()
-        ui.text("Emi: ", style="prefs_label")
+        ui.text(displayStrings.name_emi + ": ", style="prefs_label") #"Emi: "
         ui.hbox()
         jumper_menu_space()
-        widget_button("Act 2", "ui/bt-blank.png", clicked=jumper_scene("E3"), xsize=65, textxoffset=0)
-        widget_button("Act 3", "ui/bt-blank.png", clicked=jumper_scene("E16"), xsize=65, textxoffset=0)
+        widget_button(displayStrings.act_term + " 2", "ui/bt-blank.png", clicked=jumper_scene("E3"), xsize=65, textxoffset=0)
+        widget_button(displayStrings.act_term + " 3", "ui/bt-blank.png", clicked=jumper_scene("E16"), xsize=65, textxoffset=0)
         ui.close()
         ui.close()
 
         # Rin
         ui.vbox()
-        ui.text("Rin: ", style="prefs_label")
+        ui.text(displayStrings.name_rin + ": ", style="prefs_label") #"Rin: "
         ui.hbox()
         jumper_menu_space()
-        widget_button("Act 2", "ui/bt-blank.png", clicked=jumper_scene("R2"), xsize=65, textxoffset=0)
-        widget_button("Act 3", "ui/bt-blank.png", clicked=jumper_scene("R19"), xsize=65, textxoffset=0)
-        widget_button("Act 4", "ui/bt-blank.png", clicked=jumper_scene("R33"), xsize=65, textxoffset=0)
+        widget_button(displayStrings.act_term + " 2", "ui/bt-blank.png", clicked=jumper_scene("R2"), xsize=65, textxoffset=0)
+        widget_button(displayStrings.act_term + " 3", "ui/bt-blank.png", clicked=jumper_scene("R19"), xsize=65, textxoffset=0)
+        widget_button(displayStrings.act_term + " 4", "ui/bt-blank.png", clicked=jumper_scene("R33"), xsize=65, textxoffset=0)
         ui.close()
         ui.close()
 
         # Shizune
         ui.vbox()
-        ui.text("Shizune: ", style="prefs_label")
+        ui.text(displayStrings.name_shi + ": ", style="prefs_label") #"Shizune: "
         ui.hbox()
         jumper_menu_space()
-        widget_button("Act 2", "ui/bt-blank.png", clicked=jumper_scene("S8"), xsize=65, textxoffset=0)
-        widget_button("Act 3", "ui/bt-blank.png", clicked=jumper_scene("S20"), xsize=65, textxoffset=0)
-        widget_button("Act 4", "ui/bt-blank.png", clicked=jumper_scene("S31"), xsize=65, textxoffset=0)
+        widget_button(displayStrings.act_term + " 2", "ui/bt-blank.png", clicked=jumper_scene("S8"), xsize=65, textxoffset=0)
+        widget_button(displayStrings.act_term + " 3", "ui/bt-blank.png", clicked=jumper_scene("S20"), xsize=65, textxoffset=0)
+        widget_button(displayStrings.act_term + " 4", "ui/bt-blank.png", clicked=jumper_scene("S31"), xsize=65, textxoffset=0)
         ui.close()
         ui.close()
         
@@ -135,7 +135,7 @@ label jumper:
         #ui.text("Hana-Lilly: ", style="prefs_label")
         #ui.hbox()
         #jumper_menu_space()
-        #widget_button("Act 2", "ui/bt-blank.png", clicked=jumper_scene("HLT3"), xsize=65, textxoffset=0)
+        #widget_button(displayStrings.act_term + " 2", "ui/bt-blank.png", clicked=jumper_scene("HLT3"), xsize=65, textxoffset=0)
         #ui.close()
         #ui.close()
 

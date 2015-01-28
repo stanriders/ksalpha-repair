@@ -1373,8 +1373,8 @@ label en_L47:
 
     window hide
     
-    scene black
-    with Dissolve(3.0)
+    #scene black
+    #with Dissolve(3.0)
     
     # End of Lilly path
 

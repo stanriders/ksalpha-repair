@@ -5089,7 +5089,7 @@ return
 
 
 label en_A45:
-
+window hide
 $ renpy.pause(1.0)
 
 image wrestlemania = "bgs/misc_wrestlemania.jpg"
@@ -5103,8 +5103,6 @@ play music "bgm/Painful.ogg"
 $ renpy.music.set_volume(0.15, 0.0, "ambient")
 
 play ambient "sfx/cheer.ogg" fadein 4.0
-
-
 
 
 
@@ -5179,6 +5177,8 @@ show flash behind kenji:
     linear 0.05 alpha 1.0
     repeat
     
+window show
+
 ke "Can you smell what Kenji is cooking?"
 
 return
