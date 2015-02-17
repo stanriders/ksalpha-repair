@@ -207,11 +207,12 @@
     ssh "Hey, are you going to have me decide everything?"
 
     ssh "It will be boring that way. I know, you can surprise me."
-
-    ssh "I'm entrusting this to you, so don't screw up! Do it properly!"
-    
+  
     show shizu adjust_happy
     with charachange
+    
+    ssh "I'm entrusting this to you, so don't screw up! Do it properly!"
+    
 
     "Despite the edge in her words, there is a content smile on her face, and her posture is relaxed."
     
@@ -409,13 +410,13 @@
     with charachange
 
     mi "Eh? What do you mean, Hicchan?"
-
-    "She drops the bags onto the grass temporarily to stretch her fingers."
     
     show misha perky_confused at centersit
     with charamove
-    show misha perky_confused
+    show misha perky_confused at center
     with charamove
+
+    "She drops the bags onto the grass temporarily to stretch her fingers."
 
     hi "You've seemed kind of down the past few weeks. Is there anything wrong?"
     
@@ -454,7 +455,7 @@
     
     show misha perky_smile at centersit
     with charamove
-    show misha perky_smile
+    show misha perky_smile at center
     with charamove
 
     "She raises them to her head with some effort and then shakes them like a set of keys."
@@ -599,6 +600,7 @@ label en_S20c:
     
     scene bg school_library_ss
     with locationskip
+    play music music_tranquil fadein 1.7
 
     "It's deserted. The lights aren't even on. That's okay, though. As I peruse the shelves, I let my thoughts wander."
 
@@ -619,26 +621,27 @@ label en_S20c:
     
     "Finding all the books I came for and more, I head back to my room. Maybe I can get on the internet from my phone and look up nice places to go in town."
     
-    return
-
-label en_S21:
-
     "Tomorrow is my date with Shizune. As soon as I confirm that fact, I roll over and decide to go back to sleep."
 
     "It's a little hard to do so, however, because a nagging thought keeps popping up in my head:"
 
     "I never really set a time with Shizune for this date. It would be pretty bad if Shizune were to knock on the door tomorrow at the wrong time, all dressed up and expecting to go out now."
 
+    stop music fadeout 2.0
+    
     "Nevertheless, I'm very tired, so eventually I begin to feel myself nodding off."
     
     scene black
     with shuteye
-    play sound sfx_time
-    with Pause(1.0)
+    return
+
+label en_S21:
+
+   
     scene bg school_dormhisao
     with openeye
 
-    play music music_tranquil fadein 3.0
+    play music music_daily fadein 3.0
 
     "When I wake up again, I can tell that I have been asleep for awhile."
 
@@ -682,11 +685,11 @@ label en_S21:
     play music music_comedy fadein 1.0
 
     mi "Hey, Hicchan~!"
-
-    "Before I can raise my guard, she barrels into me, pushing against my back as if she plans to jump over me like in a game of leapfrog."
     
     play sound sfx_impact2
     with hpunch
+
+    "Before I can raise my guard, she barrels into me, pushing against my back as if she plans to jump over me like in a game of leapfrog."
 
     "It's all I can do to keep from being thrown face first to the ground."
 
@@ -947,12 +950,12 @@ label en_S21:
     
     hide misha
     with charaexit
-
-    "She doesn't answer, although she makes an effort to stifle herself. I ask for a bag and start packing our food into it as quickly as possible,"
-    
     play sound sfx_storebell
 
-    "turning my head when I hear the bell above the cafe door ring to signal someone opening it. Misha has already left. I hurriedly follow after her, carrying her bags as well, seeing as how she apparently forgot about them in her rush to leave."
+    "She doesn't answer, although she makes an effort to stifle herself. I ask for a bag and start packing our food into it as quickly as possible, turning my head when I hear the bell above the cafe door ring to signal someone opening it."
+    
+
+    "Misha has already left. I hurriedly follow after her, carrying her bags as well, seeing as how she apparently forgot about them in her rush to leave."
 
     scene bg suburb_park_ss
     with locationchange
@@ -976,7 +979,7 @@ label en_S21:
     show misha sign_sad
     with charachange
 
-    mi "Is it really that noticible, Hicchan?"
+    mi "Is it really that noticeable, Hicchan?"
 
     "So quiet, and toneless, and flat."
 
@@ -1388,7 +1391,7 @@ label en_S22a:
 label en_S22b:
     # if you pick 3
     
-    show shizu adjust_blush
+    show shizu cross_angry
     with charachange
 
     "Shizune frowns, even though her cheeks are rapidly turning a light shade of pink."
@@ -1397,7 +1400,7 @@ label en_S22b:
 
     hi "I didn't say funny, I said cute. And, yes."
     
-    show shizu basic_normal2
+    show shizu adjust_frown
     with charachange
 
     "She looks as though she's about to say something. Her fingers weave back and forth between each other thoughtfully, but in the end, her hands drop to her sides again."
@@ -1500,7 +1503,7 @@ label en_S22c:
 
     "After a short while, she puts it down and signs:"
     
-    show shizu basic_normal2 at centersit
+    show shizu behind_sad at centersit
     with charachange
     
     ssh "Soon, I'll have to go back home."
@@ -1560,15 +1563,14 @@ label en_S22c:
     
     play music music_running fadein 1.0
     
-
+    show shizu basic_happy
+    with charachange
+    show shizu basic_happy at offscreenright
+    with charafast
+    hide shizu
 
     "With that, Shizune offers me her arm. As soon as I reach out to take it, however, she starts running before I barely manage to touch the sleeve of her blouse."
    
-    show shizu basic_happy
-    with charachange    
-    hide shizu
-    with charaexit
-
     "She laughs playfully, waving me over towards her, and daring me to try again. Is this a game of tag, now?"
 
     "Okay, I'll play along this time, too."
@@ -1758,6 +1760,8 @@ label en_S23:
 
     "Shizune seems to have problems with that word, a blush spreading across her face when she signs it. With her reserved personality, and the way she has gone on so many times about the weightiness of certain words, I can't say I'm surprised."
 
+    show shizu basic_angry_cas
+    
     ssh "We're going to be late unless we hurry."
 
     mi "Really, Shizune? We should hurry up, then~!"
@@ -2059,7 +2063,7 @@ label en_S23:
     show sc_comp at Transform(alpha=1.0,xalign=0.5, yanchor=0.5, ypos=0.5, subpixel=True)    
     with dissolvecharamovefast    
     
-    with Pause (0.5)
+    with Pause(0.5)
     
     "He points to an ancient-looking, black laptop sitting on the table."
     
@@ -2104,7 +2108,7 @@ label en_S23:
     hide misha
     with charaexit
     
-    show shizu behind_frown_cas
+    show shizu behind_sad_cas
     with charaenter
     
     "I open my mouth to protest, but Shizune looks at me as if she does not want me to say anymore, and Misha seems to share this opinion with her, hurriedly trying to push me out the door."
@@ -2323,6 +2327,8 @@ label en_S23a:
     scene bg shizu_living
     with shorttimeskip
 
+    play music music_another fadein 1.5
+    
     "The long table is eerily empty at dinnertime. There is no sign of Shizune, Misha, Shizune's father, or Shizune's mother. Hideaki doesn't seem bothered by this, helping himself to heaping servings of potatoes and beef with childlike relish."
 
     "I don't feel particularly hungry at first, but this is the first meal of the day, so I end up overeating a little."
@@ -2338,6 +2344,7 @@ label en_S23a:
 
     "Although I have trouble falling asleep, it comes to me eventually."
     
+    stop music fadeout 2.5
     scene black
     with shuteye
     
@@ -2553,7 +2560,7 @@ label en_S24c:
     scene bg shizu_living
     with locationskip
 
-    "After showering, I kill some time before I head down to have breakfast. Hideaki is there, but I don't see any sign of Shizune or Misha, or Jigoro."
+    "After showering, I kill some time before I head down to have breakfast. Hideaki is there, but I don't see any sign of Shizune, Misha, or Jigoro."
     
     show hideaki normal
     with charachange
@@ -2597,14 +2604,15 @@ label en_S24c:
     
     hh "I envy you, really. …Oh well. I'll mail you a postcard of myself standing next to a lion."
     
-    stop music fadeout 2.0
     
     "I finish the last of my bacon, eggs, and toast and attempt to take the dishes to the kitchen out of habit before Hideaki stops me and tells me that it won't be necessary. With that, I head outside for the grounds."
-
+    
+    stop music fadeout 2.0
     scene bg shizu_park
     with locationchange
     
-    play ambient sfx_park
+    play ambient sfx_park fadein 1.0
+    
     
     "In the light of the morning, they look even wider and more expansive than they did yesterday. I feel like I'm out in the wilderness, on some great plain, but a quick glance at the house behind me reminds me that I'm not."
     
@@ -2982,7 +2990,9 @@ label en_S25:
     "I enter the house and scan the area, looking for Misha, but can't find her anywhere. I guess this means the only place she could be is her room, whichever one that is."
 
     "It seems like the guest rooms are all in one area, so I start there. It's not too difficult; my guest room is the first one, so I only have to knock on the door of each one from there."
-
+    
+    play sound sfx_doorknock2
+    
     "Before I even get that far, though, I hear faint sounds of movement coming from behind the door to my right. I knock gently on it and wonder if this is Misha's room."
 
     "I hear the person on the other side get up and walk towards the door. When it opens, Misha is standing there, her arms dangling limply at her sides."
@@ -3181,6 +3191,8 @@ label en_S25:
     
     show misha perky_confused_cas
     with charachange
+    
+    play music music_friendship fadein 2.0
 
     mi "Hey, Hicchan, you really love Shicchan, right?, right? Please tell me honestly."
 
@@ -3264,7 +3276,7 @@ label en_S25a:
     "For some reason, I feel so weak, and tired. A part of me wants to rush out to meet her, but I feel too tired to even stand."
 
     "Tomorrow."
-    
+    stop music fadeout 3.0
     scene black
     with shuteye
 
@@ -3276,7 +3288,12 @@ label en_S25h:
 
     #2) The part where you bang Misha
 
+    stop music fadeout 2.0
+
+
     "At this distance, I can smell the distinctive scent of alcohol on her breath for the first time."
+    
+    play music music_night fadein 1.5
 
     "Where could she have gotten alcohol? When? How much has she had?"
 
@@ -3300,6 +3317,8 @@ label en_S25h:
     mi "Hicchan, I'm a really selfish person, right?"
 
     hi "Stop saying stuff like that."
+    
+    stop music fadeout 5.0
 
     mi "I want to do something selfish and stupid."
 
@@ -3671,12 +3690,18 @@ label en_S26c:
     ssh "For instance, until more than 50\% of the western world agreed that the earth was round, it would have been impossible for Columbus to reach the West Indies by water travel, due to it being flat."
 
     ssh "Acceptance of a spherical world caused the earth to round itself into a ball, allowing for nautical passage to the new world. Where would we be without the human ability to reach a consensus on a simple issue?"
-
+ 
     hi "How does this relate to…?"
+    
+    show shizu adjust_happy_cas
+    with charachange
 
     ssh "Right now there are two of us, and I think you're an idiot. Therefore, you are."
 
     hi "But I don't think I'm an idiot, so it's actually evenly split."
+    
+    show shizu adjust_smug_cas
+    with charachange
 
     ssh "I always give my opinions a little more weight, due to merit."
 
@@ -5109,6 +5134,7 @@ label en_S28x:
     ssh "Please pull up your pants."
     
     show shizu adjust_happy
+    with charachange
 
     "A smile forms on her lips, one that she tries to cover with a dainty hand almost immediately."
     
@@ -5399,8 +5425,8 @@ label en_S29x:
     #hide misha
     #with charahide
     
-    show misha sign_smile at Transform(xanchor=0.5, xpos=0.5, ypos=1.0)
-    with charamove
+    show misha sign_smile at Transform(xanchor=0.5, xpos=0.5, ypos=2.0)
+    with charaexit
 
     "Misha lets herself fall backwards, so that she is lying on the grass."
 
@@ -5418,8 +5444,8 @@ label en_S29x:
 
     mi "I want to get up now. Pull me up, Hicchan~!"
     
-    show misha perky_smile
-    with charamove
+    show misha perky_smile at center
+    with charamove_slow
 
     "I oblige and pull her up, her fingers tightly gripping mine. She stands up and stretches, then tries to look over her shoulder."
 
@@ -5755,7 +5781,7 @@ label en_S30:
     "I can see Shicchan still walking ahead of me."
 
     "Shicchan, with your back to me, I guess it's like I don't really exist. I can see you walking away. But~… That's really obvious, isn't it? Because Shicchan's life will always be moving forward."
-
+    play sound sfx_crash
     play sound sfx_crunchydeath
     
     #sup? hit by a bus. Maybe some kind of agonizing 'hit by a bus' sound effect here
@@ -5864,7 +5890,7 @@ label en_S30:
     show heartattack residual
     with Dissolve (0.8)
     show passoutOP1
-    with Pause (7.0)
+    with Pause(7.0)
     scene black
     with None
     #yeah i guess act 3 ends here

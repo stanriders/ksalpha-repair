@@ -1618,6 +1618,8 @@ label S20:
     jump_out S21
 
 label S21:
+    call iscene ("timeskip")
+    pass
     call iscene ("S21")
     jump_out S22
 

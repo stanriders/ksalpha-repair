@@ -1,5 +1,5 @@
 ﻿label en_S8:
-
+    scene black
     scene bg school_dormhisao 
     with openeye
 
@@ -8,12 +8,9 @@
     play music music_twinkle fadein 5.0
   
     "Brushing my teeth roughly as I try to remember if I had done so yesterday, I keep running over the events of yesterday in my mind."
-    
-    show bg misc_sky_ni at right
-    show screen behind fireworks
-    with flashback
-    
-    show fireworks
+
+    scene bg misc_sky_ni
+    with locationchange
 
     "The fireworks were really amazing. They may have been better than ones I'd seen back home, or even on TV, bursting so close; almost over my head."
 
@@ -40,10 +37,10 @@
 
     "Quickly cramming as much as I reasonably can, I decide I'll probably be able to do well, with a little bit of luck. I start heading to school a little early to beat the rush."
 
-#    scene bg school_dormhallway
-#    with locationskip
+    scene bg school_dormhallway
+    with locationskip
 
-#    with Pause (0.25)
+    with Pause (0.25)
 
     scene bg school_dormext_full
     with locationskip
@@ -56,14 +53,11 @@
     with locationchange
 
     "Halfway to the school, walking between the stalls, I start hearing the grass crunching behind me under someone's feet, and look over my shoulder, feeling slightly creeped out."
-    
-    show shizu behind_blank
-    with charaenter
 
     "I see Shizune standing on the grass, holding a bunch of envelopes in her hand. She returns my gaze with a wave and an innocuous look."
 
-#    show shizu cross_wut
-#    with charaenter
+    show shizu behind_blank
+    with charaenter
 
     shi "…"
 
@@ -71,7 +65,7 @@
 
     "No sooner than I say it do I realize that she may want something. That would be the worst possible thing right now. As soon as she lifts the envelopes up, I am throughly convinced I am right."
 
-    show shizu basic_normal2
+    show shizu basic_normal
     with charachange
 
     shi "…"
@@ -80,40 +74,33 @@
     
     hide shizu
     with charaexit
+    
+    show shizu cross_rage at offscreenright
 
     "I turn and walk away. The school is within sight, and I can get at least another ten minutes worth of valuable studying in at my desk."
 
-    show shizu cross_angry_close
-    with charaenter
+    show shizu cross_rage at center
+    with charafast
 
     "Shizune swiftly moves in front of me, and I almost bump into her. Frowning, she raises the envelopes above her head like she is going to hit me with them."
 
-    show shizu behind_frown_close
+    show shizu basic_angry
     with charachange
 
     "She looks around quickly, then starts slapping her hands together angrily, crumpling everything in her hand."
 
     "I almost want to point it out, but Shizune seems to notice without my help, and it only makes her angrier."
-    
-    show shizu behind_frustrated_close
-    with charachange
 
     shi "…!"
 
     "I should get going. Taking a quick glance at my watch, I keep walking."
-    
-    show shizu cross_rageclosed_close
-    with charachange
 
     "Shizune gives up and puts her face in her hands in exasperation, coming in close and holding her hands out around my neck as if she is going to strangle me."
-    
-    show shizu adjust_frown
-    with charadistant
 
-    "Stepping back, she holds up a finger, signalling for me to wait a second, then runs off. She probably went to get Misha."
-    
     hide shizu
     with charaexit
+
+    "Stepping back, she holds up a finger, signalling for me to wait a second, then runs off. She probably went to get Misha."
 
     "There is no way in hell I'm going to stick around, so I hurry to class and get ready to face my exam head on."
 
@@ -134,14 +121,12 @@
     scene bg school_scienceroom
     with shorttimeskip
 
-    #play music music_daily fadein 0.5
+    play music music_daily fadein 0.5
 
     "By the time lunch rolls around, I am already thinking of how to dodge Shizune and Misha. I'm sure they will hunt me down like an escaped prisoner, an analogy that grows more apt the more I think about it."
 
     scene bg school_roof
     with locationskip
-    
-    play ambient sfx_rooftop fadein 0.5
 
     "Eating a very dry sandwich on the school roof, I think about what it's been like here so far. At first I had been a little depressed by the notion of having to go to school here."
 
@@ -153,12 +138,9 @@
 
     "I shift my body to try and lie down. The roof is really a great place for eating lunch."
 
-    #stop music fadeout 1.0
+    stop music fadeout 1.0
 
     "It's quiet, breezy, and I can eat staring at the open sky. Behind me, the door to the roof opens gently with a click."
-    
-    stop ambient fadeout 0.5
-    
     play sound sfx_dooropen
     play music music_comedy fadein 0.5
 
@@ -169,13 +151,12 @@
 
     hide misha
     with charaexit
-    
+
+    "I start to make a break for the door, but she closes it deftly with a kick."
     play sound sfx_doorslam
     with hpunch
 
-    "I start to make a break for the door, but she closes it deftly with a kick."
-    
-    #with Pause (0.34)
+    with Pause (0.34)
 
     show misha perky_smile
     with charaenter
@@ -183,9 +164,6 @@
     mi "What are you doing? Ah! Listen, Hicchan, there's something important we have to talk to you about!"
 
     hi "We? So then, where is your other half?"
-    
-    show misha sign_smile
-    with charachange
 
     mi "We split up to look for you, of course! If one of us finds you, we're supposed to signal the other one~!"
 
@@ -211,7 +189,7 @@
 
     mi "Hm… You're right, Hicchan, you're right, I guess we didn't really discuss that…"
 
-    show misha hips_smile
+    show misha perky_smile
     with charachange
 
     mi "Well, it's okay! The important thing is you're here! So—!"
@@ -219,15 +197,13 @@
     hi "No."
 
     stop music fadeout 3.0
-    
-    play sound sfx_dooropen
+
+    play sound sfx_normalbell
 
     scene bg school_staircase1
     with locationskip
 
     "I throw open the door and quickly run down the stairs after closing it behind me." 
-    
-    play sound sfx_warningbell
 
     scene bg school_hallway3
     with locationskip
@@ -237,18 +213,16 @@
 
     "The bell rings as soon as I make it down to the first floor, and I trudge off to my next class, hastily packing the uneaten half of my food in my bag, and downing the rest of my water."
 
+    play music music_tranquil fadein 1.0
+
     scene bg school_scienceroom
     with shorttimeskip
-    
-    #play music music_tranquil fadein 1.0
 
     "The rest of the day goes pretty smoothly, but it's still draining as school days go. I just really want to go home and sleep."
 
     scene bg school_scienceroom
-    with shorttimeskip
-    
-    #stop music fadeout 1.0
-    
+    with locationskip
+
     "Ten minutes before the last bell, I'm already thinking of blowing off student council for the day, and formulating my escape route, as well as excuses to use in the event I get caught."
 
     "I begin to leisurely pack my things after double-checking my notes for the day and making sure they're all in order, and waiting for the bell to ring."
@@ -258,16 +232,13 @@
     play sound sfx_normalbell
 
     "As soon as the bell rings, I attempt to get up, but at that second a hand on my shoulder pushes me back down."
-    with vpunch
-    
-    play music music_running fadein 0.2
 
     show misha perky_smile
     with charaenter
 
     mi "Hi, Hicchan~!"
 
-    show misha hips_frown
+    show misha hips_grin
     with charachange
 
     mi "Again."
@@ -300,8 +271,8 @@
 
     shi "…"
 
-    #show shizu cross_rage at tworight
-    show misha cross_frown at twoleft
+    show shizu cross_rage at tworight
+    show misha perky_smile at twoleft
     with charachange
 
     mi "Why did you run away from me? Oh, and me, too! Hicchan, you almost locked me on the roof!"
@@ -313,23 +284,20 @@
 
     mi "You're right, I was turning the doorknob the wrong way…"
 
-    show misha hips_frown at twoleft
+    show misha perky_smile at twoleft
     with charachange
 
     mi "But still, that was not very polite!"
 
-    show shizu adjust_frown at tworight
+    show shizu basic_frown at tworight
     with charachange
 
     shi "…"
-    
-    show misha perky_smile
+
+    show shizu cross_rage at tworight
     with charachange
 
     mi "Anyway, Hicchan, we wanted to talk to you, because we have something for you."
-    
-    show misha cross_grin
-    with charachange
 
     mi "Guess what it is, Hicchan! Come on, guess, guess~!"
 
@@ -338,15 +306,12 @@
 
     shi "…!"
 
-    show shizu behind_frustrated at tworight
+    show shizu cross_rage at tworight
     with charachange
 
     "Shizune seems ticked that Misha isn't taking this as seriously as she would like, and shows her displeasure by signing very angrily."
 
     "Her hands slapping together harshly to the point where it seems like she is clapping."
-    
-    show misha sign_smile
-    with charachange
 
     mi "Fine, fine, Shizune. Hicchan, we have some mail for you!"
 
@@ -359,13 +324,9 @@
 
     "I smile and nod arrogantly, feeling superior for once."
 
-    show shizu cross_rage at tworight
+    show shizu behind_frustrated at tworight
     with charachange
-    
-    play sound sfx_impact2
-    with vpunch
-    
-    #find a suitable rattling soundeffect and do a vpunch here - md01
+
     "Shizune rolls her eyes, and quickly grabs the front of my desk and rattles it, shaking me out of my self-satisfaction."
 
     hi "Hey, what was that for?"
@@ -374,18 +335,12 @@
     with charachange
 
     shi "…"
-    
-    show misha hips_smile
-    with charachange
 
     mi "Just come to the student council room, Hicchan, we have a lot of stuff to give you~!"
 
     "Warning bells start going off in my head. I won't fall for something as transparent as that."
 
     hi "A lot of stuff to give me? You mean like… work? Oh no you don't."
-    
-    show shizu behind_frown
-    with charachange
 
     shi "…"
     
@@ -399,14 +354,14 @@
 
     mi "But your trying to get out of it is kind of funny, isn't it, Shizune! Hahahahahahaha~!"
 
-    show shizu behind_frustrated at tworight
+    show shizu adjust_frown at tworight
     with charachange
 
     "Shizune closes her eyes and frowns in exasperation as Misha laughs heartily. I take this time to get out of my seat and start walking towards the door."
 
     show shizu behind_frustrated at offscreenright
     show misha perky_confused at offscreenleft
-    with ease
+    with charafast
 
     stop music fadeout 1.0
 
@@ -446,47 +401,29 @@
     "I almost forget for a second that the two of them have been responsible for my poor eating, lack of sleep, and overworking. And all that in just one week."
 
     "I blush involuntarily at the contact."
-    
-    scene black
-    with shuteyefast
 
     "Shizune catches it and throws me and Misha to the floor."
-    
-    image shizuFlip = im.Flip("sprites/shizu/close/shizu_basic_frown_close.png", vertical=True)
-    
-    scene bg misc_ceiling
-    show shizuFlip:
-        xanchor 0.5, yanchor 0.5, xpos 0.5, ypos 0.1
-    with openeye
+    with vpunch
 
     shi "…"
 
     mi "Ahahahaha! Wahahahaha~!"
 
     stop music fadeout 1.5
-    
-    scene bg school_scienceroom
-    with locationchange
 
     "I stand up as Misha leans against the wall for support, laughing so hard she can barely manage to keep herself up."
 
     play music music_shizune fadein 1.5
 
-    show misha hips_frown at twoleft
+    show misha sign_smile at twoleft
     show shizu behind_frown at tworight
     with charaenter
 
     shi "…!"
 
     mi "Hicchan, you're a pervert! We're trying to tell you to come pick up your mail, and you're taking advantage of two girls just doing their job!"
-    
-    show shizu behind_frustrated
-    with charachange
 
     shi "…"
-    
-    show misha cross_frown
-    with charachange
 
     mi "How can you do such a thing~? How do you sleep at night?"
 
@@ -502,8 +439,7 @@
 
     shi "…"
 
-    show shizu behind_blank at tworight
-    show misha cross_smile
+    show shizu behind_smile at tworight
     with charachange
 
     mi "Hicchan, we really do have your mail! Your parents didn't write your room number on it, so it just went to the school, and then the school gave it to us~!"
@@ -517,11 +453,18 @@
     with charachange
 
     mi "“Misha, throw that away! We aren't the post office~!”"
-
+    
+    show shizu cross_stunned at tworight
+    with charachange
+    
     "Misha puts her hands on her hips and stands assertively as she says it. It's an inaccurate impression, but I have to struggle to keep from laughing anyway."
 
     mi "“Misha, this shouldn't be our responsibility! What a lazy person, anyway, it's his fault for not putting down his room number, or his parents' for forgetting it!”"
 
+
+    show shizu cross_angry at tworight
+    with charachange
+    
     mi "“Misha~!, conventional mail is outdated, we are improving the world by promoting the use of better means of communication!”"
     
     show misha hips_laugh at twoleft
@@ -529,10 +472,10 @@
 
     mi "Wahahaha~!"
 
-    show shizu cross_wut at tworight
-    with charachange
-
     #ideally this would be an insert, 1/5th of screen size
+    
+    show shizu basic_frown
+    with charachange
 
     "At that point, Shizune walks over to Misha and puts her hand over her mouth, partly as a joke, but I can see it's mainly to get her to shut up, out of embarrassment."
 
@@ -542,18 +485,15 @@
     with charachange
 
     mi "Ahahaha! Ah, but because we know you, and we're so nice, we've been trying to give you your mail all day, but you kept running away from us."
-    
-    show misha sign_smile
-    with charachange
 
     mi "Why?"
 
-    show shizu basic_frown at tworight
+    show shizu adjust_frown at tworight
     with charachange
 
     shi "…"
 
-    show misha hips_frown
+    show shizu behind_frown at tworight
     with charachange
 
     mi "Because you're a jerk~! And you assumed the worst of us, too. That hurts, Hicchan, that you would assume we would try to pull anything… "
@@ -582,11 +522,8 @@
 
     show shizu adjust_smug at tworight
     with charachange
-    
-    #Changed this line because none of the sprites really match this description -md01
-    #"Misha gives a nervous laugh as Shizune crosses her arms and smiles a cocky smile, looking inexplicably proud. She stands up as straight as she can, almost on the balls of her feet."
 
-    "Misha gives a nervous laugh as Shizune smiles a cocky smile, looking inexplicably proud. She stands up as straight as she can, almost on the balls of her feet."
+    "Misha gives a nervous laugh as Shizune adjusts her glasses and smiles a cocky smile, looking inexplicably proud. She stands up as straight as she can, almost on the balls of her feet."
 
     show shizu basic_frown at tworight
     with charachange
@@ -594,6 +531,7 @@
     shi "…"
 
     show misha perky_smile at twoleft
+    show shizu behind_frustrated at tworight
     with charachange
 
     mi "Hicchan, any mail that is improperly addressed can be claimed by its rightful owner, but after a while, ownership of the mail reverts to the entity holding it, meaning we, the student council!"
@@ -610,13 +548,10 @@
 
     mi "Hahaha!"
 
-    show shizu adjust_frown at tworight
+    show shizu adjust_angry at tworight
     with charachange
 
     "Shizune adjusts her glasses cooly, pushing them up with one finger."
-    
-    show shizu basic_normal2
-    with charachange
 
     hi "But you just looked through my mail for no reason. That's a poor way to rationalize it, anyway. You have a license to snoop?"
 
@@ -625,9 +560,6 @@
     with charachange
 
     mi "Ahahaha~, you're right, Hicchan."
-    
-    show shizu behind_frown
-    with charachange
 
     shi "…"
 
@@ -642,16 +574,13 @@
 
     "They seem pretty energetic today, way more than usual."
 
-    scene bg school_lobby
+    scene bg school_council
     with locationskip
 
     "They both start pushing me towards the student council room, but there's really no need. I want my mail."
 
     "When we get to the door, I insist on opening the door for them, partly to be polite, but mostly because I am still suspicious of their motives."
-    
-    play sound sfx_dooropen
 
-    scene bg school_council
     show shizu behind_blank at tworight
     show misha perky_smile at twoleft
     with charaenter
@@ -660,7 +589,7 @@
 
     hi "Thanks."
 
-    hi "I can see you two did a good job of sealing them back up, to hide the evidence of your crime."
+    "I can see you two did a good job of sealing them back up, to hide the evidence of your crime."
 
     show shizu behind_smile at tworight
     with charachange
@@ -700,12 +629,11 @@
 
     mi "I'm just doing the logical thing, Hicchan~!"
 
-    show shizu basic_frown at tworight
+    show shizu cross_wut at tworight
     with charachange
 
     shi "…"
 
-    show shizu cross_wut at tworight
     show misha perky_sad at twoleft
     with charachange
 
@@ -722,7 +650,17 @@
 
     mi "Ah, Hicchan, how were the fireworks last night? I slept through them."
 
+    scene bg misc_sky_ni
+    with locationchange
+
     "I try to go back into my memory of yesterday, and I don't think I remember Misha sleeping through the fireworks. But it is something she would do, and I can imagine her doing it."
+
+    scene bg school_council
+    with locationchange
+
+    show misha perky_smile at twoleft
+    show shizu behind_blank at tworight
+    with charaenter
 
     hi "They were great, I can't believe you slept through them."
 
@@ -789,15 +727,12 @@
     "I haven't. Admittedly, I'd forgotten to take it for the past four days."
 
     "I'm a bit taken by surprise, wondering how she could know, but then I realize they have read my mail."
-    
-    show misha sign_confused
-    with charachange
 
     mi "Is there anything wrong, Hicchan?"
 
     hi "No, there isn't. You're right, I haven't been taking it lately. My mom probably wrote that, right?"
 
-    show shizu basic_normal2 at tworight
+    show shizu behind_smile at tworight
     with charachange
 
     shi "…"
@@ -832,18 +767,12 @@
 
     hi "Yeah, I was meaning to bring it up one day."
     
-    show shizu behind_frustrated
+    show shizu cross_wut at tworight
     with charachange
 
     shi "…"
-    
-    show misha sign_smile
-    with charachange
 
     mi "Shut up, idiot? Go home and study for your exams?"
-    
-    show misha perky_confused
-    with charachange
 
     mi "That's so mean, Shizune."
 
@@ -903,8 +832,6 @@
 
     scene bg school_dormhallway
     with locationchange
-    
-    play sound sfx_doorknock2
 
     "After knocking on the door, I'm disappointed to get no response. If it were anyone else, I would think he was somewhere else."
 
@@ -912,6 +839,8 @@
 
     "I hear someone getting up inside the room, and then a clattering sound, like falling pots and pans, followed by an ominous hissing noise that seems faintly familiar."
 
+    play sound sfx_dooropen
+    
     "The door opens after Kenji undoes the unnecessarily huge number of locks he seems to have on it."
 
     play music music_kenji fadein 0.5
@@ -961,16 +890,16 @@
 
     ke "Yeah, that's right, I didn't go. Do you know why I didn't go, man? "
 
-    ke "Because it is my belief that the post-festival exams are part of a vast conspiracy to weaken the kids at this school."
+    ke"Because it is my belief that the post-festival exams are part of a vast conspiracy to weaken the kids at this school."
 
-    show kenji tsun at center
+    show kenji tsun
     with charamove
 
     ke "Starting tests one day after a festival everyone looks forward to… that is some suspicious shit, man."
 
-    ke "I always thought so, and after a lot of research, I think the school schedules it like this so that we, weakened by the festival and seduced by its disgusting temptations of fun and social interaction, accept the exams that follow the very..."
+    ke "I always thought so, and after a lot of research, I think the school schedules it like this so that we, weakened by the festival and seduced by its disgusting temptations of fun and social interaction, accept the exams that follow the very."
 
-    ke "Next..."
+    ke "Next."
 
     ke "Day!"
 
@@ -1023,7 +952,7 @@
     show kenji tsun at centeroff
     with charamove
 
-    ke "You suck, man."
+    ke "You suck, man. {w=.5}{nw}"
 
     show kenji tsun at center
     with charamove
@@ -1032,7 +961,7 @@
 
     ke "Do you know the balls it takes to go out into the hall? "
 
-    ke "I can't just go out there for no reason." 
+    ke "I can't just go out there for no reason. {w=.5}{nw}" 
 
     ke "It's cold."
 
@@ -1112,7 +1041,7 @@
     show kenji tsun
     with charachange
 
-    ke "So close, though. the insanity… "
+    ke "So close, though. the insanity… {w=.5}{nw}"
 
     show kenji neutral
     with charachange
@@ -1137,8 +1066,10 @@
     
     #"Before my words begin to speak, he jiggajives up to his den, slambammin the door right in my gob, and I was enjoying his actions, but i didn't believe that he was doing it."wit
     
-    "Before I can say anything, he retreats into his room, slamming the door in my face, leaving me slightly amused, but mostly still in disbelief."
-   
+    "Before I can say anything, he  retreats into his room, slamming the door in my face, leaving me slightly amused, but mostly still in disbelief."
+    
+
+    
     scene bg school_dormhisao
     with locationskip
 
@@ -1154,8 +1085,8 @@
 label en_S9:
 
     scene bg school_scienceroom
-    
-    play music music_pearly fadein 2.0
+
+    play music music_normal fadein 2.0
 
     "It's Friday, almost a week has passed since the festival. Right now, though, I'm just thinking about how great it is that after today, I'll finally be done with all my exams."
 
@@ -1185,8 +1116,6 @@ label en_S9:
     "Was it Shizune and Misha? It seems that way, and I can't really think of anyone else who would be in charge of such a thing, but it's a very depressing thought."
 
     "I'm surprised they didn't come to me for help. Could it have been out of concern? Did they read my mail and find out I'm sick?"
-    
-    stop music fadeout 3.0
 
     "I can't have that. This is the kind of thing that I was afraid would happen, and for a brief moment a feeling of worry flashes through my mind."
 
@@ -1204,30 +1133,28 @@ label en_S9:
 
     "This is kind of silly when I think about how hard I tried to get out of helping Shizune and Misha out before."
 
-    scene bg school_lobby
-    with locationskip
+    scene bg school_hallway3
+    with locationchange
 
     "I head down to the student council room. The main building is deserted, and deathly quiet. I'm having second thoughts as to whether Shizune and Misha are even here today."
-    
-    play sound sfx_dooropen
-    with Pause(0.5)
-    
+
     scene bg school_council
     with locationchange
 
     #I'd like an insert here, 1/3rd of screen of S & M
+    
+    #goddamn you wanted so many inserts but got none of them, sorry dude
+    #would've made my life hell though anyway
 
     "I open the door, and see Shizune tapping her pen on her desk as she contemplates over a piece of paper that makes medical insurance forms look simple in comparison."
 
     "Misha sits in the corner at a table, her arms folded in front of her and a serious look on her face. At first, I think she is deep in thought, but her drooping head shows me that she's just asleep."
 
-    "Seeing that she hasn't noticed my presence, I decide to sneak up on her and make my way towards the desk as stealthily as possible, but she lifts her head at the last second and sees me."
+    "Seeing that she hasn't noticed my presence, I decide to sneak up on her and make my way towards the desk as steathily as possible, but she lifts her head at the last second and sees me."
 
     "Realizing I've been caught, I try to laugh it off."
 
     hi "Haha, you caught me. What are you doing, Shizune?"
-    
-    play music music_tension fadein 0.2
 
     show shizu cross_rage
     with charaenter
@@ -1256,29 +1183,29 @@ label en_S9:
     hi "I was wondering if they have a sign language course here, but I thought that maybe you two could teach me a little, since we hang out so often."
 
     hi "Of course, you don't understand anything I'm saying right now."
-    
-    show shizu behind_frown_close
-    with characlose
 
     "Shizune gets out of her chair and starts heading towards me."
 
+    show shizu behind_blank
+    with charachange
+
     "She stops right in front of me, looking at me expectantly as if I'm supposed to know what she wants me to do."
 
-    show shizu basic_angry_close
+    show shizu basic_frown
     with charachange
 
     shi "…"
 
-    hi "Hey, I don't know what that means."
-    
-    show shizu basic_frown_close
+    show shizu behind_blank 
     with charachange
+
+    hi "Hey, I don't know what that means."
 
     "I shrug to show my incomprehension, but that only makes Shizune sign more angrily."
 
     "I wonder if I should wake Misha up."
 
-    show shizu behind_frown_close
+    show shizu behind_frown
     with charachange
 
     "Shizune jabs a finger in my chest repeatedly when she sees me getting distracted, and I wonder if I should do the same to her."
@@ -1313,14 +1240,11 @@ label en_S9:
     mi "Oh, hello, Hicchan~!"
 
     hi "Hello."
-    
-    show misha sign_smile
-    with charachange
 
     mi "What brings you here?"
 
     show shizu adjust_angry at tworight
-    show misha sign_confused at twoleft
+    show misha hips_frown at twoleft
     with charachange
 
     "Misha keeps looking at Shizune nervously out of the corner of her eye, maybe hoping that Shizune will forget about the fact that she was sleeping, but it doesn't seem like it's going to happen."
@@ -1345,8 +1269,6 @@ label en_S9:
     with charachange
 
     mi "I'm scared…"
-    
-    "Misha turns to Shizune tentatively and signs what seems to be an apology."
 
     show shizu basic_frown at tworight
     with charachange
@@ -1368,38 +1290,37 @@ label en_S9:
     show shizu behind_frown at tworight
     with charachange
 
-    #stop music fadeout 2.0
-    
-    #Moved this line up to before this ellipses off. -md01
-#    "Misha turns to Shizune tentatively and signs what seems to be an apology."
+    stop music fadeout 2.0
+
+    "Misha turns to Shizune tentatively and signs what seems to be an apology."
 
     "Shizune's reply seems unusually lengthy and complex, so I don't think she is saying anything like “OK.”"
 
-    #play music music_daily fadein 1.0
+    play music music_daily fadein 1.0
 
     show shizu basic_frown at tworight
     with charachange
 
     "…"
 
-    #show shizu cross_rage at tworight
+    show shizu cross_rage at tworight
     show misha hips_frown at twoleft
     with charachange
 
     mi "Ah, that's not it, Shizune! I wasn't sleeping, I was just… thinking!"
 
-    show shizu adjust_angry at tworight
+    show shizu basic_frown at tworight
     with charachange
 
     "…"
 
     show shizu behind_frown at tworight
-    show misha perky_confused at twoleft
+    show misha perky_sad at twoleft
     with charachange
 
     mi "What do you mean that's impossible?"
 
-    show misha perky_sad at twoleft
+    show misha perky_confused at twoleft
     with charachange
 
     mi "Oh well. Hicchan, there isn't anything for us to do here today, either."
@@ -1413,9 +1334,6 @@ label en_S9:
     with charachange
 
     mi "Except some forms that came by while I was asleep~"
-    
-    show shizu adjust_smug
-    with charachange
 
     shi "…"
 
@@ -1423,17 +1341,13 @@ label en_S9:
     with charachange
 
     mi "What?"
-    
-    show shizu adjust_frown
+
     show misha hips_frown at twoleft
     with charachange
 
     mi "That's not a confession!"
 
     mi "That's just what you said!"
-    
-    show misha sign_confused
-    with charachange
 
     mi "Shizune~!"
 
@@ -1469,7 +1383,7 @@ label en_S9:
 
     hi "—because I wanted to ask you if there are any sign language classes here."
 
-    show shizu basic_normal at tworight
+    show shizu basic_normal2 at tworight
     with charachange
 
     shi "…"
@@ -1480,9 +1394,6 @@ label en_S9:
     mi "Here?"
 
     hi "At the school."
-    
-    show shizu behind_blank
-    with charachange
 
     shi "…"
 
@@ -1504,11 +1415,13 @@ label en_S9:
     shi "…"
 
     show misha perky_smile at twoleft
-    show shizu basic_normal at tworight
     with charachange
 
     mi "This school does have sign languages; it'd be weird if it didn't, Hicchan. But the window of opportunity for you to sign up for them is long gone."
 
+    show shizu behind_blank at tworight
+    with charachange
+    
     shi "…"
 
     mi "Why do you want to learn sign language, Hicchan?"
@@ -1536,7 +1449,7 @@ label en_S9:
 
     hi "Alright, thanks."
 
-    show shizu behind_blank at tworight
+    show shizu adjust_happy at tworight
     with charachange
 
     shi "…"
@@ -1566,13 +1479,11 @@ label en_S9:
 
     "I pull up a chair and take a seat. Shizune pulls up a chair next to mine and looks at Misha patiently, sitting with her legs crossed."
 
-    #play music music_nurse fadein 1.0
+    play music music_nurse fadein 1.0
 
     "I guess she wants to observe Misha's teaching skills."
 
     "We both look at her, waiting for her to start, but she only stares back blankly."
-    
-    play music music_ease fadein 0.2
 
     show misha perky_sad
     with charaenter
@@ -1595,7 +1506,7 @@ label en_S9:
 
     mi "Ahahaha~…"
 
-    show misha perky_confused
+    show misha perky_smile
     with charachange
 
     "She looks like she's on the verge of having a nervous breakdown."
@@ -1606,7 +1517,7 @@ label en_S9:
 
     "It doesn't look like Shizune is saying anything so much as it looks like she is yelling on mute."
 
-    show misha sign_confused
+    show misha perky_confused
     with charachange
 
     mi "Um… Sign language was invented in the 18th century by a Frenchman named… ah… whose name I can't pronounce, and he started the first public school for the deaf in 1755, but the unwritten history of sign language is said to…"
@@ -1614,12 +1525,12 @@ label en_S9:
     hide misha
     with charaexit
 
-    show shizu cross_wut
+    show shizu cross_rageclosed
     with charaenter
 
     "Shizune reels backwards like she's in pain and continues to writhe in agony until Misha sees her and stops talking."
 
-    show shizu cross_wut at tworight
+    show shizu cross_rageclosed at tworight
     with charamove
 
     show misha perky_sad at twoleft
@@ -1631,8 +1542,8 @@ label en_S9:
     with charachange
 
     shi "…"
-
-    show shizu cross_wut at tworight
+    
+    show shizu behind_frown at tworight
     show misha perky_confused at twoleft
     with charachange
 
@@ -1673,6 +1584,11 @@ label en_S9:
 
     #This whole segment needs something… more.
     #Either like an insert or a CG. Text alone doesn't seem to do this justice.
+    
+    show misha sign_smile
+    with charachange
+    show misha perky_smile
+    with charachange
 
     mi "Okay~! So, the alphabet! This is A. Do you see it? Now, you try!"
 
@@ -1682,24 +1598,49 @@ label en_S9:
     
     show misha sign_smile
     with charachange
+    show misha perky_smile
+    with charachange
 
     mi "Now, this is B, "
+    
+    show misha sign_smile
+    with charachange
+    show misha perky_smile
+    with charachange
 
     mi "and this is C."
-    
-    show misha cross_smile
-    with charachange
 
     "Misha makes one symbol with each hand, without specifying which is which."
     
     show misha sign_smile
     with charachange
+    show misha perky_smile
+    with charachange
+    show misha sign_smile
+    with charachange
+    show misha perky_smile
+    with charachange
+    show misha sign_smile
+    with charachange
+    show misha perky_smile
+    with charachange
 
     mi "And now D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, "
+    
+    show misha sign_smile
+    with charachange
+    show misha perky_smile
+    with charachange
+    show misha sign_smile
+    with charachange
+    show misha perky_smile
+    with charachange
 
     mi "VWXY…"
     
-    show misha hips_grin
+    show misha sign_smile
+    with charachange
+    show misha perky_smile
     with charachange
 
     mi "… 'n' Z!"
@@ -1709,21 +1650,15 @@ label en_S9:
     hi "Hey, guys, there's really no student council stuff that has to be done?"
 
     shi "…"
-    
-    show misha cross_smile
-    with charachange
 
     mi "Nope. Come on, I'll do it again! A, B, C, D, E, F, G, H, I, J, K… Your turn~!"
 
     hi "So there's really no student council work, or anything like that?"
-    
-    show misha hips_frown
-    with charachange
 
     mi "What are you talking about, Hicchan? Come on, sign, sign!"
 
     show misha perky_smile at twoleft
-    with dissolvecharamove
+    with charamove
 
     show shizu behind_blank at tworight
     with charaenter
@@ -1738,9 +1673,6 @@ label en_S9:
     "Shizune flashes me a devilish smile, and I look at Misha, wondering if the two of them are messing with me again, but it doesn't seem to be that way."
 
     hi "Like this?"
-    
-    show misha sign_smile
-    with charachange
 
     mi "No, like this!"
 
@@ -1749,9 +1681,6 @@ label en_S9:
     mi "This!"
 
     hi "Uh… huh…"
-    
-    show shizu basic_normal
-    with charachange
 
     shi "…"
 
@@ -1781,26 +1710,20 @@ label en_S9:
     shi "…"
 
     mi "So~! let's start off with the basics again! First, your name. We already know it, but it might come in useful one day~!"
-    
-    show misha sign_smile
-    with charachange
 
     mi "Like this, like this: Shizune wants to show you."
 
     shi "…"
 
-    show shizu basic_happy at tworight
+    show shizu behind_smile at tworight
     with charachange
 
     shi "…"
-    
-    show misha cross_grin
+
+    show shizu behind_smile at tworight
     with charachange
 
     mi "Hisao Nakai! Neat, huh? Now, you try!"
-    
-    show shizu behind_blank
-    with charachange
 
     shi "…"
 
@@ -1809,9 +1732,6 @@ label en_S9:
     hi "Yeah."
 
     "Much clearer now, actually. I watch Shizune sign my name again, and then do my best to copy her."
-    
-    show shizu adjust_happy
-    with charachange
 
     "I manage to accomplish it pretty easily, and Shizune gives a small nod and an uncharacteristically cheerful brief clap at my success."
 
@@ -1824,9 +1744,6 @@ label en_S9:
     with charachange
 
     mi "No matter what, a person should always know their name before anything else. Or else, how would they know who they were?"
-    
-    show misha cross_laugh
-    with charachange
 
     mi "Wahahaha~!"
 
@@ -1838,14 +1755,8 @@ label en_S9:
     mi "Listen carefully, Hicchan: A big benefit of sign language is that you are afforded time to think about what you're going to say before you say it."
 
     shi "…"
-    
-    show misha cross_frown
-    with charachange
 
     mi "So don't say anything stupid to me, okay~?"
-    
-    show misha cross_smile
-    with charachange
 
     mi "And now, I'm supposed to hit you! But I won't, Hicchan! I don't mind if you say anything stupid, either!"
 
@@ -1945,35 +1856,23 @@ label en_S10:
     "I wake up feeling oddly refreshed, other than a slight cramp in my neck."
 
     "Glancing at the clock on my desk, I see that I'm up later than usual. I quickly get ready for school after taking my pills; something that took far longer than I expected."
-    
-    #Redundant -md01
-    #scene bg school_dormhisao
-    #with locationchange
+
+    scene bg school_dormhisao
+    with locationchange
 
     "Taking another look at the clock, I see that I'm cutting it a little close if I want to beat the rush."
 
     "Sliding everything on my desk into my bag hastily, I throw open the door, and am immediately thrown back into the room."
-    
-    play sound sfx_dooropen
 
     scene bg school_dormhallway
-    show shizu behind_blank_close
     with locationchange
     
-    play sound sfx_impact2
-    
-    show shizu adjust_angry
-    with vpunch
-    
-    hide shizu
-    with charaexit
-    
+    play sound sfx_impact
+    with hpunch
     "I move forward instinctively to push back, and accidentally throw Shizune into the hall. She flies backwards, hitting Kenji's door with a bang."
+       
 
     stop music fadeout 2.0
-    
-    show shizu cross_angry at centersitlow
-    with charaenter
 
     "Mortified, I run forward and offer her a hand to help her up, but almost change my mind when I see her shaking with anger, her mouth set in a grim line and her fingers curled as if she wants to crush something between her hands."
 
@@ -1984,54 +1883,41 @@ label en_S10:
     "Suddenly, I hear an explosive laugh behind me, and look up to see Misha hovering right next to me."
 
     ##### Set off screen maneuver here ####
-    show misha hips_grin at offscreenright behind shizu
+    show misha hips_grin at offscreenright
     with None
 
-    show misha hips_grin at right
+    show misha hips_grin at tworight
     with charamove
 
     mi "Ahaha~hahaha~! Stop sulking, Shizune! …Shizune?"
-    
-    show shizu basic_frown
-    with charachange
 
     shi "…"
 
-    show misha perky_sad
+    show misha perky_sad at tworight
     with charachange
 
     mi "Help you up? Ah, okay! Hicchan, can you help me pull Shizune up? She says she doesn't want to use her arms."
-    
-    show shizu behind_frown
-    with charachange
 
     shi "…"
 
-    show misha sign_smile
+    show misha sign_smile at tworight
     with charachange
 
     mi "That's right, that's right~! I refuse to use my arms to lift myself up, I have a policy against it!"
 
-    show misha hips_laugh
+    show misha hips_laugh at tworight
     with charachange
 
     mi "Hahaha!"
 
-    #hide misha 
-    #with charaexit
-    
-    show misha perky_smile at tworight
-    with dissolvecharamove
-    
-    show shizu behind_frown at center
-    with charamove
-    with Pause(0.5)
-    
+    hide misha 
+    with charaexit
+
+    "Misha grabs one of Shizune's arms, and I grab the other. We pull her up as she pouts, seeming a lot less mature than usual."
+
     show shizu cross_rage at twoleft
     show misha perky_smile at tworight
-    with dissolvecharamove
-
-    "Misha grabs one of Shizune's arms, and I grab the other. We pull her up as she pouts, seeming a lot less mature than usual."    
+    with charachange
 
     shi "…"
 
@@ -2043,7 +1929,7 @@ label en_S10:
     show shizu adjust_blush at twoleft
     with charachange
 
-    hi "What?"
+    hi "What? "
 
     hi "No."
 
@@ -2093,9 +1979,6 @@ label en_S10:
     "The extortion and forced labor may be slightly more common."
 
     hi "Aren't you two in the student council?"
-    
-    show misha hips_grin
-    with charachange
 
     mi "It's okay, it's a Saturday! And we have important student council business, anyway! Anyway, anyway~! Let's go to the Shanghai!"
 
@@ -2105,15 +1988,12 @@ label en_S10:
 
     "I weep for the future."
 
-    show shizu basic_happy at twoleft
+    show shizu behind_smile at twoleft
     with charachange
 
     shi "…"
 
-    #show shizu basic_sparkle at twoleft
-    #Rwith charachange
-    
-    show misha perky_smile
+    show shizu basic_sparkle at twoleft
     with charachange
 
     mi "Well, it's not really like skipping classes… This is work, not just fun and games~! Come on, come on~!"
@@ -2138,7 +2018,7 @@ label en_S10:
     "We make our way to the tea house, Misha demanding the right to take the lead. Shizune hesitantly shrugs and tells her to go ahead."
 
     show shizu behind_frustrated at twoleft
-    show misha hips_grin at tworight
+    show misha perky_confused at tworight
     with charaenter
 
     shi "…"
@@ -2156,8 +2036,6 @@ label en_S10:
     with shorttimeskip
 
     "Eventually, we make it to the Shanghai, and Shizune taps Misha on the shoulder and gives her a thumbs up, I assume to congratulate her on her navigational skills."
-    
-    play sound sfx_storebell
 
     scene bg suburb_shanghaiint at bgleft
     with locationchange
@@ -2206,25 +2084,22 @@ label en_S10:
 
     show yuukoshang worried_up
     with charachange
-    
-    hide yuukoshang
-    with charaexit
 
     "Yuuko stretches her arms out and then covers her mouth to suppress a yawn before carefully walking to the counter and pouring coffee with an unusual amount of concentration."
 
     "I take a seat, and Shizune immediately frowns."
 
-    #show yuukoshang neutral_up
-    #with charachange
-    
-    show misha hips_frown at twoleft
-    show shizu behind_frustrated at tworight
-    with charaenter
+    show yuukoshang neutral_up
+    with charachange
 
     shi "…"
 
-    #hide yuukoshang
-    #with charaexit
+    hide yuukoshang
+    with charaexit
+
+    show misha sign_smile at twoleft
+    show shizu cross_rage at tworight
+    with charaenter
 
     mi "Hicchan!"
 
@@ -2236,7 +2111,6 @@ label en_S10:
     shi "…"
 
     show shizu cross_rage at tworight
-    show misha cross_frown
     with charachange
 
     mi "You took a seat! Before offering us seats! You didn't even hold our chairs for us! How could you?"
@@ -2246,23 +2120,20 @@ label en_S10:
 
     shi "…"
 
-    show shizu cross_wut at tworightsit
-    show misha perky_smile at twoleftsit
-    with dissolvecharamove
+    show shizu basic_angry at tworight
+    show misha perky_smile at twoleft
+    with charachange
 
     mi "Well, whatever~! Do you know why we asked you to come here today, Hicchan?"
-    
-    show shizu basic_angry
+
+    hi "To talk about some student council things."
+
+    show misha hips_grin at twoleft
     with charachange
 
-    hi "To talk about some student council things?"
+    mi "Wahahaha! Nope, that's not it at all! Well, maybe~! School will be out for the summer in a month?, do you have any plans?"
 
-    show misha hips_grin
-    with charachange
-
-    mi "Wahahaha! Nope, that's not it at all! Well, maybe~! School will be out for the summer in a month, do you have any plans?"
-
-    show shizu behind_blank
+    show shizu behind_blank at tworight
     with charachange
 
     "I don't like the sound of that “maybe.” "
@@ -2280,21 +2151,24 @@ label en_S10:
     #Hisao you little shit why are you trying to get out of an opportunity to hang out with two pretty girls
 
     hi "Yeah, I'm… very busy. Very busy."
-    
-    show misha perky_confused
+
+    show misha perky_smile at twoleft
     with charachange
 
     mi "Ah, well, okay~!"
 
+    show misha perky_confused at twoleft
+    with charachange
+
     "Misha shrugs, and I think of nodding smugly in accomplishment and relief, but Shizune seems to catch Misha letting me off easy and cuts in."
 
-    show shizu basic_frown
+    show shizu basic_frown at tworight
     with charachange
 
     shi "…"
 
-    show shizu cross_wut
-    show misha hips_frown
+    show shizu behind_frown at tworight
+    show misha hips_frown at twoleft
     with charachange
 
     mi "Ah, well, that's not okay~!"
@@ -2303,48 +2177,47 @@ label en_S10:
 
     mi "You're obviously lying, Hicchan~! Although I couldn't tell, so maybe you're a little better than before!"
 
-    show misha hips_laugh
+    show misha hips_laugh at twoleft
     with charachange
 
     mi "Not something to be proud of, though. …Ahahahahaha!"
 
-    show misha perky_smile
+    show misha perky_smile at twoleft
     with charachange
 
     mi "Hey, Hicchan, we're supposed to be teaching you sign language, aren't we?"
 
-    show shizu behind_smile
+    show shizu behind_smile at tworight
     with charachange
 
     shi "…"
 
-    show misha hips_smile
+    show misha hips_smile at twoleft
     with charachange
 
     mi "That's right! See, Hicchan? That sign meant “yes!” Now you try!"
 
     hi "I'd have to see it again."
 
-    show shizu basic_frown
+    show shizu basic_frown at tworight
     with charachange
 
     shi "…"
 
-    show shizu cross_wut
-    show misha sign_smile
+    show misha sign_smile at twoleft
     with charachange
 
     mi "I never repeat myself~!"
 
     "Another policy? I try to remember if there's ever been an instance of Shizune having repeated herself. I'm sure she's done it at least once."
 
-    show shizu behind_smile
+    show shizu behind_smile at tworight
     with charachange
 
     shi "…"
 
-    show shizu behind_blank
-    show misha perky_smile
+    show shizu behind_blank at tworight
+    show misha perky_smile at twoleft
     with charachange
 
     mi "Okay~! Sit down, we're going to teach you how to order using sign language!"
@@ -2366,8 +2239,8 @@ label en_S10:
 
     #lawl advanced maneuvers
 
-    show shizu behind_blank at centersit
-    show misha perky_smile at leftsit #Position(xanchor=0, xpos=-80)
+    show shizu behind_blank at center
+    show misha perky_smile at Position(xanchor=0, xpos=-80)
     show bg suburb_shanghaiint at bgright
     show yuukoshang smile_up at right
     with charamove    
@@ -2387,7 +2260,7 @@ label en_S10:
 
     hi "You're very hardworking."
 
-    show shizu behind_blank at Position(xanchor=0, xpos=-600)
+    show shizu behind_blank at offscreenleft
     show misha perky_smile at Position(xanchor=0, xpos=-600)
     show yuukoshang worried_up at center
     with charamove
@@ -2428,7 +2301,7 @@ label en_S10:
 
     "Yuuko frowns."
 
-    play music music_running fadein 1.0
+    play music music_kenji fadein 1.0
 
     yu "That's right, this cafe doesn't have a menu. That's not normal, for a cafe to not have a menu. It goes against Japanese society itself."
 
@@ -2450,7 +2323,7 @@ label en_S10:
 
     "Shizune reaches over and hits me in the back of the head."
 
-    show shizu cross_rageclosed at centersit
+    show shizu behind_frustrated
     with charaenter
 
     "I turn to her, and see her flailing her arms angrily, not even signing anything."
@@ -2465,53 +2338,44 @@ label en_S10:
 
     hi "I just asked for a menu."
 
-    #hide shizu
-    #with charaexit
-    
-    show shizu cross_angry at center
-    with dissolvecharamove
-    
-    show shizu cross_angry_close
-    with characlose
+    hide shizu
+    with charaexit
 
     "Before I can explain myself further, Shizune pushes her chair outwards and stands up, grabbing me by the arm and forcing me to do the same."
 
     scene bg suburb_shanghaiint
-    show shizu cross_angry_close at center
-    with charamove
-    
-    show misha perky_confused at left behind shizu
-    with charaenter
+    with locationchange
 
     "Without a moment's notice, she pulls me towards a corner of the store with Misha trailing behind."
 
-    show shizu behind_frustrated_close
-    with charachange
+    show shizu behind_frustrated at tworight
+    show misha perky_confused at twoleft
+    with charaenter
 
     shi "…!"
 
-    show shizu adjust_angry_close
-    show misha hips_frown
+    show shizu adjust_angry at tworight
+    show misha hips_frown at twoleft
     with charachange
 
     mi "Hicchan! How could you? Why do you have to say those kinds of things?"
 
-    show shizu behind_frustrated_close
+    show shizu behind_frustrated at tworight
     with charachange
 
     shi "…"
 
-    show shizu cross_rage_close
+    show shizu cross_rage at tworight
     with charachange
 
     mi "Honestly, how many lives do you have to ruin? When does it end?"
 
-    show misha perky_confused
+    show misha perky_confused at twoleft
     with charachange
 
     "Misha shrugs."
 
-    show misha hips_smile
+    show misha hips_smile at twoleft
     with charachange
 
     mi "Oh, well~! Yuuko~!"
@@ -2520,7 +2384,7 @@ label en_S10:
 
     "I'm amazed at how calm Yuuko seems to be, when she seemed like she was on the verge of some kind of nervous breakdown just minutes earlier."
 
-    show shizu adjust_angry_close
+    show shizu adjust_angry at tworight
     with charachange
 
     shi "…"
@@ -2529,14 +2393,14 @@ label en_S10:
 
     hi "A menu."
 
-    show shizu behind_frown_close
+    show shizu behind_frown at tworight
     with charachange
 
     "Shizune subtly presses her foot down on mine."
 
     hi "Maybe some coffee. So I can drink it as I look at the menu."
 
-    show misha hips_laugh
+    show misha hips_laugh at twoleft
     with charachange
 
     mi "Ahahahaha!"
@@ -2547,7 +2411,7 @@ label en_S10:
 
     shi "…"
 
-    show misha hips_grin
+    show misha hips_grin at twoleft
     with charachange
 
     mi "You heard him, Yuuko, he wants coffee~! We'll take our seats again now~!"
@@ -2556,7 +2420,7 @@ label en_S10:
 
     show shizu behind_frown at tworightsit
     show misha hips_smile at twoleftsit
-    with dissolvecharamove
+    with charamove
 
     "Shizune and Misha take their seats and start drinking their tea, watching me the whole time."
 
@@ -2565,15 +2429,9 @@ label en_S10:
     #preferably insert here, but I'll put in sprites anyway
 
 
-    play music music_another fadein 1.0
-    
-    show misha hips_grin
-    with charachange
+    play music music_nurse fadein 1.0
 
     mi "So, Hicchan, let's learn more sign language!"
-    
-    show shizu basic_normal
-    with charachange
 
     shi "…"
 
@@ -2603,16 +2461,10 @@ label en_S10:
     hide misha
     hide shizu 
     with charaexit
-    
-    scene bg suburb_shanghaiint at bgright
-    with charamove
 
     "I look over in Yuuko's direction, and see she's measuring out sugar cubes extremely carefully and extremely slowly over my coffee."
 
     "What dedication to her job, but I really wish she'd hurry it up."
-    
-    scene bg suburb_shanghaiint at center
-    with charamove
 
     show shizu behind_smile at tworightsit
     show misha sign_smile at twoleftsit
@@ -2662,7 +2514,7 @@ label en_S10:
     show yuukoshang neurotic_down at Transform(ypos=1.35)
     with Dissolvemove(0.2)
     with Pause(0.05)
-    show yuukoshang neurotic_down at right
+    show yuukoshang worried_up at right
     with Dissolvemove(0.5)
     
     "Yuuko suddenly appears behind me, putting my cup of coffee down on the table before her top half rockets forward in another one of those extreme bows."
@@ -2701,7 +2553,7 @@ label en_S10:
 
     mi "Hm… I don't know! I don't know!"
 
-    show shizu cross_wut at centersit
+    show shizu basic_normal at centersit
     with charachange
 
     shi "…"
@@ -2724,7 +2576,7 @@ label en_S10:
 
     hi "They didn't actually teach me those."
 
-    show shizu behind_blank at centersit
+    show shizu behind_smile at centersit
     with charachange
 
     shi "…"
@@ -2775,11 +2627,14 @@ label en_S10:
 
     "The walk back to school is mostly silent, punctuated only by the sound of birds."
 
-    show shizu behind_blank at twoleft
+    show shizu behind_smile at twoleft
     show misha perky_smile at tworight
     with charaenter
 
     shi "…"
+
+    show shizu behind_smile at twoleft
+    with charachange
 
     mi "So, Hicchan, what are you going to do over the summer?"
 
@@ -2789,26 +2644,25 @@ label en_S10:
     hide shizu
     with charaexit
 
+    scene bg school_road
+    with locationchange
+
     scene bg school_gate
+    with locationchange
+
     show misha perky_smile at tworight
     show shizu behind_blank at twoleft
-    with shorttimeskip
+    with charaenter
 
     "We reach the front gate of the school, and I can see that the grounds are filled with students fresh out of class and getting ready to enjoy the rest of their Saturday. What perfect timing this was."
 
     "I can hear them chattering excitedly back and forth to each other, and the topic of choice seems to be how soon the school year is ending."
-    
-    show shizu behind_blank
-    with charachange
 
     shi "…"
 
     mi "It's likely that Shizune and I won't be going back home for the summer. What about you, Hicchan?"
 
     hi "I'll probably also be spending it here."
-    
-    show shizu adjust_happy
-    with charachange
 
     shi "…"
 
@@ -2883,15 +2737,14 @@ label en_S11:
 
     "Personally, I think that about five and a half weeks is a reasonably long time, so this all seems a little premature to me."
 
-    scene bg school_scienceroom_ss
+    scene bg school_scienceroom
     with shorttimeskip
 
     "In Math class, the teacher stands up to loudly announce that finals will be coming up in a few weeks, but it falls flat unheard over the sound of chairs being pushed back and a little less than two dozen pairs of feet walking out the door."
 
     "I haven't seen Shizune or Misha all day. They're most likely in the student council room. It's clear that they were stretching the truth a little when they said that there isn't a lot of work this time of year."
-    
-    #The script mentions later that there is "amber sunlight" in the StuCo room, without a significant amount of time passing. This is in the middle of summer, and while I'm not very familiar with Japan's day lengths during particular times of the year, the sun sets around 8:00-9:00 PM here during the summer. There's no way in hell that the school lets out that late. Doesn't make any sense, by oh well. -md01
-    scene bg school_lobby_ss
+
+    scene bg school_council
     with locationskip
 
     "After packing my things, I make my way over to the student council room, weaving my way through the crowds of students."
@@ -2901,112 +2754,84 @@ label en_S11:
     "I raise my hand to knock on the door, then stop myself. Maybe there's no one in there."
 
     "Alternatively, maybe it's just Shizune. In that case, knocking wouldn't do much good anyway."
-    
-    #This is the original line, broke it up so direction flows better, -md01
-    #"I decide to try it anyway, there's nothing to lose. The second I try to knock on the door, it suddenly swings open, leaving my hand right in front of Shizune's face."
-    
-    "I decide to try it anyway, there's nothing to lose. The second I try to knock on the door, it suddenly swings open"
-    
-    play sound sfx_dooropen
-    
-    scene bg school_council_ss
-    show misha perky_smile_ss at offscreenleft behind shizu
-    show shizu basic_angry_close_ss
-    with locationchange
 
-    "...leaving my hand right in front of Shizune's face."
-    
+    "I decide to try it anyway, there's nothing to lose. The second I try to knock on the door, it suddenly swings open, leaving my hand right in front of Shizune's face."
+
     stop music fadeout 1.0
-    
-    show shizu adjust_blush_close_ss
-    with charachange
 
     "She turns bright red and pushes it out of her way."
-    
-    show misha perky_smile_ss at left
-    with charamove
 
     mi "Hi, Hicchan~!"
 
     play music music_shizune fadein 1.0
 
     hi "Hello."
-    
-    show shizu behind_blank_ss
-    with charadistant
-    
-    show shizu behind_blank_ss at tworight
-    show misha perky_smile_ss at twoleft
-    with charamove
 
     shi "…"
 
-    #show misha perky_smile at tworight
-    #show shizu adjust_blush at twoleft
-    #with charaenter
+    show misha perky_smile at tworight
+    show shizu adjust_blush at twoleft
+    with charaenter
 
     mi "We were going to come and get you~! Ah, we're eating right now, though. Do you want anything? There's a sandwich, and… do you like pretzels?"
 
     hi "I have no really strong feelings on pretzels."
 
-    show misha perky_confused_ss
+    show misha perky_confused at tworight
     with charachange
 
     mi "What, Hicchan? So does that mean you want them?"
 
     hi "I'm not really hungry."
 
-    show shizu cross_wut_ss
+    show shizu basic_frown at twoleft
     with charachange
 
     "Shizune taps her foot on the floor loudly and impatiently, drawing my attention as she looks back and forth from me to Misha, following our conversation on sight alone."
 
-    show shizu behind_frustrated_ss
-    with charachange
-
     "It looks cute; the kind of childish behavior Shizune seems to try so hard to hide. Noticing me looking at her, she frowns and looks away to the side, biting her lip."
    
-    show shizu basic_angry_ss
+    show shizu behind_frustrated at twoleft
     with charachange
 
     "Then, she looks right at me and takes the opportunity to sign excitedly to Misha in exaggerated, sweeping motions punctuated here and there by her striking her right hand against her palm."
 
-    show shizu basic_frown_ss
+    show shizu basic_frown at twoleft
     with charachange
 
     shi "…!"
 
-    show shizu cross_rage_ss
-    show misha hips_frown_ss
+    show shizu cross_rage at twoleft
+    show misha hips_frown at tworight
     with charachange
 
     mi "Hicchan!"
 
-    show misha sign_smile_ss
+    show misha sign_smile at tworight
     with charachange
 
     mi "That's so rude! You should always take food that's offered to you, no matter what! It's just common sense! We live in a society, after all…"
 
-    show misha hips_smile_ss
+    show misha hips_smile at tworight
     with charachange
 
     mi "We're about to eat, but you had to come! And not just that, you're not hungry. Now, we'll be eating, and you'll be sitting there, or, even worse, standing there, watching us eat!"
 
-    show shizu behind_frown_ss
+    show shizu adjust_angry at twoleft
     with charachange
 
     shi "…"
 
-    show misha hips_frown_ss
+    show misha hips_frown at tworight
     with charachange
 
     mi "That's unforgivable, absolutely unforgivable! Do you know how much pressure that puts on the eater?"
 
     mi "Why do you think salarymen go out for drinks after work and drink-drink-drink-drink-drink~ until they are sick, when all they want to do is go home and sleep?"
-    
-    show shizu adjust_angry_ss
-    with charachange
 
+    show shizu adjust_smug at twoleft
+    with charachange
+    
     shi "…!"
 
     mi "It's because it's the only correct thing to do, and the only polite way to do things!"
@@ -3015,26 +2840,26 @@ label en_S11:
 
     hi "I'm just not that hungry. I had a big lunch."
 
-    show misha perky_confused_ss
+    show misha perky_confused at tworight
     with charachange
 
     mi "Eh, really? "
 
-    show misha hips_laugh_ss
-    show shizu basic_angry_ss
+    show misha hips_laugh at tworight
+    show shizu behind_frown at twoleft
     with charachange
 
-    mi "Wahahahaha! Wahahahahaha~!"
+    "Wahahahaha! Wahahahahaha~!"
 
     "Shizune sighs inaudibly and then her shoulders slump as she balks wearily."
 
-    show misha hips_smile_ss
-    show shizu behind_blank_ss
+    show misha hips_smile at tworight
+    show shizu behind_blank at twoleft
     with charachange
 
     shi "…"
 
-    show misha hips_grin_ss
+    show misha hips_grin at tworight
     with charachange
 
     mi "You just don't get it, Hicchan…"
@@ -3043,46 +2868,35 @@ label en_S11:
 
     shi "…"
 
-    show shizu behind_smile_ss
-    show misha perky_smile_ss
+    show shizu behind_smile at twoleft
+    show misha perky_smile at tworight
     with charachange
 
     mi "Eat eat eat!"
 
-    #hide shizu
-    #with charaexit
-    
-    show shizu adjust_happy_ss
-    with charachange
+    hide shizu
+    with charaexit
 
     "Shizune grabs a candy bar off the nearest table and presents it to me, but I nod my head to refuse it."
 
-    show shizu behind_frown_ss
+    show shizu behind_frown at twoleft
     with charachange
 
-    #hide misha
-    #with charaexit
+    hide misha
+    with charaexit
 
-    show shizu behind_frown_ss at center
-    show misha perky_smile_ss at left
+    show shizu behind_frown at center
     with charamove
-    
-    show shizu behind_frown_close_ss
-    with characlose
 
     stop music fadeout 3.0
 
     "Hands on her hips, Shizune stands on the tips of her toes to match my height and stares into my eyes, her face uncomfortably close to mine, her mouth turned up in a frown and her eyes blazing with spirit."
-    
-    show misha sign_confused_ss
-    with charachange
 
     mi "What are you doing, Shizune?"
 
     hi "Yeah, what are you doing?"
 
     #This most likely requires a CG.
-
 
     "She grabs onto my collar with both hands to keep from tipping over, pushing us both roughly against the door behind me. I can feel her chest against mine."
 
@@ -3114,73 +2928,59 @@ label en_S11a:
 
     "Raising my hands protectively around my head just in case, I go for it, plunging forth daringly."
 
-    #hide shizu
-    #with charaexit
-    
-    show shizu adjust_angry_close_ss
-    with charachange
-    
-    play sound sfx_impact
-    
-    show shizu cross_rageclosed_close_ss
-    with vpunch
-    
-    show shizu cross_rage_close_ss
-    with charachange
-    
+    hide shizu
+    with charaexit
+
     "As soon as I lean forward, Shizune's eyes widen and she throws her head backwards before slamming her forehead into mine."
-    #with hpunch
+    with hpunch
 
     play music music_running fadein 0.5
 
     "My head slams back into the door behind me, making it seem like I was attacked from two sides at once."
-    
-    show shizu adjust_angryblush_ss
-    with charadistant
 
-    "Shizune turns bright red and jumps back, bristling like a cat. She looks angry; it's like a vein is about to burst in her head."  
+    "Shizune turns bright red and jumps back, bristling like a cat. She looks angry; it's like a vein is about to burst in her head."
+
+    show shizu adjust_blush
+    with charaenter
 
     shi "…!"
 
     mi "Ah, Shizune, what is it?"
 
-    show shizu behind_frustrated_ss
+    show shizu behind_frustrated
     with charachange
 
     shi "…!"
 
-    #show shizu adjust_blush
-    #with charachange
-    
-    show misha perky_confused_ss
+    show shizu adjust_blush
     with charachange
 
     mi "But, that's… I can't… say… that… hahaha…"
 
     "Misha sheepishly taps her fingers together, weakly cracking a nervous laugh. Shizune crushes the candy bar still in her hand with an audible crunch."
 
-    show shizu behind_frown_ss
+    show shizu behind_frustrated
     with charachange
 
     shi "…!"
 
-    show shizu cross_rage_ss
+    show shizu cross_rage
     with charachange
 
     shi "…!!"
 
-    show shizu behind_frustrated_ss
+    show shizu behind_frustrated
     with charachange
 
     mi "But…"
 
-    show shizu cross_rage_ss
+    show shizu cross_rage
     with charachange
 
     hide shizu
     with charaexit
 
-    scene bg school_lobby_ss
+    scene bg school_hallway3
     with locationchange
 
     "Shizune shoves me out the door and into the hallway, and draws a marker from her pocket as if it were a sword. Biting off the cap, she scrawls on the door:"
@@ -3203,7 +3003,7 @@ label en_S11a:
 
     "There is another machine outside; I've seen it a couple of times but never used it."
 
-    scene bg school_courtyard_ss
+    scene bg school_courtyard
     with locationchange
 
     "Picking up my bags, I leave the building and start walking around the perimeter to look for it."
@@ -3212,26 +3012,26 @@ label en_S11a:
 
     "I know there is a third one by the dorms. I've come too far over a stupid can of juice to stop now, I have to get what I came for."
 
-    scene bg school_dormext_full_ss
+    scene bg school_dormext_full
     with locationchange
 
     "I make up my mind to go back to the dorms. Afterwards, though, I doubt I'll have the energy to go back to the student council room."
 
     "I may as well finish up my homework and take a nap. I've been having trouble sleeping lately, and those lost hours of sleep are building up."
 
-    show shizu cross_wut_ss
+    show shizu cross_wut
     with charaenter
 
     "As soon as I turn around, I find Shizune right behind me."
 
     "I'm startled and surprised by her presence. I didn't even hear her sneak up on me."
 
-    show shizu basic_frown_ss
+    show shizu basic_frown
     with charachange
 
     shi "…!"
 
-    show shizu behind_frown_ss
+    show shizu behind_frown
     with charachange
 
     "She starts signing something slowly and deliberately, looking at me every few seconds to see if I'm following her."
@@ -3240,24 +3040,24 @@ label en_S11a:
 
     hi "I don't understand."
 
-    show shizu basic_frown_ss
+    show shizu basic_frown
     with charachange
   
     shi "…"
 
-    show shizu behind_frown_ss
+    show shizu behind_frown
     with charachange
 
     "She continues signing, and I wonder just what I have to do to show her that I don't get what she's saying. Even if I manage to, it's likely Shizune will just keep at it."
 
-    show shizu behind_sad_ss
+    show shizu behind_sad
     with charachange
 
     "She pauses, her hands falling limp at her sides as she hangs her head despondently. It's only for a second, but it's the first time I've seen Shizune looking sad."
 
     hi "Hey, are you alright?"
 
-    show shizu behind_blank_ss
+    show shizu behind_blank
     with charachange
 
     "Shizune takes out a pad and pen, tapping the pen against her ear as she contemplates what to write on it."
@@ -3269,19 +3069,22 @@ label en_S11a:
     "She pulls the pad back and flips to the next page, writing in something else before she thrusts it in my face again. This time it says:"
 
     $ written_note("I apologize.")
+    
+    show shizu basic_angry
+    with charachange
 
     "Almost immediately, she tears out the page and tears it apart, before shredding even those pieces."
 
     "The only way she could more thoroughly dispose of it is if she were to eat it."
+    
+    show shizu basic_normal
+    with charachange
 
     "Without warning, she grabs my hand, pausing as if to see my reaction. As if to allow me to react."
-    
-    show shizu behind_smile_ss
-    with charachange
 
     "When I don't do anything, she squeezes my hand firmly. Shizune's fingers are warm and smooth as they brush my palm."
 
-    scene bg school_lobby_ss
+    scene bg school_council
     with locationskip
 
     "Pulling me along, she tries to take me back inside the building."
@@ -3290,54 +3093,54 @@ label en_S11a:
 
     "Shizune doesn't even notice until she is jerked to a dead halt so suddenly that it almost seems as if she'll fall over."
 
-    show shizu behind_frown_ss
+    show shizu behind_frown
     with charaenter
 
     "Swinging around sharply on the heel of her shoe, she glares at me harshly."
 
-    show shizu adjust_blush_ss
+    show shizu behind_blank
     with charachange
 
     "Then, her expression softens."
-
-    show shizu adjust_blush_ss
+    
+    show shizu adjust_happy
     with charachange
 
     "She touches her hand to her mouth as if to hide a smile, and then tugs at my arm harder, until I decide to let go."
 
-    scene bg school_council_ss
+    scene bg school_council
     with locationchange
+    
+    stop music fadeout 2.0
 
     "We get back to the student council room, where Misha is waiting, lazily staring into space with a pen tucked between her nose and upper lip."
 
-    show misha perky_confused_ss
+    show misha perky_confused
     with charaenter
-
-    #stop music fadeout 2.0
 
     mi "Hm?"
 
-    #play music music_nurse fadein 1.0
+    play music music_nurse fadein 1.0
 
-    show misha perky_smile_ss
+    show misha perky_smile
     with charachange
 
     mi "Ah, hi Hicchan~! Shizune~!"
 
-    show misha perky_smile_ss at twoleft
+    show misha perky_smile at twoleft
     with charamove
 
-    show shizu behind_blank_ss at tworight
+    show shizu behind_blank at tworight
     with charaenter
 
     mi "Hicchan, do you want to learn some more sign language today? We have a lot of time today, so~! Let's make use of it~!"
 
-    show shizu behind_smile_ss at tworight
+    show shizu behind_smile at tworight
     with charaenter
 
     shi "…"
 
-    show misha hips_smile_ss at twoleft
+    show misha hips_smile at twoleft
     with charachange
 
     mi "Let's learn how to sign today! As much as you can! Let's bring your sign language skills up! up! up~! Wahaha!"
@@ -3350,111 +3153,96 @@ label en_S11b:
 
     "Frowning, she tenses up as if to push back."
 
-    show shizu adjust_frown_ss
+    show shizu adjust_blush
     with charachange
 
     "But then she steps backwards, calmly readjusting her glasses, which have fallen slightly forward on her nose."
 
     shi "…"
 
-    show shizu adjust_frown_ss at tworight
-    show misha hips_frown_ss at twoleft
-    with dissolvecharamove
+    show shizu adjust_blush at twoleft
+    with charamove
+
+    show misha hips_frown at tworight
+    with charaenter
 
     play music music_shizune fadein 1.0
 
     mi "Hicchan~!"
-    
-    show shizu behind_frown
-    with charachange
 
     shi "…"
 
     mi "Come on, just have a little to eat! You know, you should eat regularly, even if you aren't hungry."
 
-    show shizu basic_frown_ss
+    show shizu basic_frown at twoleft
     with charachange
 
     shi "…"
 
-    #show shizu behind_frown_ss
-    #with charachange
+    show shizu behind_frown at twoleft
+    with charachange
 
     mi "Besides, we don't want you to just wait while we eat. If we're going to be together, we should do everything together."
 
-    show misha perky_confused_ss
+    show misha perky_confused at tworight
     with charachange
 
     mi "Huh?"
 
-    show misha hips_laugh_ss
+    show misha hips_laugh at tworight
     with charachange
 
     mi "Ahahahahahaha~!"
 
-    show shizu basic_normal2_ss
+    show shizu behind_blank at twoleft
     with charachange
 
     "I look at Shizune. Her expression isn't as hard-edged and severe as it usually is."
 
     "Her features are soft and feminine, as much in the amber sunlight now as they were in the soft moonlight back at the festival."
 
-    show misha hips_grin_ss
-    show shizu basic_frown_ss
+    show misha hips_grin at tworight
     with charachange
 
     "She sees me looking at her and frowns before tearing open the candy bar wrapper in her hand and taking a bite of it almost spitefully."
 
     hi "I thought that was for me."
 
-    show misha hips_smile_ss
+    show misha hips_smile at tworight
     with charachange
 
     mi "It's okay, Hicchan, there's plenty of other things here! Ah, I know~! This is the last juice from the machine outside, do you want it?"
 
-    show misha sign_smile_ss
+    show misha sign_smile at tworight
     with charachange
 
     mi "If you don't, I'll drink it~! Going~ once, going twice…"
 
     hi "I'll take it, I'll take it."
 
-    #hide misha
-    #hide shizu
-    #with charaexit
-    
-    show misha perky_smile_ss at twoleftsit
-    show shizu behind_blank_ss at tworightsit
-    with dissolvecharamove
+    hide misha
+    hide shizu
+    with charaexit
 
     "I sit down at the table next to Misha, and Shizune immediately sits down in the seat at my right."
 
     shi "…"
-    
-    show misha hips_grin_ss
-    with charachange
 
     mi "Wahaha! Hicchan, so rude! You're supposed to pull a chair out for a lady!"
 
     hi "A lady?"
-    
-    show misha cross_laugh_ss
-    show shizu behind_frustrated_ss
-    with charachange
 
     mi "Hahahahaha~!"
     with hpunch
 
     "Shizune swiftly kicks the leg of my chair as soon as Misha signs that to her."
 
-    scene bg school_council_ss
-    show misha perky_smile_ss at twoleftsit
-    show shizu behind_blank_ss at tworightsit
+    scene bg school_council
     with shorttimeskip
 
-    #show misha perky_smile_ss at tworight
-    #show shizu behind_frown_ss at twoleft
-    #with charachange
+    show misha perky_smile at tworight
+    show shizu behind_frown at twoleft
+    with charaenter
 
     "We eat, with Misha taking the time to tell me what they did that day between bites of her sandwich."
 
@@ -3466,28 +3254,29 @@ label en_S11b:
 
     hi "Not that I miss the extortion."
 
-    show misha hips_laugh_ss
+    show shizu behind_blank at twoleft
+    show misha hips_laugh at tworight
     with charachange
 
     mi "Hahaha!"
 
     shi "…"
 
-    show misha hips_grin_ss
+    show misha hips_grin at tworight
     with charachange
 
-    #stop music fadeout 2.0
+    stop music fadeout 2.0
 
     "Shizune nurses a canned coffee in her hand, sipping from it pensively. She downs the rest in a single gulp and raps her knuckles sharply against the table to get Misha's attention."
 
-    #play music music_nurse fadein 1.0
+    play music music_nurse fadein 1.0
 
-    show shizu behind_frown_ss
+    show shizu behind_frown at twoleft
     with charachange
 
     shi "…"
 
-    show misha hips_smile_ss
+    show misha hips_smile at tworight
     with charachange  
 
     mi "Okay~! Time for more sign language! Time to learn more sign language~! More and more!"
@@ -3498,7 +3287,7 @@ label en_S11b:
 
 label en_S11c:
 
-    scene bg school_council_ni
+    scene bg school_council
     play sound sfx_time
     with shorttimeskipsilent
 
@@ -3511,8 +3300,6 @@ label en_S11c:
     "Every time I try to leave, they both do everything short of physically binding me to the chair to keep it going."
 
     stop music fadeout 3.0
-    
-    play ambient sfx_cicadas fadein 0.5
 
     scene bg school_courtyard_ni
     with locationskip
@@ -3521,11 +3308,9 @@ label en_S11c:
 
     "It's already dark out."
 
-    #play music music_normal fadein 1.0
+    play music music_normal fadein 1.0
 
     "Just how long have I been here?"
-    
-    stop ambient fadeout 0.5
 
     scene bg school_dormhallway
     with locationskip
@@ -3544,46 +3329,41 @@ label en_S11c:
 
     "I fall backwards onto my bed and decide to just go to sleep."
 
-    #stop music fadeout 1.0
+    stop music fadeout 1.0
 
     "This is a bad way to start the week."
-    
+
     play music music_twinkle fadein 0.5
-    
-    scene bg school_dormhisao_ni
-    with shorttimeskip   
 
     "As I lie in the dark, waiting to sleep, I find my thoughts returning again and again to what I did today."
 
     if seen_scene("S11a"):
 
-        scene bg school_council_fb
-        show noiseoverlay
-        with flashback
+        scene bg school_council
+        with locationskip
         #If the CG moment from earlier is made, then it would fit in here.
         
         "That was pretty dumb of me. And, Shizune hits surprisingly hard."
         
-        show shizu adjust_blush_fb behind noiseoverlay
+        show shizu adjust_blush
         with charaenter
         
         "I remember how her face looked as she blushed, as she balked, as she apologized. It's been a while since I've been able to see her so girlish and cute."
 
     else:
 
-        scene bg school_council_fb
-        show noiseoverlay
-        with flashback
+        scene bg school_council
+        with locationskip
         #Instead of the CG, it will be better to go with a regular flashback for this one.
         
         "Shizune seemed different today. As if she had been upset."
         
-        show shizu basic_normal2_fb behind noiseoverlay
+        show shizu behind_sad
         with charaenter
         
         "The wistful look on her face is clear in my memory; that melancholy expression on her face that looked like mixed happiness and regret. I've never seen her looking so vulnerable."
 
-    scene bg school_dormhisao_ni
+    scene bg school_dormhisao
     with locationskip
 
     "Lately, I've been thinking about Shizune a lot. In retrospect, I remember the first time I met her."
@@ -3650,7 +3430,7 @@ label en_S12:
 
     "The rest of the day goes by uneventfully."
 
-    scene bg school_lobby
+    scene bg school_council
     with locationskip
 
     "When classes are through, I head to the student council room."
@@ -3660,8 +3440,6 @@ label en_S12:
     "If it's the same amount of work as before, which I think is more likely, then they have to make up all that work sometime."
 
     "That's right. These past few days, I've never seen them leave."
-    
-    play sound sfx_dooropen
 
     scene bg school_council
     with locationchange
@@ -3681,11 +3459,8 @@ label en_S12:
 
     mi "Ah, Shizune! Hicchan is here!"
 
-    #hide misha
-    #with charaexit
-    
-    show misha invis at offscreenright
-    with dissolvecharamove
+    hide misha
+    with charaexit
 
     "She rushes over to Shizune and grabs her shoulders to get her attention. Shizune looks at Misha, then notices me and closes the book in her hands."
 
@@ -3709,8 +3484,10 @@ label en_S12:
     with charaenter
 
     "As soon as I say that, I realize I was wrong and regret it."
+    
+    #I really like adjust_happy, it's such a soft smile that's easy to use as filler when you want an expression change without anything too strong.
 
-    show shizu cross_wut at tworight
+    show shizu adjust_happy at tworight
     with charaenter
 
     shi "…"
@@ -3734,7 +3511,6 @@ label en_S12:
     with charaexit
 
     play sound sfx_can_clatter
-    
     "Shizune drinks the rest of her coffee and throws the empty can into the wastebasket, where it clatters against however many similar cans must be in there."
 
     "It's obvious to me that they're tired. Shizune especially. She looks as if she'll fall asleep at any second."
@@ -3747,17 +3523,14 @@ label en_S12:
 
     hi "Do you need any help?"
 
-    show shizu behind_blank at centersit
+    show shizu behind_blank
     with charaenter
 
     shi "…"
 
     mi "Hicchan, you want to help? It's okay, we're nearly done, so…"
-    
-    #Lol typo -md01
-    #hi "Even if it's a little bit, I can help. Work goes faster when it's split three days, you know. That's simple math."
-    
-    hi "Even if it's a little bit, I can help. Work goes faster when it's split three ways, you know. That's simple math."
+
+    hi "Even if it's a little bit, I can help. Work goes faster when it's split three days, you know. That's simple math."
 
     mi "Ah… math, huh?"
 
@@ -3765,6 +3538,11 @@ label en_S12:
     with charachange
 
     #Wait what. Isn't this supposed to be a signing sprite?
+    
+    #she doesn't have a good basic_ sprite with a gentle kind of smile
+    #on second thought, is that one of my old messages?
+    #am I talking to myself from the past?
+    #regardless, this is a repair project, not a "fix whatever bad scene direction we want" project, as much as I wish it were
     
     shi "…"
 
@@ -3777,24 +3555,24 @@ label en_S12:
 
     mi "Okay? Okay!"
 
-    scene bg school_council_ss
+    scene bg school_council
     with shorttimeskip
 
     "By the time I'm finished filing everything, almost forty minutes have passed. That was hardly fast, and I can see that Shizune is still working, having moved onto what looks like a list of clubs."
 
-    show shizu behind_blank_ss at centersit
+    show shizu behind_blank
     with charachange
 
     "Shizune sees me looking at her and stops. She lifts her hands up as if to sign, but then hesitates. She signs anyway."
 
     stop music fadeout 1.0
 
-    show shizu behind_smile_ss
+    show shizu behind_smile
     with charachange
 
     shi "…"
 
-    show shizu behind_blank_ss
+    show shizu behind_blank
     with charachange
     
     play music music_shizune fadein 1.5
@@ -3805,12 +3583,12 @@ label en_S12:
 
     ssh "Do you want to stop working now?"
 
-    show shizu behind_smile_ss
+    show shizu behind_smile
     with charachange
     
     shi "…"
     
-    show shizu behind_blank_ss
+    show shizu behind_blank
     with charachange
     
     "Everything after that is lost on me."
@@ -3826,11 +3604,8 @@ label en_S12:
 
     hi "You seem tired today."
 
-    #show shizu cross_wut
-    #with charaenter
-    
-    show shizu basic_frown_ss at centersit
-    with charachange
+    show shizu behind_frown
+    with charaenter
 
     "She frowns, clearly displeased that I'm talking to her when I know she can't hear me, but she doesn't make any move to stop me."
 
@@ -3838,7 +3613,7 @@ label en_S12:
 
     hi "I'm going to go early, then."
 
-    show shizu behind_blank_ss
+    show shizu behind_blank
     with charachange
 
     "Shizune continues to stare at me analytically through her glasses, a neutral expression on her face."
@@ -3847,22 +3622,19 @@ label en_S12:
 
     #Going for a knockout punch combination here
 
-    show shizu behind_smile_ss
+    show shizu behind_smile
     with charachange
 
     "Shizune starts signing something tentatively, but is interrupted by a need to yawn."
 
-    show shizu adjust_blush_ss
-    with charachange
-
     "Clasping her hand over her mouth, she tries her best to hide it."
 
-    #show shizu adjust_blush
-    #with charachange
+    show shizu adjust_blush
+    with charachange
 
     "She blushes, her cheeks flushing a deep red. I don't know why she's so embarrassed."
 
-    show shizu cross_wut_ss
+    show shizu basic_frown
     with charachange
 
     "Spotting the confused look on my face, Shizune points her finger towards the door, looking both agitated and abashed."
@@ -3874,7 +3646,7 @@ label en_S12:
 
     "Waving goodbye, I pick up my things and leave, buying a drink from the vending machine before heading back to the dorms."
 
-    scene bg school_dormhisao_ss
+    scene bg school_dormhisao
     with locationskip
 
     play sound sfx_doorknock
@@ -3882,7 +3654,6 @@ label en_S12:
     "Closing the door to my room behind me, I've barely taken off my shoes before there is a knock at the door."
 
     play sound sfx_dooropen
-
     scene bg school_dormhallway
     with locationchange
 
@@ -4014,8 +3785,9 @@ label en_S12x:
 
     stop music fadeout 2.5
 
-    scene bg school_dormhisao_ss
+    scene bg school_dormhisao
     with locationchange
+    play sound sfx_doorclose
 
     "I go back to my own room and open up my book on sign language."
 
@@ -4049,7 +3821,7 @@ label en_S13:
     "It's still a trial-and-error process for the most part, as a real sign language “conversation” is much faster than how it is in class. It seems like that, at least, is the same for every language."
 
     scene bg school_council
-    show shizu cross_wut 
+    show shizu behind_frown 
     with locationskip
 
     "After classes, I go to the student council room again to find Shizune sitting in front of the door and frowning at me the second I open it, as if she has been waiting like this for hours."
@@ -4059,7 +3831,7 @@ label en_S13:
 
     shi "…!"
 
-    show shizu cross_wut
+    show shizu behind_frown
     with charachange
     
     hi "What?"
@@ -4069,7 +3841,7 @@ label en_S13:
     "Misha tackles me from behind, almost knocking me over." with vpunch
 
     show bg school_council at bgleft
-    show shizu cross_wut at twoleft
+    show shizu behind_frown at twoleft
     with charamove
 
     show misha hips_grin at tworight
@@ -4142,10 +3914,7 @@ label en_S13:
     ssh "First, you're late. Now, look at you, you don't even look guilty. Do you know how long I've been sitting here waiting for you to come in?"
 
     mi "…Well, it's good that you're here, Hicchan, but we don't have any work today!"
-    
-    #Dat grammar -md01
-    #"I nod slowly, fighting a smile. I had always thought that I was missing losing something in translation."
-    
+
     "I nod slowly, fighting a smile. I had always thought that I was losing something in translation."
 
     "The thought of Shizune sitting there for an hour in that pose just to make me feel guilty when I came in is strangely cute."
@@ -4154,31 +3923,19 @@ label en_S13:
 
     ssh "Do you understand a word I'm saying? I'm talking to you, Hisao. Idiot, I can't believe you don't understand me. And after all those lessons. You clearly don't study enough, that is your problem."
 
-    show shizu cross_wut at twoleft
+    show shizu basic_frown at twoleft
     with charachange
-    
-    #Added "for him" at the end of this line because as it was originally, the bracket at the end of this line was the only thing on the next line in the textbox. It looked ugly so I changed it. -md01
-    #ssh "Misha, we should hit him. It's important to study. More studying means less beatings!"
 
-    ssh "Misha, we should hit him. It's important to study. More studying means less beatings for him!"
+    ssh "Misha, we should hit him. It's important to study. More studying means less beatings!"
 
     show misha sign_smile at tworight
     with charachange
 
     shi "…"
-    
-    show shizu behind_frown
-    with charachange
 
     shi "……"
-    
-    show shizu basic_frown
-    with charachange
 
     shi "…!"
-    
-    show shizu behind_frustrated
-    with charachange
 
     shi "…"
 
@@ -4206,15 +3963,12 @@ label en_S13:
     mi "Don't worry, Hicchan~! I'm sure you'll pass with flying colors! After all~!"
 
     "She pauses for effect."
-    
-    show misha hips_grin
-    with charachange
 
     mi "We're your teachers!"
 
     "The two of them throw their arms out like they are announcing the opening of a store. Are they a comedy duo?"
 
-    show shizu adjust_angryblush at twoleft
+    show shizu adjust_blush at twoleft
     with charachange
 
     "When I don't respond, Shizune turns bright red and draws her foot back like she is going to kick me."
@@ -4227,7 +3981,7 @@ label en_S13:
     ssh "Stop, stop stop! It's test time!"
 
     show misha hips_smile at tworight
-    show shizu behind_blank
+    show shizu basic_normal at twoleft
     with charachange
 
     mi "Okay, okay~! Time for your test, Hicchan~!"
@@ -4237,45 +3991,27 @@ label en_S13:
     hi "That's your name, isn't it?"
 
     mi "That's right!"
-    
+
     shi "…"
 
     mi "Now, this!"
 
     hi "My name?"
-    
-    show shizu behind_frown at twoleft
-    with charachange
 
     ssh "Well, you learned something, but… This is too easy."
+
+    show shizu behind_frown at twoleft
+    with charachange
 
     "Shizune pouts, still pursing her lips in a tight frown."
 
     ssh "This, what is this?"
 
     mi "Okay~! Try this, Hicchan, what does this mean?"
-    
-    show shizu behind_blank
-    with charachange
 
     "Shizune starts making a very complicated series of signs that seems to go on without end."
-    
-    show shizu basic_normal2
-    with charachange
-    
-    show shizu adjust_frown
-    with charachange
-    
-    show shizu out_serious
-    with charachange
-    
-    show shizu behind_blank
-    with charachange
 
     "I have never seen anything like it. It even includes shadow puppets and a couple of silly-looking full body movements."
-    
-    show misha cross_laugh
-    with charachange
 
     "Misha bursts out laughing. I wonder if I have been insulted."
 
@@ -4308,13 +4044,15 @@ label en_S13:
 
     "I try to make the most severe and displeased expression I can imagine to show I am not amused."
 
-    show shizu cross_wut at twoleft
-    show misha perky_confused at tworight
+    show shizu basic_frown at twoleft
     with charachange
 
     "Misha responds with a look of blank confusion, whereas Shizune seems to take it as an insult."
 
     shi "…!"
+
+    show misha perky_confused at tworight
+    with charachange
 
     mi "Hey, what's with that expression?"
 
@@ -4341,9 +4079,6 @@ label en_S13:
     mi "Hicchan, Shizune wants to show you her serious face, too! This sounds like a fun game~!"
 
     "I can almost see the steam about to shoot out of Shizune's ears. She grabs Misha by the shoulders and shakes her."
-    
-    show shizu cross_angry
-    with charachange
 
     shi "…!"
 
@@ -4351,9 +4086,10 @@ label en_S13:
     with charachange
 
     mi "What? Okay, okay! Okay! Okay~! Hicchan~! Let's learn more sign language."
+    
+    show shizu cross_angry at twoleft
+    with charachange
 
-    #show shizu behind_blank at twoleft
-    #with charachange
 
     hi "I already know some sign language. I've been reading up on it on my own. And going to the sign language courses. And coming here."
 
@@ -4396,8 +4132,8 @@ label en_S13:
 
     "Shizune and Misha blush profusely, Misha stammering incomprehensibly while Shizune's arms flail about, windmilling in every direction quickly enough to generate lift."
 
-    show shizu cross_rage_close at twoleft
-    show misha hips_frown_close at tworight
+    show shizu cross_rage at twoleft
+    show misha hips_frown at tworight
     with charachange
 
     "The two of them nod to each other and immediately start pushing me out the door, Misha laughing nervously, the whole time. Shizune is still red-faced, her eyes open in a mixture of shock and fear."
@@ -4410,12 +4146,12 @@ label en_S13:
 
     hi "What?"
 
-    show misha hips_grin_close at tworight
+    show misha hips_grin at tworight
     with charachange
 
     mi "Thanks, Hicchan!"
 
-    scene bg school_lobby
+    scene bg school_hallway3
     play sound sfx_doorslam
     with hpunch
 
@@ -4442,7 +4178,7 @@ label en_S13:
 
     mi "And it seems like you did it for us. That's…"
 
-    show shizu cross_wut at tworight
+    show shizu adjust_blush at tworight
     with charachange
 
     shi "…"
@@ -4462,8 +4198,6 @@ label en_S13:
 
     scene bg suburb_shanghaiext
     with locationchange
-    
-    play sound sfx_storebell
 
     scene bg suburb_shanghaiint
     with locationchange
@@ -4534,7 +4268,7 @@ label en_S13:
 
     yu "I'm sorry! Sorry!"
     
-    show yuukoshang neurotic_down at Transform(xanchor=0.5, yanchor=0.5, xpos= 0.5, ypos=0.85)
+    show yuukoshang neurotic_down at Transform(ypos=0.35, xanchor=0.5, xpos=0.5)
     with Dissolvemove(0.2)
     with Pause(0.05)
     show yuukoshang worried_up at center
@@ -4555,11 +4289,15 @@ label en_S13:
 
     hide yuukoshang
     with charaexit
+    show yukoshang neurotic_up at offscreenright
+    with charaenter
+    hide yuukoshang
+    with charaexit
     
     "Shizune hits in the back of the head me as soon as Yuuko's back is to us." with vpunch
 
-    show shizu cross_rage at tworightsit
-    show misha perky_confused at twoleftsit
+    show shizu cross_rage at tworight
+    show misha perky_confused at twoleft
     with charaenter
 
     ssh "Idiot!"
@@ -4568,12 +4306,12 @@ label en_S13:
 
     hi "You should switch those sentences around."
 
-    show shizu cross_wut
+    show shizu cross_rageclosed at tworight
     with charachange
 
     shi "…!"
 
-    show misha hips_laugh
+    show misha hips_laugh at twoleft
     with charachange
 
     "Shizune starts signing incomprehensibly as Misha laughs."
@@ -4586,9 +4324,9 @@ label en_S13:
 
     "After a lot of prodding from Shizune and Misha, she sits down with us and has a slice when the three of us manage to convince her that her worries about charging us for something she ate a piece of are groundless."
 
-    show shizu behind_blank at centersit
-    show yuukoshang neutral_up at rightsit
-    show misha perky_smile at leftsit
+    show shizu behind_blank at center
+    show yuukoshang neutral_up at right
+    show misha perky_smile at left
     with charaenter
 
     mi "Yuuko~! Tell us about your boyfriend!"
@@ -4597,7 +4335,7 @@ label en_S13:
 
     yu "Is the cake good? I made this cake."
 
-    show yuukoshang smile_up
+    show yuukoshang smile_up at right
     with charachange
 
     ssh "Very good."
@@ -4619,15 +4357,15 @@ label en_S13:
 
     "I try to pitch in and help pay for everything we ate, which turns out to have been quite a lot, but Shizune insists on paying and nudges me towards the exit."
 
-    scene bg suburb_shanghaiext_ss
-    show shizu behind_frown_ss
+    scene bg suburb_shanghaiext
+    show shizu behind_frown
     with locationchange
 
     ssh "Idiot. Who pays the cost of a party held for them? You should be smarter than that."
 
     ssh "Let's walk faster, it's getting cold."
 
-    scene bg suburb_roadcenter_ss
+    scene bg suburb_roadcenter
     with locationchange
 
     "She is right, it's getting dark out, and the wind is picking up. It's kind of chilly for spring, but not too unusual."
@@ -4637,7 +4375,7 @@ label en_S13:
 
     "I take off my jacket and drape it across her shoulders before she has the chance to protest."
 
-    show shizu adjust_blush_ss
+    show shizu adjust_blush
     with charaenter
 
     shi "…"
@@ -4654,14 +4392,14 @@ label en_S13:
 
     mi "It's been a while since the last time she did that."
 
-    scene bg school_gate_ss
+    scene bg school_gate
     with locationskip
 
     "When we get back to the school, Shizune hands me back my jacket, and we part ways."
 
     "As I put it back on, I notice my jacket smells faintly of perfume. I never noticed Shizune wore perfume until now."
 
-    scene bg school_dormhisao_ss
+    scene bg school_dormhisao
     with locationskip
 
     "When I reach the dorms, I almost collapse on my bed, feeling extremely tired despite all the sugar I have probably consumed today."
@@ -4678,12 +4416,6 @@ label en_S13:
 
 #********************************************************************************************************************************
 label en_S14:
-
-    scene black
-
-    scene bg school_dormhisao
-    with dissolve    
-    
     nvl clear
 
     play music music_normal fadein 1.0
@@ -4705,7 +4437,10 @@ label en_S14:
 
     n "My problem is that I can understand sign language pretty quickly, but it's a little harder for me to keep up in a conversation. Basically, I can understand it, but can't “speak” it. Apparently, not an uncommon problem in any language."
 
-    n "As soon as I enter the room, I notice that it seems especially hectic today. Misha chews the end of a pencil nervously as she pours over a messy pile of papers spread out on her desk."
+    scene bg school_council
+    with locationchange
+
+    n "As soon as I enter the room, I notice that it seems especially hectic today. Misha chews the end of a pencil nervously as she pores over a messy pile of papers spread out on her desk."
 
     n "Even Shizune looks anxious; her usually neat hair is noticibly ruffled, and I see her pick at her collar while she flips through a thick, leatherbound book, one of several stacked to her left."
 
@@ -4713,10 +4448,10 @@ label en_S14:
 
     nvl clear
 
-    show misha perky_smile at twoleftsit
+    show misha perky_smile at twoleft
     with charaenter
 
-    show shizu behind_blank at tworightsit
+    show shizu behind_blank at tworight
     with charaenter
 
     mi "Hi~. Hicchan!"
@@ -4731,32 +4466,32 @@ label en_S14:
 
     hi "Skipping class again?"
 
-    show shizu cross_wut
+    show shizu cross_wut at tworight
     with charachange
 
     "Shizune crosses her arms, frowning, her eyes looking off to the side evasively. She signs something curtly."
 
     shi "…"
 
-    show misha hips_smile
+    show misha hips_smile at twoleft
+    show shizu basic_sparkle
     with charachange
 
     mi "Well, Hicchan, it was really the only way~! I want to go home today, you know, you know!"
 
     mi "Sorry we're not all diligent students like you."
 
-    show misha perky_confused
+    show misha perky_confused at twoleft
     with charachange
+    
+    
 
     "Misha shrugs, her words infused with teasing sarcasm that fits Shizune's playful smile perfectly."
 
-    show misha perky_smile
+    show misha perky_smile at twoleft
     with charachange
 
     mi "Hahahaha~! Hicchan looks upset, Shizune."
-
-    show shizu basic_sparkle
-    with charachange
 
     "I look upset? I try to recoup, stepping forward and taking a small bow."
 
@@ -4764,36 +4499,36 @@ label en_S14:
 
     hi "But, thank you for the compliment. It's true, I walk a righteous path."
 
-    show shizu behind_frown
+    show shizu behind_frown at tworight 
     with charachange
 
     with Pause (0.5)
 
-    show shizu cross_wut
+    show shizu cross_wut at tworight
     with charachange
 
     with Pause (0.5)
 
-    show shizu behind_blank
+    show shizu behind_blank at tworight
     with charachange
 
-    "Shizune frowns, then raises an eyebrow, looking perplexed. She thinks over her answer for what seems like an eternity."
+    "Shizune's frowns, then raises an eyebrow, looking perplexed. She thinks over her answer for what seems like an eternity."
 
     shi "…"
 
-    show misha perky_confused
+    show misha perky_confused at twoleft
     with charachange
 
     mi "What does that mean, Hicchan? You mean like Kamen Rider?"
 
     hi "Well, no."
 
-    show shizu behind_smile
+    show shizu behind_smile at tworight
     with charachange
 
     "Shizune betrays her severe expression with a slight, wry smile."
 
-    show shizu behind_frown
+    show shizu behind_frown at tworight
     with charachange
 
     ssh "Stop being silly. Do you want to help us out or not?"
@@ -4802,33 +4537,20 @@ label en_S14:
 
     stop music fadeout 1.0
 
-    show misha hips_frown
+    show misha hips_smile at twoleft
     with charachange
 
     mi "No you don't!"
 
     play music music_comedy fadein 1.0
 
-    #hide misha
-    #with charaexit
+    hide misha
+    with charaexit
 
-    #hide shizu 
-    #with charaexit
-    
-    show shizu basic_sparkle at tworight
-    show misha hips_frown at twoleft
-    with dissolvecharamove
-    
-    show shizu basic_sparkle_close
-    show misha perky_smile_close
-    with characlose
+    hide shizu 
+    with charaexit
 
     "Both of them leap into action, closing the distance between us before their chairs hit the floor."
-    
-    show shizu basic_sparkle_close at offscreenright
-    show misha perky_smile_close:
-        xanchor 0.5 yanchor 0.0 ypos 1.0
-    with charamove
 
     extend " Shizune grabs me, pinning my arms to my sides, and Misha's arms clamp around my leg."
     with vpunch
@@ -4864,14 +4586,14 @@ label en_S14:
 
     hi "This is not small. You have to be kidding."
 
-    show shizu behind_blank at tworight
+    show shizu adjust_happy at tworight
     with charaenter
 
     "Shizune's eyes dart expectantly to Misha, waiting for her to translate my reply. When Misha does so, Shizune smiles softly and nods her head from side to side."
 
     hi "So you're not kidding…"
 
-    scene bg school_council_ss
+    scene bg school_council
     with shorttimeskip
 
     "For the next two hours, I find myself going back and forth through the rosters to move all the information contained in them into one massive student and faculty omnibus. I see Kenji's name and suddenly remember I have to find his ID."
@@ -4880,19 +4602,19 @@ label en_S14:
 
     "Shizune's face inches into my field of vision, a stern look on her face."
 
-    show shizu behind_frustrated_ss
+    show shizu cross_rage
     with charaenter
 
     ssh "What are you doing? Why aren't you working?"
 
     hi "I could ask you the same thing."
 
-    show shizu adjust_blush_ss
+    show shizu adjust_blush
     with charachange
 
     with Pause (0.2)
 
-    show shizu behind_frown_ss
+    show shizu behind_frown
     with charachange
 
     "She blinks, then her mouth crunches into a frown. It looks like I've caught her there. Finally."
@@ -4909,14 +4631,14 @@ label en_S14:
 
     "Her eyes fix themselves sharply on mine. She stands on the tips of her toes so that we are on the same level."
 
-    show shizu cross_angry_ss
+    show shizu cross_rage
     with charachange
 
     ssh "Stop that."
 
     hi "Stop what?"
 
-    show shizu behind_frustrated_ss
+    show shizu behind_frustrated
     with charachange
 
     ssh "What is the point of understanding sign language if you can't sign it? I thought you told Misha she isn't a phone. When you're talking to me, you should talk to me."
@@ -4928,13 +4650,10 @@ label en_S14:
     mi "Hicchan, you think of me as a phone? What does that mean, Hicchan?"
 
     hi "What?"
-    
-    #Some words got mixed up here -md01
-    #ssh "What you have done now? All you do is hurt people."
-    
-    ssh "What have you done now? All you do is hurt people."
 
-    show shizu cross_rage_ss
+    ssh "What you have done now? All you do is hurt people."
+
+    show shizu cross_rage
     with charachange
 
     extend " You are a monster."
@@ -4951,7 +4670,7 @@ label en_S14:
 
     stop music fadeout 3.0
 
-    scene bg school_council_ni
+    scene bg school_council
     with shorttimeskip
 
     "By the time I manage to straighten things out with both of them, I notice that it's gotten dark out, and I'm still not finished."
@@ -4966,7 +4685,7 @@ label en_S14:
 
     with Pause (0.2)
 
-    show shizu cross_wut at twoleft
+    show shizu adjust_angry at twoleft
     with charachange
 
     "Shizune peeks at my watch over my shoulder, and then jumps back as if stung by something."
@@ -4975,11 +4694,8 @@ label en_S14:
 
     show misha hips_laugh at tworight
     with charachange
-    
-    #More words got mixed up here. -md01
-    #mi "Wahahaha! Yeah, let's hurry up~! Hicchan, we're can't leave here until all of us are done with everything!"
-    
-    mi "Wahahaha! Yeah, let's hurry up~! Hicchan, we can't leave here until all of us are done with everything!"
+
+    mi "Wahahaha! Yeah, let's hurry up~! Hicchan, we're can't leave here until all of us are done with everything!"
 
     show misha hips_grin at tworight
     with charachange
@@ -4994,7 +4710,7 @@ label en_S14:
     show shizu adjust_happy at twoleft
     with charachange
 
-    "Shizune pushes up her glasses and tries to brush back her tousled hair with her hand, blushing and shooting me an angry look when I catch her in the act."
+    "Shizune pushes up her glasses and tries to brush back her toussled hair with her hand, blushing and shooting me an angry look when I catch her in the act."
 
     "Before she can compose her thoughts, Misha throws her arms around her from behind."
 
@@ -5027,7 +4743,7 @@ label en_S14:
 
     ssh "You're going to leave me alone here?"
 
-    show shizu cross_wut
+    show shizu basic_angry
     with charachange
 
     "Without even giving me a chance to answer her, she crosses her arms, her eyebrows turned sharply downwards in a cold stare, but her gaze evasive and unfocused."
@@ -5067,9 +4783,6 @@ label en_S14:
     ssh "I'm done!"
 
     "She smiles gleefully, like an excited child. It's an expression that I could never have imagined on Shizune."
-    
-    show shizu adjust_smug
-    with charachange
 
     ssh "Now I've done my share, so it's all on you, Hisao!"
 
@@ -5078,7 +4791,7 @@ label en_S14:
     show shizu basic_sparkle
     with charachange
 
-    "Her hands clasped behind her, Shizune grins mischievously and bounces up and down on the balls of her feet."
+    "Her hands clasped, Shizune grins mischievously and bounces up and down on the balls of her feet."
 
     show shizu behind_smile
     with charachange
@@ -5090,7 +4803,7 @@ label en_S14:
     hide shizu
     with charaexit
 
-    scene bg school_lobby_ni
+    scene bg school_council
     with locationchange
 
     "We leave the building together, Shizune taking the initiative and going on ahead of me."
@@ -5099,12 +4812,12 @@ label en_S14:
 
     "Turning off the light just as I reach her, she runs towards the exit, pausing every now and then to wave impatiently at me."
 
-    scene bg school_courtyard_ni
+    scene bg school_courtyard
     with locationchange
 
     "When we get outside, Misha is leaning against the side of the building, hiding behind the doorframe."
 
-    show misha perky_smile_ni
+    show misha perky_smile 
     with charaenter
 
     mi "Wow, that took a long time, Hicchan, Shizune."
@@ -5113,17 +4826,17 @@ label en_S14:
 
     hi "I thought you went back to your room."
 
-    show misha hips_laugh_ni
+    show misha hips_laugh
     with charachange
 
     mi "Wahahaha~! "
 
-    show misha hips_grin_ni
+    show misha hips_grin
     with charachange
 
     extend "No, I could never do that!"
 
-    show misha perky_smile_ni
+    show misha perky_smile
     with charachange
 
     mi "Hey, Hicchan, that reminds me."
@@ -5132,20 +4845,20 @@ label en_S14:
 
     hi "Yeah, most likely. Why?"
 
-    show misha perky_sad_ni
+    show misha perky_sad
     with charachange
 
     mi "Nothing, nothing~."
 
-    show misha perky_smile_ni
+    show misha perky_smile
     with charachange
 
     "Misha talks leaning against her hands, which are behind her back. Shizune's head appears over my shoulder, surprising me."
 
-    show misha perky_smile_ni at tworight
+    show misha perky_smile at tworight
     with charamove
 
-    show shizu cross_wut_ni at twoleft
+    show shizu behind_blank at twoleft
     with charaenter
 
     shi "…?"
@@ -5166,7 +4879,7 @@ label en_S14:
 
     "But I'm probably looking too deeply into it. It's likely that it didn't mean anything at all."
 
-    scene bg school_dormext_full_ni
+    scene bg school_dormext_full
     with locationchange
 
     with Pause (0.5)
@@ -5181,11 +4894,10 @@ label en_S14:
 
     "Throwing the empty can out on my way back to my room, I practice signing to myself, probably looking very silly to the few students I pass along the way."
 
-    scene bg school_council_fb
-    show noiseoverlay
-    with flashback
+    scene bg school_council
+    with locationskip
 
-    show shizu basic_happy_fb behind noiseoverlay
+    show shizu behind_smile
     with charaenter
 
     "I think about how Shizune acted earlier; so cheerful and energetic. I haven't seen Shizune hanging out with a lot of people. I think that it is, more or less, just her and Misha."
@@ -5215,11 +4927,11 @@ label en_S14:
 label en_S15:
 
     play music music_pearly fadein 1.5
-    
-    scene bg school_scienceroom
-    with dissolve
 
     "Saturday arrives quietly, almost creeping up on me. Lately I'm swamped with so much student council work that there are moments when I lose track of the time. It's not too big a stretch to rationalize that I could lose track of the day as well."
+
+    scene bg school_scienceroom
+    with dissolve
 
     "Sitting in class with just a few minutes to go before I can enjoy the rest of my weekend, the thought of dodging student council duties today pops into my mind."
 
@@ -5231,42 +4943,25 @@ label en_S15:
 
     "What would Shizune say if she knew? She would probably frown, give me a sharp stare, cross her arms, push up her glasses grimly with her index finger, then say something like, “Hisao, I can't believe you, trying to abandon your responsibilities.”"
 
-    scene bg school_council_fb
-    show noiseoverlay
-    with flashback
+    scene bg school_council
+    with dissolve
     #flashback!
     # -- should be a CG of the scene this is referring to, not just an insert
 
-    show shizu behind_frown_fb behind noiseoverlay
+    show shizu behind_frown
     with charaenter
 
-    #Broke up this line so it flows with the direction better -md01
-    #"An image of Shizune's face, her mouth turned down in displeasure, her eyes leering at me over her glasses, fills my mind. The image of Shizune pulling the lapels of my jacket tighter around her to hide her reddening face immediately replaces it."
-    
-    "An image of Shizune's face, her mouth turned down in displeasure, her eyes leering at me over her glasses, fills my mind." 
-    
-    scene bg suburb_roadcenter_fb
-    show noiseoverlay
-    with flashback
-    
-    show shizu adjust_blush_fb behind noiseoverlay
-    with charaenter
-    
-    "The image of Shizune pulling the lapels of my jacket tighter around her to hide her reddening face immediately replaces it."
+    "An image of Shizune's face, her mouth turned down in displeasure, her eyes leering at me over her glasses, fills my mind. The image of Shizune pulling the lapels of my jacket tighter around her to hide her reddening face immediately replaces it."
 
     "What the hell?"
-    
-    play sound sfx_scratch2
-    
-    stop music
 
     scene bg school_scienceroom
+    with locationskip
+
     show muto normal
-    with hpunch
+    with charaenter
 
     mu "Is there something wrong, Nakai?"
-    
-    play music music_comedy fadein 0.5
 
     "I had momentarily forgotten that I'm still in the middle of class."
 
@@ -5288,14 +4983,12 @@ label en_S15:
     with shorttimeskip
 
     play sound sfx_normalbell
-    
-    "The bell rings a few minutes later. As soon as I hear it, I hurriedly push myself into the crowd of outgoing students to camouflage myself within them." #with vpunch
+    "The bell rings a few minutes later. As soon as I hear it, I hurriedly push myself into the crowd of outgoing students to camouflage myself within them." with vpunch
 
     scene bg school_hallway3
     show crowd
     play ambient sfx_crowd_indoors
     with locationchange
-    
     "There's no sign of Shizune or Misha, but it's too early to call it safe just yet. Keeping low to the ground, I head for the exit, moving continuously as I go."
 
     scene bg school_lobby
@@ -5359,9 +5052,7 @@ label en_S15:
     show misha perky_smile
     with charachange
 
-    mi "I know! Let's go to the roof, Hicchan! Hurry, hurry~!"
-    
-    stop music fadeout 2.0
+    extend "I know! Let's go to the roof, Hicchan! Hurry, hurry~!"
 
     "There is something off about her today. Her voice has a strange sense of urgency in it that seems hollow in its unfamiliarity."
 
@@ -5385,25 +5076,21 @@ label en_S15:
     mi "Don't try to look up my skirt or anything like that, Hicchan."
 
     hi "Hey, you think I would do something like that? You must have a very low opinion of me."
-    
-    show misha hips_smile
-    with charachange
 
     mi "No, I trust you, Hicchan."
-    
-    play sound sfx_door_creak
-    
-    play ambient sfx_rooftop
+
+    stop music fadeout 1.0
 
     scene bg school_roof
     with locationchange
+
+    show misha perky_sad
+    with charaenter
     
+    play sound sfx_door_creak
     "Opening the door to the roof, Misha immediately heads towards the fence."
 
-    play music music_night fadein 1.0
-    
-    show misha perky_sad
-    with charaenter   
+    play music music_drama fadein 1.0
 
     mi "Hicchan, do you know what is coming up in a month?"
 
@@ -5412,25 +5099,16 @@ label en_S15:
     mi "That's right, Hicchan, tanabata. The reason I wanted to talk to you today is because it's so close."
 
     "She turns to me, her mouth set in a determined line."
-    
-    show misha perky_smile
-    with charachange
 
     mi "Hicchan, do you have a girl that you like?"
 
     "I freeze. To be more accurate, for me, it's as if everything has frozen. Misha is just as lacking in tact as ever. I find myself unable to respond at all."
 
     "I'd never imagined that she would confess to me, but she is cute. If she confesses her feelings to me, I think I could accept them."
-    
-    show misha cross_frown
-    with charachange
 
     mi "Answer the question, Hicchan."
 
     "There is a hard note in her voice. Before I can say anything, Misha continues."
-    
-    show misha sign_smile
-    with charachange
 
     mi "Hicchan… Are you going to confess to Shizune?"
 
@@ -5440,11 +5118,10 @@ label en_S15:
 
     "I have never really though about that before."
 
-    scene bg school_council_fb
-    show noiseoverlay
+    scene bg school_council
     with dissolve
 
-    show shizu behind_frustrated_fb behind noiseoverlay
+    show shizu behind_frustrated
     with charaenter
 
     "Looking back over my memories of Shizune, I begin to realize that it's possible I have some feelings towards her."
@@ -5477,14 +5154,10 @@ label en_S15:
     with charachange
 
     mi "I see."
-    
-    show misha perky_smile
-    with charachange
 
     mi "Shizune likes you, too. I can tell, because of the way she acts around you. But, Shizune will never make the first move."
-    
-    #Shizune isn't an "it", despite Misha calling her one -md01
-    mi "She is an old-fashioned girl, even if she doesn't act that way. She runs the water when she uses the bathroom."
+
+    mi "She is an old-fashioned girl, even if it doesn't act that way. She runs the water when she uses the bathroom."
 
     mi "That is why if you like her, Hicchan, you shouldn't delay it. I just want Shizune to be happy, because I am her friend."
 
@@ -5510,32 +5183,29 @@ label en_choiceS15:
 label en_S15a:
     # 1)
 
-    scene bg school_council_fb
-    show noiseoverlay
+    scene bg school_council
     with dissolve
     #It may be good to show an array of Shizune's expressions in this short flashback.
 
-    show shizu adjust_blush_fb behind noiseoverlay
+    show shizu adjust_blush
     with charaenter
 
     "I think about what Misha said. I can recall the moments when I have seen Shizune unguarded; when that sad, distant, longing look filled her eyes."
 
-    scene bg school_dormext_full_fb
-    show noiseoverlay
-    with flashback
+    scene bg school_dormext_full
+    with locationchange
 
-    show shizu adjust_happy_fb behind noiseoverlay
+    show shizu adjust_happy
     with charaenter
 
     extend " Innocent, vast, and faded, like a pastel painting of the sea."
 
-    "No, Misha is wrong. Shizune is brighter when she is filled with that childish excitement that seems to show itself to rarely."
+    "No, Misha is wrong. Shizune is brighter when she is filled with that childish excitement that seems to show itself so rarely."
 
-    scene bg school_council_fb
-    show noiseoverlay
-    with flashback
+    scene bg school_council
+    with locationchange
 
-    show shizu behind_frown_fb behind noiseoverlay
+    show shizu behind_frown
     with charaenter
 
     "The air of confidence. Those shimmering eyes. Her posture, the way she stands, with her legs straight and just slightly apart."
@@ -5551,7 +5221,7 @@ label en_S15a:
 
     hi "I guess if that is how it has to be, though, then there's nothing I can do about it, is there?"
 
-    show misha hips_grin
+    show misha perky_smile
     with charachange
 
     "Misha grins, quickly reverting to her usual demeanor."
@@ -5559,9 +5229,6 @@ label en_S15a:
     mi "That's right, Hicchan!"
 
     "An uncomfortable silence drifts between the two of us."
-    
-    show misha sign_smile
-    with charachange
 
     mi "So… You're going to tell Shizune that you love her."
 
@@ -5583,9 +5250,6 @@ label en_S15b:
     "I like Shizune, but I also like Misha as well."
 
     hi "Misha, I've always liked you too."
-    
-    show misha perky_confused
-    with charachange
 
     "Misha lets out a weak, tuneless laugh and cluches the chain links of the fence behind her in the hands, her eyes cast downwards."
 
@@ -5601,7 +5265,7 @@ label en_S15b:
     show misha perky_confused
     with charachange
 
-    "...Or something like that…"
+    extend " Or something like that…"
 
     show misha hips_grin
     with charachange
@@ -5615,7 +5279,7 @@ label en_S15b:
 
     mi "Well, nevermind about that."
 
-    mi "I know you like her too, Hicchan. Or else you wouldn't have tried so hard to learn how to speak to her."
+    mi "I know you like her too, Hicchan. Or else you wouldn't have tried to so hard to learn how to speak to her."
 
     mi "Hicchan… please accept her feelings."
 
@@ -5626,11 +5290,11 @@ label en_S15b:
     #blah blah blah end splits
 label en_S15c:
 
-    "Misha smiles faintly and straightens up, walking towards the door with a tiny bit of the spring back in her step."
+    "Misha smiles faintly and straights up, walking towards the door with a tiny bit of the spring back in her step."
 
     mi "Okay, Hicchan. I'll remember what we talked about today, so you should too."
 
-    show misha perky_smile
+    show misha perky_sad
     with charachange
 
     mi "I have things of my own to take care of. So, today, Hicchan, I'm going to entrust Shizune to you."
@@ -5641,15 +5305,17 @@ label en_S15c:
 
     mi "…Hm…"
     
-    hide misha
+    hide misha 
     with charaexit
+    play sound sfx_dooropen
+    play sound sfx_doorclose
 
     "She opens the door and leaves quietly, and I hear her footsteps clapping down the stairs. I wait until they die out and take a seat on the roof."
 
     "I like Shizune enough that I can confess on my own. When I do, it will be with my feelings."
 
-    #scene bg misc_sky_ni
-    #with dissolve
+    scene bg misc_sky_ni
+    with dissolve
 
     "I try to imagine her reaction. Tanabata, with its warm, summer night air. The dark skies lit up by fireworks. What will she do? What would she say?"
 
@@ -5659,15 +5325,13 @@ label en_S15c:
     "After indulging myself in the possible scenarios that could play out, I decide to check up on Shizune. After all, the time is eventually going to come when I'll ask her to be my girlfriend."
 
     stop music fadeout 2.0
-    
-    stop ambient
 
     scene bg school_staircase1
     with locationchange
 
     with Pause (0.3)
 
-    scene bg school_lobby
+    scene bg school_hallway3
     with locationskip
 
     with Pause (0.5)
@@ -5690,8 +5354,8 @@ label en_S15c:
 
     "I sign out my words as I say them carefully, making sure to get them right."
 
-    #show shizu behind_blank
-    #with charachange
+    show shizu behind_frown
+    with charachange
 
     ssh "No, not today."
 
@@ -5715,15 +5379,12 @@ label en_S15c:
 
     hi "Did you find someone's ID around here?"
 
-    show shizu basic_normal2
-    with charachange
+    hide shizu
+    with charaexit
 
     "She nods and opens a drawer to her right, and then hands me Kenji's ID before returning to staring at her notebook."
 
     hi "If there is nothing for me to do, I'll be going."
-    
-    hide shizu
-    with charaexit
 
     "Before I can leave the room, I feel something grab my sleeve."
 
@@ -5764,16 +5425,10 @@ label en_S15c:
     with charaenter
 
     shi "…"
-    
-    show shizu adjust_frown
-    with charachange
 
     "Shizune pushes up her glasses roughly, tinkering with them tentatively for about ten seconds."
 
     ssh "I can't understand you at all."
-    
-    show shizu behind_blank
-    with charachange
 
     ssh "I want to thank you for helping me with the student council all this time."
 
@@ -5798,7 +5453,6 @@ label en_S15c:
     play music music_soothing fadein 1.0
 
     "She leaves, and returns a minute later with two cold cans of melon soda, beaming with pride. Setting them both down temporarily on a desk, she opens her can with a pop."
-    
     play sound sfx_can
 
     show shizu behind_blank
@@ -5816,9 +5470,6 @@ label en_S15c:
     "Shizune gives me a small half-smile."
 
     ssh "You're right."
-    
-    show shizu adjust_smug
-    with charachange
 
     ssh "But that doesn't change the fact that you're never grateful, Hisao."
 
@@ -5847,9 +5498,6 @@ label en_S15c:
     "When we finish our sodas, I throw them both out and see Shizune looking at me, that familiar unfanthomable, neutral expression on her face."
 
     ssh "Hisao, walk me to my dorm."
-    
-    show shizu basic_frown
-    with charachange
 
     "She frowns and tenses up, pre-emptively getting indignant."
 
@@ -5908,13 +5556,10 @@ label en_S15c:
     ssh "So dense."
 
     ssh "And I told you to stop doing that. If you're going to say something, you have to sign it as well, or it's meaningless to me. You never listen, your problem is you never, ever listen."
-    
-    show shizu adjust_frown
-    with charachange
 
     "She rubs the toe of her right shoe against her left and runs her finger back and forth over the top rim of her glasses."
 
-    show shizu cross_wut
+    show shizu basic_angry
     with charachange
 
     ssh "Give me your jacket."
@@ -5953,7 +5598,7 @@ label en_S15c:
 
     "Sliding Kenji's ID under his door with my foot, I open the door to my room and don't even bother to turn on the light."
 
-    "Making a beeline for my medication, I gulp it down and sit in the single chair available to me."
+    "Making a beeline for my medication, I gulp it down and sit in the single chair availible to me."
 
     play music music_serene fadein 1.0
 
@@ -6042,7 +5687,7 @@ label en_S16:
 
     hi "It was in a drawer in the student council room. It wasn't even locked or anything. I just asked Shizune if she had found an ID lying around somewhere, and she gave it to me."
 
-    show kenji rage
+    show kenji tsun
     with charachange
 
     "Kenji's face contorts in horror, and I hear his breath catch in his throat."
@@ -6111,7 +5756,7 @@ label en_S16:
     ke "I dunno, something like that you found out the student council is just a front, and they're really part of some vast feminist conspiracy… "
 
     show kenji tsun
-    $ renpy.transition(charachange, layer='master')
+    with charachange
 
     extend "and that they are here to explore the possibility of moving their worldwide feminist headquarters here."
 
@@ -6145,17 +5790,8 @@ label en_S16:
     ke "Time travelers!"
 
     hi "Agh, no! No, no, no. As far as how close you are is concerned, you're not even in the same sport. Fine, I'll tell you."
-    
-    show kenji neutral_close
-    with characlose
 
     "I lower my voice, suddenly realizing how loudly we have been talking out in the hallway. Kenji seems to notice that he is in the hallway, and pushes forward until he is in my room."
-    
-    play sound sfx_doorclose
-    
-    scene bg school_dormhisao
-    show kenji neutral
-    with locationchange
 
     hi "Alright…"
 
@@ -6177,16 +5813,10 @@ label en_S16:
     "Kenji looks a little angry, recalling the times Shizune has supposedly snubbed him. I consider telling him about her condition."
 
     hi "…She is really shy. The silent type. I'll introduce you to her sometime, if it works out."
-    
-    show kenji rage
-    with charachange
 
     ke "No!"
 
     ke "Are you insane? She is the last person I want to see right now."
-    
-    show kenji tsun
-    with charachange
 
     ke "Damn, don't you understand? She had access to my student photo ID. She has my name and my face."
 
@@ -6209,9 +5839,6 @@ label en_S16:
     "I recall yesterday's talk with Misha. The things she said, and her presence there alone. Shizune's face floats by in my memories, and her expressions from every time we have met. Her soft, imperceptible smile, as brief as a falling star."
 
     hi "I'm confident she won't. I think I have a good chance. Guess I'm lucky to be able to have that kind of confidence, huh?"
-    
-    show kenji happy
-    with charachange
 
     ke "Yeah, you are. I was going to tell you to do it with no regrets, but it seems like you don't need to hear that, right?"
 
@@ -6237,15 +5864,15 @@ label en_S16:
 
     "There are some things man was not meant to know."
 
-    #scene bg school_dormhisao
-    #with locationchange
+    scene bg school_dormhisao
+    with locationchange
 
-    "Promising to pick up his mail for him, I wait until he leaves and then let out a sigh of relief when he's gone. I'm still extremely tired, and just want to go back to sleep."
+    "Promising to pick up his mail for him, I wait until he leaves and then letout a sigh of relief when he's gone. I'm still extremely tired, and just want to go back to sleep."
 
     scene black
     with shuteye
 
-    play ambient sfx_alarmclock
+    play sound sfx_alarmclock
 
     "The second my head hits the pillow, a painfully loud ringing sound assaults my ears, and I realize it's my clock. The alarm going off means that right now, it is the time I was supposed to wake up in the first place."
 
@@ -6261,8 +5888,6 @@ label en_S16:
     play music music_daily fadein 1.0
 
     "Pulling myself back up, my dig out my clock from the alcove between my and and the wall, then turn the alarm off with a decisive and showy motion."
-    
-    stop ambient
 
     "There is really no way I can get back to bed now."
 
@@ -6293,9 +5918,6 @@ label en_S16:
     "Maybe she is in her dorm. It's a Sunday morning, so there is always the possibility that she may even still be asleep."
 
     "I wouldn't expect a forceful person like Shizune to do normal things like sleep in late on Sundays, but she does do a lot of things that I wouldn't think a student council president-type would do."
-    
-    scene bg school_lobby
-    with locationchange
 
     "As I'm about to head back to my room, a girl carrying a heavy stack of folders calls out to me."
 
@@ -6326,9 +5948,6 @@ label en_S16:
     "She quickly makes an about-face and starts running back the way she came without looking back."
 
     "Girl" "I'm out of here! Tell them I fulfilled my obligations to them and I'm free now!"
-    
-    scene bg school_council
-    with locationchange
 
     "After I gather up the folders she dropped, I put them on the nearest desk in the student council room I can find and then take a seat in the nearest availible chair."
 
@@ -6364,34 +5983,19 @@ label en_S16:
     with locationchange
     #Yes. This needs a background, even if it's a oneshot. Who knows, A22 might use it again, or maybe someone else.
     # Oh no it doesn't. One-off backgrounds can go burn in hell.
-    
-    show kenjibox:
-        alpha 0.0 xalign 0.5 yanchor 0.5 ypos 0.7 subpixel True
-        easein 1.0 ypos 0.5 alpha 1.0
-    with Pause (1.0)
 
     "At the post office, I pick up Kenji's mail, which consists of two letters and an obscenely large box that I can barely hold in both arms."
 
     "I wonder if this will even fit through Kenji's door. Luckily, it isn't as heavy as it looks."
-    
-    show kenjibox :
-        alpha 1.0 xalign 0.5 yanchor 0.5 ypos 0.5 subpixel True
-        easeout 1.0 ypos 0.7 alpha 0.0
-    with Pause (1.0)
-
-    hide kenjibox 
-    with None
 
     scene bg suburb_roadcenter
     with shorttimeskip
 
     "Out on the street, I can hear people laughing at me. I can't even tell who is doing it, because the box is so large I have to struggle to see over it."
-    
-    stop music fadeout 0.5
 
     "Suddenly, someone takes the box out of my hands."
 
-    show shizu cross_wut
+    show shizu behind_blank
     with charaenter
 
     shi "…"
@@ -6410,15 +6014,10 @@ label en_S16:
 
     "Shizune's slightly smile collapses into a disapproving frown. That's right, she can't communicate with me if she's holding that box, can she?"
 
-    show shizu behind_frustrated
-    with charachange
-    
-    play sound sfx_impact2
-    with vpunch
+    hide shizu
+    with charaexit
 
     "Shizune drops the box, not flinching at all when it hits the ground with an unnerving sound. I guess that solves that problem. Her solution to it was as direct as I'd expect from her."
-    
-    play music music_another
 
     show shizu behind_frown
     with charachange
@@ -6448,23 +6047,17 @@ label en_S16:
 
     ssh "You're no fun, Hisao."
 
-    show shizu basic_sparkle
+    show shizu behind_smile
     with charachange
 
     "Shizune's eyes glitter mischievously. It's impossible to know whether she is joking or not."
-    
-    show shizu behind_smile
-    with charachange
 
     ssh "I'm hungry. Do you want to get something to eat? Come on, it'll be my treat."
 
     "Those bright, darting eyes and that infectious, wry half-smile on her face are stunning. It really is as if there are two sides to Shizune's personality."
-    
-    hide shizu
-    with charaexit
 
-    #scene bg suburb_roadcenter
-    #with shorttimeskip
+    scene bg suburb_roadcenter
+    with shorttimeskip
 
     "When I don't answer fast enough for her, Shizune grabs me by the hand, hoisting Kenji's box onto one of her shoulders and leading me to a stand at the end of the street."
 
@@ -6478,9 +6071,6 @@ label en_S16:
     hi "I don't know, I've never been here, so I wouldn't know what's the best thing to get."
 
     ssh "What? Come on, you should at least have a general idea, though, A favorite, common dish that you can always turn to."
-    
-    show shizu basic_happy
-    with charachange
 
     ssh "Show some daring! I'll trust you enough to let you order for me, too, but just for today, okay?"
 
@@ -6512,29 +6102,20 @@ label en_S16:
 
     ssh "I like them. It's a normal choice. They are normal, but I don't mind them. Just like you."
 
-    "Hurrying through her words, she starts eating casually after spritzing her dumplings with some soy sauce."
+    "Hurring through her words, she starts eating casually after spritzing her dumplings with some soy sauce."
 
     "So she does have feelings for me. The more time I spend with Shizune alone, the more I want to tell her how I feel right away."
 
     # hopefully, insert here
 
-    #hide shizu
-    #with charaexit
+    hide shizu
+    with charaexit
 
     "Finishing her dumplings in a matter of minutes, Shizune dabs at her mouth with a napkin before popping open her can of soda with relish, rocking back on the bench as she does."
-    
-    show shizu adjust_blush
-    with charachange
 
     "The spray from the soda puts a thin curtain of mist over her glasses, causing Shizune to blush."
-    
-    show shizu basic_happy
-    with charachange
 
     "She shakes, an action I find unfamiliar until I realize what it is. She's laughing, even though there is no sound of laughter coming from her."
-    
-    show shizu basic_frown
-    with charachange
 
     "She stops suddenly, looking a little embarrassed. I wonder if she knows. If she also thinks she must look strange; a girl laughing with a muted laugh."
 
@@ -6613,12 +6194,12 @@ label en_S16:
 
     "She spots Shizune and bows, her head crashing into the box in my hands."
     
-    show yuukoshang neurotic_down at Transform(ypos=0.75, xanchor=0.5, yanchor=0.5, xpos=0.7)
+    show yuukoshang neurotic_down at Transform(ypos=0.25)
     with Dissolvemove(0.2)
     play sound sfx_impact
     with vpunch
     with Pause(0.1)
-    show yuukoshang neurotic_down at tworight
+    show yuukoshang neurotic_down at Transform(ypos=0)
     with Dissolvemove(0.4)
 
     "It crashes to the ground, looking greatly damaged from having now impacted the floor three times and Yuuko's head."
@@ -6666,7 +6247,7 @@ label en_S16:
 
     yu "Oh. Yes, I'll do that right away. Please sit anywhere you like."
 
-    #stop music fadeout 1.0
+    stop music fadeout 1.0
 
     hide yuukoshang
     with charaexit
@@ -6675,13 +6256,13 @@ label en_S16:
     with charaexit    
 
     "I pull out a chair for Shizune at the table right next to us, then take a seat."
-    
+
+    play music music_nurse fadein 1.0
+
+    "Yuuko eventually brings us a parfait, and I give it to Shizune, but she doesn't eat it with her usual relish, instead picking at it disinterestedly."
+
     show shizu behind_blank
     with charaenter
-
-    #play music music_nurse fadein 1.0
-
-    "Yuuko eventually brings us a parfait, and I give it to Shizune, but she doesn't eat it with her usual relish, instead picking at it disinterestedly." 
 
     hi "Not hungry anymore?"
 
@@ -6724,23 +6305,21 @@ label en_S16:
 
     ssh "That is exactly why you're not getting it back. It's fun to tease you."
 
-    #stop music fadeout 1.0
+    stop music fadeout 1.0
 
     "The way she cleans at her fingernails methodically shows me she is still bothered. The only thing that could be affecting her is Hanako and Lilly's presence."
 
-    #play music music_night fadein 1.0
+    play music music_night fadein 1.0
 
-    show shizu behind_frown at twoleft
-    with dissolvecharamove
+    show shizu behind_smile at twoleft
+    with charamove
 
-    show hanako emb_sad:
-        xanchor 0.5 xpos 0.8
     show lilly basic_ara at tworight
     with charaenter
 
     li "Hello."
 
-    show shizu cross_wut at twoleft
+    show shizu behind_frustrated at twoleft
     with charachange
 
     "I almost choke when I hear Lilly's voice behind me."
@@ -6772,8 +6351,8 @@ label en_S16:
 
     "Putting some money on the table to pay for her order, she walks briskly outside."
         
-    #hide lilly 
-    #with charaexit
+    hide lilly 
+    with charaexit
 
     hide shizu
     with charaexit
@@ -6793,10 +6372,10 @@ label en_S16:
 
     hi "Something wrong?"
 
-    show shizu cross_wut
+    show shizu basic_frown
     with charaenter
 
-    #play music music_drama fadein 0.5
+    play music music_drama fadein 0.5
 
     shi "…"
 
@@ -6805,9 +6384,6 @@ label en_S16:
     ssh "So we are enemies."
 
     hi "Why?"
-    
-    show shizu behind_frustrated
-    with charachange
 
     ssh "When you can't hear someone or see them, their existence is going to affirm something about you that you may not like."
 
@@ -6834,11 +6410,11 @@ label en_S16:
     ssh "I'll give you your jacket back tomorrow. It looks like it'll be warm, so you won't be in trouble if I hang onto it a little longer."
 
     hi "Alright."
+    
+    show shizu behind_sad
+    with charachange
 
     "Shizune picks at her fingernails, suddenly looking very fragile and very small."
-    
-    show shizu behind_frown
-    with charachange
 
     ssh "Hisao."
 
@@ -6857,7 +6433,6 @@ label en_S17:
     scene bg school_gate
     with locationskip
 
-    play music music_drama
 
     n "It's been three days since then, when Shizune told me that, spelling the words out in the still afternoon air with those delicate hands, her legs bent so weakly, as if her body could barely stand under the weight of her words."
 
@@ -6985,7 +6560,7 @@ label en_S17:
     show kenji neutral
     with charachange
 
-    ke "…Alright, I'll tell you. It's mad libs."
+    ke "…Alright, I'll tell you. It's {image=vfx/garbage.png}."
 
     #oh shit it's mad libs
 
@@ -6993,7 +6568,7 @@ label en_S17:
 
     #ke "It's (a limited edition Losstarot action figure with voice and four interchangable heads)."
 
-    ke "It's a limited edition Losstarot action figure with voice and four interchangable heads."
+    ke "It's {image=vfx/garbage.png}."
 
     hi "No, I heard you. I mean, what? Are you kidding me? You're kidding me, right?"
 
@@ -7002,7 +6577,7 @@ label en_S17:
     "He is an extremely bad liar. I rub my face with my palm."
 
     #hi "I can't believe you wasted my time for something as stupid as (a book of mad libs). Do you know what I went through because of your damn (vintage Playboys)?"
-    hi "I can't believe you wasted my time for something as stupid as a book of mad libs. Do you know what I went through because of your damn vintage Playboys?"
+    hi "I can't believe you wasted my time for something as stupid as {image=vfx/garbage.png}. Do you know what I went through because of your damn {image=vfx/garbage.png}?"
 
     show kenji tsun
     with charachange
@@ -7015,19 +6590,19 @@ label en_S17:
     ke "Was it like what you went through to get my ID back?"
 
     #hi "No, it was way harder. Way harder! I can't believe this. What? Honestly? (the Speed Grapher complete box set)?"
-    hi "No, it was way harder. Way harder! I can't believe this. What? Honestly? It was the Speed Grapher complete box set?"
+    hi "No, it was way harder. Way harder! I can't believe this. What? Honestly? {image=vfx/garbage.png}?"
 
     "Of course, I'm angry that I had to carry and store something so dumb."
 
     #"I assumed that due to the size of the box and the amount of sheer annoyance it provided me, it was something way more important than (a Teenage Mutant Ninja Turtles Pizza Launcher)."
-    "I assumed that due to the size of the box and the amount of sheer annoyance it provided me, it was something way more important than a Teenage Mutant Ninja Turtles Pizza Launcher."
+    "I assumed that due to the size of the box and the amount of sheer annoyance it provided me, it was something way more important than {image=vfx/garbage.png}."
 
     "But right now, getting to class is far more important. Shooting a glance at my watch, I grab my jacket with one hand, my bag with my other, and leap into my shoes."
 
     hi "We will discuss this later."
 
     #"I say to Kenji, feeling that the great insult of having gone through so much over (a betamax tape Star Wars Christmas Special) is not something that can be left alone and forgotten."
-    "I say to Kenji, feeling that the great insult of having gone through so much over a betamax tape Star Wars Christmas Special is not something that can be left alone and forgotten."
+    "I say to Kenji, feeling that the great insult of having gone through so much over {image=vfx/garbage.png} is not something that can be left alone and forgotten."
 
     stop music fadeout 1.5
 
@@ -7048,12 +6623,12 @@ label en_S17:
 
     play music music_tranquil fadein 1.0
 
-    hi "Oh, hey, Shizu—{nw}" #reminder for the potential {nw} break
+    hi "Oh, hey, Shizu—" #reminder for the potential {nw} break
 
     scene bg school_hallway3
     with hpunch
 
-    show shizu cross_wut
+    show shizu basic_normal
     with charaenter
 
     "Before I can finish, Shizune yanks me out the door and starts signing quickly. As confused as I am by her pulling me out of class, she seems back to her old self. That's good, at least."
@@ -7161,7 +6736,7 @@ label en_choiceS17:
 
 label en_S17a:
     #1)
-    show shizu cross_wut
+    show shizu behind_frustrated
     with charachange
 
     "I reach my hand out towards Shizune's head, and instantly see her stiffen up, looking uncertain and confused."
@@ -7802,7 +7377,7 @@ label en_S18:
 
     hi "You look happy. Did you do well on your exams?"
 
-    show shizu cross_wut at twoleft
+    show shizu adjust_frown at twoleft
     with charachange
 
     "I don't sign it to her, which causes Misha to snap into action. Shizune frowns."
@@ -7920,7 +7495,7 @@ label en_S18:
 
     "I am fully aware that if we continue like this, we could crush the bread, greatly reducing its edibility."
 
-    show shizu cross_wut at twoleft
+    show shizu basic_sparkle at twoleft
     with charaenter
 
     show misha perky_smile at tworight
@@ -7968,7 +7543,7 @@ label en_S18:
 
     ssh "This seems like a poor way to settle this, doesn't it? And we might crush the bread."
 
-    show shizu cross_wut at twoleft
+    show shizu cross_angry at twoleft
     with charachange
 
     "She glares, and her passive expression quickly plummets into a disapproving grimace."
@@ -7976,6 +7551,10 @@ label en_S18:
     ssh "Hisao! Drop the bread! We are negotiating now!"
 
     "I drop the bread."
+    
+    show shizu behind_blank at twoleft
+    with charachange
+
 
     "Misha's hand darts in from the side, her fingers drumming across the table as it makes its way over."
 
@@ -7989,10 +7568,12 @@ label en_S18:
     "Picking them up cautiously, she immediately retreats."
 
     play music music_shizune fadein 1.0
-
     "She has the right idea. I could just pick something else, there are lots of delicious things here."
 
     "The chicken katsudon bread is also a popular seller, ranking high in taste and demand. But I have already eaten one."
+    
+    show shizu behind_blank at twoleft
+    with charachange
 
     ssh "You're so immature, Hisao. This wouldn't be a problem if you would pick something else. The chicken katsudon bread is delicious."
 
@@ -8004,13 +7585,16 @@ label en_S18:
     ssh "You are acting like a child."
 
     hi "Why don't you eat it?"
+    
+    show shizu adjust_blush at twoleft
+    with charachange
 
     ssh "That's not important."
 
+    "Turning bright red, she smiles wryly and continues."
+    
     show shizu behind_smile at twoleft
     with charachange
-
-    "Turning bright red, she smiles wryly and continues."
 
     ssh "There is no reasoning with you. So it looks like there is only one way to settle this: We are going to play for it."
 
@@ -8077,7 +7661,7 @@ label en_S18:
 
     "Misha hovers above us, watching it all and laughing each time we draw. After twenty five rounds, Shizune pushes her chair away from the table and stands up."
 
-    show shizu cross_wut
+    show shizu behind_frustrated
     with charaenter
 
     ssh "Enough of this. I see what I have been doing wrong. This will all be over in the next round, so brace yourself."
@@ -8137,7 +7721,7 @@ label en_S18:
     show misha hips_laugh at twoleft
     with charachange
 
-    show shizu cross_wut at tworight
+    show shizu behind_smile at tworight
     with charachange
 
     mi "Wahahahahaha~!"
@@ -8218,6 +7802,8 @@ label en_S19:
 
     scene bg school_gardens
     with locationskip
+    
+    play music music_pearly fadein 2.0
 
     nvl clear
 
@@ -8931,7 +8517,7 @@ label en_S19aa:
 
     "Shizune nods once, and the three of us start looking around to decide what we should eat."
     
-    "Settling on the usual fried foods, we start eating. I think I have a little too much food, actually. I mean, I just ate before this, it hasn't been that long. Shizune and Misha don't seem the be facing the same problem, though."
+    "Settling on the usual fried foods, we start eating. I think I have a little too much food, actually. I mean, I just ate before this, it hasn't been that long. Shizune and Misha don't seem to be facing the same problem, though."
 
     "Shizune drills her chopstick into a dumpling with an artistic flourish before putting it in her mouth. What a strange way of eating. Seeing that I am looking at her, she stops and holds her chopstick in her mouth to sign to me."
 
@@ -9171,7 +8757,7 @@ label en_S19ab:
 
     "Shizune nods once, and the three of us start looking around to decide what we should eat."
     
-    "Settling on the usual fried foods, we start eating. I think I have a little too much food, actually. I mean, I just ate before this, it hasn't been that long. Shizune and Misha don't seem the be facing the same problem, though."
+    "Settling on the usual fried foods, we start eating. I think I have a little too much food, actually. I mean, I just ate before this, it hasn't been that long. Shizune and Misha don't seem to be facing the same problem, though."
 
     "Shizune drills her chopstick into a dumpling with an artistic flourish before putting it in her mouth. What a strange way of eating. Seeing that I am looking at her, she stops and holds her chopstick in her mouth to sign to me."
 
@@ -9411,7 +8997,7 @@ label en_S19ac:
 
     "Shizune nods once, and the three of us start looking around to decide what we should eat."
     
-    "Settling on the usual fried foods, we start eating. I think I have a little too much food, actually. I mean, I just ate before this, it hasn't been that long. Shizune and Misha don't seem the be facing the same problem, though."
+    "Settling on the usual fried foods, we start eating. I think I have a little too much food, actually. I mean, I just ate before this, it hasn't been that long. Shizune and Misha don't seem to be facing the same problem, though."
 
     "Shizune drills her chopstick into a dumpling with an artistic flourish before putting it in her mouth. What a strange way of eating. Seeing that I am looking at her, she stops and holds her chopstick in her mouth to sign to me."
 
@@ -9651,7 +9237,7 @@ label en_S19ad:
 
     "Shizune nods once, and the three of us start looking around to decide what we should eat."
     
-    "Settling on the usual fried foods, we start eating. I think I have a little too much food, actually. I mean, I just ate before this, it hasn't been that long. Shizune and Misha don't seem the be facing the same problem, though."
+    "Settling on the usual fried foods, we start eating. I think I have a little too much food, actually. I mean, I just ate before this, it hasn't been that long. Shizune and Misha don't seem to be facing the same problem, though."
 
     "Shizune drills her chopstick into a dumpling with an artistic flourish before putting it in her mouth. What a strange way of eating. Seeing that I am looking at her, she stops and holds her chopstick in her mouth to sign to me."
 
@@ -9796,7 +9382,7 @@ label en_S19ba:
 
     "It's not like I had a choice, though. Everything went differently than how I had seen it in my head. The timing, the opportunity, everything was either all wrong, or never came. I'll accept, however, that I should have adapted accordingly."
 
-    show shizuyu cross_angry at twoleft
+    show shizuyu cross_happy at twoleft
     show misha perky_smile_yuk at tworight
     with charachange
     
@@ -10026,7 +9612,7 @@ label en_S19bb:
 
     "It's not like I had a choice, though. Everything went differently than how I had seen it in my head. The timing, the opportunity, everything was either all wrong, or never came. I'll accept, however, that I should have adapted accordingly."
 
-    show shizuyu cross_angry_yellow at twoleft
+    show shizuyu cross_happy_yellow at twoleft
     show misha perky_smile_yuk at tworight
     with charachange
     
@@ -10257,11 +9843,13 @@ label en_S19bc:
 
     "It's not like I had a choice, though. Everything went differently than how I had seen it in my head. The timing, the opportunity, everything was either all wrong, or never came. I'll accept, however, that I should have adapted accordingly."
 
-    show shizuyu cross_angry_red at twoleft
+    show shizuyu cross_happy_red at twoleft
     show misha perky_smile_yuk at tworight
     with charachange
     
     mi "Hey, Hicchan, Shizune, I heard they are going to have fireworks, should we stick around to see those?"
+    
+    show shizuyu 
 
     ssh "It's so crowded. We can see them from the school, can't we? It will be a much better view, and a lot quieter."
 
@@ -10488,7 +10076,7 @@ label en_S19bd:
 
     "It's not like I had a choice, though. Everything went differently than how I had seen it in my head. The timing, the opportunity, everything was either all wrong, or never came. I'll accept, however, that I should have adapted accordingly."
 
-    show shizuyu cross_angry_green at twoleft
+    show shizuyu cross_happy_green at twoleft
     show misha perky_smile_yuk at tworight
     with charachange
     
