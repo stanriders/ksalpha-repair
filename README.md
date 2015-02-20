@@ -3,7 +3,7 @@ Katawa Shoujo Prealpha Repair
 
 **WARNING**: This is unfinished, unpolished and unstable work.
 
-**Latest stable build**: http://steamcommunity.com/gid/103582791434107099#announcements/detail/263775372989441506
+**Latest stable build**: http://steamcommunity.com/gid/103582791434107099#announcements/detail/214256108622054326
 
 **Documentation**: https://github.com/stanriders/ksalpha-repair/wiki/KS-ALPHA-CHEATSHEET-by-muffinduck01
 
