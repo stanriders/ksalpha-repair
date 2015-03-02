@@ -215,7 +215,10 @@
     "Which brings me to my next question, actually."
 
     hi "Do my parents know?"
-
+    
+    show lilly basic_smile_cas_close at centersit
+    with charachange
+    
     li "Yes. The hospital notified them."
 
     hi "Have they been in?"
@@ -251,13 +254,19 @@
     "Compared to my perfectly lucid thinking of before, my mind's clouded and muddied."
 
     "Hearing an exasperated sigh, Lilly sharply inhales."
-
+    
+    show lilly basic_surprised_cas_close at centersit
+    with charachange
+    
     li "Hisao, are you okay?"
 
     "I turn back to her."
 
     hi "I'm fine. It's just… I'm having trouble thinking clearly."
-
+    
+    show lilly basic_weaksmile_cas_close at centersit
+    with charachange
+    
     "She calms significantly, a relieved sigh sneaking past her graceful composure."
 
     li "It's probably the anaesthetic. I could get a doctor if you'd like."
@@ -271,13 +280,19 @@
     hi "Hey, I'm the one asking for it."
 
     hi "Damn, I guess this means we won't be going to the summerhouse, eh?"
-
+    
+    show lilly basic_giggle_cas_close at centersit
+    with charachange
+    
     "She gives a small giggle at my playful tone."
 
     li "We can always go later. What matters is that you're alright."
 
     hi "I'll be glad to get all these pipes and plugs off, in any case."
-
+    
+    show lilly basic_weaksmile_cas_close at centersit
+    with charachange
+    
     "As the brief moment of lightheartedness wears off, silence fills the air."
 
     "It's pretty hard to escape the fact that I'd nearly died there and then."
@@ -285,7 +300,10 @@
     "As much as I hate to say it, I can feel a wave of tiredness washing over me as well."
 
     hi "Sorry Lilly, but I'm kinda tired."
-
+    
+    show lilly basic_smile_cas_close at centersit
+    with charachange
+    
     "She nods gently, before bringing a hand to the side of my cheek."
 
     li "I'm glad you're okay, Hisao."
@@ -308,16 +326,18 @@
     "In this damned bleached, silent and sterile hospital."
 
     "I give up on keeping my heavy eyelids open, calling a curtain-close on my discontent reverie."
-
+    
+    scene black
+    with shuteye
+    
     "The more things change, the more they stay the same."
 
     "That is the one thought that flickers through my mind before I fall asleep."
 
-    scene black
-    with shuteye
+
     window hide
     
-    with Pause(3.0)
+    with Pause(1.5)
     
     return
 
@@ -411,12 +431,15 @@ label en_L44:
     "Before I can continue the thought, the pale white door gingerly opens to reveal the ever-pale Lilly, cane in hand. Her face is an all too welcome sight."
 
     hi "Hey Lilly."
-
+    
+    show lilly cane_surprised_cas
+    with charachange
+    
     li "Oh, you're awake?"
 
     hi "Yeah. I've been in a daze for most of the day, you caught me at a good time though."
     
-    show lilly cane_smile_cas_close
+    show lilly cane_smile_cas_close at centersit
     with charachange
     
     "She slowly walks over to the chair beside the bed, resting her cane against the wall as she feels it out."

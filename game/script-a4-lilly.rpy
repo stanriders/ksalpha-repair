@@ -10273,7 +10273,7 @@ label en_L42:
 
     hi "Up late last night?"
 
-    show lilly basic_sleepy_yuk_close
+    show lilly basic_sleepy_yuk_close_ss
     with charachange
     
     li "I lost track of the time as I was reading. I think by the time I got to bed it was past midnight."
@@ -10282,7 +10282,7 @@ label en_L42:
 
     hi "Is that all you were doing?"
     
-    show lilly basic_surprised_yuk_close
+    show lilly basic_surprised_yuk_close_ss
     with charachange
     
     li "…"
@@ -10290,7 +10290,7 @@ label en_L42:
     with Pause(1.0)
     
     # sprite change
-    show lilly basic_pout_yuk_close
+    show lilly basic_pout_yuk_close_ss
     with charachange
 
     li "…"
@@ -10301,7 +10301,7 @@ label en_L42:
 
     hi "Tanabata won't be the end of our night."
     
-    show lilly basic_cheerful_yuk_close
+    show lilly basic_cheerful_yuk_close_ss
     with charachange
     
     "A small grin spreads on her face as I pull back, a small nod being the only reply."
@@ -10316,7 +10316,9 @@ label en_L42:
 
     # Timeskip
     
-    scene bg suburb_tanabata_ni # TODO: replace with something new. [str]
+    scene bg tanabata_bamboo#suburb_tanabata_ni # TODO: replace with something new. [str]
+    show crowd
+    show lilly basic_pout_yuk_close_ni
     with shorttimeskip
     
     "With a nod and a polite tip for the exquisite drift around the last corner, of which Lilly strangely didn't seem to appreciate, the taxi disappears off down the road."
@@ -10345,7 +10347,7 @@ label en_L42:
 
     li "I'll make sure to hang on tight."
 
-    hi "Good. wouldn't want you getting lost."
+    hi "Good, wouldn't want you getting lost."
 
     hi "With that out of the way, what should we do first?"
 
