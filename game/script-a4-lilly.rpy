@@ -370,7 +370,7 @@ label en_L20:
 
     "As I say it, I notice a movement out of the corner of my eye."
     
-    show bg school_hallway3
+    show bg school_hallway3 at center
     show misha perky_confused behind shizu at leftoff
     show shizu basic_angry at twoleft
     with dissolvecharamove
@@ -383,7 +383,7 @@ label en_L20:
 
     "Looks like she has a reputation."
     
-    show shizu cross_angry
+    show shizu cross_angry at center
     with dissolvecharamove
 
     "She steps up to him confidently and crosses her arms."
@@ -432,7 +432,7 @@ label en_L20:
 
     hi "Yeah, thanks."
     
-    show bg school_hallway3
+    show bg school_hallway3 at center
     show misha perky_smile_close at left
     with dissolvecharamove
 

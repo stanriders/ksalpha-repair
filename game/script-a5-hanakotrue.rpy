@@ -135,7 +135,7 @@
     with None
     
     show bg school_scienceroom at bgleft
-    show shizu behind_blank
+    show shizu behind_blank at center
     show misha perky_sad at left
     show hanako basic_smile at right
     with dissolvecharamove
@@ -1710,7 +1710,7 @@ label en_HT15:
     show lilly basic_surprised at left
     show misha cross_smile at center
     show rin basic_absent at right
-    show bg school_council
+    show bg school_council at center
     with charamove
 
     li "Since the force gets less as the distance gets bigger… that means you need to divide, and not multiply?"
@@ -1941,7 +1941,7 @@ label en_HT15:
     hide lilly
     with charaexit
     
-    show bg school_council_ni
+    show bg school_council_ni at center
     with charamove
 
     "Shizune and Misha head out to return the jacket, whilst Hanako, Emi and I start carrying the desks back to their classroom."
@@ -3180,7 +3180,7 @@ label en_HT16:
     show lilly invis at tworight
     with None
     
-    show bg school_council_ni
+    show bg school_council_ni at center
     show lilly basic_weaksmile at center
     with dissolvecharamove
 
@@ -4108,7 +4108,7 @@ label en_HT17:
     
     show hanako emb_timid_cas at tworight
     with charamove
-    show hanako emb_timid_cas
+    show hanako emb_timid_cas at center
     with charamove
 
     "She stands up, and takes a few steps inside the house in her mind."

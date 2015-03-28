@@ -568,10 +568,11 @@ label en_L14:
     hi "Huh?"
 
     scene bg school_dormhisao
+    show lilly superclose
     with openeye
 
-    show lilly superclose
-    with openeye_shock
+
+    #with openeye_shock
 
     "Without thinking I suddenly jolt forward, Lilly's face mere millimeters away from mine."
     
@@ -657,6 +658,7 @@ label en_L14:
     #I want a CG here
     
     show lilly superclose_ouch
+    with charachange
     
     hi "Ah…"
 
@@ -670,12 +672,13 @@ label en_L14:
 
     hi "U… U—Um…"
     
-    show lilly basic_surprise_paj 
+    show lilly basic_surprised_paj 
     with charachange
 
     "Without a word, she silently pulls herself from my relaxed grasp and stands herself straight."
     
     show lilly basic_emb_paj
+    with charachange
 
     "As she averts her gaze, I only catch a glimpse of her blushing face before she lowers and turns it away."
 
@@ -712,10 +715,10 @@ label en_L14:
 
     hi "Can't hear—" #reminder for the potential {nw} break
     
-    scene bg school_dormhisao at right
+    show bg school_dormhisao at bgright
     with charamove
     
-    scene bg school_dormhisao at center
+    show bg school_dormhisao at center
     with charamove
 
     "I quickly take a look around the room, reminded that, yes, there are other people in the room."
@@ -790,7 +793,7 @@ label en_L14:
 
     hi "Here, sit on the side of the bed."
     
-    scene bg school_dormhisao at right
+    show bg school_dormhisao at right
     with charamove
     
     show lilly basic_sleepy_paj at tworightsit
@@ -1516,7 +1519,7 @@ label en_L15:
     
     hi "Hmm?"
     
-    scene bg school_scienceroom at right
+    show bg school_scienceroom at right
     with charamove
     
     show shizu behind_smile_blank at twoleft
@@ -1634,7 +1637,7 @@ label en_L16:
 
     "In fact, it probably would've been done by yesterday if not for my masterful procrastination."
 
-    scene bg school_dormhisao at left
+    show bg school_dormhisao at left
     with charamove
     
     "I wander over to my desk and pull the science sheets out of my bag."
@@ -1668,7 +1671,7 @@ label en_L16:
 
     play sound sfx_dooropen
     
-    scene bg school_dormhisao at left
+    show bg school_dormhisao at left
     with charamove
     
     $ renpy.music.set_volume(1.0, 1.0, channel='music')
@@ -1926,11 +1929,11 @@ label en_L16:
     
     hide kenji
     
-    scene bg school_dormhisao at right
+    show bg school_dormhisao at bgright
     with locationchange
     with Pause(1.0)
     
-    scene bg school_dormhisao at left
+    show bg school_dormhisao at bgleft
     with locationchange
 
     "I walk back the desk and grab the thick book from my bag."
@@ -2014,7 +2017,7 @@ label en_L16:
 
     play sound sfx_dooropen
     
-    scene bg school_dormhisao at left
+    show bg school_dormhisao at bgleft
     with locationchange
     
     play music music_daily
@@ -2145,7 +2148,7 @@ label en_L16:
     
     hide rin
     
-    scene bg school_dormhisao at right
+    show bg school_dormhisao at bgright
     with locationchange
 
     "Walking back into my room slightly dazed, I make my way to the draw containing my pills."
@@ -3961,7 +3964,7 @@ label en_L19:
 
     "I gently open the door, and take a quick glance inside."
 
-    scene bg hosp_room2 at bgleft
+    show bg hosp_room2 at bgleft
     show hanako emb_downtimid_cas at tworightsit
     show lilly basic_listen_pat at twoleftsit
     with locationchange
@@ -4065,7 +4068,7 @@ label en_L19:
 
     "With that, she stands and leaves the room."
     
-    show bg hosp_room2
+    show bg hosp_room2 at center
     show lilly basic_listen_pat at centersit
     with charamove
 

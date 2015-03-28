@@ -22,7 +22,7 @@
     
     ha "S…sure."
     
-    show hanako emb_blushing_close
+    show hanako emb_blushing_close at center
     with charamove
 
     "Shouldering her bag, she pulls herself up, putting ever the slightest strain on my hand in the process."
@@ -60,8 +60,8 @@
 
     "Hanako's shocked expression turns into one of terror as she realises that it was her that caused this calamity."
     
-    show hanako def_shock
-    show bg school_library
+    show hanako def_shock at center
+    show bg school_library at center
     with dissolvecharamovefast
     #with ease
     
@@ -121,7 +121,7 @@
     
     with Pause(0.3)
     
-    show hanako emb_timid
+    show hanako emb_timid at center
     with charamove
     
     play sound sfx_can
@@ -225,7 +225,8 @@
     #inside classroom
     #a22, should you take offence, feel free to veto this next passage.
     #i just kinda got a bit excited of the new misha sprites and she popped up in my mind.
-    scene bg school_scienceroom at bgright
+    #scene bg school_scienceroom at bgright
+    show bg school_scienceroom at bgright
     with locationskip
     
     $ renpy.music.set_volume(1.0,1.0)
@@ -259,7 +260,7 @@
     show misha sign_smile
     with charachange
     
-    show bg school_scienceroom
+    show bg school_scienceroom at center
     show misha sign_smile at twoleft
     with charamove
 
@@ -558,7 +559,7 @@
 
     "Just as I'm about to walk over and explain everything to him, Hanako releases the bear."
 
-    show bg city_othello
+    show bg city_othello at center
     show shopkeep surprised at tworight
     with charamove
     
@@ -684,7 +685,7 @@
     with charaexit
     
     show bg city_othello at bgleft
-    show hanako emb_downsmile
+    show hanako emb_downsmile at center
     with charamove
     
     play sound sfx_storebell
@@ -755,7 +756,7 @@ label en_HT2:
 
     aki "Hey there Hanako. Long time no see."
     
-    show bg hosp_ext_ss
+    show bg hosp_ext_ss at center
     show akira basic_smile_ss at center
     show yuuko worried_down_ss at right
     with charamove
@@ -1263,11 +1264,11 @@ label en_HT3:
 
     "I twist on my heels, and head off down the hallway."
 
-    scene bg school_girlsdormhall at bgleft
+    show bg school_girlsdormhall at bgleft
     with locationchange
     #BG dorm hall
     
-    scene bg school_girlsdormhall
+    show bg school_girlsdormhall at center
     with charamove
 
     hi "Looks like I've got to run the gauntlet with you again, little guy."
@@ -1822,8 +1823,8 @@ label en_HT3:
 
     "Hanako places her two plush toys on Lilly's bed and runs out the door."
     
-    show hanagown smile
-    show bg school_dormlilly
+    show hanagown smile at center
+    show bg school_dormlilly at center
     with charamove
 
     "Seconds later, she returns, her arms full of linen and a comforter."
@@ -2003,7 +2004,7 @@ label en_HT4:
     ha "Oh… you're awake…"
     
     scene bg school_dormlilly at bgleft
-    show hanagown smile
+    show hanagown smile at center
     with charamove
 
     "I look up from my prone position on the floor, directly up at a smiling Hanako."
@@ -2046,8 +2047,8 @@ label en_HT4:
     
     play sound sfx_rustling
     
-    show hanagown smile
-    show bg school_dormlilly
+    show hanagown smile at center
+    show bg school_dormlilly at center
     with charamove
     
     "Having sufficiently calmed myself, I throw back Hanako's sheets and sit up; causing my back to crack in the progress."
@@ -2159,7 +2160,7 @@ label en_HT4:
        
     mi "Hi—sa—o~!"
     
-    show bg school_scienceroom
+    show bg school_scienceroom at center
     with charamove
     
     play music music_happiness fadein 4.0
@@ -2375,7 +2376,7 @@ label en_HT4:
 
     with Pause(1.0)
     
-    scene bg school_roof at bgright
+    show bg school_roof at bgright
     with locationchange
     #bg roof1 with transition
 
@@ -2424,7 +2425,7 @@ label en_HT4:
     show hanako defarms_worry at offscreenright
     with None
     
-    show bg school_roof
+    show bg school_roof at center
     show emi sad_shy at left
     show rin basic_deadpansurprised at center
     show hanako defarms_worry at right
@@ -3600,7 +3601,7 @@ label en_HT6:
     hide lilly
     with charaexit
     
-    show bg school_cafeteria
+    show bg school_cafeteria at center
     with charamove
 
     "Too late. My conversation with Lilly was just long enough for all the heat to escape from what looked to be a fantastic breakfast."
@@ -3652,7 +3653,7 @@ label en_HT6:
 
     #Yeah, I get it, none of you will know what a scullery is, either. Gimme a replacement, please.
     
-    show bg school_cafeteria
+    show bg school_cafeteria at center
     with charamove
     
     show lilly cane_smile
@@ -3700,7 +3701,7 @@ label en_HT6:
 
     "But there is one person here that surprises me."
     
-    show bg school_scienceroom
+    show bg school_scienceroom at center
     with charamove
     
     show hanako emb_downtimid at twoleft
@@ -3733,7 +3734,7 @@ label en_HT6:
     "Hanako is panicking like a rabbit caught in a cage; desperately looking around for something to distract me."
 
     show bg school_scienceroom at bgright
-    show hanako emb_downtimid
+    show hanako emb_downtimid at center
     with charamove
 
     show hanako emb_downtimid_close
@@ -3906,8 +3907,8 @@ label en_HT6:
     $ renpy.music.set_volume(0.39999999999999999, 0.0, channel='ambient')
     play ambient sfx_crowd_indoors fadein 2.0
     
-    show bg school_scienceroom
-    show hanako emb_blushing
+    show bg school_scienceroom at center
+    show hanako emb_blushing at center
     with charamove
     
     "I breathe a little relief as Misha drags Shizune back towards their desks, leaving me with a visibly shaken Hanako."
@@ -4337,10 +4338,13 @@ label en_HT7:
     show lilly basic_smile
     with locationchange
     
+    stop music fadeout 4.0
+   
     with Pause(0.4)
     
     play sound sfx_normalbell
-
+    
+    
     #"It seems that Lilly's sense of time is correct; as soon as I close the door to the stairwell, the bells clamour into life."
     "It seems that Lilly's sense of time is correct; as soon as I close the door to the tearoom, the bells clamour into life."
 
@@ -4356,7 +4360,6 @@ label en_HT7:
     hide lilly
     with charaexit
     
-    stop music fadeout 4.0
 
     "Chiding myself for doing something so stupid, I simply call out after her."
 
@@ -4410,7 +4413,7 @@ label en_HT7:
 
     "She was probably waiting in the hallway until the last possible moment."
     
-    show bg school_scienceroom
+    show bg school_scienceroom at center
     with charamove
 
     "Not wanting to suffer the same fate as I did this morning, I keep my eyes glued firmly to the front of the class, taking notes where appropriate."
@@ -4575,14 +4578,14 @@ label en_HT7:
 
     ha "And… and then…"
     
-    show bg school_dormext_full_ss
+    show bg school_dormext_full_ss at center
     show hanako emb_downtimid_cry_ss at twocenteroff3
     with charamove
 
     "Hanako, unable to continue, starts to stagger away from the wall."
     
     show bg school_dormext_full_ss at bgleft
-    show hanako emb_downtimid_cry_ss
+    show hanako emb_downtimid_cry_ss at center
     with ease
     
     show hanako emb_downtimid_cry_close_ss
@@ -5583,7 +5586,7 @@ label en_HT9:
     show hanako emb_smile_sun at right
     with charachange
     
-    show bg school_picnic
+    show bg school_picnic at center
     show hanako emb_smile_sun at tworight
     with charamove
 
@@ -5631,7 +5634,7 @@ label en_HT9:
     ha "Sure."
     
     show bg school_picnic at bgleft
-    show hanako emb_smile_sun
+    show hanako emb_smile_sun at center
     with charamove
     
     show hanako emb_smile_sun at centersit
@@ -5664,7 +5667,7 @@ label en_HT9:
 
     "To my surprise, she leans her head against my shoulder."
     
-    show bg school_picnic
+    show bg school_picnic at center
     show hanako emb_downsmile_sun at tworightsit
     with charamove
 
@@ -5775,7 +5778,7 @@ label en_HT9:
 
     "Flocks of birds start to swarm towards the valley, circling around patches of trees."
     
-    scene bg school_picnic_ss
+    scene bg school_picnic_ss at center
     show hanako emb_smile_sun_ss at tworightsit
     with dissolvecharamoveslow
 
@@ -6978,7 +6981,7 @@ label en_HT12:
     with charaexit
     
     show bg suburb_shanghaiint at bgleft
-    show hanako basic_smile_cas
+    show hanako basic_smile_cas at center
     with charamove
     
     show hanako basic_smile_cas at centersit
@@ -7014,7 +7017,7 @@ label en_HT12:
 
     "Then again, I can feel a blush spread across my face at the simple thought of last night."
     
-    show bg suburb_shanghaiint
+    show bg suburb_shanghaiint at center
     show yuukoshang worried_up at Motion(trembleleft,8.0,repeat=True)
     show hanako emb_timid_cas at tworightsit
     with dissolvecharamove
@@ -7271,7 +7274,7 @@ label en_HT12:
     
     show bg suburb_shanghaiint at bgleft
     show yuukoshang invis at left
-    show hanako emb_timid_cas
+    show hanako emb_timid_cas at center
     with dissolvecharamove
 
     "I grab Hanako's hand, and we are out the door before Yuuko even gets the chance to clumsily bid us farewell."
@@ -8341,7 +8344,7 @@ label en_HT13x:
     with ease
     
     show bg school_dormlilly at bgleft
-    show hanagown normal_blush
+    show hanagown normal_blush at center
     show lilly basic_smile at leftsit
     with charamove
 

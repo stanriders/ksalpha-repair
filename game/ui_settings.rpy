@@ -1146,6 +1146,10 @@ init 1:
     #End of added resources - Kelper    
             
     # LILLY
+    image lilly superclose = "vfx/lilly_superclose.png"
+    image lilly superclose_ouch = "vfx/lilly_superclose_ouch.png"
+    image lilly superclose_shock = "vfx/lilly_superclose_shock.png"
+    
     image ev lilly_tearoom = "event/lilly_tearoom.jpg"
     image ev lilly_tearoom_open = "event/lilly_tearoom_open.jpg"
     
