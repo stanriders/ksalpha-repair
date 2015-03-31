@@ -314,10 +314,16 @@ label en_H12:
 
     yu "O-kay. Three curries. One extra rice. I'll be back in a minute…"
 
+    hide yuuko
+    with charaexit
+    
+    show yuuko neurotic_shang
+    with charaenter
+    
     "She takes no more than a step an a half before pirouetting around with a look of terror on her face."
 
-    show yuuko neurotic_shang
-    with charachange
+    #show yuuko neurotic_shang
+    #with charachange
 
     yu "I'm sorry would you like any drink! Drinks!"
 
@@ -368,11 +374,17 @@ label en_H12:
     "The tiny cogs in my mind turn, and a connection is made."
 
     hi "Hey, Misha, you go into town a bit, don't you?"
-
+    
+    show misha perky_confused at twoleft
+    with charachange
+    
     mi "Yeah, why?"
 
     hi "I don't suppose you know if there's any good karaoke places around, do you?"
-
+    
+    show misha cross_grin at twoleft
+    with charachange
+    
     mi "Oh! You want to try some out? We can go after this if you'd like!"
 
     hi "It's already late, and it's a school night. I have things I need to do, you know."
@@ -551,6 +563,10 @@ label en_H12:
 
     mi "We may be kidding, we may not be. Don't forget to pay the bill now!"
 
+    hide misha
+    hide shizu
+    with charaexit
+    
     "Before I can say another word, the girls are out the door."
 
     "I grudgingly pay the bill, which isn't anywhere near as dear as I thought it would be."
@@ -563,13 +579,16 @@ label en_H12:
 
     "Well, fun, but expensive. I hope I've got enough money left over this week for the trip into town."
     
+    scene black
+    with locationchange
+    
     return
     
     #---------------
 label en_H13:
     
     scene bg school_gate
-    with shorttimeskip
+    with locationchange#shorttimeskip
     
     "A light breeze blows the scent of early summer around my head as I wait for Lilly."
 
@@ -648,10 +667,8 @@ label en_H13:
     "The bus only takes a few seconds to reach the bus stop, and within a minute we are on our way to town."
 
     scene bg city_street1
-    with shorttimeskip
-    
     show lilly cane_smileclosed_cas
-    with charachange
+    with shorttimeskip
     
     "The town is much like any other town, save for the raised walkways."
 
@@ -663,7 +680,7 @@ label en_H13:
 
     hi "L-Lilly!"
 
-    show lilly cane_giggle_cas
+    show lilly cane_giggle_cas_close
     with charachange
 
     li "Did I startle you?"
@@ -674,7 +691,7 @@ label en_H13:
 
     "It's not the first time this has happened, so I shouldn't be so surprised, but at the time Lilly only held onto my sleve."
 
-    show lilly cane_smile_cas
+    show lilly cane_smile_cas_close
     with charachange
 
     li "Now Hisao, you wouldn't be getting embarrassed right now, would you?"
@@ -688,10 +705,8 @@ label en_H13:
     hi "Right. Right. If my memory is correct, it should be this way."
 
     scene bg city_street2
+    show lilly cane_reminisce_cas_close
     with locationchange
-    
-    show lilly cane_reminisce_cas
-    with charachange
 
     "We wander around the walkways of the town, Lilly merrily tapping away with her cane whilst I keep an eye out for the karaoke bar Misha mentioned."
     
@@ -725,7 +740,7 @@ label en_H13:
 
     hi "Well, I'd actually prefer to get some lunch first…"
 
-    show lilly cane_ara_cas
+    show lilly cane_ara_cas_close
     with charachange
 
     li "I'm sure that they have food inside. Besides, we should make sure that this place is good for Hanako, shouldn't we?"
@@ -740,7 +755,7 @@ label en_H13:
     "The interior is a little more subdued than the exterior, and the rooms are little more than a bench and a table surrounding the main screen."
 
     show lilly cane_smile_cas
-    with charachange
+    with charaenter
 
     li "So, what should we sing?"
 
@@ -789,7 +804,10 @@ label en_H13:
     li "Well, mostly. Unless there is anything that you'd like to do, I'm happy with just this."
 
     hi "Really? Well then, fair enough. I would have thought that you'd want to go shopping or something like that…"
-
+    
+    show lilly cane_giggle_cas
+    with charachange
+    
     li "My my, Hisao, you wouldn't be trying to turn this into a date, would you?"
 
     hi "No, it's not like that. I just haven't spent much time in town, so I don't know what else there is to do."
@@ -867,11 +885,9 @@ label en_H13:
     "We politely refuse, and I pay for the room and the snacks on the way out."
 
     scene bg city_street2
+    show lilly cane_smile_cas_close
     with locationchange
 
-    show lilly cane_smile_cas
-    with charaenter
-    
     "Once we are out on the street again, Lilly takes a hold of my arm once again."
 
     li "Well then, shall we head back now?"
@@ -925,14 +941,16 @@ label en_H13:
 
     "The list just keeps going on, and with no time to do it in. It's times like this that I almost want to be back in class…"
     
+    scene black
+    with locationchange
     return
     
 label en_H14:
+    window hide
     
     show white
     with locationchange
     
-    window hide
 
     #show movie
 
@@ -1083,17 +1101,11 @@ label en_H14b:
 # Yay for teh forums! 
 # # #
 label en_H23:
-
+    window hide # [str]
+    
     scene black # [str]
     with None # [str]
-    window hide # [str]
-
-    # # # nah, this sounds stupid [str]
-    #nvl show dissolve
-    #n "NOTE: This scene (H23 'Waterfall') was restored from KS forums - StanR" 
-    #nvl hide dissolve
-    #nvl clear
-    # # # 
+    with Pause(0.5)
 
     scene bg school_dormhisao # [str]
     with openeye # [str]

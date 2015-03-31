@@ -661,7 +661,9 @@ label H12:
     jump_out H13
 
 label H13:
+    call iscene ("timeskip")
     call iscene ("H13")
+    call iscene ("timeskip") # not sure, maybe it wont fit here [str]
     call iscene ("H14") # calling a note to describe why the hell we skipped so much [str]
     jump_out H23
     #jump_out H14 # we're not using this choice in route, but gonna keep it for act selection menu [str]

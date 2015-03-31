@@ -793,9 +793,7 @@ label en_L14:
 
     hi "Here, sit on the side of the bed."
     
-    show bg school_dormhisao at right
-    with charamove
-    
+    show bg school_dormhisao at bgright     #with charamove
     show lilly basic_sleepy_paj at tworightsit
     with charamove
     
@@ -1519,7 +1517,7 @@ label en_L15:
     
     hi "Hmm?"
     
-    show bg school_scienceroom at right
+    show bg school_scienceroom at bgright
     with charamove
     
     show shizu behind_smile_blank at twoleft
@@ -1637,7 +1635,7 @@ label en_L16:
 
     "In fact, it probably would've been done by yesterday if not for my masterful procrastination."
 
-    show bg school_dormhisao at left
+    show bg school_dormhisao at bgleft
     with charamove
     
     "I wander over to my desk and pull the science sheets out of my bag."
@@ -1671,7 +1669,7 @@ label en_L16:
 
     play sound sfx_dooropen
     
-    show bg school_dormhisao at left
+    show bg school_dormhisao at bgleft
     with charamove
     
     $ renpy.music.set_volume(1.0, 1.0, channel='music')
