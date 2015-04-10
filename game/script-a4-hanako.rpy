@@ -1078,7 +1078,7 @@ label en_H26:
 
     mystery "Hisao…?"
 
-    scene bg misc_ceiling #hosp_room2 # [str]
+    scene bg hosp_ceiling #misc_ceiling #hosp_room2 # [str]
     with openeye # [str]
 
     show lilly cane_satisfied_cas_close at Position(xanchor=0.5, xpos=0.15, yanchor=1.0, ypos=1.15, rotate=70) # [str]
@@ -1867,6 +1867,8 @@ label en_H28:
 
     "Doctor" "I understand. I'll call them now."
 
+    # timeskip? 
+    
     "I lie back on my bed, and examine a ceiling far too familiar to me."
 
     "The strange, yellowing stains are somewhat like clouds."

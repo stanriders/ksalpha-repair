@@ -166,6 +166,7 @@ init 1:
         ks_bg("newhosp_ext")
         ks_bg("hosp_ext")
         ks_bg("hosp_hallway")
+        ks_bg("hosp_ceiling")
         ks_bg("hosp_room")
         ks_bg("hosp_room2")
         ks_bg("hosp_room3")

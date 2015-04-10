@@ -19,7 +19,6 @@ ___What needs to be done___:
 
 **Hanako-route**:
  * music, sfx
- * add transitions and fadings in act3
  * CGs, moar cgs!
 
 **True-Hanako-route**:
