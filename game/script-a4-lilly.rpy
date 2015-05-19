@@ -4406,7 +4406,7 @@ label en_L29:
 
     "And to top it off, I managed to make it into class early despite only reaching the dorms late into the night."
 
-    scene bg school_scienceroom
+    show bg school_scienceroom at bgleft
     with locationchange
     
     $ renpy.music.set_volume(0.5, 1.0, channel='music')
@@ -4425,9 +4425,8 @@ label en_L29:
     mi "Hicchan~!"
     
     show misha hips_grin at twoleft
-    with charamove
-    
     show shizu basic_normal2 at tworight
+    show bg school_scienceroom at center
     with charamove
 
     "A quickly jog over, pleased to note the lack of cold analysis behind Shizune's eyes or mischievous grin on Misha's face."
@@ -4515,7 +4514,7 @@ label en_L29:
     show misha cross_grin at twoleft
     with charachange
     
-    show shizu adjust_grin at tworight
+    show shizu adjust_happy at tworight
     with charachange 
 
     mi "What did you do for the holiday, silly!"
@@ -4528,13 +4527,13 @@ label en_L29:
 
     mi "Two girls and one little boy out in the country, how scandalous~"
 
-    hi "Now don't get the wrong ide— {w=.5}{nw}"
+    hi "Now don't get the wrong ide— {w=.25}{nw}"
 
     "Wait, she's actually perfectly right."
 
     "And it was not only once, but twice."
 
-    show misha cross_cmile_close at twoleft
+    show misha cross_smile_close at twoleft
     with charachange
 
     "Why is she…?"
@@ -4557,7 +4556,7 @@ label en_L29:
 
     "Misha raps me on the shoulder, harder than before."
     
-    show misha hips_frown_close at twoleft
+    show misha cross_frown_close at twoleft #hips_frown_close
     with charachange
     
     show shizu behind_blank_close at tworight
@@ -4583,7 +4582,7 @@ label en_L29:
 
     hi "Not telling."
     
-    show misha sign_frown_close at twoleft
+    show misha hips_frown_close at twoleft
     with charachange
     
     show shizu behind_frown_close at tworight
@@ -4617,16 +4616,15 @@ label en_L29:
 
     "Hearing a familiar voice ringing out behind me, I turn to see Hanako."
     
-    scene bg school_scienceroom at left
+    show hanako invis at Position(xpos=1.1)
+    
+    #scene bg school_scienceroom at left
     
     show misha cross_smile at left
-    with charamove
-    
-    show shizu behind_smile at twoleft
-    with charamove
-    
-    show hanako basic_smile at rightedge    
-    with charaenter
+    show shizu behind_smile at twocenteroff
+    show bg school_scienceroom at bgleft
+    show hanako basic_smile at tworight#rightedge    
+    with dissolvecharamove
 
     "Surprisingly, she looks just as chipper as I do."
 
@@ -4638,28 +4636,30 @@ label en_L29:
 
     hi "Want to eat on the roof?"
     
-    show hanako basic_normal at rightedge 
+    show hanako basic_normal at tworight 
     with charachange
 
     ha "Lilly was going to ask you to."
 
     hi "Well, I guess that's settled then."
-
+    
+    hide hanako
+    with charaexit
+    
     "With a quick nod to Misha and Shizune, she walks to her desk and hooks her bag on the side."
 
     "As I turn back to Misha, she stares at me while rubbing her chin."
     
-    show misha hips_grin at left
-    with charachange
-    
-    show shizu behind_blank at twoleft
-    with charachange
+    show misha hips_grin at twoleft
+    show shizu behind_blank at tworight
+    show bg school_scienceroom at center
+    with dissolvecharamove
 
     mi "She's in a very good mood, wouldn't you say, Hicchan?"
 
     hi "No comment."
 
-    show misha sign_smile at left
+    show misha sign_smile at twoleft
     with charachange
     
     mi "Tsch."
@@ -4672,10 +4672,10 @@ label en_L29:
 
     hi "What's Shizune's take on this?"
     
-    show misha sign_sad at left
+    show misha sign_sad at twoleft
     with charachange
     
-    show shizu behind_blank2 at twoleft
+    show shizu behind_frown at tworight
     with charachange
 
     mi "Ah…"
@@ -4687,6 +4687,10 @@ label en_L29:
     "After a quick sign to and fro, Shizune gives a curt nod and walks off to her desk."
     
     hide shizu
+    with charaexit
+    
+    #show misha sign_sad at twoleft
+    #with charamove
 
     hi "Did I… say something wrong?"
 
@@ -4701,7 +4705,10 @@ label en_L29:
     "I raise an eyebrow, as much at Misha's antics as Shizune's apparent coldness."
 
     hi "How… professional."
-
+    
+    show misha perky_smile at twoleft
+    with charachange
+    
     "She gives a weak smile, as if apologising for her friend."
 
     mi "Shizune and those two… don't get along well."
@@ -4715,7 +4722,10 @@ label en_L29:
     mi "That's really something you should ask her or Lilly."
 
     hi "Yeah, you have a point. Thanks, Misha."
-
+    
+    hide misha
+    with charaexit
+    
     "As Mutou strides into the classroom behind me, the class takes their seats and an obedient silence falls over the room."
 
     "While he's far from the strictest teacher in the school, he's certainly a lot more jovial when obeyed."
@@ -4731,10 +4741,15 @@ label en_L29:
     "I guess it's only human not to get along with everybody."
 
     scene bg school_roof
-    with locationskip
+    with shorttimeskip
 
     "As I open the door to the rooftop, Hanako by my side, I quickly blink to overcome the dazzling brightness of the sun."
 
+    show lilly basic_smileclosed at leftsit
+    show rin basic_awayabsent at rightsit
+    show emi basic_grin at centersit
+    with charaenter
+    
     "Ahead of us sit Lilly, Emi and Rin, jovially chatting amongst themselves."
 
     "As Rin casually scoops up her food with a fork held in her toes as Emi chews into an apple."
@@ -4743,24 +4758,63 @@ label en_L29:
 
     hi "Hey guys."
 
+    show lilly basic_surprised at leftsit
+    show rin relaxed_surprised at rightsit
+    show emi basic_confused at centersit
+    with charachange
+    
     "The three all stop eating in unison, looking curiously towards us."
-
+    
+    show emi excited_laugh at centersit
+    with charachange
+    
     emi "Ah, Hiffao!"
 
     hi "Swallow, then speak."
-
+    
+    show emi excited_happy at centersit
+    with charachange
+    
     "She tilts up her head and swallows the piece of apple in her mouth without bothering to chew the rest."
-
+    
+    show emi excited_joy at centersit
+    with charachange
+    
     emi "Hey, Hisao, hey Hanako."
-
+    
+    # complications...meh. [str]
+    
+    show lilly invis at Position(xpos=0.05) #leftoff
+    show rin invis at Position(xpos=0.05)
+    show emi invis at Position(xpos=0.05)
+    with dissolvecharamove
+    
+    show rin invis at Position(xpos=1.00) #rightendge
+    show emi invis at Position(xpos=1.00)
+    show hanako invis at Position(xpos=0.05, ypos=1.15) 
+    with None
+    
+    # too bad _close sprites cant fit on screen [str]
+    show lilly basic_smile at leftsit
+    show hanako basic_smile at twoleftsit
+    show emi basic_grin at tworightsit
+    show rin basic_deadpannormal at rightsit
+    with dissolvecharamove
+    
     "With a polite wave from Hanako we walk over to the trio and drop our bags on the ground, fishing out our lunches."
 
     "As soon as I move my sandwhich to my mouth, Emi moves in for the kill."
-
+    
+    show emi basic_grin at tworightsit
+    with charachange
+    
     emi "So, Hisao, I hear you three had a trip the the country."
 
     hi "Yeah, it was great. What'd you two do?"
-
+    
+    show emi basic_grin at tworightsit
+    with charachange
+    
     emi "Don't dodge the question, Heart Sniper!"
 
     "I look at her incredulously."
@@ -4768,7 +4822,10 @@ label en_L29:
     hi "Heart… Sniper?"
 
     "She takes a breath and begins to tell the tale as if it were a modern Illiad."
-
+    
+    show emi basic_grin at tworightsit
+    with charachange
+    
     emi "Oh, graced was he. Oh yes, graced."
 
     emi "Unknown to tales of woe, our intrepid man set out on a journey, the journey of his life."
@@ -4791,7 +4848,9 @@ label en_L29:
 
     hi "Well…"
 
-    centered "*thud*"
+    play sound sfx_impact
+    with vpunch
+    #centered "*thud*"
 
     "Before I can react, Emi's outstretched arm slams down onto my head."
 
@@ -4995,22 +5054,34 @@ label en_L30:
 
     "I can't help but simmer with envy."
 
-    "Ah, what wouldn't I give for a view like—" #reminder for the potential {nw} break
+    "Ah, what wouldn't I give for a view like—{w=.25}{nw}" #reminder for the potential {nw} break
 
+    show muto irritated
+    with charaenter
+    
     mu "Nakai!"
 
     "Mutou's voice suddenly brings me out of my idle survey of the classroom."
 
     hi "Yes?"
-
+    
+    show muto smile #probably overusing sprites and should just use _smile all the time
+    with charachange
+    
     mu "The answer to question number fourty-two, which we just went over?"
 
     hi "The suffix for it would be -ane."
-
+    
+    show muto normal
+    with charachange
+    
     "His sly grin faulters, evidently having been hoping to catch me out."
 
     mu "Correct. Moving on, the suffix for…"
 
+    hide muto
+    with charaexit
+    
     "As my attention towards Mutou falls away once again, I spot Misha giving me an enthusiastic thumbs-up."
 
     "I grin and nod gracefully, my role on the stage having come to an end."
@@ -5021,7 +5092,10 @@ label en_L30:
     with shorttimeskip
 
     "After the end-of-school bell rings and the class begins to file out, Mutou calls from the front of the class."
-
+    
+    show muto irritated
+    with charaenter
+    
     mu "Nakai, could I see you for a moment?"
 
     "I can only grimace, feeling the eyes of the rest of the class on me."
@@ -5037,7 +5111,10 @@ label en_L30:
     hi "Ah, sorry."
 
     "As long as I nod and agree with him, it'll be fine."
-
+    
+    show muto normal
+    with charachange
+    
     mu "Well, no point lecturing you. All students do is nod and agree until the lecturing ends anyway."
 
     "Erk."
@@ -5077,7 +5154,10 @@ label en_L30:
     "He pauses, thinking to himself."
 
     "Evidently coming to a satisfactory conclusion, his face lights up once more."
-
+    
+    show muto smile
+    with charachange
+    
     mu "I have it!"
 
     "It takes some measure of resistance to avoid saying “Have what?” as he dives into the briefcase propped up beside his desk."
@@ -5093,7 +5173,10 @@ label en_L30:
     "He gives a nervous laugh, realising that he'd perhaps said more than he meant to."
 
     "I can't say I'm overly surprised, though."
-
+    
+    show muto normal
+    with charachange
+    
     mu "Well, leaving that aside, it's good."
 
     mu "If you read it, we could discuss anything about it you want to."
