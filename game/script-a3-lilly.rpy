@@ -50,7 +50,7 @@
 
     hi "You can sit on the bed if you'd like, I've only got one chair right now."
 
-    scene bg school_dormhisao at right
+    show bg school_dormhisao at right
     with locationchange
     
     show hanako basic_smile at right
@@ -112,7 +112,7 @@
 
     li "Thank you Hisao, Hanako. I wonder what this could be?"
     
-    show lilly basic_thoughtful at tworightsit
+    show lilly basic_listen at tworightsit
     with charachange
 
     "She slowly lifts the box to her face, running her fingers around the outside and over the intricate designs on the wooden faces. As she does, her thumb suddenly pauses as it feels the bottom."
@@ -577,11 +577,11 @@ label en_L14:
     "Without thinking I suddenly jolt forward, Lilly's face mere millimeters away from mine."
     
     #Should this be before or after the doublespeak? Review
+    show lilly superclose_shock
+    with Dissolve(0.2)
     
     $ doublespeak(hi, li, "Gyah!", "Ah!")
     
-    show lilly superclose_shock
-    with Dissolve(0.2)
     
     play sound sfx_impact2
     
@@ -592,7 +592,7 @@ label en_L14:
 
     "The impact of our foreheads causes both of us to fall backwards yelp in pain, Lilly sounding more like a squeak toy than a person."
 
-    show lilly basic_concerned_paj at left
+    show lilly basic_concerned at left
     with Dissolve(0.2)
     
     hi "Ow, ow, ow."
@@ -605,13 +605,13 @@ label en_L14:
 
     hi "You okay Lilly?"
     
-    show lilly basic_concerned_paj at left
+    show lilly basic_concerned at left
     with charachange
     with Pause(0.5)
 
     li "I think so, I think most of the pain right now is from the hangover."
     
-    show lilly basic_sad_paj at left
+    show lilly basic_sad at left
     with charachange
 
     hi "Hangover?"
@@ -622,19 +622,19 @@ label en_L14:
 
     hi "Ah, yeah. Looks like I managed to dodge that bullet at least."
 
-    show lilly basic_surprised_paj at left
+    show lilly basic_surprised at left
     with charachange
     
     li "Oh? It seemed you were partaking of the vodka quite heartily."
 
     hi "There's one advantage to vodka. It may taste awful, but it can be diluted down to nothing."
 
-    show lilly basic_giggle_paj at left
+    show lilly basic_giggle at left
     with charachange
     
     "Her pained look gives way to an amused grin."
     
-    show lilly basic_planned_paj at left
+    show lilly basic_planned at left
     with charachange
 
     li "You have my respect Hisao, that was quite the act of quick thinking."
@@ -645,7 +645,7 @@ label en_L14:
 
     li "If you would be so kind."
     
-    show lilly basic_cheerful_paj at left
+    show lilly basic_cheerful at left
     with charachange
 
     "I reach down and grasp Lilly's outstretched hand, giving a slight heave as she gets up."
@@ -672,12 +672,12 @@ label en_L14:
 
     hi "U… U—Um…"
     
-    show lilly basic_surprised_paj 
+    show lilly basic_surprised at twoleft
     with charachange
 
     "Without a word, she silently pulls herself from my relaxed grasp and stands herself straight."
     
-    show lilly basic_emb_paj
+    show lilly basic_emb
     with charachange
 
     "As she averts her gaze, I only catch a glimpse of her blushing face before she lowers and turns it away."
@@ -686,7 +686,7 @@ label en_L14:
 
     # I need a kind of "hiding and lowering face" sprite. Both for this scene and a fair few others in act 3. From memory, Hisui in Tsukihime has a sprite very close to what I'm thinking of.
 
-    show lilly basic_reminisce_paj
+    show lilly basic_reminisce
     with charachange
     
     li "I'm… sorry."
@@ -701,14 +701,14 @@ label en_L14:
 
     hi "Uh… okay. I guess. Um, what were you wanting to say before?"
     
-    show lilly basic_sad_paj
+    show lilly basic_sad
     with charachange
     
     li "Hmm?"
 
     "Her face lifts a little in thought before turning back."
 
-    show lilly basic_reminisce_paj
+    show lilly basic_reminisce
     with charachange
     
     li "Oh, ah, I can't hear someone."
@@ -716,9 +716,11 @@ label en_L14:
     hi "Can't hear—" #reminder for the potential {nw} break
     
     show bg school_dormhisao at bgright
+    show lilly basic_reminisce at center
     with charamove
     
     show bg school_dormhisao at center
+    show lilly basic_reminisce at twoleft
     with charamove
 
     "I quickly take a look around the room, reminded that, yes, there are other people in the room."
@@ -736,21 +738,23 @@ label en_L14:
     # Centered and all on the screen at once with this formatting, or as part of a CG that's just got the note in Hisao's hand.
     
     hide lilly
-    hide window
+    window hide
+    
     $ fixedwritten_note(u"Hey Hisao,\n\nI'm really, really sorry about last night. I really made a mess of things, didn't I?\n\nI've taken all the bottles and cleaned up the spills, so don't worry about any incriminating evidence. I'll make sure not to draw attention to myself on the way out too.\n\nRegards,\nShirakawa Yuuko\n\nPS. If you need a favour, call me. The phone number's on the other side of the note. {image=vfx/smiley.png}")
 
+    window show
     # End note
 
     "After a quick check to see the number on the other side, I smile and place the note on my desk."
 
     "I guess Yuuko isn't such a bad person after all."
 
-    show lilly basic_concerned_paj
+    show lilly basic_concerned at twoleft
     with charachange
     
     hi "She left a note. It says she's taken all the bottles and snuck out of the dorms."
     
-    show lilly basic_smileclosed_paj
+    show lilly basic_smileclosed
     with charachange
 
     "Lilly gives a deep, relieved sigh."
@@ -765,12 +769,12 @@ label en_L14:
 
     li "Hmm, let me see here…"
 
-    show lilly basic_displeased_paj
+    show lilly basic_displeased
     with charachange
     
     "She pauses a moment, furrowing her brow in thought."
 
-    show lilly basic_weaksmile_paj
+    show lilly basic_weaksmile
     with charachange
     
     li "I met her not long after I met Hanako, and she did introduce herself rather… bluntly."
@@ -779,14 +783,14 @@ label en_L14:
     
     hi "That's one way to put it."
     
-    show lilly basic_reminisce_paj
+    show lilly basic_reminisce
     with charachange
     
     "Cradling her head in her hand once again, Lilly grimaces."
 
     hi "Hangover's biting you in the ass?"
     
-    show lilly basic_pout_paj 
+    show lilly basic_pout
     with charachange
 
     li "…Not exactly eloquent, but correct."
@@ -794,7 +798,7 @@ label en_L14:
     hi "Here, sit on the side of the bed."
     
     show bg school_dormhisao at bgright     #with charamove
-    show lilly basic_sleepy_paj at tworightsit
+    show lilly basic_sleepy at centersit
     with charamove
     
     "Taking one of her hands to guide her over, she turns and sits on the side."
@@ -805,7 +809,7 @@ label en_L14:
 
     hi "Well, there goes school. It's already nine thirty, and you two're in no shape to go to class."
     
-    show lilly basic_surprised_paj at tworightsit
+    show lilly basic_surprised at centersit
     with charachange
 
     li "Mm, you have a point. I guess I did drink a little too much."
@@ -820,14 +824,14 @@ label en_L14:
 
     "It'd have been quite the sight if Lilly and I hadn't needed to continually quieten the two down lest others hear the drunken racket."
 
-    show lilly basic_weaksmile_paj at tworightsit
+    show lilly basic_weaksmile
     with charachange
     
     li "It seems Hanako's sleeping."
 
     hi "Yeah, like a log. I'm surprised how well she got on with Yuuko last night."
     
-    show lilly basic_giggle_paj at tworightsit
+    show lilly basic_giggle
     with charachange
 
     li "Well, she and Yuuko know each other quite well."
@@ -840,21 +844,21 @@ label en_L14:
 
     hi "At least she looks peaceful."
     
-    show lilly basic_smileclosed_paj at tworightsit
+    show lilly basic_smileclosed
     with charachange
 
     li "Thank you, Hisao."
 
     hi "Again? For what?"
     
-    show lilly basic_smile_paj at tworightsit
+    show lilly basic_smile
     with charachange
 
     li "You've been a good influence on my dear Hanako."
 
     hi "A good influence… you say?"
     
-    show lilly basic_cheerful_paj at tworightsit
+    show lilly basic_cheerful
     with charachange
 
     li "Mm. Thanks to you she's become much more confident."
@@ -865,7 +869,7 @@ label en_L14:
 
     "She shakes her head vigorously"
 
-    show lilly basic_concerned_paj at tworightsit
+    show lilly basic_concerned
     with charachange
     
     li "Before you came, it wouldn't be unusual for her to skip class out of fright, or recoil away from anyone who even glanced at her."
@@ -880,7 +884,7 @@ label en_L14:
 
     "Even as I grimace though, Lilly gives a deep, warm smile."
 
-    show lilly basic_smile_paj at tworightsit
+    show lilly basic_smile
     with charachange
     
     li "Thank you, Hisao. She may seem somewhat shy at times, but you've helped her so much."
@@ -891,7 +895,8 @@ label en_L14:
 
     # Centered, with SFX
 
-    centered "*thump* *thump* *thump*"
+    play sound sfx_doorknock
+    #centered "*thump* *thump* *thump*"
 
     hi "Looks like someone's at the door."
 
@@ -899,6 +904,12 @@ label en_L14:
 
     hi "Nah, it's probably just Shizune and Misha coming to see what's up."
 
+    show bg school_dormhisao at bgleft
+    show lilly invis at leftsit
+    with dissolvecharamove
+    
+    #hide lilly
+    
     "I grunt and stand myself up, walking over the the door."
 
     "I guess they must already know that Lilly and Hanako are in my room."
@@ -906,8 +917,11 @@ label en_L14:
     "With a short creak, the door opens easily."
 
     # Show Kenji sprite
-
-    hi "Hey Shi—" #reminder for the potential {nw} break
+    
+    show kenji neutral
+    with charaenter
+    
+    hi "Hey Shi—{w=0.1}{nw}" #reminder for the potential {nw} break
 
     "Uh-oh."
 
@@ -931,6 +945,9 @@ label en_L14:
 
     hi "Hey, uh, what're you doing here at this hour anyway? Shouldn't you be in class?"
 
+    show kenji happy
+    with charachange
+    
     ke "Nah man, I just got held up a bit. It's cool."
 
     "I raise an eyebrow at his oddly upbeat nature."
@@ -945,14 +962,25 @@ label en_L14:
 
     "Damn, he has a good point."
 
+    show bg school_dormhisao at center
+    show lilly basic_surprised at twoleftsit
+    show kenji happy at tworight
+    with dissolvecharamove
+    
     "As I turn around and rush to throw up an excuse, a voice suddenly beckons from the bed on my left."
 
     li "My my, is that Kenji?"
 
+    show kenji surprised
+    with charachange
+    
     ke "Huh?"
 
     "A few second's silence passes as he tried to place her voice."
-
+    
+    show kenji neutral
+    with charachange
+    
     ke "Oh. Lilly. Hey."
 
     "Wow, don't show too much enthusiasm there bud."
@@ -965,6 +993,9 @@ label en_L14:
 
     hi "The same… Well, that makes sense I guess."
 
+    show lilly basic_sleepy at twoleftsit
+    with charachange
+    
     "Leaving the two to talk between each other, I lean forward and turn the laptop on to eject the CD."
 
     "…"
@@ -978,11 +1009,17 @@ label en_L14:
     "Finally the laptop finishes logging on. Seizing the opportunity, I quickly eject the CD and pass it to him with the speed of an enraged bull."
 
     hi "There you go, as good as I got it."
-
+    
+    show kenji happy
+    with charachange
+    
     ke "Thanks man."
 
     "As he starts to move off, a sudden and rather unwelcome voice comes from the floor."
 
+    show hanabad defarms_worry at Position(xanchor=0.5, yanchor=1.0, xpos=0.5, ypos=1.60)
+    with charaenter
+    
     ha "Huh?"
 
     "I look downwards at the once-sleeping figure on the floor, my jaw dropping."
@@ -990,17 +1027,25 @@ label en_L14:
     ha "Lilly? Hisao?"
 
     "As she groggily props herself up and whipes the sleep out of her eye, I frantically turn to Kenji."
-
+    
+    show kenji surprised at tworightsit
+    with dissolvecharamove
+    
     "Crouching down to rather uncourteously survey her face, his breath catches as she opens her eyes."
 
     ha "Eh? A—AAAAAAAH!"
 
     # Centered, with SFX
-
-    centered "*Thump*"
+    #centered "*Thump*"
+    play sound sfx_pillow
+    with vpunch
 
     "The two's foreheads slam together with a surprisingly amount of force."
 
+    show hanabad emb_downtimid_cry at centersit
+    show kenji tsun at right
+    with dissolvecharamovefast
+    
     "Kenji's sent reeling backwards as Hanako lowers her blushing face and rubs her forehead."
 
     ha "Ah! U—u—um, s—sorry! Sorry!"
@@ -1017,11 +1062,14 @@ label en_L14:
 
     ke "Damn, she didn't have to headbutt me."
 
-    hi "I'd do—" #reminder for the potential {nw} break
+    hi "I'd do—{w=0.25}{nw}" #reminder for the potential {nw} break
 
-    "Well, did"
+    "Well, did{w=0.25}{nw}"
 
     hi "—the same thing if I were in her position."
+    
+    show hanabad emb_downtimid_cry at center
+    with charamove
 
     "He takes a moment to regain his composure as Hanako stands up and starts bowing frantically."
 
@@ -1086,7 +1134,13 @@ label en_L14:
     ke "Whatever."
 
     "Thank god."
-
+    
+    show bg school_dormhisao at bgleft
+    show lilly invis at leftsit
+    show hanabad invis at twoleft
+    show kenji neutral at center
+    with dissolvecharamove
+    
     "He turns to leave, with me following him out and taking a hold of the door behind him."
 
     "He fires off a last hit before walking off."
@@ -1097,8 +1151,16 @@ label en_L14:
 
     ke "On your toes. Seeya."
 
+    hide kenji
+    with charaexit
+    
     "And with that, he walks off, seemingly ignoring my thoroughly perplexed expression as I shut the door."
-
+    
+    show bg school_dormhisao at center
+    show lilly basic_smileclosed at twoleftsit
+    show hanabad emb_downtimid at tworight
+    with dissolvecharamove
+    
     "As I walk back in, I see Hanako folding her blanket and Lilly still sitting on the side of the bed."
 
     hi "That guy's got problems."
@@ -1127,6 +1189,12 @@ label en_L14:
 
     "I quickly pull top draw of my desk and grab my cellphone from inside."
 
+    show bg school_dormhisao_blurred at bgright
+    show phone mobile
+    hide lilly
+    hide hanabad
+    with charaenter
+    
     hi "Shoot."
 
     "Dialing in the numbers as she says them, I tense as the phone starts to ring."
@@ -1205,18 +1273,27 @@ label en_L14:
 
     mi "Here, Shicchan."
 
-    hi "Um… Shizu—" #reminder for the potential {nw} break
+    hi "Um… Shizu—{w=0.25}{nw}" #reminder for the potential {nw} break
 
     # End phone conversation
 
     "Before I can say another word, the phone hangs up."
-
+    
+    show bg school_dormhisao at bgright
+    hide phone
+    show lilly basic_listen at twoleft
+    show hanabad emb_downtimid at tworight
+    with charachange
+    
     hi "Shit, she's not taking this well."
 
     li "She is covering for us though, as you said yourself."
 
     hi "Yeah, thank god. Once I talk to them tomorrow this whole mess should be cleaned up."
-
+    
+    show lilly basic_smile at twoleft
+    with charachange
+    
     li "Thank you, Hisao. Hanako, shall we be off?"
 
     "In all this fracas, I'd have forgotten Hanako to be there if she weren't standing before me she was so silent."
@@ -1237,6 +1314,10 @@ label en_L14:
 
     hi "No problem. Bye."
 
+    hide lilly
+    hide hanabad
+    with charaexit
+    
     "With a quick wave, Hanako and Lilly set off down the hallway arm in arm."
 
     "After watching them walk for a quick couple of seconds, I close the door and lean against it in complete exhaustion."

@@ -609,6 +609,7 @@ init 1:
                     'def_angry',
                     'defarms_strain',
                     'defarms_worry',
+                    'invis',
                     ]
         make_sprites('hanabad',hanabad_list,['sun','cry'])
         # # # [str]
