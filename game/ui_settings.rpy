@@ -1172,8 +1172,8 @@ init 1:
     image ev lilly_wheat_small = 'event/lilly_wheat_small.jpg'
     image ev lilly_wheat_large = 'event/lilly_wheat_large.jpg'
     
-    image evfg lilly_trainride = 'event/lilly_trainride.png'
-    image ev lilly_trainride_ni = 'event/lilly_trainride_ni.jpg'
+    image evfg lilly_trainride = 'event/lilly_train/lilly_trainride.png'
+    image ev lilly_trainride_ni = 'event/lilly_train/lilly_trainride_ni.jpg'
 
     image ev lilly_hospital = 'event/lilly_hospital.jpg'
     image ev lilly_hospitalclosed = 'event/lilly_hospitalclosed.jpg'
@@ -1186,6 +1186,13 @@ init 1:
     image ev lilly_restaurant_listen = 'event/lilly_restaurant_listen.jpg'
     image ev lilly_restaurant_sheepish = 'event/lilly_restaurant_sheepish.jpg'
     image ev lilly_restaurant_wine = 'event/lilly_restaurant_wine.jpg'
+    
+    # L26h
+    image evh lilly_cowgirl_cry = 'event/lilly_cowgirl/lilly_hcg_cowgirl_cry_small.jpg'
+    #image evh lilly_cowgirl_frown = 'event/lilly_cowgirl/lilly_hcg_cowgirl_frown_small.jpg'
+    image evh lilly_cowgirl_smile = 'event/lilly_cowgirl/lilly_hcg_cowgirl_smile_small.jpg'
+    image evh lilly_cowgirl_strain = 'event/lilly_cowgirl/lilly_hcg_cowgirl_strain_small.jpg'
+    image evh lilly_cowgirl_weaksmile = 'event/lilly_cowgirl/lilly_hcg_cowgirl_weaksmile_small.jpg'
     
     # HANAKO
     image ev hana_library_read = sunset("event/hana_library_read.jpg")
@@ -1392,7 +1399,8 @@ init 1:
                      ("evh hanako_miss1", "evh hanako_miss2", "evh hanako_miss3", "evh hanako_miss4", "evh hanako_miss5", "evh hanako_miss6", "evh hanako_miss7", "evh hanako_miss8", "evh hanako_miss9", "evh hanako_miss10", "evh hanako_miss11"),
                      ("evh hanako_finger_1", "evh hanako_finger_2", "evh hanako_finger_3"),
                      ("evh hanako_cowgirl_1", "evh hanako_cowgirl_2", "evh hanako_cowgirl_3", "evh hanako_cowgirl_4", "evh hanako_cowgirl_5", "evh hanako_cowgirl_6", "evh hanako_cowgirl_7", "evh hanako_cowgirl_8", "evh hanako_cowgirl_9", "evh hanako_cowgirl_10", "evh hanako_cowgirl_11", "evh hanako_cowgirl_12", "evh hanako_cowgirl_13", "evh hanako_cowgirl_14", "evh hanako_cowgirl_15", "evh hanako_cowgirl_16", "evh hanako_cowgirl_17", "evh hanako_cowgirl_18"),
-                     "ev hanako_resolute"
+                     "ev hanako_resolute",
+                     ("evh lilly_cowgirl_cry", "evh lilly_cowgirl_frown", "evh lilly_cowgirl_smile", "evh lilly_cowgirl_strain", "evh lilly_cowgirl_weaksmile")
                      )
     
                      
@@ -1462,6 +1470,7 @@ init 1:
     image kenji silhouette_naked = silhouette("sprites/kenji/kenji_neutral_naked.png",10)
     image hanako silhouette = silhouette("sprites/hanako/hanako_basic_bashful.png")
     image rin silhouette = silhouette("sprites/rin/rin_relaxed_surprised.png")
+    image lilly silhouette = silhouette("sprites/lilly/lilly_back_listen.png")
 
     python:
         shizuepiccomp = im.Composite ((874,836),

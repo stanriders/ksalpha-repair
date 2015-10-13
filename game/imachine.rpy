@@ -1037,6 +1037,8 @@ label L31:
 label L32:
     call iscene ("timeskip")
     call iscene ("L32")
+    call hscene ("L32h")
+    call iscene ("L32x")
     jump_out L33
 
 label L33:

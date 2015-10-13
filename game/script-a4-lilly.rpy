@@ -1279,14 +1279,19 @@ label en_L22:
 
     # These lines alternate between Hisao and Misha's writing. Maybe Misha could write in pink or red ink?
 
+    window hide
     $ fixedwritten_note(u"Don't look so bored Hicchan, school's nearly over!", text_args={"color":"#FF2AAA"})
-
+    window show
+    
     "I covertly uncap my pen and scrawl away at the page before passing it back to her, flicking my eyes to the front of the class every now and again."
-
+    
+    window hide
     $ fixedwritten_note(u"I'm guessing you have something planned?")
-
+    window show
+    
     "She takes the paper back and hunches over it comically, her tongue poking through the side of her mouth."
-
+    
+    window hide
     $ fixedwritten_note(u"Student council work with Shicchan, of course~", text_args={"color":"#FF2AAA"})
 
     $ fixedwritten_note(u"You're not still brooding over that, surely?")
@@ -1310,7 +1315,8 @@ label en_L22:
     $ fixedwritten_note(u"I hear Lilly's back?", text_args={"color":"#FF2AAA"})
 
     $ fixedwritten_note(u"Yeah, she was discharged yesterday, so she'd be back in school today.")
-
+    window show
+    
     "As she takes the note back and begins to write, I look up to see an unwelcome sight."
     
     stop music
@@ -1345,7 +1351,7 @@ label en_L22:
     "I'd probably feel sorry for her if I weren't as busy laughing as everybody else."
 
     scene bg school_road
-    with locationskip
+    with shorttimeskip#locationskip
 
     "After the wryly amusing events of earlier, the rest of the class seems to pass much faster."
 
@@ -1714,12 +1720,21 @@ label en_L22:
 
     emi "Rin…"
 
+    hide emi
+    hide rin
+    show lilly invis at left
+    with charaexit
+    
     "With that, they turn to walk off, the two busily dissecting where their plan went wrong as they disappear into the distance."
 
     aki "Cute pair. Strange, but cute."
 
     aki "Rin and Emi, right? Friends?"
 
+    show lilly cane_weaksmile at twoleft
+    show akira basic_smile at tworight
+    with charamove
+    
     li "Indeed."
 
     hi "Yeah. As weird as they are, they're not much stranger than the rest of the school."
@@ -1739,7 +1754,12 @@ label en_L22:
     aki "Ah, I wondered why you were here."
 
     "She gives a loud groan as she stretches her hands high above her head."
-
+    
+    scene bg suburb_konbiniext
+    show lilly cane_weaksmile at twoleft
+    show akira basic_smile at tworight
+    with shorttimeskip
+    
     hi "Well, here we are. Aura-Mart."
 
     aki "So this is where you guys shop, eh?"
@@ -1754,7 +1774,9 @@ label en_L22:
 
     aki "Haha, I see what you mean. Well, are we gonna go in, or just talk outside all day?"
 
-    scene bg school_road
+    scene bg suburb_konbiniext
+    show lilly cane_weaksmile at twoleft
+    show akira basic_smile at tworight
     with shorttimeskip
 
     "As we emerge from the store holding one bag each, Akira's the first to break the silence."
@@ -1829,8 +1851,8 @@ label en_L22:
 
     aki "Hey, I'll be around when you get back, don't worry."
 
-    scene bg school_dormext
-    with locationskip
+    scene bg school_dormext_ss
+    with shorttimeskip
 
     "It doesn't take long for us to reach the dorms, and the split we have to take to reach each of our own."
 
@@ -1854,6 +1876,9 @@ label en_L22:
 
     aki "Thanks, but I'd better get back to the hotel. Seeyas."
 
+    hide akira
+    with charaexit
+    
     "She turns and walks off, her hand held in upwards in farewell as she goes."
 
     "A jazz tune with no beat, singer or direction."
@@ -1874,7 +1899,7 @@ label en_L22:
 
     li "Good night, Hisao."
 
-    scene bg school_dormhisao
+    scene bg school_dormhisao_ss
     with locationskip
 
     "After reaching my dorm room and dropping my bags on the floor, I practically fall onto the bed."
@@ -1901,7 +1926,7 @@ label en_L22:
     return
 
 label en_L23:
-    scene black with fade
+    scene black with fade # why fade? [str]
     scene bg city_trainstation
     with shorttimeskip
 
@@ -2155,7 +2180,7 @@ label en_L23:
     ha "Uweeh!?"
     
     scene bg hok_houseext
-    with locationskip
+    with shorttimeskip#locationskip
     
     play music music_tranquil fadein 3.0
     play ambient sfx_park fadein 4.0
@@ -2176,7 +2201,7 @@ label en_L23:
     "The only thing that doesn't surprise me is it's Western styling."
     
     show bg hok_houseext at left
-    with None
+    with locationchange #None
 
     hi "This is amazing…"
     
@@ -2351,7 +2376,7 @@ label en_L23:
 label en_L24:
 
     scene black
-    with dissolve
+    with None #dissolve
     
     $ renpy.music.set_volume(0.5, 0.0, channel='ambient')
     play ambient sfx_park fadein 6.0
@@ -2984,7 +3009,7 @@ label en_L25:
 
     hi "Lilly?"
     
-    show bg hok_wheat_ss at right
+    show bg hok_wheat at right
     show lilly back_pout_cas at center
     with charaenter
 
@@ -2992,7 +3017,7 @@ label en_L25:
 
     hi "Where's Hanako?"
     
-    show lilly back_listen_cas at right
+    show lilly back_listen_cas 
     with charachange
 
     li "She's in bed. She went to sleep after I calmed her down."
@@ -3011,7 +3036,7 @@ label en_L25:
 
     hi "Lilly, you're hiding something from me. What is it?"
     
-    show lilly back_sad_cas at right
+    show lilly back_sad_cas
     with charachange
 
     li "Remember when I talked of my stay in the boarding school, Hisao?"
@@ -3024,7 +3049,7 @@ label en_L25:
 
     hi "In the music room, before the festival."
     
-    show lilly back_sad_cas at right
+    show lilly back_sad_cas 
     with charachange
 
     "She gives a simple nod."
@@ -3041,7 +3066,7 @@ label en_L25:
 
     "She gives a deep, slightly uneven, breath."
     
-    show lilly back_pout_cas at right
+    show lilly back_pout_cas
     with charachange
 
     li "But she stopped. Not by her own volition, but by my father."
@@ -3054,7 +3079,7 @@ label en_L25:
 
     "She says it with more than a hint of scorn."
     
-    show lilly back_sad_cas at right
+    show lilly back_sad_cas 
     with charachange
 
     li "So I learned to hide it."
@@ -3063,7 +3088,7 @@ label en_L25:
 
     li "Everything—Sadness. Anger. Emotions."
     
-    show lilly back_smileclosed_cas at right
+    show lilly back_smileclosed_cas 
     with charachange
 
     li "After all, as long as I smiled, everyone was happy."
@@ -3072,7 +3097,7 @@ label en_L25:
 
     li "But… I can't do that any more. As much as I wish I could, I can't."
     
-    show lilly back_sad_cas at right
+    show lilly back_sad_cas 
     with charachange
 
     li "I lost Akira then. I can't… lose you as well."
@@ -3152,8 +3177,6 @@ label en_L25:
     window hide
     
     show ev lilly_wheat_large at center
-    #with charachange
-    
     show ovl lilly_wheat_foreground
     with whiteout
     
@@ -3433,6 +3456,9 @@ label en_L26:
 
 label en_L26h:
 
+    show lilly behind_smileclosed_nak
+    with charaenter
+    
     "As we take off the last of our clothes, all of them now haphazardly piled behind us, my breath is taken."
 
     "Her long, shapely legs, those full hips and pale, plump breasts…"
@@ -3453,6 +3479,9 @@ label en_L26h:
 
     hi "Woah!"
 
+    show lilly behind_smile_nak
+    with charachange
+    
     "Our mouths separate as I fall onto my back, Lilly's body following mine."
 
     "My breath catches as her face hangs above me, her deep blue eyes almost swallowing me in."
@@ -3471,12 +3500,18 @@ label en_L26h:
 
     li "…?"
 
+    show lilly behind_pout_nak # fixme! [str]
+    with charachange
+    
     "She pauses and lifts her head slightly"
 
     "As she does, I completely forget why I was going to object."
 
     hi "I—It's okay. It's just… you're going faster than I expected."
 
+    show lilly behind_smileclosed_nak
+    with charachange
+    
     "She gives a small smile as she lowers her head, pecking my lower chest."
 
     "Lifting her face once again, she slowly moves her hands downwards, her breath catching as she brushes the side of my lower hair"
@@ -3493,6 +3528,9 @@ label en_L26h:
 
     "My body relaxes as hers seems to tense."
 
+    show lilly behind_weaksmile_nak
+    with charachange
+    
     li "Do you mind… if I…"
 
     "I wait for a second the last of the sentence, but none is forthcoming."
@@ -3506,6 +3544,8 @@ label en_L26h:
     "She pauses a moment before giving a small nod, shifting her legs over mine and righting her body."
 
     # Event CG
+    show evh lilly_cowgirl_smile
+    with whiteout
 
     "She gently brings both hands under my shaft, cupping it before lowering her body from the knees."
 
@@ -3546,6 +3586,8 @@ label en_L26h:
     "After a brief pause as the head touches the wettened entrance, she slowly lowers herself."
 
     # Event CG
+    show evh lilly_cowgirl_cry
+    with charachange
 
     "Her entire body tenses as it enters, her face obviously one of stifled pain."
 
@@ -3582,7 +3624,9 @@ label en_L26h:
     "I move my hands up to her arms, sliding them down and taking her hands in mine."
 
     # Event CG
-
+    show evh lilly_cowgirl_strain
+    with charachange
+    
     hi "Lilly… it's… good… Haaaa."
 
     "She gulps before replying, squeezing her hands around mine."
@@ -3608,6 +3652,8 @@ label en_L26h:
     li "Ah… Aaaah… AAAAAAAAAH!!"
 
     # Event CG
+    show evh lilly_cowgirl_weaksmile
+    with charachange
 
     "My mouth and eyes fly open as my entire body tenses, my hips hitting hers as I orgasm."
 
@@ -3615,6 +3661,9 @@ label en_L26h:
 
     "We stay locked in all-encompassing ecstasy for a brief moment, both of us enraptured."
 
+    scene bg hok_lounge_ni
+    with whiteout
+    
     "As it ends all too soon, our bodies collapse in exhaustion, with Lilly all but falling on top of me."
 
     "I wrap my arms around her loose, sweating body, the tiny droplets like dew on her soft, white skin."
@@ -5264,6 +5313,10 @@ label en_L30:
 
     "As I slide past two particular students, busily chatting between them, I pause."
 
+    show miki basic_smile at twoleft
+    show aoi neutral at tworight
+    with charaenter
+    
     hi "Hey Miki, Aoi."
 
     "They both give a polite nod."
@@ -5271,19 +5324,31 @@ label en_L30:
     "I can't help but take a moment to savour the smell of perfume coming from Aoi before continuing."
 
     hi "How're you going for the exams?"
-
+    
+    show miki basic_serious at twoleft
+    with charachange
+    
     mk "Don't. Say. That. Word."
 
     hi "That bad, huh?"
-
+    
+    show aoi surprised at tworight
+    with charachange
+    
     "Aoi" "Ah!"
-
+    
+    show miki basic_surprised at twoleft
+    with charachange
+    
     "Both of us turn to meet her, an expression of sudden enlightenment on her face."
 
     "Aoi" "Hisao, do you mind if I ask you a question?"
 
     hi "Shoot."
-
+    
+    show aoi oops at tworight
+    with charachange
+    
     "Aoi" "I overheard something."
 
     hi "Could you be a little more specific?"
@@ -5291,7 +5356,10 @@ label en_L30:
     "Aoi" "Lilly said she took a trip with you."
 
     hi "Well, yes. That's true…"
-
+    
+    show miki basic_grin at twoleft
+    with charachange
+    
     "I suddenly notice Miki grimacing."
 
     "Aoi" "Are you dating?"
@@ -5301,11 +5369,17 @@ label en_L30:
     "Each and every one is quickly discarded but for the truth."
 
     hi "Yeah."
-
+    
+    show miki basic_upset at twoleft
+    with charachange
+    
     mk "No! This is awful! How could you do this, Hisao!?"
 
     hi "What's so awful?"
-
+    
+    show aoi smile at tworight
+    with charachange
+    
     "Aoi gives a weak smile, trying to cover for her despairing friend."
 
     "Aoi" "We kind of… made another bet."
@@ -5331,15 +5405,22 @@ label en_L30:
     "Aoi" "Class representative of 3-2, well-liked by many in the class, foreign…"
 
     hi "Ah."
-
+    
+    show miki basic_grin at twoleft
+    with charachange
+    
     "Now that she mentions it, I guess Lilly would be the kind to be popular."
 
     "But, why is Miki grinning like a… Oh no!"
 
     "Before either Aoi or I can stop her, her quickly takes a deep breath, filling her lungs for a verbal onslaught."
-
+    
+    show miki basic_excited at twoleft
+    show aoi oops at tworight
+    with charachange
+    
     mk "Hisao's conquered Lilly! Step right up folks, we have a winner! Roll up, roll up, see the magnificent boyfriend of 3-2's Wolf in White!"
-
+    
     "I bury my blushing face deep into my palm, Aoi trying in vain to calm her loudly dancing friend."
 
     hi "I'm… uh… going. Seeyas."
@@ -5348,6 +5429,10 @@ label en_L30:
 
     hi "It's fine."
 
+    hide miki
+    hide aoi
+    with charaexit
+    
     "I walk down the hallway slumped and grimacing, feeling all too close to an oddity paraded around in a circus act."
 
     "It was inevitable it'd leak out, but that's…"
@@ -5356,7 +5441,7 @@ label en_L30:
 
     "I pick myself up slightly and begin to walk down the stairs, deciding on a quick trip to the dorms to salvage what's left of my pride."
 
-    scene bg school_hallway3
+    scene bg school_lobby
     with locationchange
 
     # Making an assumption about the layout of the classes here, need to sort this out
@@ -5374,6 +5459,7 @@ label en_L30:
     "Standing before a classroom door I've encountered several times before, I slowly cast aside the barrier between us."
 
     scene bg school_musicroom
+    show lilly silhouette
     with locationchange
 
     "The sight is exactly as I'd expected as I close the door beind me."
@@ -5396,11 +5482,18 @@ label en_L30:
 
     "Closing my eyes, I relax and let the music take me."
 
-    scene bg school_musicroom
+    scene black
+    with shuteye
+    
+    #scene bg school_musicroom
+    scene black
     with shorttimeskip
 
     "I'm not quite sure how much time passes, whether it be a scant few minutes or an hour, or even if I actually slept or just rested."
-
+    
+    scene bg school_musicroom
+    with openeye
+    
     "In either case I eventually come to my senses, groggily opening my eyes as she still plays."
 
     "Giving a stifled yawn, I lean back in the chair as I stretch."
@@ -5411,16 +5504,24 @@ label en_L30:
 
     "The feeling of my center of gravity going beyond the point of no return."
 
+    with vpunch
+    
     "Almost as if everything were moving in slow motion, I fall backwards and land on the floor with a loud thud."
 
     hi "Ah, damn…"
 
+    show lilly basic_surprised_close_ni
+    with charaenter
+    
     "As I quickly move to right myself, picking the chair off my front as I do, I see Lilly in front of me with her cello performance having come to an abrupt end."
 
     li "Hisao, are you—!"
 
     hi "Calm down, I'm fine."
-
+    
+    show lilly basic_weaksmile_ni
+    with charachange
+    
     "We both give a sigh, Lilly in relief and I in exhaustion."
 
     li "Hisao, do be careful."
@@ -5442,7 +5543,10 @@ label en_L30:
     "With the fracas of before abating, we return to out seats. Both of them the correct way around, I might hasten to add."
 
     hi "What was that piece called?"
-
+    
+    show lilly basic_smile_ni
+    with charachange
+    
     li "<Yeah this needs a new cello piece that's kind of lighthearted. Title will go here.>"
 
     hi "<Title>, huh? It's nice."
@@ -5468,7 +5572,10 @@ label en_L30:
     li "Hmm, I'd like to be an English teacher, I suppose."
 
     hi "Woah, fast!"
-
+    
+    show lilly basic_giggle_ni
+    with charachange
+    
     "She gives a small giggle."
 
     li "I've held the idea for quite a time now."
@@ -5488,7 +5595,10 @@ label en_L30:
     li "You're not sure what you want to do?"
 
     hi "Not at all, though it's more because I didn't think about it rather than really not knowing."
-
+    
+    show lilly basic_smile_ni
+    with charachange
+    
     li "I'm surprised. I thought you were quite driven."
 
     hi "Really?"
@@ -5506,7 +5616,10 @@ label en_L30:
     li "Shall we be off then?"
 
     hi "Indeed we shall, madame."
-
+    
+    show lilly basic_smile_close_ni
+    with charachange
+    
     "As I hold out my elbow, she hooks her left arm through it, her face lingering close to mine."
 
     "With a light, affectionate kiss, I open the door, light flooding into the darkened room."
@@ -5525,10 +5638,12 @@ label en_L30:
 
 label en_L31:
 
-    scene bg school_dormhisao
-    with openeye
+    scene black
+    with None
 
-    centered "*thump* *thump* *thump*"
+    #centered "*thump* *thump* *thump*"
+    play sound sfx_doorknock
+    with Pause(0.5)
 
     "Eugh."
 
@@ -5544,6 +5659,9 @@ label en_L31:
 
     hi "I sure do."
 
+    scene bg school_dormhisao
+    with openeyefast
+    
     "No! Stop! Don't do this, Hisao!"
 
     "I quickly shake my head to get the atrociously cliche scene out of my mind."
@@ -5551,11 +5669,20 @@ label en_L31:
     "Kenji's manga is rotting my brain, I'm sure of it."
 
     "Alert and alarmed, I pick myself up out of bed and quickly swing open the door."
-
+    
+    play sound sfx_dooropen
+    
+    scene bg school_dormhallway
+    show kenji tsun
+    with locationchange
+    
     # Open to Kenji sprite
 
     hi "Speak of the devil."
-
+    
+    show kenji rage
+    with charachange
+    
     ke "What?"
 
     hi "Nothing."
@@ -5586,12 +5713,23 @@ label en_L31:
 
     hi "Kenji, I will close this door if you do not tell me what I've done."
 
-    ke "Fine, fine. I—" #reminder for the potential {nw} break
+    ke "Fine, fine. I—{w=0.15}{nw}" #reminder for the potential {nw} break
 
+    scene bg school_dormhisao
+    with locationchange
+    
+    play sound sfx_doorclose
+        
     "I close the door."
 
     "After a couple of seconds of sweet, sweet silence I reluctantly open it once more."
-
+    
+    play sound sfx_dooropen
+    
+    scene bg school_dormhallway
+    show kenji rage
+    with locationchange
+    
     ke "What's up with that? I was about to tell you."
 
     hi "You were too slow."
@@ -5599,7 +5737,10 @@ label en_L31:
     "…"
 
     hi "Fine, just spit it out."
-
+    
+    show kenji tsun
+    with charachange
+    
     ke "It's Lilly, man."
 
     "I should've guessed."
@@ -5646,12 +5787,20 @@ label en_L31:
 
     hi "Uh… seeya."
 
+    hide kenji
+    with charaexit
+    
     "And with that, he simply and silently walks off."
 
     hi "What in the world…"
-
+    
+    scene bg school_dormhisao
+    with locationchange
+    
+    play sound sfx_doorclose
+    
     "My entire day's energy seemingly sapped within the space of a few minutes, I lazily let my hand flop onto the door, barely shutting it."
-
+    
     "So I'm on the side of the feminists now, I'm called Mr Big and I come from some American TV show."
 
     "I was wrong."
@@ -5664,8 +5813,8 @@ label en_L31:
 
     "Thank God it's a Friday."
 
-    scene bg school_gate
-    with locationskip
+    scene bg school_gate_ss
+    with shorttimeskip
 
     "Class for the day ends not a moment too soon, the sunset's orange glow faintly bathing the concrete as I walk through the courtyard with the other students."
 
@@ -5699,7 +5848,7 @@ label en_L31:
 
     "With a nod of agreement, she loops her arm through mine as we begin down the street to the store."
 
-    scene bg school_road
+    scene bg school_road_ss
     with locationchange
 
     "As we silently walk, arm in arm, I gaze up at the sky."
@@ -5868,7 +6017,7 @@ label en_L31:
 
     hi "Ah, yeah."
 
-    scene bg school_road
+    scene bg suburb_roadcenter_ni
     with shorttimeskip
 
     "As we emerge from the store, the darkness of the night's fallen on the path ahead, the streetlights ahead giving the only illumination to be seen."
@@ -5925,7 +6074,7 @@ label en_L31:
 
     "The fewer that know about his paranoid ranting the better."
 
-    scene bg school_dormext
+    scene bg school_dormext_ni
     with locationskip
 
     "Before long, we stand at the entrance to the student dorms."

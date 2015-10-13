@@ -26,7 +26,7 @@ ___What needs to be done___:
  * Also, timeskips.
 
 **Overall**:
- * Finish Lilly's and Hanako's routes and make a public release
+ * Finish Lilly's route and make a public release
  * Read Shizune-route
  * Read Emi-route
  * Read Rin-route
