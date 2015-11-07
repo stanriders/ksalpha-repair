@@ -5178,7 +5178,7 @@ label en_S29:
 
     "I wonder how she feels."
     
-    stop mus
+    stop music
 
     "The smallness and impersonality of my dorm room are starting to get to me. Throwing on a jacket since it looks unusually breezy outside, I head outside and decide to take a walk around the school grounds."
 

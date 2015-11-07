@@ -7735,7 +7735,7 @@ label en_HT13h:
     scene white
     with dissolve
     
-    show ev hanako_finger_close #:
+    show evh hanako_finger_close #:
         #xalign 0.5 yalign 0.5 zoom 0.4 # my my, instead of resizing cg you used ingame zooming?.. [str]
     with dissolve
 

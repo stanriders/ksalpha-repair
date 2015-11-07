@@ -132,7 +132,7 @@
     with charaenter
     with Pause (1.0)
     
-    hide window
+    window hide
     
     #Pause, extreme close-up CG of just her face and the music box, with her watching the music box as it plays the tune. Possibly a graphical effect to simulate the cylinder and pins inside moving as well.
 
@@ -1477,7 +1477,7 @@ label en_L15:
 
     # Centered
     
-    show shizu basic_frustrated_close at center
+    show shizu behind_frustrated_close at center
     with charachange
 
     $ fixedwritten_note("Are you aware of the ten o'clock curfew?")
@@ -1601,10 +1601,10 @@ label en_L15:
     show bg school_scienceroom at bgright
     with charamove
     
-    show shizu behind_smile_blank at twoleft
+    show shizu behind_smile at twoleft
     with charachange
 
-    show hanako emb_blush_timid at rightedge
+    show hanako emb_blushtimid at rightedge
     with charaenter
     
     show misha hips_smile at left
@@ -1740,7 +1740,7 @@ label en_L16:
     
     play sound sfx_doorknock
 
-    centered "*thump* *thump* *thump*"
+    #centered "*thump* *thump* *thump*"
 
     "The knocking at the door breaks me out of my concentration on the sheet in front of me."
 
@@ -2202,7 +2202,7 @@ label en_L16:
 
     hi "Be sure not to what?"
     
-    show rin basic_deadpan_amused at left
+    show rin basic_deadpanamused at left
     with charachange
 
     rin "I almost choked on a pill once."
@@ -2332,7 +2332,7 @@ label en_L16:
 
     hi "Yeah, sure. Lead the way."
 
-    scene bg school_dormhall_ground
+    scene bg school_dormhallground
     with charachange
     
     stop music
@@ -2479,7 +2479,7 @@ label en_L16:
 
     emi "Well, yeah."
 
-    show rin basic_deadpansuprised at right
+    show rin basic_deadpansurprised at right
     with charaenter
     
     rin "She has a point."
@@ -2949,7 +2949,7 @@ label en_L17:
 
     "Emi, lacking in my patience around her, gives her a sharp clap on th shoulder to try and make her come out with what she wants to say."
 
-    show hanako emb_blush_timid at right
+    show hanako emb_blushtimid at right
     with charachange
     
     ha "I… I was going to ask… if you've seen Lilly… today?"

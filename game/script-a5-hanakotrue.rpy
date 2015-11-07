@@ -1430,7 +1430,7 @@ label en_HT15:
     hide hanako
     hide lilly
     hide misha
-    hide shizune
+    hide shizu
     hide emi
     hide rin
     

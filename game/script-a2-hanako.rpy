@@ -679,7 +679,7 @@
     stop ambient fadeout 3.0
     
     hide hanako_fireshine
-    hide hanako_shanghaifw 
+    #hide hanako_shanghaifw 
     with Dissolve(1.0)
 
     "The show is over all too quickly; fireworks are expensive, even for the most well-funded schools."

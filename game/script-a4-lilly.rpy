@@ -2505,7 +2505,7 @@ label en_L24:
 
     li "Was not."
     
-    show lilly basic_emb_blush_cas at center
+    show lilly basic_emb_cas at center # fixme? "_blush" [str]
     with charachange
     with Pause(1.0)
     
@@ -3807,7 +3807,7 @@ label en_L27:
 
     hi "You look bright and chipper at least, Hanako."
     
-    show hanagown emb_rn at tworight
+    show hanagown distant_rn at tworight # !! fixme? "emb_rn"
     with charachange
 
     ha "Ah… mm."
@@ -4345,7 +4345,7 @@ label en_L28x:
 
     # Event CG
 
-    scene lilly_trainride_ni
+    scene ev lilly_trainride_ni
 
     "Train 43. The last passenger train running today."
 
@@ -8405,7 +8405,7 @@ label en_L36:
     show misha perky_smile at left
     with charachange
     
-    show shizu behind_fron at twoleft
+    show shizu behind_frown at twoleft
     with charachange
     
     hi "That is a dirty, dirty tactic. I swear there's something in the Geneva Conventions about that."
@@ -8431,7 +8431,7 @@ label en_L36:
 
     "Seeing Misha taken off balance like this is both amusing and curious. Even the paper-thin grin the adopts is a pretty obvious facade for her discomfort."
 
-    show lilly basic basic_displeased at right
+    show lilly basic_displeased at right
     with charachange
     
     li "The class attendance?"
@@ -8647,7 +8647,7 @@ label en_L37:
 
     ha "Mm. Lilly had cared for me for so long, I'd grown dependant on her."
 
-    show hanagown_distant at left
+    show hanagown distant at left
     with charachange
     
     ha "But she had to lead her own life, and I had to lead my own."

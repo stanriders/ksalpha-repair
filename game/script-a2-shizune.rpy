@@ -4289,7 +4289,7 @@ label en_S13:
 
     hide yuukoshang
     with charaexit
-    show yukoshang neurotic_up at offscreenright
+    show yuukoshang neurotic_up at offscreenright
     with charaenter
     hide yuukoshang
     with charaexit
@@ -9394,7 +9394,7 @@ label en_S19ba:
      
     scene bg school_road_ni
     with locationchange
-    scene bg_school_gate_ni
+    scene bg school_gate_ni
     with locationchange
     scene bg school_courtyard_ni
     with locationchange
@@ -9624,7 +9624,7 @@ label en_S19bb:
      
     scene bg school_road_ni
     with locationchange
-    scene bg_school_gate_ni
+    scene bg school_gate_ni
     with locationchange
     scene bg school_courtyard_ni
     with locationchange
@@ -9857,7 +9857,7 @@ label en_S19bc:
      
     scene bg school_road_ni
     with locationchange
-    scene bg_school_gate_ni
+    scene bg school_gate_ni
     with locationchange
     scene bg school_courtyard_ni
     with locationchange
@@ -10088,7 +10088,7 @@ label en_S19bd:
      
     scene bg school_road_ni
     with locationchange
-    scene bg_school_gate_ni
+    scene bg school_gate_ni
     with locationchange
     scene bg school_courtyard_ni
     with locationchange

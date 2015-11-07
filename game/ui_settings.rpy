@@ -1173,6 +1173,7 @@ init 1:
     image ev lilly_wheat_large = 'event/lilly_wheat_large.jpg'
     
     image evfg lilly_trainride = 'event/lilly_train/lilly_trainride.png'
+    image evfg lilly_trainride_smiles = 'event/lilly_train/lilly_trainride_smiles.jpg'
     image ev lilly_trainride_ni = 'event/lilly_train/lilly_trainride_ni.jpg'
 
     image ev lilly_hospital = 'event/lilly_hospital.jpg'
