@@ -7,6 +7,8 @@ Katawa Shoujo Prealpha Repair
 
 **Documentation**: https://github.com/stanriders/ksalpha-repair/wiki/KS-ALPHA-CHEATSHEET-by-muffinduck01
 
+**Android Version**: https://github.com/stanriders/ksalpha-android
+
 --
 ___What needs to be done___: 
 
@@ -31,7 +33,6 @@ ___What needs to be done___:
  * Read Emi-route
  * Read Rin-route
  * Do whatever gonna needs to be done.
- * Android port. Maybe.
  * Russian translation. Implement as soon as it's gonna be done.
  * Do something with a2-hanalilly-trunk?
  * Put todo-list somewhere out of readme? Nah, it's fine
