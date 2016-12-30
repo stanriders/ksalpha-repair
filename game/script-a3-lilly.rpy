@@ -4175,7 +4175,7 @@ label en_L19:
 
     li "I need you to take care of her while I can't."
 
-    "Even as she says it, her face is one of concern."
+    #"Even as she says it, her face is one of concern."
 
     return
 

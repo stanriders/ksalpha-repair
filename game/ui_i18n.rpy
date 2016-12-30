@@ -7,6 +7,7 @@
         if target in available_languages:
             persistent.current_language = target
             np_current_language = target
+            switch_runaming()
             displayStrings = displayDict[target]
             s_scenes = make_s_scenes(target)
             act_names = displayStrings.act_names
@@ -22,7 +23,12 @@
     # # # [ russian hepburn/polivanov name translation switching [str]
     def switch_runamings(target):
         persistent.runamings = target
-        switch_language("ru") # HURR DURR I HACK (not working anyway tho) [str]
+        switch_runaming()
+        global displayStrings, gm_exit_to, s_scenes, save_name, act_names, np_current_language, _window_subtitle
+        displayStrings = displayDict["ru"]
+        s_scenes = make_s_scenes("ru")
+        act_names = displayStrings.act_names
+        save_name = last_scene_label
         return True
     # # # ] [str]
         
@@ -103,6 +109,7 @@ init -2 python:
     displayDict["jp"].allLanguages["de"] = jpw(u"ドイツ語")
     displayDict["jp"].allLanguages["it"] = jpw(u"イタリア語")
     displayDict["jp"].allLanguages["jp"] = displayDict["jp"].activeLanguage
+    displayDict["jp"].allLanguages["ru"] = jpw(u"ロシア語")
     
     displayDict["jp"].return_button_text = jpw(u"戻る")
     
@@ -140,6 +147,10 @@ init -2 python:
         # @__akiaki: added jumper to game/pause menu (only appears if z_jumper.rpy is present)
         if renpy.has_label('jumper'):
           config.main_menu.insert(3, (displayStrings.game_menu_jumper, ui.jumps("jumper", "intra_transition"), 'True')) #"Select Act"
+          
+        # it was done by ru translating team request [str]
+        if persistent.current_language == "ru":
+            config.main_menu.insert(5, (displayStrings.main_menu_credits, ui.jumps("show_credits", "intra_transition"), 'True')) #"Credits"
 
         # contents, game menu, etc.
         config.game_menu = [

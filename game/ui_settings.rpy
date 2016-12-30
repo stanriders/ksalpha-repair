@@ -587,6 +587,7 @@ init 1:
                     'evil', # [str]
                     'shock', # [str]
                     'nude_disgust', # [str]
+                    'invis'
                     ]
         make_sprites('hanagown',hanag_list,['blush','cry','cry2','alt','hosp','tail'])
 
@@ -1525,6 +1526,7 @@ init 1:
     
     #black version:
     image alivetext = renpy.ParameterizedText(yalign=0.5, xanchor=0, xpos = 130, style="alive_text", drop_shadow=None, color="#000000")
+    image alivetext_ru = renpy.ParameterizedText(yalign=0.5, xanchor=0, xpos = 70, style="alive_text", drop_shadow=None, color="#000000")
     #moved white version:
     image walivetext = renpy.ParameterizedText(yalign=0.5, xanchor=0.5, xpos = 0.5, style="alive_text", drop_shadow=None, color="#ffffff")
     
@@ -2398,7 +2400,7 @@ init python:
     style.create("b_nvl_window", "nvl_window")
     style.b_nvl_window.background = None
     style.b_nvl_window.top_padding = 140
-    style.b_nvl_window.left_padding = 80
+    style.b_nvl_window.left_padding = 40
 
     style.menu_choice_button.background = "ui/bg-choice.png"
     style.menu_choice.take(style.mm_button_text)

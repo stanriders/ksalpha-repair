@@ -1876,7 +1876,7 @@ n "So in case you want to get to the True ending you should choose Lilly now and
 
 n "Or just use skip option to get right to the Hanako True act 4."
 
-n "But if you want to get to the most depressive(IMO) stuff - you should choose Hanako right now."
+n "But if you want to get to the main Hanako route - you should choose Hanako right now."
 
 n " -StanR and md01"
 

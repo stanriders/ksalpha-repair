@@ -2849,7 +2849,7 @@ label en_S11:
     show shizu behind_frown at twoleft
     with charachange
 
-    "Wahahahaha! Wahahahahaha~!"
+    mi "Wahahahaha! Wahahahahaha~!"
 
     "Shizune sighs inaudibly and then her shoulders slump as she balks wearily."
 
@@ -4454,7 +4454,7 @@ label en_S14:
     show shizu behind_blank at tworight
     with charaenter
 
-    mi "Hi~. Hicchan!"
+    mi "Hi~ Hicchan!"
 
     ssh "Hello."
 
