@@ -29,13 +29,8 @@ ___What needs to be done___:
 
 **Overall**:
  * Finish Lilly's route and make a public release
- * Read Shizune-route
- * Read Emi-route
- * Read Rin-route
  * Do whatever gonna needs to be done.
- * Russian translation. Implement as soon as it's gonna be done.
  * Do something with a2-hanalilly-trunk?
- * Put todo-list somewhere out of readme? Nah, it's fine
 
 --
 

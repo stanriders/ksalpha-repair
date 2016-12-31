@@ -1765,7 +1765,7 @@ label ru_S9:
     show misha hips_laugh at twoleft
     with charachange
 
-    mi "A~ха-ха-ха-ха! Ха-ха-ха-ха-ха-ха!"
+    mi "А~ха-ха-ха-ха! Ха-ха-ха-ха-ха-ха!"
 
     show misha hips_grin at twoleft
     with charachange

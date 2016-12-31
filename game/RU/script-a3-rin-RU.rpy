@@ -2778,8 +2778,7 @@ label ru_R25:
 
     hi "Вот я и задумываюсь о том, что на них нарисовано."
 
-    hi "Emi talked about you getting a “right feeling,” the teacher just rambled about your imagination, the gallerist said something about the technical aspects of your style but you yourself won't explain anything even if 
-        I ask."
+    hi "Эми говорила о твоём «правильном настрое», учитель болтал о твоём воображении, владелица галереи что-то сказала о технических аспектах твоего стиля, но ты сама ничего не объяснишь, даже если я спрошу."
 
     show rin relaxed_doubt_cas_ss with charachange
     
@@ -4457,10 +4456,10 @@ label ru_R29:
     rin "Оно. Правда, которую ты всегда забываешь, когда просыпаешься."
     nvl show dissolve
     
-    rinbabble "It's like a white colored needle piercing the place of your mind where you keep everything you are thinking now and it burns out everything but I can't remember I just can't after it passes, 
-               I always forget it and there is no way I can do this if I keep forgetting that, and don't want to why do I always have to forget the important things? I have to paint this I have to and 
-               I can see it but I can't remember no matter how many times I try it hasn't worked even once since yesterday there is no way for me 
-               I keep thinking of you only you and it won't help even if I do it and touch—" #reminder for the potential {nw} break
+    rinbabble "Это как белого цвета игла пробивающаяся в область твоего разума в которой ты держишь всё о чём сейчас думаешь и эта игла сжигает всё; я уже ничего не помню вообще ничего игла уже пролетела, 
+               я всегда забываю и не смогу вспомнить если всё постоянно так стирается из памяти но я не хочу почему у меня постоянно вылетают важные вещи из головы? Мне эти мысли нужно перенести на холст и 
+               в голове эти мысли появляются но сразу же исчезают как бы я ни пыталась их запомнить вообще ни разу не получалось со вчерашнего дня я просто не могу 
+               Я думаю о тебе и только о тебе и ничего не могу с этим сделать даже если я буду трогать себя—" #reminder for the potential {nw} break
 
     nvl clear
     nvl hide dissolve

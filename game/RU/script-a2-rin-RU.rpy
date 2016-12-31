@@ -39,7 +39,7 @@
     
     show muto smile with charachange
 
-    mu "Приступим. Тема сегодняшнего урока – {a=ismuth_R2_friction}трение{/a}…"
+    mu "Приступим. Тема сегодняшнего урока – трение…"
     
     scene bg school_scienceroom with shorttimeskip 
 
@@ -102,7 +102,7 @@
 
     "Эми на полу на коленях, держится за лоб обеими руками."
     
-    "Она и не подумала притормозить перед столкновением, так что я пячусь назад и падаю прямо на копчик. {a=ismuth_R2_impact}Это чертовски больно.{/a}"
+    "Она и не подумала притормозить перед столкновением, так что я пячусь назад и падаю прямо на копчик. Это чертовски больно."
     
     show emi sad_depressed at center with charamoveinbottom
 
@@ -335,7 +335,7 @@
     
     "Она отводит взгляд от неба и обращает его наконец на меня. Пронзительная глубина её глаз, когда она сосредоточенно на что-нибудь смотрит, просто ошеломляет."
 
-    rin "Знаешь, будь ты девушкой, я бы увидела твои {a=ismuth_R2_panties}трусики.{/a}"
+    rin "Знаешь, будь ты девушкой, я бы увидела твои трусики."
 #<I'm so going to quote this out of context on IRC.>
 
     hi "Если бы я был девушкой, то не подошёл бы так близко к тому, кто пытается разглядеть моё нижнее бельё."
@@ -1217,7 +1217,7 @@ label ru_R4:
 
     "Отталкивая эти мысли прочь, я отправляюсь на поиски своей формы."
 
-    "{a=ismuth_R4_love}У меня закончились чистые рубашки, поэтому я довольствуюсь вчерашней. Я быстро застёгиваю её и натягиваю штаны, прежде чем выйти из комнаты.{/a}"
+    "У меня закончились чистые рубашки, поэтому я довольствуюсь вчерашней. Я быстро застёгиваю её и натягиваю штаны, прежде чем выйти из комнаты."
 #<As opposed to leaving with the shirt unbuttoned and trouserless? I'm sure the ladies would l o v e that.>
 
     "Горький привкус во рту остужает мой интерес к завтраку."
@@ -1323,14 +1323,14 @@ label ru_R4:
 
     "В нём нет ничего особенного, ни хитростей, ни магии. Это всего лишь стержень из углерода."
 
-    "{a=Note}Конечно, если уметь им пользоваться…{/a}"
+    "Конечно, если уметь им пользоваться…"
 #<This is one helluva cheesy line.>
 
     "Хотел бы я рисовать как Рин."
 
-    "{a=Note}Больше практики?{/a}"
+    "Больше практики?"
 
-    "{a=Note}Разве это всё, что нужно для того, чтобы стать хорошим художником?{/a}"
+    "Разве это всё, что нужно для того, чтобы стать хорошим художником?"
 
     "Игнорируя навевающий сон голос учителя, я открываю свою тетрадь на пустой странице и касаюсь её кончиком карандаша."
 
@@ -1923,7 +1923,7 @@ label ru_R7:
     #reminder for me to add Emi inviting Hisao to this event somewhere in R1-R5, since the date has been changed a couple of times
 
     
-    "{a=ismuth_R6_AuratoAura}Я бы не отказался поспать ещё немного.{/a}"
+    "Я бы не отказался поспать ещё немного."
     
     play music music_another fadein 1.0
 
@@ -2086,7 +2086,7 @@ label ru_R7:
 
     stop ambient fadeout 4.5
     
-    "{a=Rewrite}Так мы и сидим, потерянные в собственных мыслях. Даже крики и шум толпы, кажется, больше не достигают моих ушей, и тишина между мной и Рин ширится, поглощая всех вокруг.{/a}"
+    "Так мы и сидим, потерянные в собственных мыслях. Даже крики и шум толпы, кажется, больше не достигают моих ушей, и тишина между мной и Рин ширится, поглощая всех вокруг."
 #<While I think that my edits are functional, I wouldn't mind seeing some rewriting of this whole blurb.>
 
     "Я не только слышу, но и чувствую, как бьётся сердце у меня в груди."
@@ -2192,7 +2192,7 @@ label ru_R7:
 
     "На удивление."
 
-    hi "{a=Rewrite}Тем не менее, даже если она поборола свою слабость, ей, как и остальным нашим ученикам, всё равно приходится тяжелее обычных людей.{/a}"
+    hi "Тем не менее, даже если она поборола свою слабость, ей, как и остальным нашим ученикам, всё равно приходится тяжелее обычных людей."
 #<You should rewrite this sentence to either focus on Emi, or 'all students here'. You changed your subject midsentence.> -- Kind of fixed and reconjugated, TcDohl
 
     show rin basic_awayabsent with charachange
@@ -2511,9 +2511,7 @@ label ru_R7:
     
     show emi excited_happy_gym at tworight with charachange
     
-    emi "Listen, would you want to come to celebrate with me and Rin next weekend? We would go today but
-
-    I have to go see the Nurse and then there is a huge pile of homework we have to do."
+    emi "Слушай, хочешь на выходных сходить отпраздновать со мной и Рин? Мы могли бы пойти и сегодня, но мне нужно наведаться к фельдшеру, а ещё нам задали кучу домашки."
 
     show emi basic_annoyed_gym at tworight with charachange
     
@@ -2700,7 +2698,7 @@ label ru_R8:
 
     "Помню, раньше я тоже был таким. Но сумел, пускай и немного, измениться после того, как у меня начались проблемы с сердцем."
   
-    "{a=Rewrite}Я трясу головой, чтобы выкинуть из головы ненужные мысли и сосредоточиться на настоящем.{/a}"
+    "Я трясу головой, чтобы выкинуть из головы ненужные мысли и сосредоточиться на настоящем."
 #This is kinda awkward, and I don't wanna just simplify your language everywhere I go lol.
    
     stop music fadeout 5.0
@@ -2721,7 +2719,7 @@ label ru_R8:
 
     show rin basic_amused with charachange
     
-    rin "{a=ismuth_R8_Points}А ты и правда хорош в догадках.{/a}"
+    rin "А ты и правда хорош в догадках."
 
     hi "Похоже на то."
 
@@ -2763,7 +2761,7 @@ label ru_R8:
 
     hi "Я подумал, что было бы веселее работать вместе. В этом и суть собраний кружка, так ведь?"
     
-    "Она медленно и неуверенно кивает, словно обнажая миру свою {a=Note}негибкость ума{/a}."
+    "Она медленно и неуверенно кивает, словно обнажая миру свою негибкость ума."
     #It's odd. Sometimes Rin has mad mental agility, and sometimes she's a damp match in a dark cave.
 
     hide rin with charaexit
@@ -2912,7 +2910,7 @@ label ru_R8:
 
     "Как обычно, её разграничение терминов остаётся для меня загадкой."
 
-    hi "Тогда {a=ismuth_R8_ART}что есть искусство{/a}?"
+    hi "Тогда что есть искусство?"
        
     rin "Это нечто, что идёт изнутри тебя, а не снаружи. Как чувства."
 
@@ -3271,7 +3269,7 @@ label ru_R10:
 
     hi "Потому что я схватил тебя."
 
-    rin "Но я могла и не умереть. Нельзя рассчитывать только на божественное вмешательство {a=ismuth_R9_whut}или тормоза{/a}. И то и другое очень важно."
+    rin "Но я могла и не умереть. Нельзя рассчитывать только на божественное вмешательство или тормоза. И то и другое очень важно."
 
     "Я кладу руку ей на плечо и с силой сжимаю, чтобы убедиться, что она не отвлечётся на что-нибудь."
     
@@ -3298,9 +3296,9 @@ label ru_R10:
     show rin basic_deadpanamused with charachange
     
     nvl show dissolve
-    rinbabble "You probably woke up with the wrong hand so you got very depressed and then noticed that your Wednesday socks are in the laundry so you had to either use Tuesday socks for two days in a row or use Thursday socks 
-               on Wednesday which not only is huge bad luck but also leads to a vicious cycle of using wrong socks on a wrong day so it's even more bad luck unless you can get another pair from somewhere. 
-               Or no, the day is not wrong really, only the socks are. Two misfortunes like that in one morning is the kind of thing that could get anyone down. Trust me, I know."
+    rinbabble "Ты наверное проснулся не с той руки и от этого очень подавлен а ещё твои носки на среду уже лежали в корзине с грязным бельём и поэтому тебе пришлось надеть носки на вторник второй день подряд 
+               или сразу перейти к носкам для четверга что ведёт не только к большим неудачам но и к порочному кругу надевания носков не в тот день а это ещё большая неудача если только ты конечно не найдёшь другую пару где-нибудь. 
+               Или стой, нет, со днём всё в порядке, это просто носки не те. Две неудачи в одно утро могут любого вывести из строя. Уж поверь мне, я знаю."
     
     nvl hide dissolve
     nvl clear
@@ -3378,10 +3376,10 @@ label ru_R10:
     show rin basic_deadpancontemplation with charachange    
     
     nvl show dissolve
-    rinbabble "That's weird. Almost as weird as that one time when Emi found two butterflies in her lunch box and it turned out that those kinds of butterflies don't live in Japan at all. 
-               The best theory to this date is that there was some kind of a teleportation going on, because not only her lunch had extra butterflies, she was missing a slice of tomato from her sandwich, 
-               so maybe that was switched with the butterflies although the motivation for that is what boggles me. The tomato couldn't have been magically turned into the butterflies, since they were not red at all. 
-               They were yellow with blue spots in all four wings and some white I think."
+    rinbabble "Это странно. Настолько же странно, как в тот раз, когда Эми нашла двух бабочек в её коробке для ланча, и оказалось, что таких бабочек вообще нет в Японии. 
+               Лучше всего это объяснило бы то, что произошла какая-то телепортация, потому что не только в коробке появились те две бабочки, но ещё и кусочек помидора исчез из её сэндвича, 
+               поэтому, наверное, бабочки поменялись местами с куском помидора, хотя причина этого мне неведома. Помидор не мог магическим образом превратиться в бабочек, потому что он красный, а они вовсе нет. 
+               Они были жёлтого цвета с синими пятнышками на крыльях и ещё, думаю, с белыми."
 
     nvl hide dissolve
     nvl clear
@@ -3430,7 +3428,7 @@ label ru_R10:
     
     "Я направляюсь прямиком к отделу с мороженым. В такой палящий день нет ничего лучше фруктового льда, чтобы охладить голову."
 
-    "Рин присоединяется ко мне и вожделенно смотрит на прилавок с замороженными продуктами, пока я разрываюсь, с каким вкусом выбрать: с клубничным или с {a=aura_raspberry_flavor}малиновым{/a}."
+    "Рин присоединяется ко мне и вожделенно смотрит на прилавок с замороженными продуктами, пока я разрываюсь, с каким вкусом выбрать: с клубничным или с малиновым."
 
     #If one of the editors makes a fact check and comes telling me they don't sell raspberry flavoured popsicles in Japan, I swear I am going to come to your houses at night and stab you
 
@@ -3438,7 +3436,7 @@ label ru_R10:
 
     show rin basic_absent with charachange
     
-    rin "{a=ismuth_R9_whut}Мороженую кукурузу, пожалуйста.{/a}"
+    rin "Мороженую кукурузу, пожалуйста."
 
     hi "Что?"
 
@@ -3599,7 +3597,7 @@ label ru_R11:
 
     window show dissolve
     
-    hi "{a=Note}Интересно, что способно потрясти Рин{/a}?"
+    hi "Интересно, что способно потрясти Рин?"
 #This makes it sound like Hisao is thinking aloud, sort of, as opposed to the pure inner monolouge it was beforehand. Also make's Rin's entering line a bit more… justified, for lack of a better word.
   
       
@@ -5723,12 +5721,12 @@ label ru_R15:
     "Я с благодарностью его принимаю и быстро набрасываю ответ. Она так же быстро отвечает."
 
     play sound sfx_paper
-    $ written_note((u"Думаю, я знаю, о ком ты говоришь, но точно не уверена. ") + (name_tezuka) + (u" – это ведь та безрукая красноволосая из 3-4, или я ошибаюсь?"))
+    $ written_note((u"Думаю, я знаю, о ком ты говоришь, но точно не уверена. ") + (name_tezuka) + (u"а – это ведь та безрукая красноволосая из 3-4, или я ошибаюсь?"))
 
     "Я облегчённо киваю, и она поспешно дописывает ещё одно предложение."
 
     play sound sfx_paper
-    $ written_note((u"Думаю, я знаю, о ком ты говоришь, но точно не уверена. ") + (name_tezuka) + (u" – это ведь та безрукая красноволосая из 3-4, или я ошибаюсь?\n\nПо-моему, третье крыло прямо по коридору."))
+    $ written_note((u"Думаю, я знаю, о ком ты говоришь, но точно не уверена. ") + (name_tezuka) + (u"а – это ведь та безрукая красноволосая из 3-4, или я ошибаюсь?\n\nПо-моему, третье крыло прямо по коридору."))
 
     "Я быстро кланяюсь и сбегаю, чтобы окончательно не провалиться от стыда. По крайней мере, эта девушка более вежливая и понимающая, нежели %(name_shizune)s."
 
@@ -6658,15 +6656,15 @@ label ru_R17:
 
     play music music_rin 
 
-    rinbabble " It looks like you are troubled and I don't really remember much about yesterday except that you came here and that's why it might be because of me so if it's because of me I think that I know why, it's because 
-               people don't really like talking to me and you might be the same and that would be sad I know that people and I'm talking about others than Emi too always say that I'm strange and that I talk strange things so I 
-               thought I'd try not to say strange things but that just makes me think more and new and strange and colourful that was not a good word but maybe you understand anyway and odd things so if I want to say something 
-               I don't really know how and then the words are not the same as the thoughts because something goes wrong on the way out but it's not like the thoughts are really the thing I should be saying it's more like the 
-               idea of the thought or the feeling of the idea or the idea of the feeling but it's not really any of those either because there is no word for it unless I invent a new one which is not really useful so 
-               I've been thinking if doing things is better than saying so maybe because yesterday I took those pills and I was feeling a little strange I might have done something that I shouldn't besides 
-               I don't even know if it would be any better if I just could say the thought there is no telepathy that's real telepathy isn't there I think it'd be terrible and useful at the same time but right now 
-               I wouldn't mind because misunderstanding is so easy but understanding is not and I thought you'd understand even though it is hard but then I realized that I don't understand either which just made me more 
-               confused and I wasn't sure—{nw}" with dissolve #reminder for the potential {nw} break
+    rinbabble " Похоже ты встревожен а я почти ничего не помню о том что было вчера но одно то что ты пришёл сюда может быть из-за меня так что если это из-за меня я думаю что знаю почему потому что 
+               люди не очень-то любят со мной общаться и ты наверное тоже и это грустно я знаю что те люди помимо Эми о которых я говорю тоже постоянно твердят что я странная что я говорю странные вещи и я 
+               и я решила избегать странных разговоров но от этого мои мысли принимаются скакать ещё быстрее и я придумываю новые вещи странные и цветастые это наверное неподходящее слово но ты возможно и так поймёшь и прочие странности так что когда мне хочется что-то сказать 
+               я не знаю как да и слова не соответствуют мыслям потому что что-то пошло не так но это не те мысли что я хотела сказать это больше похоже на 
+               идеи стоящие за мыслью или ощущение идеи или идеи ощущения а на самом-то деле ничего из перечисленного потому что для этого нет слова если я только сама его не придумаю 
+               так что я решила воплощать мысли не в словах а в делах и видимо из-за того что я вчера приняла те таблетки и почувствовала после них себя странно я сделала что-то что не положено делать кроме того 
+               я даже не знаю стало бы лучше если бы я могла высказывать мысли но телепатии в смысле настоящей телепатии в природе не существует она была бы жутким и полезным даром одновременно но сейчас 
+               но сейчас бы я от неё не отказалась потому что неправильно понять другого человека очень легко а понять трудно вот я и подумала что я не понимаю либо что меня только больше 
+               запутало и я не уверена—{nw}" with dissolve #reminder for the potential {nw} break
     
     stop music fadeout 3.5
     scene bg school_girlsdormhall 
