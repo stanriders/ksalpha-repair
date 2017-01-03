@@ -1922,7 +1922,7 @@ label ru_HT15:
     show shizu adjust_happy at twocenteroff2
     with charachange
 
-    mi "Парты нужно отнести в класс 3-2. Увидимся завтра на уроках."
+    mi "Парты нужно отнести в класс 2-3. Увидимся завтра на уроках."
 
     hi "А, спасибо."
 

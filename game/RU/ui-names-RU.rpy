@@ -7,7 +7,7 @@
     
     def switch_runaming():
         # python is kinda strange [str]
-        global displayStrings, name_hicchan, name_sicchan, name_shizune, name_kenji, name_sae, name_jigoro, name_tatibana, name_ibarazaki, name_ikezawa, name_tezuka, name_hakamichi, name_shiraki, name_shinichi, name_saionji, name_uchan, name_hanachan, name_shirakawa, name_shiina, name_shizukichi, name_shii, name_shii_sha, name_shi_chi_shii_sha, name_shichishiisha, name_shizu, name_shizuchan, name_takahashi, name_yamato_nadeshiko, name_hideaki, name_kojiro, name_mizuki, name_musashi, name_yoshida, name_kashiwagami, name_kenji_caps
+        global displayStrings, name_hicchan, name_sicchan, name_shizune, name_kenji, name_sae, name_jigoro, name_tatibana, name_ibarazaki, name_ikezawa, name_tezuka, name_hakamichi, name_shiraki, name_shinichi, name_saionji, name_uchan, name_hanachan, name_shirakawa, name_shiina, name_shizukichi, name_shii, name_shii_sha, name_shi_chi_shii_sha, name_shichishiisha, name_shizu, name_shizuchan, name_takahashi, name_yamato_nadeshiko, name_hideaki, name_kojiro, name_mizuki, name_musashi, name_yoshida, name_kashiwagami, name_kenji_caps, name_shin, name_kuzuhara
         if persistent.runamings == 'poli':
             name_hicchan = u"Хиттян"
             name_sicchan = u"Ситтян"
