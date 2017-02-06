@@ -6194,12 +6194,12 @@ label en_S16:
 
     "She spots Shizune and bows, her head crashing into the box in my hands."
     
-    show yuukoshang neurotic_down at Transform(ypos=0.25)
+    show yuukoshang neurotic_down at Transform(ypos=0.75)
     with Dissolvemove(0.2)
     play sound sfx_impact
     with vpunch
     with Pause(0.1)
-    show yuukoshang neurotic_down at Transform(ypos=0)
+    show yuukoshang neurotic_down at Transform(ypos=0.5)
     with Dissolvemove(0.4)
 
     "It crashes to the ground, looking greatly damaged from having now impacted the floor three times and Yuuko's head."
@@ -9848,8 +9848,6 @@ label en_S19bc:
     with charachange
     
     mi "Hey, Hicchan, Shizune, I heard they are going to have fireworks, should we stick around to see those?"
-    
-    show shizuyu 
 
     ssh "It's so crowded. We can see them from the school, can't we? It will be a much better view, and a lot quieter."
 

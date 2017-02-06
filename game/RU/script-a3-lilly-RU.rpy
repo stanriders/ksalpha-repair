@@ -2346,7 +2346,7 @@ label ru_L16:
 
     hi "Чёрт, там что, дождь идёт?"
 
-    show emi basic_closed_grin at left
+    show emi basic_closedgrin at left
     with charaenter
     
     emi "А почему, ты думаешь, нам понадобилась твоя помощь? Если бы погода была нормальной, мы бы справились сами."

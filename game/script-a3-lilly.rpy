@@ -2346,7 +2346,7 @@ label en_L16:
 
     hi "Damn, it's raining?"
 
-    show emi basic_closed_grin at left
+    show emi basic_closedgrin at left
     with charaenter
     
     emi "Why did you think we needed your help? If it was fine we could do it ourselves."

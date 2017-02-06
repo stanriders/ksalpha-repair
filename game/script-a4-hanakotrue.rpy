@@ -226,6 +226,7 @@
     #a22, should you take offence, feel free to veto this next passage.
     #i just kinda got a bit excited of the new misha sprites and she popped up in my mind.
     #scene bg school_scienceroom at bgright
+    hide hanako
     show bg school_scienceroom at bgright
     with locationskip
     
@@ -651,7 +652,7 @@
     show hanako basic_smile at twoleft
     with charachange
     
-    show hanako basic_smile at Transform(xpos=0.1475, ypos=0.1) 
+    show hanako basic_smile at Position(ypos=0.75)
     with ease
 
     with Pause(0.2)

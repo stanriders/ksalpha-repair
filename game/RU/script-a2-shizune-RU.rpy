@@ -4363,7 +4363,7 @@ label ru_S13:
 
     ssh "Идиот. Кто же платит за вечеринку в свою честь? Нужно быть более догадливым."
 
-    ssh "Пойдёмте быстрее – становиться прохладнее."
+    ssh "Пойдёмте быстрее – становится прохладнее."
 
     scene bg suburb_roadcenter
     with locationchange
@@ -6194,12 +6194,12 @@ label ru_S16:
 
     "Она замечает %(name_shizune)s и кланяется, врезавшись головой в коробку в моих руках."
     
-    show yuukoshang neurotic_down at Transform(ypos=0.25)
+    show yuukoshang neurotic_down at Transform(ypos=0.75)
     with Dissolvemove(0.2)
     play sound sfx_impact
     with vpunch
     with Pause(0.1)
-    show yuukoshang neurotic_down at Transform(ypos=0)
+    show yuukoshang neurotic_down at Transform(ypos=0.5)
     with Dissolvemove(0.4)
 
     "Коробка падает на пол и уже выглядит изрядно помятой, учитывая три падения и встречу с головой Юко."
@@ -9848,8 +9848,6 @@ label ru_S19bc:
     with charachange
     
     mi "Эй, %(name_hicchan)s, %(name_shizune)s, я слышала, что скоро будут фейерверки. Давайте держаться неподалёку, чтобы получше их увидеть, ладно?"
-    
-    show shizuyu 
 
     ssh "Здесь слишком многолюдно. Мы ведь можем посмотреть их и с территории интерната, не так ли? Там будет гораздо лучший вид и намного тише."
 

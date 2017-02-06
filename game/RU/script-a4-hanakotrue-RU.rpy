@@ -226,6 +226,7 @@
     #a22, should you take offence, feel free to veto this next passage.
     #i just kinda got a bit excited of the new misha sprites and she popped up in my mind.
     #scene bg school_scienceroom at bgright
+    hide hanako
     show bg school_scienceroom at bgright
     with locationskip
     
@@ -651,7 +652,7 @@
     show hanako basic_smile at twoleft
     with charachange
     
-    show hanako basic_smile at Transform(xpos=0.1475, ypos=0.1) 
+    show hanako basic_smile at Position( ypos=0.75)
     with ease
 
     with Pause(0.2)
@@ -838,7 +839,7 @@ label ru_HT2:
     show yuuko panic_down_ss at tworight
     with charachange
 
-    "Унылось Юко уходит в тень облака замешательства, растущим над ней."
+    "Унылость Юко уходит в тень облака замешательства, растущего над ней."
 
     yu "Нет, с чего ты взял?"
 
@@ -1385,7 +1386,7 @@ label ru_HT3:
 
     "При виде плачущей девушки любой мужчина наполняется состраданием."
 
-    hi "Перестань, в этом же нет ничего плохо."
+    hi "Перестань, в этом же нет ничего плохого."
     
     show hanagown normal_cry
     with charachange
@@ -2786,7 +2787,7 @@ label ru_HT4:
     
     stop music fadeout 8.0
 
-    hi "Я тогда сразу после уроков пойду за тортом для Лилли, так что встречаемся у тебя в комнате в шесть, ага?"
+    hi "Я тогда сразу после уроков пойду за тортом для Лилли, так что встречаемся у неё в комнате в шесть, ага?"
 
     ha "К… конечно."
     
@@ -6333,7 +6334,7 @@ label ru_HT10h:
     
     stop music fadeout 10.0
 
-    "Тяжело дышащие, покрытые потом, крепко обняв друг друга, мы остаёмся в таком положении, пока медленно проходим в себя."
+    "Тяжело дышащие, покрытые потом, крепко обняв друг друга, мы остаёмся в таком положении, пока медленно приходим в себя."
     
     show evh hanako_miss10
     with dissolve
@@ -6766,7 +6767,7 @@ label ru_HT11:
 
     #"Hanako wears a new outfit that I haven't seen before. With hat and all, it's definitely a more concealing get-up than yesterday's attire."
     
-    "Ханако одета в так же, как и несколько дней назад: на ней шляпа и так далее."
+    "Ханако одета так же, как и несколько дней назад: на ней шляпа и так далее."
 
     ha "Я спешила, а оно попалось под руку, так что…"
 

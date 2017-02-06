@@ -1643,8 +1643,9 @@ label en_L9:
     
     play sound sfx_impact
 
-    show lilly basic_surprised at right
-    with charachange
+    # fixme: what is this anyway? [str]
+    #show lilly basic_surprised at right
+    #with charachange
 
     hi "Haha! I win the day!"
 
@@ -3324,7 +3325,7 @@ label en_L11:
 
     "I glance up at the sky."
     
-    show bg misc_sky_ss at tworight
+    show bg misc_sky_ss at center
     with locationchange
 
     "A distinct tinge of orange discolours the cloudless expanse, washing the footpath in its light."
