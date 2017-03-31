@@ -46,15 +46,15 @@
 
     hi "Nakai… Hisao… Nakai…"
 
-    "I wheeze out every word in individual breaths"
+    "I wheeze out every word in individual breaths."
 
-    "It feels like there's a tonne of lead on my chest."
+    "It feels like there's a ton of lead on my chest."
 
     "Doctor" "Bingo. Looks like you're coming back to normal."
 
-    "Doctor" "I realise you'll have a lot of questions, but for now, try to rest."
+    "Doctor" "I realize you'll have a lot of questions, but for now, try to rest."
 
-    "Doctor" "Your chest will take some time to heal I would think."
+    "Doctor" "Your chest will take some time to heal, I would think."
 
     hi "W…wha…"
 
@@ -85,7 +85,7 @@
 
     "The footsteps break into a trot, and I hear the cane clatter to the floor."
 
-    show lilly cane_surprised_cas at twoleft # [str]
+    show lilly basic_surprised_cas at twoleft # [str]
     with charachange # [str]
 
     "Lilly's face appears in my vision, her sightless eyes desperately searching out in vain."
@@ -96,7 +96,7 @@
 
     hi "L… Lilly… w… where's Hana… Hanako."
 
-    show lilly cane_sad_cas at twoleft # [str]
+    show lilly basic_sad_cas at twoleft # [str]
     with charachange # [str]
 
     "A second face appears in my vision…"
@@ -114,7 +114,7 @@
 
     hi "Wh… what's going on?"
 
-    hi "Where… is Hanako."
+    hi "Where… is Hanako?"
 
     "Doctor" "Ah. Well, I should start from the beginning then."
 
@@ -138,7 +138,7 @@
 
     "The vision of Hanako bringing down her fists onto my chest flashes in my memory."
 
-    hi "So… where is she."
+    hi "So… where is she?"
 
     "Doctor" "That… isn't so simple."
 
@@ -146,7 +146,7 @@
 
     "Doctor" "She's currently in the Oiwa ward."
 
-    show lilly cane_oops_cas at twoleft # [str]
+    show lilly basic_oops_cas at twoleft # [str]
     with charachange # [str]
 
     li "Oiwa ward? What's that?"
@@ -309,7 +309,7 @@
 
     "Summoning my strength, I manage to ask one last question."
 
-    hi "How's Hanako."
+    hi "How's Hanako?"
 
     "The doctor's concerned face tells me all I need to know."
 
@@ -347,7 +347,7 @@
 
     "There's something about the way she says this that fills me with hope."
 
-    "When I was in hospital last time, it almost felt as though my classmates visited solely out of obligation."
+    "When I was in the hospital last time, it almost felt as though my classmates visited solely out of obligation."
 
     "Lilly, on the other hand, seems like she would visit daily until the end of time."
 
@@ -489,7 +489,7 @@ label en_H25:
 
     "As if to confirm his diagnosis, I look down upon my chest for the first time since the incident."
 
-    "He's right; I look I volunteered to be a punching bag; dark, green-edged bruises mottle my skin."
+    "He's right; I look like I volunteered to be a punching bag; dark, green-edged bruises mottle my skin."
 
     "The normal, smoothly-curved shape of my chest is jarred with swollen lumps and sunken areas where my ribs are still being set."
 
@@ -696,7 +696,7 @@ label en_H25:
 
     "Doctor 2" "In fact, she was still in her second year of elementary school."
 
-    "Doctor 2" "Once she got out of hospital, she returned to her old school, albeit under the care of a foster family."
+    "Doctor 2" "Once she got out of the hospital, she returned to her old school, albeit under the care of a foster family."
 
     "Doctor 2" "At the time, we decided that the more “normal” we could keep her life, the better it would be for her."
     
@@ -728,7 +728,7 @@ label en_H25:
 
     "Doctor 2" "She managed to simply contain it within herself; and survive alone."
 
-    "Doctor 2" "Of course, at this point, none of us realised anything was wrong."
+    "Doctor 2" "Of course, at this point, none of us realized anything was wrong."
 
     "Doctor 2" "She had survived elementary school unscathed, and never spoke of any of this in our sessions, so we assumed it was just smooth sailing."
 
@@ -858,7 +858,7 @@ label en_H26:
     hide emi # [str]
     with charaexit # [str]
 
-    "Thankfully, most of them also realise that I can't talk all that much, but that doesn't seem to phase anyone."
+    "Thankfully, most of them also realize that I can't talk all that much, but that doesn't seem to phase anyone."
 
     "They take it in turns to sit in my room, sharing their stories of studying and the day to day running of the school."
 
@@ -924,7 +924,7 @@ label en_H26:
 
     li "I… never knew. After all this time, she still didn't trust either of us enough…"
 
-    li "Or perhaps, she just didn't want us to know, or didn't even realise herself."
+    li "Or perhaps, she just didn't want us to know, or didn't even realize herself."
 
     hi "It's probably a combination of both."
 
@@ -1060,7 +1060,7 @@ label en_H26:
 
     "The impact of my feet hitting the floor echoes through my bones, and I almost cry out in pain."
 
-    "Collapsing back I the bed, I realise that, with a bit of effort, I can stand on my own."
+    "Collapsing back I the bed, I realize that, with a bit of effort, I can stand on my own."
 
     "The effort, however, has exhausted me, and I quickly fall into a fit of sleep."
 
@@ -1115,7 +1115,7 @@ label en_H26:
 
     "Diligent as always."
 
-    "If she were capable of taking notes for Hanako and I I'm sure that we'd both return to little pink notebooks jammed full of exam notes."
+    "If she were capable of taking notes for Hanako and I, I'm sure that we'd both return to little pink notebooks jammed full of exam notes."
 
     hi "You really are something else. You know that, right?"
 
@@ -1137,7 +1137,7 @@ label en_H26:
 
     hi "Locked ward? She's not in trouble for what she did, is she?"
 
-    li "Oh my no. But it is the only place in the hospital where she can be constantly monitored."
+    li "Oh my, no. But it is the only place in the hospital where she can be constantly monitored."
 
     show lilly cane_sad_cas at twoleft # [str]
     with charachange # [str]
@@ -1165,7 +1165,7 @@ label en_H26:
 
     "If it were possible to get into the ward, then perhaps I could see Hanako."
 
-    "As much as her doctors have warned against it, I can't stand not knowing how she's going."
+    "As much as her doctors have warned against it, I can't stand not knowing how she's doing."
 
     #"And the mixture of hope and fear on Lilly's face tells me that she feels exactly the same way."
     window hide # [str]
@@ -1269,7 +1269,7 @@ label en_H27:
 
     hi "I'm fine. Besides, we're in a hospital."
 
-    hi "What's the worst that can happen."
+    hi "What's the worst that can happen?"
 
     li "I suppose you are right."
 
@@ -1330,7 +1330,7 @@ label en_H27:
 
     "We pull the door open, and walk into the ward."
 
-    "Inside, the ward look just like any other."
+    "Inside, the ward looks just like any other."
 
     "Patients walk around in their gowns, talking to each other, or watching TV in the small common room."
 
@@ -1417,7 +1417,7 @@ label en_H27:
 
     li "Hisao? What is it?"
 
-    hi "She… oh lords… "
+    hi "She… oh my God… "
 
     "Lilly, sensing that no words will help, covers my hand with hers, and gently squeezes."
 
@@ -1451,7 +1451,7 @@ label en_H27:
 
     li "Oh, no. I'm sorry, Hisao… I didn't notice…"
 
-    hi "It's… okay…"
+    hi "Oh... it's fine..." 
 
     "My words are laboured; my consciousness is focussed only on the crumpled form of the girl in front of my eyes."
 
@@ -1574,7 +1574,7 @@ label en_H27:
 
     hi "Hana…"
 
-    #SFX Screech. Has to be done.
+    play sound "sfx/screech.ogg"
     
     show hanagown shock_hosp at centersit # [str]
     with charachange # [str]
@@ -1804,7 +1804,7 @@ label en_H28:
 
     "Nurse" "We see it all the time with patients your age."
 
-    "Nurse" "Once the hype of having a student in hospital wears off, no-one comes to visit."
+    "Nurse" "Once the hype of having a student in the hospital wears off, no-one comes to visit."
 
     "Nurse" "It's heartbreaking, really."
 
@@ -1855,7 +1855,7 @@ label en_H28:
 
     hi "Do my parents know yet?"
 
-    "Doctor" "I was about to go and let them know. Would you like to speak to them."
+    "Doctor" "I was about to go and let them know. Would you like to speak to them?"
 
     "For a moment, my choice wavers."
 
@@ -2050,7 +2050,7 @@ label en_H29:
 
     "The shadowed figure responsible for the noise sighs, places the pencil on the paper, and then stands up."
 
-    "Carefully feeling her way around the house, she retrieves the items that she is looking for, and breaths a sign of relief."
+    "Carefully feeling her way around the house, she retrieves the items that she is looking for, and breathes a sigh of relief."
 
     play sound sfx_lighter
     
@@ -2094,6 +2094,8 @@ label en_H29:
 
     #Dear lords I hate that spelling. I'd much prefer "Kaa-san" over "Mommy"
     #oh no you don't
+    #what kind of tard mixes japanese with english
+    #"It's all dark, Kaa-san..." <--- come on now
 
     "The woman looks down, startled."
 
@@ -2103,8 +2105,8 @@ label en_H29:
 
     "The woman puts down her pencil, and picks up her daughter, placing her on her lap."
 
-    "Mother" "Shhh now, Hana-chan." # [str] (just a small change that feels absolutely appropriate to me)
-    #"Mother" "Shhh now, Hanako."
+    #"Mother" "Shhh now, Hana-chan." # [str] (just a small change that feels absolutely appropriate to me) ##like in A3, you can't give honorifics if the entire game has foregone them up until this point
+    "Mother" "Shhh now, Hanako."
     
     #If we do ever decide to drop honourifics, this should be changed to whatever Lilly calls
     #Hanako.
@@ -2168,7 +2170,7 @@ label en_H29:
     #show n_vignette alpha # [str]
     #with dissolve # [str]
     
-    "…and realises that the corridor is much brighter than it ought to be."
+    "…and realizes that the corridor is much brighter than it ought to be."
     
     $ renpy.music.set_volume(0.2, 2.0, channel='ambient')
 
@@ -2311,7 +2313,7 @@ label en_H30:
     scene bg hosp_hallway # [str]
     with locationchange # [str]
     
-    "As I watch the fluorescent lights whiz by overhead, I as my parents a question."
+    "As I watch the fluorescent lights whiz by overhead, I ask my parents a question."
 
     hi "How long before they'll let me out?"
 
@@ -2340,7 +2342,7 @@ label en_H30:
 
     "There's another thing I can't wait to get away from; hospital food."
 
-    "Seventeen specifically designed menus that will cater to your body's needs without so much has disturbing your sense of taste."
+    "Seventeen specifically designed menus that will cater to your body's needs without so much as disturbing your sense of taste."
 
     "Yes, seventeen."
 
@@ -2511,7 +2513,7 @@ label en_H30:
 
     hi "Hanako, I've missed you so much."
 
-    hi "How are you? You look thinner? Did they treat you well?"
+    hi "How are you? You look thinner! Did they treat you well?"
 
     "I release Hanako and hold her at arms length."
 
@@ -2526,9 +2528,9 @@ label en_H30:
 
     "Only now do I notice that she's wearing the same clothes that she wore on that fateful day."
 
-    "Only now do I realise that she looks as if she hasn't eaten in a week."
+    "Only now do I realize that she looks as if she hasn't eaten in a week."
 
-    "Only now do I realise that her hair is unkempt, her usually perfect fringe hanging in tatters over her face."
+    "Only now do I realize that her hair is unkempt, her usually perfect fringe hanging in tatters over her face."
 
     "Only now do I see her eyes, distant and empty."
 
@@ -2545,7 +2547,7 @@ label en_H30:
 
     ha "Well… I suppose you know now, don't you?"
 
-    ha "They told me they told you everything."
+    ha "They told me that they told you everything."
 
     ha "So I suppose that means you know everything."
 
@@ -2600,7 +2602,7 @@ label en_H30:
 
     hi "Yes, I just heard now."
 
-    hi "And I get discharged today, so we get ot go home together."
+    hi "And I get discharged today, so we get to go home together."
 
     #lilly ufufufufu
     show lilly cane_smile_cas at tworight # [str]
@@ -2702,7 +2704,7 @@ label en_H30:
 
     "My parents seem to take forever to leave, fussing over me at every step."
 
-    "Hanako barely says a word, despite my father's bet attempts at goading her on."
+    "Hanako barely says a word, despite my father's best attempts at goading her on."
 
     "But, unlike her usual self, she didn't flinch, nor retreat."
 
@@ -2710,7 +2712,7 @@ label en_H30:
 
     "Lilly also attracted a fair deal of attention, especially when she accidentally told them that she visited me every day."
 
-    "Of course, she responded in the most refined manner, which impressed my parents no end."
+    "Of course, she responded in the most refined manner, which impressed my parents to no end."
 
     "She even bowed to them as they drove off in the hire car."
 
@@ -2718,7 +2720,7 @@ label en_H30:
 
     "I can imagine my parents trying to arrange a marriage after hearing of something like that."
 
-    "Together, Lilly and I put Hanako to bed, who seems barely interested in either of us, and falls straight asleep."
+    "Together, Lilly and I put Hanako to bed, who seemed barely interested in either of us, and fell straight asleep."
 
     "Tomorrow, both of us have a meeting with Mutou to discuss how we are going to make up for the exams that we missed."
 
@@ -2794,13 +2796,13 @@ label en_H31:
 
     "Without waiting for me, she starts walking towards the main building."
 
-    "I step out to catch up with her, but her pace is too much for me to keep up with her."
+    "I step out to catch up with her, but her pace is too much for me to keep up with."
 
     scene bg school_hallway3 # [str]
     with locationchange # [str]
     stop music fadeout 3.5 #2.0 # [str] (longer!)
 
-    "Only when she stops in front of the door to the teacher's office do I mange to reach her side."
+    "Only when she stops in front of the door to the teacher's office do I manage to reach her side."
     
     show hanabad emb_downdetermined at tworight # [str]
     with charaenter # [str]
@@ -2809,7 +2811,7 @@ label en_H31:
 
     hi "That's some pace you've got there."
 
-    ha "I just want to get this done with an go home.{w=0.4}{nw}" # [str] (insta-linechange!)
+    ha "I just want to get this done with and go home.{w=0.4}{nw}" # [str] (insta-linechange!)
 
     play sound sfx_doorknock2 # [str]
     
@@ -2834,7 +2836,7 @@ label en_H31:
 
     "I make my way into the room, and Hanako follows shortly after."
 
-    mu "Now, I realise that both of you have had a rough time in the past few weeks, so I'm here to help you."
+    mu "Now, I realize that both of you have had a rough time in the past few weeks, so I'm here to help you."
 
     mu "We'll let you sit your exams individually in a week's time."
 
@@ -2921,7 +2923,7 @@ label en_H31:
 
     ha "Maybe later…"
 
-    "For some reason, I feel that this is some “real” Hanako talking now, and I can't help by sympathise with her."
+    "For some reason, I feel that this is some “real” Hanako talking now, and I can't help by sympathize with her."
 
     hi "Sure. You rest all you need to; I'll be in my room if you need me."
 
@@ -2996,7 +2998,7 @@ label en_H31:
 
     nk "Oh, nothing to worry about, but it's not the neatest sewing I've ever seen."
 
-    nk "But that's fine, I'll heal in no time."
+    nk "But that's fine, it'll heal in no time."
 
     nk "How are you feeling otherwise?"
 
@@ -3089,15 +3091,15 @@ label en_H31:
 
     play music music_hanakohscene fadein 0.1 # [str]
 
-    "She says that, but she looks just as dishevelled as she did this morning."
+    "She says that, but she looks just as disshevelled as she did this morning."
 
     "No, she looks even worse. She obviously slept in her uniform, it's usually loose fit now creased all over."
 
     hi "Did you come here to study?"
 
-    ha "Yes, and to apologise."
+    ha "Yes, and to apologize."
 
-    hi "Apologise? For what?"
+    hi "Apologize? For what?"
 
     ha "This morning."
     
@@ -3260,7 +3262,7 @@ label en_H31:
 
     "Hanako lies back on my bed, and my heart races."
 
-    "I'm not sure if it's my imagination, but I think I can feel the pacemaker starting to reel my hard back into line."
+    "I'm not sure if it's my imagination, but I think I can feel the pacemaker starting to reel my heart back into line."
 
     "Or maybe it's the odd mix of emotions running through my mind."
 
@@ -3306,7 +3308,7 @@ label en_H31a:
 
     "It's a necessary inconvenience for her."
 
-    "In the back of my mind, I can hear myself screaming at me to stop."
+    "In the back of my mind, I can hear myself screaming to stop."
 
     "This isn't how it's supposed to happen."
 
@@ -3322,7 +3324,7 @@ label en_H31a:
     
     "As I enter her, I lean down and kiss her lips."
 
-    "She doesn't even flinch, and I realise that I may as well have kissed a corpse."
+    "She doesn't even flinch, and I realize that I may as well have kissed a corpse."
 
     "As I thrust into her, I watch her face."
 
@@ -3392,13 +3394,13 @@ label en_H31a:
     
 
     
-    "Eventually, the macarbe dance of my body comes to an end, my head lying at an impossible angle."
+    "Eventually, the macabre dance of my body comes to an end, my head lying at an impossible angle."
     
     "Hanako lies on the bed, dead still, her face showing no emotion whatsoever."
     
     "My face feels cold; I'm probably only being supported by the small pacemaker in my chest now."
 
-    "As my life drains away, Hanako does naught but watch my palloured face."
+    "As my life drains away, Hanako does naught but watch my pallored face."
     
     show passoutOP1 # [str]
     with None # [str]
@@ -3592,7 +3594,7 @@ label en_H32:
 
     li "…they said that the medications that she is on will keep her “balanced” for as long as required."
 
-    hi "No… no that can't be right."
+    hi "No… no, that can't be right."
 
     "Lilly's grip on my shoulder tightens."
 
@@ -3605,7 +3607,7 @@ label en_H32:
     
     "In a fit of confused rage, I knock away Lilly's hand."
     
-    hi "How we be strong for her if it's not even her!"
+    hi "How can we be strong for her if it's not even her!"
 
     hi "Just how long will we be waiting for?"
 
@@ -3620,7 +3622,7 @@ label en_H32:
 
     hi "It's their fault."
 
-    hi "Hanako would never be like she is now."
+    hi "Hanako would never be like she is now without some kind of outside interference."
 
     hi "It's all the doctor's fault!"
 
@@ -3705,7 +3707,7 @@ label en_H32:
     scene bg school_dormbathroom # [str]
     with locationchange # [str]
 
-    "Twisting the top open releases a smell all to familiar to me; the chalky odour of medication."
+    "Twisting the top open releases a smell all too familiar to me; the chalky odor of medication."
 
     "The tiny white ovals flow from the upturned bottle, making a staccato melody as they splash down into the pool of water in the toilet's bowl."
     
@@ -3722,15 +3724,15 @@ label en_H32:
 
     #with vpunch # [str] (meh, doesnt look like collapsing to the floor)
     
-    "Lilly's broken voice breaks me, and I collapse to the toilet's floor, still holding the pill bottle in my hand."
+    "Lilly's broken voice breaks me, and I collapse to the floor, still holding the pill bottle in my hand."
 
     hi "I…"
 
     "My words come in sobs."
 
-    "I barely realised that I was crying."
+    "I barely realized that I was crying."
 
-    hi "don't… know…"
+    hi "...don't… know…"
 
     play music music_drama fadein 0.1 # [str]
     
@@ -3762,7 +3764,7 @@ label en_H32:
     show hanabad emb_downtimid at twoleftsit # [str]
     with charaenter # [str]
     
-    "Hanako sits on the floor of her room, quietly folding the clothes scattered around her room."
+    "Hanako sits on the floor of her room, quietly folding the scattered clothing."
     
     ha "Oh. Hello Lilly, Hisao."
 
@@ -3866,7 +3868,7 @@ label en_H32:
 
     "I push through the main doors, and enter the building."
 
-    "Inside, a pair of girls still in their pyjamas are watching the TV."
+    "Inside, a pair of girls still in their pajamas are watching the TV."
 
     scene bg school_girlsdormhall # [str]
     with locationchange # [str]
@@ -3976,7 +3978,7 @@ label en_H32:
     
     hi "It's okay."
 
-    hi "You don't have to apologise."
+    hi "You don't have to apologize."
 
     "Hanako, stunned into silence, takes another sip of her drink."
 
@@ -4107,9 +4109,9 @@ label en_H32:
 
     "As soon as we disembarked from the train, Hanako made a beeline for this place…"
 
-    "…the place where we first kissed, the auditorium in the park."
+    "…the place where we first kissed, the table where we studied in the park."
 
-    "Once again, there is not a person in sight, yet we sit together on the bench furthest from the stage."
+    "Once again, there is not a person in sight, yet we sit together on a bench further away from the center of the park."
 
     ha "Am I…"
 
@@ -4259,15 +4261,26 @@ label en_H32:
     hide heartattack alpha  # [str]
     with Dissolve (1.5) # [str]
     
+    play sound sfx_crunchydeath # [str]
+    
     "The speeding train collides with her frail body just as I reach the edge of the platform."
    
     with Pause(1.0) # [str]
     
-    "I was too late…"
+    "Once again, I feel the world take something dear from me."
 
     scene black # [str]
     with Dissolve (4.0) # [str]
     with Pause(1.0) # [str]
+    
+    "I was too late this time..."
+    
+    "...but I hope I'll be seeing her soon."
+    
+    "Until then..."
+    
+    "...wait for me, Hanako."
+    
     window hide # [str]
     
     return

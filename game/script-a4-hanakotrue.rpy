@@ -226,7 +226,6 @@
     #a22, should you take offence, feel free to veto this next passage.
     #i just kinda got a bit excited of the new misha sprites and she popped up in my mind.
     #scene bg school_scienceroom at bgright
-    hide hanako
     show bg school_scienceroom at bgright
     with locationskip
     
@@ -652,7 +651,7 @@
     show hanako basic_smile at twoleft
     with charachange
     
-    show hanako basic_smile at Position(ypos=0.75)
+    show hanako basic_smile at Transform(xpos=0.1475, ypos=0.1) 
     with ease
 
     with Pause(0.2)
@@ -7736,7 +7735,7 @@ label en_HT13h:
     scene white
     with dissolve
     
-    show evh hanako_finger_close #:
+    show evh hanako_finger_close:
         #xalign 0.5 yalign 0.5 zoom 0.4 # my my, instead of resizing cg you used ingame zooming?.. [str]
     with dissolve
 

@@ -29,6 +29,8 @@
     scene white 
     with openeye 
     
+    play music "bgm/Passing_of_Time.ogg"
+    
     n "White."
 
     n "A horrid, plain white."
@@ -81,6 +83,8 @@
     n "While I can't remember the final moments, I can remember going to Tanabata."
 
     n "Buying the candy apple, shooting the bear, helping that boy, and sitting on the grass next to…"
+    
+    stop music fadeout 0.7
 
     n "…Oh."
 
@@ -106,6 +110,8 @@
     "Tilting my head up, I see the figure that emerges from the door."
 
     "…Whereas before my mind seemed to be filling with too much information, now it's completely blank."
+    
+    play music "bgm/Sarabande_musicbox.ogg" fadein 0.5
     
     show lilly basic_concerned_cas
     with charaenter
@@ -190,6 +196,8 @@
     li "Thank you, Hisao."
 
     "Her mood somewhat lifted, she picks herself up and regains herself."
+    
+    stop music fadeout 5.0
 
     scene bg hosp_room at bgleft
     show lilly basic_weaksmile_cas_close
@@ -243,9 +251,11 @@
 
     "As I look up the the roof to look away from it, I ask the only question left on my mind."
 
-    hi "How long will I be in hospital?"
+    hi "How long will I be in the hospital?"
 
     li "The doctor said it would be about three weeks."
+    
+    play music "bgm/Nocturne.ogg"
 
     "Three weeks."
 
@@ -312,7 +322,7 @@
 
     hi "Thanks. I'm glad that you were around when I woke up."
 
-    "Savouring each other's silent contact for moments on end, we eventually part."
+    "Savoring each other's silent contact for moments on end, we eventually part."
     
     hide lilly
     with charaexit
@@ -333,6 +343,8 @@
     "The more things change, the more they stay the same."
 
     "That is the one thought that flickers through my mind before I fall asleep."
+    
+    stop music fadeout 1.5
 
 
     window hide
@@ -352,6 +364,8 @@ label en_L44:
 
     nvl clear
     
+    play music "bgm/Passing_of_Time.ogg"
+    
     n "As I wake up from another nap, I glance down at the newspaper sitting on the table over the bed."
 
     n "It's Thursday. Apparently."
@@ -368,7 +382,7 @@ label en_L44:
 
     n "On Sunday, I had an acute heart attack."
 
-    n "Soon rushed to hospital, I'd been stabilised and kept in intensive care until late tuesday for observation."
+    n "Soon rushed to hospital, I'd been stabilized and kept in intensive care until late Tuesday for observation."
 
     n "While I'd been unconscious, both my parents and Lilly had visited, with the three meeting."
 
@@ -402,7 +416,7 @@ label en_L44:
 
     n "My condition (cardiac arrest), the cause (strain), the time (Sunday evening), the treatment (drugs, and three weeks in hospital)."
 
-    n "Everything there was to tell was told."
+    n "Everything to tell was told."
 
     n "Which is good, because at the time I was even less lucid than now."
 
@@ -410,7 +424,7 @@ label en_L44:
 
     n "I lean back and sigh."
 
-    n "Ever since seeing Lilly and my parents, I've realised just how easily I'm taking this compared to everyone else."
+    n "Ever since seeing Lilly and my parents, I've realized just how easily I'm taking this compared to everyone else."
 
     n "I guess the best explanation is the philosophy that I've followed since the first heart attack."
 
@@ -419,6 +433,8 @@ label en_L44:
     n "Life is transient. What's grasped one day can just as easily slip out the next."
 
     n "Just as easily as I lost my previous life…"
+    
+    stop music fadeout 1.0
 
     nvl clear
     nvl hide dissolve
@@ -429,6 +445,8 @@ label en_L44:
     with charaenter
     
     "Before I can continue the thought, the pale white door gingerly opens to reveal the ever-pale Lilly, cane in hand. Her face is an all too welcome sight."
+    
+    play music music_lilly 
 
     hi "Hey Lilly."
     
@@ -490,6 +508,8 @@ label en_L44:
 
     hi "Sure. I don't think I'll be going anywere, at least."
     
+    stop music fadeout 1.5
+    
     hide lilly
     with charaexit
     
@@ -526,6 +546,8 @@ label en_L44:
     show emi basic_hes_close at tworight
     show rin relaxed_nonchalant at twoleft
     with openeye
+    
+    play music "bgm/Generic_Happy.ogg"
     
     emi "Uh, well, uh…"
 
@@ -566,7 +588,7 @@ label en_L44:
 
     hi "What'd I do?"
 
-    emi "What'd you do? I went and had a heart attack!"
+    emi "What'd you do? You went and had a heart attack!"
 
     emi "From now on, I forbid you from having heart attacks! You hear me?"
 
@@ -664,17 +686,17 @@ label en_L44:
 
     hi "Well, I'm fine now. Aside from the pipes going into me, I feel pretty good."
 
-    hi "Oh, Lilly?"
+    #hi "Oh, Lilly?"
 
-    li "Yes?"
+    #li "Yes?"
 
-    hi "The doctor said I'll be out in three weeks."
+    #hi "The doctor said I'll be out in three weeks."
 
-    li "Thank goodness."
+    #li "Thank goodness."
 
-    emi "Just in time to begin school again, eh?"
+    #emi "Just in time to begin school again, eh?"
 
-    hi "I guess I just wasn't meant to have a summer vacation."
+    hi "I guess I just wasn't meant to have a summer vacation, though."
 
     li "Don't say that. At least you're okay."
 
@@ -702,6 +724,8 @@ label en_L44:
     hide rin
     with charaexit
     
+    stop music fadeout 1.5
+    
     "Lilly and I can barely raise out hands to wave them goodbye before they're out the door."
 
     hi "Those two…"
@@ -710,7 +734,7 @@ label en_L44:
 
     hi "True. Though, seeing those two does remind me of someone else. How's Hanako doing?"
 
-    li "So far I've only had a short phone conversation with her. She's currently in Kyoto, but'll be coming back up soon."
+    li "So far I've only had a short phone conversation with her. She's currently in Kyoto, but she'll be coming back up soon."
 
     hi "She taking it okay?"
 
@@ -753,6 +777,8 @@ label en_L45:
 
     nvl clear
     
+    play music "bgm/Passing_of_Time.ogg"
+    
     n "Today was interesting."
 
     n "That's the first lie I've been trying to tell myself."
@@ -789,7 +815,7 @@ label en_L45:
 
     n "I sigh to myself in frustration."
 
-    n "Being cooped up in hospital like this really feels as if I've been neatly moved into a sterilised pocket away from reality."
+    n "Being cooped up in the hospital like this really feels as if I've been neatly moved into a sterilised pocket away from reality."
 
     n "The future doesn't appear in any tangible form, nor does the present manifest itself in any way."
 
@@ -810,6 +836,8 @@ label en_L45:
     n "With a just simple smile, their worries quickly lift."
 
     n "As long as Lilly smiles, I don't care."
+    
+    stop music fadeout 1.0
 
     nvl clear
     #nvl hide dissolve
@@ -820,7 +848,7 @@ label en_L45:
     show lilly cane_smile
     with shorttimeskip
     
-    "After Lilly arrived, we both began to read in short measure."
+    "After Lilly arrives, we both begin to read in short measure."
 
     "There are many things about the hospital which annoy me, but the quiet certainly isn't one of them."
 
@@ -844,6 +872,8 @@ label en_L45:
     "Her hand gently glides along the smooth wall, her other quickly turning the handle as she find the door."
 
     "And so, I'm alone once again."
+    
+    play sound "sfx/doorknock.ogg"
 
     centered "*Thud* *thud* *thud*"
 
@@ -854,6 +884,8 @@ label en_L45:
     show misha perky_sad
     show shizu invis
     with charaenter
+    
+    play music music_shizune
     
     "As the door opens, I can tell who it is simply by her distinctive hair."
 
@@ -891,6 +923,9 @@ label en_L45:
     hi "You'll finish me off if you don't let me breathe!"
 
     "She pauses for a second before bouncing off me and taking her usual place beside her bespectacled partner."
+    
+    show misha perky_smile at tworight
+    with charamove
 
     mi "As sharp as ever, Hicchan!"
 
@@ -965,6 +1000,7 @@ label en_L45:
     "Eventually it creaks open, a scarred face appearing through the crack."
 
     show hanako cover_bashful_cas
+    with charachange
     
     ha "Is this… Hisao's room?"
 
@@ -979,6 +1015,8 @@ label en_L45:
     hide misha
     hide shizu
     with charaexit
+    
+    stop music fadeout 1.0
     
     "She and Shizune wave goodbye to Hanako and Lilly, closing the door on their way out."
 
@@ -995,16 +1033,27 @@ label en_L45:
     "Her smile's as small and dainty as ever, though the same couldn't be said of her attire."
 
     "Freed of her loose-fitting clothing, she actually has quite the figure."
+    
+    show hanako cover_smile_cas
+    with charachange
+    
+    play music music_dreamy 
 
     ha "I've only been to Kyoto so far, but it's really nice."
 
     ha "The people there were nice, and there's some really pretty places there."
 
     hi "Sounds like you were having a great time."
+    
+    show hanako defarms_worry_cas
+    with charachange
 
     ha "Ah, no! It's okay! I wanted to come down and see you!"
 
     li "It's okay, Hanako. Calm."
+    
+    show hanako basic_normal_cas
+    with charachange
 
     "She gives a meek nod, settling herself expertly. It seems her innocence has far from disappeared."
 
@@ -1052,6 +1101,11 @@ label en_L45:
     "As I stare into her deep blue eyes, as unseeing as they are, I can't help but smile."
 
     "Love really is a fickle thing."
+    
+    stop music fadeout 1.0
+    
+    scene black
+    with dissolve
 
     return
 
@@ -1065,6 +1119,8 @@ label en_L46:
     nvl show dissolve
 
     nvl clear
+    
+    play music "bgm/Passing_of_Time.ogg"
     
     n "As I wake up, I try to recall which day it is."
 
@@ -1095,17 +1151,22 @@ label en_L46:
     n "That wall between us is still there after all this time."
 
     n "But… why?"
+    
+    stop music fadeout 1.0
 
     nvl clear
     nvl hide dissolve
     
     window show
     
+    play sound "sfx/doorknock.ogg"
+    
     centered "*Thud* *thud* *thud"
 
     hi "Come in!"
 
-    show lilly
+    show lilly cane_weaksmile_cas
+    with charaenter
     
     "The plain white door slowly opens, the unmistakable pale arm of Lilly becoming visible."
 
@@ -1150,6 +1211,8 @@ label en_L46:
     "That time when I'd given the music box to her… She wanted to give that same feeling to me."
 
     "with a silent breath, I gently pop open the lid."
+    
+    play music "bgm/Sarabande_musicbox.ogg"
 
     # oh hay music
 
@@ -1198,10 +1261,13 @@ label en_L46:
     hi "Lilly… I'm…"
 
     "As the golf ball in my throat strangles my words as they try to form, Lilly's arms reach out to me."
+    
+    scene ev lilly_hospitalclosed at bgright
+    with whiteout
 
     # CG
-    scene white
-    with whiteout # doesnt make sense with white tho [str]
+    #scene white
+    #with whiteout # doesnt make sense with white tho [str]
 
     li "It's okay, Hisao."
 
@@ -1221,14 +1287,18 @@ label en_L46:
 
     "As I grip her tightly, the small pitpat of tears on her back, I savour the feel of her presence. The presence of the love that I'd so nearly lost."
 
-    scene black # where are they? me confus :c
-    with whiteout
+    #scene black # where are they? me confus :c
+    #with whiteout
     
     mystery "Oi, oi, oi!"
 
     "Lilly gently releases me as I do her, quickly move to wiping my eyes as I look up."
+    
+    show bg hosp_room at bgright
+    with locationchange
 
-    show akira
+    show akira basic_lost
+    with charaenter
     
     aki "For a second there I'd thought I'd walked into a funeral reception!"
 
@@ -1245,6 +1315,8 @@ label en_L46:
     "This isn't the end. My life has one hell of a lot of kick left in it."
 
     "Even if it does end up short, my happiness with Lilly will be life a blinding spark of joy."
+    
+    stop music fadeout 3.0
 
     scene black
     with Dissolve(3.0)
@@ -1263,6 +1335,8 @@ label en_L47:
     show akira basic_ending_close at twoleft
     show lilly basic_smile_cas_close at tworight
     with Dissolve(1.5)
+    
+    play music "bgm/Comfort.ogg"
     
     "As Akira, Lilly and I sit on the grassy embankment, the breeze gently blows through the cloudless sky."
 
@@ -1393,6 +1467,8 @@ label en_L47:
     "Because it's together that we'll walk forwards."
 
     "Forwards… towards our future."
+    
+    stop music fadeout 2.5
 
     window hide
     

@@ -3,7 +3,7 @@
     scene bg school_dormhisao 
     with openeye
 
-    "The day after the festival, I slowly rise out of my narrow bed rubbing sleep from my eyes and feeling very tired, but pretty happy."
+    "The day after the festival, I slowly rise out of my narrow bed, rubbing sleep from my eyes and feeling very tired, but pretty happy."
 
     play music music_twinkle fadein 5.0
   
@@ -2849,7 +2849,7 @@ label en_S11:
     show shizu behind_frown at twoleft
     with charachange
 
-    mi "Wahahahaha! Wahahahahaha~!"
+    "Wahahahaha! Wahahahahaha~!"
 
     "Shizune sighs inaudibly and then her shoulders slump as she balks wearily."
 
@@ -3530,7 +3530,7 @@ label en_S12:
 
     mi "Hicchan, you want to help? It's okay, we're nearly done, so…"
 
-    hi "Even if it's a little bit, I can help. Work goes faster when it's split three days, you know. That's simple math."
+    hi "Even if it's a little bit, I can help. Work goes faster when it's split three ways, you know. That's simple math."
 
     mi "Ah… math, huh?"
 
@@ -4289,7 +4289,7 @@ label en_S13:
 
     hide yuukoshang
     with charaexit
-    show yuukoshang neurotic_up at offscreenright
+    show yukoshang neurotic_up at offscreenright
     with charaenter
     hide yuukoshang
     with charaexit
@@ -4454,7 +4454,7 @@ label en_S14:
     show shizu behind_blank at tworight
     with charaenter
 
-    mi "Hi~ Hicchan!"
+    mi "Hi~. Hicchan!"
 
     ssh "Hello."
 
@@ -6194,12 +6194,12 @@ label en_S16:
 
     "She spots Shizune and bows, her head crashing into the box in my hands."
     
-    show yuukoshang neurotic_down at Transform(ypos=0.75)
+    show yuukoshang neurotic_down at Transform(ypos=0.25)
     with Dissolvemove(0.2)
     play sound sfx_impact
     with vpunch
     with Pause(0.1)
-    show yuukoshang neurotic_down at Transform(ypos=0.5)
+    show yuukoshang neurotic_down at Transform(ypos=0)
     with Dissolvemove(0.4)
 
     "It crashes to the ground, looking greatly damaged from having now impacted the floor three times and Yuuko's head."
@@ -7053,7 +7053,7 @@ label en_S18:
 
     n "Studying for finals has taken up a lot of my time. Initially, I hadn't been as concerned about them as I could have been, but there comes a point when they become unescapable."
 
-    n "The entire school is focused on them. A week before the exams, it was as if a switch was flipped and the entire student body was forced to scknowledge their severity."
+    n "The entire school is focused on them. A week before the exams, it was as if a switch was flipped and the entire student body was forced to acknowledge their severity."
 
     scene bg school_courtyard
     with locationskip
@@ -9394,7 +9394,7 @@ label en_S19ba:
      
     scene bg school_road_ni
     with locationchange
-    scene bg school_gate_ni
+    scene bg_school_gate_ni
     with locationchange
     scene bg school_courtyard_ni
     with locationchange
@@ -9624,7 +9624,7 @@ label en_S19bb:
      
     scene bg school_road_ni
     with locationchange
-    scene bg school_gate_ni
+    scene bg_school_gate_ni
     with locationchange
     scene bg school_courtyard_ni
     with locationchange
@@ -9855,7 +9855,7 @@ label en_S19bc:
      
     scene bg school_road_ni
     with locationchange
-    scene bg school_gate_ni
+    scene bg_school_gate_ni
     with locationchange
     scene bg school_courtyard_ni
     with locationchange
@@ -10086,7 +10086,7 @@ label en_S19bd:
      
     scene bg school_road_ni
     with locationchange
-    scene bg school_gate_ni
+    scene bg_school_gate_ni
     with locationchange
     scene bg school_courtyard_ni
     with locationchange
@@ -10263,5 +10263,7 @@ label en_S19bd:
 
     ssh "Okay."
     stop ambient fadeout 1.0
+    
+    stop music fadeout 3.0
 
     return

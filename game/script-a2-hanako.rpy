@@ -206,7 +206,7 @@
     scene bg suburb_shanghaiext_ss
     with locationskip
     
-    "The tea house seems fairly standard from the outside; just a ordinary building with typical signs decorating the entrance."
+    "The tea house seems fairly standard from the outside; just an ordinary building with typical signs decorating the entrance."
     #Writing from here on might need major refurbishing, as above. -SC
 
     "It looks like the type of place you'd walk by without a thought, just another generic café in a sea of thousands."
@@ -249,7 +249,7 @@
 
     yu "I wasn't asleep and welcome to the Shanghai!"
 
-    "Yuuko, dressed in a pastel apron and clutching a menu, rushes to greet us. Her misaligned glasses and ruffled hair cast suspiscion on her previous statement."
+    "Yuuko, dressed in a pastel apron and clutching a menu, rushes to greet us. Her misaligned glasses and ruffled hair cast suspicion on her previous statement."
 
     "But whether she was asleep or not isn't the first question that leaps to my mind."
     
@@ -348,11 +348,11 @@
     show hanako basic_normal at tworightsit
     with dissolvecharamove
 
-    "As I began to sit myself next to Lilly, I realize the appropriateness of this place for Hanako."
+    "As I begin to sit myself next to Lilly, I realize the appropriateness of this place for Hanako."
 
     "The high-backed booths totally separate you from the rest of the room, and it doesn't look like it gets all that many customers."
     
-    "All of the furnishings, from the cushions on the benches to the condiment holders look dated but aren't overly worn."
+    "All of the furnishings, from the cushions on the benches to the condiment holders, look dated but aren't overly worn."
 
     "I wonder if Lilly deliberately selects places like this to take Hanako?"
 
@@ -580,7 +580,7 @@
     show lilly basic_smileclosed at Position(xpos=0.2, ypos=1.15) 
     with charachange
 
-    li "Well, now that's all sorted, shall we have some tea?"
+    li "Well, now that everything is all sorted out, shall we have some tea?"
 
     li "It's been getting cold all this time…"
 
@@ -679,7 +679,7 @@
     stop ambient fadeout 3.0
     
     hide hanako_fireshine
-    #hide hanako_shanghaifw 
+    hide hanako_shanghaifw 
     with Dissolve(1.0)
 
     "The show is over all too quickly; fireworks are expensive, even for the most well-funded schools."
@@ -796,7 +796,7 @@
     show yuukoshang neutral_down at centersit
     with charachange
 
-    yu "I know but I like my tea sweet anyway."
+    yu "I know, but I like my tea sweet anyway."
 
     "Curiously I peer into her cup. As expected, hardly any of the sugar dissolves in the cold liquid."
 
@@ -1305,7 +1305,7 @@ label en_H3:
 
     "No matter how much you try, you can't escape her scars. They still interrupt my train of thought when I see them."
 
-    "As much as I don't want to admit it to myself, I think I'm forcing myself to ignore them."
+    "As much as I don't want to admit it, I think I'm forcing myself to ignore them."
     
     "But, in a way, they remind me that we're all in this place for a reason."
 
@@ -1337,7 +1337,7 @@ label en_H3:
 
     "I suppose just ignoring us is one way to deal with the anomalies of Yamaku. They must get a lot of students here, being the closest store to the school."
     
-    "The staff must all have their own way of dealing with us. Or maybe they don't; maybe it's only me who thinks that thinks twice about my unique schoolmates."
+    "The staff must all have their own way of dealing with us. Or maybe they don't; maybe it's only me who thinks twice about my unique schoolmates."
 
     stop music fadeout 2.0
 
@@ -1443,7 +1443,7 @@ label en_H3:
 
     "I tried to keep up with my studies while I was in the hospital, but some of this stuff I've never seen before, even back in my old school."
 
-    "Totally unprepared, I pop the top on a can of drink, and get to work."
+    "Totally unprepared, I pop the top on a can of soda, and get to work."
     
     scene black 
     with dissolve
@@ -1483,7 +1483,7 @@ label en_H4:
     
     "It's not like I sit around all day. The walk to and from Auramart counts as exercise, right? Especially the walk back up the hill…"
     
-    "Yeah, it's no big deal. Compared to months lying in a hospital bed I'm getting plenty exercise."
+    "Yeah, it's no big deal. Compared to months lying in a hospital bed I'm getting plenty of exercise."
 
     scene bg school_scienceroom 
     with shorttimeskip
@@ -1579,7 +1579,7 @@ label en_H4:
     show hanako emb_timid at centersit
     with charaenter
 
-    ha "S-she'll be her soon…"
+    ha "S-she'll be here soon…"
     
     show hanako emb_downtimid at centersit
     with charachange
@@ -1640,7 +1640,7 @@ label en_H4:
 
     "It's nothing special, but then again I can't really complain. I'm pretty lazy when it comes to cooking for myself."
 
-    hi "Not bad, I guess this is made with the stuff you bought yesterday?"
+    hi "Not bad. Is this made with the stuff you bought yesterday?"
     
     show hanako emb_blushtimid at tworightsit
     with charachange
@@ -1649,7 +1649,7 @@ label en_H4:
     
     "Hanako's eyes shout at me, begging for some kind of feedback."
 
-    hi "Well it was clearly worth it. Thanks, Hanako."
+    hi "Well, it was clearly worth it. Thanks, Hanako."
     
     show hanako cover_bashful at tworightsit
     with charachange
@@ -1713,7 +1713,7 @@ label en_H4:
 
     ha "N-no… thank you for the bread…"
 
-    hi "Yes, it would have been a disaster if not for that."
+    hi "Yes, it was quite the treat."
     
     show lilly basic_planned at twoleftsit
     with charachange
@@ -1795,7 +1795,7 @@ label en_H4:
 
     play sound sfx_dooropen
 
-    "At the door, I take point and open the door ahead of Hanako, bowing my head down in apology in advance."
+    "At the door, I take charge and open the door ahead of Hanako, bowing my head down in apology in advance."
     
     scene bg school_scienceroom at center 
     with locationchange
@@ -2164,11 +2164,11 @@ label en_H5_1:
     show misha perky_confused at twoleft
     with charachange
 
-    mi "Huh? Oh, right. Yeah I thought it would be only two piles."
+    mi "Huh? Oh, right. Yeah, I thought it would be only two piles."
 
     mi "My bad."
 
-    hi "Right. Whilst I am doing this, what will you two be doing?"
+    hi "Right. While I am doing this, what will you two be doing?"
 
     show misha hips_grin at twoleft
     show shizu adjust_smug at tworight
@@ -2176,7 +2176,7 @@ label en_H5_1:
 
     mi "Well, we missed lunch because we were collecting all of these reports, so we're going to go get some food!"
 
-    "Why didn't you just sort them out whilst you were collecting them…"
+    "Why didn't you just sort them out while you were collecting them…"
 
     "Thankfully my self-defense mechanism kicks in and prevents me from opening my mouth and further deepening my situation."
 
@@ -2380,7 +2380,7 @@ label en_H5_1:
     show misha sign_confused at centersit
     with charachange
     
-    mi "They said that every student here has special needs, and the Shizune shouldn't worry herself about it."
+    mi "They said that every student here has special needs, and that Shizune shouldn't worry herself about it."
     
     show misha perky_confused at centersit
     with charachange
@@ -2628,7 +2628,7 @@ label en_H5_2:
     show misha cross_laugh_close at Position(xanchor=0.5, xpos=0.17) 
     with charachange
 
-    mi "So, if you're not there, it works out better for us. More cake for us Wahahaha!"
+    mi "So, if you're not there, it works out better for us. More cake for us! Wahahaha!"
     
     stop music fadeout 6.0
 
@@ -2871,7 +2871,7 @@ label en_H5_2:
 
     ha "P-please."
 
-    hi "I'm right. I'll drop this one back on the way through. It wasn't as interesting as I first thought."
+    hi "I'm alright. I'll drop this one back on the way through. It wasn't as interesting as I first thought."
     
     show hanako emb_timid_ss at tworight 
     with dissolvecharamove
@@ -3092,7 +3092,7 @@ label en_H6:
 
     "Each short motion lacks energy. I suppose this is similar to letting your eyes wander whilst performing any ordinary chore."
 
-    "But after a few repetitions of the find food then eat it cycle, Lilly puts down her fork and dabs her lips with a napkin."
+    "But after a few repetitions of the find-food-then-eat it-cycle, Lilly puts down her fork and dabs her lips with a napkin."
     
     #maybe spelling things out a little too much here.
     #also might be a little too perceptive for dipshit Hisao
@@ -3329,7 +3329,7 @@ label en_H7:
     show ev lilly_bedroom_large at Move((-830,-300),(-830,0), 10.0, time_warp=acdc_warp, subpixel=True)
     with None
 
-    "Behind her Hanako is kneeing beside a low table and adorned in light pink gown."
+    "Behind her, Hanako is kneeling beside a low table and adorned in light pink gown."
 
     "Her hands are firmly fixed between her legs, her shoulders forward, and her head down, as if trying to hide herself in her gown."
 
@@ -3583,7 +3583,7 @@ label en_H7c:
     
     li "So, Hisao, are you enjoying this experience?"
 
-    "Lilly's words break me out of my reverie, and I take second to reconsider where I am."
+    "Lilly's words break me out of my reverie, and I take a second to reconsider where I am."
 
     "I'm in a room with two girls in their bedclothes. This is something to be enjoyed."
 
@@ -3612,7 +3612,7 @@ label en_H7c:
     show lilly basic_smile_paj at twoleftsit
     with charachange
 
-    li "Yes, you are most welcome Hisao."
+    li "Yes, you are most welcome, Hisao."
 
     li "It's nice to have a third person here."
 
@@ -3750,11 +3750,11 @@ label en_H7c:
 
     ha "G-good night Hisao…"
     
-    show hanagown invis at tworight 
+    show hanagown smile at tworight 
     with Dissolvemove(0.5, time_warp=_ease_out_time_warp)
 
-    hide hanako 
-    with None
+    hide hanagown
+    with Dissolve(0.2)
 
     stop music fadeout 5.0
 
@@ -3834,7 +3834,7 @@ label en_H8:
 
     ke "Good man, good. I knew you were the type to plan ahead…"
 
-    hi "Anyway, what was this favour you wanted?"
+    hi "Anyway, what was this favor you wanted?"
     
     show kenji neutral 
     with charachange
@@ -3876,7 +3876,7 @@ label en_H8:
     show kenji neutral
     with charachange
 
-    ke "Yeah man, I know. But I've just go so much stuff to do, it's hard. And you're never around anymore so I'm on my own."
+    ke "Yeah man, I know. But I've just got so much stuff to do, it's hard. And you're never around anymore so I'm on my own."
 
     ke "We're supposed to be brothers in brotherhood, remember?"
 
@@ -4125,7 +4125,7 @@ label en_H9:
 
     stop music fadeout 4.0
 
-    "Lilly smiles gently, picks up her cane and walks out the hall."
+    "Lilly smiles gently, picks up her cane and walks into the hall."
 
     return
 
@@ -4213,7 +4213,7 @@ label en_H10:
 
     "Sometimes I find it hard to discover a book that will interest me amongst the shelves. An author's name and a two-word title don't mean much in a sea of similar words."
 
-    "For that reason, I sometimes re-read books that I read in the past. Better to bet on the favourite than the new runner."
+    "For that reason, I sometimes re-read books that I read in the past. Better to bet on the favorite than the new runner."
 
     "An unfamiliar title from a familiar author peeks out among the spines of its neighbors, so I remove it from the shelf."
 
@@ -4393,7 +4393,7 @@ label en_H10:
 
     "I imagine Hanako is going through the same thing now."
 
-    "When I was in hospital I went to the burns ward once, and only once. I was bored, so I went for a walk through all of the wards."
+    "When I was in the hospital I went to the burns ward once, and only once. I was bored, so I went for a walk through all of the wards."
 
     "I went through oncology and thought I could take it, but when I got to the burns ward I turned around and went back to my bed."
 
@@ -4401,7 +4401,7 @@ label en_H10:
 
     "The really bad cases were kept in isolated pods that no foreign objects could enter. That would have meant no reading."
 
-    "I would have gone insane if I didn't have my books in hospital."
+    "I would have gone insane if I didn't have my books in the hospital."
 
     "And she said she was alone… Did her parents die? I'll have to ask Lilly about it. I can imagine myself saying something dumb unintentionally."
 
@@ -4428,7 +4428,7 @@ label en_H10:
 
     "I change my grip on Hanako's hand into a handshake as the warning bells chime through the window."
 
-    hi "Well then, we'd better head back to class then, eh?"
+    hi "Well then, we'd better head back to class, eh?"
     
     show hanako basic_bashful_close at centersit
     with charachange

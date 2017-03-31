@@ -1430,7 +1430,7 @@ label en_HT15:
     hide hanako
     hide lilly
     hide misha
-    hide shizu
+    hide shizune
     hide emi
     hide rin
     
@@ -4314,7 +4314,7 @@ label en_HT17:
 
     hi "Are you sure you're really okay?"
     
-    show hanako emb_timid_cas_close at tworight
+    show hanako basic_smile_cas_close at tworight
     with charachange
 
     ha "Yes, I think I'm fine now."
@@ -4325,15 +4325,15 @@ label en_HT17:
 
     extend " that I want to meet your parents."
 
-    #hi "Really?"
+    hi "Really?"
 
-    #ha "Really."
+    ha "Really."
 
-    #ha "I have some news that they might want to hear."
+    ha "I have something that they might want to hear."
 
-    #hi "Oh, and what would that be?"
+    hi "Oh, and what would that be?"
 
-    #ha "I'm late."
+    ha "I'm late."
 
     #Lol baby end.
     #Game over.

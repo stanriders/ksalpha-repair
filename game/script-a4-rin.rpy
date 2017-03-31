@@ -2458,7 +2458,7 @@ label en_R37:
 
     "While I wrestle with the mechanism, Rin stops so abruptly that I take five steps before realizing that she's not with me anymore."
     
-    #hide lrain with None
+    hide lrain with None
     
     "Stupid umbrella seems to be jammed."
 

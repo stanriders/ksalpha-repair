@@ -130,14 +130,14 @@ label jumper:
         ui.close()
         ui.close()
         
-        # Hana-Lilly (just trying to understand what is it even) [str]
-        #ui.vbox()
-        #ui.text("Hana-Lilly: ", style="prefs_label")
-        #ui.hbox()
-        #jumper_menu_space()
-        #widget_button(displayStrings.act_term + " 2", "ui/bt-blank.png", clicked=jumper_scene("HLT3"), xsize=65, textxoffset=0)
-        #ui.close()
-        #ui.close()
+        #Hana-Lilly (just trying to understand what is it even) [str]
+        ui.vbox()
+        ui.text("Hana-Lilly: ", style="prefs_label")
+        ui.hbox()
+        jumper_menu_space()
+        widget_button(displayStrings.act_term + " 2", "ui/bt-blank.png", clicked=jumper_scene("HLT3"), xsize=65, textxoffset=0)
+        ui.close()
+        ui.close()
 
         ui.close()
 

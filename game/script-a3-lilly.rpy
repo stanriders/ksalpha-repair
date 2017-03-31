@@ -21,7 +21,7 @@
 
     centered "*Clink*"
 
-    scene bg school_dormhisao
+    scene bg school_dormhisao_ss
     with locationchange
 
     hi "Welcome to my humble abode."
@@ -29,6 +29,8 @@
     show lilly cane_smileclosed at twoleft
     show hanako basic_smile at tworight
     with charaenter
+    
+    play music music_dreamy fadein 1.0
     
     "I give a deep bow and gesture for the two to enter, both giving a polite nod as they pass."
 
@@ -59,7 +61,7 @@
     show lilly basic_smileclosed at tworight
     with charamove
     
-    "Heeding my directions, She and Lilly make their way to the blanket-covered bed, Lilly gently running her free hand along the wall as she goes."
+    "Heeding my directions, Hanako and Lilly make their way to the blanket-covered bed, Lilly gently running her free hand along the wall as she goes."
 
     show lilly basic_smileclosed at tworightsit
     with charamove
@@ -109,6 +111,7 @@
     with charachange
     
     hide hanako
+    with charaexit
 
     li "Thank you Hisao, Hanako. I wonder what this could be?"
     
@@ -123,6 +126,8 @@
     with charachange
     
     "A small smile develops as she resumes running her index finger over the top, feeling out the line between the lid and the box itself."
+    
+    stop music fadeout 0.5
 
     "No effort is needed for her to pop open the lid, with her expertly pushing it up with her thumbs."
     
@@ -132,7 +137,7 @@
     with charaenter
     with Pause (1.0)
     
-    window hide
+    hide window
     
     #Pause, extreme close-up CG of just her face and the music box, with her watching the music box as it plays the tune. Possibly a graphical effect to simulate the cylinder and pins inside moving as well.
 
@@ -210,6 +215,8 @@
     with charachange
     
     with vpunch
+    
+    play music "bgm/Happiness.ogg"
 
     ha "Ah!"
 
@@ -242,6 +249,8 @@
     "As we lick the last of the icing from our fingers, now well and truly filled, we all slump back in contentment."
 
     "Even the usually elegant and composed Lilly's lazily leaning back against the wall as she sits on the bed."
+    
+    stop music fadeout 4.0
 
     hi "Phew, that was filling."
 
@@ -252,12 +261,19 @@
     "It's not hard to see the happy look on her hair-covered face."
 
     "Suddenly, the door to my dorm room flies open just as I begin to open my mouth."
+    
+    play music music_running
+    
+    with vpunch
+    
+    show yuuko smile_up
+    with charachange
 
     yu "Good evening, everyone!"
 
     "Yuuko loudly announces her sudden presence to everyone's surprised faces."
 
-    "Dressed in her usual get-up with a dark-green jacket over the top, my mind struggles to comprehend why this girl is suddenly in my room."
+    "Dressed in her usual get-up, my mind struggles to comprehend why this girl is suddenly in my room."
 
     hi "Yu… Yuuko!?"
 
@@ -267,7 +283,11 @@
 
     "Hold on, she's carrying a rather conspicuously bulging plastic bag in her hand."
 
-    "And not only that, but there's with several bottle necks clearly visible through the top…"
+    "And not only that, but there's several bottle necks clearly visible through the top…"
+    
+    show yuuko smile_up at tworight
+    show lilly basic_surprised at twoleft
+    with charaenter
 
     li "Ah, th—thank you, Yuuko."
 
@@ -282,6 +302,10 @@
     yu "Yeah?"
 
     hi "Didn't you say university was holding you up from coming?"
+    
+    show yuuko closedhappy_up at tworight
+    show lilly basic_concerned at twoleft
+    with charachange
 
     yu "I was late to the lecture and the professor wants my neck. I'm going to fail the course!"
 
@@ -296,10 +320,22 @@
     "She grabs into her bag and one-by-one grabs the bottles from inside."
 
     "As she does, our jaws slowly drop open."
+    
+    hide yuuko
+    hide lilly
+    with charaexit
+    
+    image wine = "vfx/wine.png"
+    
+    show wine
+    with charaenter
 
     "Some kind of white wine. The price tag, still stuck to the bottle, doesn't bode well for its quality."
 
     "Vodka. A brand so cheap even I know it's barely drinkable."
+    
+    hide wine
+    with charaexit
 
     "After unpacking a final bottle, a golden-brown rum, all Hanako and I can do is stare speechless at the small pile of alcohol on the floor between us."
 
@@ -316,6 +352,10 @@
     "My voice is higher-pitched than I've ever heard it before, in the throes of entirely unhidden panic."
 
     "As I say that fateful word, Lilly suddenly freezes in realization."
+    
+    show yuuko smile_up at tworight
+    show lilly basic_displeased at twoleft
+    with charaenter
 
     li "Alcohol? Yuuko! You know—!"
 
@@ -326,8 +366,12 @@
     "Suddenly, my mind gets back into gear."
 
     hi "Yuuko, how did you know we'd be here?"
+    
+    show yuuko smile_up at tworight
+    show lilly basic_listen at twoleft
+    with charachange
 
-    "Hanako and Lilly go distinctly silent, their stares aimed directly at her."
+    "Lilly and I go distinctly silent, our stares aimed directly at her."
 
     yu "I went to Lilly's room and knocked but there wasn't an answer, so I guessed everyone must've gone to your room."
 
@@ -354,18 +398,38 @@
     "I shake my head to try and force my way through the DANGER, DANGER, DANGER signals flaring up through my head."
 
     hi "Okay, Yuuko, please answer this very, very carefully."
+    
+    show yuuko worried_up at tworight
+    show lilly basic_listen at twoleft
+    with charachange
 
     "I stare at her intensely, causing her to rock back slightly in surprise."
 
     hi "Think. What did these girls look like?"
+    
+    show yuuko happy at tworight
+    show lilly basic_listen at twoleft
+    with charachange
 
-    yu "Hmm… Let me see, there was one wierd quiet one who had short hair and glasses, and a taller one that had really crazy hair. It was actually kinda cool, really."
+    yu "Hmm… Let me see, there was one weird quiet one who had short hair and glasses, and a taller one that had really crazy hair. It was actually kinda cool, really."
 
     #Hana, Lilly SHOKKU faces
+    
+    show yuuko happy at right
+    show hanako defarms_shock 
+    show lilly basic_oops at left
+    with charachange
 
     "My jaw drops open as my mind hangs a “Sorry, We're Closed!” sign up."
+    
+    "Even Hanako seems unable to contain her dismay."
 
     "An awkward silence fills the room, none of us able to utter so much as a mumble."
+    
+    show yuuko neutral at right
+    show hanako def_worry
+    show lilly basic_concerned at left
+    with charachange
 
     "We're screwed."
 
@@ -374,6 +438,11 @@
     "Even if they don't tell anyone, they're going to make me their slaves."
 
     "In fact, I'd probably prefer being at the mercy of the principal than those two."
+    
+    show yuuko worried at right
+    show hanako def_worry 
+    show lilly basic_concerned at left
+    with charachange
 
     yu "Eh? Eh? W—what's wrong?"
 
@@ -384,6 +453,11 @@
     "I collect myself and bury my face in my palm, my elbow planted on the arm of my chair."
 
     hi "Hey, Yuuko."
+    
+    show yuuko worried at right
+    show hanako def_worry
+    show lilly basic_concerned at left
+    with charachange
 
     yu "Yeah?"
 
@@ -401,8 +475,11 @@
 
     "*gulp*"
 
-    scene bg school_dormhisao
+    scene bg school_dormhisao_ni
     with shorttimeskip
+    
+    show yuuko happy at centersit
+    with charaenter
 
     yu "And this Marius guy's all “We need a solid army!” but the senate's like “Nooooooo” and he gets all the…"
 
@@ -415,12 +492,17 @@
     "I suddenly jerk out of my thinking as she slams a shot glass onto the ground in front of me."
 
     yu "And BAM!, he takes out the Gauls just like that. And that's my speech on Gayus Mayrioos, thank you, thank youuuuu—" #reminder for the potential {nw} break
+    
+    hide yuuko 
+    with vpunch
 
     "And with that, she falls forward onto the ground in the middle of a sitting bow."
+    
+    stop music fadeout 1.0
 
     "Thank god for that."
 
-    "Savouring the newfound quiet, I massage my temples."
+    "Savoring the newfound quiet, I massage my temples."
 
     "Glancing around the room, Hanako's out cold and peacefully sleeping on her side with her hand as a pillow."
 
@@ -449,6 +531,8 @@
     li "Yes, Hisao?"
 
     hi "I'm sorry about today. I wanted to make this birthday special for you, but things kind of… went weird."
+    
+    play music "bgm/Lullaby_of_Open_Eyes.ogg" fadein 2.0
 
     li "It's fine, Hisao. To tell the truth, I had a lot of fun today."
 
@@ -473,6 +557,9 @@
     li "Curfew's in effect, then."
 
     hi "Yeah, I guessed as much. You guys'll have to sleep here for tonight."
+    
+    show lilly basic_sleepy at centersit
+    with charaenter
 
     "As soon as I say it, I hear the sheets moving as Lilly starts to sit up."
 
@@ -485,6 +572,9 @@
     li "But what about…"
 
     hi "I'll grab some spare blankets and put them over them, don't worry."
+    
+    hide lilly
+    with charaexit
 
     "As I give a deep yawn and stand to retrieve them, I hear her lie back down with a soft thud."
 
@@ -494,15 +584,15 @@
 
     "With that, I grab a couple of blankets rolled up at the end of my bed."
 
-    "Quietly walking over to Hanako and then Yuuko, I carefully lay the blankets over them making sure not to wake them up."
+    "Quietly walking over to Hanako and then Yuuko, I carefully lay the blankets over them, making sure not to wake them up."
 
-    "Though, the thick smell of alcohol coming off their breaths makes me doubtful they'd wake up no matter what I did."
+    "Though, the thick smell of alcohol coming off of their breaths makes me doubtful they'd wake up no matter what I did."
 
     "I stand and take one last measure of the room."
 
     "Three girls, all pissed as newts, sleeping overnight in a male student's dorm. What a scandal that'd be if it broke out."
 
-    "I suppose I'll grab Misha and Shizune tomorrow and apologise. While they may take pleasure in finding out even the most banal facts on every student in the school, they don't seem the type to tell tales for no reason."
+    "I suppose I'll grab Misha and Shizune tomorrow and apologize. While they may take pleasure in finding out even the most banal facts on every student in the school, they don't seem the type to tell tales for no reason." 
 
     "At least, that's what I hope."
 
@@ -510,9 +600,9 @@
 
     "Her sprawling, disheveled figure lies sleeping peacefully, slightly turned to the side."
 
-    "I crouch down to get a better look."
+    "I crouch down to get a better look." #At this point I'd port the final-version CG of Lilly sleeping, but in that CG she's in her pajamas, while in this scene, she can't possibly be in anything other than her uniform. 
 
-    "Her porclain skin blends in with the white sheets of the bed, a look of slumber-born peacefulness on her face."
+    "Her porcelain skin blends in with the white sheets of the bed, a look of slumber-born peacefulness on her face."
 
     "Usually she seems so confident and forward, always there and caring for Hanako."
 
@@ -527,6 +617,9 @@
     "Maybe it wasn't the music box she liked."
 
     "Resigning myself to an uncomfortable sleep, I sit down at the side of the bed once again and rest my tired arms beside me."
+    
+    scene black
+    with shuteye
 
     li "Hey, Hisao."
 
@@ -549,6 +642,8 @@
     "As I hear a deep breath, it's obvious Lilly's gone to sleep."
 
     "After closing my eyes, it doesn't take long for sleep to take me as well."
+    
+    stop music fadeout 1.0
 
     scene black
     with dissolve
@@ -568,7 +663,7 @@ label en_L14:
     hi "Huh?"
 
     scene bg school_dormhisao
-    show lilly superclose
+    show lilly basic_weaksmile_close
     with openeye
 
 
@@ -577,20 +672,19 @@ label en_L14:
     "Without thinking I suddenly jolt forward, Lilly's face mere millimeters away from mine."
     
     #Should this be before or after the doublespeak? Review
-    show lilly superclose_shock
-    with Dissolve(0.2)
+   
     
     $ doublespeak(hi, li, "Gyah!", "Ah!")
     
     
     play sound sfx_impact2
     
-    show lilly superclose_ouch
+    show lilly basic_concerned_close
     with vpunch
     
     hi "W—Woah!"
 
-    "The impact of our foreheads causes both of us to fall backwards yelp in pain, Lilly sounding more like a squeak toy than a person."
+    "The impact of our foreheads causes both of us to fall backwards and yelp in pain, Lilly sounding more like a squeak toy than a person."
 
     show lilly basic_concerned at left
     with Dissolve(0.2)
@@ -616,9 +710,9 @@ label en_L14:
 
     hi "Hangover?"
 
-    "I suddenly remember the disasterous events of last night."
+    "I suddenly remember the disastrous events of last night."
 
-    "As I do, I suddenly realise I feel surprisingly fine."
+    "As I do, I suddenly realize I feel surprisingly fine."
 
     hi "Ah, yeah. Looks like I managed to dodge that bullet at least."
 
@@ -632,7 +726,7 @@ label en_L14:
     show lilly basic_giggle at left
     with charachange
     
-    "Her pained look gives way to an amused grin."
+    "Lilly's pained look gives way to an amused grin."
     
     show lilly basic_planned at left
     with charachange
@@ -653,11 +747,11 @@ label en_L14:
     stop music fadeout 10.0
     hi "Woah!"
 
-    "As she does she stumbles dangerously I quickly move forward to stop her from falling, grabbing her in my arms as she stumbles forward."
+    "As she does, she stumbles dangerously. I quickly move forward to stop her from falling, grabbing her in my arms as she stumbles forward."
     
     #I want a CG here
     
-    show lilly superclose_ouch
+    show lilly basic_concerned_close
     with charachange
     
     hi "Ah…"
@@ -712,6 +806,8 @@ label en_L14:
     with charachange
     
     li "Oh, ah, I can't hear someone."
+    
+    play music "bgm/Daylight.ogg" fadein 3.0
 
     hi "Can't hear—" #reminder for the potential {nw} break
     
@@ -733,14 +829,14 @@ label en_L14:
 
     "I bend down to grab the note, blinking the last of the sleep out of my eyes."
 
-    "The handwriting's spectacularly neat and easy to read, with a small caricatured smiling face at the bottom of the text."
+    "The handwriting's spectacularly neat and easy to read, with a small caricature of a smiling face at the bottom of the text."
 
     # Centered and all on the screen at once with this formatting, or as part of a CG that's just got the note in Hisao's hand.
     
     hide lilly
     window hide
     
-    $ fixedwritten_note(u"Hey Hisao,\n\nI'm really, really sorry about last night. I really made a mess of things, didn't I?\n\nI've taken all the bottles and cleaned up the spills, so don't worry about any incriminating evidence. I'll make sure not to draw attention to myself on the way out too.\n\nRegards,\nShirakawa Yuuko\n\nPS. If you need a favour, call me. The phone number's on the other side of the note. {image=vfx/smiley.png}")
+    $ fixedwritten_note(u"Hey Hisao,\n\nI'm really, really sorry about last night. I really made a mess of things, didn't I?\n\nI've taken all the bottles and cleaned up the spills, so don't worry about any incriminating evidence. I'll make sure not to draw attention to myself on the way out too.\n\nRegards,\nShirakawa Yuuko\n\nPS. If you need a favor, call me. The phone number's on the other side of the note. {image=vfx/smiley.png}")
 
     window show
     # End note
@@ -761,7 +857,7 @@ label en_L14:
 
     li "Thank goodness. She may drink every now and then, but that's the first time I've seen her go that far."
 
-    hi "Either way, she's apologised for last night."
+    hi "Either way, she's apologized for last night."
 
     li "I had little doubt she would."
 
@@ -822,12 +918,12 @@ label en_L14:
 
     "It's no wonder she ended up completely drunk and singing alongside the rather carefree Hanako."
 
-    "It'd have been quite the sight if Lilly and I hadn't needed to continually quieten the two down lest others hear the drunken racket."
+    "It'd have been quite the sight if Lilly and I hadn't needed to continually quiet the two down lest others hear the drunken racket."
 
     show lilly basic_weaksmile
     with charachange
     
-    li "It seems Hanako's sleeping."
+    li "It seems Hanako's sleeping rather soundly."
 
     hi "Yeah, like a log. I'm surprised how well she got on with Yuuko last night."
     
@@ -867,7 +963,7 @@ label en_L14:
 
     hi "She doesn't seem that confident."
 
-    "She shakes her head vigorously"
+    "She shakes her head vigorously."
 
     show lilly basic_concerned
     with charachange
@@ -892,12 +988,17 @@ label en_L14:
     hi "Ah… t—thanks."
 
     "I look away from her kind face, suddenly feeling more than a touch embarassed."
+    
+    stop music fadeout 0.6
 
     # Centered, with SFX
 
     play sound sfx_doorknock
+    
     #centered "*thump* *thump* *thump*"
-
+    
+    "The sudden knocking on the door makes me jump a little."
+    
     hi "Looks like someone's at the door."
 
     li "Were you expecting anyone?"
@@ -910,7 +1011,7 @@ label en_L14:
     
     #hide lilly
     
-    "I grunt and stand myself up, walking over the the door."
+    "I grunt and stand myself up, walking over the door."
 
     "I guess they must already know that Lilly and Hanako are in my room."
 
@@ -922,6 +1023,8 @@ label en_L14:
     with charaenter
     
     hi "Hey Shi—{w=0.1}{nw}" #reminder for the potential {nw} break
+    
+    play music music_kenji fadein 1.0
 
     "Uh-oh."
 
@@ -952,7 +1055,7 @@ label en_L14:
 
     "I raise an eyebrow at his oddly upbeat nature."
 
-    "I guess there's no other route but to hope he just plain old doesn't see the two girls."
+    "I guess there's no other route but to hope he just doesn't see the two girls."
 
     hi "Uh huh. I'll go grab that CD then."
 
@@ -970,28 +1073,32 @@ label en_L14:
     "As I turn around and rush to throw up an excuse, a voice suddenly beckons from the bed on my left."
 
     li "My my, is that Kenji?"
+    
+    stop music fadeout 2.0
 
     show kenji surprised
     with charachange
     
     ke "Huh?"
 
-    "A few second's silence passes as he tried to place her voice."
+    "A few second's silence passes as he tries to place her voice."
     
     show kenji neutral
     with charachange
     
     ke "Oh. Lilly. Hey."
 
-    "Wow, don't show too much enthusiasm there bud."
+    "Wow, don't show too much enthusiasm there, bud."
 
-    hi "You two know each other?"
+    #hi "You two know each other?"
 
-    "They both turn to me in unison."
+    #"They both turn to me in unison."
+    
+    # Act 1 has a scene where Lilly, Hisao, Hanako, and Kenji help Lilly's class out for the festival; in order to lock into Lilly's route, you must read this scene, making these 4 lines useless
+    
+    #li "Kenji and I are in the same class."
 
-    li "Kenji and I are in the same class."
-
-    hi "The same… Well, that makes sense I guess."
+    #hi "The same… Well, that makes sense I guess."
 
     show lilly basic_sleepy at twoleftsit
     with charachange
@@ -1016,6 +1123,8 @@ label en_L14:
     ke "Thanks man."
 
     "As he starts to move off, a sudden and rather unwelcome voice comes from the floor."
+    
+    play music music_gentle fadein 1.0
 
     show hanabad defarms_worry at Position(xanchor=0.5, yanchor=1.0, xpos=0.5, ypos=1.60)
     with charaenter
@@ -1026,7 +1135,7 @@ label en_L14:
 
     ha "Lilly? Hisao?"
 
-    "As she groggily props herself up and whipes the sleep out of her eye, I frantically turn to Kenji."
+    "As she groggily props herself up and wipes the sleep out of her eyes, I frantically turn to Kenji."
     
     show kenji surprised at tworightsit
     with dissolvecharamove
@@ -1075,11 +1184,11 @@ label en_L14:
 
     ha "I'm sorry! I'm sorry! I'm sorry!"
 
-    hi "Hanako, stop apologising. He should be the one doing it."
+    hi "Hanako, stop apologizing. He should be the one doing it."
 
     "I draw a flat look from him."
 
-    "While distinctly unimpressed by my defense of Hanako, it seems as if he's ready to conceed the point."
+    "While distinctly unimpressed by my defense of Hanako, it seems as if he's ready to concede the point."
 
     ke "Sorry. Sound girl."
 
@@ -1115,9 +1224,11 @@ label en_L14:
 
     ke "Whatever. I'm out of here."
 
-    "As he turns to leave, I breath a sigh of relief."
+    "As he turns to leave, I breathe a sigh of relief."
 
     "That is, until he look back to me and opens his mouth."
+    
+    stop music fadeout 0.1
 
     ke "Hey man, what're you doing with two girls in your room anyway?"
 
@@ -1137,7 +1248,10 @@ label en_L14:
     
     show bg school_dormhisao at bgleft
     show lilly invis at leftsit
-    show hanabad invis at twoleft
+    
+    hide hanabad at twoleft
+    with charaexit
+    
     show kenji neutral at center
     with dissolvecharamove
     
@@ -1156,10 +1270,12 @@ label en_L14:
     
     "And with that, he walks off, seemingly ignoring my thoroughly perplexed expression as I shut the door."
     
+    play music music_pearly fadein 1.0
+    
     show bg school_dormhisao at center
     show lilly basic_smileclosed at twoleftsit
-    show hanabad emb_downtimid at tworight
-    with dissolvecharamove
+    show hanabad emb_downtimid at tworight 
+    with charaenter
     
     "As I walk back in, I see Hanako folding her blanket and Lilly still sitting on the side of the bed."
 
@@ -1187,7 +1303,7 @@ label en_L14:
 
     li "Ah, I do."
 
-    "I quickly pull top draw of my desk and grab my cellphone from inside."
+    "I quickly pull the top drawer of my desk open and grab my cellphone from inside."
 
     show bg school_dormhisao_blurred at bgright
     show phone mobile
@@ -1204,6 +1320,8 @@ label en_L14:
     # Phone conversation.
 
     mi "Hello, this is Misha."
+    
+    stop music fadeout 5.0
 
     "Wow, she sounds completely different on the phone. With such a polite and calm tone, if not for saying her name I'd have thought I'd called the wrong number."
 
@@ -1230,6 +1348,8 @@ label en_L14:
     mi "Shicchan says…"
 
     "As I hear a near-missable sound of air intake from the speaker, I quickly dart the phone away from my ear."
+    
+    play music music_running fadein 0.1
 
     mi "WHAT THE HELL DO YOU THINK YOU'RE DOING, HISAO!?"
 
@@ -1269,13 +1389,15 @@ label en_L14:
 
     mi "Oh? Shicchan… wants to talk to you?"
 
-    "I raise an eyebrow, both at the rediculousness of the statement and Misha's unusually surprised voice."
+    "I raise an eyebrow, both at the ridiculousness of the statement and Misha's unusually surprised voice."
 
     mi "Here, Shicchan."
 
     hi "Um… Shizu—{w=0.25}{nw}" #reminder for the potential {nw} break
 
     # End phone conversation
+    
+    stop music fadeout 1.0
 
     "Before I can say another word, the phone hangs up."
     
@@ -1296,7 +1418,7 @@ label en_L14:
     
     li "Thank you, Hisao. Hanako, shall we be off?"
 
-    "In all this fracas, I'd have forgotten Hanako to be there if she weren't standing before me she was so silent."
+    "In all this fracas, I'd have forgotten Hanako to be there if she weren't standing before me." 
 
     ha "Mm."
 
@@ -1337,6 +1459,8 @@ label en_L15:
     scene black with fade
     scene bg school_hallway3
     with shorttimeskip
+    
+    play music music_tension fadein 1.0
 
     "I stand around the corner of the open door to the classroom, quiet as a mouse."
 
@@ -1350,7 +1474,7 @@ label en_L15:
 
     "Though coldly logical would probably be a better description."
 
-    "With a deep breath, I turn the corner and confidently stride into the room. Even as I do, I feel as if I'm merrily waltzing into Hades itself."
+    "With a deep breath, I turn the corner and confidently stride into the room. Even as I do, I feel as if I'm merrily waltzing into Hell itself."
 
     scene bg school_scienceroom
     with locationchange
@@ -1363,7 +1487,7 @@ label en_L15:
     show misha hips_smile at left
     with charaenter
 
-    "As expected, Misha and Shizune are there, early as always, and standing at my desk waiting for me."
+    "As expected, Misha and Shizune are there, early as always, and standing at my desk, waiting for me."
 
     hi "Hey Misha, Shizune."
 
@@ -1395,8 +1519,10 @@ label en_L15:
 
     show shizu basic_normal2 at right
     with charachange
+    
+    stop music fadeout 3.0
   
-    "A quick nod is the response. Evething's going just as planned."
+    "A quick nod is the response. Everything's going just as planned."
     
     hide shizu
     
@@ -1410,7 +1536,7 @@ label en_L15:
     show misha cross_grin_close at center
     with charachange
 
-    "An obnoxiously wide grin"
+    "An obnoxiously wide grin."
 
     hi "That well, huh?"
     
@@ -1424,7 +1550,7 @@ label en_L15:
     show misha perky_confused_close at center
     with charachange
     
-    mi "You should really be apologising to poor Shicchan, she's the most ruffled."
+    mi "You should really be apologizing to poor Shicchan, she's the most ruffled."
 
     hi "And you?"
 
@@ -1446,7 +1572,7 @@ label en_L15:
 
     "I lean back, content that she's only toying with me as she's so fond of doing."
 
-    "As I begin to call Shizune, I suddenly realise the futility of doing so."
+    "As I begin to call Shizune, I suddenly realize the futility of doing so."
     
     $ renpy.music.set_volume(1.0, 1.0, channel='ambient')
 
@@ -1463,6 +1589,7 @@ label en_L15:
     "Uncomfortably closely."
     
     hide misha
+    with charaexit
     
     show shizu behind_blank at center
     with charamove
@@ -1477,7 +1604,7 @@ label en_L15:
 
     # Centered
     
-    show shizu behind_frustrated_close at center
+    show shizu basic_angry_close at center
     with charachange
 
     $ fixedwritten_note("Are you aware of the ten o'clock curfew?")
@@ -1499,7 +1626,7 @@ label en_L15:
 
     # Centered
 
-    $ fixedwritten_note("I take you're also aware that students are to be in their own dorms by said curfew, much less together with non-students?")
+    $ fixedwritten_note("I take it you're also aware that students are to be in their own dorms by said curfew, much less together with non-students?")
 
     "I give the pen a bit of a shake to get the ink flowing after coming up blank on my first attempt."
 
@@ -1601,7 +1728,7 @@ label en_L15:
     show bg school_scienceroom at bgright
     with charamove
     
-    show shizu behind_smile at twoleft
+    show shizu behind_blank 
     with charachange
 
     show hanako emb_blushtimid at rightedge
@@ -1624,7 +1751,7 @@ label en_L15:
     show misha hips_grin at left
     with charachange
     
-    show shizu adjust_happy at twoleft 
+    show shizu adjust_happy
     with charachange
     
     "I tilt my head upwards to see the two smiling."
@@ -1639,7 +1766,7 @@ label en_L15:
     show misha cross_smile at left
     with charachange
     
-    show shizu behind_smile at twoleft
+    show shizu behind_smile 
     with charachange
     
     mi "Well, that's settled then!"
@@ -1659,6 +1786,8 @@ label en_L15:
     mi "How bad was the hangover?"
 
     hi "Not too bad. Looks like Lilly bore the brunt of it."
+    
+    stop music fadeout 4.0
 
     # Sprite change
 
@@ -1667,10 +1796,10 @@ label en_L15:
     show misha hips_grin at left
     with charachange
     
-    show shizu behind_sad at twoleft
+    show shizu behind_sad 
     with charachange
 
-    "Misha's smile is as wide as ever as Shizune's faulters."
+    "Misha's smile is as wide as ever, while Shizune's falters."
 
     mi "So, Hicchan. You did drink after all?"
 
@@ -1679,12 +1808,12 @@ label en_L15:
     show misha hips_laugh at left
     with charachange
     
-    show shizu adjust_frown at twoleft
+    show shizu adjust_frown 
     with charachange
 
     mi "Wahahahahahaha~"
 
-    "I bring my palm to my face in embarassment."
+    "I bring my palm to my face in embarrassment."
 
     "I suppose that makes the score two to zero, now."
 
@@ -1697,18 +1826,20 @@ label en_L16:
 
     scene bg school_dormhisao
     with openeye
+    
+    play music music_dreamy fadein 2.0
 
     "I open my eyes to another day and glance over to the glowing red numbers beaming at my face."
 
     #Is there an alarm clock sprite?
     
-    "6:00"
+    "6:00 A.M."
 
     "Shit. Early."
 
     "Bloody nightmares."
 
-    "Sitting up and shaking off the last of the night's less than wonderful dream, I give up on the prospect of going back to sleep."
+    "Sitting up and shaking off the last of the night's less-than-wonderful dream, I give up on the prospect of going back to sleep."
 
     "Let's see, what to do…"
 
@@ -1732,15 +1863,17 @@ label en_L16:
 
     "It doesn't take long for my brain to get focused on the task at hand, with the sheets being completed one by one."
 
-    "Truth be told I prefer physics to chemistry, but neither are overly hard."
+    "Truth be told, I prefer physics to chemistry, but neither are overly hard."
 
     "I guess as far as talents go it's pretty much my only one."
 
     # Door knocking SFX
     
     play sound sfx_doorknock
+    
+    stop music fadeout 1.0
 
-    #centered "*thump* *thump* *thump*"
+    centered "*thump* *thump* *thump*"
 
     "The knocking at the door breaks me out of my concentration on the sheet in front of me."
 
@@ -1767,14 +1900,14 @@ label en_L16:
 
     "He pauses to adjust his glasses before speaking, making very sure that I understand he Means Business."
 
-    ke "I'm hearing things man."
+    ke "I'm hearing things, man."
 
     hi "You should probably get that checked out."
 
     show kenji tsun at center
     with charachange
 
-    "I get the feeling he's distinctly unamused by my attempt at humour."
+    "I get the feeling he's distinctly unamused by my attempt at humor."
 
     ke "I'm serious here. What's up?"
 
@@ -1783,9 +1916,9 @@ label en_L16:
     show kenji surprised at center
     with charachange
     
-    ke "The rumours, man. Don't tell me you haven't heard them."
+    ke "The rumors, man. Don't tell me you haven't heard them."
 
-    "I may not have my ear to the ground, but the fact that he's heard a rumour before I have is worrying."
+    "I may not have my ear to the ground, but the fact that he's heard a rumor before I have is worrying."
 
     hi "No, I have not heard this rumour you speak of. What is it?"
 
@@ -1847,36 +1980,46 @@ label en_L16:
     show kenji surprised at center
     with charachange
     
-    ke "I don't know, man. Everyone knows she's filthy rich. She probably has Yakuza connections or some shit."
+    ke "I don't know, man. Everyone knows she's flithy rich, and I still think she has some kind of connections to the mafia."
+    
+    #ke "I don't know, man. Everyone knows she's filthy rich. She probably has Yakuza connections or some shit." This conversation already happened in Act 2 - no need to repeat this and act like the convo in Act 2 never happened.
 
     show kenji happy at center
     with charachange
     
-    ke "Wait, no, mafia. She's foreign, right? If she's foreign and rich I bet she has connections to the mafia."
+    ke "Don't you think so, man?"
+    
+    #ke "Wait, no, mafia. She's foreign, right? If she's foreign and rich I bet she has connections to the mafia."
 
-    hi "You lost me."
+    hi "Totally."
 
-    "Skipping right over my confusion, he barrels along with his rant."
+    #"Skipping right over my confusion, he barrels along with his rant."
+    
+    "Ignoring the fact that I'm completely uninterested, he incessantly continues with his rant."
 
     show kenji neutral at center
     with charachange
     
-    ke "You don't want to get into that shit, dude. Concrete boots, bodies in trunks and all that. You know where she's from?"
+    ke "You don't want to get into that shit, dude. Concrete boots, bodies in trunks and all that."
+    
+    #ke "You don't want to get into that shit, dude. Concrete boots, bodies in trunks and all that. You know where she's from?"
 
-    "Of course I do, she's…"
+    #"Of course I do, she's…"
 
-    "…"
+    #"…"
 
-    "Huh."
+    #"Huh."
 
-    hi "I… don't, actually."
+    #hi "I… don't, actually." Yes you do - Act 2 also covered Lilly's birthplace
 
-    "I make a concious note to check with her sometime. Now that he brings it up, I wouldn't mind knowing myself."
+    #"I make a concious note to check with her sometime. Now that he brings it up, I wouldn't mind knowing myself."
     
     show kenji happy at center
     with charachange
+    
+    ke "I have all sorts of other theories on her, if you want to hear them."
 
-    ke "Sicily. She has to be from Sicily. All those mafia types come from there. Wait, no, Russia. The mafia there is serious business man. Hardcore smuggling and—" #reminder for the potential {nw} break
+    #ke "Sicily. She has to be from Sicily. All those mafia types come from there. Wait, no, Russia. The mafia there is serious business man. Hardcore smuggling and—" #reminder for the potential {nw} break
 
     hi "Wait, wait, stop, just slow down a sec. What point are you trying to get at here?"
 
@@ -1898,7 +2041,7 @@ label en_L16:
 
     "It takes all the resistance in the world not to say “Unlike you.”"
 
-    hi "That's right, you're in Lilly's class aren't you?"
+    hi "That's right, you're in Lilly's class, aren't you?"
 
     show kenji surprised at center
     with charachange
@@ -1995,7 +2138,7 @@ label en_L16:
 
     "It only takes a few seconds before I sigh in defeat. At least this is better than nicking one from the library, I guess."
 
-    hi "Consider said “favour” cashed-in."
+    hi "Consider said “favor” cashed-in."
 
     ke "What? It's just a book."
 
@@ -2050,6 +2193,7 @@ label en_L16:
     hi "See you."
     
     hide kenji
+    with charaexit
     
     stop music fadeout 2.0
     
@@ -2113,7 +2257,7 @@ label en_L16:
 
     "What I'd rather say is “Why the hell are you knocking on my door so persistently?,” but I manage to hold my tongue."
 
-    "As I look at them, I get an inexplicable sense of who was doing the knocking too."
+    "As I look at them, I get an inexplicable sense of who was doing the knocking, too."
     
     show rin basic_deadpan at left
     with charachange
@@ -2180,7 +2324,7 @@ label en_L16:
     
     "The answer comes in the form of Emi's hand tightly gripping my wrist and dragging me through my door."
 
-    "As she does, I remember something that comes close to slipping my mind completely"
+    "As she does, I remember something that comes close to slipping my mind completely."
 
     hi "H—hey, wait, I have to get my medication!"
 
@@ -2196,7 +2340,7 @@ label en_L16:
 
     hi "Yeah, sure. I'll be right back out."
     
-    show rin basic_deadpan at left
+    show rin basic_deadpan at left #leaving out a charachange here fits in, so i won't edit one in
 
     rin "Be sure not to choke on the pills."
 
@@ -2230,13 +2374,15 @@ label en_L16:
     show bg school_dormhisao at bgright
     with locationchange
 
-    "Walking back into my room slightly dazed, I make my way to the draw containing my pills."
+    "Walking back into my room slightly dazed, I make my way to the drawer containing my pills."
 
     "As per my daily ritual, I open the drawer to a marvel of medical science."
 
     "No matter how many times I see it, though, I can't help but loathe the sight."
 
-    "Let's see, Saturday, Saturday, Saturday."
+    #"Let's see... Saturday... Saturday... Saturday." -If today is Saturday then shouldn't Hisao be in class? Hanako's Act 2+3 has Hisao attending classes during Saturday, as well as the A1 Saturday script
+    
+    "Let's see... Sunday... Sunday... Sunday."
 
     "I move my hand up and down until I spot the shelf I keep the day's morning medications on."
 
@@ -2246,7 +2392,7 @@ label en_L16:
 
     "As my cupped palm fills, I move to the next task."
 
-    "Alright next is… daily."
+    "Alright, next is… daily."
 
     "Where the— Ah, there."
 
@@ -2302,7 +2448,7 @@ label en_L16:
     show rin basic_awayabsent at left
     with charachange
 
-    rin "To jump so high you have to be an athlete."
+    rin "To jump so high... You have to be an athlete."
     
     #jump animation?
 
@@ -2335,12 +2481,12 @@ label en_L16:
     scene bg school_dormhallground
     with charachange
     
-    stop music
+    stop music fadeout 2.0
     
     $ renpy.music.set_volume(0.20000000001, .20, channel='ambient')
     play ambient sfx_rain fadein 2.0
 
-    "As he head towards the door outside, I hear the pitterpatter of rain on the roof."
+    "As we head towards the door outside, I hear the pitterpatter of rain on the roof."
 
     "Heavy rain, at that."
 
@@ -2382,7 +2528,7 @@ label en_L16:
     show rin basic_absent at right
     with charachange
     
-    rin "If I get a cold Emi will help me, and if Emi gets a cold I'll help her."
+    rin "If I get a cold, Emi will help me, and if Emi gets a cold, I'll help her."
 
     hi "And if you both get colds?"
 
@@ -2410,6 +2556,8 @@ label en_L16:
 
     show rain
     with Dissolve(5.0)
+    
+    play music music_night fadein 2.0
 
     "Before Rin can reply, Emi pushes open the door to the deluge outside. The sheer force and volume of rain gives a deafening roar, with the wind lashing across the wet concrete."
 
@@ -2432,6 +2580,7 @@ label en_L16:
 
     hide emi
     hide rin
+    with charaexit
     
     "Just as I open my mouth to ask why, I realize in the nick of time. This could be a problem."
 
@@ -2499,7 +2648,7 @@ label en_L16:
     scene bg school_dormhisao
     with locationchange
 
-    "Once I get there, it doesn't take long for me to find the umbrella collecting dust leaning against a wall. A quick shake's all that's needed to make it look brand new, the black fabric significantly darker for the effort."
+    "Once I get there, it doesn't take long for me to find the umbrella, collecting dust, leaning against a wall. A quick shake's all that's needed to make it look brand new, the black fabric significantly darker for the effort."
 
     "Now, to get back to that troublesome duo."
 
@@ -2508,9 +2657,13 @@ label en_L16:
     scene bg school_dormhallway
     with locationchange
 
-    "Thankfully, they're exactly where they were standing this time"
+    "Thankfully, they're exactly where they were standing this time."
 
-    hi "Back. Here."
+    hi "I'm back. Here."
+    
+    show emi basic_grin at left
+    show rin basic_awayabsent at right
+    with charaenter
 
     "I hand the umbrella to Emi, who raises it high to cover her taller companion."
 
@@ -2519,12 +2672,20 @@ label en_L16:
     rin "Boring."
 
     hi "It's meant to keep the rain off you, not be a piece of art."
+    
+    show emi basic_grin at left
+    show rin basic_deadpancontemplation at right
+    with charachange
 
     rin "It would be neat if it was."
 
     hi "Well, that's a… wait, no, back on task. Ready, Emi?"
+    
+    show emi excited_happy at left
+    show rin basic_deadpancontemplation at right
+    with charachange
 
-    "She pushes her free fist forward and puffs out her noticably lacking chest to show her readiness."
+    "She pushes her free fist forward and puffs out her noticeably lacking chest to show her readiness."
 
     emi "Let's go!"
 
@@ -2571,9 +2732,9 @@ label en_L16:
 
     "A familiar figure stands on the stage, a lost look on her face."
 
-    "She looks comically overdressed, the lower half of her face all but hidden behind an oversized beige scarfe."
+    "She looks comically overdressed, the lower half of her face all but hidden behind an oversized beige scarf." #No sprites to fit this look on Lilly, will not include any of her sprites.
 
-    "I almost crack up at the rediculous sight."
+    "I almost crack up at the ridiculous sight."
 
     li "Excuse me, who's that?"
 
@@ -2581,7 +2742,7 @@ label en_L16:
 
     li "Ah…"
 
-    "She coughs harshly, her voice noticably husky."
+    "She coughs harshly, her voice noticeably husky."
 
     li "Hisao. Good afternoon."
 
@@ -2594,8 +2755,14 @@ label en_L16:
     li "Hmm? Oh, j—just a bit."
 
     "Just as she finishes the sentence, I feel an arm push hard into my upper back."
+    
+    with vpunch
 
     hi "Erk!"
+    
+    show emi excited_amused at left
+    show rin basic_deadpanamused at right
+    with charaenter
 
     emi "Having a nice chat, Hisao?"
 
@@ -2604,16 +2771,35 @@ label en_L16:
     "Both are, unsurprisingly, much drier than I."
 
     li "Sorry, who might that be…?"
+    
+    show emi excited_joy at left
+    show rin basic_deadpannormal at right
+    with charachange
 
     emi "Ah, hey Lilly. It's just me and Rin."
 
     li "Good morning Emi, Rin. What brings you two here?"
+    
+    show emi excited_joy at left
+    show rin basic_deadpandelight at right
+    with charachange
 
     rin "We wanted to get you and Hisao together."
+    
+    show emi basic_annoyed at left
+    show rin basic_deadpandelight at right
+    with charachange
+    
+    with vpunch
 
     "My jaw drops open as Emi delivers a sharp elbow into Rin's side."
+    
 
     "Amazingly, the rather forceful blow doesn't seem to faze her at all."
+    
+    show emi basic_annoyed at left
+    show rin basic_deadpannormal at right
+    with charachange
 
     rin "Oh, and get my painting."
 
@@ -2624,6 +2810,10 @@ label en_L16:
     hi "You two…"
 
     li "My my, it seems as if a plot is afoot."
+    
+    show emi basic_closedsweat at left
+    show rin basic_deadpansurprised at right
+    with charachange
 
     emi "Rin…"
 
@@ -2632,24 +2822,44 @@ label en_L16:
     emi "You're making this worse."
 
     "Rin cocks her head to the side inquisitively."
+    
+    show emi basic_closedsweat at left
+    show rin basic_deadpancontemplation at right
+    with charachange
 
     rin "I think I'm making it better."
 
     "The two look closely at each other, Emi's questioning eyes meeting Rin's blank stare head-on."
 
     "After a scant few seconds, the conflict comes to a peaceful end as Emi shrugs in defeat."
+    
+    show emi basic_grin at left
+    show rin basic_deadpannormal at right
+    with charachange
 
-    emi "Well, that's the way things stand I guess."
+    emi "Well, that's the way things stand, I guess."
 
     "I grin and reach forward, scruffing her hair to her mumbled protests."
+    with vpunch
+    
+    show emi excited_sad at left
+    show rin basic_deadpannormal at right
+    with charachange
 
     hi "Let's get that painting, shall we?"
 
     rin "It's in the store room behind the stage."
 
     "I release Emi's hair from my grip, though she's still blushing furiously."
+    
+    show emi sad_pout at left
+    show rin basic_deadpanamused at right
+    with charachange
 
     emi "I—It's over here. I'll get it."
+    
+    hide emi
+    with charaexit
 
     "With that, she quickly walks behind the stage, not daring to look back."
 
@@ -2668,6 +2878,9 @@ label en_L16:
     "It takes a few seconds for me to click exactly what she means. Heaven knows whether it was an intentional riddle or not."
 
     hi "Oh. You're going to get wet if you do that, you know."
+    
+    show rin basic_deadpan at right
+    with charachange
 
     rin "Does that matter?"
 
@@ -2678,12 +2891,19 @@ label en_L16:
     "This girl…"
 
     hi "I… Ah, forget it."
+    
+    show rin basic_lucid at right
+    with charachange
 
-    rin "I'll need the umbrella"
+    rin "I'll need the umbrella."
 
     hi "Sure, just drop it by my dorm after you're finished with it."
 
     "I seize upon her rare moment of lucidity as Emi gets back."
+    
+    show emi excited_happy at left
+    show rin basic_lucid at right
+    with charachange
 
     "In her hands is a square canvas the size of her outstretched arms, with the umbrella awkwardly propped upright between her palm and the painting's side."
 
@@ -2695,27 +2915,43 @@ label en_L16:
 
     hi "Yeah, it's really good."
 
-    "Most great art's completely unrecognisable, so I guess this must be great art."
+    "Most great art's completely unrecognizable, so I guess this must be great art."
 
     "Satisifed with my questionable leap of logic, I turn to Rin."
 
     hi "Nice work, Rin."
+    
+    show emi excited_happy at left
+    show rin basic_deadpannormal at right
+    with charachange
 
     "She blankly nods. Whether it's in thanks for the compliment or just acknowledgement that she heard me, I'm not sure."
 
     emi "So, are we going to take this to your room?"
 
     rin "I suppose so."
+    
+    show emi basic_hes at left
+    show rin basic_deadpannormal at right
+    with charachange
 
     emi "Aren't you going to get wet? You can't fit under the umbrella together with the painting."
 
     hi "I told you."
+    
+    show emi basic_annoyed at left
+    show rin basic_deadpanamused at right
+    with charachange
 
     rin "It's okay, if I get a cold you'll look after me."
 
     "The statement draws a flat look from Emi, though surprisingly no outright denial."
 
     "I guess she must've been right."
+    
+    show emi basic_grin at left
+    show rin basic_deadpannormal at right
+    with charachange
 
     emi "Well, we'll be off then."
 
@@ -2728,6 +2964,10 @@ label en_L16:
     rin "Bye."
 
     "As Emi turns to open the door, she suddenly pauses."
+    
+    show emi basic_hes at left
+    show rin basic_lucid at right
+    with charachange
 
     emi "Ah…"
 
@@ -2746,6 +2986,12 @@ label en_L16:
     rin "We'll be fine."
 
     "And with that, they set off out the door."
+    
+    hide emi
+    hide rin
+    with charaexit
+    
+    stop music fadeout 3.0
 
     "What a weird pair."
 
@@ -2786,12 +3032,14 @@ label en_L16:
     "I wouldn't have it any other way."
 
     # Start Saraband
+    
+    play music music_cellosolo fadein 4.0
 
     "I breath deeply as the soft, melancholic notes fill the air."
 
     "Damn, that run tired me more than I thought."
 
-    "I guess it wouldn't mater if I closed my eyes for a bit."
+    "I guess it wouldn't matter if I closed my eyes for a bit."
 
     "As I close my eyes, the scene seemingly imprints itself on my mind."
 
@@ -2802,7 +3050,10 @@ label en_L16:
     # Fade to black
 
     scene black
-    with dissolve
+    with shuteye
+    with Pause(5.0)
+    
+    stop music fadeout 2.0
 
     scene bg school_auditorium
     with openeye
@@ -2827,7 +3078,7 @@ label en_L16:
 
     "Jesus, talk about a nap."
 
-    "As I move to get up, I suddenly realise an added weight pressing on my chest."
+    "As I move to get up, I suddenly realize an added weight pressing on my chest."
 
     "A familiar grey trenchcoat lies draped over my soaked front."
 
@@ -2856,7 +3107,7 @@ label en_L17:
 
     hi "Hmph, let me sleep."
 
-    "Sleeping with Lilly seems to have more than one advantage."
+    #"Sleeping with Lilly seems to have more than one advantage." -Not sure what this is even supposed to imply/mean
 
     "Being able to sleep decently without being thoroughly exhausted beforehand would be nice, though."
 
@@ -2931,7 +3182,7 @@ label en_L17:
 
     "Invariably, it's those bound to wheelchairs taking the flank. Poor guys."
 
-    hi "Well, I'm up now. What're you wanting?"
+    hi "Well, I'm up now. What do you want?"
 
     show emi basic_grin at left
     with charachange
@@ -2946,8 +3197,10 @@ label en_L17:
     with charachange
     
     ha "Uh… well… I—I… er…"
+    
+    with vpunch
 
-    "Emi, lacking in my patience around her, gives her a sharp clap on th shoulder to try and make her come out with what she wants to say."
+    "Emi, lacking in my patience around her, gives her a sharp clap on the shoulder to try and make her come out with what she wants to say."
 
     show hanako emb_blushtimid at right
     with charachange
@@ -2976,12 +3229,13 @@ label en_L17:
     "With that, she walks out of the classroom as fast as her artificial legs will let her."
 
     hide emi
+    with charaexit
     
     play sound sfx_footsteps_hard
     
     "Which, without her running blades on, isn't very fast."
 
-    "As Hanako looks back at her entirely lost, it's pretty obvious what Emi had thought Hanako was going to say."
+    "As Hanako looks back at her, entirely lost, it's pretty obvious what Emi had thought Hanako was going to say."
 
     "Hanako wouldn't be Hanako if she didn't give every word she said the same amount of thought as a confession."
 
@@ -2990,7 +3244,7 @@ label en_L17:
     show hanako emb_sad at center
     with charamove
 
-    "She turns back and shakes her hea vigorously."
+    "She turns back and shakes her head vigorously."
 
     show hanako basic_bashful at center
     with charachange
@@ -3014,18 +3268,15 @@ label en_L17:
     ha "O—Okay. Thanks. I had work to finish, so…"
 
     hi "Don't worry about it. I'm kind of curious about why she's not here as well."
-    with shorttimeskip
     
-    stop music
+    stop music fadeout 1.0
     
     scene bg school_girlsdormhall
-    with locationchange
+    with shorttimeskip
     
     play sound sfx_doorknock
     
     $ renpy.music.set_volume(1.0000000001, 1.0, channel='ambient')
-    
-    play music music_heart
     
     centered "*Thud* *thud* *thud*"
 
@@ -3033,7 +3284,9 @@ label en_L17:
 
     "……"
 
-    "Despite my repeated rapping of my knuckles on her door, not a peep can be heard."
+    "Despite the repeated rapping of my knuckles on her door, not a peep can be heard."
+    
+    play sound sfx_doorknock
 
     centered "*Thud* *thud* *thud*"
 
@@ -3053,6 +3306,8 @@ label en_L17:
     with charaenter
     
     hi "Hey Li… lly?"
+    
+    play music music_pearly fadein 1.0
 
     "With her hair undone and her face looking paler than usual (quite a feat), she looks more like a ghost than a living person."
 
@@ -3065,7 +3320,7 @@ label en_L17:
 
     hi "Sick?"
 
-    "She nods sullenly, noticably remaining silent."
+    "She nods sullenly, noticeably remaining silent."
 
     hi "Virus? Bug? Biological weapon?"
 
@@ -3077,17 +3332,25 @@ label en_L17:
 
     hi "Oh dear. Want me to grab the nurse to have a look at it?"
 
-    show lilly basic_smile_paj at center
+    show lilly basic_weaksmile_paj at center
     with charachange
     
     "She looks at me, smiling weakly as if to apologise for troubling me."
+    
+    hide lilly
+    with charaexit 
+    
     with shorttimeskip
 
     "In no time I once again stand in front of the door to her dorm, though this time with the nurse beside me."
+    
+    play sound sfx_doorknock
 
     centered "*Thud* *thud* *thud*"
 
     "This time, Lilly opens the door almost as soon as I knock."
+    
+    play sound "sfx/dooropen.ogg"
     
     show lilly basic_sleepy_paj at center
     with charaenter
@@ -3113,7 +3376,7 @@ label en_L17:
     show nurse concern at left
     with charachange
      
-    nk "Now, I hear from Nakai you don't feel too well."
+    nk "Now, I hear from Nakai that you don't feel too well."
     
     show lilly basic_concerned_paj at right
     with charachange
@@ -3126,8 +3389,8 @@ label en_L17:
     nk "Well, just pop over to your bed and have a sit while I get set up here."
 
     show lilly basic_concerned_paj at right
-    
-    show nurse fabulous at center
+    show nurse neutral at center
+    with charaenter
     
     "As per his instructions, she slowly walks over to her bed, checking the edge with her hand before taking a seat on the side."
 
@@ -3148,7 +3411,7 @@ label en_L17:
 
     "His musings aren't very convincing."
 
-    "Evidently content with the results of his poking around in her mouth, he stand up and brushes himself off."
+    "Evidently content with the results of his poking around in her mouth, he stands up and brushes himself off."
 
     hi "What's the verdict?"
     
@@ -3175,7 +3438,7 @@ label en_L17:
     show lilly basic_surprised_paj at right
     with charachange
     
-    hi "How long for?"
+    hi "For how long?"
 
     nk "Well, if the usual treatement's done, she'll have to have her tonsils out…"
 
@@ -3183,9 +3446,9 @@ label en_L17:
 
     hi "Damn."
 
-    "before I can ask Lilly as to her thoughts, I see her reach out and try to speak."
+    "Before I can ask Lilly as to her thoughts, I see her reach out and try to speak."
 
-    show nurse fabulous at left
+    show nurse concern at left
     with charachange
     
     nk "Ah, don't do that. It's better that you rest your throat for now."
@@ -3247,9 +3510,14 @@ label en_L17:
 
     show lilly basic_smileclosed_paj at center
     with charachange
+    
     "She closes her eyes, pausing for a moment before nodding once again."
+    
+    stop music fadeout 2.0
 
     scene black
+    with dissolve
+    
     return
 
 label en_L18:
@@ -3263,6 +3531,8 @@ label en_L18:
     play ambient sfx_crowd_outdoors
     
     #don't forget to add the crowds here
+    
+    play music music_daily 
     
     "Joining the throngs of students leaving the building, I make my way through the courtyard towards the iron gate."
 
@@ -3302,12 +3572,17 @@ label en_L18:
     hi "Stupid bloody buses…"
 
     # SFX, ringing
+    
+    play sound "sfx/cellphone.ogg"
 
     centered "*ring ring* *ring ring*"
 
     hi "Huh?"
 
     "Phone in hand, I turn around."
+    
+    show yuuko neutral
+    with charaenter
 
     yu "Yo."
 
@@ -3316,6 +3591,9 @@ label en_L18:
     "Talk about impeccable timing."
 
     hi "You…"
+    
+    show yuuko happy
+    with charachange
 
     yu "I thought you might need a lift."
 
@@ -3342,6 +3620,8 @@ label en_L18:
     hi "Wait, what the—" #reminder for the potential {nw} break
 
     yu "Catch!"
+    
+    with vpunch
 
     "By reflex I manage to catch the large object she throws at me, and take a brief moment to examine it."
 
@@ -3351,7 +3631,7 @@ label en_L18:
 
     "I push it down onto my head with little effort, making sure to do up the straps carefully."
 
-    "As I fiddle with the clips, the istuation I've gotten myself into dawns on me."
+    "As I fiddle with the clips, the situation I've gotten myself into dawns on me."
 
     "I am at a bus stop full of students, getting onto a scooter driven by a woman who's declared she has a boyfriend."
 
@@ -3380,45 +3660,67 @@ label en_L18:
     hi "I'm holding!"
 
     "With that, she gives a sharp flick of her wrist on the handle."
+    
+    stop music fadeout 1.0
 
     "…To which the scooter responds by descending into silence after a couple of harsh pops."
 
     hi "It's… not meant to do that, is it?"
 
     "She seems to deflate in my arms as I let go."
+    
+    show yuuko cry_up
+    with charachange
 
     yu "My scooter… My beautiful scooter…"
 
     "She turns the handle helplessly, not a sound to be heard from the wounded scooter in response."
 
     "It looks terminal."
+    
+    show yuuko cry_down
+    with charachange
 
     yu "My scooter…"
 
     "I pat her on the shoulder to try and calm her down."
 
     hi "Come on, we'd better get moving. We can just walk it with us until you get it to a repair shop."
+    
+    show yuuko worried
+    with charachange
 
     "As she nods in reply, I can't bring myself to look her in the eye."
 
     "I'm sorry, Yuuko. I don't think that scooter's going to be moving again."
 
     scene bg city_street1
-    with locationskip   
+    with locationskip  
 
-    "I breath a sigh of relief."
+    show yuuko worried_down
+    with charaenter
+    
+    play music music_tranquil fadein 3.0
+
+    "I breathe a sigh of relief."
 
     "Though she's still somewhat downtrodden, she seems to have calmed down as we walk through the city."
 
-    "Dutifully taking my turn as wheeling along her scooter, I remember an odd offhand remark she made."
+    "Dutifully taking my turn as wheeling along her scooter, I remember an odd remark she'd made."
 
     hi "Hey, Yuuko?"
+    
+    show yuuko neutral
+    with charachange
 
     "As she looks at me, her downcast expression is traded for innocent curiosity."
 
     hi "You have a boyfriend?"
 
     "She pauses for a moment before talking, swaying her head from side to side as she silently deliberates on her reply."
+    
+    show yuuko smile
+    with charachange
 
     yu "Well, I think so."
 
@@ -3429,8 +3731,11 @@ label en_L18:
     hi "He left you?"
 
     yu "No, he just stopped contacting me completely."
+    
+    show yuuko worried
+    with charachange
 
-    "She gives a whistful sigh as I grimace."
+    "She gives a wistful sigh as I grimace."
 
     "That sounds an awful lot like it was ended, no “kind of” needed."
 
@@ -3443,6 +3748,9 @@ label en_L18:
     yu "He was. He even went to your school."
 
     hi "He did? Know what class he was in?"
+    
+    show yuuko neutral
+    with charachange
 
     yu "Hmm, I don't think he ever said. He was always really secretive."
 
@@ -3466,13 +3774,16 @@ label en_L18:
 
     yu "I keep them informed, they keep me informed. That's how it works."
 
-    hi "So you are a spy for them then?"
+    hi "So you are a spy for them, then?"
 
     "She simply shrugs."
 
     "This line of questioning isn't getting me anywhere."
 
     hi "Anyway, any word on how Lilly's doing?"
+    
+    show yuuko neutral_down
+    with charachange
 
     yu "She went into surgery this morning, she should be awake by now though."
 
@@ -3487,25 +3798,34 @@ label en_L18:
     "I find myself staring ahead, in my own little world."
 
     "I can't help but feel a pang of embrassment as I look back to Yuuko."
+    
+    show yuuko happy_down
+    with charachange
 
     yu "You know how she is. Something like this wouldn't faze her, not in a million years."
 
     hi "Yeah, you're right."
 
     "The rest of the trip passes in silence, though it doesn't take long before we stop at the hospital."
+    
+    stop music fadeout 2.0
+    
+    stop ambient fadeout 0.2
 
     scene bg hosp_hallway
-    with locationskip
+    with shorttimeskip
 
-    "After a quick check with the receptionist as to where she's staying, we take the elevator up and reach the hallway to her room"
+    "After a quick check with the receptionist as to where she's staying, we take the elevator up and reach the hallway to her room."
 
-    "The atmosphere of the hospital makes me unbearably tense."
+    "The atmosphere of the hospital makes me tense unbearably."
 
     "Such a horrid place."
 
     "A place where people come to die."
 
     "The creak of Yuuko opening the room door brings me out of my dwelling."
+    
+    play sound "sfx/dooropen.ogg"
 
     scene bg hosp_room
     with locationchange
@@ -3519,12 +3839,20 @@ label en_L18:
     "Small insipid watercolour painting of a flower hanging on a wall."
 
     "The sight almost makes me want to throw up."
+    
+    show yuuko happy_up at leftsit
+    with charaenter
+    
+    play music "bgm/Happiness.ogg" fadein 1.0
 
     yu "Li~lly!"
 
     "Once again, Yuuko refocuses my mind."
+    
+    show lilly basic_weaksmile_pat at centersit
+    with charaenter
 
-    "Lilly lies on the bed, dressed in white hospital robes and underneath the light blue hospital sheets."
+    "Lilly lies on the bed, dressed in white hospital robes, underneath the light blue hospital sheets."
 
     "Her tall and healthy figure looks strangely small and frail."
 
@@ -3535,12 +3863,21 @@ label en_L18:
     "Her usually confident demeanor's all but disappeared. Something's not right."
 
     hi "Hey Lilly, I'm here too. How're you feeling?"
+    
+    show lilly basic_reminisce_pat at centersit
+    with charachange
 
     "She tilts her head from side to side, as if to say that she's so-so."
 
     "I move to a a chair beside her bed, Yuuko beside it and leaning over."
+    
+    show yuuko neutral at leftsit
+    with charachange
 
     yu "I filled Hisao in on what happened."
+    
+    show lilly basic_smile_pat
+    with charachange
 
     "Another smiling nod."
 
@@ -3552,11 +3889,13 @@ label en_L18:
 
     "Her nod confirms my hypothesis."
 
-    "Trust her to be making sure everyone else is okay, even while she's in hospital."
+    "Trust her to be making sure everyone else is okay, even while she's in the hospital."
 
     hi "I'm fine, so's Hanako. You should be worrying about yourself more, Lilly."
 
     "With a creak, the door opens once again."
+    
+    play sound "sfx/door_creak.ogg"
 
     "An old and somewhat stern looking doctor, clipboard in hand, enters the room."
 
@@ -3567,6 +3906,14 @@ label en_L18:
     "Doctor" "Family?"
 
     yu "Mm, cousin."
+    
+    show yuuko neutral at left
+    with charachange
+    
+    hide yuuko 
+    with charaexit
+    
+    stop music fadeout 1.0
 
     "They both head out the door, leaving Lilly and I alone."
 
@@ -3576,7 +3923,7 @@ label en_L18:
 
     "It's perhaps the only awkward silence I've ever had around Lilly."
 
-    "I'd been looking forward to meeting her ever since she entered hospital."
+    "I'd been looking forward to meeting her ever since she entered the hospital."
 
     "To come in and see her smiling face."
 
@@ -3587,10 +3934,18 @@ label en_L18:
     "But now that I'm here… I can't think of a single word to say."
 
     "To look at her like this, though, makes me want to help her."
+    
+    show lilly basic_emb_pat at centersit
+    with charachange
+    
+    play music "bgm/Lullaby_of_Open_Eyes.ogg"
 
     "With a small sigh at my helplessness, I put my hand on her head."
 
     "Slightly giving way under it, I gently rub her whispy yellow hair underneath my fingers."
+    
+    show lilly basic_listen_pat at centersit
+    with charachange
 
     "As I do, though, her smile seems to dissipate."
 
@@ -3623,12 +3978,20 @@ label en_L18:
     hi "I'll take care of everything, don't worry. I'll visit you, so will Hanako and Yuuko."
 
     hi "Everything'll be fine. I'll make sure of it."
+    
+    show lilly basic_weaksmile_pat at centersit
+    with charachange
 
     "She gives a weak smile, taking a moment before nodding."
+    
+    stop music fadeout 3.0
 
     "The door swings open as she withdraws her hand, Yuuko half-appearing through the doorway."
 
-    "Her expression, though, is one I've never seen her have before."
+    "Her expression, though, is rather serious."
+    
+    show yuuko worried at rightedge
+    with charaenter
 
     # Yuuko srs bsns sprite
 
@@ -3640,13 +4003,18 @@ label en_L18:
 
     hi "Sure, hold on."
 
-    "I stand and walk over to the door, looking back to Lilly as I enter it it."
+    "I stand and walk over to the door, looking back to Lilly as I enter it."
 
     hi "See you tomorrow, Lilly."
 
     "She raises her arm and gives a small wave."
 
     "And with that, the door closes."
+    
+    play sound "sfx/doorclose.ogg"
+    
+    scene bg hosp_hallway
+    with locationchange
 
     hi "What the hell's going on?"
 
@@ -3654,12 +4022,17 @@ label en_L18:
 
     scene bg hosp_ext
     with locationskip
+    
+    play music music_soothing fadein 5.0
 
     "As I walk outside, I see Yuuko's scooter still propped up on its stands and unattended."
 
     "I guess Yuuko's as good as anyone to ask about what's wrong with Lilly."
 
     hi "Hey Yuuko, what's—" #reminder for the potential {nw} break
+    
+    show yuuko worried
+    with charaenter
 
     yu "Hisao?"
 
@@ -3670,6 +4043,9 @@ label en_L18:
     hi "No, I wouldn't say so."
 
     "Another silence."
+    
+    show yuuko worried_down at centersit
+    with charachange
 
     "Yuuko takes a seat on the bench next to the hospital door as I lean against the wall."
 
@@ -3680,6 +4056,9 @@ label en_L18:
     hi "How do I… view Lilly?"
 
     yu "Mm."
+    
+    scene bg misc_sky
+    with locationchange
 
     "I look up to the sky."
 
@@ -3692,6 +4071,9 @@ label en_L18:
     "Forever lazily floating through that deep blue expanse, carried only by the wind."
 
     "If only life worked that way."
+    
+    scene bg hosp_ext
+    with locationchange
 
     "I return my gaze downward."
 
@@ -3702,18 +4084,27 @@ label en_L18:
     "I take a breath, choosing my words carefully."
 
     hi "I want to find out."
+    
+    show yuuko neutral at centersit
+    with charaenter
 
     "Yuuko looks at me, smiling warmly."
 
     yu "Well, that'll do for now."
 
     hi "You're making me feel like I've just had an exam."
+    
+    show yuuko happy at centersit
+    with charachange
 
     yu "If that's the case, you should feel happy you've passed, right?"
 
     "I look at her flatly as she begins to swing her legs carelessly. This is Yuuko, alright."
 
     hi "So what was that, anyway?"
+    
+    show yuuko neutral_down at centersit
+    with charachange
 
     yu "Hmm?"
 
@@ -3741,7 +4132,7 @@ label en_L18:
 
     yu "You're really bummed about this, aren't you?"
 
-    "I look away slightly in embarassment"
+    "I look away slightly in embarrassment."
 
     hi "Kind of."
 
@@ -3757,19 +4148,22 @@ label en_L18:
 
     yu "Do you know where Lilly's from?"
 
-    hi "Uh, no."
+    hi "South Africa."
 
     yu "Do you know how many siblings she has?"
 
-    hi "No."
+    hi "No." #I believe that there is text referencing Lilly having a younger sister, can't quote myself so I'll play it safe.
 
     yu "Her previous school? Her wishes for the future?"
 
-    hi "No, I don't."
+    hi "An all-girls school, and to become an English teacher."
 
     "She suddenly stops her interrogation and sinks into deep thought."
 
     "What in the world is she doing this for?"
+    
+    show yuuko happy at centersit
+    with charachange
 
     "With a small smile, she looks back."
 
@@ -3782,6 +4176,9 @@ label en_L18:
     hi "Of course I will."
 
     yu "Well, in that case we'd better be off."
+    
+    show yuuko neutral at center
+    with charachange
 
     "She quickly moves to stand up, and begins to walk over to the parked scooter."
 
@@ -3802,6 +4199,8 @@ label en_L18:
     "I sigh as I stand up."
 
     hi "Fine, let's go."
+    
+    stop music fadeout 1.0
 
     scene black
     with dissolve
@@ -3813,7 +4212,7 @@ label en_L19:
     scene bg school_dormhisao
     with locationskip
     
-    play sound sfx_doorknock2
+    play sound sfx_doorknock
 
     #centered "*Thump* *thump* *thump*"
 
@@ -3866,7 +4265,7 @@ label en_L19:
     show kenji happy
     with charachange
 
-    ke "Good, good. I see you're aware of their foothold there then."
+    ke "Good, good. I see you're aware of their foothold their, then."
 
     hi "“their?”"
     
@@ -4175,7 +4574,7 @@ label en_L19:
 
     li "I need you to take care of her while I can't."
 
-    #"Even as she says it, her face is one of concern."
+    "Even as she says it, her face is one of concern."
 
     return
 
@@ -4199,7 +4598,7 @@ label en_L19a:
 
     "My eye twitches slightly in annoyance."
 
-    "Dressed in the white of her hospital gown, her mind is still on others."
+    "Dressed in the light blue of her hospital gown, her mind is still on others."
 
     "It's close to maddening."
 
@@ -4218,6 +4617,9 @@ label en_L19a:
     hi "Stop it."
 
     "Huh. That was somewhat more blunt than I'd expected."
+    
+    show lilly basic_listen_pat at centersit
+    with charachange
 
     "As I look towards her in trepidation, her face seems to be surprisingly accepting."
 
@@ -4237,7 +4639,7 @@ label en_L19a:
 
     "Why can't I figure out what she's thinking?"
 
-    "Until now she's never hidden her feelings, but as she lies there in her bleached white gown, I can't work out a single thing she's thinking."
+    "Until now she's never hidden her feelings, but as she lies there in her light blue gown, I can't work out a single thing she's thinking."
 
     "It's infuriating."
 
@@ -4246,6 +4648,9 @@ label en_L19a:
     "More infuriating than anything in my life."
 
     hi "Why?"
+    
+    show lilly basic_oops_pat at centersit
+    with charachange
 
     li "Hmm?"
 
@@ -4262,6 +4667,9 @@ label en_L19a:
     hi "Tell me Lilly, what's wrong!?"
 
     "Silence falls."
+    
+    show lilly basic_sad_pat at centersit
+    with charachange
 
     "She looks up, a blank expression on her face as she finds herself completely lost for words."
 
@@ -4280,10 +4688,18 @@ label en_L19a:
     "What in the world…"
 
     "As I open my mouth to respond, the door opens."
+    
+    play sound "sfx/dooropen.ogg"
+    
+    show hanako basic_normal_cas at tworight
+    with charaenter
 
     "Through it comes Hanako, awkwardly carrying three cans of soda."
 
     # "Soda"? And you Americans still call that thing you speak English?
+    
+    show lilly basic_smile_pat at centersit
+    with charachange
 
     li "Thank you, Hanako."
 
@@ -4292,10 +4708,16 @@ label en_L19a:
     hi "Thanks, Hanako."
 
     "She quickly shakes her head from side to side."
+    
+    show hanako basic_bashful_cas at tworight
+    with charachange
 
     ha "It's okay."
 
     "As I get out of the seat and motion for Hanako to take it, I take one of the cans."
+    
+    show hanako basic_bashful_cas at rightsit
+    with charachange
 
     "She and Lilly return to talking about various trivialties."
 
@@ -4310,6 +4732,8 @@ label en_L19a:
     "I need to be there. To act. To do something."
 
     "All that remains, is… what do I need to do?"
+    
+    stop music fadeout 1.0
 
     scene black
     with dissolve
@@ -4348,7 +4772,7 @@ label en_L19b:
 
     li "Thank you."
 
-    "I blush slightly and turn away in embarassment."
+    "I blush slightly and turn away in embarrassment."
 
     hi "I—I wasn't trying or anything."
     

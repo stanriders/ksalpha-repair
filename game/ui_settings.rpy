@@ -751,7 +751,7 @@ init 1:
         make_sprites('miki',miki_list,['gym','cas'])
     
     # Minor characters
-        make_sprites('yuuko',['smile','neutral','happy','closedhappy','worried', 'neurotic', 'panic',], ['shang','up','down'])
+        make_sprites('yuuko',['smile','neutral','happy','closedhappy','worried', 'cry', 'neurotic', 'panic',], ['shang','up','down'])
         make_sprites('yuukoshang',['smile','neutral','happy','closedhappy','worried', 'neurotic', 'panic','invis', 'noglasses'], ['up','down'])
         make_sprites('akira',['basic_smile','basic_lost','basic_kill','basic_annoyed','basic_resigned','basic_boo', 'basic_laugh', 'basic_evil', 'basic_ending'])
         make_sprites('hideaki',['angry','angry_up','bored','bored_up','closed_up','confused','darkside','disapproves','evil','happy','happy_up','kiss','normal','normal_up','ohshit','sad','surprise','surprise_up','thinking','serious','serious_up','triangle','invis'])
@@ -2076,6 +2076,7 @@ init python:
     ks_music('flashback', 'static')
     ks_music('Friendship', 'friendship') 
     ks_music('Generic_Happy', 'comedy')
+    ks_music('Gentle_Mystique', 'gentle')
     ks_music('Happiness', 'happiness')
     ks_music('High_Tension', 'tension')
     ks_music('Hokabi', 'running')

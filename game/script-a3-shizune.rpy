@@ -4,10 +4,10 @@
     play sound sfx_alarmclock
     scene bg school_dormhisao
     with openeye
-
+    
     
     "The familiar sound of my alarm wakes me up. I pick up my clock and read the time. It's past noon already; I've really slept in late. I turn off the alarm, but don't get out of bed just yet."
-
+    
     play music music_twinkle fadein 5.0
     
     "Last night, I confessed to Shizune. Somehow, these words continue to run through my mind, even a day after the fact."
@@ -5178,7 +5178,7 @@ label en_S29:
 
     "I wonder how she feels."
     
-    stop music
+    stop mus
 
     "The smallness and impersonality of my dorm room are starting to get to me. Throwing on a jacket since it looks unusually breezy outside, I head outside and decide to take a walk around the school grounds."
 
@@ -5486,6 +5486,8 @@ label en_S30:
     scene black with dissolve
     centered "~ Misha's POV ~" with dissolve
     
+    play music "bgm/Painful_History_Final.ogg" fadein 1.0 
+    
     "I have always been really happy when the people around me are happy, too."
 
     "Because of that, lately I think more and more about what my life will be like when I will leave Yamaku."
@@ -5565,30 +5567,59 @@ label en_S30:
     "I really am…"
 
     "Hahaha~."
+    
+    stop music fadeout 3.0
+    
+    scene bg school_dormbathroom
+    with Dissolve(3.0)
 
     "Hm~ hm~… It's time for a shower. I like the feeling of warm water against my skin. I'll feel refreshed."
+    
+    play sound "sfx/shower.ogg"
 
     "Haha…"
+    
+    stop sound 
+    
+    scene bg school_girlsdormhall
+    with shorttimeskip
 
     # fade
 
     "Yay~! I'm done, and my hair is almost totally dried. The person who told me that I looked cuter with my hair like this was Shicchan. I don't even really remember what I looked like with my hair straight."
 
     "I try the doorknob, because she always leaves her room unlocked when she is inside. It's open."
+    
+    play sound "sfx/dooropen.ogg"
+    
+    scene bg school_dormshizune 
+    with locationchange
+    
+    show shizu basic_normal at centersit
+    with charaenter
 
     "Shicchan is sitting at her desk reading a book. She sees me and waves hi."
 
     mi "Morning, Shicchan~!"
+    
+    show shizu adjust_happy at centersit
+    with charachange
 
     ssh "Good morning."
 
     "I laugh and plop down on her bed. It's soft, she has different sheets than I do."
 
     mi "How are you, Shicchan?"
+    
+    show shizu behind_blank at centersit
+    with charachange
 
     ssh "I'm doing well. It's very early for you to be up. Is there something different about today?"
 
     mi "Yup~! Well, no. Well, yes and no, Shicchan. I talked with Hicchan, and he told me to tell you that he doesn't resent you at all."
+    
+    show shizu basic_normal at centersit
+    with charachange
 
     ssh "Really?"
 
@@ -5599,10 +5630,19 @@ label en_S30:
     "Shicchan doesn't say anything, she just thinks."
 
     mi "Shicchan, did you tell Hicchan that you didn't know if I might hate you for that?"
+    
+    show shizu behind_sad at centersit
+    with charachange
 
     ssh "Yes, I did."
 
     mi "Well, you don't have to worry about that, Shicchan~! I don't resent you at all, either. I feel the same way."
+    
+    show shizu behind_smile 
+    with charachange
+    
+    show shizu behind_smile_close
+    with charachange
 
     "Shicchan gets up from her desk and walks over to me."
 
@@ -5611,16 +5651,25 @@ label en_S30:
     "I'm really happy, too~…"
 
     mi "Really, Shicchan? Okay~! Let's go out somewhere, then~!"
+    
+    show shizu behind_blank_close
+    with charachange
 
     ssh "What do you mean?"
 
     mi "Shicchan, it's no good for a young girl to stay inside all the time. And~! We haven't gone out together in a long time. Soon, Shicchan is going to be going on more and more dates with Hicchan, so we have to hang out together now~!"
 
     "Please bear with my selfishness, Shicchan. She smiles and starts putting on her jacket."
+    
+    show shizu behind_smile
+    with charachange
 
     ssh "Okay. Where should we go?"
 
     mi "Hm… Anywhere."
+    
+    show shizu adjust_happy
+    with charachange
 
     ssh "You should decide. I'm thankful to you, so I want it to be someplace you want to go."
 
@@ -5629,6 +5678,11 @@ label en_S30:
     # transition to the inside of some kind of clothing store. Or a mall. It doesn't really matter.
 
     "Me and Shicchan haven't really gone out together by ourselves in a long time, so I'm really happy."
+    
+    play music "bgm/Generic_Happy.ogg" fadein 2.0
+    
+    scene bg suburb_roadcenter
+    with shorttimeskip
 
     "We eat lunch, getting what we each want from two different restaurants. I'm not as active as Shicchan, so I can't eat all the things she eats."
 
@@ -5639,40 +5693,69 @@ label en_S30:
     "I already bought a lot."
 
     "I even have a new blouse now. It's cute, but I don't know if the color will go with my hair."
+    
+    show shizu adjust_smug
+    with charaenter
 
     ssh "I'm going to blame you for that. With your hair color, it's hard to find anything that goes well with you."
 
     mi "Hahaha~! Sorry, Shicchan. Hm~… Hey~! Shicchan, this time it's my turn. I'll pick out something that will look cute on you."
+    
+    show shizu adjust_blush
+    with charachange
 
     "She blushes. Shicchan is a little bit of a tomboy, so she doesn't like dressing up in clothes that are too feminine, but I want to see her like that."
 
     mi "Aw~… Come on, Shicchan? Just for today?"
+    
+    show shizu basic_angry
+    with charachange
 
     ssh "Fine."
 
     mi "That's great! I'm really glad."
 
     mi "Hahahaha~!"
+    
+    hide shizu
+    with charaexit
 
     "I see a jacket that would look great on Shicchan's body. Her figure is nice, like a model."
 
     mi "How about this, Shicchan?"
+    
+    scene bg suburb_roadcenter_ss
+    with locationchange
+    with Pause(2.0)
 
     "After awhile, Shicchan gets annoyed because I keep making her put on new things."
+    
+    show shizu cross_rageclosed
+    with charaenter
 
     ssh "Stop! Stop!"
 
     mi "Wahaha~! What is it, Shicchan?"
+    
+    show shizu behind_frown
+    with charachange
 
     ssh "I'm beginning to think you are just playing with me."
 
     mi "Yup. But I like teasing Shicchan a little now and then~."
 
     "I want to hug her. Okay~! I'll do it."
+    
+    show shizu adjust_blush_close
+    with charachange
+    
+    stop music fadeout 0.2
 
     "As soon as my arms are around her, Shicchan freezes and gets very stiff. I let go of her."
 
     "Ah, that's right, Shicchan. You don't like it when people touch you. I guess you're unfamiliar with it, right? Right…"
+    
+    play music "bgm/Shadow_of_the_Truth.ogg" fadein 1.0
 
     "So I'll never be able to hold Shicchan. It's okay if you don't hold me back, as long as I can feel Shicchan's warmth. At least, that's what I've been telling myself all this time."
 
@@ -5681,6 +5764,9 @@ label en_S30:
     "Right?"
 
     mi "Shicchan—" #reminder for the potential {nw} break
+    
+    show shizu behind_sad_close
+    with charachange
 
     "Haha~. My voice cracked. Am I sad?"
 
@@ -5695,6 +5781,9 @@ label en_S30:
     mi "I'll be right back, Shicchan~."
 
     # transition to some other place
+    
+    scene bg misc_sky_ss
+    with locationchange
 
     "Haha~."
 
@@ -5719,6 +5808,9 @@ label en_S30:
     "I'll… start to resent Shicchan someday."
 
     # some other transition to outside
+    
+    scene bg school_road_ss
+    with locationchange
 
     "We're leaving the store now. We really were there for a long time."
 
@@ -5727,6 +5819,9 @@ label en_S30:
     "Today was…"
 
     "I'm following behind Shicchan, like always. She turns back to look at me over her shoulder. Are you checking to see if I'm following you, Shicchan? Well, of course."
+    
+    show shizu behind_blank
+    with charaenter
 
     "But…"
 
@@ -5735,6 +5830,9 @@ label en_S30:
     "…I see."
 
     "I'm sad."
+    
+    hide shizu
+    with charaexit
 
     "No matter what I do, I'll never be the right person for Shicchan."
 
@@ -5784,10 +5882,17 @@ label en_S30:
     play sound sfx_crash
     play sound sfx_crunchydeath
     
+    scene black
+    with Dissolve(3.0)
+    
     #sup? hit by a bus. Maybe some kind of agonizing 'hit by a bus' sound effect here
 
-    scene bg misc_static with Dissolve(2.0)
-    play music music_static fadein 2.0
+    scene bg hosp_room2 
+    with Dissolve(2.0)
+    
+    show shizu behind_sad_close
+    with charaenter
+    
     "When I wake up again, everything hurts. Shicchan is sitting over me. She looks really tall, but Shicchan has always looked like that to me."
 
     "I feel stupid."

@@ -9,7 +9,7 @@
     
     play ambient sfx_businterior fadein 0.5
     
-    #play music music_moon fadein 2.2
+    #play music music_moonlight fadein 2.2
     scene black
     with Dissolve(3.0)
     
@@ -1302,7 +1302,7 @@ label en_S34:
 
     "Too formal. I'm pretty sure he's well aware that he is, and I feel the urge to be a little bit of a smartass."
 
-    hi "Yes. Yes, you are. After all, this is my personal cell phone."
+    hi "Yes. Yes, you are. After all, this is my personal cell phone, genius."
 
     hh "Am I calling too early?"
 
@@ -1324,7 +1324,7 @@ label en_S34:
 
     "A lot of ways to answer that question come to mind."
 
-    hi "…She's fine."
+    hi "You'll see when you get here."
 
     hh "Alright, then."
 
@@ -1723,7 +1723,7 @@ label en_S34:
     $ renpy.pause(0.5)
     
     $ renpy.transition(Dissolve(1.5))
-    show walivetext "I go to sleep later that night, and have a dream. . .{fast}"
+    show walivetext "I go to sleep later that night, and have a dream. . . {fast}"
     $ renpy.pause(3)
     
     $ renpy.transition(Dissolve(1.5))

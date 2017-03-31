@@ -538,17 +538,17 @@ label A42: #Nc5xb3
 
 label A43: #The Deep End
     call iscene ("A43")
-    #call imenu ("choiceA43")
+    call imenu ("choiceA43")
     #mu "Homolust or Yurilust?"
-    #if _return == m1:
+    if _return == m1:
     #     # "Gimme sum dindins":
-    #    call iscene ("A43a")
-    #    jump_out HLT3
-    #else:
+        call iscene ("A43a")
+        jump_out badend
+    else:
     #    #"Fuck those feminist whores":
-    #    call iscene ("A43b")
-    #jump_out badend
-    #call iscene ("A45")
+        call iscene ("A43b")
+        jump_out badend
+        call iscene ("A45")
     jump_out badend
 
 label A44: #Throwing Balls
@@ -560,10 +560,12 @@ label A44: #Throwing Balls
 #######################
 
 label HLT3:
+    $ tcard(2, "hanalilly")
     call iscene ("HLT3")
     jump_out HLT4
     
 label HLT4:
+    call iscene ("timeskip")
     call iscene ("HLT4")
     jump_out HLT5
     
@@ -578,11 +580,11 @@ label HLT6:
     if _return == m1:
         #"Tha blidn 1 lel":
         call iscene ("HLT6a")
-        jump_out L13
+        jump_out L1
     else:
         #"Extra crispy, with a large order of fries":
         call iscene ("HLT6b")
-        jump_out H11
+        jump_out H2
     jump_out HLT6x
         
 #######################
@@ -665,7 +667,7 @@ label H13:
     call iscene ("H13")
     call iscene ("timeskip") # not sure, maybe it wont fit here [str]
     call iscene ("H14") # calling a note to describe why the hell we skipped so much [str]
-    jump_out H23
+    jump_out H23#H15
     #jump_out H14 # we're not using this choice in route, but gonna keep it for act selection menu [str]
     
 label H14:
@@ -681,8 +683,52 @@ label H14:
         jump_out H23
     jump_out H23
 
+#nope. I wont cut it tho, you can still read it in the script file [str]
+        #jump_out H15
+    #jump_out H15
+
+label H15:
+    call iscene ("H15")
+    jump_out H16
+    
+label H16:
+    call iscene ("timeskip")
+    call iscene ("H16")
+    jump_out H17  
+    
+label H17:
+    call iscene ("timeskip")
+    call iscene ("H17")  
+    jump_out H18
+
+label H18:
+    call iscene ("timeskip")
+    call iscene ("H18")
+    jump_out H19
+    
+label H19:
+    call iscene ("timeskip")
+    call iscene ("H19")
+    jump_out H20
+    
+label H20:
+    call iscene ("timeskip")
+    call iscene ("H20")
+    jump_out H21
+    
+label H21:
+    call iscene ("timeskip")
+    call iscene ("H21")
+    jump_out H22
+    
+label H22:
+    call iscene ("timeskip")
+    call iscene ("H22")
+    jump_out H23
+
 # [str] (Waterfall)
 label H23:
+    call iscene ("timeskip")
     call iscene ("H23")
     jump_out H24
 
@@ -864,10 +910,12 @@ label L7:
     jump_out L8
 
 label L8:
+    call iscene ("timeskip")
     call iscene ("L8")
     jump_out L9
 
 label L9:
+    call iscene ("timeskip")
     #$ tcard(3, "lilly") # not here, argh! [str]
     call iscene ("L9")
     jump_out L10
@@ -918,6 +966,7 @@ label L11:
     jump_out L12
 
 label L12:
+    call iscene ("timeskip")
     call iscene ("L12")
     jump_out L13
 
@@ -927,6 +976,7 @@ label L13:
     jump_out L14
 
 label L14:
+    call iscene ("timeskip")
     call iscene ("L14")
     jump_out L15
 
@@ -940,10 +990,12 @@ label L16:
     jump_out L17
 
 label L17:
+    call iscene ("timeskip")
     call iscene ("L17")
     jump_out L18
 
 label L18:
+    call iscene ("timeskip")
     call iscene ("L18")
     jump_out L19
 
@@ -995,14 +1047,17 @@ label L22:
     jump_out L23
 
 label L23:
+    call iscene ("timeskip")
     call iscene ("L23")
     jump_out L24
     
 label L24:
+    call iscene ("timeskip")
     call iscene ("L24")
     jump_out L25
     
 label L25:
+    call iscene ("timeskip")
     call iscene ("L25")
     jump_out L26
     
@@ -1012,6 +1067,7 @@ label L26:
     jump_out L27
 
 label L27:
+    call iscene ("timeskip")
     call iscene ("L27")
     jump_out L28
 
@@ -1022,10 +1078,12 @@ label L28:
     jump_out L29
 
 label L29:
+    call iscene ("timeskip")
     call iscene ("L29")
     jump_out L30 #When choices are added, bad end will end the route here
 
 label L30:
+    call iscene ("timeskip")
     call iscene ("L30")
     jump_out L31
 
@@ -1042,6 +1100,7 @@ label L32:
     jump_out L33
 
 label L33:
+    call iscene ("timeskip")
     call iscene ("L33")
     $ persistent.lilly += 1
     jump_out L34
@@ -1054,6 +1113,7 @@ label L34:
     jump_out L35
     
 label L35:
+    call iscene ("timeskip")
     call iscene ("L35")
     jump_out L36
     
@@ -1068,14 +1128,17 @@ label L37:
     jump_out L38
     
 label L38:
+    call iscene ("timeskip")
     call iscene ("L38")
     jump_out L39
     
 label L39:
+    call iscene ("timeskip")
     call iscene ("L39")
     jump_out L40
     
 label L40:
+    call iscene ("timeskip")
     call iscene ("L40")
     jump_out L41
     
@@ -1085,6 +1148,7 @@ label L41:
     jump_out L42
 
 label L42:
+    call iscene ("timeskip")
     call iscene ("L42")
     call imenu ("choiceL42")
     if _return == m1:
@@ -1104,18 +1168,22 @@ label L43:
     jump_out L44
 
 label L44:
+    call iscene ("timeskip")
     call iscene ("L44")
     jump_out L45
     
 label L45:
+    call iscene ("timeskip")
     call iscene ("L45")
     jump_out L46
     
 label L46:
+    call iscene ("timeskip")
     call iscene ("L46")
     jump_out L47
     
 label L47:
+    call iscene ("timeskip")
     call iscene ("L47")
     call credits
     jump_out restart

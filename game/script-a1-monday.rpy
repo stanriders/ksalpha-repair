@@ -19,7 +19,7 @@ play music music_serene fadein 0.2
 
 "A light breeze causes the naked branches overhead to rattle like wooden windchimes."
 
-"This is a popular retreat for couples in the summer. The deciduous trees provide a beautiful green canopy, far out of sight of teachers and fellow students."
+"This retreat is popular for couples in the summer. The deciduous trees provide a beautiful green canopy, far out of sight of teachers and fellow students."
 
 "But now, in late winter, it feels like I'm standing under a pile of kindling."
 
